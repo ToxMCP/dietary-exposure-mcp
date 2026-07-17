@@ -1,0 +1,843 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "jurisdiction_coverage",
+  "records": [
+    {
+      "coverageId": "us.pesticide_residue.glyphosate.wave1",
+      "jurisdiction": "us",
+      "contaminantFamily": "pesticide_residue",
+      "substanceKey": "glyphosate",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "us.govinfo.cfr.40_180.part.2024",
+        "us.govinfo.cfr.40_180.364.2024"
+      ],
+      "legalAuthorityIds": [
+        "us.epa.pesticides.40cfr_part_180.govinfo_2024"
+      ],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [
+        "us.epa.glyphosate.rice.mrl"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": null,
+      "notes": [
+        "Wave-1 U.S. glyphosate coverage is deep-curated through official legal anchors plus exact curated tolerance coverage for current-taxonomy rice."
+      ]
+    },
+    {
+      "coverageId": "us.pesticide_residue.acetamiprid.wave1",
+      "jurisdiction": "us",
+      "contaminantFamily": "pesticide_residue",
+      "substanceKey": "acetamiprid",
+      "coverageLevel": "anchor_only",
+      "officialSourceIds": [
+        "us.govinfo.cfr.40_180.part.2024",
+        "us.govinfo.cfr.40_180.578.2024"
+      ],
+      "legalAuthorityIds": [
+        "us.epa.pesticides.40cfr_part_180.govinfo_2024"
+      ],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "currencyMetadataComplete": true,
+      "gapReason": "The official U.S. source was verified, but no exact current-taxonomy commodity pair or jurisdiction-specific dietary reference value is curated in wave 1.",
+      "notes": [
+        "This lane keeps the official U.S. source and legal anchor visible without overstating commodity-level coverage."
+      ]
+    },
+    {
+      "coverageId": "us.pesticide_residue.imidacloprid.wave1",
+      "jurisdiction": "us",
+      "contaminantFamily": "pesticide_residue",
+      "substanceKey": "imidacloprid",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "us.govinfo.cfr.40_180.part.2024",
+        "us.govinfo.cfr.40_180.472.2024"
+      ],
+      "legalAuthorityIds": [
+        "us.epa.pesticides.40cfr_part_180.govinfo_2024"
+      ],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [
+        "us.epa.imidacloprid.apples.mrl",
+        "us.epa.imidacloprid.grapes.mrl",
+        "us.epa.imidacloprid.rice.mrl"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": null,
+      "notes": [
+        "Wave-1 U.S. imidacloprid coverage is deep-curated through exact curated tolerances for apples, grapes, and rice."
+      ]
+    },
+    {
+      "coverageId": "us.pesticide_residue.glufosinate.wave1",
+      "jurisdiction": "us",
+      "contaminantFamily": "pesticide_residue",
+      "substanceKey": "glufosinate",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "us.govinfo.cfr.40_180.part.2024",
+        "us.govinfo.cfr.40_180.473.2024"
+      ],
+      "legalAuthorityIds": [
+        "us.epa.pesticides.40cfr_part_180.govinfo_2024"
+      ],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [
+        "us.epa.glufosinate.rice.mrl"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": null,
+      "notes": [
+        "Wave-1 U.S. glufosinate coverage is deep-curated through the official legal anchor plus exact curated rice tolerance coverage."
+      ]
+    },
+    {
+      "coverageId": "us.pesticide_residue.oxamyl.wave1",
+      "jurisdiction": "us",
+      "contaminantFamily": "pesticide_residue",
+      "substanceKey": "oxamyl",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "us.govinfo.cfr.40_180.part.2024",
+        "us.govinfo.cfr.40_180.303.2024"
+      ],
+      "legalAuthorityIds": [
+        "us.epa.pesticides.40cfr_part_180.govinfo_2024"
+      ],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [
+        "us.epa.oxamyl.tomatoes.mrl"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": null,
+      "notes": [
+        "Wave-1 U.S. oxamyl coverage is deep-curated through the official legal anchor plus exact curated tomato tolerance coverage."
+      ]
+    },
+    {
+      "coverageId": "us.pfas_food_contaminants.sum_pfoa_pfna_pfhxs_pfos.wave1",
+      "jurisdiction": "us",
+      "contaminantFamily": "pfas_food_contaminants",
+      "substanceKey": "sum_pfoa_pfna_pfhxs_pfos",
+      "coverageLevel": "explicit_gap",
+      "officialSourceIds": [],
+      "legalAuthorityIds": [],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "currencyMetadataComplete": false,
+      "gapReason": "No final official U.S. PFAS food reference-value or binding jurisdiction-specific food anchor is curated in wave 1.",
+      "notes": [
+        "This lane is intentionally explicit so the runtime does not imply a U.S. PFAS food-reference layer that is not shipped."
+      ]
+    },
+    {
+      "coverageId": "us.acrylamide_process_contaminants.acrylamide.wave1",
+      "jurisdiction": "us",
+      "contaminantFamily": "acrylamide_process_contaminants",
+      "substanceKey": "acrylamide",
+      "coverageLevel": "explicit_gap",
+      "officialSourceIds": [],
+      "legalAuthorityIds": [],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "currencyMetadataComplete": false,
+      "gapReason": "No final official U.S. acrylamide food reference-value or binding jurisdiction-specific anchor is curated in wave 1.",
+      "notes": []
+    },
+    {
+      "coverageId": "us.bisphenol_food_contact_migration.bisphenol_a.wave1",
+      "jurisdiction": "us",
+      "contaminantFamily": "bisphenol_food_contact_migration",
+      "substanceKey": "bisphenol_a",
+      "coverageLevel": "explicit_gap",
+      "officialSourceIds": [],
+      "legalAuthorityIds": [],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "currencyMetadataComplete": false,
+      "gapReason": "No final official U.S. BPA food-contact dietary reference-value or binding jurisdiction-specific anchor is curated in wave 1.",
+      "notes": []
+    },
+    {
+      "coverageId": "us.cadmium_food_contaminants.cadmium.wave1",
+      "jurisdiction": "us",
+      "contaminantFamily": "cadmium_food_contaminants",
+      "substanceKey": "cadmium",
+      "coverageLevel": "explicit_gap",
+      "officialSourceIds": [],
+      "legalAuthorityIds": [],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "currencyMetadataComplete": false,
+      "gapReason": "No final official U.S. cadmium food reference-value or binding jurisdiction-specific anchor is curated in wave 1.",
+      "notes": []
+    },
+    {
+      "coverageId": "us.lead_food_contaminants.lead.wave1",
+      "jurisdiction": "us",
+      "contaminantFamily": "lead_food_contaminants",
+      "substanceKey": "lead",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "us.fda.lead.processed_foods.guidance.2025"
+      ],
+      "legalAuthorityIds": [
+        "us.fda.lead.processed_foods.action_levels.2025"
+      ],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "legalLimitRecordIds": [
+        "us.fda.lead.processed_foods.general_baby_foods.ml.2025",
+        "us.fda.lead.processed_foods.root_vegetables.ml.2025",
+        "us.fda.lead.processed_foods.dry_infant_cereals.ml.2025"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": "No U.S. jurisdiction-specific dietary reference-value layer is shipped; curated numeric legal limits currently cover only the processed-food guidance scope for babies and young children.",
+      "notes": [
+        "Wave-2 hardening upgraded this lane from anchor-only to deep-curated for the exact final FDA processed-food lead action levels."
+      ]
+    },
+    {
+      "coverageId": "us.inorganic_arsenic_food_contaminants.inorganic_arsenic.wave1",
+      "jurisdiction": "us",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "substanceKey": "inorganic_arsenic",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "us.fda.inorganic_arsenic.rice_cereals.guidance.2020",
+        "us.fda.inorganic_arsenic.apple_juice.guidance.2023"
+      ],
+      "legalAuthorityIds": [
+        "us.fda.inorganic_arsenic.rice_cereals.action_level.2020",
+        "us.fda.inorganic_arsenic.apple_juice.action_level.2023"
+      ],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "legalLimitRecordIds": [
+        "us.fda.inorganic_arsenic.rice_cereals.ml.2020",
+        "us.fda.inorganic_arsenic.apple_juice.ml.2023"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": "No U.S. jurisdiction-specific dietary reference-value layer is shipped; curated numeric legal limits currently cover infant rice cereal and apple juice only.",
+      "notes": [
+        "Wave-2 hardening upgraded this lane from anchor-only to deep-curated for the exact final FDA inorganic-arsenic action levels currently shipped."
+      ]
+    },
+    {
+      "coverageId": "us.mercury_food_contaminants.methylmercury.wave1",
+      "jurisdiction": "us",
+      "contaminantFamily": "mercury_food_contaminants",
+      "substanceKey": "methylmercury",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "us.fda.methylmercury.fish.cpg_540_600.2007"
+      ],
+      "legalAuthorityIds": [
+        "us.fda.methylmercury.fish.cpg_540_600.2007"
+      ],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "legalLimitRecordIds": [
+        "us.fda.methylmercury.fish.ml.2007"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": "No U.S. jurisdiction-specific dietary reference-value layer is shipped; curated numeric legal-limit support currently covers the FDA fish and aquatic-animal compliance policy lane only.",
+      "notes": [
+        "Wave-2 hardening upgraded this lane from explicit gap to deep-curated for the exact FDA methylmercury fish compliance-policy threshold."
+      ]
+    },
+    {
+      "coverageId": "us.mercury_food_contaminants.inorganic_mercury.wave1",
+      "jurisdiction": "us",
+      "contaminantFamily": "mercury_food_contaminants",
+      "substanceKey": "inorganic_mercury",
+      "coverageLevel": "explicit_gap",
+      "officialSourceIds": [],
+      "legalAuthorityIds": [],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "currencyMetadataComplete": false,
+      "gapReason": "No final official U.S. inorganic mercury food reference-value or binding jurisdiction-specific anchor is curated in wave 1.",
+      "notes": []
+    },
+
+    {
+      "coverageId": "codex_global.pesticide_residue.glyphosate.wave1",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "pesticide_residue",
+      "substanceKey": "glyphosate",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "jmpr.glyphosate.report.2016",
+        "codex.pesticide_database.2024"
+      ],
+      "legalAuthorityIds": [
+        "codex.ccpr.pesticide_database.2024"
+      ],
+      "referenceValueRecordIds": [
+        "jmpr.glyphosate.adi"
+      ],
+      "enforcementRecordIds": [],
+      "currencyMetadataComplete": true,
+      "gapReason": null,
+      "notes": [
+        "The official Codex/JMPR glyphosate ADI is curated, but no exact current-taxonomy CXL is shipped in wave 1."
+      ]
+    },
+    {
+      "coverageId": "codex_global.pesticide_residue.acetamiprid.wave1",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "pesticide_residue",
+      "substanceKey": "acetamiprid",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "jmpr.acetamiprid.report.2011",
+        "codex.pesticide_database.2024"
+      ],
+      "legalAuthorityIds": [
+        "codex.ccpr.pesticide_database.2024"
+      ],
+      "referenceValueRecordIds": [
+        "jmpr.acetamiprid.adi.2011"
+      ],
+      "enforcementRecordIds": [
+        "codex.acetamiprid.grapes.mrl"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": null,
+      "notes": [
+        "Wave-1 Codex acetamiprid coverage is deep-curated through the official JMPR ADI plus exact curated grapes CXL coverage."
+      ]
+    },
+    {
+      "coverageId": "codex_global.pesticide_residue.imidacloprid.wave1",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "pesticide_residue",
+      "substanceKey": "imidacloprid",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "jmpr.imidacloprid.report.2001",
+        "codex.pesticide_database.2024"
+      ],
+      "legalAuthorityIds": [
+        "codex.ccpr.pesticide_database.2024"
+      ],
+      "referenceValueRecordIds": [
+        "jmpr.imidacloprid.adi.2001"
+      ],
+      "enforcementRecordIds": [
+        "codex.imidacloprid.apples.mrl",
+        "codex.imidacloprid.grapes.mrl",
+        "codex.imidacloprid.tomatoes.mrl"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": null,
+      "notes": []
+    },
+    {
+      "coverageId": "codex_global.pesticide_residue.glufosinate.wave1",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "pesticide_residue",
+      "substanceKey": "glufosinate",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "jmpr.glufosinate.summary.2013",
+        "codex.pesticide_database.2024"
+      ],
+      "legalAuthorityIds": [
+        "codex.ccpr.pesticide_database.2024"
+      ],
+      "referenceValueRecordIds": [
+        "jmpr.glufosinate.adi.2012",
+        "jmpr.glufosinate.arfd.2012"
+      ],
+      "enforcementRecordIds": [
+        "codex.glufosinate.grapes.mrl",
+        "codex.glufosinate.rice.mrl",
+        "codex.glufosinate.potatoes.mrl"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": null,
+      "notes": []
+    },
+    {
+      "coverageId": "codex_global.pesticide_residue.oxamyl.wave1",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "pesticide_residue",
+      "substanceKey": "oxamyl",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "jmpr.oxamyl.summary.2012",
+        "codex.pesticide_database.2024"
+      ],
+      "legalAuthorityIds": [
+        "codex.ccpr.pesticide_database.2024"
+      ],
+      "referenceValueRecordIds": [
+        "jmpr.oxamyl.adi.2012",
+        "jmpr.oxamyl.arfd.2012"
+      ],
+      "enforcementRecordIds": [
+        "codex.oxamyl.tomatoes.mrl",
+        "codex.oxamyl.potatoes.mrl"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": null,
+      "notes": []
+    },
+    {
+      "coverageId": "codex_global.pfas_food_contaminants.sum_pfoa_pfna_pfhxs_pfos.wave1",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "pfas_food_contaminants",
+      "substanceKey": "sum_pfoa_pfna_pfhxs_pfos",
+      "coverageLevel": "explicit_gap",
+      "officialSourceIds": [],
+      "legalAuthorityIds": [],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "currencyMetadataComplete": false,
+      "gapReason": "No final official Codex PFAS food reference-value or contaminant anchor is curated in wave 1.",
+      "notes": []
+    },
+    {
+      "coverageId": "codex_global.acrylamide_process_contaminants.acrylamide.wave1",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "acrylamide_process_contaminants",
+      "substanceKey": "acrylamide",
+      "coverageLevel": "explicit_gap",
+      "officialSourceIds": [],
+      "legalAuthorityIds": [],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "currencyMetadataComplete": false,
+      "gapReason": "No final official Codex acrylamide dietary reference-value or contaminant anchor is curated in wave 1.",
+      "notes": []
+    },
+    {
+      "coverageId": "codex_global.bisphenol_food_contact_migration.bisphenol_a.wave1",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "bisphenol_food_contact_migration",
+      "substanceKey": "bisphenol_a",
+      "coverageLevel": "explicit_gap",
+      "officialSourceIds": [],
+      "legalAuthorityIds": [],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "currencyMetadataComplete": false,
+      "gapReason": "No final official Codex BPA food-contact dietary reference-value or contaminant anchor is curated in wave 1.",
+      "notes": []
+    },
+    {
+      "coverageId": "codex_global.cadmium_food_contaminants.cadmium.wave1",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "cadmium_food_contaminants",
+      "substanceKey": "cadmium",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "codex.cxs_193_1995.current_2025"
+      ],
+      "legalAuthorityIds": [
+        "codex.cccf.cxs_193_1995.current_2025.cadmium"
+      ],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "legalLimitRecordIds": [
+        "codex.cxs_193_1995.cadmium.wheat.ml.2025"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": "The current official Codex contaminants standard is present and one exact current-taxonomy cadmium ML for wheat is curated; no Codex dietary reference-value layer is shipped and broader cadmium extraction remains deferred.",
+      "notes": [
+        "Cadmium coverage is deep-curated because the repo now ships an exact Codex ML for wheat."
+      ]
+    },
+    {
+      "coverageId": "codex_global.lead_food_contaminants.lead.wave1",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "lead_food_contaminants",
+      "substanceKey": "lead",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "codex.cxs_193_1995.current_2025"
+      ],
+      "legalAuthorityIds": [
+        "codex.cccf.cxs_193_1995.current_2025.lead"
+      ],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "legalLimitRecordIds": [
+        "codex.cxs_193_1995.lead.apples.ml.2025",
+        "codex.cxs_193_1995.lead.grapes.ml.2025",
+        "codex.cxs_193_1995.lead.apple_juice.ml.2025",
+        "codex.cxs_193_1995.lead.wheat.ml.2025",
+        "codex.cxs_193_1995.lead.rice.ml.2025",
+        "codex.cxs_193_1995.lead.infant_formula.ml.2025",
+        "codex.cxs_193_1995.lead.milk.ml.2025",
+        "codex.cxs_193_1995.lead.salmon.ml.2025"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": "The current official Codex contaminants standard is present and exact current-taxonomy lead MLs are curated for selected fruit, juice, grain, milk, infant-formula, and salmon lanes; no Codex dietary reference-value layer is shipped.",
+      "notes": [
+        "Lead coverage is deep-curated because the repo now ships exact Codex MLs for multiple shipped commodities."
+      ]
+    },
+    {
+      "coverageId": "codex_global.inorganic_arsenic_food_contaminants.inorganic_arsenic.wave1",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "substanceKey": "inorganic_arsenic",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "codex.cxs_193_1995.current_2025"
+      ],
+      "legalAuthorityIds": [
+        "codex.cccf.cxs_193_1995.current_2025.inorganic_arsenic"
+      ],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "legalLimitRecordIds": [
+        "codex.cxs_193_1995.inorganic_arsenic.olive_oil.ml.2025"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": "The current official Codex contaminants standard is present and an exact current-taxonomy inorganic-arsenic ML is curated for olive oil; no Codex dietary reference-value layer is shipped and rice remains unresolved because the shipped taxonomy does not distinguish husked from polished rice.",
+      "notes": [
+        "Inorganic arsenic coverage is deep-curated because the repo now ships an exact Codex edible-fats-and-oils lane for olive oil."
+      ]
+    },
+    {
+      "coverageId": "codex_global.mercury_food_contaminants.methylmercury.wave1",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "mercury_food_contaminants",
+      "substanceKey": "methylmercury",
+      "coverageLevel": "anchor_only",
+      "officialSourceIds": [
+        "codex.cxs_193_1995.current_2025"
+      ],
+      "legalAuthorityIds": [
+        "codex.cccf.cxs_193_1995.current_2025.mercury"
+      ],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "currencyMetadataComplete": true,
+      "gapReason": "The current official Codex contaminants standard is present, but the methylmercury section remains species-specific and no exact current-taxonomy row is curated for the shipped fish commodities.",
+      "notes": []
+    },
+    {
+      "coverageId": "codex_global.mercury_food_contaminants.inorganic_mercury.wave1",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "mercury_food_contaminants",
+      "substanceKey": "inorganic_mercury",
+      "coverageLevel": "anchor_only",
+      "officialSourceIds": [
+        "codex.cxs_193_1995.current_2025"
+      ],
+      "legalAuthorityIds": [
+        "codex.cccf.cxs_193_1995.current_2025.mercury"
+      ],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "currencyMetadataComplete": true,
+      "gapReason": "The current official Codex contaminants standard is present, but no inorganic-mercury-specific current-taxonomy legal-limit record is curated; the mercury section instead focuses on total mercury and species-specific methylmercury lanes.",
+      "notes": []
+    },
+
+    {
+      "coverageId": "cn.pesticide_residue.glyphosate.wave1",
+      "jurisdiction": "cn",
+      "contaminantFamily": "pesticide_residue",
+      "substanceKey": "glyphosate",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "cn.nhc.gb2763.2026.announcement",
+        "cn.aqsc.gb2763.2026"
+      ],
+      "legalAuthorityIds": [
+        "cn.nhc.pesticides.gb_2763_2026"
+      ],
+      "referenceValueRecordIds": [
+        "cn.nhc.glyphosate.adi"
+      ],
+      "enforcementRecordIds": [
+        "cn.gb.glyphosate.apples.mrl",
+        "cn.gb.glyphosate.rice.mrl"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": null,
+      "notes": []
+    },
+    {
+      "coverageId": "cn.pesticide_residue.acetamiprid.wave1",
+      "jurisdiction": "cn",
+      "contaminantFamily": "pesticide_residue",
+      "substanceKey": "acetamiprid",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "cn.nhc.gb2763.2026.announcement",
+        "cn.aqsc.gb2763.2026"
+      ],
+      "legalAuthorityIds": [
+        "cn.nhc.pesticides.gb_2763_2026"
+      ],
+      "referenceValueRecordIds": [
+        "cn.nhc.acetamiprid.adi.2026"
+      ],
+      "enforcementRecordIds": [
+        "cn.gb.acetamiprid.apples.mrl",
+        "cn.gb.acetamiprid.grapes.mrl",
+        "cn.gb.acetamiprid.tomatoes.mrl"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": null,
+      "notes": []
+    },
+    {
+      "coverageId": "cn.pesticide_residue.imidacloprid.wave1",
+      "jurisdiction": "cn",
+      "contaminantFamily": "pesticide_residue",
+      "substanceKey": "imidacloprid",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "cn.nhc.gb2763.2026.announcement",
+        "cn.aqsc.gb2763.2026"
+      ],
+      "legalAuthorityIds": [
+        "cn.nhc.pesticides.gb_2763_2026"
+      ],
+      "referenceValueRecordIds": [
+        "cn.nhc.imidacloprid.adi.2026"
+      ],
+      "enforcementRecordIds": [
+        "cn.gb.imidacloprid.apples.mrl",
+        "cn.gb.imidacloprid.grapes.mrl",
+        "cn.gb.imidacloprid.rice.mrl",
+        "cn.gb.imidacloprid.tomatoes.mrl",
+        "cn.gb.imidacloprid.potatoes.mrl"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": null,
+      "notes": []
+    },
+    {
+      "coverageId": "cn.pesticide_residue.glufosinate.wave1",
+      "jurisdiction": "cn",
+      "contaminantFamily": "pesticide_residue",
+      "substanceKey": "glufosinate",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "cn.nhc.gb2763.2026.announcement",
+        "cn.aqsc.gb2763.2026"
+      ],
+      "legalAuthorityIds": [
+        "cn.nhc.pesticides.gb_2763_2026"
+      ],
+      "referenceValueRecordIds": [
+        "cn.nhc.glufosinate.adi.2026"
+      ],
+      "enforcementRecordIds": [
+        "cn.gb.glufosinate.grapes.mrl",
+        "cn.gb.glufosinate.rice.mrl",
+        "cn.gb.glufosinate.tomatoes.mrl",
+        "cn.gb.glufosinate.potatoes.mrl"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": null,
+      "notes": []
+    },
+    {
+      "coverageId": "cn.pesticide_residue.oxamyl.wave1",
+      "jurisdiction": "cn",
+      "contaminantFamily": "pesticide_residue",
+      "substanceKey": "oxamyl",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "cn.nhc.gb2763.2026.announcement",
+        "cn.aqsc.gb2763.2026"
+      ],
+      "legalAuthorityIds": [
+        "cn.nhc.pesticides.gb_2763_2026"
+      ],
+      "referenceValueRecordIds": [
+        "cn.nhc.oxamyl.adi.2026"
+      ],
+      "enforcementRecordIds": [
+        "cn.gb.oxamyl.tomatoes.mrl",
+        "cn.gb.oxamyl.potatoes.mrl"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": null,
+      "notes": []
+    },
+    {
+      "coverageId": "cn.pfas_food_contaminants.sum_pfoa_pfna_pfhxs_pfos.wave1",
+      "jurisdiction": "cn",
+      "contaminantFamily": "pfas_food_contaminants",
+      "substanceKey": "sum_pfoa_pfna_pfhxs_pfos",
+      "coverageLevel": "explicit_gap",
+      "officialSourceIds": [],
+      "legalAuthorityIds": [],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "currencyMetadataComplete": false,
+      "gapReason": "No final official China PFAS food reference-value or binding contaminant anchor is curated in wave 1.",
+      "notes": []
+    },
+    {
+      "coverageId": "cn.acrylamide_process_contaminants.acrylamide.wave1",
+      "jurisdiction": "cn",
+      "contaminantFamily": "acrylamide_process_contaminants",
+      "substanceKey": "acrylamide",
+      "coverageLevel": "explicit_gap",
+      "officialSourceIds": [],
+      "legalAuthorityIds": [],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "currencyMetadataComplete": false,
+      "gapReason": "No final official China acrylamide food reference-value or binding contaminant anchor is curated in wave 1.",
+      "notes": []
+    },
+    {
+      "coverageId": "cn.bisphenol_food_contact_migration.bisphenol_a.wave1",
+      "jurisdiction": "cn",
+      "contaminantFamily": "bisphenol_food_contact_migration",
+      "substanceKey": "bisphenol_a",
+      "coverageLevel": "explicit_gap",
+      "officialSourceIds": [],
+      "legalAuthorityIds": [],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "currencyMetadataComplete": false,
+      "gapReason": "No final official China BPA food-contact dietary reference-value or binding contaminant anchor is curated in wave 1.",
+      "notes": []
+    },
+    {
+      "coverageId": "cn.cadmium_food_contaminants.cadmium.wave1",
+      "jurisdiction": "cn",
+      "contaminantFamily": "cadmium_food_contaminants",
+      "substanceKey": "cadmium",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "legalAuthorityIds": [
+        "cn.nhc.cadmium.gb_2762_2025"
+      ],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "legalLimitRecordIds": [
+        "cn.nhc.cadmium.rice.ml.2025",
+        "cn.nhc.cadmium.fish.ml.2025",
+        "cn.nhc.cadmium.infant_auxiliary_cereal_foods.ml.2025"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": "No China jurisdiction-specific dietary reference-value layer is shipped; curated numeric legal-limit support currently reflects the exact GB 2762-2025 MLs extracted for this lane.",
+      "notes": [
+        "Wave-2 hardening upgraded this lane from anchor-only to deep-curated through exact GB 2762-2025 cadmium ML extraction."
+      ]
+    },
+    {
+      "coverageId": "cn.lead_food_contaminants.lead.wave1",
+      "jurisdiction": "cn",
+      "contaminantFamily": "lead_food_contaminants",
+      "substanceKey": "lead",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "legalAuthorityIds": [
+        "cn.nhc.lead.gb_2762_2025"
+      ],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "legalLimitRecordIds": [
+        "cn.nhc.lead.grains.ml.2025",
+        "cn.nhc.lead.fish.ml.2025",
+        "cn.nhc.lead.infant_formula.ml.2025",
+        "cn.nhc.lead.infant_auxiliary_foods.ml.2025"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": "No China jurisdiction-specific dietary reference-value layer is shipped; curated numeric legal-limit support currently reflects the exact GB 2762-2025 MLs extracted for this lane.",
+      "notes": [
+        "Wave-2 hardening upgraded this lane from anchor-only to deep-curated through exact GB 2762-2025 lead ML extraction."
+      ]
+    },
+    {
+      "coverageId": "cn.inorganic_arsenic_food_contaminants.inorganic_arsenic.wave1",
+      "jurisdiction": "cn",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "substanceKey": "inorganic_arsenic",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "legalAuthorityIds": [
+        "cn.nhc.inorganic_arsenic.gb_2762_2025"
+      ],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "legalLimitRecordIds": [
+        "cn.nhc.inorganic_arsenic.rice.ml.2025",
+        "cn.nhc.inorganic_arsenic.fish.ml.2025",
+        "cn.nhc.inorganic_arsenic.infant_auxiliary_cereal_foods.ml.2025",
+        "cn.nhc.inorganic_arsenic.infant_canned_auxiliary_foods.non_aquatic_non_liver.ml.2025",
+        "cn.nhc.inorganic_arsenic.infant_canned_auxiliary_foods.aquatic_or_liver.ml.2025"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": "No China jurisdiction-specific dietary reference-value layer is shipped; curated numeric legal-limit support currently reflects the exact GB 2762-2025 MLs extracted for this lane.",
+      "notes": [
+        "Wave-2 hardening upgraded this lane from anchor-only to deep-curated through exact GB 2762-2025 inorganic-arsenic ML extraction."
+      ]
+    },
+    {
+      "coverageId": "cn.mercury_food_contaminants.methylmercury.wave1",
+      "jurisdiction": "cn",
+      "contaminantFamily": "mercury_food_contaminants",
+      "substanceKey": "methylmercury",
+      "coverageLevel": "deep_curated",
+      "officialSourceIds": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "legalAuthorityIds": [
+        "cn.nhc.mercury.gb_2762_2025"
+      ],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "legalLimitRecordIds": [
+        "cn.nhc.methylmercury.aquatic_animals.general.ml.2025",
+        "cn.nhc.methylmercury.carnivorous_fish.ml.2025"
+      ],
+      "currencyMetadataComplete": true,
+      "gapReason": "No China jurisdiction-specific dietary reference-value layer is shipped; curated numeric legal-limit support currently reflects the exact GB 2762-2025 methylmercury MLs extracted for this lane.",
+      "notes": [
+        "Wave-2 hardening upgraded this lane from anchor-only to deep-curated through exact GB 2762-2025 methylmercury ML extraction."
+      ]
+    },
+    {
+      "coverageId": "cn.mercury_food_contaminants.inorganic_mercury.wave1",
+      "jurisdiction": "cn",
+      "contaminantFamily": "mercury_food_contaminants",
+      "substanceKey": "inorganic_mercury",
+      "coverageLevel": "explicit_gap",
+      "officialSourceIds": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "legalAuthorityIds": [
+        "cn.nhc.mercury.gb_2762_2025"
+      ],
+      "referenceValueRecordIds": [],
+      "enforcementRecordIds": [],
+      "legalLimitRecordIds": [],
+      "currencyMetadataComplete": true,
+      "gapReason": "GB 2762-2025 provides methylmercury and total-mercury food limits, but no inorganic-mercury-specific ML is curated for this lane.",
+      "notes": [
+        "This lane is kept explicit rather than silently substituting total-mercury or methylmercury limits for inorganic mercury."
+      ]
+    }
+  ]
+}

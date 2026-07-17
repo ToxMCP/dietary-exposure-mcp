@@ -1,0 +1,390 @@
+{
+  "version": "0.1.0",
+  "status": "draft_ready",
+  "gates": [
+    {
+      "id": "acute_chronic_explicit",
+      "description": "Acute vs chronic semantics are explicit in contracts and examples.",
+      "status": "pass"
+    },
+    {
+      "id": "schemas_examples_validate",
+      "description": "All schemas and examples validate.",
+      "status": "pass"
+    },
+    {
+      "id": "benchmarks_pass",
+      "description": "Hand-worked benchmark cases pass within tolerance.",
+      "status": "pass"
+    },
+    {
+      "id": "all_validation_suites_ok",
+      "description": "All validation suites and generated contract checks complete with status ok.",
+      "status": "pass"
+    },
+    {
+      "id": "defaults_versions_published",
+      "description": "Defaults, consumption profiles, and taxonomy versions are published.",
+      "status": "pass"
+    },
+    {
+      "id": "contributors_auditable",
+      "description": "Commodity contribution outputs and assumption ledgers are auditable.",
+      "status": "pass"
+    },
+    {
+      "id": "pbpk_export_valid",
+      "description": "PBPK oral export validates directly.",
+      "status": "pass"
+    },
+    {
+      "id": "limitations_prevent_misuse",
+      "description": "Limitation notes prevent misuse as a final regulatory decision.",
+      "status": "pass"
+    }
+  ],
+  "validationSummary": {
+    "status": "ok",
+    "suiteCount": 35,
+    "caseCount": 455,
+    "failedCaseCount": 0,
+    "suites": {
+      "schemas": {
+        "status": "ok",
+        "caseCount": 98,
+        "failedCaseCount": 0
+      },
+      "examples": {
+        "status": "ok",
+        "caseCount": 90,
+        "failedCaseCount": 0
+      },
+      "tool_surface": {
+        "status": "ok",
+        "caseCount": 9,
+        "failedCaseCount": 0
+      },
+      "benchmarks": {
+        "status": "ok",
+        "caseCount": 56,
+        "failedCaseCount": 0
+      },
+      "dietary_references": {
+        "status": "ok",
+        "caseCount": 16,
+        "failedCaseCount": 0
+      },
+      "adapter_normalization": {
+        "status": "ok",
+        "caseCount": 2,
+        "failedCaseCount": 0
+      },
+      "survey_distribution_summary": {
+        "status": "ok",
+        "caseCount": 1,
+        "failedCaseCount": 0
+      },
+      "probabilistic_intake_summary": {
+        "status": "ok",
+        "caseCount": 4,
+        "failedCaseCount": 0
+      },
+      "probabilistic_intake_summary_fingerprints": {
+        "status": "ok",
+        "caseCount": 2,
+        "failedCaseCount": 0
+      },
+      "uncertainty_intake_assessment": {
+        "status": "ok",
+        "caseCount": 4,
+        "failedCaseCount": 0
+      },
+      "censored_residue_policy": {
+        "status": "ok",
+        "caseCount": 1,
+        "failedCaseCount": 0
+      },
+      "uncertainty_sensitivity": {
+        "status": "ok",
+        "caseCount": 1,
+        "failedCaseCount": 0
+      },
+      "health_reference_exceedance": {
+        "status": "ok",
+        "caseCount": 3,
+        "failedCaseCount": 0
+      },
+      "uncertainty_reproducibility": {
+        "status": "ok",
+        "caseCount": 1,
+        "failedCaseCount": 0
+      },
+      "food_vocabulary": {
+        "status": "ok",
+        "caseCount": 3,
+        "failedCaseCount": 0
+      },
+      "source_databases": {
+        "status": "ok",
+        "caseCount": 97,
+        "failedCaseCount": 0
+      },
+      "metals_monitoring": {
+        "status": "ok",
+        "caseCount": 2,
+        "failedCaseCount": 0
+      },
+      "contaminant_monitoring": {
+        "status": "ok",
+        "caseCount": 3,
+        "failedCaseCount": 0
+      },
+      "contaminant_monitoring_bundle": {
+        "status": "ok",
+        "caseCount": 2,
+        "failedCaseCount": 0
+      },
+      "contaminant_monitoring_signoff": {
+        "status": "ok",
+        "caseCount": 3,
+        "failedCaseCount": 0
+      },
+      "contaminant_monitoring_review_dossier": {
+        "status": "ok",
+        "caseCount": 3,
+        "failedCaseCount": 0
+      },
+      "metals_monitoring_signoff": {
+        "status": "ok",
+        "caseCount": 3,
+        "failedCaseCount": 0
+      },
+      "metals_monitoring_review_dossier": {
+        "status": "ok",
+        "caseCount": 3,
+        "failedCaseCount": 0
+      },
+      "interoperability_preview": {
+        "status": "ok",
+        "caseCount": 2,
+        "failedCaseCount": 0
+      },
+      "interoperability_readiness": {
+        "status": "ok",
+        "caseCount": 4,
+        "failedCaseCount": 0
+      },
+      "interoperability_remediation": {
+        "status": "ok",
+        "caseCount": 3,
+        "failedCaseCount": 0
+      },
+      "interoperability_signoff": {
+        "status": "ok",
+        "caseCount": 3,
+        "failedCaseCount": 0
+      },
+      "review_dossier_readiness": {
+        "status": "ok",
+        "caseCount": 7,
+        "failedCaseCount": 0
+      },
+      "scientific_follow_up_queue_bundle": {
+        "status": "ok",
+        "caseCount": 3,
+        "failedCaseCount": 0
+      },
+      "scientific_follow_up_review_board": {
+        "status": "ok",
+        "caseCount": 4,
+        "failedCaseCount": 0
+      },
+      "scientific_follow_up_owner_handoff": {
+        "status": "ok",
+        "caseCount": 4,
+        "failedCaseCount": 0
+      },
+      "scientific_follow_up_owner_remediation": {
+        "status": "ok",
+        "caseCount": 4,
+        "failedCaseCount": 0
+      },
+      "scientific_follow_up_owner_signoff": {
+        "status": "ok",
+        "caseCount": 4,
+        "failedCaseCount": 0
+      },
+      "scientific_follow_up_owner_signoff_dossier": {
+        "status": "ok",
+        "caseCount": 4,
+        "failedCaseCount": 0
+      },
+      "sanitised_public_review": {
+        "status": "ok",
+        "caseCount": 6,
+        "failedCaseCount": 0
+      }
+    },
+    "failures": []
+  },
+  "validationArtifacts": [
+    {
+      "name": "benchmark_cases",
+      "path": "validation/v1/benchmark_cases.json"
+    },
+    {
+      "name": "dietary_reference_cases",
+      "path": "validation/v1/dietary_reference_cases.json"
+    },
+    {
+      "name": "commodity_mapping_gap_report",
+      "path": "validation/v1/commodity_mapping_gap_report.json"
+    },
+    {
+      "name": "adapter_normalization_cases",
+      "path": "validation/v1/adapter_normalization_cases.json"
+    },
+    {
+      "name": "food_vocabulary_cases",
+      "path": "validation/v1/food_vocabulary_cases.json"
+    },
+    {
+      "name": "regulatory_rules",
+      "path": "validation/v1/regulatory_rules.json"
+    },
+    {
+      "name": "source_database_cases",
+      "path": "validation/v1/source_database_cases.json"
+    },
+    {
+      "name": "survey_distribution_summary_cases",
+      "path": "validation/v1/survey_distribution_summary_cases.json"
+    },
+    {
+      "name": "probabilistic_intake_summary_cases",
+      "path": "validation/v1/probabilistic_intake_summary_cases.json"
+    },
+    {
+      "name": "uncertainty_intake_assessment_cases",
+      "path": "validation/v1/uncertainty_intake_assessment_cases.json"
+    },
+    {
+      "name": "censored_residue_policy_cases",
+      "path": "validation/v1/censored_residue_policy_cases.json"
+    },
+    {
+      "name": "uncertainty_sensitivity_cases",
+      "path": "validation/v1/uncertainty_sensitivity_cases.json"
+    },
+    {
+      "name": "health_reference_exceedance_cases",
+      "path": "validation/v1/health_reference_exceedance_cases.json"
+    },
+    {
+      "name": "uncertainty_reproducibility_cases",
+      "path": "validation/v1/uncertainty_reproducibility_cases.json"
+    },
+    {
+      "name": "contaminant_monitoring_check_cases",
+      "path": "validation/v1/contaminant_monitoring_check_cases.json"
+    },
+    {
+      "name": "contaminant_monitoring_bundle_cases",
+      "path": "validation/v1/contaminant_monitoring_bundle_cases.json"
+    },
+    {
+      "name": "contaminant_monitoring_signoff_cases",
+      "path": "validation/v1/contaminant_monitoring_signoff_cases.json"
+    },
+    {
+      "name": "contaminant_monitoring_review_dossier_cases",
+      "path": "validation/v1/contaminant_monitoring_review_dossier_cases.json"
+    },
+    {
+      "name": "metals_monitoring_bundle_cases",
+      "path": "validation/v1/metals_monitoring_bundle_cases.json"
+    },
+    {
+      "name": "metals_monitoring_signoff_cases",
+      "path": "validation/v1/metals_monitoring_signoff_cases.json"
+    },
+    {
+      "name": "metals_monitoring_review_dossier_cases",
+      "path": "validation/v1/metals_monitoring_review_dossier_cases.json"
+    },
+    {
+      "name": "interoperability_profiles",
+      "path": "validation/v1/interoperability_profiles.json"
+    },
+    {
+      "name": "interoperability_preview_cases",
+      "path": "validation/v1/interoperability_preview_cases.json"
+    },
+    {
+      "name": "interoperability_readiness_profiles",
+      "path": "validation/v1/interoperability_readiness_profiles.json"
+    },
+    {
+      "name": "interoperability_rules",
+      "path": "validation/v1/interoperability_rules.json"
+    },
+    {
+      "name": "interoperability_readiness_cases",
+      "path": "validation/v1/interoperability_readiness_cases.json"
+    },
+    {
+      "name": "interoperability_remediation_actions",
+      "path": "validation/v1/interoperability_remediation_actions.json"
+    },
+    {
+      "name": "interoperability_remediation_cases",
+      "path": "validation/v1/interoperability_remediation_cases.json"
+    },
+    {
+      "name": "interoperability_signoff_cases",
+      "path": "validation/v1/interoperability_signoff_cases.json"
+    },
+    {
+      "name": "sanitisation_rules",
+      "path": "validation/v1/sanitisation_rules.json"
+    },
+    {
+      "name": "review_dossier_readiness_cases",
+      "path": "validation/v1/review_dossier_readiness_cases.json"
+    },
+    {
+      "name": "scientific_follow_up_queue_bundle_cases",
+      "path": "validation/v1/scientific_follow_up_queue_bundle_cases.json"
+    },
+    {
+      "name": "scientific_follow_up_review_board_cases",
+      "path": "validation/v1/scientific_follow_up_review_board_cases.json"
+    },
+    {
+      "name": "scientific_follow_up_owner_handoff_cases",
+      "path": "validation/v1/scientific_follow_up_owner_handoff_cases.json"
+    },
+    {
+      "name": "scientific_follow_up_owner_remediation_cases",
+      "path": "validation/v1/scientific_follow_up_owner_remediation_cases.json"
+    },
+    {
+      "name": "scientific_follow_up_owner_signoff_cases",
+      "path": "validation/v1/scientific_follow_up_owner_signoff_cases.json"
+    },
+    {
+      "name": "scientific_follow_up_owner_signoff_dossier_cases",
+      "path": "validation/v1/scientific_follow_up_owner_signoff_dossier_cases.json"
+    },
+    {
+      "name": "sanitised_public_review_cases",
+      "path": "validation/v1/sanitised_public_review_cases.json"
+    }
+  ],
+  "knownLimitations": [
+    "No direct-use oral workflows.",
+    "No generic environmental-media ingestion.",
+    "No hidden probabilistic population engine in v0.1.",
+    "No final regulatory decision semantics."
+  ]
+}

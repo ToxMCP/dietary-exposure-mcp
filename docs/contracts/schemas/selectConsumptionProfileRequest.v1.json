@@ -1,0 +1,53 @@
+{
+  "$defs": {
+    "IntakeWindowSemantic": {
+      "enum": [
+        "acute",
+        "chronic"
+      ],
+      "title": "IntakeWindowSemantic",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "region_id": {
+      "default": "eu_screening_default",
+      "title": "Region Id",
+      "type": "string"
+    },
+    "population_group": {
+      "title": "Population Group",
+      "type": "string"
+    },
+    "intake_window": {
+      "$ref": "#/$defs/IntakeWindowSemantic"
+    },
+    "required_commodity_codes": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 2000,
+      "title": "Required Commodity Codes",
+      "type": "array"
+    },
+    "preferred_profile_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Preferred Profile Id"
+    }
+  },
+  "required": [
+    "population_group",
+    "intake_window"
+  ],
+  "title": "SelectConsumptionProfileRequest",
+  "type": "object"
+}

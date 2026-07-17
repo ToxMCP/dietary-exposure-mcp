@@ -1,0 +1,342 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "consumption_datasets",
+  "datasets": [
+    {
+      "datasetId": "efsa.comprehensive_food_consumption_db",
+      "displayName": "EFSA Comprehensive European Food Consumption Database",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "datasetKind": "individual_food_consumption_database",
+      "maturityStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "dataset_current",
+      "sourceIds": [
+        "efsa.food_consumption.data"
+      ],
+      "methodIds": [
+        "efsa.primo.3_1_application",
+        "efsa.primo.4_transition_report"
+      ],
+      "compatibleModelFamilies": [
+        "reference_dietary",
+        "efsa_primo_adapter"
+      ],
+      "notes": [
+        "Governed metadata entry for the EFSA food-consumption infrastructure used to support EU dietary exposure workflows.",
+        "This registry entry does not redistribute the underlying proprietary or access-controlled survey extracts."
+      ]
+    },
+    {
+      "datasetId": "efsa.dietex_support",
+      "displayName": "EFSA DietEx dietary exposure support metadata",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "datasetKind": "exposure_tool_support_metadata",
+      "maturityStatus": "transitional",
+      "submissionUse": "review_required",
+      "documentStatus": "tool_metadata",
+      "sourceIds": [
+        "efsa.dietex",
+        "efsa.food_consumption.data"
+      ],
+      "methodIds": [
+        "efsa.primo.4_transition_report"
+      ],
+      "compatibleModelFamilies": [
+        "reference_dietary"
+      ],
+      "notes": [
+        "Governed metadata entry for DietEx as exposure-support tooling around EFSA food-consumption infrastructure.",
+        "DietEx is represented separately from PRIMo and is not treated as a submission engine in Dietary MCP."
+      ]
+    },
+    {
+      "datasetId": "who.gems_food_cluster_diets_2012",
+      "displayName": "WHO GEMS/Food Cluster Diets 2012",
+      "authority": "WHO",
+      "jurisdiction": "global",
+      "contaminantFamily": "pesticide_residue",
+      "datasetKind": "cluster_diet_dataset",
+      "maturityStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "dataset_current",
+      "sourceIds": [
+        "who.gems.food.cluster_diets.2012"
+      ],
+      "methodIds": [
+        "jmpr.iedi_iesti"
+      ],
+      "compatibleModelFamilies": [
+        "reference_dietary"
+      ],
+      "notes": [
+        "Governed metadata for chronic general-population cluster diets used in JMPR and related global screening contexts.",
+        "Not suitable for children-specific or shorter-than-lifetime exposure assessment."
+      ]
+    },
+    {
+      "datasetId": "efsa.eu_menu_programme",
+      "displayName": "EFSA EU Menu standardised survey programme metadata",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "datasetKind": "survey_programme_metadata",
+      "maturityStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "dataset_current",
+      "sourceIds": [
+        "efsa.food_consumption.data",
+        "efsa.eu_menu.programme"
+      ],
+      "methodIds": [
+        "efsa.primo.3_1_application",
+        "efsa.primo.4_transition_report"
+      ],
+      "compatibleModelFamilies": [
+        "reference_dietary",
+        "efsa_primo_adapter"
+      ],
+      "notes": [
+        "Governed programme-level metadata for EFSA's EU Menu effort to standardise food consumption data collection across Member States.",
+        "This entry complements the Comprehensive Database registry record and does not redistribute raw survey files."
+      ]
+    },
+    {
+      "datasetId": "efsa.comprehensive_food_consumption_db.pfas_support",
+      "displayName": "EFSA Comprehensive Food Consumption Database PFAS support metadata",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pfas_food_contaminants",
+      "datasetKind": "individual_food_consumption_database",
+      "maturityStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "dataset_current",
+      "sourceIds": [
+        "efsa.food_consumption.data",
+        "efsa.pfas.topic.2026"
+      ],
+      "methodIds": [
+        "efsa.pfas.food.2020_opinion",
+        "ec.pfas.monitoring.2022_2025"
+      ],
+      "compatibleModelFamilies": [
+        "reference_dietary"
+      ],
+      "notes": [
+        "Governed metadata entry showing that EFSA food-consumption infrastructure is part of the review context for PFAS dietary exposure in food.",
+        "This is provenance and configuration support only; Dietary MCP does not publish a native PFAS submission engine in v0.1."
+      ]
+    },
+    {
+      "datasetId": "ec.pfas_food_monitoring_2022_2025",
+      "displayName": "EC PFAS in food monitoring programme metadata 2022-2025",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pfas_food_contaminants",
+      "datasetKind": "occurrence_monitoring_programme_metadata",
+      "maturityStatus": "transitional",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "eu.reco.2022_1431",
+        "efsa.pfas.topic.2026"
+      ],
+      "methodIds": [
+        "ec.pfas.monitoring.2022_2025"
+      ],
+      "compatibleModelFamilies": [],
+      "notes": [
+        "Governed metadata for the Commission recommendation to monitor PFAS in food from 2022 to 2025.",
+        "Published as monitoring-programme context rather than as a public occurrence dataset extract."
+      ]
+    },
+    {
+      "datasetId": "efsa.comprehensive_food_consumption_db.acrylamide_support",
+      "displayName": "EFSA Comprehensive Food Consumption Database acrylamide support metadata",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "acrylamide_process_contaminants",
+      "datasetKind": "individual_food_consumption_database",
+      "maturityStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "dataset_current",
+      "sourceIds": [
+        "efsa.food_consumption.data",
+        "efsa.acrylamide.food.2015"
+      ],
+      "methodIds": [
+        "efsa.acrylamide.food.2015_opinion",
+        "eu.acrylamide.mitigation.2017",
+        "eu.acrylamide.monitoring.2019"
+      ],
+      "compatibleModelFamilies": [
+        "reference_dietary"
+      ],
+      "notes": [
+        "Governed metadata entry showing that EFSA food-consumption infrastructure is part of the review context for dietary acrylamide exposure.",
+        "This is provenance and configuration support only; Dietary MCP does not publish a native acrylamide submission engine in v0.1."
+      ]
+    },
+    {
+      "datasetId": "eu.acrylamide_food_monitoring_2019",
+      "displayName": "EU acrylamide in food monitoring programme metadata 2019 onward",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminantFamily": "acrylamide_process_contaminants",
+      "datasetKind": "occurrence_monitoring_programme_metadata",
+      "maturityStatus": "transitional",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "eu.reco.2019_1888",
+        "efsa.acrylamide.food.2015"
+      ],
+      "methodIds": [
+        "eu.acrylamide.monitoring.2019"
+      ],
+      "compatibleModelFamilies": [],
+      "notes": [
+        "Governed metadata for EU monitoring of acrylamide in certain foods and transmission of data to EFSA.",
+        "Published as monitoring-programme context rather than as a public occurrence dataset extract."
+      ]
+    },
+    {
+      "datasetId": "efsa.comprehensive_food_consumption_db.bpa_support",
+      "displayName": "EFSA Comprehensive Food Consumption Database BPA support metadata",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "bisphenol_food_contact_migration",
+      "datasetKind": "individual_food_consumption_database",
+      "maturityStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "dataset_current",
+      "sourceIds": [
+        "efsa.food_consumption.data",
+        "efsa.bpa.food.2023",
+        "efsa.bisphenol.topic.2026"
+      ],
+      "methodIds": [
+        "efsa.bpa.food.2023_opinion",
+        "eu.bpa.fcm.2024_3190"
+      ],
+      "compatibleModelFamilies": [
+        "reference_dietary"
+      ],
+      "notes": [
+        "Governed metadata entry showing that EFSA food-consumption infrastructure forms part of the dietary context for BPA exposure in foodstuffs.",
+        "This is provenance and dietary-context support only; Dietary MCP does not publish a native food-contact migration engine in v0.1."
+      ]
+    },
+    {
+      "datasetId": "efsa.comprehensive_food_consumption_db.cadmium_support",
+      "displayName": "EFSA Comprehensive Food Consumption Database cadmium support metadata",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "cadmium_food_contaminants",
+      "datasetKind": "individual_food_consumption_database",
+      "maturityStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "dataset_current",
+      "sourceIds": [
+        "efsa.food_consumption.data",
+        "efsa.cadmium.exposure.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "methodIds": [
+        "efsa.cadmium.food.2009_opinion",
+        "efsa.cadmium.exposure.2012_report"
+      ],
+      "compatibleModelFamilies": [
+        "reference_dietary"
+      ],
+      "notes": [
+        "Governed metadata entry showing that EFSA food-consumption infrastructure forms part of the dietary exposure context for cadmium in food.",
+        "This is provenance and dietary-context support only; Dietary MCP does not publish a native cadmium submission engine in v0.1."
+      ]
+    },
+    {
+      "datasetId": "efsa.comprehensive_food_consumption_db.lead_support",
+      "displayName": "EFSA Comprehensive Food Consumption Database lead support metadata",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "lead_food_contaminants",
+      "datasetKind": "individual_food_consumption_database",
+      "maturityStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "dataset_current",
+      "sourceIds": [
+        "efsa.food_consumption.data",
+        "efsa.lead.exposure.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "methodIds": [
+        "efsa.lead.food.2010_opinion",
+        "efsa.lead.exposure.2012_report"
+      ],
+      "compatibleModelFamilies": [
+        "reference_dietary"
+      ],
+      "notes": [
+        "Governed metadata entry showing that EFSA food-consumption infrastructure forms part of the dietary exposure context for lead in food.",
+        "This is provenance and dietary-context support only; Dietary MCP does not publish a native lead submission engine in v0.1."
+      ]
+    },
+    {
+      "datasetId": "efsa.comprehensive_food_consumption_db.inorganic_arsenic_support",
+      "displayName": "EFSA Comprehensive Food Consumption Database inorganic arsenic support metadata",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "datasetKind": "individual_food_consumption_database",
+      "maturityStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "dataset_current",
+      "sourceIds": [
+        "efsa.food_consumption.data",
+        "efsa.inorganic_arsenic.exposure.2021",
+        "efsa.metals.topic.2026"
+      ],
+      "methodIds": [
+        "efsa.inorganic_arsenic.food.2024_opinion",
+        "efsa.inorganic_arsenic.exposure.2021_report"
+      ],
+      "compatibleModelFamilies": [
+        "reference_dietary"
+      ],
+      "notes": [
+        "Governed metadata entry showing that EFSA food-consumption infrastructure forms part of the dietary exposure context for inorganic arsenic in food.",
+        "This is provenance and dietary-context support only; Dietary MCP does not publish a native inorganic-arsenic submission engine in v0.1."
+      ]
+    },
+    {
+      "datasetId": "efsa.comprehensive_food_consumption_db.mercury_support",
+      "displayName": "EFSA Comprehensive Food Consumption Database mercury support metadata",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "mercury_food_contaminants",
+      "datasetKind": "individual_food_consumption_database",
+      "maturityStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "dataset_current",
+      "sourceIds": [
+        "efsa.food_consumption.data",
+        "efsa.mercury.food.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "methodIds": [
+        "efsa.mercury.food.2012_opinion",
+        "eu.mercury.official_control.333_2007"
+      ],
+      "compatibleModelFamilies": [
+        "reference_dietary"
+      ],
+      "notes": [
+        "Governed metadata entry showing that EFSA food-consumption infrastructure forms part of the dietary exposure context for mercury in food.",
+        "This is provenance and dietary-context support only; Dietary MCP does not publish a native mercury submission engine in v0.1."
+      ]
+    }
+  ]
+}

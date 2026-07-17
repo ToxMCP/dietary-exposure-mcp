@@ -1,0 +1,66 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "source_catalog",
+  "validationProfile": "official_primary_wave2",
+  "sources": [
+    {
+      "sourceId": "us.fda.inorganic_arsenic.apple_juice.guidance.2023",
+      "title": "Guidance for Industry: Action Level for Inorganic Arsenic in Apple Juice",
+      "organization": "US FDA",
+      "kind": "official_regulatory_guidance",
+      "jurisdiction": "us",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2023-06-01",
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-action-level-inorganic-arsenic-apple-juice",
+      "originTag": "official_regulatory",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official final FDA guidance establishing a 10 ppb action level for inorganic arsenic in apple juice."
+      ]
+    },
+    {
+      "sourceId": "us.fda.methylmercury.fish.cpg_540_600.2007",
+      "title": "CPG Sec. 540.600 Fish, Shellfish, Crustaceans and other Aquatic Animals - Fresh, Frozen or Processed - Methyl Mercury",
+      "organization": "US FDA",
+      "kind": "official_regulatory_guidance",
+      "jurisdiction": "us",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2007-02-01",
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cpg-sec-540600-fish-shellfish-crustaceans-and-other-aquatic-animals-fresh-frozen-or-processed-methyl",
+      "originTag": "official_regulatory",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official final FDA compliance policy guide for methyl mercury in fish, shellfish, crustaceans, and other aquatic animals.",
+        "The guidance identifies methyl mercury expressed as mercury in excess of 1 ppm in the edible portion only."
+      ]
+    },
+    {
+      "sourceId": "cn.cfsa.gb2762.2025.standard_text",
+      "title": "National Food Safety Standard - Maximum Levels of Contaminants in Foods (GB 2762-2025) official standard text",
+      "organization": "China National Center for Food Safety Risk Assessment",
+      "kind": "official_regulatory_standard",
+      "jurisdiction": "cn",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2026-09-02",
+      "url": "https://sppt.cfsa.net.cn:8086/db",
+      "originTag": "official_regulatory",
+      "submissionUse": "allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official GB 2762-2025 standard text verified from the CFSA standards platform.",
+        "Verified against standards-platform record ID 481961F1-55FC-48B3-88A4-F86866B041FF and attachment 1757765652579.pdf."
+      ]
+    }
+  ]
+}

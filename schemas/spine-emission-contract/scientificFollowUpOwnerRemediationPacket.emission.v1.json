@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.ngra.ai/dietary-exposure/emission/scientificFollowUpOwnerRemediationPacket.v1.json",
+  "title": "scientificFollowUpOwnerRemediationPacket (producer strict emission contract)",
+  "description": "Tightened additionalProperties:false mirror of the real DietaryRuntime.export_scientific_follow_up_owner_remediation_packet emission (by_alias=True). The packet_note operator input is appended verbatim into notes[]; the projection deep-scans notes[] for FREE_TEXT_OVERCLAIM. Field set recon'd from the real producer chain.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "overallStatus",
+    "ownerLane",
+    "sourceHandoffPacketId",
+    "sourceBoardId",
+    "sourceBundleId",
+    "sourceDossierId",
+    "sourceWorkflow",
+    "documentationResourceUri"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "packet_id": { "type": "string" },
+    "overallStatus": { "type": "string", "minLength": 1 },
+    "targetProfile": { "type": "object" },
+    "sourceHandoffPacketId": { "type": "string", "minLength": 1 },
+    "sourceBoardId": { "type": "string", "minLength": 1 },
+    "sourceBundleId": { "type": "string", "minLength": 1 },
+    "sourceDossierId": { "type": "string", "minLength": 1 },
+    "sourceDossierStatus": { "type": "string" },
+    "sourceWorkflow": { "type": "string", "minLength": 1 },
+    "bundleProfile": { "type": "string" },
+    "ownerLane": { "type": "string", "minLength": 1 },
+    "legalLimitReviews": { "type": "array" },
+    "dueStateFilter": { "type": "array" },
+    "actionItems": { "type": "array" },
+    "remediationClassGroups": { "type": "array" },
+    "actionCount": { "type": "integer", "minimum": 0 },
+    "blockingActionCount": { "type": "integer", "minimum": 0 },
+    "resolveNowActionIds": { "type": "array" },
+    "reviewThisCycleActionIds": { "type": "array" },
+    "trackInProgressActionIds": { "type": "array" },
+    "recordClosureActionIds": { "type": "array" },
+    "recommendedRemediationSequence": { "type": "array" },
+    "documentationResourceUri": { "type": "string", "minLength": 1 },
+    "referencedResources": { "type": "array" },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

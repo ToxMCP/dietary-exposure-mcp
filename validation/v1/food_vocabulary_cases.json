@@ -1,0 +1,29 @@
+{
+  "version": "v1",
+  "cases": [
+    {
+      "name": "apples_base_mapping",
+      "inputCode": "apples",
+      "expectedCommodityCode": "apples",
+      "expectedFoodex2Code": "EXAMPLE_FDX2_APPLES_RAW",
+      "expectedProcessedStatus": "raw_primary_commodity",
+      "expectedProcessingFactor": 1.0
+    },
+    {
+      "name": "apple_juice_processed_mapping",
+      "inputCode": "apple_juice",
+      "expectedCommodityCode": "apples",
+      "expectedFoodex2Code": "EXAMPLE_FDX2_APPLE_JUICE",
+      "expectedProcessedStatus": "processed_derivative",
+      "expectedProcessingFactor": 0.65
+    },
+    {
+      "name": "yogurt_processed_mapping",
+      "inputCode": "yogurt",
+      "expectedCommodityCode": "milk",
+      "expectedFoodex2Code": "EXAMPLE_FDX2_YOGURT",
+      "expectedProcessedStatus": "processed_derivative",
+      "expectedProcessingFactor": 1.2
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "version": "v1",
+  "cases": [
+    {
+      "name": "internal_exchange_signoff_open_pending_actions",
+      "scenario": "efsa_primo",
+      "targetProfile": "eu_internal_exchange_preview",
+      "decisions": [],
+      "expectedOverallSignoffStatus": "open",
+      "expectedPendingActionIds": [
+        "upgrade_linked_dossier_readiness",
+        "review_unsupported_preview_fields",
+        "replace_non_direct_mappings"
+      ],
+      "expectedAcknowledgedActionIds": [],
+      "expectedCompletedActionIds": [],
+      "expectedWaivedActionIds": [],
+      "expectedUnresolvedBlockingActionIds": []
+    },
+    {
+      "name": "internal_exchange_signoff_with_waiver",
+      "scenario": "efsa_primo",
+      "targetProfile": "eu_internal_exchange_preview",
+      "decisions": [
+        {
+          "actionId": "upgrade_linked_dossier_readiness",
+          "decisionStatus": "waived",
+          "rationale": "Example internal exchange accepts this governed limitation with explicit reviewer waiver.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://regulatory-governance"
+          ]
+        },
+        {
+          "actionId": "review_unsupported_preview_fields",
+          "decisionStatus": "completed",
+          "rationale": "Unsupported diagnostics were reviewed and retained in MCP-only review materials.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://interoperability-preview"
+          ]
+        },
+        {
+          "actionId": "replace_non_direct_mappings",
+          "decisionStatus": "completed",
+          "rationale": "Derived mappings were accepted as preview-only mappings for this controlled validation case.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://interoperability-readiness"
+          ]
+        }
+      ],
+      "expectedOverallSignoffStatus": "signed_off_with_waivers",
+      "expectedPendingActionIds": [],
+      "expectedAcknowledgedActionIds": [],
+      "expectedCompletedActionIds": [
+        "review_unsupported_preview_fields",
+        "replace_non_direct_mappings"
+      ],
+      "expectedWaivedActionIds": [
+        "upgrade_linked_dossier_readiness"
+      ],
+      "expectedUnresolvedBlockingActionIds": []
+    },
+    {
+      "name": "submission_candidate_signoff_open_due_unresolved_blocking",
+      "scenario": "efsa_primo",
+      "targetProfile": "eu_submission_xml_candidate",
+      "decisions": [
+        {
+          "actionId": "upgrade_linked_dossier_readiness",
+          "decisionStatus": "acknowledged",
+          "rationale": "Blocking dossier-readiness issue acknowledged but not yet resolved.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://regulatory-governance"
+          ]
+        }
+      ],
+      "expectedOverallSignoffStatus": "open",
+      "expectedPendingActionIds": [
+        "review_unsupported_preview_fields",
+        "replace_non_direct_mappings"
+      ],
+      "expectedAcknowledgedActionIds": [
+        "upgrade_linked_dossier_readiness"
+      ],
+      "expectedCompletedActionIds": [],
+      "expectedWaivedActionIds": [],
+      "expectedUnresolvedBlockingActionIds": [
+        "upgrade_linked_dossier_readiness",
+        "review_unsupported_preview_fields",
+        "replace_non_direct_mappings"
+      ]
+    }
+  ]
+}

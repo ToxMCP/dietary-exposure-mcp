@@ -1,0 +1,309 @@
+{
+  "schema_version": "v1",
+  "profile_id": "residue-profile-f331cbf18ad9",
+  "chemical_identity": {
+    "preferredName": "Illustrative residue",
+    "casrn": "100-00-0"
+  },
+  "region_id": "eu_screening_default",
+  "records": [
+    {
+      "schema_version": "v1",
+      "record_id": "residue-1b1499402b3a",
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "apples",
+        "canonical_name": "Apples",
+        "food_group": "fruit",
+        "mapping_status": "curated",
+        "foodex2_code": "EXAMPLE_FDX2_APPLES_RAW",
+        "rpc_code": "EXAMPLE_RPC_APPLES",
+        "rpcd_code": "EXAMPLE_RPCD_APPLES_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "apple",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "origin_tag": "illustrative_placeholder"
+        }
+      },
+      "residue_concentration_mg_per_kg": 0.15,
+      "lower_bound_mg_per_kg": 0.12,
+      "upper_bound_mg_per_kg": 0.2,
+      "residue_unit": "mg/kg",
+      "source_type": "monitoring",
+      "processing_factor": 1.0,
+      "processing_factor_source_classification": "curated_default",
+      "processing_factor_source_reference": {
+        "source_id": "dietary.taxonomy.apples",
+        "title": "Dietary MCP commodity taxonomy entry for apples",
+        "effective_date": null,
+        "url": "defaults://manifest",
+        "origin_tag": "curated_derived"
+      },
+      "region_id": "eu_screening_default",
+      "time_context": null,
+      "review_status": "reviewed",
+      "source_reference": {
+        "source_id": "example.apple.monitoring",
+        "title": "Illustrative apple monitoring record",
+        "effective_date": "2026-04-08",
+        "url": null,
+        "origin_tag": null
+      },
+      "provenance": {
+        "schema_version": "v1",
+        "defaults_version": "v1",
+        "algorithm_version": "reference-dietary-intake-0.1.0",
+        "generated_at": "2026-06-12T19:55:57.574868Z",
+        "source_references": [
+          {
+            "source_id": "example.apple.monitoring",
+            "title": "Illustrative apple monitoring record",
+            "effective_date": "2026-04-08",
+            "url": null,
+            "origin_tag": null
+          },
+          {
+            "source_id": "dietary.food_vocab.crosswalk",
+            "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+            "effective_date": "2026-04-10",
+            "url": "docs://food-vocabulary-crosswalk",
+            "origin_tag": "illustrative_placeholder"
+          }
+        ]
+      },
+      "quality_flags": [],
+      "limitations": []
+    },
+    {
+      "schema_version": "v1",
+      "record_id": "residue-02410399e6d7",
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "spinach",
+        "canonical_name": "Spinach",
+        "food_group": "vegetable",
+        "mapping_status": "curated",
+        "foodex2_code": "EXAMPLE_FDX2_SPINACH_RAW",
+        "rpc_code": "EXAMPLE_RPC_SPINACH",
+        "rpcd_code": "EXAMPLE_RPCD_SPINACH_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "spinach",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "origin_tag": "illustrative_placeholder"
+        }
+      },
+      "residue_concentration_mg_per_kg": 0.05,
+      "lower_bound_mg_per_kg": 0.03,
+      "upper_bound_mg_per_kg": 0.08,
+      "residue_unit": "mg/kg",
+      "source_type": "modeled",
+      "processing_factor": 0.85,
+      "processing_factor_source_classification": "user_input",
+      "processing_factor_source_reference": {
+        "source_id": "example.spinach.modeled",
+        "title": "Illustrative spinach modeled record",
+        "effective_date": "2026-04-08",
+        "url": null,
+        "origin_tag": null
+      },
+      "region_id": "eu_screening_default",
+      "time_context": null,
+      "review_status": "reviewed",
+      "source_reference": {
+        "source_id": "example.spinach.modeled",
+        "title": "Illustrative spinach modeled record",
+        "effective_date": "2026-04-08",
+        "url": null,
+        "origin_tag": null
+      },
+      "provenance": {
+        "schema_version": "v1",
+        "defaults_version": "v1",
+        "algorithm_version": "reference-dietary-intake-0.1.0",
+        "generated_at": "2026-06-12T19:55:57.575300Z",
+        "source_references": [
+          {
+            "source_id": "example.spinach.modeled",
+            "title": "Illustrative spinach modeled record",
+            "effective_date": "2026-04-08",
+            "url": null,
+            "origin_tag": null
+          },
+          {
+            "source_id": "dietary.food_vocab.crosswalk",
+            "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+            "effective_date": "2026-04-10",
+            "url": "docs://food-vocabulary-crosswalk",
+            "origin_tag": "illustrative_placeholder"
+          }
+        ]
+      },
+      "quality_flags": [],
+      "limitations": []
+    },
+    {
+      "schema_version": "v1",
+      "record_id": "residue-476ea58da141",
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "rice",
+        "canonical_name": "Rice",
+        "food_group": "grain",
+        "mapping_status": "reviewed",
+        "foodex2_code": "EXAMPLE_FDX2_RICE_RAW",
+        "rpc_code": "EXAMPLE_RPC_RICE",
+        "rpcd_code": "EXAMPLE_RPCD_RICE_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "rice",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "origin_tag": "illustrative_placeholder"
+        }
+      },
+      "residue_concentration_mg_per_kg": 0.02,
+      "lower_bound_mg_per_kg": null,
+      "upper_bound_mg_per_kg": null,
+      "residue_unit": "mg/kg",
+      "source_type": "user_supplied",
+      "processing_factor": 1.0,
+      "processing_factor_source_classification": "curated_default",
+      "processing_factor_source_reference": {
+        "source_id": "dietary.taxonomy.rice",
+        "title": "Dietary MCP commodity taxonomy entry for rice",
+        "effective_date": null,
+        "url": "defaults://manifest",
+        "origin_tag": "curated_derived"
+      },
+      "region_id": "eu_screening_default",
+      "time_context": null,
+      "review_status": "reviewed",
+      "source_reference": {
+        "source_id": "example.rice.user",
+        "title": "Illustrative rice residue input",
+        "effective_date": "2026-04-08",
+        "url": null,
+        "origin_tag": null
+      },
+      "provenance": {
+        "schema_version": "v1",
+        "defaults_version": "v1",
+        "algorithm_version": "reference-dietary-intake-0.1.0",
+        "generated_at": "2026-06-12T19:55:57.575409Z",
+        "source_references": [
+          {
+            "source_id": "example.rice.user",
+            "title": "Illustrative rice residue input",
+            "effective_date": "2026-04-08",
+            "url": null,
+            "origin_tag": null
+          },
+          {
+            "source_id": "dietary.food_vocab.crosswalk",
+            "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+            "effective_date": "2026-04-10",
+            "url": "docs://food-vocabulary-crosswalk",
+            "origin_tag": "illustrative_placeholder"
+          }
+        ]
+      },
+      "quality_flags": [],
+      "limitations": []
+    }
+  ],
+  "provenance": {
+    "schema_version": "v1",
+    "defaults_version": "v1",
+    "algorithm_version": "reference-dietary-intake-0.1.0",
+    "generated_at": "2026-06-12T19:55:57.575449Z",
+    "source_references": [
+      {
+        "source_id": "example.apple.monitoring",
+        "title": "Illustrative apple monitoring record",
+        "effective_date": "2026-04-08",
+        "url": null,
+        "origin_tag": null
+      },
+      {
+        "source_id": "dietary.food_vocab.crosswalk",
+        "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+        "effective_date": "2026-04-10",
+        "url": "docs://food-vocabulary-crosswalk",
+        "origin_tag": "illustrative_placeholder"
+      },
+      {
+        "source_id": "dietary.taxonomy.apples",
+        "title": "Dietary MCP commodity taxonomy entry for apples",
+        "effective_date": null,
+        "url": "defaults://manifest",
+        "origin_tag": "curated_derived"
+      },
+      {
+        "source_id": "example.spinach.modeled",
+        "title": "Illustrative spinach modeled record",
+        "effective_date": "2026-04-08",
+        "url": null,
+        "origin_tag": null
+      },
+      {
+        "source_id": "dietary.food_vocab.crosswalk",
+        "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+        "effective_date": "2026-04-10",
+        "url": "docs://food-vocabulary-crosswalk",
+        "origin_tag": "illustrative_placeholder"
+      },
+      {
+        "source_id": "example.spinach.modeled",
+        "title": "Illustrative spinach modeled record",
+        "effective_date": "2026-04-08",
+        "url": null,
+        "origin_tag": null
+      },
+      {
+        "source_id": "example.rice.user",
+        "title": "Illustrative rice residue input",
+        "effective_date": "2026-04-08",
+        "url": null,
+        "origin_tag": null
+      },
+      {
+        "source_id": "dietary.food_vocab.crosswalk",
+        "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+        "effective_date": "2026-04-10",
+        "url": "docs://food-vocabulary-crosswalk",
+        "origin_tag": "illustrative_placeholder"
+      },
+      {
+        "source_id": "dietary.taxonomy.rice",
+        "title": "Dietary MCP commodity taxonomy entry for rice",
+        "effective_date": null,
+        "url": "defaults://manifest",
+        "origin_tag": "curated_derived"
+      }
+    ]
+  },
+  "quality_flags": [],
+  "limitations": [
+    {
+      "code": "default_processing_factor_applied",
+      "message": "Default processing factor was applied to Apples."
+    },
+    {
+      "code": "default_processing_factor_applied",
+      "message": "Default processing factor was applied to Rice."
+    }
+  ]
+}

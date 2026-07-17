@@ -1,0 +1,44 @@
+{
+  "version": "v1",
+  "profiles": [
+    {
+      "profileId": "eu_internal_exchange_preview",
+      "displayName": "EU internal exchange preview",
+      "jurisdiction": "eu",
+      "intendedUse": "Internal exchange of a staged OHT/IUCLID-aligned JSON preview for review workflows.",
+      "allowedPreviewProfiles": [
+        "oht_85_iuclid_json_preview"
+      ],
+      "requiredDossierReadinessProfile": "eu_internal_review",
+      "notes": [
+        "Unsupported fields and derived mappings remain review items rather than blockers for internal exchange."
+      ]
+    },
+    {
+      "profileId": "eu_consultation_exchange_preview",
+      "displayName": "EU consultation exchange preview",
+      "jurisdiction": "eu",
+      "intendedUse": "Consultation-oriented exchange of a staged OHT/IUCLID-aligned JSON preview.",
+      "allowedPreviewProfiles": [
+        "oht_85_iuclid_json_preview"
+      ],
+      "requiredDossierReadinessProfile": "eu_consultation_exploratory",
+      "notes": [
+        "Consultation-oriented exchange may proceed only as a staged JSON preview and not as a submission-capable package."
+      ]
+    },
+    {
+      "profileId": "eu_submission_xml_candidate",
+      "displayName": "EU submission XML candidate",
+      "jurisdiction": "eu",
+      "intendedUse": "Pre-XML staging gate for a future EU submission-capable export pathway.",
+      "allowedPreviewProfiles": [
+        "oht_85_iuclid_json_preview"
+      ],
+      "requiredDossierReadinessProfile": "eu_submission_candidate",
+      "notes": [
+        "This profile is intentionally strict and is expected to fail for current model families until a submission-capable engine and direct mappings exist."
+      ]
+    }
+  ]
+}

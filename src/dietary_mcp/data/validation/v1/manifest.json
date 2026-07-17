@@ -1,0 +1,157 @@
+{
+  "version": "v1",
+  "artifacts": [
+    {
+      "name": "benchmark_cases",
+      "path": "validation/v1/benchmark_cases.json"
+    },
+    {
+      "name": "dietary_reference_cases",
+      "path": "validation/v1/dietary_reference_cases.json"
+    },
+    {
+      "name": "commodity_mapping_gap_report",
+      "path": "validation/v1/commodity_mapping_gap_report.json"
+    },
+    {
+      "name": "adapter_normalization_cases",
+      "path": "validation/v1/adapter_normalization_cases.json"
+    },
+    {
+      "name": "food_vocabulary_cases",
+      "path": "validation/v1/food_vocabulary_cases.json"
+    },
+    {
+      "name": "regulatory_rules",
+      "path": "validation/v1/regulatory_rules.json"
+    },
+    {
+      "name": "source_database_cases",
+      "path": "validation/v1/source_database_cases.json"
+    },
+    {
+      "name": "survey_distribution_summary_cases",
+      "path": "validation/v1/survey_distribution_summary_cases.json"
+    },
+    {
+      "name": "probabilistic_intake_summary_cases",
+      "path": "validation/v1/probabilistic_intake_summary_cases.json"
+    },
+    {
+      "name": "uncertainty_intake_assessment_cases",
+      "path": "validation/v1/uncertainty_intake_assessment_cases.json"
+    },
+    {
+      "name": "censored_residue_policy_cases",
+      "path": "validation/v1/censored_residue_policy_cases.json"
+    },
+    {
+      "name": "uncertainty_sensitivity_cases",
+      "path": "validation/v1/uncertainty_sensitivity_cases.json"
+    },
+    {
+      "name": "health_reference_exceedance_cases",
+      "path": "validation/v1/health_reference_exceedance_cases.json"
+    },
+    {
+      "name": "uncertainty_reproducibility_cases",
+      "path": "validation/v1/uncertainty_reproducibility_cases.json"
+    },
+    {
+      "name": "contaminant_monitoring_check_cases",
+      "path": "validation/v1/contaminant_monitoring_check_cases.json"
+    },
+    {
+      "name": "contaminant_monitoring_bundle_cases",
+      "path": "validation/v1/contaminant_monitoring_bundle_cases.json"
+    },
+    {
+      "name": "contaminant_monitoring_signoff_cases",
+      "path": "validation/v1/contaminant_monitoring_signoff_cases.json"
+    },
+    {
+      "name": "contaminant_monitoring_review_dossier_cases",
+      "path": "validation/v1/contaminant_monitoring_review_dossier_cases.json"
+    },
+    {
+      "name": "metals_monitoring_bundle_cases",
+      "path": "validation/v1/metals_monitoring_bundle_cases.json"
+    },
+    {
+      "name": "metals_monitoring_signoff_cases",
+      "path": "validation/v1/metals_monitoring_signoff_cases.json"
+    },
+    {
+      "name": "metals_monitoring_review_dossier_cases",
+      "path": "validation/v1/metals_monitoring_review_dossier_cases.json"
+    },
+    {
+      "name": "interoperability_profiles",
+      "path": "validation/v1/interoperability_profiles.json"
+    },
+    {
+      "name": "interoperability_preview_cases",
+      "path": "validation/v1/interoperability_preview_cases.json"
+    },
+    {
+      "name": "interoperability_readiness_profiles",
+      "path": "validation/v1/interoperability_readiness_profiles.json"
+    },
+    {
+      "name": "interoperability_rules",
+      "path": "validation/v1/interoperability_rules.json"
+    },
+    {
+      "name": "interoperability_readiness_cases",
+      "path": "validation/v1/interoperability_readiness_cases.json"
+    },
+    {
+      "name": "interoperability_remediation_actions",
+      "path": "validation/v1/interoperability_remediation_actions.json"
+    },
+    {
+      "name": "interoperability_remediation_cases",
+      "path": "validation/v1/interoperability_remediation_cases.json"
+    },
+    {
+      "name": "interoperability_signoff_cases",
+      "path": "validation/v1/interoperability_signoff_cases.json"
+    },
+    {
+      "name": "sanitisation_rules",
+      "path": "validation/v1/sanitisation_rules.json"
+    },
+    {
+      "name": "review_dossier_readiness_cases",
+      "path": "validation/v1/review_dossier_readiness_cases.json"
+    },
+    {
+      "name": "scientific_follow_up_queue_bundle_cases",
+      "path": "validation/v1/scientific_follow_up_queue_bundle_cases.json"
+    },
+    {
+      "name": "scientific_follow_up_review_board_cases",
+      "path": "validation/v1/scientific_follow_up_review_board_cases.json"
+    },
+    {
+      "name": "scientific_follow_up_owner_handoff_cases",
+      "path": "validation/v1/scientific_follow_up_owner_handoff_cases.json"
+    },
+    {
+      "name": "scientific_follow_up_owner_remediation_cases",
+      "path": "validation/v1/scientific_follow_up_owner_remediation_cases.json"
+    },
+    {
+      "name": "scientific_follow_up_owner_signoff_cases",
+      "path": "validation/v1/scientific_follow_up_owner_signoff_cases.json"
+    },
+    {
+      "name": "scientific_follow_up_owner_signoff_dossier_cases",
+      "path": "validation/v1/scientific_follow_up_owner_signoff_dossier_cases.json"
+    },
+    {
+      "name": "sanitised_public_review_cases",
+      "path": "validation/v1/sanitised_public_review_cases.json"
+    }
+  ]
+}

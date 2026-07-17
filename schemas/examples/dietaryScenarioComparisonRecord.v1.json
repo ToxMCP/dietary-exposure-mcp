@@ -1,0 +1,114 @@
+{
+  "schema_version": "v1",
+  "comparison_id": "comparison-e32e74988c5d",
+  "base_scenario_id": "dietary-scenario-ba4ecce850c5",
+  "candidate_scenario_id": "dietary-scenario-72f95d8ade45",
+  "intake_window_semantic": "chronic",
+  "base_total_intake_mg_per_kg_bw_per_day": 0.00045035714285714286,
+  "candidate_total_intake_mg_per_kg_bw_per_day": 0.003266666666666667,
+  "intake_delta_mg_per_kg_bw_per_day": 0.002816309523809524,
+  "lower_bound_delta_mg_per_kg_bw_per_day": null,
+  "upper_bound_delta_mg_per_kg_bw_per_day": null,
+  "contribution_deltas": [
+    {
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "apples",
+        "canonical_name": "Apples",
+        "food_group": "fruit",
+        "mapping_status": "curated",
+        "foodex2_code": "EXAMPLE_FDX2_APPLES_RAW",
+        "rpc_code": "EXAMPLE_RPC_APPLES",
+        "rpcd_code": "EXAMPLE_RPCD_APPLES_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "apple",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "origin_tag": "illustrative_placeholder"
+        }
+      },
+      "base_value": 0.0003857142857142857,
+      "candidate_value": 0.0028,
+      "absolute_delta": 0.0024142857142857143,
+      "relative_delta": 6.2592592592592595
+    },
+    {
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "spinach",
+        "canonical_name": "Spinach",
+        "food_group": "vegetable",
+        "mapping_status": "curated",
+        "foodex2_code": "EXAMPLE_FDX2_SPINACH_RAW",
+        "rpc_code": "EXAMPLE_RPC_SPINACH",
+        "rpcd_code": "EXAMPLE_RPCD_SPINACH_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "spinach",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "origin_tag": "illustrative_placeholder"
+        }
+      },
+      "base_value": 3.035714285714286e-05,
+      "candidate_value": 0.00022666666666666668,
+      "absolute_delta": 0.0001963095238095238,
+      "relative_delta": 6.466666666666666
+    },
+    {
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "rice",
+        "canonical_name": "Rice",
+        "food_group": "grain",
+        "mapping_status": "reviewed",
+        "foodex2_code": "EXAMPLE_FDX2_RICE_RAW",
+        "rpc_code": "EXAMPLE_RPC_RICE",
+        "rpcd_code": "EXAMPLE_RPCD_RICE_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "rice",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "origin_tag": "illustrative_placeholder"
+        }
+      },
+      "base_value": 3.4285714285714284e-05,
+      "candidate_value": 0.00024,
+      "absolute_delta": 0.00020571428571428572,
+      "relative_delta": 6.0
+    }
+  ],
+  "changed_assumptions": [
+    "consumption:eu_adult_general_v1:apples:0.18",
+    "consumption:eu_adult_general_v1:rice:0.12",
+    "consumption:eu_adult_general_v1:spinach:0.05",
+    "consumption:eu_child_screening_v1:apples:0.28",
+    "consumption:eu_child_screening_v1:rice:0.18",
+    "consumption:eu_child_screening_v1:spinach:0.08"
+  ],
+  "dominant_drivers": [
+    "apples delta=0.00241429 mg/kg-bw/day",
+    "rice delta=0.000205714 mg/kg-bw/day",
+    "spinach delta=0.00019631 mg/kg-bw/day"
+  ],
+  "provenance": {
+    "schema_version": "v1",
+    "defaults_version": "v1",
+    "algorithm_version": "reference-dietary-intake-0.1.0",
+    "generated_at": "2026-06-12T19:55:58.289985Z",
+    "source_references": []
+  },
+  "quality_flags": [],
+  "limitations": []
+}

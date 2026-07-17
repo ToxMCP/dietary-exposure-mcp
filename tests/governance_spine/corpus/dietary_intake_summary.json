@@ -1,0 +1,316 @@
+{
+  "schema_version": "v1",
+  "summary_id": "intake-summary-6da39ae3b7c1",
+  "scenario_id": "dietary-scenario-4fb539399339",
+  "scenario_class": "bounded_acute",
+  "intake_window_semantic": "acute",
+  "route": "oral",
+  "total_intake_mg_per_kg_bw_per_day": 0.0036,
+  "lower_bound_total_intake_mg_per_kg_bw_per_day": 0.0036,
+  "upper_bound_total_intake_mg_per_kg_bw_per_day": 0.0036,
+  "metric_label": "external_oral_dose_mg_per_kg_bw_per_day",
+  "population_group": "child_1_6",
+  "region_id": "eu_screening_default",
+  "body_weight_kg": 15.0,
+  "fit_for_purpose": "screening",
+  "commodity_contributions": [
+    {
+      "schema_version": "v1",
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "apples",
+        "canonical_name": "Apples",
+        "food_group": "fruit",
+        "mapping_status": "curated",
+        "foodex2_code": "EXAMPLE_FDX2_APPLES_RAW",
+        "rpc_code": "EXAMPLE_RPC_APPLES",
+        "rpcd_code": "EXAMPLE_RPCD_APPLES_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "apples",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "originTag": "illustrative_placeholder"
+        }
+      },
+      "intake_window_semantic": "acute",
+      "residue_concentration_mg_per_kg": 0.15,
+      "consumption_kg_per_day": 0.28,
+      "applied_processing_factor": 1.0,
+      "contribution_mg_per_kg_bw_per_day": 0.0028,
+      "fraction_of_total": 0.7777777777777778,
+      "lower_bound_intake_mg_per_kg_bw_per_day": 0.0028,
+      "upper_bound_intake_mg_per_kg_bw_per_day": 0.0028,
+      "quality_flags": [],
+      "limitations": []
+    },
+    {
+      "schema_version": "v1",
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "milk",
+        "canonical_name": "Milk",
+        "food_group": "dairy",
+        "mapping_status": "curated",
+        "foodex2_code": "EXAMPLE_FDX2_MILK_RAW",
+        "rpc_code": "EXAMPLE_RPC_MILK",
+        "rpcd_code": "EXAMPLE_RPCD_MILK_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "milk",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "originTag": "illustrative_placeholder"
+        }
+      },
+      "intake_window_semantic": "acute",
+      "residue_concentration_mg_per_kg": 0.03,
+      "consumption_kg_per_day": 0.4,
+      "applied_processing_factor": 1.0,
+      "contribution_mg_per_kg_bw_per_day": 0.0008,
+      "fraction_of_total": 0.22222222222222224,
+      "lower_bound_intake_mg_per_kg_bw_per_day": 0.0008,
+      "upper_bound_intake_mg_per_kg_bw_per_day": 0.0008,
+      "quality_flags": [],
+      "limitations": []
+    }
+  ],
+  "dominant_commodity_contributors": [
+    {
+      "schema_version": "v1",
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "apples",
+        "canonical_name": "Apples",
+        "food_group": "fruit",
+        "mapping_status": "curated",
+        "foodex2_code": "EXAMPLE_FDX2_APPLES_RAW",
+        "rpc_code": "EXAMPLE_RPC_APPLES",
+        "rpcd_code": "EXAMPLE_RPCD_APPLES_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "apples",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "originTag": "illustrative_placeholder"
+        }
+      },
+      "intake_window_semantic": "acute",
+      "residue_concentration_mg_per_kg": 0.15,
+      "consumption_kg_per_day": 0.28,
+      "applied_processing_factor": 1.0,
+      "contribution_mg_per_kg_bw_per_day": 0.0028,
+      "fraction_of_total": 0.7777777777777778,
+      "lower_bound_intake_mg_per_kg_bw_per_day": 0.0028,
+      "upper_bound_intake_mg_per_kg_bw_per_day": 0.0028,
+      "quality_flags": [],
+      "limitations": []
+    },
+    {
+      "schema_version": "v1",
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "milk",
+        "canonical_name": "Milk",
+        "food_group": "dairy",
+        "mapping_status": "curated",
+        "foodex2_code": "EXAMPLE_FDX2_MILK_RAW",
+        "rpc_code": "EXAMPLE_RPC_MILK",
+        "rpcd_code": "EXAMPLE_RPCD_MILK_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "milk",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "originTag": "illustrative_placeholder"
+        }
+      },
+      "intake_window_semantic": "acute",
+      "residue_concentration_mg_per_kg": 0.03,
+      "consumption_kg_per_day": 0.4,
+      "applied_processing_factor": 1.0,
+      "contribution_mg_per_kg_bw_per_day": 0.0008,
+      "fraction_of_total": 0.22222222222222224,
+      "lower_bound_intake_mg_per_kg_bw_per_day": 0.0008,
+      "upper_bound_intake_mg_per_kg_bw_per_day": 0.0008,
+      "quality_flags": [],
+      "limitations": []
+    }
+  ],
+  "assumptions_applied": [
+    {
+      "parameter": "residue:apples",
+      "value": 0.15,
+      "unit": "mg/kg",
+      "source_classification": "user_input",
+      "rationale": "Residue concentration used for Apples.",
+      "source_reference": null,
+      "quality_flags": []
+    },
+    {
+      "parameter": "processing_factor:apples",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_classification": "curated_default",
+      "rationale": "Processing factor applied to Apples.",
+      "source_reference": {
+        "source_id": "dietary.taxonomy.apples",
+        "title": "Dietary MCP commodity taxonomy entry for apples",
+        "effective_date": null,
+        "url": "defaults://manifest",
+        "originTag": "curated_derived"
+      },
+      "quality_flags": []
+    },
+    {
+      "parameter": "consumption:eu_child_screening_v1:apples",
+      "value": 0.28,
+      "unit": "kg_food/day",
+      "source_classification": "curated_default",
+      "rationale": "Acute consumption amount selected from the governed profile.",
+      "source_reference": {
+        "source_id": "dietary.profile.eu_child_1_6",
+        "title": "Illustrative EU child dietary screening profile",
+        "effective_date": "2026-04-13",
+        "url": "docs://population-profile-guide",
+        "originTag": "illustrative_placeholder"
+      },
+      "quality_flags": []
+    },
+    {
+      "parameter": "residue:milk",
+      "value": 0.03,
+      "unit": "mg/kg",
+      "source_classification": "curated_default",
+      "rationale": "Residue concentration used for Milk.",
+      "source_reference": null,
+      "quality_flags": []
+    },
+    {
+      "parameter": "processing_factor:milk",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_classification": "curated_default",
+      "rationale": "Processing factor applied to Milk.",
+      "source_reference": {
+        "source_id": "dietary.taxonomy.milk",
+        "title": "Dietary MCP commodity taxonomy entry for milk",
+        "effective_date": null,
+        "url": "defaults://manifest",
+        "originTag": "curated_derived"
+      },
+      "quality_flags": []
+    },
+    {
+      "parameter": "consumption:eu_child_screening_v1:milk",
+      "value": 0.4,
+      "unit": "kg_food/day",
+      "source_classification": "curated_default",
+      "rationale": "Acute consumption amount selected from the governed profile.",
+      "source_reference": {
+        "source_id": "dietary.profile.eu_child_1_6",
+        "title": "Illustrative EU child dietary screening profile",
+        "effective_date": "2026-04-13",
+        "url": "docs://population-profile-guide",
+        "originTag": "illustrative_placeholder"
+      },
+      "quality_flags": []
+    }
+  ],
+  "provenance": {
+    "schema_version": "v1",
+    "defaults_version": "v1",
+    "algorithm_version": "reference-dietary-intake-0.1.0",
+    "generated_at": "2026-01-01T00:00:00Z",
+    "source_references": [
+      {
+        "source_id": "dietary.food_vocab.crosswalk",
+        "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+        "effective_date": "2026-04-10",
+        "url": "docs://food-vocabulary-crosswalk",
+        "originTag": "illustrative_placeholder"
+      },
+      {
+        "source_id": "dietary.taxonomy.apples",
+        "title": "Dietary MCP commodity taxonomy entry for apples",
+        "effective_date": null,
+        "url": "defaults://manifest",
+        "originTag": "curated_derived"
+      },
+      {
+        "source_id": "dietary.food_vocab.crosswalk",
+        "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+        "effective_date": "2026-04-10",
+        "url": "docs://food-vocabulary-crosswalk",
+        "originTag": "illustrative_placeholder"
+      },
+      {
+        "source_id": "dietary.taxonomy.milk",
+        "title": "Dietary MCP commodity taxonomy entry for milk",
+        "effective_date": null,
+        "url": "defaults://manifest",
+        "originTag": "curated_derived"
+      },
+      {
+        "source_id": "dietary.profile.eu_child_1_6",
+        "title": "Illustrative EU child dietary screening profile",
+        "effective_date": "2026-04-13",
+        "url": "docs://population-profile-guide",
+        "originTag": "illustrative_placeholder"
+      }
+    ]
+  },
+  "quality_flags": [],
+  "limitations": [
+    {
+      "code": "screening_model",
+      "message": "Reference dietary plugin is deterministic and screening-oriented."
+    },
+    {
+      "code": "screening_model",
+      "message": "Reference dietary plugin does not implement full probabilistic population variability."
+    },
+    {
+      "code": "bounded_input_missing",
+      "message": "Apples does not carry explicit residue bounds; bounded outputs collapse to the point estimate for this commodity."
+    },
+    {
+      "code": "bounded_input_missing",
+      "message": "Milk does not carry explicit residue bounds; bounded outputs collapse to the point estimate for this commodity."
+    },
+    {
+      "code": "default_processing_factor_applied",
+      "message": "Default processing factor was applied to Apples."
+    },
+    {
+      "code": "default_processing_factor_applied",
+      "message": "Default processing factor was applied to Milk."
+    },
+    {
+      "code": "profile_limitations",
+      "message": "Illustrative public screening profile only"
+    },
+    {
+      "code": "profile_limitations",
+      "message": "Use reviewed regional survey packs for regulatory decisions"
+    }
+  ],
+  "result_metadata": {
+    "status": "completed",
+    "executed_at": "2026-01-01T00:00:00Z",
+    "execution_mode": "synchronous",
+    "result_id": "result-dietary-scenario-4fb539399339-0.1.0"
+  }
+}

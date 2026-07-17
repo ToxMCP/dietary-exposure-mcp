@@ -1,0 +1,336 @@
+{
+  "casePackId": "glyphosate_public_slice_v1",
+  "generatedBy": "DietaryRuntime current public contracts",
+  "generatedAt": "2026-05-10T00:00:00Z",
+  "chemicalIdentity": {
+    "preferredName": "Glyphosate",
+    "casrn": "1071-83-6",
+    "dtxsid": "DTXSID8020961"
+  },
+  "processingFactorCheck": {
+    "submittedCommodityCode": "apple_juice",
+    "canonicalCommodityCode": "apples",
+    "residueMatrix": "raw_primary_commodity",
+    "consumptionMatrix": "processed_derivative",
+    "processingFactorDirection": "raw_residue_to_processed_food",
+    "processingFactorAppliedTo": "residue_concentration",
+    "processedFoodLabel": "apple_juice",
+    "consumptionValueBasis": "governed_apples_profile_used_as_processed_derivative_proxy",
+    "consumptionProxy": true,
+    "consumptionProxyRationale": "This public slice uses the governed apples consumption amount as a compact apple-juice derivative fixture; it is not a row-level apple-juice survey estimate.",
+    "appliedProcessingFactor": 0.65,
+    "contrastToPess": "PESS reported processing factor equal to 1 for all dietary calculations; this slice demonstrates governed processed-commodity handling."
+  },
+  "reviewPosture": {
+    "residueInputPosture": "illustrative_screening_fixture",
+    "residueReviewStatus": "schema_reviewed_not_source_validated",
+    "surveyFixturePosture": "synthetic_contract_fixture",
+    "qualityFlags": [
+      {
+        "code": "illustrative_residue_input",
+        "severity": "warning",
+        "message": "Residue values are screening fixtures, not row-level EFSA monitoring data."
+      },
+      {
+        "code": "synthetic_survey_fixture",
+        "severity": "warning",
+        "message": "Survey records are a compact synthetic fixture used to demonstrate contract behavior."
+      },
+      {
+        "code": "percentiles_unstable_tiny_fixture",
+        "severity": "warning",
+        "message": "Percentiles are shown for contract demonstration only because the fixture has 4 subjects."
+      },
+      {
+        "code": "processed_derivative_consumption_proxy",
+        "severity": "warning",
+        "message": "Apple-juice consumption is represented using the governed apples profile as a compact processed-derivative proxy; it is not a row-level apple-juice survey estimate."
+      }
+    ]
+  },
+  "namingConventionNote": {
+    "snake_case": "Runtime MCP schema artifacts preserve their contract field names.",
+    "camelCase": "Reviewer supplements and stable summary overlays use public case-pack field names."
+  },
+  "dualUnitReviewTable": [
+    {
+      "output": "Adult chronic deterministic",
+      "mgPerKgBwPerDay": 0.00008485714285714287,
+      "ugPerKgBwPerDay": 0.08485714285714287
+    },
+    {
+      "output": "Adult survey mean",
+      "mgPerKgBwPerDay": 0.00006102318548387097,
+      "ugPerKgBwPerDay": 0.06102318548387097
+    },
+    {
+      "output": "Adult survey P95",
+      "mgPerKgBwPerDay": 0.00011482258064516129,
+      "ugPerKgBwPerDay": 0.11482258064516129
+    },
+    {
+      "output": "Adult uncertainty P95 median",
+      "mgPerKgBwPerDay": 0.0001965952546200818,
+      "ugPerKgBwPerDay": 0.1965952546200818
+    },
+    {
+      "output": "Child acute deterministic",
+      "mgPerKgBwPerDay": 0.0006026666666666667,
+      "ugPerKgBwPerDay": 0.6026666666666667
+    },
+    {
+      "output": "Child acute upper bound",
+      "mgPerKgBwPerDay": 0.0013266666666666665,
+      "ugPerKgBwPerDay": 1.3266666666666664
+    }
+  ],
+  "deterministic": {
+    "adultChronic": {
+      "populationGroup": "adult_general",
+      "scenarioClass": "point_estimate",
+      "intakeWindowSemantic": "chronic",
+      "bodyWeightKg": 70.0,
+      "totalIntakeMgPerKgBwPerDay": 0.00008485714285714287,
+      "commodityContributions": {
+        "apples": {
+          "matchedInput": "apple_juice",
+          "submittedCommodityCode": "apple_juice",
+          "canonicalCommodityCode": "apples",
+          "residueMatrix": "raw_primary_commodity",
+          "consumptionMatrix": "processed_derivative",
+          "consumptionValueBasis": "governed_apples_profile_used_as_processed_derivative_proxy",
+          "consumptionProxy": true,
+          "consumptionProxyRationale": "Public slice uses the governed apples consumption amount as a compact apple-juice derivative fixture; not a row-level apple-juice survey estimate.",
+          "consumptionKgPerDay": 0.18,
+          "residueMgPerKg": 0.02,
+          "appliedProcessingFactor": 0.65,
+          "contributionMgPerKgBwPerDay": 0.00003342857142857143
+        },
+        "rice": {
+          "matchedInput": "rice",
+          "consumptionKgPerDay": 0.12,
+          "residueMgPerKg": 0.03,
+          "appliedProcessingFactor": 1.0,
+          "contributionMgPerKgBwPerDay": 0.00005142857142857143
+        }
+      }
+    },
+    "childAcute": {
+      "populationGroup": "child_1_6",
+      "scenarioClass": "bounded_acute",
+      "intakeWindowSemantic": "acute",
+      "bodyWeightKg": 15.0,
+      "totalIntakeMgPerKgBwPerDay": 0.0006026666666666667,
+      "lowerBoundTotalIntakeMgPerKgBwPerDay": 0.0,
+      "upperBoundTotalIntakeMgPerKgBwPerDay": 0.0013266666666666665
+    }
+  },
+  "surveyDistribution": {
+    "datasetId": "glyphosate_public_slice_adult_survey",
+    "weightingMode": "unweighted_subject_level_fixture",
+    "totalSubjects": 4,
+    "consumersOnlyCount": 3,
+    "zeroIntakePrevalence": 0.25,
+    "meanIntakeMgPerKgBwPerDay": 0.00006102318548387097,
+    "weightedMeanIntakeMgPerKgBwPerDay": 0.00006491532258064516,
+    "weightedMeanIntakeUgPerKgBwPerDay": 0.06491532258064516,
+    "percentile95MgPerKgBwPerDay": 0.00011482258064516129,
+    "qualityFlags": [
+      {
+        "code": "survey_weighting_mode_unweighted_fixture_summary",
+        "severity": "warning",
+        "message": "The public survey summary is unweighted; survey weights are preserved in the raw records and used in uncertainty workflow sampling."
+      },
+      {
+        "code": "percentiles_unstable_tiny_fixture",
+        "severity": "warning",
+        "message": "Percentiles are shown for contract demonstration only because the fixture has 4 subjects."
+      }
+    ]
+  },
+  "probabilistic": {
+    "method": "cohort_bootstrap_review_support",
+    "iterationCount": 1000,
+    "randomSeed": 20260510,
+    "meanIntakeMgPerKgBwPerDay": 0.00006064302419354839,
+    "percentile95MgPerKgBwPerDay": 0.00012096774193548387,
+    "zeroIntakePrevalence": 0.25,
+    "qualityFlags": [
+      {
+        "code": "tiny_synthetic_survey_fixture",
+        "severity": "warning",
+        "message": "Percentiles from n=4 synthetic subjects are regression-demo outputs, not population estimates."
+      }
+    ]
+  },
+  "uncertainty": {
+    "assessmentMode": "two_dimensional_monte_carlo",
+    "censoredDataPolicy": "three_bound_sensitivity",
+    "censoredPolicySummaryKeys": [
+      "lower_bound_zero",
+      "middle_bound_half_lod_loq",
+      "upper_bound_lod_loq"
+    ],
+    "meanMedianMgPerKgBwPerDay": 0.00005838477080585805,
+    "percentile95MedianMgPerKgBwPerDay": 0.0001965952546200818,
+    "efsaAdiExceedanceProbabilityMedian": 0.0,
+    "healthReferenceContext": "ADI exceedance probability is a chronic-context demonstration. Child acute outputs do not claim acute risk characterization.",
+    "qualityFlags": [
+      {
+        "code": "tiny_synthetic_survey_fixture",
+        "severity": "warning",
+        "message": "Uncertainty percentiles are fixture-demo outputs from a compact synthetic dataset."
+      }
+    ]
+  },
+  "tradeRisk": {
+    "legalClearance": false,
+    "requiresHumanReview": true,
+    "targetJurisdictions": [
+      "eu",
+      "us",
+      "codex_global",
+      "cn"
+    ],
+    "jurisdictionStatuses": {
+      "eu": "inconclusive_no_limit",
+      "us": "inconclusive_no_limit",
+      "codex_global": "inconclusive_no_limit",
+      "cn": "pass"
+    },
+    "publicFacingJurisdictionStatuses": {
+      "eu": "screening_inconclusive_no_curated_limit",
+      "us": "screening_inconclusive_no_curated_limit",
+      "codex_global": "screening_inconclusive_no_curated_limit",
+      "cn": "screening_pass_under_curated_fixture_limits_requires_review"
+    },
+    "jurisdictionStatusDetails": {
+      "eu": {
+        "rawRuntimeStatus": "inconclusive_no_limit",
+        "publicStatus": "screening_inconclusive_no_curated_limit",
+        "legalClearance": false,
+        "requiresHumanReview": true
+      },
+      "us": {
+        "rawRuntimeStatus": "inconclusive_no_limit",
+        "publicStatus": "screening_inconclusive_no_curated_limit",
+        "legalClearance": false,
+        "requiresHumanReview": true
+      },
+      "codex_global": {
+        "rawRuntimeStatus": "inconclusive_no_limit",
+        "publicStatus": "screening_inconclusive_no_curated_limit",
+        "legalClearance": false,
+        "requiresHumanReview": true
+      },
+      "cn": {
+        "rawRuntimeStatus": "pass",
+        "publicStatus": "screening_pass_under_curated_fixture_limits_requires_review",
+        "legalClearance": false,
+        "requiresHumanReview": true
+      }
+    },
+    "jurisdictionMrlCoverageStatuses": {
+      "eu": "no_curated_family_coverage",
+      "us": "requested_pair_outside_curated_scope",
+      "codex_global": "family_curated_without_mrl",
+      "cn": "all_requested_pairs_exactly_curated"
+    }
+  },
+  "pbpkHandoff": {
+    "route": "oral",
+    "doseMetric": "external_oral_dose_mg_per_kg_bw_per_day",
+    "intakeWindowSemantic": "acute",
+    "valueMgPerKgBwPerDay": 0.0006026666666666667,
+    "schedule": "single_day"
+  },
+  "toxclawEvidenceBundle": {
+    "evidenceItemLabels": [
+      "Glyphosate raw-apple residue screening input for apple-juice PESS-style public slice",
+      "Dietary MCP processed commodity mapping for apple juice",
+      "Glyphosate rice screening residue input for PESS-style public slice",
+      "Dietary MCP provisional food vocabulary crosswalk pack",
+      "Dietary MCP commodity taxonomy entry for rice",
+      "Illustrative EU adult dietary screening profile"
+    ],
+    "evidenceItemMetadata": [
+      {
+        "label": "Glyphosate raw-apple residue screening input for apple-juice PESS-style public slice",
+        "evidenceType": "residue_input",
+        "evidenceRole": "calculation_input",
+        "materiality": "high",
+        "sourcePosture": "illustrative_placeholder",
+        "supports": [
+          "adult_chronic_intake",
+          "child_acute_intake"
+        ],
+        "reviewStatus": "schema_reviewed_not_source_validated"
+      },
+      {
+        "label": "Dietary MCP processed commodity mapping for apple juice",
+        "evidenceType": "commodity_mapping",
+        "evidenceRole": "processing_factor_support",
+        "materiality": "high",
+        "sourcePosture": "curated_default",
+        "supports": [
+          "apple_juice_processing_factor_application",
+          "apple_juice_consumption_proxy_flag"
+        ],
+        "reviewStatus": "contract_reviewed"
+      },
+      {
+        "label": "Glyphosate rice screening residue input for PESS-style public slice",
+        "evidenceType": "residue_input",
+        "evidenceRole": "calculation_input",
+        "materiality": "high",
+        "sourcePosture": "illustrative_placeholder",
+        "supports": [
+          "adult_chronic_intake",
+          "child_acute_intake"
+        ],
+        "reviewStatus": "schema_reviewed_not_source_validated"
+      },
+      {
+        "label": "Dietary MCP provisional food vocabulary crosswalk pack",
+        "evidenceType": "food_vocabulary",
+        "evidenceRole": "commodity_mapping_support",
+        "materiality": "medium",
+        "sourcePosture": "curated_default",
+        "supports": [
+          "apple_juice_to_apples_mapping",
+          "rice_mapping"
+        ],
+        "reviewStatus": "contract_reviewed"
+      },
+      {
+        "label": "Dietary MCP commodity taxonomy entry for rice",
+        "evidenceType": "food_taxonomy",
+        "evidenceRole": "commodity_mapping_support",
+        "materiality": "medium",
+        "sourcePosture": "curated_default",
+        "supports": [
+          "rice_consumption_residue_matching"
+        ],
+        "reviewStatus": "contract_reviewed"
+      },
+      {
+        "label": "Illustrative EU adult dietary screening profile",
+        "evidenceType": "consumption_profile",
+        "evidenceRole": "calculation_input",
+        "materiality": "high",
+        "sourcePosture": "curated_default_fixture",
+        "supports": [
+          "adult_chronic_intake"
+        ],
+        "reviewStatus": "contract_reviewed"
+      }
+    ]
+  },
+  "nonClaims": [
+    "Not a row-level EFSA residue dataset reproduction.",
+    "Not an EFSA PRIMo, DEEM, or PESS engine run.",
+    "Not a final regulatory conclusion, legal clearance, or trade clearance.",
+    "Not a PBPK internal-dose simulation.",
+    "Not a biomonitoring validation."
+  ]
+}

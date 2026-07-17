@@ -1,0 +1,31 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "method_registry",
+  "methods": [
+    {
+      "methodId": "efsa.difenoconazole.mrl_review.2025",
+      "displayName": "EFSA difenoconazole residue-review context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "methodType": "substance_specific_trv_and_residue_definition_review",
+      "currentVersionLabel": "2025_review_context",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.difenoconazole.peer_review.2011",
+        "efsa.difenoconazole.mrl_review.2024",
+        "efsa.difenoconazole.import_tolerance.2025",
+        "jmpr.difenoconazole.report.2013",
+        "oecd.analytical_methods.2017",
+        "oecd.residue.definition.2006"
+      ],
+      "notes": [
+        "Governed EFSA/JMPR review metadata for difenoconazole residue-review context across cereal, citrus, tree-nut, pulse, and oilseed matrices.",
+        "Dietary MCP records this as review-oriented method provenance and analytical-context linkage only."
+      ]
+    }
+  ]
+}

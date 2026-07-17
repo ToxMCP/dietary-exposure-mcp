@@ -1,0 +1,3051 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "food_vocabulary_crosswalk",
+  "taxonomyId": "toxmcp_foods_v1",
+  "commodityMappings": [
+    {
+      "commodityCode": "apples",
+      "foodex2Code": "EXAMPLE_FDX2_APPLES_RAW",
+      "rpcCode": "EXAMPLE_RPC_APPLES",
+      "rpcdCode": "EXAMPLE_RPCD_APPLES_RAW",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "oranges",
+      "foodex2Code": "EXAMPLE_FDX2_ORANGES_RAW",
+      "rpcCode": "EXAMPLE_RPC_ORANGES",
+      "rpcdCode": "EXAMPLE_RPCD_ORANGES_RAW",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "spinach",
+      "foodex2Code": "EXAMPLE_FDX2_SPINACH_RAW",
+      "rpcCode": "EXAMPLE_RPC_SPINACH",
+      "rpcdCode": "EXAMPLE_RPCD_SPINACH_RAW",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "tomatoes",
+      "foodex2Code": "EXAMPLE_FDX2_TOMATOES_RAW",
+      "rpcCode": "EXAMPLE_RPC_TOMATOES",
+      "rpcdCode": "EXAMPLE_RPCD_TOMATOES_RAW",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "potatoes",
+      "foodex2Code": "EXAMPLE_FDX2_POTATOES_RAW",
+      "rpcCode": "EXAMPLE_RPC_POTATOES",
+      "rpcdCode": "EXAMPLE_RPCD_POTATOES_RAW",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "rice",
+      "foodex2Code": "EXAMPLE_FDX2_RICE_RAW",
+      "rpcCode": "EXAMPLE_RPC_RICE",
+      "rpcdCode": "EXAMPLE_RPCD_RICE_RAW",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "wheat",
+      "foodex2Code": "EXAMPLE_FDX2_WHEAT_RAW",
+      "rpcCode": "EXAMPLE_RPC_WHEAT",
+      "rpcdCode": "EXAMPLE_RPCD_WHEAT_RAW",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "milk",
+      "foodex2Code": "EXAMPLE_FDX2_MILK_RAW",
+      "rpcCode": "EXAMPLE_RPC_MILK",
+      "rpcdCode": "EXAMPLE_RPCD_MILK_RAW",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "chicken",
+      "foodex2Code": "EXAMPLE_FDX2_CHICKEN_RAW",
+      "rpcCode": "EXAMPLE_RPC_CHICKEN",
+      "rpcdCode": "EXAMPLE_RPCD_CHICKEN_RAW",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "salmon",
+      "foodex2Code": "EXAMPLE_FDX2_SALMON_RAW",
+      "rpcCode": "EXAMPLE_RPC_SALMON",
+      "rpcdCode": "EXAMPLE_RPCD_SALMON_RAW",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "eggs",
+      "foodex2Code": "EXAMPLE_FDX2_EGGS_RAW",
+      "rpcCode": "EXAMPLE_RPC_EGGS",
+      "rpcdCode": "EXAMPLE_RPCD_EGGS_RAW",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "oats",
+      "foodex2Code": "EXAMPLE_FDX2_OATS_RAW",
+      "rpcCode": "EXAMPLE_RPC_OATS",
+      "rpcdCode": "EXAMPLE_RPCD_OATS_RAW",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "beans_and_pulses",
+      "foodex2Code": "EXAMPLE_FDX2_BEANS_PULSES_RAW",
+      "rpcCode": "EXAMPLE_RPC_BEANS_PULSES",
+      "rpcdCode": "EXAMPLE_RPCD_BEANS_PULSES_RAW",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "infant_formula",
+      "foodex2Code": "EXAMPLE_FDX2_INFANT_FORMULA",
+      "rpcCode": "EXAMPLE_RPC_INFANT_FORMULA",
+      "rpcdCode": "EXAMPLE_RPCD_INFANT_FORMULA",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.taxonomy.infant_formula"
+    },
+    {
+      "commodityCode": "fruit_juice",
+      "foodex2Code": "EXAMPLE_FDX2_FRUIT_JUICE",
+      "rpcCode": "EXAMPLE_RPC_FRUIT_JUICE",
+      "rpcdCode": "EXAMPLE_RPCD_FRUIT_JUICE",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.taxonomy.fruit_juice"
+    },
+    {
+      "commodityCode": "purees",
+      "foodex2Code": "EXAMPLE_FDX2_PUREES",
+      "rpcCode": "EXAMPLE_RPC_PUREES",
+      "rpcdCode": "EXAMPLE_RPCD_PUREES",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.taxonomy.purees"
+    },
+    {
+      "commodityCode": "olives",
+      "foodex2Code": "EXAMPLE_FDX2_OLIVES",
+      "rpcCode": "EXAMPLE_RPC_OLIVES",
+      "rpcdCode": "EXAMPLE_RPCD_OLIVES",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.taxonomy.olives"
+    },
+    {
+      "commodityCode": "grapes",
+      "foodex2Code": "EXAMPLE_FDX2_GRAPES",
+      "rpcCode": "EXAMPLE_RPC_GRAPES",
+      "rpcdCode": "EXAMPLE_RPCD_GRAPES",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.taxonomy.grapes"
+    },
+    {
+      "commodityCode": "beef_liver",
+      "foodex2Code": "EXAMPLE_FDX2_BEEF_LIVER",
+      "rpcCode": "EXAMPLE_RPC_BEEF_LIVER",
+      "rpcdCode": "EXAMPLE_RPCD_BEEF_LIVER",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.taxonomy.beef_liver"
+    },
+    {
+      "commodityCode": "poultry_fat",
+      "foodex2Code": "EXAMPLE_FDX2_POULTRY_FAT",
+      "rpcCode": "EXAMPLE_RPC_POULTRY_FAT",
+      "rpcdCode": "EXAMPLE_RPCD_POULTRY_FAT",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.taxonomy.poultry_fat"
+    },
+    {
+      "commodityCode": "pork_kidney",
+      "foodex2Code": "EXAMPLE_FDX2_PORK_KIDNEY",
+      "rpcCode": "EXAMPLE_RPC_PORK_KIDNEY",
+      "rpcdCode": "EXAMPLE_RPCD_PORK_KIDNEY",
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.taxonomy.pork_kidney"
+    },
+    {
+      "commodityCode": "apple_pie",
+      "foodex2Code": "EXAMPLE_FDX2_APPLE_PIE",
+      "rpcCode": "EXAMPLE_RPC_APPLE_PIE",
+      "rpcdCode": "EXAMPLE_RPCD_APPLE_PIE",
+      "processedStatus": "processed_derivative",
+      "mappingConfidence": "provisional",
+      "sourceId": "dietary.recipe.apple_pie"
+    },
+    {
+      "commodityCode": "0110010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0110020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0110030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0110040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0110050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0110990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0120010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0120020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0120030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0120040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0120050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0120060",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0120070",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0120080",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0120090",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0120100",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0120110",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0120990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0130010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0130020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0130030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0130040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0130050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0130990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0140010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0140020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0140030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0140040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0140990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0151010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0151020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0153010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0153020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0153030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0153990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0154010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0154020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0154030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0154040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0154050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0154060",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0154070",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0154080",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0154990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0161010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0161020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0161030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0161040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0161050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0161060",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0161070",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0161990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0162010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0162020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0162030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0162040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0162050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0162060",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0162990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0163010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0163020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0163030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0163040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0163050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0163060",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0163070",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0163080",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0163090",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0163100",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0163110",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0163990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0212010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0212020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0212030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0212040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0212990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0213010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0213020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0213030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0213040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0213050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0213060",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0213070",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0213080",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0213090",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0213100",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0213110",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0213990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0220010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0220020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0220030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0220040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0220990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0231010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0231020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0231030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0231040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0231990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0232010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0232020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0232030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0232990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0233010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0233020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0233030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0233990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0241010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0241020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0241990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0242010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0242020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0242990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0243010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0243020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0243990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0251010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0251020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0251030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0251040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0251050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0251060",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0251070",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0251080",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0251990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0252010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0252020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0252030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0252990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0256010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0256020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0256030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0256040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0256050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0256060",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0256070",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0256080",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0256090",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0256100",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0256990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0260010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0260020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0260030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0260040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0260050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0260990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0270010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0270020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0270030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0270040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0270050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0270060",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0270070",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0270080",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0270090",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0270990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0280010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0280020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0280990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0300010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0300020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0300030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0300040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0300990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0401010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0401020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0401030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0401040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0401050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0401060",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0401070",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0401080",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0401090",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0401100",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0401110",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0401120",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0401130",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0401140",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0401150",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0401990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0402010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0402020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0402030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0402040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0402990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0500010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0500020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0500030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0500040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0500050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0500060",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0500070",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0500080",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0500090",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0500990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0631010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0631020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0631030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0631040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0631050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0631990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0632010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0632020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0632030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0632990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0633010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0633020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0633990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0810010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0810020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0810030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0810040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0810050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0810060",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0810070",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0810080",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0810090",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0810990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0820010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0820020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0820030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0820040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0820050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0820060",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0820070",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0820080",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0820990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0830010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0830990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0840010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0840030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0840990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0850010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0850020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0850990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0860010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0860990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0870010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0870990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0900010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0900020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0900030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "0900990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1011010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1011020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1011030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1011040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1011050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1011990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1012010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1012020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1012030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1012040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1012050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1012990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1013010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1013020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1013030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1013040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1013050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1013990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1014010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1014020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1014030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1014040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1014050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1014990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1015010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1015020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1015030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1015040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1015050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1015990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1016010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1016020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1016030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1016040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1016050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1016990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1017010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1017020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1017030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1017040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1017050",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1017990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1020010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1020020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1020030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1020040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1020990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1030010",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1030020",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1030030",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1030040",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    },
+    {
+      "commodityCode": "1030990",
+      "foodex2Code": null,
+      "rpcCode": null,
+      "rpcdCode": null,
+      "processedStatus": "raw_primary_commodity",
+      "mappingConfidence": "heuristic",
+      "sourceId": "dietary.food_vocab.crosswalk"
+    }
+  ],
+  "processedCommodityMappings": [
+    {
+      "rawCommodityCode": "apples",
+      "processedCommodityCode": "apple_juice",
+      "aliases": [
+        "apples_juice",
+        "juice_from_apples"
+      ],
+      "canonicalName": "Apple juice",
+      "foodGroup": "fruit_processed",
+      "foodex2Code": "EXAMPLE_FDX2_APPLE_JUICE",
+      "rpcCode": "EXAMPLE_RPC_APPLE_JUICE",
+      "rpcdCode": "EXAMPLE_RPCD_APPLE_JUICE",
+      "processedStatus": "processed_derivative",
+      "mappingConfidence": "provisional",
+      "defaultProcessingFactor": 0.65,
+      "sourceId": "dietary.food_vocab.processed.apple_juice"
+    },
+    {
+      "rawCommodityCode": "spinach",
+      "processedCommodityCode": "frozen_spinach",
+      "aliases": [
+        "spinach_frozen"
+      ],
+      "canonicalName": "Frozen spinach",
+      "foodGroup": "vegetable_processed",
+      "foodex2Code": "EXAMPLE_FDX2_FROZEN_SPINACH",
+      "rpcCode": "EXAMPLE_RPC_FROZEN_SPINACH",
+      "rpcdCode": "EXAMPLE_RPCD_FROZEN_SPINACH",
+      "processedStatus": "processed_derivative",
+      "mappingConfidence": "provisional",
+      "defaultProcessingFactor": 0.95,
+      "sourceId": "dietary.food_vocab.processed.frozen_spinach"
+    },
+    {
+      "rawCommodityCode": "rice",
+      "processedCommodityCode": "cooked_rice",
+      "aliases": [
+        "boiled_rice"
+      ],
+      "canonicalName": "Cooked rice",
+      "foodGroup": "grain_processed",
+      "foodex2Code": "EXAMPLE_FDX2_COOKED_RICE",
+      "rpcCode": "EXAMPLE_RPC_COOKED_RICE",
+      "rpcdCode": "EXAMPLE_RPCD_COOKED_RICE",
+      "processedStatus": "processed_derivative",
+      "mappingConfidence": "provisional",
+      "defaultProcessingFactor": 1.0,
+      "sourceId": "dietary.food_vocab.processed.cooked_rice"
+    },
+    {
+      "rawCommodityCode": "milk",
+      "processedCommodityCode": "yogurt",
+      "aliases": [
+        "plain_yogurt"
+      ],
+      "canonicalName": "Yogurt",
+      "foodGroup": "dairy_processed",
+      "foodex2Code": "EXAMPLE_FDX2_YOGURT",
+      "rpcCode": "EXAMPLE_RPC_YOGURT",
+      "rpcdCode": "EXAMPLE_RPCD_YOGURT",
+      "processedStatus": "processed_derivative",
+      "mappingConfidence": "provisional",
+      "defaultProcessingFactor": 1.2,
+      "sourceId": "dietary.food_vocab.processed.yogurt"
+    },
+    {
+      "rawCommodityCode": "oats",
+      "processedCommodityCode": "oatmeal",
+      "aliases": [
+        "cooked_oats",
+        "oats_porridge"
+      ],
+      "canonicalName": "Oatmeal",
+      "foodGroup": "grain_processed",
+      "foodex2Code": "EXAMPLE_FDX2_OATMEAL",
+      "rpcCode": "EXAMPLE_RPC_OATMEAL",
+      "rpcdCode": "EXAMPLE_RPCD_OATMEAL",
+      "processedStatus": "processed_derivative",
+      "mappingConfidence": "provisional",
+      "defaultProcessingFactor": 1.0,
+      "sourceId": "dietary.food_vocab.processed.oatmeal"
+    },
+    {
+      "rawCommodityCode": "beans_and_pulses",
+      "processedCommodityCode": "canned_beans",
+      "aliases": [
+        "beans_canned",
+        "canned_pulses"
+      ],
+      "canonicalName": "Canned beans",
+      "foodGroup": "legume_processed",
+      "foodex2Code": "EXAMPLE_FDX2_CANNED_BEANS",
+      "rpcCode": "EXAMPLE_RPC_CANNED_BEANS",
+      "rpcdCode": "EXAMPLE_RPCD_CANNED_BEANS",
+      "processedStatus": "processed_derivative",
+      "mappingConfidence": "provisional",
+      "defaultProcessingFactor": 1.0,
+      "sourceId": "dietary.food_vocab.processed.canned_beans"
+    },
+    {
+      "rawCommodityCode": "olives",
+      "processedCommodityCode": "olive_oil",
+      "aliases": [
+        "virgin_olive_oil",
+        "oil_from_olives"
+      ],
+      "canonicalName": "Olive oil",
+      "foodGroup": "fruit_processed",
+      "foodex2Code": "EXAMPLE_FDX2_OLIVE_OIL",
+      "rpcCode": "EXAMPLE_RPC_OLIVE_OIL",
+      "rpcdCode": "EXAMPLE_RPCD_OLIVE_OIL",
+      "processedStatus": "processed_derivative",
+      "mappingConfidence": "provisional",
+      "defaultProcessingFactor": 4.8,
+      "sourceId": "dietary.food_vocab.processed.olive_oil"
+    },
+    {
+      "rawCommodityCode": "grapes",
+      "processedCommodityCode": "raisins",
+      "aliases": [
+        "dried_grapes"
+      ],
+      "canonicalName": "Raisins",
+      "foodGroup": "fruit_processed",
+      "foodex2Code": "EXAMPLE_FDX2_RAISINS",
+      "rpcCode": "EXAMPLE_RPC_RAISINS",
+      "rpcdCode": "EXAMPLE_RPCD_RAISINS",
+      "processedStatus": "processed_derivative",
+      "mappingConfidence": "provisional",
+      "defaultProcessingFactor": 4.2,
+      "sourceId": "dietary.food_vocab.processed.raisins"
+    }
+  ],
+  "processingFactorApplicability": [
+    {
+      "rawCommodityCode": "apples",
+      "processedCommodityCode": "apple_juice",
+      "applicability": "supported",
+      "recommendedProcessingFactor": 0.65,
+      "sourceId": "dietary.food_vocab.processed.apple_juice",
+      "note": "Illustrative provisional processing-factor linkage for juice derivation."
+    },
+    {
+      "rawCommodityCode": "spinach",
+      "processedCommodityCode": "frozen_spinach",
+      "applicability": "supported",
+      "recommendedProcessingFactor": 0.95,
+      "sourceId": "dietary.food_vocab.processed.frozen_spinach",
+      "note": "Illustrative provisional processing-factor linkage for frozen leafy vegetables."
+    },
+    {
+      "rawCommodityCode": "rice",
+      "processedCommodityCode": "cooked_rice",
+      "applicability": "supported",
+      "recommendedProcessingFactor": 1.0,
+      "sourceId": "dietary.food_vocab.processed.cooked_rice",
+      "note": "Illustrative provisional processing-factor linkage for cooked cereal products."
+    },
+    {
+      "rawCommodityCode": "milk",
+      "processedCommodityCode": "yogurt",
+      "applicability": "supported",
+      "recommendedProcessingFactor": 1.2,
+      "sourceId": "dietary.food_vocab.processed.yogurt",
+      "note": "Illustrative provisional processing-factor linkage for fermented dairy derivatives."
+    },
+    {
+      "rawCommodityCode": "oats",
+      "processedCommodityCode": "oatmeal",
+      "applicability": "supported",
+      "recommendedProcessingFactor": 1.0,
+      "sourceId": "dietary.food_vocab.processed.oatmeal",
+      "note": "Illustrative provisional processing-factor linkage for cooked oat products."
+    },
+    {
+      "rawCommodityCode": "beans_and_pulses",
+      "processedCommodityCode": "canned_beans",
+      "applicability": "supported",
+      "recommendedProcessingFactor": 1.0,
+      "sourceId": "dietary.food_vocab.processed.canned_beans",
+      "note": "Illustrative provisional processing-factor linkage for canned bean and pulse products."
+    },
+    {
+      "rawCommodityCode": "olives",
+      "processedCommodityCode": "olive_oil",
+      "applicability": "supported",
+      "recommendedProcessingFactor": 4.8,
+      "sourceId": "dietary.food_vocab.processed.olive_oil",
+      "note": "Illustrative provisional processing-factor linkage for oil extraction."
+    },
+    {
+      "rawCommodityCode": "grapes",
+      "processedCommodityCode": "raisins",
+      "applicability": "supported",
+      "recommendedProcessingFactor": 4.2,
+      "sourceId": "dietary.food_vocab.processed.raisins",
+      "note": "Illustrative provisional processing-factor linkage for fruit drying."
+    }
+  ]
+}

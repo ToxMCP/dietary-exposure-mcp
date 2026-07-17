@@ -1,0 +1,308 @@
+{
+  "version": "v1",
+  "cases": [
+    {
+      "name": "apple_bootstrap_baseline",
+      "datasetId": "test_survey",
+      "regionId": "eu",
+      "populationGroup": "adult_general",
+      "rawRecords": [
+        {
+          "subjectId": "s1",
+          "bodyWeightKg": 70.0,
+          "daysInSurvey": 2,
+          "commodityCode": "apples",
+          "consumptionKgPerDay": 0.4
+        },
+        {
+          "subjectId": "s2",
+          "bodyWeightKg": 70.0,
+          "daysInSurvey": 2,
+          "commodityCode": "apples",
+          "consumptionKgPerDay": 0.0
+        },
+        {
+          "subjectId": "s3",
+          "bodyWeightKg": 70.0,
+          "daysInSurvey": 2,
+          "commodityCode": "apples",
+          "consumptionKgPerDay": 0.6
+        },
+        {
+          "subjectId": "s4",
+          "bodyWeightKg": 70.0,
+          "daysInSurvey": 2,
+          "commodityCode": "apples",
+          "consumptionKgPerDay": 0.2
+        }
+      ],
+      "chemicalIdentity": {
+        "preferredName": "TestChemical"
+      },
+      "residueRecords": [
+        {
+          "commodityCode": "apples",
+          "residueConcentrationMgPerKg": 0.5,
+          "sourceType": "monitoring"
+        }
+      ],
+      "iterationCount": 1000,
+      "randomSeed": 42,
+      "expectedCohortFingerprint": "cohort-c220792a07f0",
+      "expectedTotalSubjects": 4,
+      "expectedConsumersOnlyCount": 3,
+      "expectedZeroIntakePrevalence": 0.25,
+      "expectedMeanMgPerKgBwPerDay": 0.002165,
+      "expectedPercentile95MgPerKgBwPerDay": 0.004285714285714286,
+      "expectedPercentile99MgPerKgBwPerDay": 0.004285714285714286,
+      "expectedPercentile999MgPerKgBwPerDay": 0.004285714285714286,
+      "expectedMaxMgPerKgBwPerDay": 0.004285714285714286,
+      "expectedConsumersOnlyMeanMgPerKgBwPerDay": 0.0028732581287325815,
+      "expectedConsumersOnlyPercentile95MgPerKgBwPerDay": 0.004285714285714286,
+      "expectedConsumersOnlyPercentile99MgPerKgBwPerDay": 0.004285714285714286,
+      "expectedConsumersOnlyPercentile999MgPerKgBwPerDay": 0.004285714285714286,
+      "expectedLimitationCodes": [
+        "default_processing_factor_applied",
+        "raw_survey_ingestion",
+        "probabilistic_simulation_support"
+      ],
+      "expectedProvenanceSourceIds": [
+        "dietary.dataset.test_survey",
+        "dietary.food_vocab.crosswalk",
+        "dietary.taxonomy.apples"
+      ],
+      "tolerance": 1e-12
+    },
+    {
+      "name": "apple_bootstrap_clone",
+      "datasetId": "test_survey_clone",
+      "regionId": "eu",
+      "populationGroup": "adult_general",
+      "rawRecords": [
+        {
+          "subjectId": "s1",
+          "bodyWeightKg": 70.0,
+          "daysInSurvey": 2,
+          "commodityCode": "apples",
+          "consumptionKgPerDay": 0.4
+        },
+        {
+          "subjectId": "s2",
+          "bodyWeightKg": 70.0,
+          "daysInSurvey": 2,
+          "commodityCode": "apples",
+          "consumptionKgPerDay": 0.0
+        },
+        {
+          "subjectId": "s3",
+          "bodyWeightKg": 70.0,
+          "daysInSurvey": 2,
+          "commodityCode": "apples",
+          "consumptionKgPerDay": 0.6
+        },
+        {
+          "subjectId": "s4",
+          "bodyWeightKg": 70.0,
+          "daysInSurvey": 2,
+          "commodityCode": "apples",
+          "consumptionKgPerDay": 0.2
+        }
+      ],
+      "chemicalIdentity": {
+        "preferredName": "TestChemical"
+      },
+      "residueRecords": [
+        {
+          "commodityCode": "apples",
+          "residueConcentrationMgPerKg": 0.5,
+          "sourceType": "monitoring"
+        }
+      ],
+      "iterationCount": 1000,
+      "randomSeed": 42,
+      "expectedCohortFingerprint": "cohort-c220792a07f0",
+      "expectedTotalSubjects": 4,
+      "expectedConsumersOnlyCount": 3,
+      "expectedZeroIntakePrevalence": 0.25,
+      "expectedMeanMgPerKgBwPerDay": 0.002165,
+      "expectedPercentile95MgPerKgBwPerDay": 0.004285714285714286,
+      "expectedPercentile99MgPerKgBwPerDay": 0.004285714285714286,
+      "expectedPercentile999MgPerKgBwPerDay": 0.004285714285714286,
+      "expectedMaxMgPerKgBwPerDay": 0.004285714285714286,
+      "expectedConsumersOnlyMeanMgPerKgBwPerDay": 0.0028732581287325815,
+      "expectedConsumersOnlyPercentile95MgPerKgBwPerDay": 0.004285714285714286,
+      "expectedConsumersOnlyPercentile99MgPerKgBwPerDay": 0.004285714285714286,
+      "expectedConsumersOnlyPercentile999MgPerKgBwPerDay": 0.004285714285714286,
+      "expectedLimitationCodes": [
+        "default_processing_factor_applied",
+        "raw_survey_ingestion",
+        "probabilistic_simulation_support"
+      ],
+      "expectedProvenanceSourceIds": [
+        "dietary.dataset.test_survey_clone",
+        "dietary.food_vocab.crosswalk",
+        "dietary.taxonomy.apples"
+      ],
+      "tolerance": 1e-12
+    },
+    {
+      "name": "mixed_multiday_multicommodity_bootstrap",
+      "datasetId": "mixed_survey",
+      "regionId": "eu",
+      "populationGroup": "pregnant_adult",
+      "rawRecords": [
+        {
+          "subjectId": "p1",
+          "bodyWeightKg": 68.0,
+          "daysInSurvey": 2,
+          "commodityCode": "apples",
+          "consumptionKgPerDay": 0.3
+        },
+        {
+          "subjectId": "p1",
+          "bodyWeightKg": 68.0,
+          "daysInSurvey": 2,
+          "commodityCode": "oats",
+          "consumptionKgPerDay": 0.1
+        },
+        {
+          "subjectId": "p2",
+          "bodyWeightKg": 62.0,
+          "daysInSurvey": 1,
+          "commodityCode": "oats",
+          "consumptionKgPerDay": 0.2
+        },
+        {
+          "subjectId": "p3",
+          "bodyWeightKg": 75.0,
+          "daysInSurvey": 3,
+          "commodityCode": "apples",
+          "consumptionKgPerDay": 0.0
+        },
+        {
+          "subjectId": "p3",
+          "bodyWeightKg": 75.0,
+          "daysInSurvey": 3,
+          "commodityCode": "oats",
+          "consumptionKgPerDay": 0.15
+        },
+        {
+          "subjectId": "p4",
+          "bodyWeightKg": 70.0,
+          "daysInSurvey": 2,
+          "commodityCode": "apples",
+          "consumptionKgPerDay": 0.0
+        }
+      ],
+      "chemicalIdentity": {
+        "preferredName": "MatrixChemical"
+      },
+      "residueRecords": [
+        {
+          "commodityCode": "apples",
+          "residueConcentrationMgPerKg": 0.4,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "oats",
+          "residueConcentrationMgPerKg": 0.15,
+          "sourceType": "monitoring"
+        }
+      ],
+      "iterationCount": 2000,
+      "randomSeed": 17,
+      "expectedCohortFingerprint": "cohort-889d03d9dda2",
+      "expectedTotalSubjects": 4,
+      "expectedConsumersOnlyCount": 3,
+      "expectedZeroIntakePrevalence": 0.25,
+      "expectedMeanMgPerKgBwPerDay": 0.0006948361480075902,
+      "expectedPercentile95MgPerKgBwPerDay": 0.0019852941176470586,
+      "expectedPercentile99MgPerKgBwPerDay": 0.0019852941176470586,
+      "expectedPercentile999MgPerKgBwPerDay": 0.0019852941176470586,
+      "expectedMaxMgPerKgBwPerDay": 0.0019852941176470586,
+      "expectedConsumersOnlyMeanMgPerKgBwPerDay": 0.0009238306770916937,
+      "expectedConsumersOnlyPercentile95MgPerKgBwPerDay": 0.0019852941176470586,
+      "expectedConsumersOnlyPercentile99MgPerKgBwPerDay": 0.0019852941176470586,
+      "expectedConsumersOnlyPercentile999MgPerKgBwPerDay": 0.0019852941176470586,
+      "expectedLimitationCodes": [
+        "default_processing_factor_applied",
+        "default_processing_factor_applied",
+        "raw_survey_ingestion",
+        "probabilistic_simulation_support"
+      ],
+      "expectedProvenanceSourceIds": [
+        "dietary.dataset.mixed_survey",
+        "dietary.food_vocab.crosswalk",
+        "dietary.food_vocab.crosswalk",
+        "dietary.taxonomy.apples",
+        "dietary.taxonomy.oats"
+      ],
+      "tolerance": 1e-12
+    },
+    {
+      "name": "empty_dataset_bootstrap_guardrail",
+      "datasetId": "invalid_survey",
+      "regionId": "eu",
+      "populationGroup": "adult_general",
+      "rawRecords": [
+        {
+          "subjectId": "u1",
+          "bodyWeightKg": 70.0,
+          "daysInSurvey": 2,
+          "commodityCode": "unknown_food",
+          "consumptionKgPerDay": 0.3
+        }
+      ],
+      "chemicalIdentity": {
+        "preferredName": "EmptyChemical"
+      },
+      "residueRecords": [
+        {
+          "commodityCode": "apples",
+          "residueConcentrationMgPerKg": 0.5,
+          "sourceType": "monitoring"
+        }
+      ],
+      "iterationCount": 1000,
+      "randomSeed": 42,
+      "expectedCohortFingerprint": "cohort-487a494da873",
+      "expectedTotalSubjects": 0,
+      "expectedConsumersOnlyCount": 0,
+      "expectedZeroIntakePrevalence": 0.0,
+      "expectedMeanMgPerKgBwPerDay": 0.0,
+      "expectedPercentile95MgPerKgBwPerDay": 0.0,
+      "expectedPercentile99MgPerKgBwPerDay": 0.0,
+      "expectedPercentile999MgPerKgBwPerDay": 0.0,
+      "expectedMaxMgPerKgBwPerDay": 0.0,
+      "expectedConsumersOnlyMeanMgPerKgBwPerDay": null,
+      "expectedConsumersOnlyPercentile95MgPerKgBwPerDay": null,
+      "expectedConsumersOnlyPercentile99MgPerKgBwPerDay": null,
+      "expectedConsumersOnlyPercentile999MgPerKgBwPerDay": null,
+      "expectedQualityFlagCodes": [
+        "empty_dataset",
+        "empty_survey_dataset",
+        "unknown_survey_commodity"
+      ],
+      "expectedLimitationCodes": [
+        "default_processing_factor_applied",
+        "raw_survey_ingestion"
+      ],
+      "expectedCohortFingerprintPrefix": "cohort-",
+      "tolerance": 1e-12
+    }
+  ],
+  "fingerprintComparisons": [
+    {
+      "name": "identical_inputs_share_fingerprint",
+      "leftCase": "apple_bootstrap_baseline",
+      "rightCase": "apple_bootstrap_clone",
+      "relation": "equal"
+    },
+    {
+      "name": "changed_cohort_changes_fingerprint",
+      "leftCase": "apple_bootstrap_baseline",
+      "rightCase": "mixed_multiday_multicommodity_bootstrap",
+      "relation": "not_equal"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "model_family": "efsa_primo_adapter",
+  "region_id": "eu_screening_default",
+  "population_group": "child_1_6",
+  "intake_window": "acute",
+  "scenario_class": "bounded_acute",
+  "chemical_identity": {
+    "preferredName": "Illustrative residue",
+    "casrn": "100-00-0"
+  },
+  "residue_records": [
+    {
+      "commodity_code": "apples",
+      "residue_concentration_mg_per_kg": 0.18,
+      "lower_bound_mg_per_kg": 0.12,
+      "upper_bound_mg_per_kg": 0.24,
+      "residue_unit": "mg/kg",
+      "source_type": "monitoring",
+      "processing_factor": null,
+      "region_id": null,
+      "time_context": null,
+      "review_status": "reviewed",
+      "source_reference": {
+        "source_id": "example.adapter.apples.monitoring",
+        "title": "Illustrative adapter apples residue input",
+        "effective_date": "2026-04-08",
+        "url": null,
+        "origin_tag": null
+      }
+    },
+    {
+      "commodity_code": "milk",
+      "residue_concentration_mg_per_kg": 0.03,
+      "lower_bound_mg_per_kg": null,
+      "upper_bound_mg_per_kg": null,
+      "residue_unit": "mg/kg",
+      "source_type": "curated_default",
+      "processing_factor": null,
+      "region_id": null,
+      "time_context": null,
+      "review_status": "reviewed",
+      "source_reference": {
+        "source_id": "example.adapter.milk.default",
+        "title": "Illustrative adapter milk residue input",
+        "effective_date": "2026-04-08",
+        "url": null,
+        "origin_tag": null
+      }
+    }
+  ],
+  "external_engine_version": "3.1-harness",
+  "external_case_id": "example-primo-check",
+  "declared_total_intake_mg_per_kg_bw_per_day": 0.00416,
+  "declared_lower_bound_mg_per_kg_bw_per_day": 0.00304,
+  "declared_upper_bound_mg_per_kg_bw_per_day": 0.00528,
+  "csv_text": "commodity,iesti_mgkgbwday,hr_mgkg,consumption_kg_day,pf,lb_mgkgbwday,ub_mgkgbwday\napple,0.00336,0.18,0.28,1.0,0.00224,0.00448\nwhole_milk,0.0008,0.03,0.4,1.0,0.0008,0.0008\n",
+  "fit_for_purpose": "screening"
+}

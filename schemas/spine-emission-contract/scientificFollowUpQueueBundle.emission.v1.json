@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.ngra.ai/dietary-exposure/emission/scientificFollowUpQueueBundle.v1.json",
+  "title": "scientificFollowUpQueueBundle (producer strict emission contract)",
+  "description": "Tightened additionalProperties:false mirror of the real DietaryRuntime.export_scientific_follow_up_queue_bundle emission (by_alias=True). The bundle_note operator input is appended verbatim into notes[]; the projection deep-scans notes[] for FREE_TEXT_OVERCLAIM. Field set recon'd by running the real producer chain (check import -> interpretation bundle -> dossier -> readiness -> queue bundle) with model_dump(mode=json, by_alias=True).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "overallStatus",
+    "sourceDossierId",
+    "sourceDossierStatus",
+    "sourceWorkflow",
+    "documentationResourceUri"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "bundle_id": { "type": "string" },
+    "overallStatus": { "type": "string", "minLength": 1 },
+    "targetProfile": { "type": "object" },
+    "sourceDossierId": { "type": "string", "minLength": 1 },
+    "sourceDossierStatus": { "type": "string" },
+    "sourceWorkflow": { "type": "string", "minLength": 1 },
+    "bundleProfile": { "type": "string" },
+    "legalLimitReviews": { "type": "array" },
+    "actionItems": { "type": "array" },
+    "queues": { "type": "object" },
+    "openActionCount": { "type": "integer", "minimum": 0 },
+    "pendingActionCount": { "type": "integer", "minimum": 0 },
+    "acknowledgedActionCount": { "type": "integer", "minimum": 0 },
+    "completedActionCount": { "type": "integer", "minimum": 0 },
+    "waivedActionCount": { "type": "integer", "minimum": 0 },
+    "escalatedActionCount": { "type": "integer", "minimum": 0 },
+    "recommendedSequence": { "type": "array" },
+    "documentationResourceUri": { "type": "string", "minLength": 1 },
+    "referencedResources": { "type": "array" },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

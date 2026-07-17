@@ -1,0 +1,35 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "legal_authorities",
+  "validationProfile": "official_primary_wave2",
+  "authorities": [
+    {
+      "authorityId": "us.fda.inorganic_arsenic.apple_juice.action_level.2023",
+      "title": "Guidance for Industry: Action Level for Inorganic Arsenic in Apple Juice",
+      "citation": "FDA guidance, June 2023",
+      "jurisdiction": "us",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "regulatoryRole": "guidance",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "sourceId": "us.fda.inorganic_arsenic.apple_juice.guidance.2023",
+      "notes": [
+        "Official final FDA action-level guidance for inorganic arsenic in apple juice."
+      ]
+    },
+    {
+      "authorityId": "us.fda.methylmercury.fish.cpg_540_600.2007",
+      "title": "CPG Sec. 540.600 Fish, Shellfish, Crustaceans and other Aquatic Animals - Fresh, Frozen or Processed - Methyl Mercury",
+      "citation": "CPG Sec. 540.600, February 2007",
+      "jurisdiction": "us",
+      "contaminantFamily": "mercury_food_contaminants",
+      "regulatoryRole": "guidance",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "sourceId": "us.fda.methylmercury.fish.cpg_540_600.2007",
+      "notes": [
+        "Official FDA compliance policy guide used as the U.S. methylmercury legal anchor for fish and other aquatic animals."
+      ]
+    }
+  ]
+}

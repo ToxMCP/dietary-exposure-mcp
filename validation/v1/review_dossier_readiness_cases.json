@@ -1,0 +1,140 @@
+{
+  "version": "v1",
+  "cases": [
+    {
+      "name": "efsa_primo_internal_review_current_model",
+      "scenario": "efsa_primo",
+      "targetProfile": "eu_internal_review",
+      "expectedOverallStatus": "review_required",
+      "expectedBlockingRuleIds": [],
+      "expectedWarningRuleIds": [
+        "model_submission_not_allowed",
+        "normative_source_status_allowed"
+      ]
+    },
+    {
+      "name": "efsa_primo_consultation_exploratory_current_model",
+      "scenario": "efsa_primo",
+      "targetProfile": "eu_consultation_exploratory",
+      "expectedOverallStatus": "pass",
+      "expectedBlockingRuleIds": [],
+      "expectedWarningRuleIds": []
+    },
+    {
+      "name": "efsa_primo_submission_candidate_current_model",
+      "scenario": "efsa_primo",
+      "targetProfile": "eu_submission_candidate",
+      "expectedOverallStatus": "fail",
+      "expectedBlockingRuleIds": [
+        "model_submission_not_allowed",
+        "normative_source_submission_use"
+      ],
+      "expectedWarningRuleIds": [
+        "technical_report_dependencies"
+      ]
+    },
+    {
+      "name": "epa_deem_internal_review_errata",
+      "scenario": "epa_deem",
+      "targetProfile": "eu_internal_review",
+      "expectedOverallStatus": "review_required",
+      "expectedBlockingRuleIds": [],
+      "expectedWarningRuleIds": [
+        "model_submission_not_allowed",
+        "normative_source_status_allowed",
+        "active_errata_status"
+      ]
+    },
+    {
+      "name": "mercury_contaminant_internal_review_current_family",
+      "scenario": "mercury_contaminant",
+      "targetProfile": "mercury_internal_review",
+      "expectedOverallStatus": "pass",
+      "expectedBlockingRuleIds": [],
+      "expectedScientificFollowUpActionIds": [
+        "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+        "review_scientific_ledger.row_level_lod_coverage",
+        "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control",
+        "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control"
+      ],
+      "expectedScientificFollowUpQueues": {
+        "openActionIds": [
+          "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+          "review_scientific_ledger.row_level_lod_coverage",
+          "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control",
+          "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control"
+        ],
+        "pendingActionIds": [
+          "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+          "review_scientific_ledger.row_level_lod_coverage",
+          "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control",
+          "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control"
+        ]
+      },
+      "expectedWarningRuleIds": []
+    },
+    {
+      "name": "mercury_contaminant_consultation_exploratory_current_family",
+      "scenario": "mercury_contaminant",
+      "targetProfile": "mercury_consultation_exploratory",
+      "extraDossierNotes": [
+        "Consultation-oriented exploratory review remains explicit for this dossier."
+      ],
+      "expectedOverallStatus": "pass",
+      "expectedBlockingRuleIds": [],
+      "expectedScientificFollowUpActionIds": [
+        "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+        "review_scientific_ledger.row_level_lod_coverage",
+        "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control",
+        "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control"
+      ],
+      "expectedScientificFollowUpQueues": {
+        "openActionIds": [
+          "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+          "review_scientific_ledger.row_level_lod_coverage",
+          "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control",
+          "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control"
+        ],
+        "pendingActionIds": [
+          "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+          "review_scientific_ledger.row_level_lod_coverage",
+          "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control",
+          "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control"
+        ]
+      },
+      "expectedWarningRuleIds": []
+    },
+    {
+      "name": "mercury_metals_submission_candidate_current_family",
+      "scenario": "mercury_metals",
+      "targetProfile": "mercury_submission_candidate",
+      "expectedOverallStatus": "review_required",
+      "expectedBlockingRuleIds": [],
+      "expectedScientificFollowUpActionIds": [
+        "review_scientific_ledger.monitoring_context.efsa.mercury.occurrence_monitoring.support",
+        "review_scientific_ledger.sensitive_population_prompt_context",
+        "review_scientific_ledger.trend_signal_context"
+      ],
+      "expectedScientificFollowUpQueues": {
+        "openActionIds": [
+          "review_scientific_ledger.monitoring_context.efsa.mercury.occurrence_monitoring.support",
+          "review_scientific_ledger.sensitive_population_prompt_context",
+          "review_scientific_ledger.trend_signal_context"
+        ],
+        "pendingActionIds": [
+          "review_scientific_ledger.monitoring_context.efsa.mercury.occurrence_monitoring.support",
+          "review_scientific_ledger.sensitive_population_prompt_context",
+          "review_scientific_ledger.trend_signal_context"
+        ],
+        "acknowledgedActionIds": [],
+        "completedActionIds": [],
+        "waivedActionIds": [],
+        "escalatedActionIds": []
+      },
+      "expectedWarningRuleIds": [
+        "legal_limit_support_explicit",
+        "technical_report_dependencies"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "reporting_profiles",
+  "profiles": [
+    {
+      "profileId": "eu.pfas.efsa4.food_risk",
+      "displayName": "EU PFAS EFSA-4 food-risk reporting",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pfas_food_contaminants",
+      "metricKind": "sum_fixed_panel",
+      "profileRole": "primary_regulatory",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "reportedUnit": "ng/kg",
+      "matrixGroups": [
+        "broad_food_supply",
+        "fish_and_seafood",
+        "eggs",
+        "offal"
+      ],
+      "panelAnalytes": [
+        "pfos",
+        "pfoa",
+        "pfna",
+        "pfhxs"
+      ],
+      "aggregationBasis": "Equal-weight sum of PFOS, PFOA, PFNA, and PFHxS for EU food-risk reporting aligned with the EFSA 2020 PFAS opinion.",
+      "weightingBasisSummary": "No potency weighting is applied; the profile preserves the explicit EFSA-4 analyte panel.",
+      "sourceIds": [
+        "efsa.pfas.food.2020",
+        "efsa.pfas.topic.2026"
+      ],
+      "legalAuthorityIds": [],
+      "referenceValueRecordIds": [
+        "efsa.pfas.sum4.twi"
+      ],
+      "notSubstitutableForProfileIds": [],
+      "notes": [
+        "Primary EU health-based PFAS reporting profile for review-oriented food exposure interpretation.",
+        "This profile is the default Dietary MCP PFAS reporting basis for EU food-risk review."
+      ]
+    },
+    {
+      "profileId": "eu.pfas.efsa4.ml_lower_bound",
+      "displayName": "EU PFAS EFSA-4 lower-bound ML compliance reporting",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pfas_food_contaminants",
+      "metricKind": "sum_fixed_panel",
+      "profileRole": "regulatory_compliance_variant",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "reportedUnit": "ng/kg",
+      "matrixGroups": [
+        "fish_and_seafood",
+        "eggs",
+        "offal"
+      ],
+      "panelAnalytes": [
+        "pfos",
+        "pfoa",
+        "pfna",
+        "pfhxs"
+      ],
+      "aggregationBasis": "Lower-bound compliance-oriented sum of linear and branched PFOS, PFOA, PFNA, and PFHxS aligned with current EU contaminant maximum-level reporting.",
+      "weightingBasisSummary": "No potency weighting is applied; this profile preserves the EU compliance-oriented lower-bound EFSA-4 sum.",
+      "sourceIds": [
+        "eu.reg.2023_915",
+        "eu.reco.2022_1431"
+      ],
+      "legalAuthorityIds": [
+        "eu.contaminants.reg_2023_915",
+        "eu.pfas.monitoring.reco_2022_1431"
+      ],
+      "referenceValueRecordIds": [],
+      "notSubstitutableForProfileIds": [
+        "eu.pfas.efsa4.food_risk"
+      ],
+      "notes": [
+        "Use this profile for EU contaminant-law style PFAS sum reporting, especially when matrix-specific maximum-level review is in scope.",
+        "This compliance-oriented profile does not replace the primary EFSA food-risk reporting profile."
+      ]
+    },
+    {
+      "profileId": "eu.pfas.individual_panel_detail",
+      "displayName": "EU PFAS individual analyte panel detail",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pfas_food_contaminants",
+      "metricKind": "individual_analyte_panel",
+      "profileRole": "supporting_detail",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "reportedUnit": "ng/kg",
+      "matrixGroups": [
+        "broad_food_supply",
+        "fish_and_seafood",
+        "eggs",
+        "offal"
+      ],
+      "panelAnalytes": [
+        "pfos",
+        "pfoa",
+        "pfna",
+        "pfhxs"
+      ],
+      "aggregationBasis": "Preserve analyte-level PFOS, PFOA, PFNA, and PFHxS measurements alongside any aggregate PFAS metric.",
+      "weightingBasisSummary": "No aggregation beyond analyte-level preservation is implied by this supporting-detail profile.",
+      "sourceIds": [
+        "eu.reco.2022_1431",
+        "eu.reg.2023_915"
+      ],
+      "legalAuthorityIds": [
+        "eu.pfas.monitoring.reco_2022_1431"
+      ],
+      "referenceValueRecordIds": [],
+      "notSubstitutableForProfileIds": [
+        "eu.pfas.efsa4.food_risk",
+        "eu.pfas.efsa4.ml_lower_bound"
+      ],
+      "notes": [
+        "Supporting-detail profile that keeps the analyte panel explicit in review bundles and monitoring imports.",
+        "Use this profile together with, not instead of, the main EFSA-4 aggregate profiles."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,342 @@
+{
+  "schema_version": "v1",
+  "assessment_id": "uncertainty-assessment-04ff02bac6ea",
+  "dataset_id": "example_governed_survey",
+  "population_group": "adult_general",
+  "chemical_identity": {
+    "preferredName": "Illustrative residue",
+    "casrn": "100-00-0"
+  },
+  "assessment_mode": "two_dimensional_monte_carlo",
+  "outer_iteration_count": 50,
+  "inner_iteration_count": 200,
+  "total_subjects": 4,
+  "weighted_sampling": false,
+  "censored_data_policy": "three_bound_sensitivity",
+  "distribution_summary": {
+    "mean": {
+      "median": 0.00023371697180742335,
+      "lower_95": 0.00019473768968826858,
+      "upper_95": 0.000268262809996059
+    },
+    "percentile_95": {
+      "median": 0.0009161110787549776,
+      "lower_95": 0.0008633400782999647,
+      "upper_95": 0.0009522339689468843
+    },
+    "percentile_99": {
+      "median": 0.0009954241551180967,
+      "lower_95": 0.0009577798352349461,
+      "upper_95": 0.00102935060140054
+    },
+    "percentile_99_9": {
+      "median": 0.0010405844343880704,
+      "lower_95": 0.0009967980337534411,
+      "upper_95": 0.0011000542095607206
+    },
+    "max": {
+      "median": 0.0010489256327882463,
+      "lower_95": 0.0009981348942449872,
+      "upper_95": 0.0011072055836995624
+    },
+    "consumers_only_mean": {
+      "median": 0.00030596756252676517,
+      "lower_95": 0.0002697902491253792,
+      "upper_95": 0.0003517013151152292
+    },
+    "consumers_only_percentile_95": {
+      "median": 0.0009341093147085078,
+      "lower_95": 0.0008888159505590984,
+      "upper_95": 0.0009632289231386446
+    }
+  },
+  "censored_policy_summaries": {
+    "lower_bound_zero": {
+      "mean": {
+        "median": 0.00023371697180742335,
+        "lower_95": 0.00019473768968826858,
+        "upper_95": 0.000268262809996059
+      },
+      "percentile_95": {
+        "median": 0.0009161110787549776,
+        "lower_95": 0.0008633400782999647,
+        "upper_95": 0.0009522339689468843
+      },
+      "percentile_99": {
+        "median": 0.0009954241551180967,
+        "lower_95": 0.0009577798352349461,
+        "upper_95": 0.00102935060140054
+      },
+      "percentile_99_9": {
+        "median": 0.0010405844343880704,
+        "lower_95": 0.0009967980337534411,
+        "upper_95": 0.0011000542095607206
+      },
+      "max": {
+        "median": 0.0010489256327882463,
+        "lower_95": 0.0009981348942449872,
+        "upper_95": 0.0011072055836995624
+      },
+      "consumers_only_mean": {
+        "median": 0.00030596756252676517,
+        "lower_95": 0.0002697902491253792,
+        "upper_95": 0.0003517013151152292
+      },
+      "consumers_only_percentile_95": {
+        "median": 0.0009341093147085078,
+        "lower_95": 0.0008888159505590984,
+        "upper_95": 0.0009632289231386446
+      }
+    },
+    "middle_bound_half_lod_loq": {
+      "mean": {
+        "median": 0.00023371697180742335,
+        "lower_95": 0.00019473768968826858,
+        "upper_95": 0.000268262809996059
+      },
+      "percentile_95": {
+        "median": 0.0009161110787549776,
+        "lower_95": 0.0008633400782999647,
+        "upper_95": 0.0009522339689468843
+      },
+      "percentile_99": {
+        "median": 0.0009954241551180967,
+        "lower_95": 0.0009577798352349461,
+        "upper_95": 0.00102935060140054
+      },
+      "percentile_99_9": {
+        "median": 0.0010405844343880704,
+        "lower_95": 0.0009967980337534411,
+        "upper_95": 0.0011000542095607206
+      },
+      "max": {
+        "median": 0.0010489256327882463,
+        "lower_95": 0.0009981348942449872,
+        "upper_95": 0.0011072055836995624
+      },
+      "consumers_only_mean": {
+        "median": 0.00030596756252676517,
+        "lower_95": 0.0002697902491253792,
+        "upper_95": 0.0003517013151152292
+      },
+      "consumers_only_percentile_95": {
+        "median": 0.0009341093147085078,
+        "lower_95": 0.0008888159505590984,
+        "upper_95": 0.0009632289231386446
+      }
+    },
+    "upper_bound_lod_loq": {
+      "mean": {
+        "median": 0.00023371697180742335,
+        "lower_95": 0.00019473768968826858,
+        "upper_95": 0.000268262809996059
+      },
+      "percentile_95": {
+        "median": 0.0009161110787549776,
+        "lower_95": 0.0008633400782999647,
+        "upper_95": 0.0009522339689468843
+      },
+      "percentile_99": {
+        "median": 0.0009954241551180967,
+        "lower_95": 0.0009577798352349461,
+        "upper_95": 0.00102935060140054
+      },
+      "percentile_99_9": {
+        "median": 0.0010405844343880704,
+        "lower_95": 0.0009967980337534411,
+        "upper_95": 0.0011000542095607206
+      },
+      "max": {
+        "median": 0.0010489256327882463,
+        "lower_95": 0.0009981348942449872,
+        "upper_95": 0.0011072055836995624
+      },
+      "consumers_only_mean": {
+        "median": 0.00030596756252676517,
+        "lower_95": 0.0002697902491253792,
+        "upper_95": 0.0003517013151152292
+      },
+      "consumers_only_percentile_95": {
+        "median": 0.0009341093147085078,
+        "lower_95": 0.0008888159505590984,
+        "upper_95": 0.0009632289231386446
+      }
+    }
+  },
+  "health_reference_exceedance": {
+    "reference_type": "ADI",
+    "reference_value": 0.01,
+    "reference_unit": "mg/kg bw/day",
+    "exceedance_probability": {
+      "median": 0.0,
+      "lower_95": 0.0,
+      "upper_95": 0.0
+    },
+    "percent_of_reference": {
+      "median": 2.3371697180742332,
+      "lower_95": 1.9473768968826857,
+      "upper_95": 2.68262809996059
+    },
+    "high_percentile_metric": null,
+    "high_percentile_exposure_ratio": null,
+    "margin_of_exposure": null
+  },
+  "sensitivity_ranking": [
+    {
+      "input_name": "residue.spinach",
+      "metric": "mean",
+      "rank_correlation": -0.21421368547418965,
+      "method": "spearman"
+    },
+    {
+      "input_name": "residue.apples",
+      "metric": "mean",
+      "rank_correlation": -0.07668667466986795,
+      "method": "spearman"
+    },
+    {
+      "input_name": "processing_factor.apples",
+      "metric": "mean",
+      "rank_correlation": -0.048643457382953184,
+      "method": "spearman"
+    }
+  ],
+  "uncertainty_assumption_ledger": {
+    "entries": [
+      {
+        "code": "two_dimensional_monte_carlo",
+        "severity": "info",
+        "category": "method",
+        "message": "Assessment separates outer uncertainty draws from inner population-variability draws.",
+        "conservative": null
+      },
+      {
+        "code": "regulatory_acceptance_not_implied",
+        "severity": "warning",
+        "category": "scope",
+        "message": "Transparent regulatory-style modelling does not imply official regulator acceptance.",
+        "conservative": null
+      },
+      {
+        "code": "unweighted_empirical_sampling",
+        "severity": "warning",
+        "category": "survey_design",
+        "message": "No survey weights were supplied; subjects were resampled uniformly.",
+        "conservative": null
+      },
+      {
+        "code": "three_bound_censored_sensitivity",
+        "severity": "info",
+        "category": "censored_data",
+        "message": "Censored residues were evaluated as lower, middle, and upper bound scenarios.",
+        "conservative": true
+      }
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 20260424,
+    "rng_algorithm": "numpy.PCG64",
+    "model_fingerprint": "model-9fb3ca92685d",
+    "input_fingerprint": "input-2da78031c317",
+    "simulation_fingerprint": "simulation-f444ec8d7547",
+    "numpy_version": "2.4.4",
+    "scipy_version": "1.17.1"
+  },
+  "quality_flags": [],
+  "limitations": [
+    {
+      "code": "raw_survey_ingestion",
+      "message": "Raw survey datasets support governed distribution summaries and cohort-bootstrap review support, but remain a reviewer-controlled population-exposure workflow in v0.1."
+    },
+    {
+      "code": "default_processing_factor_applied",
+      "message": "Default processing factor was applied to Apples."
+    },
+    {
+      "code": "default_processing_factor_applied",
+      "message": "Default processing factor was applied to Rice."
+    },
+    {
+      "code": "regulatory_style_uncertainty_assessment",
+      "message": "This tool provides transparent two-dimensional Monte Carlo review support; it does not claim official equivalence to PRIMo, DEEM, DietEx, or regulator acceptance."
+    }
+  ],
+  "provenance": {
+    "schema_version": "v1",
+    "defaults_version": "v1",
+    "algorithm_version": "reference-dietary-intake-0.1.0",
+    "generated_at": "2026-06-12T19:55:58.286563Z",
+    "source_references": [
+      {
+        "source_id": "dietary.dataset.example_governed_survey",
+        "title": "Raw Survey Dataset: example_governed_survey",
+        "effective_date": null,
+        "url": null,
+        "origin_tag": null
+      },
+      {
+        "source_id": "example.apple.monitoring",
+        "title": "Illustrative apple monitoring record",
+        "effective_date": "2026-04-08",
+        "url": null,
+        "origin_tag": null
+      },
+      {
+        "source_id": "dietary.food_vocab.crosswalk",
+        "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+        "effective_date": "2026-04-10",
+        "url": "docs://food-vocabulary-crosswalk",
+        "origin_tag": "illustrative_placeholder"
+      },
+      {
+        "source_id": "dietary.taxonomy.apples",
+        "title": "Dietary MCP commodity taxonomy entry for apples",
+        "effective_date": null,
+        "url": "defaults://manifest",
+        "origin_tag": "curated_derived"
+      },
+      {
+        "source_id": "example.spinach.modeled",
+        "title": "Illustrative spinach modeled record",
+        "effective_date": "2026-04-08",
+        "url": null,
+        "origin_tag": null
+      },
+      {
+        "source_id": "dietary.food_vocab.crosswalk",
+        "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+        "effective_date": "2026-04-10",
+        "url": "docs://food-vocabulary-crosswalk",
+        "origin_tag": "illustrative_placeholder"
+      },
+      {
+        "source_id": "example.spinach.modeled",
+        "title": "Illustrative spinach modeled record",
+        "effective_date": "2026-04-08",
+        "url": null,
+        "origin_tag": null
+      },
+      {
+        "source_id": "example.rice.user",
+        "title": "Illustrative rice residue input",
+        "effective_date": "2026-04-08",
+        "url": null,
+        "origin_tag": null
+      },
+      {
+        "source_id": "dietary.food_vocab.crosswalk",
+        "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+        "effective_date": "2026-04-10",
+        "url": "docs://food-vocabulary-crosswalk",
+        "origin_tag": "illustrative_placeholder"
+      },
+      {
+        "source_id": "dietary.taxonomy.rice",
+        "title": "Dietary MCP commodity taxonomy entry for rice",
+        "effective_date": null,
+        "url": "defaults://manifest",
+        "origin_tag": "curated_derived"
+      }
+    ]
+  }
+}

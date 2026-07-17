@@ -1,0 +1,225 @@
+{
+  "version": "v1",
+  "cases": [
+    {
+      "name": "mercury_monitoring_signoff_open_pending_actions",
+      "occurrenceRequest": {
+        "contaminantFamily": "mercury_food_contaminants",
+        "jurisdiction": "eu"
+      },
+      "reviewFocusRequest": {
+        "contaminantFamily": "mercury_food_contaminants",
+        "jurisdiction": "eu",
+        "focusFood": "tuna"
+      },
+      "decisions": [],
+      "expectedOverallSignoffStatus": "open",
+      "expectedPendingActionIds": [
+        "review_occurrence_context",
+        "review_priority_food_groups",
+        "review_sensitive_populations",
+        "review_commodity_focus_prompts",
+        "review_scientific_ledger.monitoring_context.efsa.mercury.occurrence_monitoring.support",
+        "review_scientific_ledger.sensitive_population_prompt_context",
+        "review_scientific_ledger.trend_signal_context",
+        "review_governance_links"
+      ],
+      "expectedAcknowledgedActionIds": [],
+      "expectedCompletedActionIds": [],
+      "expectedWaivedActionIds": [],
+      "expectedUnresolvedBlockingActionIds": [
+        "review_sensitive_populations",
+        "review_governance_links"
+      ]
+    },
+    {
+      "name": "mercury_monitoring_signoff_with_waiver",
+      "occurrenceRequest": {
+        "contaminantFamily": "mercury_food_contaminants",
+        "jurisdiction": "eu"
+      },
+      "reviewFocusRequest": {
+        "contaminantFamily": "mercury_food_contaminants",
+        "jurisdiction": "eu",
+        "focusFood": "tuna"
+      },
+      "decisions": [
+        {
+          "actionId": "review_occurrence_context",
+          "decisionStatus": "completed",
+          "rationale": "Occurrence context reviewed against the governed mercury occurrence support record.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-occurrence-registry"
+          ]
+        },
+        {
+          "actionId": "review_priority_food_groups",
+          "decisionStatus": "completed",
+          "rationale": "Priority fish groups and high-attention foods were reviewed explicitly.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_sensitive_populations",
+          "decisionStatus": "completed",
+          "rationale": "Sensitive-population context was reviewed for pregnancy-related and child-focused advice.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-review-focus-registry"
+          ]
+        },
+        {
+          "actionId": "review_commodity_focus_prompts",
+          "decisionStatus": "completed",
+          "rationale": "Commodity-focus prompts were completed for tuna and other predatory fish.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-review-focus-registry"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.monitoring_context.efsa.mercury.occurrence_monitoring.support",
+          "decisionStatus": "completed",
+          "rationale": "Monitoring-context assumption was reviewed against the governed occurrence record.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.sensitive_population_prompt_context",
+          "decisionStatus": "completed",
+          "rationale": "Sensitive-population prompt context was reviewed explicitly.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.trend_signal_context",
+          "decisionStatus": "waived",
+          "rationale": "Trend-signal context remains explicit as a controlled reviewer waiver.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_governance_links",
+          "decisionStatus": "completed",
+          "rationale": "Source, legal, method, dataset, and reference-value links were reviewed as governed context.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://regulatory-source-databases"
+          ]
+        }
+      ],
+      "expectedOverallSignoffStatus": "signed_off_with_waivers",
+      "expectedPendingActionIds": [],
+      "expectedAcknowledgedActionIds": [],
+      "expectedCompletedActionIds": [
+        "review_occurrence_context",
+        "review_priority_food_groups",
+        "review_sensitive_populations",
+        "review_commodity_focus_prompts",
+        "review_scientific_ledger.monitoring_context.efsa.mercury.occurrence_monitoring.support",
+        "review_scientific_ledger.sensitive_population_prompt_context",
+        "review_governance_links"
+      ],
+      "expectedWaivedActionIds": [
+        "review_scientific_ledger.trend_signal_context"
+      ],
+      "expectedUnresolvedBlockingActionIds": []
+    },
+    {
+      "name": "inorganic_arsenic_monitoring_signoff_open_due_unresolved_blocking",
+      "occurrenceRequest": {
+        "contaminantFamily": "inorganic_arsenic_food_contaminants",
+        "jurisdiction": "eu"
+      },
+      "reviewFocusRequest": {
+        "contaminantFamily": "inorganic_arsenic_food_contaminants",
+        "jurisdiction": "eu",
+        "commodityGroup": "rice"
+      },
+      "decisions": [
+        {
+          "actionId": "review_occurrence_context",
+          "decisionStatus": "completed",
+          "rationale": "Occurrence context was reviewed for rice-driven inorganic arsenic monitoring.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-occurrence-registry"
+          ]
+        },
+        {
+          "actionId": "review_priority_food_groups",
+          "decisionStatus": "completed",
+          "rationale": "Priority rice and cereal groups were reviewed explicitly.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_commodity_focus_prompts",
+          "decisionStatus": "completed",
+          "rationale": "Commodity-focus prompts were completed for rice and infant foods.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-review-focus-registry"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.monitoring_context.efsa.inorganic_arsenic.occurrence_monitoring.support",
+          "decisionStatus": "completed",
+          "rationale": "Monitoring-context assumption was reviewed against the governed occurrence record.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.sensitive_population_prompt_context",
+          "decisionStatus": "completed",
+          "rationale": "Sensitive-population prompt context was reviewed explicitly.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_governance_links",
+          "decisionStatus": "acknowledged",
+          "rationale": "Governance links were reviewed but still require follow-up before signoff closes.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://regulatory-source-databases"
+          ]
+        }
+      ],
+      "expectedOverallSignoffStatus": "open",
+      "expectedPendingActionIds": [
+        "review_sensitive_populations"
+      ],
+      "expectedAcknowledgedActionIds": [
+        "review_governance_links"
+      ],
+      "expectedCompletedActionIds": [
+        "review_occurrence_context",
+        "review_priority_food_groups",
+        "review_commodity_focus_prompts",
+        "review_scientific_ledger.monitoring_context.efsa.inorganic_arsenic.occurrence_monitoring.support",
+        "review_scientific_ledger.sensitive_population_prompt_context"
+      ],
+      "expectedWaivedActionIds": [],
+      "expectedUnresolvedBlockingActionIds": [
+        "review_sensitive_populations",
+        "review_governance_links"
+      ]
+    }
+  ]
+}

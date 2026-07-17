@@ -1,0 +1,65 @@
+{
+  "version": "v1",
+  "cases": [
+    {
+      "name": "three_bound_censored_residue_policy",
+      "datasetId": "uncertainty_censored_survey",
+      "regionId": "eu",
+      "populationGroup": "adult_general",
+      "rawRecords": [
+        {
+          "subjectId": "s1",
+          "bodyWeightKg": 70.0,
+          "daysInSurvey": 1,
+          "commodityCode": "rice",
+          "consumptionKgPerDay": 0.3
+        },
+        {
+          "subjectId": "s2",
+          "bodyWeightKg": 60.0,
+          "daysInSurvey": 1,
+          "commodityCode": "rice",
+          "consumptionKgPerDay": 0.1
+        }
+      ],
+      "chemicalIdentity": {
+        "preferredName": "CensoredChemical"
+      },
+      "residueRecords": [
+        {
+          "commodityCode": "rice",
+          "residueConcentrationMgPerKg": 0.05,
+          "sourceType": "monitoring"
+        }
+      ],
+      "randomSeed": 201,
+      "outerIterationCount": 20,
+      "innerIterationCount": 60,
+      "residueUncertaintyModels": [
+        {
+          "commodityCode": "rice",
+          "distribution": "censored_lognormal",
+          "geometricMeanMgPerKg": 0.05,
+          "geometricSd": 1.3,
+          "lodMgPerKg": 0.01,
+          "loqMgPerKg": 0.04
+        }
+      ],
+      "censoredDataPolicy": "three_bound_sensitivity",
+      "expectedMeanMedian": 6.039682539682539e-05,
+      "expectedPercentile95Median": 8.571428571428571e-05,
+      "expectedPercentile99Median": 8.571428571428571e-05,
+      "expectedMaxMedian": 8.571428571428571e-05,
+      "expectedLedgerCodes": [
+        "three_bound_censored_sensitivity"
+      ],
+      "expectedCensoredPolicyKeys": [
+        "lower_bound_zero",
+        "middle_bound_half_lod_loq",
+        "upper_bound_lod_loq"
+      ],
+      "expectedWeightedSampling": false,
+      "tolerance": 1e-12
+    }
+  ]
+}

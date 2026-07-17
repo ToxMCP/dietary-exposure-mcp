@@ -1,0 +1,177 @@
+{
+  "status": "match",
+  "walkthrough_name": "efsa_primo_tabular_alias_case",
+  "walkthrough_resource_uri": "adapter-walkthrough://efsa_primo_tabular_alias_case",
+  "template_name": "efsa_primo_tabular_template",
+  "model_family": "efsa_primo_adapter",
+  "compared_fields": [
+    {
+      "field": "template_name",
+      "matches": true,
+      "observed": "efsa_primo_tabular_template",
+      "expected": "efsa_primo_tabular_template",
+      "note": null
+    },
+    {
+      "field": "model_family",
+      "matches": true,
+      "observed": "efsa_primo_adapter",
+      "expected": "efsa_primo_adapter",
+      "note": null
+    },
+    {
+      "field": "unmapped_headers",
+      "matches": true,
+      "observed": [],
+      "expected": [],
+      "note": "Review is required when unrecognized CSV headers are present."
+    },
+    {
+      "field": "total_intake_mg_per_kg_bw_per_day",
+      "matches": true,
+      "observed": 0.00416,
+      "expected": 0.00416,
+      "note": "Numeric tolerance: 1e-12."
+    },
+    {
+      "field": "lower_bound_mg_per_kg_bw_per_day",
+      "matches": true,
+      "observed": 0.00304,
+      "expected": 0.00304,
+      "note": "Numeric tolerance: 1e-12."
+    },
+    {
+      "field": "upper_bound_mg_per_kg_bw_per_day",
+      "matches": true,
+      "observed": 0.00528,
+      "expected": 0.00528,
+      "note": "Numeric tolerance: 1e-12."
+    },
+    {
+      "field": "commodity_codes",
+      "matches": true,
+      "observed": [
+        "apples",
+        "milk"
+      ],
+      "expected": [
+        "apples",
+        "milk"
+      ],
+      "note": null
+    },
+    {
+      "field": "commodity_contributions_mg_per_kg_bw_per_day",
+      "matches": true,
+      "observed": {
+        "apples": 0.00336,
+        "milk": 0.0008
+      },
+      "expected": {
+        "apples": 0.00336,
+        "milk": 0.0008
+      },
+      "note": "Contribution values are compared on canonical commodity codes."
+    },
+    {
+      "field": "food_vocabulary_mappings",
+      "matches": true,
+      "observed": {
+        "apples": {
+          "foodex2Code": "EXAMPLE_FDX2_APPLES_RAW",
+          "rpcCode": "EXAMPLE_RPC_APPLES",
+          "rpcdCode": "EXAMPLE_RPCD_APPLES_RAW",
+          "processedStatus": "raw_primary_commodity",
+          "mappingConfidence": "provisional"
+        },
+        "milk": {
+          "foodex2Code": "EXAMPLE_FDX2_MILK_RAW",
+          "rpcCode": "EXAMPLE_RPC_MILK",
+          "rpcdCode": "EXAMPLE_RPCD_MILK_RAW",
+          "processedStatus": "raw_primary_commodity",
+          "mappingConfidence": "provisional"
+        }
+      },
+      "expected": {
+        "apples": {
+          "foodex2Code": "EXAMPLE_FDX2_APPLES_RAW",
+          "rpcCode": "EXAMPLE_RPC_APPLES",
+          "rpcdCode": "EXAMPLE_RPCD_APPLES_RAW",
+          "processedStatus": "raw_primary_commodity",
+          "mappingConfidence": "provisional"
+        },
+        "milk": {
+          "foodex2Code": "EXAMPLE_FDX2_MILK_RAW",
+          "rpcCode": "EXAMPLE_RPC_MILK",
+          "rpcdCode": "EXAMPLE_RPCD_MILK_RAW",
+          "processedStatus": "raw_primary_commodity",
+          "mappingConfidence": "provisional"
+        }
+      },
+      "note": "Food vocabulary fields are compared on canonical commodity codes with optional processed-commodity status retained."
+    },
+    {
+      "field": "dominant_commodity_codes",
+      "matches": true,
+      "observed": [
+        "apples",
+        "milk"
+      ],
+      "expected": [
+        "apples",
+        "milk"
+      ],
+      "note": null
+    },
+    {
+      "field": "required_source_ids_present",
+      "matches": true,
+      "observed": [
+        "dietary.food_vocab.crosswalk",
+        "dietary.profile.eu_child_1_6",
+        "dietary.taxonomy.apples",
+        "dietary.taxonomy.milk",
+        "efsa.default_body_weights.2012",
+        "efsa.primo",
+        "example.adapter.apples.monitoring",
+        "example.adapter.milk.default"
+      ],
+      "expected": [
+        "efsa.primo",
+        "efsa.default_body_weights.2012"
+      ],
+      "note": "Extra provenance source IDs are allowed; required official source IDs must be present."
+    },
+    {
+      "field": "required_quality_flag_codes_present",
+      "matches": true,
+      "observed": [
+        "external_adapter_normalized"
+      ],
+      "expected": [
+        "external_adapter_normalized"
+      ],
+      "note": "Extra quality flags are allowed; required harness quality flags must be present."
+    }
+  ],
+  "matched_fields": [
+    "template_name",
+    "model_family",
+    "unmapped_headers",
+    "total_intake_mg_per_kg_bw_per_day",
+    "lower_bound_mg_per_kg_bw_per_day",
+    "upper_bound_mg_per_kg_bw_per_day",
+    "commodity_codes",
+    "commodity_contributions_mg_per_kg_bw_per_day",
+    "food_vocabulary_mappings",
+    "dominant_commodity_codes",
+    "required_source_ids_present",
+    "required_quality_flag_codes_present"
+  ],
+  "mismatch_fields": [],
+  "notes": [
+    "This comparison is intentionally focused on stable normalized fields rather than runtime-generated IDs or timestamps.",
+    "Required source IDs and required quality flags are checked as subsets so user-supplied provenance can extend the result without causing false mismatches.",
+    "Review-required status indicates that at least one compared field diverged from the governed walkthrough baseline."
+  ]
+}

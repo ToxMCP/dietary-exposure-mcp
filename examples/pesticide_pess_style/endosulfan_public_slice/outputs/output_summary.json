@@ -1,0 +1,123 @@
+{
+  "casePackId": "endosulfan_public_slice_v1",
+  "generatedBy": "DietaryRuntime current public contracts via build_pess_case_packs.py",
+  "chemicalIdentity": {
+    "preferredName": "Endosulfan",
+    "casrn": "115-29-7"
+  },
+  "healthReference": {
+    "adi": {
+      "value": 0.006,
+      "unit": "mg/kg bw/day",
+      "sourceId": "efsa.openfoodtox.endosulfan.adi",
+      "recordId": "efsa.openfoodtox.endosulfan.adi.65",
+      "originalUnit": "6.0 ug/kg bw/day"
+    },
+    "arfd": {
+      "value": 0.015,
+      "unit": "mg/kg bw/day",
+      "sourceId": "efsa.openfoodtox.endosulfan.arfd",
+      "recordId": "efsa.openfoodtox.endosulfan.arfd.775"
+    }
+  },
+  "processingFactorCheck": {
+    "submittedCommodityCode": "apple_juice",
+    "canonicalCommodityCode": "apples",
+    "appliedProcessingFactor": 0.65,
+    "contrastToPess": "PESS reported processing factor = 1 for all dietary calculations; this slice demonstrates governed processed-commodity handling."
+  },
+  "deterministic": {
+    "adultChronic": {
+      "populationGroup": "adult_general",
+      "scenarioClass": "point_estimate",
+      "intakeWindowSemantic": "chronic",
+      "totalIntakeMgPerKgBwPerDay": 3.385714285714286e-05,
+      "percentOfAdi": 0.5642857142857143,
+      "commodityContributions": {
+        "apples": {
+          "consumptionKgPerDay": 0.18,
+          "appliedProcessingFactor": 0.65,
+          "contributionMgPerKgBwPerDay": 1.6714285714285716e-05
+        },
+        "rice": {
+          "consumptionKgPerDay": 0.12,
+          "appliedProcessingFactor": 1.0,
+          "contributionMgPerKgBwPerDay": 1.7142857142857142e-05
+        }
+      }
+    },
+    "childAcute": {
+      "populationGroup": "child_1_6",
+      "scenarioClass": "bounded_acute",
+      "intakeWindowSemantic": "acute",
+      "totalIntakeMgPerKgBwPerDay": 0.00024133333333333336,
+      "lowerBoundTotalIntakeMgPerKgBwPerDay": 0.0,
+      "upperBoundTotalIntakeMgPerKgBwPerDay": 0.0009666666666666667,
+      "percentOfArfd": 1.6088888888888893
+    }
+  },
+  "surveyDistribution": {
+    "totalSubjects": 4,
+    "consumersOnlyCount": 3,
+    "zeroIntakePrevalence": 0.25,
+    "meanIntakeMgPerKgBwPerDay": 2.2904305875576037e-05,
+    "percentile95MgPerKgBwPerDay": 3.920276497695852e-05
+  },
+  "probabilistic": {
+    "iterationCount": 1000,
+    "randomSeed": 20260601,
+    "meanIntakeMgPerKgBwPerDay": 2.278905025921659e-05,
+    "percentile95MgPerKgBwPerDay": 4.032258064516129e-05,
+    "zeroIntakePrevalence": 0.25
+  },
+  "uncertainty": {
+    "assessmentMode": "two_dimensional_monte_carlo",
+    "censoredDataPolicy": "three_bound_sensitivity",
+    "censoredPolicySummaryKeys": [
+      "lower_bound_zero",
+      "middle_bound_half_lod_loq",
+      "upper_bound_lod_loq"
+    ],
+    "meanMedianMgPerKgBwPerDay": 3.0239247587787918e-05,
+    "percentile95MedianMgPerKgBwPerDay": 9.496119739720957e-05,
+    "adiExceedanceProbabilityMedian": 0.0
+  },
+  "tradeRisk": {
+    "targetJurisdictions": [
+      "eu",
+      "us",
+      "codex_global",
+      "cn"
+    ],
+    "jurisdictionStatuses": {
+      "eu": "inconclusive_no_limit",
+      "us": "inconclusive_no_limit",
+      "codex_global": "inconclusive_no_limit",
+      "cn": "inconclusive_no_limit"
+    },
+    "jurisdictionMrlCoverageStatuses": {
+      "eu": "no_curated_family_coverage",
+      "us": "no_curated_family_coverage",
+      "codex_global": "no_curated_family_coverage",
+      "cn": "no_curated_family_coverage"
+    }
+  },
+  "pbpkHandoff": {
+    "route": "oral",
+    "intakeWindowSemantic": "acute",
+    "valueMgPerKgBwPerDay": 0.00024133333333333336,
+    "schedule": "single_day"
+  },
+  "reviewPosture": {
+    "residueInputPosture": "illustrative_screening_fixture_eu_mrl_band",
+    "residueReviewStatus": "schema_reviewed_not_source_validated",
+    "referenceValuePosture": "governed_efsa_openfoodtox"
+  },
+  "nonClaims": [
+    "Not a row-level EFSA residue dataset reproduction.",
+    "Not an EFSA PRIMo, DEEM, or PESS engine run.",
+    "Not a final regulatory conclusion, legal clearance, or trade clearance.",
+    "Not a PBPK internal-dose simulation.",
+    "Not a biomonitoring validation."
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "$defs": {
+    "ContaminantFamily": {
+      "enum": [
+        "pesticide_residue",
+        "microplastics_emerging",
+        "pfas_food_contaminants",
+        "acrylamide_process_contaminants",
+        "bisphenol_food_contact_migration",
+        "cadmium_food_contaminants",
+        "lead_food_contaminants",
+        "inorganic_arsenic_food_contaminants",
+        "mercury_food_contaminants",
+        "food_contaminant"
+      ],
+      "title": "ContaminantFamily",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "contaminantFamily": {
+      "$ref": "#/$defs/ContaminantFamily"
+    },
+    "jurisdiction": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Jurisdiction"
+    },
+    "authority": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Authority"
+    },
+    "matrixGroup": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Matrixgroup"
+    }
+  },
+  "required": [
+    "contaminantFamily"
+  ],
+  "title": "LookupReportingProfilesRequest",
+  "type": "object"
+}

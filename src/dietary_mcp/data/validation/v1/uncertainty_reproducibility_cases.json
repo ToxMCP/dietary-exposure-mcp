@@ -1,0 +1,60 @@
+{
+  "version": "v1",
+  "cases": [
+    {
+      "name": "seed_stable_reproducibility_case",
+      "datasetId": "uncertainty_repro_survey",
+      "regionId": "eu",
+      "populationGroup": "adult_general",
+      "rawRecords": [
+        {
+          "subjectId": "s1",
+          "bodyWeightKg": 70.0,
+          "daysInSurvey": 1,
+          "commodityCode": "apples",
+          "consumptionKgPerDay": 0.4
+        },
+        {
+          "subjectId": "s2",
+          "bodyWeightKg": 65.0,
+          "daysInSurvey": 1,
+          "commodityCode": "apples",
+          "consumptionKgPerDay": 0.1
+        }
+      ],
+      "chemicalIdentity": {
+        "preferredName": "ReproChemical"
+      },
+      "residueRecords": [
+        {
+          "commodityCode": "apples",
+          "residueConcentrationMgPerKg": 0.2,
+          "sourceType": "monitoring"
+        }
+      ],
+      "randomSeed": 501,
+      "outerIterationCount": 20,
+      "innerIterationCount": 60,
+      "residueUncertaintyModels": [
+        {
+          "commodityCode": "apples",
+          "distribution": "uniform",
+          "minMgPerKg": 0.1,
+          "maxMgPerKg": 0.3
+        }
+      ],
+      "censoredDataPolicy": "middle_bound_half_lod_loq",
+      "expectedMeanMedian": 0.0007215906603574497,
+      "expectedPercentile95Median": 0.0015903053868423873,
+      "expectedPercentile99Median": 0.0016578789129316083,
+      "expectedMaxMedian": 0.001673288632685907,
+      "expectedSimulationFingerprint": "simulation-48655d0773cb",
+      "expectedModelFingerprint": "model-68c1f4ef1177",
+      "expectedLedgerCodes": [
+        "two_dimensional_monte_carlo"
+      ],
+      "expectedWeightedSampling": false,
+      "tolerance": 1e-12
+    }
+  ]
+}

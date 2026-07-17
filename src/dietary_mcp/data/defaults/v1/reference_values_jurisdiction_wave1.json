@@ -1,0 +1,149 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "reference_values",
+  "validationProfile": "official_primary_wave1",
+  "records": [
+    {
+      "recordId": "jmpr.imidacloprid.adi.2001",
+      "substanceKey": "imidacloprid",
+      "substanceName": "Imidacloprid",
+      "referenceType": "adi",
+      "authority": "JMPR",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.06,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "jmpr.imidacloprid.report.2001",
+        "codex.pesticide_database.2024"
+      ],
+      "primarySourceId": "jmpr.imidacloprid.report.2001",
+      "databaseSourceId": "codex.pesticide_database.2024",
+      "conflictGroupId": "imidacloprid.adi.authority_conflict",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2001-01-01",
+      "notes": [
+        "Official Codex/JMPR chronic reference value for imidacloprid.",
+        "Preserved separately so Codex/JMPR review values do not overwrite EFSA or national authority values."
+      ]
+    },
+    {
+      "recordId": "jmpr.acetamiprid.adi.2011",
+      "substanceKey": "acetamiprid",
+      "substanceName": "Acetamiprid",
+      "referenceType": "adi",
+      "authority": "JMPR",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.07,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "jmpr.acetamiprid.report.2011",
+        "codex.pesticide_database.2024"
+      ],
+      "primarySourceId": "jmpr.acetamiprid.report.2011",
+      "databaseSourceId": "codex.pesticide_database.2024",
+      "conflictGroupId": "acetamiprid.adi.authority_conflict",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2011-01-01",
+      "notes": [
+        "Official Codex/JMPR chronic reference value for acetamiprid.",
+        "Preserved separately so Codex/JMPR review values do not overwrite EFSA or national authority values."
+      ]
+    },
+    {
+      "recordId": "cn.nhc.imidacloprid.adi.2026",
+      "substanceKey": "imidacloprid",
+      "substanceName": "Imidacloprid",
+      "referenceType": "adi",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.06,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "cn.nhc.gb2763.2026.announcement",
+        "cn.aqsc.gb2763.2026"
+      ],
+      "primarySourceId": "cn.aqsc.gb2763.2026",
+      "conflictGroupId": "imidacloprid.adi.authority_conflict",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2026-03-01",
+      "notes": [
+        "Official Chinese chronic reference value for imidacloprid from GB 2763-2026."
+      ]
+    },
+    {
+      "recordId": "cn.nhc.acetamiprid.adi.2026",
+      "substanceKey": "acetamiprid",
+      "substanceName": "Acetamiprid",
+      "referenceType": "adi",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.07,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "cn.nhc.gb2763.2026.announcement",
+        "cn.aqsc.gb2763.2026"
+      ],
+      "primarySourceId": "cn.aqsc.gb2763.2026",
+      "conflictGroupId": "acetamiprid.adi.authority_conflict",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2026-03-01",
+      "notes": [
+        "Official Chinese chronic reference value for acetamiprid from GB 2763-2026."
+      ]
+    },
+    {
+      "recordId": "cn.nhc.glufosinate.adi.2026",
+      "substanceKey": "glufosinate",
+      "substanceName": "Glufosinate-ammonium",
+      "referenceType": "adi",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.01,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "cn.nhc.gb2763.2026.announcement",
+        "cn.aqsc.gb2763.2026"
+      ],
+      "primarySourceId": "cn.aqsc.gb2763.2026",
+      "conflictGroupId": "glufosinate.adi.authority_conflict",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2026-03-01",
+      "notes": [
+        "Official Chinese chronic reference value for glufosinate from GB 2763-2026."
+      ]
+    },
+    {
+      "recordId": "cn.nhc.oxamyl.adi.2026",
+      "substanceKey": "oxamyl",
+      "substanceName": "Oxamyl",
+      "referenceType": "adi",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.009,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "cn.nhc.gb2763.2026.announcement",
+        "cn.aqsc.gb2763.2026"
+      ],
+      "primarySourceId": "cn.aqsc.gb2763.2026",
+      "conflictGroupId": "oxamyl.adi.authority_conflict",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2026-03-01",
+      "notes": [
+        "Official Chinese chronic reference value for oxamyl from GB 2763-2026."
+      ]
+    }
+  ]
+}

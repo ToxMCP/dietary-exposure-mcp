@@ -1,0 +1,68 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "mrl_enforcement",
+  "records": [
+    {
+      "recordId": "us.epa.glyphosate.rice.mrl",
+      "substanceKey": "glyphosate",
+      "commodityCode": "rice",
+      "authority": "US EPA",
+      "jurisdiction": "us",
+      "mrlValueMgPerKg": 0.1,
+      "effectiveDate": "2024-07-01",
+      "sourceIds": ["us.govinfo.cfr.40_180.364.2024"],
+      "notes": [
+        "Governed US EPA tolerance for glyphosate on rice grain from the official 2024 CFR annual edition."
+      ]
+    },
+    {
+      "recordId": "eu.efsa.glyphosate.apples.mrl",
+      "substanceKey": "glyphosate",
+      "commodityCode": "apples",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "mrlValueMgPerKg": 0.1,
+      "sourceIds": ["eu.reg.396_2005"],
+      "notes": [
+        "Governed EU MRL for glyphosate on apples."
+      ]
+    },
+    {
+      "recordId": "cn.gb.glyphosate.apples.mrl",
+      "substanceKey": "glyphosate",
+      "commodityCode": "apples",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "mrlValueMgPerKg": 0.5,
+      "effectiveDate": "2026-03-01",
+      "sourceIds": ["cn.aqsc.gb2763.2026"],
+      "notes": [
+        "Governed Chinese MRL for glyphosate on apples from GB 2763-2026."
+      ]
+    },
+    {
+      "recordId": "jp.mhlw.glyphosate.apples.mrl",
+      "substanceKey": "glyphosate",
+      "commodityCode": "apples",
+      "authority": "MHLW Japan",
+      "jurisdiction": "jp",
+      "mrlValueMgPerKg": 0.2,
+      "sourceIds": ["jp.mhlw.fsa"],
+      "notes": [
+        "Governed Japanese MRL for glyphosate on apples."
+      ]
+    },
+    {
+      "recordId": "ca.pmra.glyphosate.apples.mrl",
+      "substanceKey": "glyphosate",
+      "commodityCode": "apples",
+      "authority": "PMRA Canada",
+      "jurisdiction": "ca",
+      "mrlValueMgPerKg": 0.1,
+      "sourceIds": ["ca.hc.pmra.mrl_database"],
+      "notes": [
+        "Governed Canadian MRL for glyphosate on apples."
+      ]
+    }
+  ]
+}

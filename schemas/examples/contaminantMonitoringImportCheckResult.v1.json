@@ -1,0 +1,355 @@
+{
+  "check_status": "pass",
+  "contaminant_family": "mercury_food_contaminants",
+  "jurisdiction": "eu",
+  "authority": null,
+  "dataset_id": "efsa.comprehensive_food_consumption_db.mercury_support",
+  "overall_submission_use": "allowed",
+  "submission_candidate_allowed": true,
+  "occurrence_evidence_records": [
+    {
+      "record_id": "eu.mercury.occurrence_evidence.official_monitoring_context",
+      "display_name": "Mercury official monitoring evidence context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminant_family": "mercury_food_contaminants",
+      "evidence_kind": "official_monitoring_context",
+      "analytes": [
+        "methylmercury",
+        "inorganic_mercury",
+        "total_mercury"
+      ],
+      "matrix_groups": [
+        "fish_and_seafood",
+        "large_predatory_fish",
+        "broad_food_supply"
+      ],
+      "sample_set_summary": "EFSA mercury occurrence and dietary context linked to EU official-control and contaminants-law review.",
+      "measured_unit": "mg/kg",
+      "data_period": "2012-2026_review_context",
+      "lower_bound_handling": "review_occurrence_lower_bound_context",
+      "maturity_status": "established",
+      "evidence_support_status": "established",
+      "submission_use": "allowed",
+      "document_status": "final_current",
+      "source_ids": [
+        "efsa.mercury.food.2012",
+        "efsa.mercury.fish_consumption.2026",
+        "efsa.metals.topic.2026",
+        "eu.reg.2023_915",
+        "eu.reg.333_2007"
+      ],
+      "occurrence_record_ids": [
+        "efsa.mercury.occurrence_monitoring.support"
+      ],
+      "dataset_ids": [
+        "efsa.comprehensive_food_consumption_db.mercury_support"
+      ],
+      "method_evidence_record_ids": [
+        "eu.mercury.analytical_method_evidence.official_control"
+      ],
+      "legal_authority_ids": [
+        "eu.mercury.contaminants.reg_2023_915",
+        "eu.mercury.official_control.reg_333_2007"
+      ],
+      "reference_value_record_ids": [
+        "efsa.methylmercury.twi.2012",
+        "efsa.inorganic_mercury.twi.2012"
+      ],
+      "linked_review_focus_ids": [
+        "efsa.mercury.large_predatory_fish.review_focus",
+        "efsa.mercury.sensitive_population_advice.review_focus"
+      ],
+      "reporting_profile_ids": [],
+      "notes": [
+        "Captures governed occurrence context for mercury food review and monitoring interpretation.",
+        "Exposed for evidence linkage and auditability, not as a native mercury exposure engine."
+      ]
+    }
+  ],
+  "analytical_method_evidence_records": [
+    {
+      "record_id": "eu.mercury.analytical_method_evidence.official_control",
+      "display_name": "Mercury official-control analytical method evidence",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminant_family": "mercury_food_contaminants",
+      "evidence_kind": "official_control_sampling_and_analysis",
+      "analytes": [
+        "methylmercury",
+        "inorganic_mercury",
+        "total_mercury"
+      ],
+      "matrix_groups": [
+        "fish_and_seafood",
+        "large_predatory_fish",
+        "broad_food_supply"
+      ],
+      "technique_summary": "Official-control sampling and analysis governance for mercury levels in foodstuffs.",
+      "method_code": null,
+      "lod_summary": "Import rows should preserve lod when available for method-review traceability.",
+      "lod_value": null,
+      "lod_unit": null,
+      "loq_summary": "Import rows should preserve loq where reported to support lower-bound and review context.",
+      "loq_value": null,
+      "loq_unit": null,
+      "recovery_summary": "Recovery information should be retained where available to support analytical review context.",
+      "recovery_range_percent": null,
+      "measurement_uncertainty_summary": "Measurement uncertainty should be retained where available for official-control review context.",
+      "measurement_uncertainty_percent": null,
+      "storage_stability_summary": "Storage-stability evidence is external to this pack and should be linked separately when available.",
+      "sampling_plan_summary": "Sampling-plan context follows the governed EU official-control regulation and linked EFSA review material.",
+      "sampling_plan_reference": null,
+      "maturity_status": "established",
+      "evidence_support_status": "established",
+      "submission_use": "allowed",
+      "document_status": "final_current",
+      "source_ids": [
+        "eu.reg.333_2007",
+        "efsa.mercury.food.2012",
+        "eu.reg.2023_915"
+      ],
+      "method_ids": [
+        "eu.mercury.official_control.333_2007",
+        "efsa.mercury.food.2012_opinion"
+      ],
+      "legal_authority_ids": [
+        "eu.mercury.official_control.reg_333_2007",
+        "eu.mercury.contaminants.reg_2023_915"
+      ],
+      "reporting_profile_ids": [],
+      "notes": [
+        "Preserves analytical-method context for mercury review and monitoring import checks.",
+        "Dietary MCP does not execute this method; it records its governed review context."
+      ]
+    }
+  ],
+  "applicable_reporting_profile_ids": [],
+  "reporting_profile_summary": null,
+  "header_resolution": [
+    {
+      "header": "food",
+      "canonical_field": "commodity",
+      "recognized": true
+    },
+    {
+      "header": "contaminant",
+      "canonical_field": "analyte",
+      "recognized": true
+    },
+    {
+      "header": "result",
+      "canonical_field": "result_value",
+      "recognized": true
+    },
+    {
+      "header": "unit",
+      "canonical_field": "unit",
+      "recognized": true
+    },
+    {
+      "header": "loq",
+      "canonical_field": "loq",
+      "recognized": true
+    },
+    {
+      "header": "recovery_percent",
+      "canonical_field": "recovery_percent",
+      "recognized": true
+    },
+    {
+      "header": "measurement_uncertainty_percent",
+      "canonical_field": "measurement_uncertainty_percent",
+      "recognized": true
+    },
+    {
+      "header": "sampling_year",
+      "canonical_field": "sampling_year",
+      "recognized": true
+    }
+  ],
+  "normalized_projection": {
+    "row_count": 2,
+    "analytes": [
+      "methylmercury"
+    ],
+    "commodity_names": [
+      "bluefin_tuna",
+      "swordfish"
+    ],
+    "units": [
+      "mg/kg"
+    ],
+    "sampling_years": [
+      2025
+    ],
+    "rows_with_lod": 0,
+    "rows_with_loq": 2,
+    "rows_with_recovery_percent": 2,
+    "rows_with_measurement_uncertainty_percent": 2,
+    "priority_food_group_hits": [
+      "fish_and_seafood"
+    ],
+    "high_attention_food_hits": [
+      "bluefin_tuna",
+      "swordfish"
+    ],
+    "sensitive_population_groups": [
+      "foetus_and_unborn_child",
+      "high_fish_consumers",
+      "women_who_are_pregnant_or_planning_pregnancy",
+      "young_children"
+    ],
+    "linked_occurrence_record_ids": [
+      "efsa.mercury.occurrence_monitoring.support"
+    ],
+    "linked_review_focus_ids": [
+      "efsa.mercury.large_predatory_fish.review_focus",
+      "efsa.mercury.sensitive_population_advice.review_focus"
+    ]
+  },
+  "quality_flags": [
+    {
+      "code": "broad_food_supply_fallback",
+      "severity": "warning",
+      "message": "At least one governed evidence record matched through a `broad_food_supply` fallback rather than a matrix-specific link: ['eu.mercury.analytical_method_evidence.official_control', 'eu.mercury.occurrence_evidence.official_monitoring_context']."
+    }
+  ],
+  "uncertainty_and_assumption_ledger": [
+    {
+      "entry_id": "row_level_lod_coverage",
+      "entry_kind": "data_gap",
+      "category": "analytical_measurement",
+      "severity": "warning",
+      "summary": "Row-level LOD coverage is incomplete.",
+      "rationale": "0 of 2 rows supplied `lod` values. Detection-limit context should be reviewed against the linked analytical-method evidence rather than assumed from the CSV alone.",
+      "conservative": null,
+      "affected_fields": [
+        "lod"
+      ],
+      "linked_record_ids": [
+        "eu.mercury.analytical_method_evidence.official_control"
+      ],
+      "source_ids": [
+        "efsa.mercury.food.2012",
+        "eu.reg.2023_915",
+        "eu.reg.333_2007"
+      ]
+    },
+    {
+      "entry_id": "lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+      "entry_kind": "assumption",
+      "category": "occurrence_data",
+      "severity": "info",
+      "summary": "Lower-bound handling is governed by linked occurrence evidence.",
+      "rationale": "review_occurrence_lower_bound_context",
+      "conservative": true,
+      "affected_fields": [
+        "result_value",
+        "lod",
+        "loq"
+      ],
+      "linked_record_ids": [
+        "eu.mercury.occurrence_evidence.official_monitoring_context"
+      ],
+      "source_ids": [
+        "efsa.mercury.food.2012",
+        "efsa.mercury.fish_consumption.2026",
+        "efsa.metals.topic.2026",
+        "eu.reg.2023_915",
+        "eu.reg.333_2007"
+      ]
+    },
+    {
+      "entry_id": "storage_stability.eu.mercury.analytical_method_evidence.official_control",
+      "entry_kind": "uncertainty",
+      "category": "analytical_method",
+      "severity": "info",
+      "summary": "Storage-stability interpretation relies on governed analytical-method context.",
+      "rationale": "Storage-stability evidence is external to this pack and should be linked separately when available.",
+      "conservative": null,
+      "affected_fields": [],
+      "linked_record_ids": [
+        "eu.mercury.analytical_method_evidence.official_control"
+      ],
+      "source_ids": [
+        "eu.reg.333_2007",
+        "efsa.mercury.food.2012",
+        "eu.reg.2023_915"
+      ]
+    },
+    {
+      "entry_id": "sampling_plan.eu.mercury.analytical_method_evidence.official_control",
+      "entry_kind": "assumption",
+      "category": "sampling_context",
+      "severity": "info",
+      "summary": "Sampling-plan interpretation relies on governed analytical-method context.",
+      "rationale": "Sampling-plan context follows the governed EU official-control regulation and linked EFSA review material.",
+      "conservative": null,
+      "affected_fields": [],
+      "linked_record_ids": [
+        "eu.mercury.analytical_method_evidence.official_control"
+      ],
+      "source_ids": [
+        "eu.reg.333_2007",
+        "efsa.mercury.food.2012",
+        "eu.reg.2023_915"
+      ]
+    }
+  ],
+  "required_review_questions": [
+    "Are methylmercury-driven fish and seafood contributors interpreted against the governed methylmercury TWI rather than a generic total-mercury threshold?",
+    "Are methylmercury-driven fish contributors still interpreted against the governed methylmercury TWI rather than generic total-mercury logic?",
+    "Does the occurrence set distinguish large predatory species from mixed fish categories before review conclusions are drawn?",
+    "Does the review package preserve species-level visibility for large predatory fish before downstream communication or mitigation decisions are made?",
+    "Is pregnancy-related or child-specific reviewer advice preserved as governed context instead of being inferred ad hoc from generic fish categories?",
+    "Is species-specific national advice relevant for high consumers, pregnancy-related review, or other sensitive-population communication?",
+    "Where national fish-advice layers differ, is that divergence being treated as review input rather than silently normalized away?"
+  ],
+  "referenced_resources": [
+    {
+      "role": "documentation",
+      "uri": "docs://contaminant-monitoring-import",
+      "description": "Operator guidance for contaminant monitoring import review.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "occurrence_evidence_manifest",
+      "uri": "occurrence-evidence://manifest",
+      "description": "Governed occurrence-evidence manifest for contaminant monitoring families.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "analytical_method_evidence_manifest",
+      "uri": "analytical-method-evidence://manifest",
+      "description": "Governed analytical-method-evidence manifest for contaminant monitoring families.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "reporting_profiles_manifest",
+      "uri": "reporting-profiles://manifest",
+      "description": "Governed reporting-profile manifest for primary EU and optional advisory reporting conventions.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "documentation",
+      "uri": "docs://reporting-profiles-registry",
+      "description": "Operator guidance for reporting-profile registry usage and optional extensions.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    }
+  ],
+  "notes": [
+    "Contaminant monitoring import checks validate supplied CSV text against governed occurrence and analytical-method evidence objects.",
+    "This workflow is review-oriented and does not create a native contaminant exposure engine or final regulatory decision.",
+    "Occurrence-evidence record eu.mercury.occurrence_evidence.official_monitoring_context: Supporting sources mix historical anchors (efsa.mercury.food.2012) with newer context records (efsa.mercury.fish_consumption.2026, efsa.metals.topic.2026, eu.reg.2023_915, eu.reg.333_2007); confirm the older evidence base is still fit for the intended use.",
+    "Occurrence-evidence record eu.mercury.occurrence_evidence.official_monitoring_context still depends on older supporting sources (efsa.mercury.food.2012) even though newer context records are also linked.",
+    "Analytical-method-evidence record eu.mercury.analytical_method_evidence.official_control: Supporting sources mix historical anchors (efsa.mercury.food.2012) with newer context records (eu.reg.2023_915, eu.reg.333_2007); confirm the older evidence base is still fit for the intended use.",
+    "Analytical-method-evidence record eu.mercury.analytical_method_evidence.official_control still depends on older supporting sources (efsa.mercury.food.2012) even though newer context records are also linked.",
+    "Broad-food-supply fallback matching was used for at least one evidence record; treat the matrix linkage as review support rather than a matrix-specific confirmation."
+  ]
+}

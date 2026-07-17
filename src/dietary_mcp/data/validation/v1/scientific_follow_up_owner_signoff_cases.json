@@ -1,0 +1,124 @@
+{
+  "version": "v1",
+  "cases": [
+    {
+      "name": "efsa_primo_internal_review_owner_signoff_empty",
+      "scenario": "efsa_primo",
+      "targetProfile": "eu_internal_review",
+      "ownerLane": "scientific_reviewer",
+      "reviewerId": "validation.owner.signoff.empty",
+      "reviewerRole": "scientific_reviewer",
+      "expectedOverallSignoffStatus": "signed_off",
+      "expectedSourceWorkflow": "adapter_review_dossier",
+      "expectedPendingActionIds": [],
+      "expectedAcknowledgedActionIds": [],
+      "expectedCompletedActionIds": [],
+      "expectedWaivedActionIds": [],
+      "expectedRecommendedSignoffSequence": []
+    },
+    {
+      "name": "mercury_contaminant_internal_review_owner_signoff_open",
+      "scenario": "mercury_contaminant",
+      "targetProfile": "mercury_internal_review",
+      "ownerLane": "scientific_reviewer",
+      "reviewerId": "validation.owner.signoff.pending",
+      "reviewerRole": "scientific_reviewer",
+      "expectedOverallSignoffStatus": "open",
+      "expectedSourceWorkflow": "contaminant_monitoring_review_dossier",
+      "expectedPendingActionIds": [
+        "review_scientific_ledger.row_level_lod_coverage",
+        "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+        "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control",
+        "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control"
+      ],
+      "expectedAcknowledgedActionIds": [],
+      "expectedCompletedActionIds": [],
+      "expectedWaivedActionIds": [],
+      "expectedRecommendedSignoffSequence": [
+        "review_scientific_ledger.row_level_lod_coverage",
+        "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+        "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control",
+        "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control"
+      ]
+    },
+    {
+      "name": "mercury_contaminant_mixed_review_lead_owner_signoff_with_waiver",
+      "scenario": "mercury_contaminant_mixed",
+      "targetProfile": "mercury_internal_review",
+      "ownerLane": "review_lead",
+      "dueStateFilter": [
+        "immediate"
+      ],
+      "reviewerId": "validation.owner.signoff.review_lead",
+      "reviewerRole": "review_lead",
+      "decisions": [
+        {
+          "actionId": "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+          "decisionStatus": "waived",
+          "rationale": "Lower-bound handling retained with explicit waiver.",
+          "reviewedAt": "2026-04-12",
+          "supportingUris": [
+            "docs://scientific-follow-up-owner-signoff"
+          ]
+        }
+      ],
+      "expectedOverallSignoffStatus": "signed_off_with_waivers",
+      "expectedSourceWorkflow": "contaminant_monitoring_review_dossier",
+      "expectedPendingActionIds": [],
+      "expectedAcknowledgedActionIds": [],
+      "expectedCompletedActionIds": [],
+      "expectedWaivedActionIds": [
+        "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context"
+      ],
+      "expectedRecommendedSignoffSequence": [
+        "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context"
+      ]
+    },
+    {
+      "name": "mercury_contaminant_mixed_scientific_owner_signoff_completed",
+      "scenario": "mercury_contaminant_mixed",
+      "targetProfile": "mercury_internal_review",
+      "ownerLane": "scientific_reviewer",
+      "dueStateFilter": [
+        "closed"
+      ],
+      "reviewerId": "validation.owner.signoff.closed",
+      "reviewerRole": "scientific_reviewer",
+      "decisions": [
+        {
+          "actionId": "review_scientific_ledger.row_level_lod_coverage",
+          "decisionStatus": "completed",
+          "rationale": "Closed action retained as completed review.",
+          "reviewedAt": "2026-04-12"
+        },
+        {
+          "actionId": "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control",
+          "decisionStatus": "completed",
+          "rationale": "Closed action retained as completed review.",
+          "reviewedAt": "2026-04-12"
+        },
+        {
+          "actionId": "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control",
+          "decisionStatus": "completed",
+          "rationale": "Closed action retained as completed review.",
+          "reviewedAt": "2026-04-12"
+        }
+      ],
+      "expectedOverallSignoffStatus": "signed_off",
+      "expectedSourceWorkflow": "contaminant_monitoring_review_dossier",
+      "expectedPendingActionIds": [],
+      "expectedAcknowledgedActionIds": [],
+      "expectedCompletedActionIds": [
+        "review_scientific_ledger.row_level_lod_coverage",
+        "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control",
+        "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control"
+      ],
+      "expectedWaivedActionIds": [],
+      "expectedRecommendedSignoffSequence": [
+        "review_scientific_ledger.row_level_lod_coverage",
+        "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control",
+        "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control"
+      ]
+    }
+  ]
+}

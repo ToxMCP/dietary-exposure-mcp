@@ -1,0 +1,11 @@
+{
+  "code": "input_limit_exceeded",
+  "message": "The submitted request exceeded a configured Dietary MCP runtime limit.",
+  "suggestion": "Reduce the request size or raise the documented environment override within the hard schema ceiling.",
+  "details": {
+    "requestId": "example-error-0001",
+    "runtimeLimit": 100000,
+    "hardCeiling": 1000000,
+    "envVar": "DIETARY_MCP_MAX_PROBABILISTIC_ITERATIONS"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "version": "v1",
+  "cases": [
+    {
+      "name": "mercury_monitoring_interpretation_bundle",
+      "occurrenceRequest": {
+        "contaminantFamily": "mercury_food_contaminants",
+        "jurisdiction": "eu"
+      },
+      "reviewFocusRequest": {
+        "contaminantFamily": "mercury_food_contaminants",
+        "jurisdiction": "eu",
+        "focusFood": "tuna"
+      },
+      "bundleNote": "Validation case for governed mercury monitoring interpretation.",
+      "expectedOccurrenceRecordIds": [
+        "efsa.mercury.occurrence_monitoring.support"
+      ],
+      "expectedFocusIds": [
+        "efsa.mercury.large_predatory_fish.review_focus",
+        "efsa.mercury.sensitive_population_advice.review_focus"
+      ],
+      "expectedPriorityFoodGroups": [
+        "fish_and_seafood",
+        "large_predatory_fish"
+      ],
+      "expectedHighAttentionFoods": [
+        "swordfish",
+        "shark",
+        "bigeye_tuna",
+        "bluefin_tuna"
+      ],
+      "expectedFocusFoods": [
+        "bigeye_tuna",
+        "bluefin_tuna"
+      ],
+      "expectedSensitivePopulationGroups": [
+        "women_who_are_pregnant_or_planning_pregnancy",
+        "young_children"
+      ],
+      "expectedReferenceValueRecordIds": [
+        "efsa.methylmercury.twi.2012",
+        "efsa.inorganic_mercury.twi.2012"
+      ],
+      "expectedLinkedOccurrenceRecordIds": [
+        "efsa.mercury.occurrence_monitoring.support"
+      ],
+      "expectedUnresolvedLinkedOccurrenceRecordIds": [],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true,
+      "expectedMinimumPromptCount": 7,
+      "expectedLedgerEntryIds": [
+        "monitoring_context.efsa.mercury.occurrence_monitoring.support",
+        "sensitive_population_prompt_context",
+        "trend_signal_context"
+      ],
+      "expectedMinimumLedgerCount": 3,
+      "expectedSubmissionUse": "allowed"
+    },
+    {
+      "name": "inorganic_arsenic_monitoring_interpretation_bundle",
+      "occurrenceRequest": {
+        "contaminantFamily": "inorganic_arsenic_food_contaminants",
+        "jurisdiction": "eu"
+      },
+      "reviewFocusRequest": {
+        "contaminantFamily": "inorganic_arsenic_food_contaminants",
+        "jurisdiction": "eu",
+        "commodityGroup": "rice"
+      },
+      "bundleNote": "Validation case for governed inorganic arsenic monitoring interpretation.",
+      "expectedOccurrenceRecordIds": [
+        "efsa.inorganic_arsenic.occurrence_monitoring.support"
+      ],
+      "expectedFocusIds": [
+        "efsa.inorganic_arsenic.rice_products.review_focus"
+      ],
+      "expectedPriorityFoodGroups": [
+        "rice_and_rice_based_products",
+        "grains_and_grain_based_products"
+      ],
+      "expectedHighAttentionFoods": [
+        "rice",
+        "rice_cakes",
+        "rice_based_infant_foods"
+      ],
+      "expectedFocusFoods": [
+        "rice",
+        "rice_based_infant_foods"
+      ],
+      "expectedSensitivePopulationGroups": [
+        "infants_and_young_children_high_rice_consumers",
+        "high_rice_consumers"
+      ],
+      "expectedReferenceValueRecordIds": [
+        "efsa.inorganic_arsenic.skin_cancer.bmdl05"
+      ],
+      "expectedLinkedOccurrenceRecordIds": [
+        "efsa.inorganic_arsenic.occurrence_monitoring.support"
+      ],
+      "expectedUnresolvedLinkedOccurrenceRecordIds": [],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true,
+      "expectedMinimumPromptCount": 5,
+      "expectedLedgerEntryIds": [
+        "monitoring_context.efsa.inorganic_arsenic.occurrence_monitoring.support",
+        "sensitive_population_prompt_context"
+      ],
+      "expectedMinimumLedgerCount": 2
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "version": "v1",
+  "rules": [
+    {
+      "ruleId": "sanitised_public_no_confidential_resources",
+      "profile": "sanitised_public",
+      "description": "Sanitised public dossiers must omit review resources and pinned resources tagged confidential."
+    },
+    {
+      "ruleId": "sanitised_public_redaction_markers_present",
+      "profile": "sanitised_public",
+      "description": "Confidential fields removed from public view must be represented through machine-readable redaction markers in sanitisation records."
+    },
+    {
+      "ruleId": "sanitised_public_retains_public_provenance",
+      "profile": "sanitised_public",
+      "description": "Public dossiers must preserve release metadata, governed source/model snapshots, and retained non-confidential fingerprints."
+    }
+  ]
+}

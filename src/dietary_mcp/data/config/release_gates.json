@@ -1,0 +1,37 @@
+{
+  "version": "0.1.0",
+  "gates": [
+    {
+      "id": "acute_chronic_explicit",
+      "description": "Acute vs chronic semantics are explicit in contracts and examples."
+    },
+    {
+      "id": "schemas_examples_validate",
+      "description": "All schemas and examples validate."
+    },
+    {
+      "id": "benchmarks_pass",
+      "description": "Hand-worked benchmark cases pass within tolerance."
+    },
+    {
+      "id": "all_validation_suites_ok",
+      "description": "All validation suites and generated contract checks complete with status ok."
+    },
+    {
+      "id": "defaults_versions_published",
+      "description": "Defaults, consumption profiles, and taxonomy versions are published."
+    },
+    {
+      "id": "contributors_auditable",
+      "description": "Commodity contribution outputs and assumption ledgers are auditable."
+    },
+    {
+      "id": "pbpk_export_valid",
+      "description": "PBPK oral export validates directly."
+    },
+    {
+      "id": "limitations_prevent_misuse",
+      "description": "Limitation notes prevent misuse as a final regulatory decision."
+    }
+  ]
+}

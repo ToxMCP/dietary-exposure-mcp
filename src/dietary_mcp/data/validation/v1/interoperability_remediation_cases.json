@@ -1,0 +1,46 @@
+{
+  "version": "v1",
+  "cases": [
+    {
+      "name": "internal_exchange_preview_remediation_bundle",
+      "scenario": "efsa_primo",
+      "targetProfile": "eu_internal_exchange_preview",
+      "expectedOverallStatus": "review_required",
+      "expectedBlockingActionCount": 0,
+      "expectedWarningActionCount": 3,
+      "expectedActionIds": [
+        "upgrade_linked_dossier_readiness",
+        "review_unsupported_preview_fields",
+        "replace_non_direct_mappings"
+      ]
+    },
+    {
+      "name": "submission_xml_candidate_remediation_bundle",
+      "scenario": "efsa_primo",
+      "targetProfile": "eu_submission_xml_candidate",
+      "expectedOverallStatus": "fail",
+      "expectedBlockingActionCount": 3,
+      "expectedWarningActionCount": 0,
+      "expectedActionIds": [
+        "upgrade_linked_dossier_readiness",
+        "review_unsupported_preview_fields",
+        "replace_non_direct_mappings"
+      ]
+    },
+    {
+      "name": "missing_required_preview_remediation_bundle",
+      "scenario": "efsa_primo",
+      "targetProfile": "eu_internal_exchange_preview",
+      "omitModelGovernanceSnapshot": true,
+      "expectedOverallStatus": "fail",
+      "expectedBlockingActionCount": 1,
+      "expectedWarningActionCount": 3,
+      "expectedActionIds": [
+        "complete_required_preview_fields",
+        "upgrade_linked_dossier_readiness",
+        "review_unsupported_preview_fields",
+        "replace_non_direct_mappings"
+      ]
+    }
+  ]
+}

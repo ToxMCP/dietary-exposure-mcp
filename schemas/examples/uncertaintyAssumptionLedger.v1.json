@@ -1,0 +1,32 @@
+{
+  "entries": [
+    {
+      "code": "two_dimensional_monte_carlo",
+      "severity": "info",
+      "category": "method",
+      "message": "Assessment separates outer uncertainty draws from inner population-variability draws.",
+      "conservative": null
+    },
+    {
+      "code": "regulatory_acceptance_not_implied",
+      "severity": "warning",
+      "category": "scope",
+      "message": "Transparent regulatory-style modelling does not imply official regulator acceptance.",
+      "conservative": null
+    },
+    {
+      "code": "unweighted_empirical_sampling",
+      "severity": "warning",
+      "category": "survey_design",
+      "message": "No survey weights were supplied; subjects were resampled uniformly.",
+      "conservative": null
+    },
+    {
+      "code": "three_bound_censored_sensitivity",
+      "severity": "info",
+      "category": "censored_data",
+      "message": "Censored residues were evaluated as lower, middle, and upper bound scenarios.",
+      "conservative": true
+    }
+  ]
+}

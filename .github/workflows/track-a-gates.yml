@@ -1,0 +1,70 @@
+name: Track-A governance gates
+
+# ADVISORY governance gates. This repo is on the GitHub Free plan, so private
+# repos have no required-status-checks: a red job here does not mechanically
+# block merge. These jobs add a visible, attributed CI signal that is enforced
+# by merge discipline (reviewers treat a red gate as a blocking review comment).
+#
+# Gates:
+#   * mcp-conformance baseline — spawns the BUILT server over stdio with the real
+#     MCP client SDK and asserts the advertised tool/resource surface equals an
+#     expected checked-in set (tests/test_mcp_conformance.py).
+#   * schema-drift — regenerates every committed JSON-Schema artifact from the
+#     pydantic models and asserts byte-identity vs the committed files
+#     (tests/test_schema_contract_drift.py).
+
+on:
+  pull_request:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  mcp-conformance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+      - uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86 # v5
+      - name: Install project
+        run: |
+          if [ -f uv.lock ]; then
+            uv sync --all-extras --dev || uv sync --dev
+          else
+            python -m pip install -e ".[dev]"
+          fi
+      - name: mcp-conformance baseline (stdio listTools surface)
+        run: |
+          if [ -f uv.lock ]; then
+            uv run pytest tests/test_mcp_conformance.py -q
+          else
+            pytest tests/test_mcp_conformance.py -q
+          fi
+
+  schema-drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+      - uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86 # v5
+      - name: Install project
+        run: |
+          if [ -f uv.lock ]; then
+            uv sync --all-extras --dev || uv sync --dev
+          else
+            python -m pip install -e ".[dev]"
+          fi
+      - name: schema-drift (regenerate-and-compare vs committed)
+        run: |
+          if [ -f uv.lock ]; then
+            uv run pytest tests/test_schema_contract_drift.py -q
+          else
+            pytest tests/test_schema_contract_drift.py -q
+          fi

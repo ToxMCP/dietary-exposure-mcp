@@ -1,0 +1,846 @@
+{
+  "schema_version": "v1",
+  "dossier_id": "trade-risk-review-dossier-b5fbed6a411f",
+  "bundle_profile": "internal_review",
+  "dossier_status": "review_required",
+  "review_bundle": {
+    "schema_version": "v1",
+    "bundle_id": "trade-risk-review-bundle-3a1edf08b49b",
+    "bundle_profile": "internal_review",
+    "review_status": "review_required",
+    "trade_report": {
+      "chemical_identity": {
+        "preferredName": "glyphosate"
+      },
+      "resolved_substance_key": "glyphosate",
+      "jurisdiction_profiles": [
+        {
+          "jurisdiction": "us",
+          "mrl_violations": [],
+          "applicable_reference_values": [],
+          "trade_status": "inconclusive_no_limit",
+          "status_reason": "One or more requested residue commodities fall outside the curated jurisdiction-specific MRL scope.",
+          "mrl_coverage_status": "requested_pair_outside_curated_scope",
+          "mrl_curated_support_types": [
+            "enforcement_records",
+            "legal_anchors"
+          ],
+          "mrl_curated_scope_commodity_codes": [
+            "rice"
+          ],
+          "reference_value_jurisdiction_status": "family_curated_without_reference_value",
+          "reference_value_curated_support_types": [
+            "enforcement_records",
+            "legal_anchors"
+          ],
+          "coverage_summaries": [
+            {
+              "coverage_id": "us.pesticide_residue.glyphosate.wave1",
+              "jurisdiction": "us",
+              "contaminant_family": "pesticide_residue",
+              "substance_key": "glyphosate",
+              "coverage_level": "deep_curated",
+              "official_source_ids": [
+                "us.govinfo.cfr.40_180.part.2024",
+                "us.govinfo.cfr.40_180.364.2024"
+              ],
+              "legal_authority_ids": [
+                "us.epa.pesticides.40cfr_part_180.govinfo_2024"
+              ],
+              "reference_value_record_ids": [],
+              "enforcement_record_ids": [
+                "us.epa.glyphosate.rice.mrl"
+              ],
+              "legal_limit_record_ids": [],
+              "currency_metadata_complete": true,
+              "gap_reason": null,
+              "notes": [
+                "Wave-1 U.S. glyphosate coverage is deep-curated through official legal anchors plus exact curated tolerance coverage for current-taxonomy rice."
+              ]
+            }
+          ],
+          "quality_flags": [
+            {
+              "code": "no_jurisdiction_specific_reference_value",
+              "severity": "warning",
+              "message": "No jurisdiction-specific reference value matched `glyphosate` for `us`."
+            },
+            {
+              "code": "family_curated_without_reference_value",
+              "severity": "warning",
+              "message": "Jurisdiction `us` has governed curated support for `glyphosate`, but the repo does not ship a jurisdiction-specific reference value for this family."
+            },
+            {
+              "code": "missing_trade_limit",
+              "severity": "warning",
+              "message": "No applicable governed MRL was found for ['grapes'] in US."
+            },
+            {
+              "code": "no_curated_mrl_for_requested_pair",
+              "severity": "warning",
+              "message": "No curated jurisdiction-specific MRL was available for one or more requested substance/commodity pairs in US."
+            },
+            {
+              "code": "requested_trade_pair_outside_curated_scope",
+              "severity": "warning",
+              "message": "US ships curated MRLs for `glyphosate`, but one or more requested commodities fall outside the shipped scope. Curated scope includes: rice."
+            }
+          ],
+          "notes": [
+            "US ships curated MRLs for this substance, but the requested commodity set extends beyond the current shipped scope (rice).",
+            "US MRL support types attached to this lane: enforcement_records, legal_anchors.",
+            "US has governed curated support for this substance/family, but no jurisdiction-specific reference value is shipped.",
+            "US reference-value support types attached to this lane: enforcement_records, legal_anchors."
+          ]
+        },
+        {
+          "jurisdiction": "codex_global",
+          "mrl_violations": [],
+          "applicable_reference_values": [
+            {
+              "record_id": "jmpr.glyphosate.adi",
+              "substance_key": "glyphosate",
+              "substance_name": "Glyphosate",
+              "reference_type": "adi",
+              "authority": "JMPR",
+              "jurisdiction": "codex_global",
+              "contaminant_family": "pesticide_residue",
+              "value": 1.0,
+              "unit": "mg/kg bw/day",
+              "qualifier": null,
+              "assessment_label": null,
+              "assessment_year": null,
+              "population": null,
+              "source_output_id": null,
+              "source_ids": [
+                "fao.jmpr.dietary_risks.toolkit"
+              ],
+              "primary_source_id": "fao.jmpr.dietary_risks.toolkit",
+              "database_source_id": null,
+              "conflict_group_id": "glyphosate.adi.authority_conflict",
+              "document_status": "final_current",
+              "submission_use": "review_required",
+              "effective_date": null,
+              "notes": [
+                "Curated authority-specific record stub published to preserve conflicts rather than flatten them.",
+                "Consult the original JMPR monograph and Codex context before regulator-facing use."
+              ]
+            }
+          ],
+          "trade_status": "inconclusive_no_limit",
+          "status_reason": "The jurisdiction is curated for this substance/family, but no jurisdiction-specific MRL layer is shipped for the requested pair set.",
+          "mrl_coverage_status": "family_curated_without_mrl",
+          "mrl_curated_support_types": [
+            "legal_anchors"
+          ],
+          "mrl_curated_scope_commodity_codes": [],
+          "reference_value_jurisdiction_status": "exact_jurisdiction_value_present",
+          "reference_value_curated_support_types": [
+            "legal_anchors",
+            "reference_values"
+          ],
+          "coverage_summaries": [
+            {
+              "coverage_id": "codex_global.pesticide_residue.glyphosate.wave1",
+              "jurisdiction": "codex_global",
+              "contaminant_family": "pesticide_residue",
+              "substance_key": "glyphosate",
+              "coverage_level": "deep_curated",
+              "official_source_ids": [
+                "jmpr.glyphosate.report.2016",
+                "codex.pesticide_database.2024"
+              ],
+              "legal_authority_ids": [
+                "codex.ccpr.pesticide_database.2024"
+              ],
+              "reference_value_record_ids": [
+                "jmpr.glyphosate.adi"
+              ],
+              "enforcement_record_ids": [],
+              "legal_limit_record_ids": [],
+              "currency_metadata_complete": true,
+              "gap_reason": null,
+              "notes": [
+                "The official Codex/JMPR glyphosate ADI is curated, but no exact current-taxonomy CXL is shipped in wave 1."
+              ]
+            }
+          ],
+          "quality_flags": [
+            {
+              "code": "missing_trade_limit",
+              "severity": "warning",
+              "message": "No applicable governed MRL was found for ['grapes'] in CODEX_GLOBAL."
+            },
+            {
+              "code": "no_curated_mrl_for_requested_pair",
+              "severity": "warning",
+              "message": "No curated jurisdiction-specific MRL was available for one or more requested substance/commodity pairs in CODEX_GLOBAL."
+            },
+            {
+              "code": "family_curated_without_trade_mrl",
+              "severity": "warning",
+              "message": "CODEX_GLOBAL has governed curated support for `glyphosate`, but the repo does not yet ship a jurisdiction-specific MRL layer for this pair set."
+            }
+          ],
+          "notes": [
+            "CODEX_GLOBAL is curated for this substance/family, but the repo does not currently ship a jurisdiction-specific MRL layer for the requested pair set.",
+            "CODEX_GLOBAL MRL support types attached to this lane: legal_anchors.",
+            "CODEX_GLOBAL ships a jurisdiction-specific reference-value record for this lane.",
+            "CODEX_GLOBAL reference-value support types attached to this lane: legal_anchors, reference_values."
+          ]
+        },
+        {
+          "jurisdiction": "cn",
+          "mrl_violations": [],
+          "applicable_reference_values": [
+            {
+              "record_id": "cn.nhc.glyphosate.adi",
+              "substance_key": "glyphosate",
+              "substance_name": "Glyphosate",
+              "reference_type": "adi",
+              "authority": "NHC China",
+              "jurisdiction": "cn",
+              "contaminant_family": "pesticide_residue",
+              "value": 1.0,
+              "unit": "mg/kg bw/day",
+              "qualifier": null,
+              "assessment_label": null,
+              "assessment_year": null,
+              "population": null,
+              "source_output_id": null,
+              "source_ids": [
+                "cn.nhc.gb2763.2026.announcement",
+                "cn.aqsc.gb2763.2026"
+              ],
+              "primary_source_id": "cn.aqsc.gb2763.2026",
+              "database_source_id": null,
+              "conflict_group_id": "glyphosate.adi.authority_conflict",
+              "document_status": "final_current",
+              "submission_use": "review_required",
+              "effective_date": "2026-03-01",
+              "notes": [
+                "Governed Chinese ADI for glyphosate based on GB 2763-2026.",
+                "Published from the official 2026 standard text and retained separately so jurisdiction-specific values are not borrowed from EFSA or JMPR."
+              ]
+            }
+          ],
+          "trade_status": "inconclusive_no_limit",
+          "status_reason": "One or more requested residue commodities fall outside the curated jurisdiction-specific MRL scope.",
+          "mrl_coverage_status": "requested_pair_outside_curated_scope",
+          "mrl_curated_support_types": [
+            "enforcement_records",
+            "legal_anchors"
+          ],
+          "mrl_curated_scope_commodity_codes": [
+            "apples",
+            "rice"
+          ],
+          "reference_value_jurisdiction_status": "exact_jurisdiction_value_present",
+          "reference_value_curated_support_types": [
+            "enforcement_records",
+            "legal_anchors",
+            "reference_values"
+          ],
+          "coverage_summaries": [
+            {
+              "coverage_id": "cn.pesticide_residue.glyphosate.wave1",
+              "jurisdiction": "cn",
+              "contaminant_family": "pesticide_residue",
+              "substance_key": "glyphosate",
+              "coverage_level": "deep_curated",
+              "official_source_ids": [
+                "cn.nhc.gb2763.2026.announcement",
+                "cn.aqsc.gb2763.2026"
+              ],
+              "legal_authority_ids": [
+                "cn.nhc.pesticides.gb_2763_2026"
+              ],
+              "reference_value_record_ids": [
+                "cn.nhc.glyphosate.adi"
+              ],
+              "enforcement_record_ids": [
+                "cn.gb.glyphosate.apples.mrl",
+                "cn.gb.glyphosate.rice.mrl"
+              ],
+              "legal_limit_record_ids": [],
+              "currency_metadata_complete": true,
+              "gap_reason": null,
+              "notes": []
+            }
+          ],
+          "quality_flags": [
+            {
+              "code": "missing_trade_limit",
+              "severity": "warning",
+              "message": "No applicable governed MRL was found for ['grapes'] in CN."
+            },
+            {
+              "code": "no_curated_mrl_for_requested_pair",
+              "severity": "warning",
+              "message": "No curated jurisdiction-specific MRL was available for one or more requested substance/commodity pairs in CN."
+            },
+            {
+              "code": "requested_trade_pair_outside_curated_scope",
+              "severity": "warning",
+              "message": "CN ships curated MRLs for `glyphosate`, but one or more requested commodities fall outside the shipped scope. Curated scope includes: apples, rice."
+            }
+          ],
+          "notes": [
+            "CN ships curated MRLs for this substance, but the requested commodity set extends beyond the current shipped scope (apples, rice).",
+            "CN MRL support types attached to this lane: enforcement_records, legal_anchors.",
+            "CN ships a jurisdiction-specific reference-value record for this lane.",
+            "CN reference-value support types attached to this lane: enforcement_records, legal_anchors, reference_values."
+          ]
+        }
+      ],
+      "quality_flags": [
+        {
+          "code": "no_jurisdiction_specific_reference_value",
+          "severity": "warning",
+          "message": "No jurisdiction-specific reference value matched `glyphosate` for `us`."
+        },
+        {
+          "code": "family_curated_without_reference_value",
+          "severity": "warning",
+          "message": "Jurisdiction `us` has governed curated support for `glyphosate`, but the repo does not ship a jurisdiction-specific reference value for this family."
+        },
+        {
+          "code": "missing_trade_limit",
+          "severity": "warning",
+          "message": "No applicable governed MRL was found for ['grapes'] in US."
+        },
+        {
+          "code": "no_curated_mrl_for_requested_pair",
+          "severity": "warning",
+          "message": "No curated jurisdiction-specific MRL was available for one or more requested substance/commodity pairs in US."
+        },
+        {
+          "code": "requested_trade_pair_outside_curated_scope",
+          "severity": "warning",
+          "message": "US ships curated MRLs for `glyphosate`, but one or more requested commodities fall outside the shipped scope. Curated scope includes: rice."
+        },
+        {
+          "code": "missing_trade_limit",
+          "severity": "warning",
+          "message": "No applicable governed MRL was found for ['grapes'] in CODEX_GLOBAL."
+        },
+        {
+          "code": "no_curated_mrl_for_requested_pair",
+          "severity": "warning",
+          "message": "No curated jurisdiction-specific MRL was available for one or more requested substance/commodity pairs in CODEX_GLOBAL."
+        },
+        {
+          "code": "family_curated_without_trade_mrl",
+          "severity": "warning",
+          "message": "CODEX_GLOBAL has governed curated support for `glyphosate`, but the repo does not yet ship a jurisdiction-specific MRL layer for this pair set."
+        },
+        {
+          "code": "missing_trade_limit",
+          "severity": "warning",
+          "message": "No applicable governed MRL was found for ['grapes'] in CN."
+        },
+        {
+          "code": "no_curated_mrl_for_requested_pair",
+          "severity": "warning",
+          "message": "No curated jurisdiction-specific MRL was available for one or more requested substance/commodity pairs in CN."
+        },
+        {
+          "code": "requested_trade_pair_outside_curated_scope",
+          "severity": "warning",
+          "message": "CN ships curated MRLs for `glyphosate`, but one or more requested commodities fall outside the shipped scope. Curated scope includes: apples, rice."
+        }
+      ],
+      "notes": [
+        "Trade-risk screening preserves jurisdiction separation and does not borrow MRLs or reference values across authorities.",
+        "A pass status only means all applicable governed limits that were actually found were met for that jurisdiction; inspect MRL and reference-value coverage statuses before treating the lane as complete.",
+        "Inconclusive jurisdictions remain active review signals, not implicit passes: CN, CODEX_GLOBAL, US."
+      ]
+    },
+    "covered_source_ids": [
+      "cn.aqsc.gb2763.2026",
+      "cn.nhc.gb2763.2026.announcement",
+      "codex.pesticide_database.2024",
+      "fao.jmpr.dietary_risks.toolkit",
+      "jmpr.glyphosate.report.2016",
+      "us.govinfo.cfr.40_180.364.2024",
+      "us.govinfo.cfr.40_180.part.2024"
+    ],
+    "review_prompts": [
+      {
+        "prompt_id": "us.coverage_review",
+        "jurisdiction": "us",
+        "category": "coverage_review",
+        "prompt": "Treat the US lane as review-required until the missing or partial MRL coverage is explicitly accepted.",
+        "linked_record_ids": []
+      },
+      {
+        "prompt_id": "us.mrl_coverage_semantics",
+        "jurisdiction": "us",
+        "category": "mrl_coverage_semantics",
+        "prompt": "Use `mrlCoverageStatus` for US to distinguish partial curated scope, anchor-only posture, and explicit gaps instead of flattening them into a generic missing-limit state.",
+        "linked_record_ids": []
+      },
+      {
+        "prompt_id": "us.reference_value_semantics",
+        "jurisdiction": "us",
+        "category": "reference_value_semantics",
+        "prompt": "Use `referenceValueJurisdictionStatus` for US to confirm whether the reference-value side is exact, anchor-only, family-curated-without-value, or an explicit gap.",
+        "linked_record_ids": []
+      },
+      {
+        "prompt_id": "codex_global.coverage_review",
+        "jurisdiction": "codex_global",
+        "category": "coverage_review",
+        "prompt": "Treat the CODEX_GLOBAL lane as review-required until the missing or partial MRL coverage is explicitly accepted.",
+        "linked_record_ids": []
+      },
+      {
+        "prompt_id": "codex_global.mrl_coverage_semantics",
+        "jurisdiction": "codex_global",
+        "category": "mrl_coverage_semantics",
+        "prompt": "Use `mrlCoverageStatus` for CODEX_GLOBAL to distinguish partial curated scope, anchor-only posture, and explicit gaps instead of flattening them into a generic missing-limit state.",
+        "linked_record_ids": []
+      },
+      {
+        "prompt_id": "cn.coverage_review",
+        "jurisdiction": "cn",
+        "category": "coverage_review",
+        "prompt": "Treat the CN lane as review-required until the missing or partial MRL coverage is explicitly accepted.",
+        "linked_record_ids": []
+      },
+      {
+        "prompt_id": "cn.mrl_coverage_semantics",
+        "jurisdiction": "cn",
+        "category": "mrl_coverage_semantics",
+        "prompt": "Use `mrlCoverageStatus` for CN to distinguish partial curated scope, anchor-only posture, and explicit gaps instead of flattening them into a generic missing-limit state.",
+        "linked_record_ids": []
+      }
+    ],
+    "documentation_resource_uri": "docs://trade-risk-review",
+    "referenced_resources": [
+      {
+        "role": "documentation",
+        "uri": "docs://trade-risk-review",
+        "description": "Operator documentation describing the trade-risk review bundle and dossier workflow.",
+        "confidentiality_tag": "public",
+        "sanitisation_state": "retained"
+      },
+      {
+        "role": "operator_guide",
+        "uri": "docs://operator-guide",
+        "description": "Operator guide covering trade-risk coverage semantics and no-borrowing posture.",
+        "confidentiality_tag": "public",
+        "sanitisation_state": "retained"
+      },
+      {
+        "role": "source_catalog_manifest",
+        "uri": "source-catalog://manifest",
+        "description": "Governed source-catalog manifest available during trade screening review.",
+        "confidentiality_tag": "public",
+        "sanitisation_state": "retained"
+      },
+      {
+        "role": "reference_values_manifest",
+        "uri": "reference-values://manifest",
+        "description": "Governed reference-values manifest available during trade screening review.",
+        "confidentiality_tag": "public",
+        "sanitisation_state": "retained"
+      },
+      {
+        "role": "mrl_enforcement_manifest",
+        "uri": "mrl-enforcement://manifest",
+        "description": "Governed MRL-enforcement manifest available during trade screening review.",
+        "confidentiality_tag": "public",
+        "sanitisation_state": "retained"
+      },
+      {
+        "role": "legal_authorities_manifest",
+        "uri": "legal-authorities://manifest",
+        "description": "Governed legal-authorities manifest available during trade screening review.",
+        "confidentiality_tag": "public",
+        "sanitisation_state": "retained"
+      },
+      {
+        "role": "jurisdiction_coverage_manifest",
+        "uri": "jurisdiction-coverage://manifest",
+        "description": "Governed jurisdiction-coverage manifest used to interpret exact, partial, anchor-only, and explicit-gap lanes.",
+        "confidentiality_tag": "public",
+        "sanitisation_state": "retained"
+      },
+      {
+        "role": "us_coverage",
+        "uri": "jurisdiction-coverage://jurisdiction/us",
+        "description": "Jurisdiction-coverage records for US used during trade screening review.",
+        "confidentiality_tag": "public",
+        "sanitisation_state": "retained"
+      },
+      {
+        "role": "codex_global_coverage",
+        "uri": "jurisdiction-coverage://jurisdiction/codex_global",
+        "description": "Jurisdiction-coverage records for CODEX_GLOBAL used during trade screening review.",
+        "confidentiality_tag": "public",
+        "sanitisation_state": "retained"
+      },
+      {
+        "role": "cn_coverage",
+        "uri": "jurisdiction-coverage://jurisdiction/cn",
+        "description": "Jurisdiction-coverage records for CN used during trade screening review.",
+        "confidentiality_tag": "public",
+        "sanitisation_state": "retained"
+      },
+      {
+        "role": "reference_value_substance_lane",
+        "uri": "reference-values://substance/glyphosate",
+        "description": "Substance-scoped reference-value records reviewed alongside the trade-screening result.",
+        "confidentiality_tag": "confidential",
+        "sanitisation_state": "retained"
+      },
+      {
+        "role": "mrl_enforcement_substance_lane",
+        "uri": "mrl-enforcement://substance/glyphosate",
+        "description": "Substance-scoped MRL-enforcement records reviewed alongside the trade-screening result.",
+        "confidentiality_tag": "confidential",
+        "sanitisation_state": "retained"
+      }
+    ],
+    "dependencies": [
+      {
+        "name": "dietary-mcp",
+        "version": "0.1.0",
+        "role": "producer"
+      },
+      {
+        "name": "dietary_evaluate_global_trade_risk",
+        "version": "0.1.0",
+        "role": "screening_workflow"
+      },
+      {
+        "name": "dietary_export_trade_risk_review_bundle",
+        "version": "0.1.0",
+        "role": "review_bundle_workflow"
+      }
+    ],
+    "limitations": [
+      {
+        "code": "screening_review_bundle",
+        "message": "Trade-risk review bundle supports governed screening review and audit handoff only; it is not a final market-clearance or regulatory acceptance decision."
+      }
+    ],
+    "notes": [
+      "Bundle packages a governed trade-risk screening result with explicit coverage semantics, review prompts, and pinned review resources.",
+      "No-borrowing semantics are preserved: missing jurisdiction coverage remains explicit and is not silently substituted from another authority.",
+      "Use this bundle for internal trade-screening review and audit handoff, not as a market-clearance or regulator-acceptance packet.",
+      "Trade-risk screening preserves jurisdiction separation and does not borrow MRLs or reference values across authorities.",
+      "A pass status only means all applicable governed limits that were actually found were met for that jurisdiction; inspect MRL and reference-value coverage statuses before treating the lane as complete.",
+      "Inconclusive jurisdictions remain active review signals, not implicit passes: CN, CODEX_GLOBAL, US.",
+      "Review-required status means at least one jurisdiction remains failed, invalid, inconclusive, or coverage-limited under the shipped MRL/reference-value scope.",
+      "Illustrative governed trade-risk review bundle for cross-jurisdiction residue screening."
+    ]
+  },
+  "release_metadata": {
+    "resource_uri": "release://metadata-report",
+    "release_version": "0.1.0",
+    "defaults_version": "v1",
+    "metadata_report_sha256": "65eef1b10115d3b545c15a5f7c1f39b981256988936c6068b4a85cd7f5dc3b58",
+    "artifact_hashes": {
+      "adapterManifest": "9e5c6a0adbb0fd6544cabb069e3d0b35a11b1419f704f3355ec3c965428be37d",
+      "adapterTemplateManifest": "09014010cff3deaa33416af7b4e201e6ad4f0b5ae2d29b052780e8a9af9e03ad",
+      "adapterWalkthroughManifest": "20f13f27a8fa3b89fd893bfe00c002df930b9ff4ed9b24946360dc0a9470b0a4",
+      "referenceValuesManifest": "a56fa4ddcec76870103507fc86943a55de0636a96519ad578f0e0b20cb10183c",
+      "mrlEnforcementManifest": "9ff968083ad2ec23d722f6927ac93803ed68110a880baaf33c450c2e6318de17",
+      "contaminantLegalLimitsManifest": "0664f4d570ccb36aa70877ffbf6addbbce1b42d2fda2adef33ed8d846ad09a67",
+      "consumptionDatasetsManifest": "c6a25b002ac18dea4c6cab112d5cda93a93f12d594f5874c50f605b979bde545",
+      "methodRegistryManifest": "d016cabfdbd55f02deef2644ad248876d72cfc565d1f2487b148c183e90adb39",
+      "legalAuthoritiesManifest": "5c02a479dc8eb3d1aac812709a0074b99dc330761b4d13f97c9dc63e1f7fb018",
+      "reportingProfilesManifest": "69dadf23060b7332d6756799efea52a0b15c44af85d1449d3df6c9fdb418e42c",
+      "occurrenceEvidenceManifest": "13f7a8c89e3bb3c9f2900a689f702b7834bb2ca19201e926f5a0bfe6878e7a54",
+      "analyticalMethodEvidenceManifest": "ecd1fb8027044a61aa35b1e1297b9c230b549d517e67fe24baec806d491e0b25",
+      "metalsOccurrenceManifest": "00f380d54210efe7885c1aef4d571686d77e275abf020ae3644b371d377249cb",
+      "metalsReviewFocusManifest": "c6b046b073e62a36445e9f067bf93914d35e92116229a3050953298f86ef9d2c",
+      "emergingContaminantsManifest": "244fb660b79f81ffc80933cfd84cfd1294682eebe79f4dfc0c6eea315ee61173",
+      "jurisdictionCoverageManifest": "c5e2c133cffdf26a5f7e35202d98ad89a5d14d0f891dcf8bb874afc068ad9200",
+      "modelGovernanceManifest": "64f9e4073b0ca5d7188b33a6d444e05e8933a2dbdac1e3bd66b0d4751ce268bc",
+      "foodVocabularyCrosswalkManifest": "cca1faa9e4489f70bfd5fe50c64a81dfe5e53378cdc3a33c8d3de12858b5688e",
+      "interoperabilityProfilesManifest": "df185c4e3434731689fb05ec45a78c4ac478812eac9f34a21d75c6035cad4a47",
+      "interoperabilityReadinessProfilesManifest": "fe81c27f5a1d3d8091870e77bf8d05c74b1f7c2cc411c0e64c11a80f4c0bc54e",
+      "interoperabilityRulesManifest": "5aa9c3569c3461397c7a9a7fdaa317f3590ee975e7c74cdbff7a2e7aa3857e70",
+      "interoperabilityRemediationActionsManifest": "fd884a236a6f34989ea1358ab57ba2379e968c3414ac70e0fbcecbb276b7735e",
+      "readinessProfilesManifest": "a9435648525298f9e297964dbb04beb957b8f09ed9f852b3317efacedf397773",
+      "regulatoryRulesManifest": "7af591fbee7b52e49b708d6add11eb57bd6969d3cb507659a39b98654e48de21",
+      "sanitisationRulesManifest": "2627a95a0cea99b81a1900c272f701b26ffc6d08937e9e2e611c0060e9634c3b",
+      "contractsManifest": "87c224ec95943bfad6596ee0ba94a6719d468441998e8abcbd3f3244a53e1136",
+      "examplesManifest": "5949de6f414d0dec28d70364ecc9bb65e22790680e007984a5011def04093807",
+      "defaultsManifest": "dcd6e7787e12fb3f0d55a7ad3ac0d5303282bf139e550a1309df7891339b54ff",
+      "validationManifest": "14573f98896e0990b516dff83cb16291f99984a9a8d6e1874b29e50d0c48faeb"
+    }
+  },
+  "source_governance_snapshot": [
+    {
+      "source_id": "cn.aqsc.gb2763.2026",
+      "title": "GB 2763-2026 National Food Safety Standard - Maximum Residue Limits for Pesticides in Food",
+      "organization": "Agricultural Product Quality and Safety Center, Ministry of Agriculture and Rural Affairs, China",
+      "kind": "official_regulatory_standard",
+      "jurisdiction": "cn",
+      "document_status": "final_current",
+      "regulatory_role": "binding",
+      "effective_date": "2026-03-01",
+      "url": "http://www.aqsc.agri.cn/zlbz/bzgg/202602/P020260225608246362644.pdf",
+      "origin_tag": "official_regulatory",
+      "submission_use": "allowed",
+      "normative_for": [],
+      "supersedes": [],
+      "superseded_by": [],
+      "notes": [
+        "Official published standard text for GB 2763-2026.",
+        "The NHC announcement states that the standard took effect on 2026-03-01."
+      ]
+    },
+    {
+      "source_id": "cn.nhc.gb2763.2026.announcement",
+      "title": "Announcement on GB 2763-2026 National Food Safety Standard - Maximum Residue Limits for Pesticides in Food",
+      "organization": "National Health Commission of the People's Republic of China",
+      "kind": "official_regulatory_announcement",
+      "jurisdiction": "cn",
+      "document_status": "final_current",
+      "regulatory_role": "binding",
+      "effective_date": "2026-02-26",
+      "url": "https://www.nhc.gov.cn/sps/c100088/202602/c0c4a9266f7e43cda1bf3bec59fc2786.shtml",
+      "origin_tag": "official_regulatory",
+      "submission_use": "allowed",
+      "normative_for": [],
+      "supersedes": [],
+      "superseded_by": [],
+      "notes": [
+        "Official announcement publishing GB 2763-2026.",
+        "The announcement states that GB 2763-2026 replaces GB 2763-2021 and GB 2763.1-2022 and took effect on 2026-03-01."
+      ]
+    },
+    {
+      "source_id": "codex.pesticide_database.2024",
+      "title": "Codex Pesticides Residues in Food Online Database",
+      "organization": "Codex Alimentarius / FAO",
+      "kind": "official_regulatory_database",
+      "jurisdiction": "codex_global",
+      "document_status": "final_current",
+      "regulatory_role": "guidance",
+      "effective_date": null,
+      "url": "https://www.fao.org/fao-who-codexalimentarius/codex-texts/dbs/pestres/en/",
+      "origin_tag": "official_regulatory",
+      "submission_use": "review_required",
+      "normative_for": [],
+      "supersedes": [],
+      "superseded_by": [],
+      "notes": [
+        "Official Codex pesticide database used for current CXL lookup.",
+        "The public page states that the database includes CXLs up to and including the Forty-seventh CAC Session (November 2024)."
+      ]
+    },
+    {
+      "source_id": "fao.jmpr.dietary_risks.toolkit",
+      "title": "FAO Pesticide Registration Toolkit dietary risks overview",
+      "organization": "FAO",
+      "kind": "official_guidance_metadata",
+      "jurisdiction": "codex_global",
+      "document_status": "final_current",
+      "regulatory_role": "guidance",
+      "effective_date": null,
+      "url": "https://www.fao.org/pesticide-registration-toolkit/registration-tools/registration-criteria/human-health-risks/dietary-risks/en/",
+      "origin_tag": "official_regulatory",
+      "submission_use": "review_required",
+      "normative_for": [],
+      "supersedes": [],
+      "superseded_by": [],
+      "notes": [
+        "Official FAO toolkit summary of dietary pesticide risk assessment principles and the role of JMPR/Codex methods.",
+        "Used in Dietary MCP as governed methodology metadata for IEDI and IESTI support context."
+      ]
+    },
+    {
+      "source_id": "jmpr.glyphosate.report.2016",
+      "title": "Glyphosate (JMPR 2016 evaluation)",
+      "organization": "FAO/WHO JMPR",
+      "kind": "official_scientific_report",
+      "jurisdiction": "codex_global",
+      "document_status": "final_current",
+      "regulatory_role": "technical_report",
+      "effective_date": "2016-05-01",
+      "url": "https://www.fao.org/fileadmin/user_upload/IPM_Pesticide/JMPR/Evaluations/2016/Glyphosate.pdf",
+      "origin_tag": "official_regulatory",
+      "submission_use": "review_required",
+      "normative_for": [],
+      "supersedes": [],
+      "superseded_by": [],
+      "notes": [
+        "Official JMPR evaluation used as governed Codex-global residue and reference-value context for glyphosate."
+      ]
+    },
+    {
+      "source_id": "us.govinfo.cfr.40_180.364.2024",
+      "title": "40 CFR 180.364 - Glyphosate; tolerances for residues",
+      "organization": "US EPA / GovInfo",
+      "kind": "official_regulatory_extract",
+      "jurisdiction": "us",
+      "document_status": "final_current",
+      "regulatory_role": "binding",
+      "effective_date": "2024-07-01",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2024-title40-vol26/xml/CFR-2024-title40-vol26-sec180-364.xml",
+      "origin_tag": "official_regulatory",
+      "submission_use": "allowed",
+      "normative_for": [],
+      "supersedes": [],
+      "superseded_by": [],
+      "notes": [
+        "Official GovInfo section extract used for exact wave-1 glyphosate tolerance values."
+      ]
+    },
+    {
+      "source_id": "us.govinfo.cfr.40_180.part.2024",
+      "title": "40 CFR Part 180 - Tolerances and Exemptions for Pesticide Chemical Residues in Food (2024 annual edition)",
+      "organization": "US EPA / GovInfo",
+      "kind": "official_regulatory_standard",
+      "jurisdiction": "us",
+      "document_status": "final_current",
+      "regulatory_role": "binding",
+      "effective_date": "2024-07-01",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2024-title40-vol26/xml/CFR-2024-title40-vol26-part180.xml",
+      "origin_tag": "official_regulatory",
+      "submission_use": "allowed",
+      "normative_for": [
+        "reference_dietary"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "notes": [
+        "Official GovInfo annual edition of 40 CFR Part 180.",
+        "Used as the primary wave-1 U.S. pesticide tolerance legal anchor."
+      ]
+    }
+  ],
+  "pinned_resources": [
+    {
+      "role": "release_metadata_report",
+      "uri": "release://metadata-report",
+      "sha256": "65eef1b10115d3b545c15a5f7c1f39b981256988936c6068b4a85cd7f5dc3b58",
+      "description": "Release metadata report used to pin versioned artifact hashes for this trade-risk review dossier.",
+      "confidentiality_tag": "confidential",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "source_catalog_manifest",
+      "uri": "source-catalog://manifest",
+      "sha256": "d12ddedfb061786d02b35783e855035fa6eaecf294799b4dd55016a4256fc275",
+      "description": "Manifest fingerprint for the governed source catalog available during trade-risk review.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "reference_values_manifest",
+      "uri": "reference-values://manifest",
+      "sha256": "a56fa4ddcec76870103507fc86943a55de0636a96519ad578f0e0b20cb10183c",
+      "description": "Manifest fingerprint for governed reference-value records available during trade-risk review.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "mrl_enforcement_manifest",
+      "uri": "mrl-enforcement://manifest",
+      "sha256": "9ff968083ad2ec23d722f6927ac93803ed68110a880baaf33c450c2e6318de17",
+      "description": "Manifest fingerprint for governed MRL-enforcement records available during trade-risk review.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "legal_authorities_manifest",
+      "uri": "legal-authorities://manifest",
+      "sha256": "5c02a479dc8eb3d1aac812709a0074b99dc330761b4d13f97c9dc63e1f7fb018",
+      "description": "Manifest fingerprint for governed legal-authority records available during trade-risk review.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "jurisdiction_coverage_manifest",
+      "uri": "jurisdiction-coverage://manifest",
+      "sha256": "c5e2c133cffdf26a5f7e35202d98ad89a5d14d0f891dcf8bb874afc068ad9200",
+      "description": "Manifest fingerprint for governed jurisdiction-coverage records available during trade-risk review.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "trade_risk_review_documentation",
+      "uri": "docs://trade-risk-review",
+      "sha256": "c4eb0c6ad300db986631fc28a25771706e9bb77f1a63058468d5981a016144b4",
+      "description": "Trade-risk review workflow documentation used during dossier export.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "operator_guide_documentation",
+      "uri": "docs://operator-guide",
+      "sha256": "acec70c6afe26cf977c60f8bf0561c08630c1d1df6bcdc21f89c22b4ad8ef9d9",
+      "description": "Operator guide documentation used to interpret trade-risk coverage semantics during dossier export.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "reference_value_substance_lane",
+      "uri": "reference-values://substance/glyphosate",
+      "sha256": "bd96384999fb78b99e16f3ece610eb71f46ea6faccb7146ddc89254dc70b9380",
+      "description": "Substance-scoped reference-value payload fingerprint used during trade-risk review.",
+      "confidentiality_tag": "confidential",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "mrl_enforcement_substance_lane",
+      "uri": "mrl-enforcement://substance/glyphosate",
+      "sha256": "9cc87497136fc92688312604a4b49cacec86582d848af336c9a422631076f49c",
+      "description": "Substance-scoped MRL-enforcement payload fingerprint used during trade-risk review.",
+      "confidentiality_tag": "confidential",
+      "sanitisation_state": "retained"
+    }
+  ],
+  "confidentiality_annotations": [
+    {
+      "target_path": "review_bundle.trade_report.chemical_identity",
+      "target_kind": "field",
+      "confidentiality_tag": "confidential",
+      "rationale": "Trade-screening chemical identity can remain non-public during internal review workflows."
+    },
+    {
+      "target_path": "review_bundle.trade_report.resolved_substance_key",
+      "target_kind": "field",
+      "confidentiality_tag": "confidential",
+      "rationale": "Resolved trade-screening substance keys can disclose the internal review substance identity."
+    },
+    {
+      "target_path": "release_metadata",
+      "target_kind": "field",
+      "confidentiality_tag": "public",
+      "rationale": "Release metadata snapshot is retained as provenance for pinned internal-review dossiers."
+    },
+    {
+      "target_path": "pinned_resources.release_metadata_report",
+      "target_kind": "resource",
+      "confidentiality_tag": "confidential",
+      "rationale": "The full release metadata report reference remains internal-review material."
+    }
+  ],
+  "limitations": [
+    {
+      "code": "version_pinned_not_signed",
+      "message": "This dossier is version-pinned through release and resource fingerprints but is not cryptographically signed in v0.1."
+    }
+  ],
+  "notes": [
+    "Version-pinned trade-risk review dossier freezes the exact screening bundle, release metadata hashes, and review documentation fingerprints used during internal screening review.",
+    "This dossier preserves explicit no-borrowing semantics and should be used when downstream reviewers need a portable record of why a lane was exact, partial, anchor-only, or an explicit gap.",
+    "This dossier supports governed internal review only and is not a final market-clearance, shipment-release, or regulatory acceptance package.",
+    "Bundle packages a governed trade-risk screening result with explicit coverage semantics, review prompts, and pinned review resources.",
+    "No-borrowing semantics are preserved: missing jurisdiction coverage remains explicit and is not silently substituted from another authority.",
+    "Use this bundle for internal trade-screening review and audit handoff, not as a market-clearance or regulator-acceptance packet.",
+    "Trade-risk screening preserves jurisdiction separation and does not borrow MRLs or reference values across authorities.",
+    "A pass status only means all applicable governed limits that were actually found were met for that jurisdiction; inspect MRL and reference-value coverage statuses before treating the lane as complete.",
+    "Inconclusive jurisdictions remain active review signals, not implicit passes: CN, CODEX_GLOBAL, US.",
+    "Review-required status means at least one jurisdiction remains failed, invalid, inconclusive, or coverage-limited under the shipped MRL/reference-value scope.",
+    "Illustrative governed trade-risk review bundle for cross-jurisdiction residue screening."
+  ]
+}

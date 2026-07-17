@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: >-
+  If you use Dietary Exposure MCP, cite this software and the original
+  scientific or regulatory outputs identified in the returned provenance.
+title: Dietary Exposure MCP
+type: software
+authors:
+  - name: ToxMCP
+abstract: >-
+  A Model Context Protocol server for auditable food-mediated oral exposure
+  screening, governed contaminant and pesticide review, and version-pinned
+  dietary evidence handoffs.
+version: 0.1.0
+repository-code: https://github.com/ToxMCP/dietary-exposure-mcp
+url: https://github.com/ToxMCP/dietary-exposure-mcp
+license: Apache-2.0
+keywords:
+  - Model Context Protocol
+  - dietary exposure
+  - food safety
+  - toxicology
+  - risk assessment
+preferred-citation:
+  type: software
+  authors:
+    - name: ToxMCP
+  title: Dietary Exposure MCP
+  version: 0.1.0
+  repository-code: https://github.com/ToxMCP/dietary-exposure-mcp
+  license: Apache-2.0

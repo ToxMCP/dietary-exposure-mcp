@@ -1,0 +1,344 @@
+{
+  "$defs": {
+    "ConfidentialityTag": {
+      "enum": [
+        "public",
+        "confidential"
+      ],
+      "title": "ConfidentialityTag",
+      "type": "string"
+    },
+    "InteroperabilityActionDecisionStatus": {
+      "enum": [
+        "pending",
+        "acknowledged",
+        "completed",
+        "waived"
+      ],
+      "title": "InteroperabilityActionDecisionStatus",
+      "type": "string"
+    },
+    "InteroperabilityReadinessProfile": {
+      "additionalProperties": false,
+      "properties": {
+        "profileId": {
+          "title": "Profileid",
+          "type": "string"
+        },
+        "displayName": {
+          "title": "Displayname",
+          "type": "string"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "intendedUse": {
+          "title": "Intendeduse",
+          "type": "string"
+        },
+        "allowedPreviewProfiles": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Allowedpreviewprofiles",
+          "type": "array"
+        },
+        "requiredDossierReadinessProfile": {
+          "title": "Requireddossierreadinessprofile",
+          "type": "string"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "profileId",
+        "displayName",
+        "jurisdiction",
+        "intendedUse",
+        "requiredDossierReadinessProfile"
+      ],
+      "title": "InteroperabilityReadinessProfile",
+      "type": "object"
+    },
+    "InteroperabilitySignoffActionItem": {
+      "additionalProperties": false,
+      "properties": {
+        "actionId": {
+          "title": "Actionid",
+          "type": "string"
+        },
+        "ruleId": {
+          "title": "Ruleid",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "actionType": {
+          "title": "Actiontype",
+          "type": "string"
+        },
+        "priority": {
+          "$ref": "#/$defs/ReadinessStatus"
+        },
+        "blocking": {
+          "default": false,
+          "title": "Blocking",
+          "type": "boolean"
+        },
+        "summary": {
+          "title": "Summary",
+          "type": "string"
+        },
+        "triggerMessage": {
+          "title": "Triggermessage",
+          "type": "string"
+        },
+        "triggerNote": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Triggernote"
+        },
+        "decisionStatus": {
+          "$ref": "#/$defs/InteroperabilityActionDecisionStatus"
+        },
+        "rationale": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rationale"
+        },
+        "reviewedAt": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reviewedat"
+        },
+        "supportingUris": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Supportinguris",
+          "type": "array"
+        },
+        "resolved": {
+          "default": false,
+          "title": "Resolved",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "actionId",
+        "ruleId",
+        "title",
+        "actionType",
+        "priority",
+        "summary",
+        "triggerMessage",
+        "decisionStatus"
+      ],
+      "title": "InteroperabilitySignoffActionItem",
+      "type": "object"
+    },
+    "InteroperabilitySignoffStatus": {
+      "enum": [
+        "open",
+        "signed_off",
+        "signed_off_with_waivers"
+      ],
+      "title": "InteroperabilitySignoffStatus",
+      "type": "string"
+    },
+    "ReadinessStatus": {
+      "enum": [
+        "pass",
+        "review_required",
+        "fail"
+      ],
+      "title": "ReadinessStatus",
+      "type": "string"
+    },
+    "ReviewResourceReference": {
+      "additionalProperties": false,
+      "properties": {
+        "role": {
+          "title": "Role",
+          "type": "string"
+        },
+        "uri": {
+          "title": "Uri",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "confidentialityTag": {
+          "$ref": "#/$defs/ConfidentialityTag",
+          "default": "public"
+        },
+        "sanitisationState": {
+          "$ref": "#/$defs/SanitisationState",
+          "default": "retained"
+        }
+      },
+      "required": [
+        "role",
+        "uri",
+        "description"
+      ],
+      "title": "ReviewResourceReference",
+      "type": "object"
+    },
+    "SanitisationState": {
+      "enum": [
+        "retained",
+        "redacted",
+        "removed"
+      ],
+      "title": "SanitisationState",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "packet_id": {
+      "title": "Packet Id",
+      "type": "string"
+    },
+    "overallSignoffStatus": {
+      "$ref": "#/$defs/InteroperabilitySignoffStatus"
+    },
+    "reviewerId": {
+      "title": "Reviewerid",
+      "type": "string"
+    },
+    "reviewerRole": {
+      "title": "Reviewerrole",
+      "type": "string"
+    },
+    "sourceRemediationBundleId": {
+      "title": "Sourceremediationbundleid",
+      "type": "string"
+    },
+    "sourceDossierId": {
+      "title": "Sourcedossierid",
+      "type": "string"
+    },
+    "sourcePreviewProfileId": {
+      "title": "Sourcepreviewprofileid",
+      "type": "string"
+    },
+    "targetProfile": {
+      "$ref": "#/$defs/InteroperabilityReadinessProfile"
+    },
+    "linkedDossierReadinessProfile": {
+      "title": "Linkeddossierreadinessprofile",
+      "type": "string"
+    },
+    "linkedDossierReadinessStatus": {
+      "$ref": "#/$defs/ReadinessStatus"
+    },
+    "actionItems": {
+      "items": {
+        "$ref": "#/$defs/InteroperabilitySignoffActionItem"
+      },
+      "title": "Actionitems",
+      "type": "array"
+    },
+    "pendingActionIds": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Pendingactionids",
+      "type": "array"
+    },
+    "acknowledgedActionIds": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Acknowledgedactionids",
+      "type": "array"
+    },
+    "completedActionIds": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Completedactionids",
+      "type": "array"
+    },
+    "waivedActionIds": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Waivedactionids",
+      "type": "array"
+    },
+    "unresolvedBlockingActionIds": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unresolvedblockingactionids",
+      "type": "array"
+    },
+    "referencedResources": {
+      "items": {
+        "$ref": "#/$defs/ReviewResourceReference"
+      },
+      "title": "Referencedresources",
+      "type": "array"
+    },
+    "notes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "overallSignoffStatus",
+    "reviewerId",
+    "reviewerRole",
+    "sourceRemediationBundleId",
+    "sourceDossierId",
+    "sourcePreviewProfileId",
+    "targetProfile",
+    "linkedDossierReadinessProfile",
+    "linkedDossierReadinessStatus"
+  ],
+  "title": "InteroperabilitySignoffPacket",
+  "type": "object"
+}

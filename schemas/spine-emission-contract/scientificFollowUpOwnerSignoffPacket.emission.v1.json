@@ -1,0 +1,126 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.ngra.ai/dietary-exposure/emission/scientificFollowUpOwnerSignoffPacket.v1.json",
+  "title": "scientificFollowUpOwnerSignoffPacket (producer strict emission contract)",
+  "description": "Tightened additionalProperties:false mirror of the real DietaryRuntime.export_scientific_follow_up_owner_signoff_packet emission (by_alias=True). Load-bearing review-arm fields (overallSignoffStatus, unresolvedBlockingActionIds, notes[]) are constrained.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "overallSignoffStatus",
+    "reviewerId",
+    "reviewerRole"
+  ],
+  "properties": {
+    "acknowledgedActionIds": {
+      "type": "array"
+    },
+    "actionCount": {
+      "type": "integer"
+    },
+    "actionItems": {
+      "type": "array"
+    },
+    "bundleProfile": {
+      "type": "string"
+    },
+    "completedActionIds": {
+      "type": "array"
+    },
+    "documentationResourceUri": {
+      "type": "string"
+    },
+    "dueStateFilter": {
+      "type": "array"
+    },
+    "legalLimitReviews": {
+      "type": "array"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "overallSignoffStatus": {
+      "enum": [
+        "open",
+        "signed_off",
+        "signed_off_with_waivers"
+      ]
+    },
+    "overallStatus": {
+      "type": "string"
+    },
+    "ownerLane": {
+      "type": "string"
+    },
+    "packet_id": {
+      "type": "string"
+    },
+    "pendingActionIds": {
+      "type": "array"
+    },
+    "recommendedSignoffSequence": {
+      "type": "array"
+    },
+    "recordClosureActionIds": {
+      "type": "array"
+    },
+    "referencedResources": {
+      "type": "array"
+    },
+    "resolveNowActionIds": {
+      "type": "array"
+    },
+    "reviewThisCycleActionIds": {
+      "type": "array"
+    },
+    "reviewerId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewerRole": {
+      "type": "string",
+      "minLength": 1
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "sourceBoardId": {
+      "type": "string"
+    },
+    "sourceBundleId": {
+      "type": "string"
+    },
+    "sourceDossierId": {
+      "type": "string"
+    },
+    "sourceDossierStatus": {
+      "type": "string"
+    },
+    "sourceHandoffPacketId": {
+      "type": "string"
+    },
+    "sourceRemediationPacketId": {
+      "type": "string"
+    },
+    "sourceWorkflow": {
+      "type": "string"
+    },
+    "targetProfile": {
+      "type": "object"
+    },
+    "trackInProgressActionIds": {
+      "type": "array"
+    },
+    "unresolvedBlockingActionIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "waivedActionIds": {
+      "type": "array"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "contaminant_family": "mercury_food_contaminants",
+  "jurisdiction": "eu",
+  "csv_text": "food,contaminant,result,unit,loq,recovery_percent,measurement_uncertainty_percent,sampling_year\nswordfish,methylmercury,0.72,mg/kg,0.01,94,12,2025\nbluefin_tuna,methylmercury,0.55,mg/kg,0.01,92,11,2025\n",
+  "authority": null,
+  "dataset_id": "efsa.comprehensive_food_consumption_db.mercury_support",
+  "occurrence_evidence_record_ids": [],
+  "analytical_method_evidence_record_ids": []
+}

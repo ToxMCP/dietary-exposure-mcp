@@ -1,0 +1,1261 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "consumption_profiles",
+  "metadata": {
+    "sourceId": "who.gems.food.cluster_diets.2012",
+    "sourceTitle": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+    "sourceUrl": "https://cdn.who.int/media/docs/default-source/food-safety/gems-food/gems-food-cluster-diets-2012-consumption.xls?sfvrsn=fc263737_6",
+    "overviewUrl": "https://www.who.int/teams/nutrition-and-food-safety/databases/global-environment-monitoring-system-food-contamination",
+    "bodyWeightBasis": {
+      "valueKg": 60.0,
+      "justification": "WHO/JECFA chronic dietary exposure assessments commonly use a standard 60 kg adult body weight; EFSA also notes that 60 kg has commonly been used for worldwide adult populations.",
+      "sourceUrls": [
+        "https://www.who.int/teams/nutrition-and-food-safety/databases/global-environment-monitoring-system-food-contamination",
+        "https://www.efsa.europa.eu/en/press/news/120307a"
+      ]
+    }
+  },
+  "profiles": [
+    {
+      "profileId": "who_gems_g01_chronic_general_v1",
+      "displayName": "WHO GEMS/Food G01 chronic general-population seed profile",
+      "regionId": "who_gems_cluster_g01",
+      "populationGroup": "adult_general",
+      "profileFamily": "who_gems_cluster_diets_2012",
+      "regulatoryBasis": "WHO GEMS/Food Cluster Diets 2012 chronic model diet",
+      "reviewStatus": "public_official_seed",
+      "surveySource": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "bodyWeightKg": 60.0,
+      "applicableWindows": [
+        "chronic"
+      ],
+      "limitations": [
+        "WHO GEMS/Food cluster diets are chronic model diets expressed in grams/person/day, not person-level survey records.",
+        "This public seed profile uses a standard 60 kg adult body weight to normalize intake on a mg/kg-bw/day basis.",
+        "Country composition for each cluster is maintained by WHO and should be confirmed against the official dashboard when needed.",
+        "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy.",
+        "Category is broader than apples alone and should be treated as a chronic seed profile rather than a commodity-specific survey result.",
+        "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy.",
+        "Category is broader than spinach alone and requires refinement before commodity-specific regulatory use.",
+        "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy.",
+        "Category is substantially broader than rice and should be treated as a heuristic chronic seed only.",
+        "Mapped directly from the WHO GEMS/Food milks-without-other-ingredients category."
+      ],
+      "qualityFlags": [
+        {
+          "code": "public_seed_profile",
+          "severity": "info",
+          "message": "This profile is a public official seed derived from WHO GEMS/Food cluster diets and is intended for transparent chronic screening workflows."
+        },
+        {
+          "code": "broad_category_proxy_apples",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy."
+        },
+        {
+          "code": "broad_category_proxy_spinach",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy."
+        },
+        {
+          "code": "broad_category_proxy_rice",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy."
+        }
+      ],
+      "sourceId": "who.gems.food.cluster_diets.2012",
+      "sourceTitle": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "sourceUrl": "https://cdn.who.int/media/docs/default-source/food-safety/gems-food/gems-food-cluster-diets-2012-consumption.xls?sfvrsn=fc263737_6",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.016279982599770936
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.0013310071897293192
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.37240441827129606
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.2583803430404535
+        }
+      ]
+    },
+    {
+      "profileId": "who_gems_g02_chronic_general_v1",
+      "displayName": "WHO GEMS/Food G02 chronic general-population seed profile",
+      "regionId": "who_gems_cluster_g02",
+      "populationGroup": "adult_general",
+      "profileFamily": "who_gems_cluster_diets_2012",
+      "regulatoryBasis": "WHO GEMS/Food Cluster Diets 2012 chronic model diet",
+      "reviewStatus": "public_official_seed",
+      "surveySource": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "bodyWeightKg": 60.0,
+      "applicableWindows": [
+        "chronic"
+      ],
+      "limitations": [
+        "WHO GEMS/Food cluster diets are chronic model diets expressed in grams/person/day, not person-level survey records.",
+        "This public seed profile uses a standard 60 kg adult body weight to normalize intake on a mg/kg-bw/day basis.",
+        "Country composition for each cluster is maintained by WHO and should be confirmed against the official dashboard when needed.",
+        "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy.",
+        "Category is broader than apples alone and should be treated as a chronic seed profile rather than a commodity-specific survey result.",
+        "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy.",
+        "Category is broader than spinach alone and requires refinement before commodity-specific regulatory use.",
+        "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy.",
+        "Category is substantially broader than rice and should be treated as a heuristic chronic seed only.",
+        "Mapped directly from the WHO GEMS/Food milks-without-other-ingredients category."
+      ],
+      "qualityFlags": [
+        {
+          "code": "public_seed_profile",
+          "severity": "info",
+          "message": "This profile is a public official seed derived from WHO GEMS/Food cluster diets and is intended for transparent chronic screening workflows."
+        },
+        {
+          "code": "broad_category_proxy_apples",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy."
+        },
+        {
+          "code": "broad_category_proxy_spinach",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy."
+        },
+        {
+          "code": "broad_category_proxy_rice",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy."
+        }
+      ],
+      "sourceId": "who.gems.food.cluster_diets.2012",
+      "sourceTitle": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "sourceUrl": "https://cdn.who.int/media/docs/default-source/food-safety/gems-food/gems-food-cluster-diets-2012-consumption.xls?sfvrsn=fc263737_6",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.033237648868974526
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.0006319822948556943
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.3378444528658326
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.45649431012803665
+        }
+      ]
+    },
+    {
+      "profileId": "who_gems_g03_chronic_general_v1",
+      "displayName": "WHO GEMS/Food G03 chronic general-population seed profile",
+      "regionId": "who_gems_cluster_g03",
+      "populationGroup": "adult_general",
+      "profileFamily": "who_gems_cluster_diets_2012",
+      "regulatoryBasis": "WHO GEMS/Food Cluster Diets 2012 chronic model diet",
+      "reviewStatus": "public_official_seed",
+      "surveySource": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "bodyWeightKg": 60.0,
+      "applicableWindows": [
+        "chronic"
+      ],
+      "limitations": [
+        "WHO GEMS/Food cluster diets are chronic model diets expressed in grams/person/day, not person-level survey records.",
+        "This public seed profile uses a standard 60 kg adult body weight to normalize intake on a mg/kg-bw/day basis.",
+        "Country composition for each cluster is maintained by WHO and should be confirmed against the official dashboard when needed.",
+        "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy.",
+        "Category is broader than apples alone and should be treated as a chronic seed profile rather than a commodity-specific survey result.",
+        "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy.",
+        "Category is broader than spinach alone and requires refinement before commodity-specific regulatory use.",
+        "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy.",
+        "Category is substantially broader than rice and should be treated as a heuristic chronic seed only.",
+        "Mapped directly from the WHO GEMS/Food milks-without-other-ingredients category."
+      ],
+      "qualityFlags": [
+        {
+          "code": "public_seed_profile",
+          "severity": "info",
+          "message": "This profile is a public official seed derived from WHO GEMS/Food cluster diets and is intended for transparent chronic screening workflows."
+        },
+        {
+          "code": "broad_category_proxy_apples",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy."
+        },
+        {
+          "code": "broad_category_proxy_spinach",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy."
+        },
+        {
+          "code": "broad_category_proxy_rice",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy."
+        }
+      ],
+      "sourceId": "who.gems.food.cluster_diets.2012",
+      "sourceTitle": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "sourceUrl": "https://cdn.who.int/media/docs/default-source/food-safety/gems-food/gems-food-cluster-diets-2012-consumption.xls?sfvrsn=fc263737_6",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.0005713111202777851
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.0008411150997970828
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.2059379065404881
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.0204132585936319
+        }
+      ]
+    },
+    {
+      "profileId": "who_gems_g04_chronic_general_v1",
+      "displayName": "WHO GEMS/Food G04 chronic general-population seed profile",
+      "regionId": "who_gems_cluster_g04",
+      "populationGroup": "adult_general",
+      "profileFamily": "who_gems_cluster_diets_2012",
+      "regulatoryBasis": "WHO GEMS/Food Cluster Diets 2012 chronic model diet",
+      "reviewStatus": "public_official_seed",
+      "surveySource": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "bodyWeightKg": 60.0,
+      "applicableWindows": [
+        "chronic"
+      ],
+      "limitations": [
+        "WHO GEMS/Food cluster diets are chronic model diets expressed in grams/person/day, not person-level survey records.",
+        "This public seed profile uses a standard 60 kg adult body weight to normalize intake on a mg/kg-bw/day basis.",
+        "Country composition for each cluster is maintained by WHO and should be confirmed against the official dashboard when needed.",
+        "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy.",
+        "Category is broader than apples alone and should be treated as a chronic seed profile rather than a commodity-specific survey result.",
+        "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy.",
+        "Category is broader than spinach alone and requires refinement before commodity-specific regulatory use.",
+        "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy.",
+        "Category is substantially broader than rice and should be treated as a heuristic chronic seed only.",
+        "Mapped directly from the WHO GEMS/Food milks-without-other-ingredients category."
+      ],
+      "qualityFlags": [
+        {
+          "code": "public_seed_profile",
+          "severity": "info",
+          "message": "This profile is a public official seed derived from WHO GEMS/Food cluster diets and is intended for transparent chronic screening workflows."
+        },
+        {
+          "code": "broad_category_proxy_apples",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy."
+        },
+        {
+          "code": "broad_category_proxy_spinach",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy."
+        },
+        {
+          "code": "broad_category_proxy_rice",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy."
+        }
+      ],
+      "sourceId": "who.gems.food.cluster_diets.2012",
+      "sourceTitle": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "sourceUrl": "https://cdn.who.int/media/docs/default-source/food-safety/gems-food/gems-food-cluster-diets-2012-consumption.xls?sfvrsn=fc263737_6",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.020204850016197724
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.007880456317883025
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.35529825755100386
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.12681382291139334
+        }
+      ]
+    },
+    {
+      "profileId": "who_gems_g05_chronic_general_v1",
+      "displayName": "WHO GEMS/Food G05 chronic general-population seed profile",
+      "regionId": "who_gems_cluster_g05",
+      "populationGroup": "adult_general",
+      "profileFamily": "who_gems_cluster_diets_2012",
+      "regulatoryBasis": "WHO GEMS/Food Cluster Diets 2012 chronic model diet",
+      "reviewStatus": "public_official_seed",
+      "surveySource": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "bodyWeightKg": 60.0,
+      "applicableWindows": [
+        "chronic"
+      ],
+      "limitations": [
+        "WHO GEMS/Food cluster diets are chronic model diets expressed in grams/person/day, not person-level survey records.",
+        "This public seed profile uses a standard 60 kg adult body weight to normalize intake on a mg/kg-bw/day basis.",
+        "Country composition for each cluster is maintained by WHO and should be confirmed against the official dashboard when needed.",
+        "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy.",
+        "Category is broader than apples alone and should be treated as a chronic seed profile rather than a commodity-specific survey result.",
+        "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy.",
+        "Category is broader than spinach alone and requires refinement before commodity-specific regulatory use.",
+        "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy.",
+        "Category is substantially broader than rice and should be treated as a heuristic chronic seed only.",
+        "Mapped directly from the WHO GEMS/Food milks-without-other-ingredients category."
+      ],
+      "qualityFlags": [
+        {
+          "code": "public_seed_profile",
+          "severity": "info",
+          "message": "This profile is a public official seed derived from WHO GEMS/Food cluster diets and is intended for transparent chronic screening workflows."
+        },
+        {
+          "code": "broad_category_proxy_apples",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy."
+        },
+        {
+          "code": "broad_category_proxy_spinach",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy."
+        },
+        {
+          "code": "broad_category_proxy_rice",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy."
+        }
+      ],
+      "sourceId": "who.gems.food.cluster_diets.2012",
+      "sourceTitle": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "sourceUrl": "https://cdn.who.int/media/docs/default-source/food-safety/gems-food/gems-food-cluster-diets-2012-consumption.xls?sfvrsn=fc263737_6",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.007589745160494238
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.0020461061078545974
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.35837709446674876
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.1748875828348063
+        }
+      ]
+    },
+    {
+      "profileId": "who_gems_g06_chronic_general_v1",
+      "displayName": "WHO GEMS/Food G06 chronic general-population seed profile",
+      "regionId": "who_gems_cluster_g06",
+      "populationGroup": "adult_general",
+      "profileFamily": "who_gems_cluster_diets_2012",
+      "regulatoryBasis": "WHO GEMS/Food Cluster Diets 2012 chronic model diet",
+      "reviewStatus": "public_official_seed",
+      "surveySource": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "bodyWeightKg": 60.0,
+      "applicableWindows": [
+        "chronic"
+      ],
+      "limitations": [
+        "WHO GEMS/Food cluster diets are chronic model diets expressed in grams/person/day, not person-level survey records.",
+        "This public seed profile uses a standard 60 kg adult body weight to normalize intake on a mg/kg-bw/day basis.",
+        "Country composition for each cluster is maintained by WHO and should be confirmed against the official dashboard when needed.",
+        "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy.",
+        "Category is broader than apples alone and should be treated as a chronic seed profile rather than a commodity-specific survey result.",
+        "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy.",
+        "Category is broader than spinach alone and requires refinement before commodity-specific regulatory use.",
+        "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy.",
+        "Category is substantially broader than rice and should be treated as a heuristic chronic seed only.",
+        "Mapped directly from the WHO GEMS/Food milks-without-other-ingredients category."
+      ],
+      "qualityFlags": [
+        {
+          "code": "public_seed_profile",
+          "severity": "info",
+          "message": "This profile is a public official seed derived from WHO GEMS/Food cluster diets and is intended for transparent chronic screening workflows."
+        },
+        {
+          "code": "broad_category_proxy_apples",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy."
+        },
+        {
+          "code": "broad_category_proxy_spinach",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy."
+        },
+        {
+          "code": "broad_category_proxy_rice",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy."
+        }
+      ],
+      "sourceId": "who.gems.food.cluster_diets.2012",
+      "sourceTitle": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "sourceUrl": "https://cdn.who.int/media/docs/default-source/food-safety/gems-food/gems-food-cluster-diets-2012-consumption.xls?sfvrsn=fc263737_6",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.05444057280309999
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.00971430547277049
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.47921722585012266
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.14688995202374824
+        }
+      ]
+    },
+    {
+      "profileId": "who_gems_g07_chronic_general_v1",
+      "displayName": "WHO GEMS/Food G07 chronic general-population seed profile",
+      "regionId": "who_gems_cluster_g07",
+      "populationGroup": "adult_general",
+      "profileFamily": "who_gems_cluster_diets_2012",
+      "regulatoryBasis": "WHO GEMS/Food Cluster Diets 2012 chronic model diet",
+      "reviewStatus": "public_official_seed",
+      "surveySource": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "bodyWeightKg": 60.0,
+      "applicableWindows": [
+        "chronic"
+      ],
+      "limitations": [
+        "WHO GEMS/Food cluster diets are chronic model diets expressed in grams/person/day, not person-level survey records.",
+        "This public seed profile uses a standard 60 kg adult body weight to normalize intake on a mg/kg-bw/day basis.",
+        "Country composition for each cluster is maintained by WHO and should be confirmed against the official dashboard when needed.",
+        "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy.",
+        "Category is broader than apples alone and should be treated as a chronic seed profile rather than a commodity-specific survey result.",
+        "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy.",
+        "Category is broader than spinach alone and requires refinement before commodity-specific regulatory use.",
+        "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy.",
+        "Category is substantially broader than rice and should be treated as a heuristic chronic seed only.",
+        "Mapped directly from the WHO GEMS/Food milks-without-other-ingredients category."
+      ],
+      "qualityFlags": [
+        {
+          "code": "public_seed_profile",
+          "severity": "info",
+          "message": "This profile is a public official seed derived from WHO GEMS/Food cluster diets and is intended for transparent chronic screening workflows."
+        },
+        {
+          "code": "broad_category_proxy_apples",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy."
+        },
+        {
+          "code": "broad_category_proxy_spinach",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy."
+        },
+        {
+          "code": "broad_category_proxy_rice",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy."
+        }
+      ],
+      "sourceId": "who.gems.food.cluster_diets.2012",
+      "sourceTitle": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "sourceUrl": "https://cdn.who.int/media/docs/default-source/food-safety/gems-food/gems-food-cluster-diets-2012-consumption.xls?sfvrsn=fc263737_6",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.036421847868200304
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.018418540479613464
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.21672554223343085
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.2769499466546955
+        }
+      ]
+    },
+    {
+      "profileId": "who_gems_g08_chronic_general_v1",
+      "displayName": "WHO GEMS/Food G08 chronic general-population seed profile",
+      "regionId": "who_gems_cluster_g08",
+      "populationGroup": "adult_general",
+      "profileFamily": "who_gems_cluster_diets_2012",
+      "regulatoryBasis": "WHO GEMS/Food Cluster Diets 2012 chronic model diet",
+      "reviewStatus": "public_official_seed",
+      "surveySource": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "bodyWeightKg": 60.0,
+      "applicableWindows": [
+        "chronic"
+      ],
+      "limitations": [
+        "WHO GEMS/Food cluster diets are chronic model diets expressed in grams/person/day, not person-level survey records.",
+        "This public seed profile uses a standard 60 kg adult body weight to normalize intake on a mg/kg-bw/day basis.",
+        "Country composition for each cluster is maintained by WHO and should be confirmed against the official dashboard when needed.",
+        "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy.",
+        "Category is broader than apples alone and should be treated as a chronic seed profile rather than a commodity-specific survey result.",
+        "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy.",
+        "Category is broader than spinach alone and requires refinement before commodity-specific regulatory use.",
+        "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy.",
+        "Category is substantially broader than rice and should be treated as a heuristic chronic seed only.",
+        "Mapped directly from the WHO GEMS/Food milks-without-other-ingredients category."
+      ],
+      "qualityFlags": [
+        {
+          "code": "public_seed_profile",
+          "severity": "info",
+          "message": "This profile is a public official seed derived from WHO GEMS/Food cluster diets and is intended for transparent chronic screening workflows."
+        },
+        {
+          "code": "broad_category_proxy_apples",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy."
+        },
+        {
+          "code": "broad_category_proxy_spinach",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy."
+        },
+        {
+          "code": "broad_category_proxy_rice",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy."
+        }
+      ],
+      "sourceId": "who.gems.food.cluster_diets.2012",
+      "sourceTitle": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "sourceUrl": "https://cdn.who.int/media/docs/default-source/food-safety/gems-food/gems-food-cluster-diets-2012-consumption.xls?sfvrsn=fc263737_6",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.057824502054706926
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.015393736235587064
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.24499033164992481
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.23327213581017253
+        }
+      ]
+    },
+    {
+      "profileId": "who_gems_g09_chronic_general_v1",
+      "displayName": "WHO GEMS/Food G09 chronic general-population seed profile",
+      "regionId": "who_gems_cluster_g09",
+      "populationGroup": "adult_general",
+      "profileFamily": "who_gems_cluster_diets_2012",
+      "regulatoryBasis": "WHO GEMS/Food Cluster Diets 2012 chronic model diet",
+      "reviewStatus": "public_official_seed",
+      "surveySource": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "bodyWeightKg": 60.0,
+      "applicableWindows": [
+        "chronic"
+      ],
+      "limitations": [
+        "WHO GEMS/Food cluster diets are chronic model diets expressed in grams/person/day, not person-level survey records.",
+        "This public seed profile uses a standard 60 kg adult body weight to normalize intake on a mg/kg-bw/day basis.",
+        "Country composition for each cluster is maintained by WHO and should be confirmed against the official dashboard when needed.",
+        "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy.",
+        "Category is broader than apples alone and should be treated as a chronic seed profile rather than a commodity-specific survey result.",
+        "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy.",
+        "Category is broader than spinach alone and requires refinement before commodity-specific regulatory use.",
+        "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy.",
+        "Category is substantially broader than rice and should be treated as a heuristic chronic seed only.",
+        "Mapped directly from the WHO GEMS/Food milks-without-other-ingredients category."
+      ],
+      "qualityFlags": [
+        {
+          "code": "public_seed_profile",
+          "severity": "info",
+          "message": "This profile is a public official seed derived from WHO GEMS/Food cluster diets and is intended for transparent chronic screening workflows."
+        },
+        {
+          "code": "broad_category_proxy_apples",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy."
+        },
+        {
+          "code": "broad_category_proxy_spinach",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy."
+        },
+        {
+          "code": "broad_category_proxy_rice",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy."
+        }
+      ],
+      "sourceId": "who.gems.food.cluster_diets.2012",
+      "sourceTitle": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "sourceUrl": "https://cdn.who.int/media/docs/default-source/food-safety/gems-food/gems-food-cluster-diets-2012-consumption.xls?sfvrsn=fc263737_6",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.03405070713635471
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.033353685896296684
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.3919248209740536
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.04027785392126486
+        }
+      ]
+    },
+    {
+      "profileId": "who_gems_g10_chronic_general_v1",
+      "displayName": "WHO GEMS/Food G10 chronic general-population seed profile",
+      "regionId": "who_gems_cluster_g10",
+      "populationGroup": "adult_general",
+      "profileFamily": "who_gems_cluster_diets_2012",
+      "regulatoryBasis": "WHO GEMS/Food Cluster Diets 2012 chronic model diet",
+      "reviewStatus": "public_official_seed",
+      "surveySource": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "bodyWeightKg": 60.0,
+      "applicableWindows": [
+        "chronic"
+      ],
+      "limitations": [
+        "WHO GEMS/Food cluster diets are chronic model diets expressed in grams/person/day, not person-level survey records.",
+        "This public seed profile uses a standard 60 kg adult body weight to normalize intake on a mg/kg-bw/day basis.",
+        "Country composition for each cluster is maintained by WHO and should be confirmed against the official dashboard when needed.",
+        "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy.",
+        "Category is broader than apples alone and should be treated as a chronic seed profile rather than a commodity-specific survey result.",
+        "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy.",
+        "Category is broader than spinach alone and requires refinement before commodity-specific regulatory use.",
+        "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy.",
+        "Category is substantially broader than rice and should be treated as a heuristic chronic seed only.",
+        "Mapped directly from the WHO GEMS/Food milks-without-other-ingredients category."
+      ],
+      "qualityFlags": [
+        {
+          "code": "public_seed_profile",
+          "severity": "info",
+          "message": "This profile is a public official seed derived from WHO GEMS/Food cluster diets and is intended for transparent chronic screening workflows."
+        },
+        {
+          "code": "broad_category_proxy_apples",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy."
+        },
+        {
+          "code": "broad_category_proxy_spinach",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy."
+        },
+        {
+          "code": "broad_category_proxy_rice",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy."
+        }
+      ],
+      "sourceId": "who.gems.food.cluster_diets.2012",
+      "sourceTitle": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "sourceUrl": "https://cdn.who.int/media/docs/default-source/food-safety/gems-food/gems-food-cluster-diets-2012-consumption.xls?sfvrsn=fc263737_6",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.040727684398926434
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.026370486313966403
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.26073156985022056
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.24618400003615346
+        }
+      ]
+    },
+    {
+      "profileId": "who_gems_g11_chronic_general_v1",
+      "displayName": "WHO GEMS/Food G11 chronic general-population seed profile",
+      "regionId": "who_gems_cluster_g11",
+      "populationGroup": "adult_general",
+      "profileFamily": "who_gems_cluster_diets_2012",
+      "regulatoryBasis": "WHO GEMS/Food Cluster Diets 2012 chronic model diet",
+      "reviewStatus": "public_official_seed",
+      "surveySource": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "bodyWeightKg": 60.0,
+      "applicableWindows": [
+        "chronic"
+      ],
+      "limitations": [
+        "WHO GEMS/Food cluster diets are chronic model diets expressed in grams/person/day, not person-level survey records.",
+        "This public seed profile uses a standard 60 kg adult body weight to normalize intake on a mg/kg-bw/day basis.",
+        "Country composition for each cluster is maintained by WHO and should be confirmed against the official dashboard when needed.",
+        "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy.",
+        "Category is broader than apples alone and should be treated as a chronic seed profile rather than a commodity-specific survey result.",
+        "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy.",
+        "Category is broader than spinach alone and requires refinement before commodity-specific regulatory use.",
+        "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy.",
+        "Category is substantially broader than rice and should be treated as a heuristic chronic seed only.",
+        "Mapped directly from the WHO GEMS/Food milks-without-other-ingredients category."
+      ],
+      "qualityFlags": [
+        {
+          "code": "public_seed_profile",
+          "severity": "info",
+          "message": "This profile is a public official seed derived from WHO GEMS/Food cluster diets and is intended for transparent chronic screening workflows."
+        },
+        {
+          "code": "broad_category_proxy_apples",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy."
+        },
+        {
+          "code": "broad_category_proxy_spinach",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy."
+        },
+        {
+          "code": "broad_category_proxy_rice",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy."
+        }
+      ],
+      "sourceId": "who.gems.food.cluster_diets.2012",
+      "sourceTitle": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "sourceUrl": "https://cdn.who.int/media/docs/default-source/food-safety/gems-food/gems-food-cluster-diets-2012-consumption.xls?sfvrsn=fc263737_6",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.06215610963238406
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.013131451339288254
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.18358741998532005
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.26691183992626377
+        }
+      ]
+    },
+    {
+      "profileId": "who_gems_g12_chronic_general_v1",
+      "displayName": "WHO GEMS/Food G12 chronic general-population seed profile",
+      "regionId": "who_gems_cluster_g12",
+      "populationGroup": "adult_general",
+      "profileFamily": "who_gems_cluster_diets_2012",
+      "regulatoryBasis": "WHO GEMS/Food Cluster Diets 2012 chronic model diet",
+      "reviewStatus": "public_official_seed",
+      "surveySource": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "bodyWeightKg": 60.0,
+      "applicableWindows": [
+        "chronic"
+      ],
+      "limitations": [
+        "WHO GEMS/Food cluster diets are chronic model diets expressed in grams/person/day, not person-level survey records.",
+        "This public seed profile uses a standard 60 kg adult body weight to normalize intake on a mg/kg-bw/day basis.",
+        "Country composition for each cluster is maintained by WHO and should be confirmed against the official dashboard when needed.",
+        "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy.",
+        "Category is broader than apples alone and should be treated as a chronic seed profile rather than a commodity-specific survey result.",
+        "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy.",
+        "Category is broader than spinach alone and requires refinement before commodity-specific regulatory use.",
+        "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy.",
+        "Category is substantially broader than rice and should be treated as a heuristic chronic seed only.",
+        "Mapped directly from the WHO GEMS/Food milks-without-other-ingredients category."
+      ],
+      "qualityFlags": [
+        {
+          "code": "public_seed_profile",
+          "severity": "info",
+          "message": "This profile is a public official seed derived from WHO GEMS/Food cluster diets and is intended for transparent chronic screening workflows."
+        },
+        {
+          "code": "broad_category_proxy_apples",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy."
+        },
+        {
+          "code": "broad_category_proxy_spinach",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy."
+        },
+        {
+          "code": "broad_category_proxy_rice",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy."
+        }
+      ],
+      "sourceId": "who.gems.food.cluster_diets.2012",
+      "sourceTitle": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "sourceUrl": "https://cdn.who.int/media/docs/default-source/food-safety/gems-food/gems-food-cluster-diets-2012-consumption.xls?sfvrsn=fc263737_6",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.002002044720971255
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.0025204195145651694
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.24703896870964281
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.09409979131345109
+        }
+      ]
+    },
+    {
+      "profileId": "who_gems_g13_chronic_general_v1",
+      "displayName": "WHO GEMS/Food G13 chronic general-population seed profile",
+      "regionId": "who_gems_cluster_g13",
+      "populationGroup": "adult_general",
+      "profileFamily": "who_gems_cluster_diets_2012",
+      "regulatoryBasis": "WHO GEMS/Food Cluster Diets 2012 chronic model diet",
+      "reviewStatus": "public_official_seed",
+      "surveySource": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "bodyWeightKg": 60.0,
+      "applicableWindows": [
+        "chronic"
+      ],
+      "limitations": [
+        "WHO GEMS/Food cluster diets are chronic model diets expressed in grams/person/day, not person-level survey records.",
+        "This public seed profile uses a standard 60 kg adult body weight to normalize intake on a mg/kg-bw/day basis.",
+        "Country composition for each cluster is maintained by WHO and should be confirmed against the official dashboard when needed.",
+        "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy.",
+        "Category is broader than apples alone and should be treated as a chronic seed profile rather than a commodity-specific survey result.",
+        "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy.",
+        "Category is broader than spinach alone and requires refinement before commodity-specific regulatory use.",
+        "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy.",
+        "Category is substantially broader than rice and should be treated as a heuristic chronic seed only.",
+        "Mapped directly from the WHO GEMS/Food milks-without-other-ingredients category."
+      ],
+      "qualityFlags": [
+        {
+          "code": "public_seed_profile",
+          "severity": "info",
+          "message": "This profile is a public official seed derived from WHO GEMS/Food cluster diets and is intended for transparent chronic screening workflows."
+        },
+        {
+          "code": "broad_category_proxy_apples",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy."
+        },
+        {
+          "code": "broad_category_proxy_spinach",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy."
+        },
+        {
+          "code": "broad_category_proxy_rice",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy."
+        }
+      ],
+      "sourceId": "who.gems.food.cluster_diets.2012",
+      "sourceTitle": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "sourceUrl": "https://cdn.who.int/media/docs/default-source/food-safety/gems-food/gems-food-cluster-diets-2012-consumption.xls?sfvrsn=fc263737_6",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.00028364615675061306
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.0004936386126846423
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.33054855845300674
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.09831519667927198
+        }
+      ]
+    },
+    {
+      "profileId": "who_gems_g14_chronic_general_v1",
+      "displayName": "WHO GEMS/Food G14 chronic general-population seed profile",
+      "regionId": "who_gems_cluster_g14",
+      "populationGroup": "adult_general",
+      "profileFamily": "who_gems_cluster_diets_2012",
+      "regulatoryBasis": "WHO GEMS/Food Cluster Diets 2012 chronic model diet",
+      "reviewStatus": "public_official_seed",
+      "surveySource": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "bodyWeightKg": 60.0,
+      "applicableWindows": [
+        "chronic"
+      ],
+      "limitations": [
+        "WHO GEMS/Food cluster diets are chronic model diets expressed in grams/person/day, not person-level survey records.",
+        "This public seed profile uses a standard 60 kg adult body weight to normalize intake on a mg/kg-bw/day basis.",
+        "Country composition for each cluster is maintained by WHO and should be confirmed against the official dashboard when needed.",
+        "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy.",
+        "Category is broader than apples alone and should be treated as a chronic seed profile rather than a commodity-specific survey result.",
+        "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy.",
+        "Category is broader than spinach alone and requires refinement before commodity-specific regulatory use.",
+        "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy.",
+        "Category is substantially broader than rice and should be treated as a heuristic chronic seed only.",
+        "Mapped directly from the WHO GEMS/Food milks-without-other-ingredients category."
+      ],
+      "qualityFlags": [
+        {
+          "code": "public_seed_profile",
+          "severity": "info",
+          "message": "This profile is a public official seed derived from WHO GEMS/Food cluster diets and is intended for transparent chronic screening workflows."
+        },
+        {
+          "code": "broad_category_proxy_apples",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy."
+        },
+        {
+          "code": "broad_category_proxy_spinach",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy."
+        },
+        {
+          "code": "broad_category_proxy_rice",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy."
+        }
+      ],
+      "sourceId": "who.gems.food.cluster_diets.2012",
+      "sourceTitle": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "sourceUrl": "https://cdn.who.int/media/docs/default-source/food-safety/gems-food/gems-food-cluster-diets-2012-consumption.xls?sfvrsn=fc263737_6",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.0021948871372183317
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 3.245428431260627e-05
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.32129529802795076
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.022787562327670274
+        }
+      ]
+    },
+    {
+      "profileId": "who_gems_g15_chronic_general_v1",
+      "displayName": "WHO GEMS/Food G15 chronic general-population seed profile",
+      "regionId": "who_gems_cluster_g15",
+      "populationGroup": "adult_general",
+      "profileFamily": "who_gems_cluster_diets_2012",
+      "regulatoryBasis": "WHO GEMS/Food Cluster Diets 2012 chronic model diet",
+      "reviewStatus": "public_official_seed",
+      "surveySource": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "bodyWeightKg": 60.0,
+      "applicableWindows": [
+        "chronic"
+      ],
+      "limitations": [
+        "WHO GEMS/Food cluster diets are chronic model diets expressed in grams/person/day, not person-level survey records.",
+        "This public seed profile uses a standard 60 kg adult body weight to normalize intake on a mg/kg-bw/day basis.",
+        "Country composition for each cluster is maintained by WHO and should be confirmed against the official dashboard when needed.",
+        "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy.",
+        "Category is broader than apples alone and should be treated as a chronic seed profile rather than a commodity-specific survey result.",
+        "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy.",
+        "Category is broader than spinach alone and requires refinement before commodity-specific regulatory use.",
+        "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy.",
+        "Category is substantially broader than rice and should be treated as a heuristic chronic seed only.",
+        "Mapped directly from the WHO GEMS/Food milks-without-other-ingredients category."
+      ],
+      "qualityFlags": [
+        {
+          "code": "public_seed_profile",
+          "severity": "info",
+          "message": "This profile is a public official seed derived from WHO GEMS/Food cluster diets and is intended for transparent chronic screening workflows."
+        },
+        {
+          "code": "broad_category_proxy_apples",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy."
+        },
+        {
+          "code": "broad_category_proxy_spinach",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy."
+        },
+        {
+          "code": "broad_category_proxy_rice",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy."
+        }
+      ],
+      "sourceId": "who.gems.food.cluster_diets.2012",
+      "sourceTitle": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "sourceUrl": "https://cdn.who.int/media/docs/default-source/food-safety/gems-food/gems-food-cluster-diets-2012-consumption.xls?sfvrsn=fc263737_6",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.0645815792030594
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.007541521302294601
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.26229175198210497
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.3522858767985926
+        }
+      ]
+    },
+    {
+      "profileId": "who_gems_g16_chronic_general_v1",
+      "displayName": "WHO GEMS/Food G16 chronic general-population seed profile",
+      "regionId": "who_gems_cluster_g16",
+      "populationGroup": "adult_general",
+      "profileFamily": "who_gems_cluster_diets_2012",
+      "regulatoryBasis": "WHO GEMS/Food Cluster Diets 2012 chronic model diet",
+      "reviewStatus": "public_official_seed",
+      "surveySource": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "bodyWeightKg": 60.0,
+      "applicableWindows": [
+        "chronic"
+      ],
+      "limitations": [
+        "WHO GEMS/Food cluster diets are chronic model diets expressed in grams/person/day, not person-level survey records.",
+        "This public seed profile uses a standard 60 kg adult body weight to normalize intake on a mg/kg-bw/day basis.",
+        "Country composition for each cluster is maintained by WHO and should be confirmed against the official dashboard when needed.",
+        "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy.",
+        "Category is broader than apples alone and should be treated as a chronic seed profile rather than a commodity-specific survey result.",
+        "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy.",
+        "Category is broader than spinach alone and requires refinement before commodity-specific regulatory use.",
+        "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy.",
+        "Category is substantially broader than rice and should be treated as a heuristic chronic seed only.",
+        "Mapped directly from the WHO GEMS/Food milks-without-other-ingredients category."
+      ],
+      "qualityFlags": [
+        {
+          "code": "public_seed_profile",
+          "severity": "info",
+          "message": "This profile is a public official seed derived from WHO GEMS/Food cluster diets and is intended for transparent chronic screening workflows."
+        },
+        {
+          "code": "broad_category_proxy_apples",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy."
+        },
+        {
+          "code": "broad_category_proxy_spinach",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy."
+        },
+        {
+          "code": "broad_category_proxy_rice",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy."
+        }
+      ],
+      "sourceId": "who.gems.food.cluster_diets.2012",
+      "sourceTitle": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "sourceUrl": "https://cdn.who.int/media/docs/default-source/food-safety/gems-food/gems-food-cluster-diets-2012-consumption.xls?sfvrsn=fc263737_6",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.00011427619755090382
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 3.2257164343328734e-06
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.1367696967168222
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.058958168116092606
+        }
+      ]
+    },
+    {
+      "profileId": "who_gems_g17_chronic_general_v1",
+      "displayName": "WHO GEMS/Food G17 chronic general-population seed profile",
+      "regionId": "who_gems_cluster_g17",
+      "populationGroup": "adult_general",
+      "profileFamily": "who_gems_cluster_diets_2012",
+      "regulatoryBasis": "WHO GEMS/Food Cluster Diets 2012 chronic model diet",
+      "reviewStatus": "public_official_seed",
+      "surveySource": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "bodyWeightKg": 60.0,
+      "applicableWindows": [
+        "chronic"
+      ],
+      "limitations": [
+        "WHO GEMS/Food cluster diets are chronic model diets expressed in grams/person/day, not person-level survey records.",
+        "This public seed profile uses a standard 60 kg adult body weight to normalize intake on a mg/kg-bw/day basis.",
+        "Country composition for each cluster is maintained by WHO and should be confirmed against the official dashboard when needed.",
+        "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy.",
+        "Category is broader than apples alone and should be treated as a chronic seed profile rather than a commodity-specific survey result.",
+        "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy.",
+        "Category is broader than spinach alone and requires refinement before commodity-specific regulatory use.",
+        "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy.",
+        "Category is substantially broader than rice and should be treated as a heuristic chronic seed only.",
+        "Mapped directly from the WHO GEMS/Food milks-without-other-ingredients category."
+      ],
+      "qualityFlags": [
+        {
+          "code": "public_seed_profile",
+          "severity": "info",
+          "message": "This profile is a public official seed derived from WHO GEMS/Food cluster diets and is intended for transparent chronic screening workflows."
+        },
+        {
+          "code": "broad_category_proxy_apples",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food pome-fruit category as a representative apples proxy."
+        },
+        {
+          "code": "broad_category_proxy_spinach",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food leafy-vegetable category as a representative spinach proxy."
+        },
+        {
+          "code": "broad_category_proxy_rice",
+          "severity": "warning",
+          "message": "Mapped from the WHO GEMS/Food cereal-grains-and-flours category as a broad rice proxy."
+        }
+      ],
+      "sourceId": "who.gems.food.cluster_diets.2012",
+      "sourceTitle": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "sourceUrl": "https://cdn.who.int/media/docs/default-source/food-safety/gems-food/gems-food-cluster-diets-2012-consumption.xls?sfvrsn=fc263737_6",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.0015261008440578684
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.0
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.182906398531607
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": null,
+          "chronicKgPerDay": 0.02774736416410947
+        }
+      ]
+    }
+  ]
+}

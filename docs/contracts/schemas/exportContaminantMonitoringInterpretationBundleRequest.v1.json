@@ -1,0 +1,1036 @@
+{
+  "$defs": {
+    "AnalyticalMethodEvidenceRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "recordId": {
+          "title": "Recordid",
+          "type": "string"
+        },
+        "displayName": {
+          "title": "Displayname",
+          "type": "string"
+        },
+        "authority": {
+          "title": "Authority",
+          "type": "string"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "contaminantFamily": {
+          "$ref": "#/$defs/ContaminantFamily"
+        },
+        "evidenceKind": {
+          "title": "Evidencekind",
+          "type": "string"
+        },
+        "analytes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Analytes",
+          "type": "array"
+        },
+        "matrixGroups": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Matrixgroups",
+          "type": "array"
+        },
+        "techniqueSummary": {
+          "title": "Techniquesummary",
+          "type": "string"
+        },
+        "methodCode": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Methodcode"
+        },
+        "lodSummary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lodsummary"
+        },
+        "lodValue": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lodvalue"
+        },
+        "lodUnit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lodunit"
+        },
+        "loqSummary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Loqsummary"
+        },
+        "loqValue": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Loqvalue"
+        },
+        "loqUnit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Loqunit"
+        },
+        "recoverySummary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Recoverysummary"
+        },
+        "recoveryRangePercent": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Recoveryrangepercent"
+        },
+        "measurementUncertaintySummary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Measurementuncertaintysummary"
+        },
+        "measurementUncertaintyPercent": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Measurementuncertaintypercent"
+        },
+        "storageStabilitySummary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Storagestabilitysummary"
+        },
+        "samplingPlanSummary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Samplingplansummary"
+        },
+        "samplingPlanReference": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Samplingplanreference"
+        },
+        "maturityStatus": {
+          "$ref": "#/$defs/MethodMaturityStatus"
+        },
+        "evidenceSupportStatus": {
+          "$ref": "#/$defs/EvidenceSupportStatus"
+        },
+        "submissionUse": {
+          "$ref": "#/$defs/SubmissionUse"
+        },
+        "documentStatus": {
+          "$ref": "#/$defs/DocumentStatus"
+        },
+        "sourceIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sourceids",
+          "type": "array"
+        },
+        "methodIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Methodids",
+          "type": "array"
+        },
+        "legalAuthorityIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Legalauthorityids",
+          "type": "array"
+        },
+        "reportingProfileIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Reportingprofileids",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "recordId",
+        "displayName",
+        "authority",
+        "jurisdiction",
+        "contaminantFamily",
+        "evidenceKind",
+        "techniqueSummary",
+        "maturityStatus",
+        "evidenceSupportStatus",
+        "submissionUse",
+        "documentStatus"
+      ],
+      "title": "AnalyticalMethodEvidenceRecord",
+      "type": "object"
+    },
+    "ConfidentialityTag": {
+      "enum": [
+        "public",
+        "confidential"
+      ],
+      "title": "ConfidentialityTag",
+      "type": "string"
+    },
+    "ContaminantFamily": {
+      "enum": [
+        "pesticide_residue",
+        "microplastics_emerging",
+        "pfas_food_contaminants",
+        "acrylamide_process_contaminants",
+        "bisphenol_food_contact_migration",
+        "cadmium_food_contaminants",
+        "lead_food_contaminants",
+        "inorganic_arsenic_food_contaminants",
+        "mercury_food_contaminants",
+        "food_contaminant"
+      ],
+      "title": "ContaminantFamily",
+      "type": "string"
+    },
+    "ContaminantMonitoringHeaderResolution": {
+      "additionalProperties": false,
+      "properties": {
+        "header": {
+          "title": "Header",
+          "type": "string"
+        },
+        "canonicalField": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Canonicalfield"
+        },
+        "recognized": {
+          "title": "Recognized",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "header",
+        "recognized"
+      ],
+      "title": "ContaminantMonitoringHeaderResolution",
+      "type": "object"
+    },
+    "ContaminantMonitoringImportCheckResult": {
+      "additionalProperties": false,
+      "properties": {
+        "checkStatus": {
+          "$ref": "#/$defs/ReadinessStatus"
+        },
+        "contaminantFamily": {
+          "$ref": "#/$defs/ContaminantFamily"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "authority": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Authority"
+        },
+        "datasetId": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Datasetid"
+        },
+        "overallSubmissionUse": {
+          "$ref": "#/$defs/SubmissionUse"
+        },
+        "submissionCandidateAllowed": {
+          "title": "Submissioncandidateallowed",
+          "type": "boolean"
+        },
+        "occurrenceEvidenceRecords": {
+          "items": {
+            "$ref": "#/$defs/OccurrenceEvidenceRecord"
+          },
+          "title": "Occurrenceevidencerecords",
+          "type": "array"
+        },
+        "analyticalMethodEvidenceRecords": {
+          "items": {
+            "$ref": "#/$defs/AnalyticalMethodEvidenceRecord"
+          },
+          "title": "Analyticalmethodevidencerecords",
+          "type": "array"
+        },
+        "applicableReportingProfileIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Applicablereportingprofileids",
+          "type": "array"
+        },
+        "reportingProfileSummary": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ReportingProfileApplicabilitySummary"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "headerResolution": {
+          "items": {
+            "$ref": "#/$defs/ContaminantMonitoringHeaderResolution"
+          },
+          "title": "Headerresolution",
+          "type": "array"
+        },
+        "normalizedProjection": {
+          "$ref": "#/$defs/ContaminantMonitoringNormalizedProjection"
+        },
+        "qualityFlags": {
+          "items": {
+            "$ref": "#/$defs/QualityFlag"
+          },
+          "title": "Qualityflags",
+          "type": "array"
+        },
+        "uncertaintyAndAssumptionLedger": {
+          "items": {
+            "$ref": "#/$defs/ScientificLedgerEntry"
+          },
+          "title": "Uncertaintyandassumptionledger",
+          "type": "array"
+        },
+        "requiredReviewQuestions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Requiredreviewquestions",
+          "type": "array"
+        },
+        "referencedResources": {
+          "items": {
+            "$ref": "#/$defs/ReviewResourceReference"
+          },
+          "title": "Referencedresources",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "checkStatus",
+        "contaminantFamily",
+        "jurisdiction",
+        "overallSubmissionUse",
+        "submissionCandidateAllowed",
+        "normalizedProjection"
+      ],
+      "title": "ContaminantMonitoringImportCheckResult",
+      "type": "object"
+    },
+    "ContaminantMonitoringNormalizedProjection": {
+      "additionalProperties": false,
+      "properties": {
+        "rowCount": {
+          "title": "Rowcount",
+          "type": "integer"
+        },
+        "analytes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Analytes",
+          "type": "array"
+        },
+        "commodityNames": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Commoditynames",
+          "type": "array"
+        },
+        "units": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Units",
+          "type": "array"
+        },
+        "samplingYears": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Samplingyears",
+          "type": "array"
+        },
+        "rowsWithLod": {
+          "title": "Rowswithlod",
+          "type": "integer"
+        },
+        "rowsWithLoq": {
+          "title": "Rowswithloq",
+          "type": "integer"
+        },
+        "rowsWithRecoveryPercent": {
+          "title": "Rowswithrecoverypercent",
+          "type": "integer"
+        },
+        "rowsWithMeasurementUncertaintyPercent": {
+          "title": "Rowswithmeasurementuncertaintypercent",
+          "type": "integer"
+        },
+        "priorityFoodGroupHits": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Priorityfoodgrouphits",
+          "type": "array"
+        },
+        "highAttentionFoodHits": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Highattentionfoodhits",
+          "type": "array"
+        },
+        "sensitivePopulationGroups": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sensitivepopulationgroups",
+          "type": "array"
+        },
+        "linkedOccurrenceRecordIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Linkedoccurrencerecordids",
+          "type": "array"
+        },
+        "linkedReviewFocusIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Linkedreviewfocusids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "rowCount",
+        "rowsWithLod",
+        "rowsWithLoq",
+        "rowsWithRecoveryPercent",
+        "rowsWithMeasurementUncertaintyPercent"
+      ],
+      "title": "ContaminantMonitoringNormalizedProjection",
+      "type": "object"
+    },
+    "DocumentStatus": {
+      "enum": [
+        "final_current",
+        "superseded",
+        "draft",
+        "consultation",
+        "tool_metadata",
+        "dataset_current"
+      ],
+      "title": "DocumentStatus",
+      "type": "string"
+    },
+    "EvidenceSupportStatus": {
+      "enum": [
+        "established",
+        "limited",
+        "emerging",
+        "insufficient"
+      ],
+      "title": "EvidenceSupportStatus",
+      "type": "string"
+    },
+    "MethodMaturityStatus": {
+      "enum": [
+        "established",
+        "transitional",
+        "exploratory",
+        "emerging"
+      ],
+      "title": "MethodMaturityStatus",
+      "type": "string"
+    },
+    "OccurrenceEvidenceRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "recordId": {
+          "title": "Recordid",
+          "type": "string"
+        },
+        "displayName": {
+          "title": "Displayname",
+          "type": "string"
+        },
+        "authority": {
+          "title": "Authority",
+          "type": "string"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "contaminantFamily": {
+          "$ref": "#/$defs/ContaminantFamily"
+        },
+        "evidenceKind": {
+          "title": "Evidencekind",
+          "type": "string"
+        },
+        "analytes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Analytes",
+          "type": "array"
+        },
+        "matrixGroups": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Matrixgroups",
+          "type": "array"
+        },
+        "sampleSetSummary": {
+          "title": "Samplesetsummary",
+          "type": "string"
+        },
+        "measuredUnit": {
+          "title": "Measuredunit",
+          "type": "string"
+        },
+        "dataPeriod": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dataperiod"
+        },
+        "lowerBoundHandling": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lowerboundhandling"
+        },
+        "maturityStatus": {
+          "$ref": "#/$defs/MethodMaturityStatus"
+        },
+        "evidenceSupportStatus": {
+          "$ref": "#/$defs/EvidenceSupportStatus"
+        },
+        "submissionUse": {
+          "$ref": "#/$defs/SubmissionUse"
+        },
+        "documentStatus": {
+          "$ref": "#/$defs/DocumentStatus"
+        },
+        "sourceIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sourceids",
+          "type": "array"
+        },
+        "occurrenceRecordIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Occurrencerecordids",
+          "type": "array"
+        },
+        "datasetIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Datasetids",
+          "type": "array"
+        },
+        "methodEvidenceRecordIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Methodevidencerecordids",
+          "type": "array"
+        },
+        "legalAuthorityIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Legalauthorityids",
+          "type": "array"
+        },
+        "referenceValueRecordIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Referencevaluerecordids",
+          "type": "array"
+        },
+        "linkedReviewFocusIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Linkedreviewfocusids",
+          "type": "array"
+        },
+        "reportingProfileIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Reportingprofileids",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "recordId",
+        "displayName",
+        "authority",
+        "jurisdiction",
+        "contaminantFamily",
+        "evidenceKind",
+        "sampleSetSummary",
+        "measuredUnit",
+        "maturityStatus",
+        "evidenceSupportStatus",
+        "submissionUse",
+        "documentStatus"
+      ],
+      "title": "OccurrenceEvidenceRecord",
+      "type": "object"
+    },
+    "QualityFlag": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "severity": {
+          "$ref": "#/$defs/Severity"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "severity",
+        "message"
+      ],
+      "title": "QualityFlag",
+      "type": "object"
+    },
+    "ReadinessStatus": {
+      "enum": [
+        "pass",
+        "review_required",
+        "fail"
+      ],
+      "title": "ReadinessStatus",
+      "type": "string"
+    },
+    "ReportingProfileApplicabilitySummary": {
+      "additionalProperties": false,
+      "properties": {
+        "applicableProfileIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Applicableprofileids",
+          "type": "array"
+        },
+        "recommendedPrimaryProfileIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Recommendedprimaryprofileids",
+          "type": "array"
+        },
+        "optionalExtensionProfileIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Optionalextensionprofileids",
+          "type": "array"
+        },
+        "complianceVariantProfileIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Compliancevariantprofileids",
+          "type": "array"
+        },
+        "supportingDetailProfileIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Supportingdetailprofileids",
+          "type": "array"
+        },
+        "nonSubstitutionLinks": {
+          "items": {
+            "$ref": "#/$defs/ReportingProfileNonSubstitutionLink"
+          },
+          "title": "Nonsubstitutionlinks",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "title": "ReportingProfileApplicabilitySummary",
+      "type": "object"
+    },
+    "ReportingProfileNonSubstitutionLink": {
+      "additionalProperties": false,
+      "properties": {
+        "profileId": {
+          "title": "Profileid",
+          "type": "string"
+        },
+        "notSubstitutableForProfileIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notsubstitutableforprofileids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "profileId"
+      ],
+      "title": "ReportingProfileNonSubstitutionLink",
+      "type": "object"
+    },
+    "ReviewResourceReference": {
+      "additionalProperties": false,
+      "properties": {
+        "role": {
+          "title": "Role",
+          "type": "string"
+        },
+        "uri": {
+          "title": "Uri",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "confidentialityTag": {
+          "$ref": "#/$defs/ConfidentialityTag",
+          "default": "public"
+        },
+        "sanitisationState": {
+          "$ref": "#/$defs/SanitisationState",
+          "default": "retained"
+        }
+      },
+      "required": [
+        "role",
+        "uri",
+        "description"
+      ],
+      "title": "ReviewResourceReference",
+      "type": "object"
+    },
+    "SanitisationState": {
+      "enum": [
+        "retained",
+        "redacted",
+        "removed"
+      ],
+      "title": "SanitisationState",
+      "type": "string"
+    },
+    "ScientificLedgerEntry": {
+      "additionalProperties": false,
+      "properties": {
+        "entryId": {
+          "title": "Entryid",
+          "type": "string"
+        },
+        "entryKind": {
+          "$ref": "#/$defs/ScientificLedgerEntryKind"
+        },
+        "category": {
+          "title": "Category",
+          "type": "string"
+        },
+        "severity": {
+          "$ref": "#/$defs/Severity"
+        },
+        "summary": {
+          "title": "Summary",
+          "type": "string"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        },
+        "conservative": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Conservative"
+        },
+        "affectedFields": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Affectedfields",
+          "type": "array"
+        },
+        "linkedRecordIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Linkedrecordids",
+          "type": "array"
+        },
+        "sourceIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sourceids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "entryId",
+        "entryKind",
+        "category",
+        "severity",
+        "summary",
+        "rationale"
+      ],
+      "title": "ScientificLedgerEntry",
+      "type": "object"
+    },
+    "ScientificLedgerEntryKind": {
+      "enum": [
+        "assumption",
+        "uncertainty",
+        "data_gap",
+        "governance_limit"
+      ],
+      "title": "ScientificLedgerEntryKind",
+      "type": "string"
+    },
+    "Severity": {
+      "enum": [
+        "info",
+        "warning",
+        "error"
+      ],
+      "title": "Severity",
+      "type": "string"
+    },
+    "SubmissionUse": {
+      "enum": [
+        "allowed",
+        "review_required",
+        "not_allowed"
+      ],
+      "title": "SubmissionUse",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "checkResult": {
+      "$ref": "#/$defs/ContaminantMonitoringImportCheckResult"
+    },
+    "bundleNote": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Bundlenote"
+    }
+  },
+  "required": [
+    "checkResult"
+  ],
+  "title": "ExportContaminantMonitoringInterpretationBundleRequest",
+  "type": "object"
+}

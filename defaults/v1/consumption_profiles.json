@@ -1,0 +1,502 @@
+{
+  "defaultsVersion": "v1",
+  "profiles": [
+    {
+      "profileId": "eu_adult_general_v1",
+      "displayName": "EU adult general screening profile",
+      "regionId": "eu_screening_default",
+      "populationGroup": "adult_general",
+      "surveySource": "Illustrative placeholder adult screening pack",
+      "bodyWeightKg": 70.0,
+      "applicableWindows": [
+        "acute",
+        "chronic"
+      ],
+      "limitations": [
+        "Illustrative public screening profile only",
+        "Not a proprietary survey pack"
+      ],
+      "sourceId": "dietary.profile.eu_adult_general",
+      "sourceTitle": "Illustrative EU adult dietary screening profile",
+      "effectiveDate": "2026-04-13",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": 0.35,
+          "chronicKgPerDay": 0.18
+        },
+        {
+          "commodityCode": "oranges",
+          "acuteKgPerDay": 0.3,
+          "chronicKgPerDay": 0.14
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": 0.15,
+          "chronicKgPerDay": 0.05
+        },
+        {
+          "commodityCode": "tomatoes",
+          "acuteKgPerDay": 0.2,
+          "chronicKgPerDay": 0.1
+        },
+        {
+          "commodityCode": "potatoes",
+          "acuteKgPerDay": 0.3,
+          "chronicKgPerDay": 0.16
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": 0.25,
+          "chronicKgPerDay": 0.12
+        },
+        {
+          "commodityCode": "wheat",
+          "acuteKgPerDay": 0.28,
+          "chronicKgPerDay": 0.14
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": 0.5,
+          "chronicKgPerDay": 0.22
+        },
+        {
+          "commodityCode": "chicken",
+          "acuteKgPerDay": 0.18,
+          "chronicKgPerDay": 0.08
+        },
+        {
+          "commodityCode": "salmon",
+          "acuteKgPerDay": 0.12,
+          "chronicKgPerDay": 0.04
+        },
+        {
+          "commodityCode": "eggs",
+          "acuteKgPerDay": 0.12,
+          "chronicKgPerDay": 0.04
+        },
+        {
+          "commodityCode": "oats",
+          "acuteKgPerDay": 0.18,
+          "chronicKgPerDay": 0.06
+        },
+        {
+          "commodityCode": "beans_and_pulses",
+          "acuteKgPerDay": 0.16,
+          "chronicKgPerDay": 0.05
+        }
+      ]
+    },
+    {
+      "profileId": "eu_child_screening_v1",
+      "displayName": "EU child screening profile",
+      "regionId": "eu_screening_default",
+      "populationGroup": "child_1_6",
+      "surveySource": "Illustrative placeholder child screening pack",
+      "bodyWeightKg": 15.0,
+      "applicableWindows": [
+        "acute",
+        "chronic"
+      ],
+      "limitations": [
+        "Illustrative public screening profile only",
+        "Use reviewed regional survey packs for regulatory decisions"
+      ],
+      "sourceId": "dietary.profile.eu_child_1_6",
+      "sourceTitle": "Illustrative EU child dietary screening profile",
+      "effectiveDate": "2026-04-13",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": 0.28,
+          "chronicKgPerDay": 0.12
+        },
+        {
+          "commodityCode": "oranges",
+          "acuteKgPerDay": 0.24,
+          "chronicKgPerDay": 0.1
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": 0.08,
+          "chronicKgPerDay": 0.03
+        },
+        {
+          "commodityCode": "tomatoes",
+          "acuteKgPerDay": 0.12,
+          "chronicKgPerDay": 0.05
+        },
+        {
+          "commodityCode": "potatoes",
+          "acuteKgPerDay": 0.18,
+          "chronicKgPerDay": 0.08
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": 0.18,
+          "chronicKgPerDay": 0.07
+        },
+        {
+          "commodityCode": "wheat",
+          "acuteKgPerDay": 0.14,
+          "chronicKgPerDay": 0.06
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": 0.4,
+          "chronicKgPerDay": 0.3
+        },
+        {
+          "commodityCode": "chicken",
+          "acuteKgPerDay": 0.1,
+          "chronicKgPerDay": 0.04
+        },
+        {
+          "commodityCode": "salmon",
+          "acuteKgPerDay": 0.05,
+          "chronicKgPerDay": 0.02
+        },
+        {
+          "commodityCode": "eggs",
+          "acuteKgPerDay": 0.06,
+          "chronicKgPerDay": 0.02
+        },
+        {
+          "commodityCode": "oats",
+          "acuteKgPerDay": 0.12,
+          "chronicKgPerDay": 0.05
+        },
+        {
+          "commodityCode": "beans_and_pulses",
+          "acuteKgPerDay": 0.09,
+          "chronicKgPerDay": 0.03
+        }
+      ]
+    },
+    {
+      "profileId": "eu_adolescent_screening_v1",
+      "displayName": "EU adolescent screening profile",
+      "regionId": "eu_screening_default",
+      "populationGroup": "adolescent_11_17",
+      "surveySource": "Illustrative placeholder adolescent screening pack",
+      "bodyWeightKg": 52.0,
+      "applicableWindows": [
+        "acute",
+        "chronic"
+      ],
+      "limitations": [
+        "Illustrative public screening profile only",
+        "Use reviewed regional survey packs for regulatory decisions"
+      ],
+      "sourceId": "dietary.profile.eu_adolescent_11_17",
+      "sourceTitle": "Illustrative EU adolescent dietary screening profile",
+      "effectiveDate": "2026-04-13",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": 0.32,
+          "chronicKgPerDay": 0.16
+        },
+        {
+          "commodityCode": "oranges",
+          "acuteKgPerDay": 0.26,
+          "chronicKgPerDay": 0.12
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": 0.12,
+          "chronicKgPerDay": 0.04
+        },
+        {
+          "commodityCode": "tomatoes",
+          "acuteKgPerDay": 0.18,
+          "chronicKgPerDay": 0.09
+        },
+        {
+          "commodityCode": "potatoes",
+          "acuteKgPerDay": 0.26,
+          "chronicKgPerDay": 0.14
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": 0.26,
+          "chronicKgPerDay": 0.11
+        },
+        {
+          "commodityCode": "wheat",
+          "acuteKgPerDay": 0.3,
+          "chronicKgPerDay": 0.16
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": 0.45,
+          "chronicKgPerDay": 0.2
+        },
+        {
+          "commodityCode": "chicken",
+          "acuteKgPerDay": 0.16,
+          "chronicKgPerDay": 0.07
+        },
+        {
+          "commodityCode": "salmon",
+          "acuteKgPerDay": 0.09,
+          "chronicKgPerDay": 0.03
+        },
+        {
+          "commodityCode": "eggs",
+          "acuteKgPerDay": 0.1,
+          "chronicKgPerDay": 0.03
+        },
+        {
+          "commodityCode": "oats",
+          "acuteKgPerDay": 0.2,
+          "chronicKgPerDay": 0.07
+        },
+        {
+          "commodityCode": "beans_and_pulses",
+          "acuteKgPerDay": 0.14,
+          "chronicKgPerDay": 0.05
+        }
+      ]
+    },
+    {
+      "profileId": "eu_older_adult_screening_v1",
+      "displayName": "EU older-adult screening profile",
+      "regionId": "eu_screening_default",
+      "populationGroup": "older_adult_65_plus",
+      "surveySource": "Illustrative placeholder older-adult screening pack",
+      "bodyWeightKg": 68.0,
+      "applicableWindows": [
+        "acute",
+        "chronic"
+      ],
+      "limitations": [
+        "Illustrative public screening profile only",
+        "Use reviewed regional survey packs for regulatory decisions"
+      ],
+      "sourceId": "dietary.profile.eu_older_adult_65_plus",
+      "sourceTitle": "Illustrative EU older-adult dietary screening profile",
+      "effectiveDate": "2026-04-13",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": 0.27,
+          "chronicKgPerDay": 0.15
+        },
+        {
+          "commodityCode": "oranges",
+          "acuteKgPerDay": 0.23,
+          "chronicKgPerDay": 0.11
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": 0.1,
+          "chronicKgPerDay": 0.04
+        },
+        {
+          "commodityCode": "tomatoes",
+          "acuteKgPerDay": 0.17,
+          "chronicKgPerDay": 0.09
+        },
+        {
+          "commodityCode": "potatoes",
+          "acuteKgPerDay": 0.22,
+          "chronicKgPerDay": 0.12
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": 0.2,
+          "chronicKgPerDay": 0.1
+        },
+        {
+          "commodityCode": "wheat",
+          "acuteKgPerDay": 0.24,
+          "chronicKgPerDay": 0.13
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": 0.38,
+          "chronicKgPerDay": 0.18
+        },
+        {
+          "commodityCode": "chicken",
+          "acuteKgPerDay": 0.15,
+          "chronicKgPerDay": 0.07
+        },
+        {
+          "commodityCode": "salmon",
+          "acuteKgPerDay": 0.1,
+          "chronicKgPerDay": 0.05
+        },
+        {
+          "commodityCode": "eggs",
+          "acuteKgPerDay": 0.1,
+          "chronicKgPerDay": 0.04
+        },
+        {
+          "commodityCode": "oats",
+          "acuteKgPerDay": 0.16,
+          "chronicKgPerDay": 0.06
+        },
+        {
+          "commodityCode": "beans_and_pulses",
+          "acuteKgPerDay": 0.14,
+          "chronicKgPerDay": 0.05
+        }
+      ]
+    },
+    {
+      "profileId": "eu_infant_screening_v1",
+      "displayName": "EU infant (0-6 mo) screening profile",
+      "regionId": "eu_screening_default",
+      "populationGroup": "infant_0_6_mo",
+      "surveySource": "Illustrative placeholder infant screening pack",
+      "bodyWeightKg": 5.0,
+      "applicableWindows": [
+        "acute",
+        "chronic"
+      ],
+      "limitations": [
+        "Illustrative public screening profile only",
+        "Use reviewed regional survey packs for regulatory decisions"
+      ],
+      "sourceId": "dietary.profile.eu_infant_0_6_mo",
+      "sourceTitle": "Illustrative EU infant dietary screening profile",
+      "effectiveDate": "2026-04-13",
+      "commodityConsumption": [
+        {
+          "commodityCode": "infant_formula",
+          "acuteKgPerDay": 1.0,
+          "chronicKgPerDay": 0.8
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": 0.1,
+          "chronicKgPerDay": 0.05
+        }
+      ]
+    },
+    {
+      "profileId": "eu_toddler_screening_v1",
+      "displayName": "EU toddler screening profile",
+      "regionId": "eu_screening_default",
+      "populationGroup": "toddler",
+      "surveySource": "Illustrative placeholder toddler screening pack",
+      "bodyWeightKg": 12.0,
+      "applicableWindows": [
+        "acute",
+        "chronic"
+      ],
+      "limitations": [
+        "Illustrative public screening profile only",
+        "Use reviewed regional survey packs for regulatory decisions"
+      ],
+      "sourceId": "dietary.profile.eu_toddler",
+      "sourceTitle": "Illustrative EU toddler dietary screening profile",
+      "effectiveDate": "2026-04-13",
+      "commodityConsumption": [
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": 0.4,
+          "chronicKgPerDay": 0.3
+        },
+        {
+          "commodityCode": "purees",
+          "acuteKgPerDay": 0.3,
+          "chronicKgPerDay": 0.2
+        },
+        {
+          "commodityCode": "fruit_juice",
+          "acuteKgPerDay": 0.25,
+          "chronicKgPerDay": 0.15
+        },
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": 0.1,
+          "chronicKgPerDay": 0.05
+        },
+        {
+          "commodityCode": "potatoes",
+          "acuteKgPerDay": 0.1,
+          "chronicKgPerDay": 0.08
+        }
+      ]
+    },
+    {
+      "profileId": "us_adult_general_v1",
+      "displayName": "US adult general screening profile",
+      "regionId": "us_screening_default",
+      "populationGroup": "adult_general",
+      "surveySource": "Illustrative placeholder US adult screening pack",
+      "bodyWeightKg": 80.0,
+      "applicableWindows": [
+        "acute",
+        "chronic"
+      ],
+      "limitations": [
+        "Illustrative public screening profile only",
+        "Not a proprietary NHANES/WWEIA survey pack"
+      ],
+      "sourceId": "dietary.profile.us_adult_general",
+      "sourceTitle": "Illustrative US adult dietary screening profile",
+      "effectiveDate": "2026-04-14",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": 0.4,
+          "chronicKgPerDay": 0.2
+        },
+        {
+          "commodityCode": "potatoes",
+          "acuteKgPerDay": 0.35,
+          "chronicKgPerDay": 0.18
+        },
+        {
+          "commodityCode": "wheat",
+          "acuteKgPerDay": 0.3,
+          "chronicKgPerDay": 0.15
+        },
+        {
+          "commodityCode": "apple_pie",
+          "acuteKgPerDay": 0.2,
+          "chronicKgPerDay": 0.1
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": 0.45,
+          "chronicKgPerDay": 0.25
+        },
+        {
+          "commodityCode": "chicken",
+          "acuteKgPerDay": 0.25,
+          "chronicKgPerDay": 0.12
+        }
+      ]
+    },
+    {
+      "profileId": "eu_recipe_test_v1",
+      "displayName": "Recipe decomposition test profile",
+      "regionId": "eu_screening_default",
+      "populationGroup": "recipe_test_pop",
+      "surveySource": "Illustrative recipe test pack",
+      "bodyWeightKg": 70.0,
+      "applicableWindows": [
+        "acute",
+        "chronic"
+      ],
+      "limitations": [
+        "Test profile only"
+      ],
+      "sourceId": "dietary.profile.eu_recipe_test",
+      "sourceTitle": "Recipe test profile",
+      "effectiveDate": "2026-04-14",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apple_pie",
+          "acuteKgPerDay": 0.2,
+          "chronicKgPerDay": 0.1
+        }
+      ]
+    }
+  ]
+}

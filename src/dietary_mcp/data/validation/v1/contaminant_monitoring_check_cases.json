@@ -1,0 +1,93 @@
+{
+  "cases": [
+    {
+      "name": "mercury_monitoring_import_check_links_occurrence_and_method_evidence",
+      "request": {
+        "contaminantFamily": "mercury_food_contaminants",
+        "jurisdiction": "eu",
+        "datasetId": "efsa.comprehensive_food_consumption_db.mercury_support",
+        "csvText": "food,contaminant,result,unit,loq,recovery_percent,measurement_uncertainty_percent,sampling_year\nswordfish,methylmercury,0.72,mg/kg,0.01,94,12,2025\nbluefin_tuna,methylmercury,0.55,mg/kg,0.01,92,11,2025\n"
+      },
+      "expectedCheckStatus": "pass",
+      "expectedOccurrenceEvidenceRecordIds": [
+        "eu.mercury.occurrence_evidence.official_monitoring_context"
+      ],
+      "expectedAnalyticalMethodEvidenceRecordIds": [
+        "eu.mercury.analytical_method_evidence.official_control"
+      ],
+      "expectedHighAttentionFoodHits": [
+        "swordfish",
+        "bluefin_tuna"
+      ],
+      "expectedLinkedReviewFocusIds": [
+        "efsa.mercury.large_predatory_fish.review_focus",
+        "efsa.mercury.sensitive_population_advice.review_focus"
+      ],
+      "expectedLedgerEntryIds": [
+        "row_level_lod_coverage",
+        "lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+        "storage_stability.eu.mercury.analytical_method_evidence.official_control",
+        "sampling_plan.eu.mercury.analytical_method_evidence.official_control"
+      ],
+      "expectedMinimumLedgerCount": 4,
+      "expectedSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true,
+      "expectedOverallSubmissionUse": "allowed"
+    },
+    {
+      "name": "inorganic_arsenic_monitoring_import_check_handles_rice_context",
+      "request": {
+        "contaminantFamily": "inorganic_arsenic_food_contaminants",
+        "jurisdiction": "eu",
+        "occurrenceEvidenceRecordIds": [
+          "eu.inorganic_arsenic.occurrence_evidence.official_monitoring_context"
+        ],
+        "analyticalMethodEvidenceRecordIds": [
+          "eu.inorganic_arsenic.analytical_method_evidence.official_control"
+        ],
+        "csvText": "matrix,analyte,concentration,concentration_unit,loq,year\nrice,inorganic_arsenic,0.12,mg/kg,0.005,2024\nrice_based_infant_foods,inorganic_arsenic,0.08,mg/kg,0.005,2024\n"
+      },
+      "expectedCheckStatus": "review_required",
+      "expectedOccurrenceEvidenceRecordIds": [
+        "eu.inorganic_arsenic.occurrence_evidence.official_monitoring_context"
+      ],
+      "expectedAnalyticalMethodEvidenceRecordIds": [
+        "eu.inorganic_arsenic.analytical_method_evidence.official_control"
+      ],
+      "expectedHighAttentionFoodHits": [
+        "rice",
+        "rice_based_infant_foods"
+      ],
+      "expectedLinkedReviewFocusIds": [
+        "efsa.inorganic_arsenic.rice_products.review_focus"
+      ],
+      "expectedLedgerEntryIds": [
+        "row_level_lod_coverage",
+        "row_level_recovery_percent_coverage",
+        "row_level_measurement_uncertainty_percent_coverage",
+        "lower_bound_handling.eu.inorganic_arsenic.occurrence_evidence.official_monitoring_context",
+        "storage_stability.eu.inorganic_arsenic.analytical_method_evidence.official_control",
+        "sampling_plan.eu.inorganic_arsenic.analytical_method_evidence.official_control"
+      ],
+      "expectedMinimumLedgerCount": 6,
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "lead_monitoring_import_check_fails_without_required_unit_header",
+      "request": {
+        "contaminantFamily": "lead_food_contaminants",
+        "jurisdiction": "eu",
+        "csvText": "food,contaminant,result,loq\ngame_meat,lead,0.21,0.01\n"
+      },
+      "expectedCheckStatus": "fail",
+      "expectedOccurrenceEvidenceRecordIds": [],
+      "expectedAnalyticalMethodEvidenceRecordIds": [],
+      "expectedHighAttentionFoodHits": [],
+      "expectedLinkedReviewFocusIds": [],
+      "expectedMinimumLedgerCount": -1,
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    }
+  ]
+}

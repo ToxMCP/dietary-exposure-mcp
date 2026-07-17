@@ -1,0 +1,39 @@
+{
+  "properties": {
+    "code": {
+      "description": "Stable machine-readable error code.",
+      "title": "Code",
+      "type": "string"
+    },
+    "message": {
+      "description": "Human-readable error message.",
+      "title": "Message",
+      "type": "string"
+    },
+    "suggestion": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Suggested next action.",
+      "title": "Suggestion"
+    },
+    "details": {
+      "additionalProperties": true,
+      "description": "Structured diagnostics.",
+      "title": "Details",
+      "type": "object"
+    }
+  },
+  "required": [
+    "code",
+    "message"
+  ],
+  "title": "DietaryErrorPayload",
+  "type": "object"
+}

@@ -1,0 +1,42 @@
+{
+  "chemical_identity": {
+    "preferredName": "Glyphosate",
+    "casrn": "1071-83-6",
+    "dtxsid": "DTXSID8020961"
+  },
+  "region_id": "eu_screening_default",
+  "residue_records": [
+    {
+      "commodity_code": "apple_juice",
+      "residue_concentration_mg_per_kg": 0.02,
+      "lower_bound_mg_per_kg": 0.0,
+      "upper_bound_mg_per_kg": 0.05,
+      "residue_unit": "mg/kg",
+      "source_type": "user_supplied",
+      "review_status": "schema_reviewed_not_source_validated",
+      "source_reference": {
+        "source_id": "casepack.glyphosate.apple_juice.screening_residue",
+        "title": "Glyphosate raw-apple residue screening input for apple-juice PESS-style public slice",
+        "effective_date": "2026-05-10",
+        "url": "examples://pesticide_pess_style/glyphosate_public_slice/source_lock",
+        "originTag": "illustrative_placeholder"
+      }
+    },
+    {
+      "commodity_code": "rice",
+      "residue_concentration_mg_per_kg": 0.03,
+      "lower_bound_mg_per_kg": 0.0,
+      "upper_bound_mg_per_kg": 0.06,
+      "residue_unit": "mg/kg",
+      "source_type": "user_supplied",
+      "review_status": "schema_reviewed_not_source_validated",
+      "source_reference": {
+        "source_id": "casepack.glyphosate.rice.screening_residue",
+        "title": "Glyphosate rice screening residue input for PESS-style public slice",
+        "effective_date": "2026-05-10",
+        "url": "examples://pesticide_pess_style/glyphosate_public_slice/source_lock",
+        "originTag": "illustrative_placeholder"
+      }
+    }
+  ]
+}

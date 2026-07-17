@@ -1,0 +1,2064 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "commodity_taxonomy",
+  "commodities": [
+    {
+      "commodityCode": "0110050",
+      "canonicalName": "Mandarins",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0110050"
+    },
+    {
+      "commodityCode": "0120030",
+      "canonicalName": "Cashew nuts",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0120030"
+    },
+    {
+      "commodityCode": "0120050",
+      "canonicalName": "Coconuts",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0120050"
+    },
+    {
+      "commodityCode": "0120100",
+      "canonicalName": "Pistachios",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0120100"
+    },
+    {
+      "commodityCode": "0130030",
+      "canonicalName": "Quinces",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0130030"
+    },
+    {
+      "commodityCode": "0130040",
+      "canonicalName": "Medlars",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0130040"
+    },
+    {
+      "commodityCode": "0130050",
+      "canonicalName": "Loquats/Japanese medlars",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0130050"
+    },
+    {
+      "commodityCode": "0154050",
+      "canonicalName": "Rose hips",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0154050"
+    },
+    {
+      "commodityCode": "0161010",
+      "canonicalName": "Dates",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0161010"
+    },
+    {
+      "commodityCode": "0161990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0161990"
+    },
+    {
+      "commodityCode": "0163040",
+      "canonicalName": "Papayas",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0163040"
+    },
+    {
+      "commodityCode": "0163060",
+      "canonicalName": "Cherimoyas",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0163060"
+    },
+    {
+      "commodityCode": "0163080",
+      "canonicalName": "Pineapples",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0163080"
+    },
+    {
+      "commodityCode": "0163090",
+      "canonicalName": "Breadfruits",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0163090"
+    },
+    {
+      "commodityCode": "0213080",
+      "canonicalName": "Radishes",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0213080"
+    },
+    {
+      "commodityCode": "0232010",
+      "canonicalName": "Cucumbers",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0232010"
+    },
+    {
+      "commodityCode": "0233020",
+      "canonicalName": "Pumpkins",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0233020"
+    },
+    {
+      "commodityCode": "0233990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0233990"
+    },
+    {
+      "commodityCode": "0243010",
+      "canonicalName": "Chinese cabbages/pe-tsai",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0243010"
+    },
+    {
+      "commodityCode": "0251020",
+      "canonicalName": "Lettuces",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0251020"
+    },
+    {
+      "commodityCode": "0251030",
+      "canonicalName": "Escaroles/broad-leaved endives",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0251030"
+    },
+    {
+      "commodityCode": "0251040",
+      "canonicalName": "Cresses and other sprouts and shoots",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0251040"
+    },
+    {
+      "commodityCode": "0251060",
+      "canonicalName": "Roman rocket/rucola",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0251060"
+    },
+    {
+      "commodityCode": "0251990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0251990"
+    },
+    {
+      "commodityCode": "0252020",
+      "canonicalName": "Purslanes",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0252020"
+    },
+    {
+      "commodityCode": "0256100",
+      "canonicalName": "Tarragon",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0256100"
+    },
+    {
+      "commodityCode": "0260030",
+      "canonicalName": "Peas (with pods)",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0260030"
+    },
+    {
+      "commodityCode": "0270040",
+      "canonicalName": "Florence fennels",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0270040"
+    },
+    {
+      "commodityCode": "0270070",
+      "canonicalName": "Rhubarbs",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0270070"
+    },
+    {
+      "commodityCode": "0270090",
+      "canonicalName": "Palm hearts",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0270090"
+    },
+    {
+      "commodityCode": "0300020",
+      "canonicalName": "Lentils",
+      "foodGroup": "pulses_and_oilseeds",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0300020"
+    },
+    {
+      "commodityCode": "0401070",
+      "canonicalName": "Soyabeans",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0401070"
+    },
+    {
+      "commodityCode": "0401110",
+      "canonicalName": "Safflower seeds",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0401110"
+    },
+    {
+      "commodityCode": "0401130",
+      "canonicalName": "Gold of pleasure seeds",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0401130"
+    },
+    {
+      "commodityCode": "0500050",
+      "canonicalName": "Oat",
+      "foodGroup": "tea_coffee_cocoa_spices",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0500050"
+    },
+    {
+      "commodityCode": "0500070",
+      "canonicalName": "Rye",
+      "foodGroup": "tea_coffee_cocoa_spices",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0500070"
+    },
+    {
+      "commodityCode": "0631020",
+      "canonicalName": "Hibiscus/roselle",
+      "foodGroup": "animal_products",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0631020"
+    },
+    {
+      "commodityCode": "0631030",
+      "canonicalName": "Rose",
+      "foodGroup": "animal_products",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0631030"
+    },
+    {
+      "commodityCode": "0632010",
+      "canonicalName": "Strawberry",
+      "foodGroup": "animal_products",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0632010"
+    },
+    {
+      "commodityCode": "0632030",
+      "canonicalName": "Mate/maté",
+      "foodGroup": "animal_products",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0632030"
+    },
+    {
+      "commodityCode": "0632990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "animal_products",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0632990"
+    },
+    {
+      "commodityCode": "0810990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0810990"
+    },
+    {
+      "commodityCode": "0820020",
+      "canonicalName": "Sichuan pepper",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0820020"
+    },
+    {
+      "commodityCode": "0820050",
+      "canonicalName": "Juniper berry",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0820050"
+    },
+    {
+      "commodityCode": "0820060",
+      "canonicalName": "Peppercorn (black, green and white)",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0820060"
+    },
+    {
+      "commodityCode": "0830010",
+      "canonicalName": "Cinnamon",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0830010"
+    },
+    {
+      "commodityCode": "0900030",
+      "canonicalName": "Chicory roots",
+      "foodGroup": "sugar_plants",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0900030"
+    },
+    {
+      "commodityCode": "1011020",
+      "canonicalName": "Fat",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1011020"
+    },
+    {
+      "commodityCode": "1012020",
+      "canonicalName": "Fat",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1012020"
+    },
+    {
+      "commodityCode": "1012050",
+      "canonicalName": "Edible offals (other than liver and kidney)",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1012050"
+    },
+    {
+      "commodityCode": "1013010",
+      "canonicalName": "Muscle",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1013010"
+    },
+    {
+      "commodityCode": "1013030",
+      "canonicalName": "Liver",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1013030"
+    },
+    {
+      "commodityCode": "1013990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1013990"
+    },
+    {
+      "commodityCode": "1014990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1014990"
+    },
+    {
+      "commodityCode": "1015040",
+      "canonicalName": "Kidney",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1015040"
+    },
+    {
+      "commodityCode": "1015050",
+      "canonicalName": "Edible offals (other than liver and kidney)",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1015050"
+    },
+    {
+      "commodityCode": "1016010",
+      "canonicalName": "Muscle",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1016010"
+    },
+    {
+      "commodityCode": "1016030",
+      "canonicalName": "Liver",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1016030"
+    },
+    {
+      "commodityCode": "1016990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1016990"
+    },
+    {
+      "commodityCode": "1020020",
+      "canonicalName": "Sheep",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1020020"
+    },
+    {
+      "commodityCode": "1020030",
+      "canonicalName": "Goat",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1020030"
+    },
+    {
+      "commodityCode": "1030990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1030990"
+    },
+    {
+      "commodityCode": "0110030",
+      "canonicalName": "Lemons",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0110030"
+    },
+    {
+      "commodityCode": "0120060",
+      "canonicalName": "Hazelnuts/cobnuts",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0120060"
+    },
+    {
+      "commodityCode": "0120080",
+      "canonicalName": "Pecans",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0120080"
+    },
+    {
+      "commodityCode": "0153010",
+      "canonicalName": "Blackberries",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0153010"
+    },
+    {
+      "commodityCode": "0154080",
+      "canonicalName": "Elderberries",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0154080"
+    },
+    {
+      "commodityCode": "0162040",
+      "canonicalName": "Prickly pears/cactus fruits",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0162040"
+    },
+    {
+      "commodityCode": "0162060",
+      "canonicalName": "American persimmons/Virginia kaki",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0162060"
+    },
+    {
+      "commodityCode": "0163100",
+      "canonicalName": "Durians",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0163100"
+    },
+    {
+      "commodityCode": "0163110",
+      "canonicalName": "Soursops/guanabanas",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0163110"
+    },
+    {
+      "commodityCode": "0212990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0212990"
+    },
+    {
+      "commodityCode": "0220990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0220990"
+    },
+    {
+      "commodityCode": "0231990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0231990"
+    },
+    {
+      "commodityCode": "0232020",
+      "canonicalName": "Gherkins",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0232020"
+    },
+    {
+      "commodityCode": "0251050",
+      "canonicalName": "Land cresses",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0251050"
+    },
+    {
+      "commodityCode": "0251080",
+      "canonicalName": "Baby leaf crops (including brassica species)",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0251080"
+    },
+    {
+      "commodityCode": "0252030",
+      "canonicalName": "Chards/beet leaves",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0252030"
+    },
+    {
+      "commodityCode": "0256010",
+      "canonicalName": "Chervil",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0256010"
+    },
+    {
+      "commodityCode": "0256030",
+      "canonicalName": "Celery leaves",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0256030"
+    },
+    {
+      "commodityCode": "0256060",
+      "canonicalName": "Rosemary",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0256060"
+    },
+    {
+      "commodityCode": "0256090",
+      "canonicalName": "Laurel/bay leaves",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0256090"
+    },
+    {
+      "commodityCode": "0270990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0270990"
+    },
+    {
+      "commodityCode": "0280020",
+      "canonicalName": "Wild fungi",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0280020"
+    },
+    {
+      "commodityCode": "0300040",
+      "canonicalName": "Lupins/lupini beans",
+      "foodGroup": "pulses_and_oilseeds",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0300040"
+    },
+    {
+      "commodityCode": "0120090",
+      "canonicalName": "Pine nut kernels",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0120090"
+    },
+    {
+      "commodityCode": "0120990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0120990"
+    },
+    {
+      "commodityCode": "0130990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0130990"
+    },
+    {
+      "commodityCode": "0140010",
+      "canonicalName": "Apricots",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0140010"
+    },
+    {
+      "commodityCode": "0140030",
+      "canonicalName": "Peaches",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0140030"
+    },
+    {
+      "commodityCode": "0153990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0153990"
+    },
+    {
+      "commodityCode": "0154990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0154990"
+    },
+    {
+      "commodityCode": "0161070",
+      "canonicalName": "Jambuls/jambolans",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0161070"
+    },
+    {
+      "commodityCode": "0163020",
+      "canonicalName": "Bananas",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0163020"
+    },
+    {
+      "commodityCode": "0163030",
+      "canonicalName": "Mangoes",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0163030"
+    },
+    {
+      "commodityCode": "0163070",
+      "canonicalName": "Guavas",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0163070"
+    },
+    {
+      "commodityCode": "0163990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0163990"
+    },
+    {
+      "commodityCode": "0212040",
+      "canonicalName": "Arrowroots",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0212040"
+    },
+    {
+      "commodityCode": "0220020",
+      "canonicalName": "Onions",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0220020"
+    },
+    {
+      "commodityCode": "0231010",
+      "canonicalName": "Tomatoes",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0231010"
+    },
+    {
+      "commodityCode": "0232990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0232990"
+    },
+    {
+      "commodityCode": "0241010",
+      "canonicalName": "Broccoli",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0241010"
+    },
+    {
+      "commodityCode": "0241020",
+      "canonicalName": "Cauliflowers",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0241020"
+    },
+    {
+      "commodityCode": "0242020",
+      "canonicalName": "Head cabbages",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0242020"
+    },
+    {
+      "commodityCode": "0242990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0242990"
+    },
+    {
+      "commodityCode": "0251070",
+      "canonicalName": "Red mustards",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0251070"
+    },
+    {
+      "commodityCode": "0256050",
+      "canonicalName": "Sage",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0256050"
+    },
+    {
+      "commodityCode": "0256080",
+      "canonicalName": "Basil and edible flowers",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0256080"
+    },
+    {
+      "commodityCode": "0256990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0256990"
+    },
+    {
+      "commodityCode": "0260020",
+      "canonicalName": "Beans (without pods)",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0260020"
+    },
+    {
+      "commodityCode": "0401040",
+      "canonicalName": "Sesame seeds",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0401040"
+    },
+    {
+      "commodityCode": "0401060",
+      "canonicalName": "Rapeseeds/canola seeds",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0401060"
+    },
+    {
+      "commodityCode": "0401100",
+      "canonicalName": "Pumpkin seeds",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0401100"
+    },
+    {
+      "commodityCode": "0401150",
+      "canonicalName": "Castor beans",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0401150"
+    },
+    {
+      "commodityCode": "0402010",
+      "canonicalName": "Olives for oil production",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0402010"
+    },
+    {
+      "commodityCode": "0500020",
+      "canonicalName": "Buckwheat and other pseudocereals",
+      "foodGroup": "tea_coffee_cocoa_spices",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0500020"
+    },
+    {
+      "commodityCode": "0500060",
+      "canonicalName": "Rice",
+      "foodGroup": "tea_coffee_cocoa_spices",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0500060"
+    },
+    {
+      "commodityCode": "0500080",
+      "canonicalName": "Sorghum",
+      "foodGroup": "tea_coffee_cocoa_spices",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0500080"
+    },
+    {
+      "commodityCode": "0631040",
+      "canonicalName": "Jasmine",
+      "foodGroup": "animal_products",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0631040"
+    },
+    {
+      "commodityCode": "0631050",
+      "canonicalName": "Lime/linden",
+      "foodGroup": "animal_products",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0631050"
+    },
+    {
+      "commodityCode": "0810020",
+      "canonicalName": "Black caraway/black cumin",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0810020"
+    },
+    {
+      "commodityCode": "0810090",
+      "canonicalName": "Nutmeg",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0810090"
+    },
+    {
+      "commodityCode": "0820070",
+      "canonicalName": "Vanilla",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0820070"
+    },
+    {
+      "commodityCode": "0820990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0820990"
+    },
+    {
+      "commodityCode": "0830990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0830990"
+    },
+    {
+      "commodityCode": "0850990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0850990"
+    },
+    {
+      "commodityCode": "0260040",
+      "canonicalName": "Peas (without pods)",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0260040"
+    },
+    {
+      "commodityCode": "0270010",
+      "canonicalName": "Asparagus",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0270010"
+    },
+    {
+      "commodityCode": "0280990",
+      "canonicalName": "Mosses and lichens",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0280990"
+    },
+    {
+      "commodityCode": "0401010",
+      "canonicalName": "Linseeds",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0401010"
+    },
+    {
+      "commodityCode": "0401030",
+      "canonicalName": "Poppy seeds",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0401030"
+    },
+    {
+      "commodityCode": "0401050",
+      "canonicalName": "Sunflower seeds",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0401050"
+    },
+    {
+      "commodityCode": "0401120",
+      "canonicalName": "Borage seeds",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0401120"
+    },
+    {
+      "commodityCode": "0500040",
+      "canonicalName": "Common millet/proso millet",
+      "foodGroup": "tea_coffee_cocoa_spices",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0500040"
+    },
+    {
+      "commodityCode": "0500090",
+      "canonicalName": "Wheat",
+      "foodGroup": "tea_coffee_cocoa_spices",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0500090"
+    },
+    {
+      "commodityCode": "0631010",
+      "canonicalName": "Chamomile",
+      "foodGroup": "animal_products",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0631010"
+    },
+    {
+      "commodityCode": "0810050",
+      "canonicalName": "Cumin",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0810050"
+    },
+    {
+      "commodityCode": "0900010",
+      "canonicalName": "Sugar beet roots",
+      "foodGroup": "sugar_plants",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0900010"
+    },
+    {
+      "commodityCode": "1011030",
+      "canonicalName": "Liver",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1011030"
+    },
+    {
+      "commodityCode": "1011050",
+      "canonicalName": "Edible offals (other than liver and kidney)",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1011050"
+    },
+    {
+      "commodityCode": "1011990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1011990"
+    },
+    {
+      "commodityCode": "1013020",
+      "canonicalName": "Fat",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1013020"
+    },
+    {
+      "commodityCode": "1014030",
+      "canonicalName": "Liver",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1014030"
+    },
+    {
+      "commodityCode": "1016050",
+      "canonicalName": "Edible offals (other than liver and kidney)",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1016050"
+    },
+    {
+      "commodityCode": "1017030",
+      "canonicalName": "Liver",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1017030"
+    },
+    {
+      "commodityCode": "1030040",
+      "canonicalName": "Quail",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1030040"
+    },
+    {
+      "commodityCode": "0120110",
+      "canonicalName": "Walnuts",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0120110"
+    },
+    {
+      "commodityCode": "0140040",
+      "canonicalName": "Plums",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0140040"
+    },
+    {
+      "commodityCode": "0154040",
+      "canonicalName": "Gooseberries (green, red and yellow)",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0154040"
+    },
+    {
+      "commodityCode": "0161020",
+      "canonicalName": "Figs",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0161020"
+    },
+    {
+      "commodityCode": "0161030",
+      "canonicalName": "Table olives",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0161030"
+    },
+    {
+      "commodityCode": "0162020",
+      "canonicalName": "Litchis/lychees",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0162020"
+    },
+    {
+      "commodityCode": "0163010",
+      "canonicalName": "Avocados",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0163010"
+    },
+    {
+      "commodityCode": "0212010",
+      "canonicalName": "Cassava roots/manioc",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0212010"
+    },
+    {
+      "commodityCode": "0213030",
+      "canonicalName": "Celeriacs/turnip rooted celeries",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0213030"
+    },
+    {
+      "commodityCode": "0220030",
+      "canonicalName": "Shallots",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0220030"
+    },
+    {
+      "commodityCode": "0251010",
+      "canonicalName": "Lamb's lettuces/corn salads",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0251010"
+    },
+    {
+      "commodityCode": "0270080",
+      "canonicalName": "Bamboo shoots",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0270080"
+    },
+    {
+      "commodityCode": "0401020",
+      "canonicalName": "Peanuts/groundnuts",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0401020"
+    },
+    {
+      "commodityCode": "0401080",
+      "canonicalName": "Mustard seeds",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0401080"
+    },
+    {
+      "commodityCode": "0401090",
+      "canonicalName": "Cotton seeds",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0401090"
+    },
+    {
+      "commodityCode": "0870990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0870990"
+    },
+    {
+      "commodityCode": "1011040",
+      "canonicalName": "Kidney",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1011040"
+    },
+    {
+      "commodityCode": "1017010",
+      "canonicalName": "Muscle",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1017010"
+    },
+    {
+      "commodityCode": "1017050",
+      "canonicalName": "Edible offals (other than liver and kidney)",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1017050"
+    },
+    {
+      "commodityCode": "1030010",
+      "canonicalName": "Chicken",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1030010"
+    },
+    {
+      "commodityCode": "0401140",
+      "canonicalName": "Hemp seeds",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0401140"
+    },
+    {
+      "commodityCode": "0500010",
+      "canonicalName": "Barley",
+      "foodGroup": "tea_coffee_cocoa_spices",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0500010"
+    },
+    {
+      "commodityCode": "0632020",
+      "canonicalName": "Rooibos",
+      "foodGroup": "animal_products",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0632020"
+    },
+    {
+      "commodityCode": "0633020",
+      "canonicalName": "Ginseng",
+      "foodGroup": "animal_products",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0633020"
+    },
+    {
+      "commodityCode": "0633990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "animal_products",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0633990"
+    },
+    {
+      "commodityCode": "0820080",
+      "canonicalName": "Tamarind",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0820080"
+    },
+    {
+      "commodityCode": "1012030",
+      "canonicalName": "Liver",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1012030"
+    },
+    {
+      "commodityCode": "1012990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1012990"
+    },
+    {
+      "commodityCode": "1014010",
+      "canonicalName": "Muscle",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1014010"
+    },
+    {
+      "commodityCode": "0110040",
+      "canonicalName": "Limes",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0110040"
+    },
+    {
+      "commodityCode": "0140990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0140990"
+    },
+    {
+      "commodityCode": "0151010",
+      "canonicalName": "Table grapes",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0151010"
+    },
+    {
+      "commodityCode": "0154070",
+      "canonicalName": "Azaroles/Mediterranean medlars",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0154070"
+    },
+    {
+      "commodityCode": "0161060",
+      "canonicalName": "Kaki/Japanese persimmons",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0161060"
+    },
+    {
+      "commodityCode": "0162990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0162990"
+    },
+    {
+      "commodityCode": "0212030",
+      "canonicalName": "Yams",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0212030"
+    },
+    {
+      "commodityCode": "0213020",
+      "canonicalName": "Carrots",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0213020"
+    },
+    {
+      "commodityCode": "0213110",
+      "canonicalName": "Turnips",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0213110"
+    },
+    {
+      "commodityCode": "0213990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0213990"
+    },
+    {
+      "commodityCode": "0231040",
+      "canonicalName": "Okra/lady's fingers",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0231040"
+    },
+    {
+      "commodityCode": "0233010",
+      "canonicalName": "Melons",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0233010"
+    },
+    {
+      "commodityCode": "0233030",
+      "canonicalName": "Watermelons",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0233030"
+    },
+    {
+      "commodityCode": "0241990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0241990"
+    },
+    {
+      "commodityCode": "0243020",
+      "canonicalName": "Kales",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0243020"
+    },
+    {
+      "commodityCode": "0260050",
+      "canonicalName": "Lentils",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0260050"
+    },
+    {
+      "commodityCode": "0280010",
+      "canonicalName": "Cultivated fungi",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0280010"
+    },
+    {
+      "commodityCode": "0300030",
+      "canonicalName": "Peas",
+      "foodGroup": "pulses_and_oilseeds",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0300030"
+    },
+    {
+      "commodityCode": "0300990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "pulses_and_oilseeds",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0300990"
+    },
+    {
+      "commodityCode": "0820030",
+      "canonicalName": "Caraway",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0820030"
+    },
+    {
+      "commodityCode": "0850020",
+      "canonicalName": "Capers",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0850020"
+    },
+    {
+      "commodityCode": "0900020",
+      "canonicalName": "Sugar canes",
+      "foodGroup": "sugar_plants",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0900020"
+    },
+    {
+      "commodityCode": "0900990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "sugar_plants",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0900990"
+    },
+    {
+      "commodityCode": "1015030",
+      "canonicalName": "Liver",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1015030"
+    },
+    {
+      "commodityCode": "1016040",
+      "canonicalName": "Kidney",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1016040"
+    },
+    {
+      "commodityCode": "1017990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1017990"
+    },
+    {
+      "commodityCode": "0120010",
+      "canonicalName": "Almonds",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0120010"
+    },
+    {
+      "commodityCode": "0120070",
+      "canonicalName": "Macadamias",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0120070"
+    },
+    {
+      "commodityCode": "0140020",
+      "canonicalName": "Cherries (sweet)",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0140020"
+    },
+    {
+      "commodityCode": "0153020",
+      "canonicalName": "Dewberries",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0153020"
+    },
+    {
+      "commodityCode": "0153030",
+      "canonicalName": "Raspberries (red and yellow)",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0153030"
+    },
+    {
+      "commodityCode": "0154060",
+      "canonicalName": "Mulberries (black and white)",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0154060"
+    },
+    {
+      "commodityCode": "0161040",
+      "canonicalName": "Kumquats",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0161040"
+    },
+    {
+      "commodityCode": "0161050",
+      "canonicalName": "Carambolas",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0161050"
+    },
+    {
+      "commodityCode": "0162030",
+      "canonicalName": "Passionfruits/maracujas",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0162030"
+    },
+    {
+      "commodityCode": "0213090",
+      "canonicalName": "Salsifies",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0213090"
+    },
+    {
+      "commodityCode": "0213100",
+      "canonicalName": "Swedes/rutabagas",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0213100"
+    },
+    {
+      "commodityCode": "0242010",
+      "canonicalName": "Brussels sprouts",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0242010"
+    },
+    {
+      "commodityCode": "0252010",
+      "canonicalName": "Spinaches",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0252010"
+    },
+    {
+      "commodityCode": "0256070",
+      "canonicalName": "Thyme",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0256070"
+    },
+    {
+      "commodityCode": "0260990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0260990"
+    },
+    {
+      "commodityCode": "0270020",
+      "canonicalName": "Cardoons",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0270020"
+    },
+    {
+      "commodityCode": "0151020",
+      "canonicalName": "Wine grapes",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0151020"
+    },
+    {
+      "commodityCode": "0243990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0243990"
+    },
+    {
+      "commodityCode": "0631990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "animal_products",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0631990"
+    },
+    {
+      "commodityCode": "0810010",
+      "canonicalName": "Anise/aniseed",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0810010"
+    },
+    {
+      "commodityCode": "0810040",
+      "canonicalName": "Coriander",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0810040"
+    },
+    {
+      "commodityCode": "0810060",
+      "canonicalName": "Dill",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0810060"
+    },
+    {
+      "commodityCode": "0810070",
+      "canonicalName": "Fennel",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0810070"
+    },
+    {
+      "commodityCode": "0840010",
+      "canonicalName": "Liquorice",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0840010"
+    },
+    {
+      "commodityCode": "0840030",
+      "canonicalName": "Turmeric/curcuma",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0840030"
+    },
+    {
+      "commodityCode": "0860010",
+      "canonicalName": "Saffron",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0860010"
+    },
+    {
+      "commodityCode": "1012010",
+      "canonicalName": "Muscle",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1012010"
+    },
+    {
+      "commodityCode": "1012040",
+      "canonicalName": "Kidney",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1012040"
+    },
+    {
+      "commodityCode": "0300010",
+      "canonicalName": "Beans",
+      "foodGroup": "pulses_and_oilseeds",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0300010"
+    },
+    {
+      "commodityCode": "0402030",
+      "canonicalName": "Oil palms fruits",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0402030"
+    },
+    {
+      "commodityCode": "0402040",
+      "canonicalName": "Kapok",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0402040"
+    },
+    {
+      "commodityCode": "0500030",
+      "canonicalName": "Maize/corn",
+      "foodGroup": "tea_coffee_cocoa_spices",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0500030"
+    },
+    {
+      "commodityCode": "0810030",
+      "canonicalName": "Celery",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0810030"
+    },
+    {
+      "commodityCode": "0820010",
+      "canonicalName": "Allspice/pimento",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0820010"
+    },
+    {
+      "commodityCode": "0870010",
+      "canonicalName": "Mace",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0870010"
+    },
+    {
+      "commodityCode": "1011010",
+      "canonicalName": "Muscle",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1011010"
+    },
+    {
+      "commodityCode": "1013040",
+      "canonicalName": "Kidney",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1013040"
+    },
+    {
+      "commodityCode": "1014020",
+      "canonicalName": "Fat",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1014020"
+    },
+    {
+      "commodityCode": "1014040",
+      "canonicalName": "Kidney",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1014040"
+    },
+    {
+      "commodityCode": "1017020",
+      "canonicalName": "Fat",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1017020"
+    },
+    {
+      "commodityCode": "1017040",
+      "canonicalName": "Kidney",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1017040"
+    },
+    {
+      "commodityCode": "0110010",
+      "canonicalName": "Grapefruits",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0110010"
+    },
+    {
+      "commodityCode": "0120020",
+      "canonicalName": "Brazil nuts",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0120020"
+    },
+    {
+      "commodityCode": "0120040",
+      "canonicalName": "Chestnuts",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0120040"
+    },
+    {
+      "commodityCode": "0154030",
+      "canonicalName": "Currants (black, red and white)",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0154030"
+    },
+    {
+      "commodityCode": "0162010",
+      "canonicalName": "Kiwi fruits (green, red, yellow)",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0162010"
+    },
+    {
+      "commodityCode": "0213070",
+      "canonicalName": "Parsley roots/Hamburg roots parsley",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0213070"
+    },
+    {
+      "commodityCode": "0220010",
+      "canonicalName": "Garlic",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0220010"
+    },
+    {
+      "commodityCode": "0232030",
+      "canonicalName": "Courgettes",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0232030"
+    },
+    {
+      "commodityCode": "0252990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0252990"
+    },
+    {
+      "commodityCode": "0256020",
+      "canonicalName": "Chives",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0256020"
+    },
+    {
+      "commodityCode": "0270030",
+      "canonicalName": "Celeries",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0270030"
+    },
+    {
+      "commodityCode": "0500990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "tea_coffee_cocoa_spices",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0500990"
+    },
+    {
+      "commodityCode": "0810080",
+      "canonicalName": "Fenugreek",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0810080"
+    },
+    {
+      "commodityCode": "0840990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0840990"
+    },
+    {
+      "commodityCode": "1030030",
+      "canonicalName": "Geese",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1030030"
+    },
+    {
+      "commodityCode": "0110020",
+      "canonicalName": "Oranges",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0110020"
+    },
+    {
+      "commodityCode": "0130020",
+      "canonicalName": "Pears",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0130020"
+    },
+    {
+      "commodityCode": "0213010",
+      "canonicalName": "Beetroots",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0213010"
+    },
+    {
+      "commodityCode": "0213060",
+      "canonicalName": "Parsnips",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0213060"
+    },
+    {
+      "commodityCode": "0220040",
+      "canonicalName": "Spring onions/green onions and Welsh onions",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0220040"
+    },
+    {
+      "commodityCode": "0260010",
+      "canonicalName": "Beans (with pods)",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0260010"
+    },
+    {
+      "commodityCode": "0270050",
+      "canonicalName": "Globe artichokes",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0270050"
+    },
+    {
+      "commodityCode": "0270060",
+      "canonicalName": "Leeks",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0270060"
+    },
+    {
+      "commodityCode": "0402020",
+      "canonicalName": "Oil palms kernels",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0402020"
+    },
+    {
+      "commodityCode": "0402990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0402990"
+    },
+    {
+      "commodityCode": "0850010",
+      "canonicalName": "Cloves",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0850010"
+    },
+    {
+      "commodityCode": "1013050",
+      "canonicalName": "Edible offals (other than liver and kidney)",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1013050"
+    },
+    {
+      "commodityCode": "1015010",
+      "canonicalName": "Muscle",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1015010"
+    },
+    {
+      "commodityCode": "1015990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1015990"
+    },
+    {
+      "commodityCode": "1016020",
+      "canonicalName": "Fat",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1016020"
+    },
+    {
+      "commodityCode": "1020010",
+      "canonicalName": "Cattle",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1020010"
+    },
+    {
+      "commodityCode": "1020990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1020990"
+    },
+    {
+      "commodityCode": "1030020",
+      "canonicalName": "Duck",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1030020"
+    },
+    {
+      "commodityCode": "0163050",
+      "canonicalName": "Granate apples/pomegranates",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0163050"
+    },
+    {
+      "commodityCode": "0212020",
+      "canonicalName": "Sweet potatoes",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0212020"
+    },
+    {
+      "commodityCode": "0213040",
+      "canonicalName": "Horseradishes",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0213040"
+    },
+    {
+      "commodityCode": "0213050",
+      "canonicalName": "Jerusalem artichokes",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0213050"
+    },
+    {
+      "commodityCode": "0231020",
+      "canonicalName": "Sweet peppers/bell peppers",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0231020"
+    },
+    {
+      "commodityCode": "0231030",
+      "canonicalName": "Aubergines/eggplants",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0231030"
+    },
+    {
+      "commodityCode": "0401990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "cereals",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0401990"
+    },
+    {
+      "commodityCode": "1015020",
+      "canonicalName": "Fat",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1015020"
+    },
+    {
+      "commodityCode": "0130010",
+      "canonicalName": "Apples",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0130010"
+    },
+    {
+      "commodityCode": "0162050",
+      "canonicalName": "Star apples/cainitos",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0162050"
+    },
+    {
+      "commodityCode": "0256040",
+      "canonicalName": "Parsley",
+      "foodGroup": "vegetables",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0256040"
+    },
+    {
+      "commodityCode": "0110990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0110990"
+    },
+    {
+      "commodityCode": "0154010",
+      "canonicalName": "Blueberries",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0154010"
+    },
+    {
+      "commodityCode": "0820040",
+      "canonicalName": "Cardamom",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0820040"
+    },
+    {
+      "commodityCode": "1014050",
+      "canonicalName": "Edible offals (other than liver and kidney)",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1014050"
+    },
+    {
+      "commodityCode": "1020040",
+      "canonicalName": "Horse",
+      "foodGroup": "beverages",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.1020040"
+    },
+    {
+      "commodityCode": "0860990",
+      "canonicalName": "Others (2)",
+      "foodGroup": "miscellaneous",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0860990"
+    },
+    {
+      "commodityCode": "0633010",
+      "canonicalName": "Valerian",
+      "foodGroup": "animal_products",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0633010"
+    },
+    {
+      "commodityCode": "0154020",
+      "canonicalName": "Cranberries",
+      "foodGroup": "fruits_and_tree_nuts",
+      "mappingStatus": "auto_ingested_eu_mrl",
+      "sourceId": "eu.mrl.taxonomy.0154020"
+    }
+  ]
+}

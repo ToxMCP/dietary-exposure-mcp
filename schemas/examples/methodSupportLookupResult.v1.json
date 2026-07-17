@@ -1,0 +1,93 @@
+{
+  "contaminant_family": "microplastics_emerging",
+  "jurisdiction": "eu",
+  "authority": null,
+  "methods": [
+    {
+      "method_id": "efsa.microplastics.food_statement.2016",
+      "display_name": "EFSA microplastics food statement 2016",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminant_family": "microplastics_emerging",
+      "method_type": "emerging_contaminant_scientific_statement",
+      "current_version_label": "2016_statement",
+      "maturity_status": "emerging",
+      "evidence_support_status": "limited",
+      "submission_use": "not_allowed",
+      "document_status": "final_current",
+      "source_ids": [
+        "efsa.microplastics.statement.2016"
+      ],
+      "model_family": null,
+      "notes": [
+        "Governed EFSA source for microplastics evidence limits and method immaturity.",
+        "This record is intentionally isolated from pesticide-residue method support."
+      ]
+    },
+    {
+      "method_id": "who.microplastics.oral_exposure",
+      "display_name": "WHO oral exposure review for nano- and microplastics",
+      "authority": "WHO",
+      "jurisdiction": "global",
+      "contaminant_family": "microplastics_emerging",
+      "method_type": "emerging_contaminant_review",
+      "current_version_label": "2022_report",
+      "maturity_status": "emerging",
+      "evidence_support_status": "limited",
+      "submission_use": "not_allowed",
+      "document_status": "final_current",
+      "source_ids": [
+        "who.microplastics.oral_exposure.2022"
+      ],
+      "model_family": null,
+      "notes": [
+        "Governed WHO review metadata for oral-exposure evidence on microplastics and nanoplastics."
+      ]
+    }
+  ],
+  "legal_authorities": [],
+  "emerging_contaminant": {
+    "family_id": "microplastics_emerging",
+    "display_name": "Microplastics and nanoplastics in food and dietary exposure",
+    "jurisdictions": [
+      "eu",
+      "us",
+      "global"
+    ],
+    "method_maturity_status": "emerging",
+    "evidence_support_status": "limited",
+    "submission_use": "not_allowed",
+    "source_ids": [
+      "efsa.microplastics.statement.2016",
+      "efsa.microplastics.request.2025",
+      "fda.microplastics.foods",
+      "who.microplastics.oral_exposure.2022"
+    ],
+    "method_ids": [
+      "efsa.microplastics.food_statement.2016",
+      "fda.microplastics.foods.current",
+      "who.microplastics.oral_exposure"
+    ],
+    "default_readiness_profile_ids": [
+      "microplastics_internal_review",
+      "microplastics_consultation_exploratory",
+      "microplastics_submission_candidate"
+    ],
+    "hard_failure_profiles": [
+      "microplastics_submission_candidate"
+    ],
+    "notes": [
+      "This family is structurally separate from pesticide-residue workflows even though it is exposed through the same MCP governance surface.",
+      "Internal-review and consultation-oriented support are allowed, but submission-oriented use hard-fails by default until a reviewed official method pack changes the posture.",
+      "No PRIMo, DEEM, or OpenFoodTox method record is reused as if it were microplastics-native."
+    ]
+  },
+  "overall_submission_use": "not_allowed",
+  "submission_candidate_allowed": false,
+  "notes": [
+    "This family is structurally separate from pesticide-residue workflows even though it is exposed through the same MCP governance surface.",
+    "Internal-review and consultation-oriented support are allowed, but submission-oriented use hard-fails by default until a reviewed official method pack changes the posture.",
+    "No PRIMo, DEEM, or OpenFoodTox method record is reused as if it were microplastics-native.",
+    "Microplastics remain isolated from pesticide method support and are not routed through PRIMo, DEEM, or OpenFoodTox logic."
+  ]
+}

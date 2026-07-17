@@ -1,0 +1,225 @@
+{
+  "schema_version": "v1",
+  "packet_id": "interoperability-signoff-68623769bdb2",
+  "overall_signoff_status": "signed_off_with_waivers",
+  "reviewer_id": "example.regulatory.reviewer",
+  "reviewer_role": "regulatory_reviewer",
+  "source_remediation_bundle_id": "interoperability-remediation-c876b80d4286",
+  "source_dossier_id": "adapter-review-dossier-3511dd4919e7",
+  "source_preview_profile_id": "oht_85_iuclid_json_preview",
+  "target_profile": {
+    "profile_id": "eu_internal_exchange_preview",
+    "display_name": "EU internal exchange preview",
+    "jurisdiction": "eu",
+    "intended_use": "Internal exchange of a staged OHT/IUCLID-aligned JSON preview for review workflows.",
+    "allowed_preview_profiles": [
+      "oht_85_iuclid_json_preview"
+    ],
+    "required_dossier_readiness_profile": "eu_internal_review",
+    "notes": [
+      "Unsupported fields and derived mappings remain review items rather than blockers for internal exchange."
+    ]
+  },
+  "linked_dossier_readiness_profile": "eu_internal_review",
+  "linked_dossier_readiness_status": "review_required",
+  "action_items": [
+    {
+      "action_id": "upgrade_linked_dossier_readiness",
+      "rule_id": "linked_dossier_readiness",
+      "title": "Upgrade linked dossier readiness",
+      "action_type": "governance_upgrade",
+      "priority": "review_required",
+      "blocking": false,
+      "summary": "The linked version-pinned dossier does not satisfy the dossier-readiness profile required by the selected exchange gate.",
+      "trigger_message": "Linked dossier readiness assessment requires human review before treating the preview as exchange-ready.",
+      "trigger_note": "eu_internal_review",
+      "decision_status": "waived",
+      "rationale": "Current adapter family remains explicitly internal-review only; waiver retained for controlled example exchange use.",
+      "reviewed_at": "2026-04-11",
+      "supporting_uris": [
+        "docs://regulatory-governance"
+      ],
+      "resolved": true
+    },
+    {
+      "action_id": "review_unsupported_preview_fields",
+      "rule_id": "preview_unsupported_fields_allowed",
+      "title": "Review unsupported preview fields",
+      "action_type": "manual_review",
+      "priority": "review_required",
+      "blocking": false,
+      "summary": "Unsupported local-only fields remain in the staged preview workflow and require review before relying on the current gate outcome.",
+      "trigger_message": "Preview still carries unsupported local-only fields that require review or block the selected gate.",
+      "trigger_note": "confidentiality_annotations, review_bundle.check_result.header_resolution, review_bundle.check_result.input_headers, review_bundle.comparison_result.compared_fields, review_bundle.comparison_result.matched_fields",
+      "decision_status": "completed",
+      "rationale": "Unsupported diagnostics were reviewed and retained in the MCP-only review bundle.",
+      "reviewed_at": "2026-04-11",
+      "supporting_uris": [
+        "docs://interoperability-preview"
+      ],
+      "resolved": true
+    },
+    {
+      "action_id": "replace_non_direct_mappings",
+      "rule_id": "preview_non_direct_mappings_allowed",
+      "title": "Replace non-direct mappings",
+      "action_type": "mapping_hardening",
+      "priority": "review_required",
+      "blocking": false,
+      "summary": "Derived or review-required mappings remain in the staged preview and block or downgrade the selected exchange gate.",
+      "trigger_message": "Preview still depends on derived or review-required mappings that require review or block the selected gate.",
+      "trigger_note": "model_governance_snapshot, pinned_resources, review_bundle.check_result.normalized_projection.commodity_contributions, source_governance_snapshot",
+      "decision_status": "completed",
+      "rationale": "Derived mappings were accepted as governed preview-only mappings for this illustrative packet.",
+      "reviewed_at": "2026-04-11",
+      "supporting_uris": [
+        "docs://interoperability-readiness"
+      ],
+      "resolved": true
+    }
+  ],
+  "pending_action_ids": [],
+  "acknowledged_action_ids": [],
+  "completed_action_ids": [
+    "review_unsupported_preview_fields",
+    "replace_non_direct_mappings"
+  ],
+  "waived_action_ids": [
+    "upgrade_linked_dossier_readiness"
+  ],
+  "unresolved_blocking_action_ids": [],
+  "referenced_resources": [
+    {
+      "role": "remediation_catalog",
+      "uri": "interoperability-remediation://catalog",
+      "description": "Governed remediation catalog for interoperability readiness outcomes.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "interoperability_readiness_profile",
+      "uri": "interoperability-readiness://profile/eu_internal_exchange_preview",
+      "description": "Governed interoperability readiness profile used for this assessment.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "interoperability_preview_profile",
+      "uri": "interoperability://profile/oht_85_iuclid_json_preview",
+      "description": "Governed staged preview profile used to construct the interoperability preview.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "interoperability_readiness_docs",
+      "uri": "docs://interoperability-readiness",
+      "description": "Operator guide for interoperability readiness semantics and exchange gates.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "interoperability_remediation_docs",
+      "uri": "docs://interoperability-remediation",
+      "description": "Operator guide for governed interoperability remediation bundles.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "interoperability_remediation_validation",
+      "uri": "validation://interoperability-remediation-actions",
+      "description": "Governed remediation action catalog keyed to interoperability readiness rule ids.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "documentation",
+      "uri": "docs://regulatory-governance",
+      "description": "Documentation linked from remediation action upgrade_linked_dossier_readiness.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "documentation",
+      "uri": "docs://interoperability-readiness",
+      "description": "Documentation linked from remediation action upgrade_linked_dossier_readiness.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "remediation_resource",
+      "uri": "validation://readiness-profiles",
+      "description": "Resource linked from remediation action upgrade_linked_dossier_readiness.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "remediation_resource",
+      "uri": "validation://regulatory-rules",
+      "description": "Resource linked from remediation action upgrade_linked_dossier_readiness.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "remediation_resource",
+      "uri": "validation://interoperability-readiness-profiles",
+      "description": "Resource linked from remediation action upgrade_linked_dossier_readiness.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "documentation",
+      "uri": "docs://interoperability-preview",
+      "description": "Documentation linked from remediation action review_unsupported_preview_fields.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "remediation_resource",
+      "uri": "validation://interoperability-profiles",
+      "description": "Resource linked from remediation action review_unsupported_preview_fields.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "remediation_resource",
+      "uri": "validation://interoperability-rules",
+      "description": "Resource linked from remediation action review_unsupported_preview_fields.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "interoperability_signoff_docs",
+      "uri": "docs://interoperability-signoff",
+      "description": "Operator guide for reviewer-facing interoperability signoff packets.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "signoff_supporting_resource",
+      "uri": "docs://regulatory-governance",
+      "description": "Supporting resource cited by reviewer signoff for action upgrade_linked_dossier_readiness.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "signoff_supporting_resource",
+      "uri": "docs://interoperability-preview",
+      "description": "Supporting resource cited by reviewer signoff for action review_unsupported_preview_fields.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    },
+    {
+      "role": "signoff_supporting_resource",
+      "uri": "docs://interoperability-readiness",
+      "description": "Supporting resource cited by reviewer signoff for action replace_non_direct_mappings.",
+      "confidentiality_tag": "public",
+      "sanitisation_state": "retained"
+    }
+  ],
+  "notes": [
+    "Signoff packet is a reviewer-facing overlay on top of the remediation bundle and does not alter the underlying readiness outcome.",
+    "Waived actions remain explicitly visible so downstream reviewers can inspect the rationale for any accepted deviation.",
+    "Signed-off status does not imply XML generation readiness, submission acceptance, or regulatory approval.",
+    "Illustrative reviewer packet for governed interoperability remediation signoff."
+  ]
+}

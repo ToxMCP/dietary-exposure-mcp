@@ -1,0 +1,396 @@
+{
+  "schemas": [
+    {
+      "name": "adapterImportCheckResult.v1",
+      "path": "docs/contracts/schemas/adapterImportCheckResult.v1.json"
+    },
+    {
+      "name": "adapterReviewBundle.v1",
+      "path": "docs/contracts/schemas/adapterReviewBundle.v1.json"
+    },
+    {
+      "name": "analyticalMethodEvidenceLookupResult.v1",
+      "path": "docs/contracts/schemas/analyticalMethodEvidenceLookupResult.v1.json"
+    },
+    {
+      "name": "assessInteroperabilityPreviewReadinessRequest.v1",
+      "path": "docs/contracts/schemas/assessInteroperabilityPreviewReadinessRequest.v1.json"
+    },
+    {
+      "name": "assessReviewDossierReadinessRequest.v1",
+      "path": "docs/contracts/schemas/assessReviewDossierReadinessRequest.v1.json"
+    },
+    {
+      "name": "buildBoundedIntakeSummaryRequest.v1",
+      "path": "docs/contracts/schemas/buildBoundedIntakeSummaryRequest.v1.json"
+    },
+    {
+      "name": "buildDietaryIntakeScenarioRequest.v1",
+      "path": "docs/contracts/schemas/buildDietaryIntakeScenarioRequest.v1.json"
+    },
+    {
+      "name": "buildDietaryResidueProfileRequest.v1",
+      "path": "docs/contracts/schemas/buildDietaryResidueProfileRequest.v1.json"
+    },
+    {
+      "name": "buildProbabilisticIntakeSummaryRequest.v1",
+      "path": "docs/contracts/schemas/buildProbabilisticIntakeSummaryRequest.v1.json"
+    },
+    {
+      "name": "buildUncertaintyIntakeAssessmentRequest.v1",
+      "path": "docs/contracts/schemas/buildUncertaintyIntakeAssessmentRequest.v1.json"
+    },
+    {
+      "name": "checkAdapterImportRequest.v1",
+      "path": "docs/contracts/schemas/checkAdapterImportRequest.v1.json"
+    },
+    {
+      "name": "checkContaminantMonitoringImportRequest.v1",
+      "path": "docs/contracts/schemas/checkContaminantMonitoringImportRequest.v1.json"
+    },
+    {
+      "name": "compareAdapterImportToWalkthroughRequest.v1",
+      "path": "docs/contracts/schemas/compareAdapterImportToWalkthroughRequest.v1.json"
+    },
+    {
+      "name": "compareAdapterImportToWalkthroughResult.v1",
+      "path": "docs/contracts/schemas/compareAdapterImportToWalkthroughResult.v1.json"
+    },
+    {
+      "name": "consumptionDatasetSupportLookupResult.v1",
+      "path": "docs/contracts/schemas/consumptionDatasetSupportLookupResult.v1.json"
+    },
+    {
+      "name": "consumptionProfileSelectionResult.v1",
+      "path": "docs/contracts/schemas/consumptionProfileSelectionResult.v1.json"
+    },
+    {
+      "name": "contaminantLegalLimitLookupResult.v1",
+      "path": "docs/contracts/schemas/contaminantLegalLimitLookupResult.v1.json"
+    },
+    {
+      "name": "contaminantMonitoringImportCheckResult.v1",
+      "path": "docs/contracts/schemas/contaminantMonitoringImportCheckResult.v1.json"
+    },
+    {
+      "name": "contaminantMonitoringInterpretationBundle.v1",
+      "path": "docs/contracts/schemas/contaminantMonitoringInterpretationBundle.v1.json"
+    },
+    {
+      "name": "contaminantMonitoringSignoffPacket.v1",
+      "path": "docs/contracts/schemas/contaminantMonitoringSignoffPacket.v1.json"
+    },
+    {
+      "name": "dietaryAssumptionRecord.v1",
+      "path": "docs/contracts/schemas/dietaryAssumptionRecord.v1.json"
+    },
+    {
+      "name": "dietaryCommodityResidueRecord.v1",
+      "path": "docs/contracts/schemas/dietaryCommodityResidueRecord.v1.json"
+    },
+    {
+      "name": "dietaryConsumptionProfile.v1",
+      "path": "docs/contracts/schemas/dietaryConsumptionProfile.v1.json"
+    },
+    {
+      "name": "dietaryContributionRecord.v1",
+      "path": "docs/contracts/schemas/dietaryContributionRecord.v1.json"
+    },
+    {
+      "name": "dietaryErrorPayload.v1",
+      "path": "docs/contracts/schemas/dietaryErrorPayload.v1.json"
+    },
+    {
+      "name": "dietaryIntakeScenarioDefinition.v1",
+      "path": "docs/contracts/schemas/dietaryIntakeScenarioDefinition.v1.json"
+    },
+    {
+      "name": "dietaryIntakeSummary.v1",
+      "path": "docs/contracts/schemas/dietaryIntakeSummary.v1.json"
+    },
+    {
+      "name": "dietaryResidueProfile.v1",
+      "path": "docs/contracts/schemas/dietaryResidueProfile.v1.json"
+    },
+    {
+      "name": "dietaryScenarioComparisonRecord.v1",
+      "path": "docs/contracts/schemas/dietaryScenarioComparisonRecord.v1.json"
+    },
+    {
+      "name": "dietarySurveyDatasetRecord.v1",
+      "path": "docs/contracts/schemas/dietarySurveyDatasetRecord.v1.json"
+    },
+    {
+      "name": "evaluateGlobalTradeRiskRequest.v1",
+      "path": "docs/contracts/schemas/evaluateGlobalTradeRiskRequest.v1.json"
+    },
+    {
+      "name": "exportAdapterReviewBundleRequest.v1",
+      "path": "docs/contracts/schemas/exportAdapterReviewBundleRequest.v1.json"
+    },
+    {
+      "name": "exportContaminantMonitoringInterpretationBundleRequest.v1",
+      "path": "docs/contracts/schemas/exportContaminantMonitoringInterpretationBundleRequest.v1.json"
+    },
+    {
+      "name": "exportContaminantMonitoringSignoffPacketRequest.v1",
+      "path": "docs/contracts/schemas/exportContaminantMonitoringSignoffPacketRequest.v1.json"
+    },
+    {
+      "name": "exportInteroperabilityPreviewRequest.v1",
+      "path": "docs/contracts/schemas/exportInteroperabilityPreviewRequest.v1.json"
+    },
+    {
+      "name": "exportInteroperabilityRemediationBundleRequest.v1",
+      "path": "docs/contracts/schemas/exportInteroperabilityRemediationBundleRequest.v1.json"
+    },
+    {
+      "name": "exportInteroperabilitySignoffPacketRequest.v1",
+      "path": "docs/contracts/schemas/exportInteroperabilitySignoffPacketRequest.v1.json"
+    },
+    {
+      "name": "exportMetalsMonitoringInterpretationBundleRequest.v1",
+      "path": "docs/contracts/schemas/exportMetalsMonitoringInterpretationBundleRequest.v1.json"
+    },
+    {
+      "name": "exportMetalsMonitoringSignoffPacketRequest.v1",
+      "path": "docs/contracts/schemas/exportMetalsMonitoringSignoffPacketRequest.v1.json"
+    },
+    {
+      "name": "exportPbpkOralInputRequest.v1",
+      "path": "docs/contracts/schemas/exportPbpkOralInputRequest.v1.json"
+    },
+    {
+      "name": "exportSanitisedPublicReviewDossierRequest.v1",
+      "path": "docs/contracts/schemas/exportSanitisedPublicReviewDossierRequest.v1.json"
+    },
+    {
+      "name": "exportScientificFollowUpOwnerHandoffPacketRequest.v1",
+      "path": "docs/contracts/schemas/exportScientificFollowUpOwnerHandoffPacketRequest.v1.json"
+    },
+    {
+      "name": "exportScientificFollowUpOwnerRemediationPacketRequest.v1",
+      "path": "docs/contracts/schemas/exportScientificFollowUpOwnerRemediationPacketRequest.v1.json"
+    },
+    {
+      "name": "exportScientificFollowUpOwnerSignoffPacketRequest.v1",
+      "path": "docs/contracts/schemas/exportScientificFollowUpOwnerSignoffPacketRequest.v1.json"
+    },
+    {
+      "name": "exportScientificFollowUpQueueBundleRequest.v1",
+      "path": "docs/contracts/schemas/exportScientificFollowUpQueueBundleRequest.v1.json"
+    },
+    {
+      "name": "exportScientificFollowUpReviewBoardRequest.v1",
+      "path": "docs/contracts/schemas/exportScientificFollowUpReviewBoardRequest.v1.json"
+    },
+    {
+      "name": "exportTradeRiskReviewBundleRequest.v1",
+      "path": "docs/contracts/schemas/exportTradeRiskReviewBundleRequest.v1.json"
+    },
+    {
+      "name": "exportVersionPinnedAdapterReviewDossierRequest.v1",
+      "path": "docs/contracts/schemas/exportVersionPinnedAdapterReviewDossierRequest.v1.json"
+    },
+    {
+      "name": "exportVersionPinnedContaminantMonitoringReviewDossierRequest.v1",
+      "path": "docs/contracts/schemas/exportVersionPinnedContaminantMonitoringReviewDossierRequest.v1.json"
+    },
+    {
+      "name": "exportVersionPinnedMetalsMonitoringReviewDossierRequest.v1",
+      "path": "docs/contracts/schemas/exportVersionPinnedMetalsMonitoringReviewDossierRequest.v1.json"
+    },
+    {
+      "name": "exportVersionPinnedScientificFollowUpOwnerSignoffDossierRequest.v1",
+      "path": "docs/contracts/schemas/exportVersionPinnedScientificFollowUpOwnerSignoffDossierRequest.v1.json"
+    },
+    {
+      "name": "exportVersionPinnedTradeRiskReviewDossierRequest.v1",
+      "path": "docs/contracts/schemas/exportVersionPinnedTradeRiskReviewDossierRequest.v1.json"
+    },
+    {
+      "name": "globalTradeRiskReport.v1",
+      "path": "docs/contracts/schemas/globalTradeRiskReport.v1.json"
+    },
+    {
+      "name": "interoperabilityExportPreview.v1",
+      "path": "docs/contracts/schemas/interoperabilityExportPreview.v1.json"
+    },
+    {
+      "name": "interoperabilityPreviewReadinessAssessment.v1",
+      "path": "docs/contracts/schemas/interoperabilityPreviewReadinessAssessment.v1.json"
+    },
+    {
+      "name": "interoperabilityRemediationBundle.v1",
+      "path": "docs/contracts/schemas/interoperabilityRemediationBundle.v1.json"
+    },
+    {
+      "name": "interoperabilitySignoffPacket.v1",
+      "path": "docs/contracts/schemas/interoperabilitySignoffPacket.v1.json"
+    },
+    {
+      "name": "lookupAnalyticalMethodEvidenceRequest.v1",
+      "path": "docs/contracts/schemas/lookupAnalyticalMethodEvidenceRequest.v1.json"
+    },
+    {
+      "name": "lookupConsumptionDatasetSupportRequest.v1",
+      "path": "docs/contracts/schemas/lookupConsumptionDatasetSupportRequest.v1.json"
+    },
+    {
+      "name": "lookupContaminantLegalLimitsRequest.v1",
+      "path": "docs/contracts/schemas/lookupContaminantLegalLimitsRequest.v1.json"
+    },
+    {
+      "name": "lookupMetalsOccurrenceRequest.v1",
+      "path": "docs/contracts/schemas/lookupMetalsOccurrenceRequest.v1.json"
+    },
+    {
+      "name": "lookupMetalsReviewFocusRequest.v1",
+      "path": "docs/contracts/schemas/lookupMetalsReviewFocusRequest.v1.json"
+    },
+    {
+      "name": "lookupMethodSupportRequest.v1",
+      "path": "docs/contracts/schemas/lookupMethodSupportRequest.v1.json"
+    },
+    {
+      "name": "lookupOccurrenceEvidenceRequest.v1",
+      "path": "docs/contracts/schemas/lookupOccurrenceEvidenceRequest.v1.json"
+    },
+    {
+      "name": "lookupReferenceValuesRequest.v1",
+      "path": "docs/contracts/schemas/lookupReferenceValuesRequest.v1.json"
+    },
+    {
+      "name": "lookupReportingProfilesRequest.v1",
+      "path": "docs/contracts/schemas/lookupReportingProfilesRequest.v1.json"
+    },
+    {
+      "name": "metalsMonitoringInterpretationBundle.v1",
+      "path": "docs/contracts/schemas/metalsMonitoringInterpretationBundle.v1.json"
+    },
+    {
+      "name": "metalsMonitoringSignoffPacket.v1",
+      "path": "docs/contracts/schemas/metalsMonitoringSignoffPacket.v1.json"
+    },
+    {
+      "name": "metalsOccurrenceLookupResult.v1",
+      "path": "docs/contracts/schemas/metalsOccurrenceLookupResult.v1.json"
+    },
+    {
+      "name": "metalsReviewFocusLookupResult.v1",
+      "path": "docs/contracts/schemas/metalsReviewFocusLookupResult.v1.json"
+    },
+    {
+      "name": "methodSupportLookupResult.v1",
+      "path": "docs/contracts/schemas/methodSupportLookupResult.v1.json"
+    },
+    {
+      "name": "occurrenceEvidenceLookupResult.v1",
+      "path": "docs/contracts/schemas/occurrenceEvidenceLookupResult.v1.json"
+    },
+    {
+      "name": "parseRawSurveyDatasetRequest.v1",
+      "path": "docs/contracts/schemas/parseRawSurveyDatasetRequest.v1.json"
+    },
+    {
+      "name": "pbpkExternalImportBundle.v1",
+      "path": "docs/contracts/schemas/pbpkExternalImportBundle.v1.json"
+    },
+    {
+      "name": "probabilisticIntakeSummary.v1",
+      "path": "docs/contracts/schemas/probabilisticIntakeSummary.v1.json"
+    },
+    {
+      "name": "referenceValueLookupResult.v1",
+      "path": "docs/contracts/schemas/referenceValueLookupResult.v1.json"
+    },
+    {
+      "name": "reportingProfileLookupResult.v1",
+      "path": "docs/contracts/schemas/reportingProfileLookupResult.v1.json"
+    },
+    {
+      "name": "residueUncertaintyModel.v1",
+      "path": "docs/contracts/schemas/residueUncertaintyModel.v1.json"
+    },
+    {
+      "name": "reviewDossierReadinessAssessment.v1",
+      "path": "docs/contracts/schemas/reviewDossierReadinessAssessment.v1.json"
+    },
+    {
+      "name": "routeDoseEstimate.v1",
+      "path": "docs/contracts/schemas/routeDoseEstimate.v1.json"
+    },
+    {
+      "name": "sanitisedPublicReviewDossier.v1",
+      "path": "docs/contracts/schemas/sanitisedPublicReviewDossier.v1.json"
+    },
+    {
+      "name": "scientificFollowUpOwnerHandoffPacket.v1",
+      "path": "docs/contracts/schemas/scientificFollowUpOwnerHandoffPacket.v1.json"
+    },
+    {
+      "name": "scientificFollowUpOwnerRemediationPacket.v1",
+      "path": "docs/contracts/schemas/scientificFollowUpOwnerRemediationPacket.v1.json"
+    },
+    {
+      "name": "scientificFollowUpOwnerSignoffPacket.v1",
+      "path": "docs/contracts/schemas/scientificFollowUpOwnerSignoffPacket.v1.json"
+    },
+    {
+      "name": "scientificFollowUpQueueBundle.v1",
+      "path": "docs/contracts/schemas/scientificFollowUpQueueBundle.v1.json"
+    },
+    {
+      "name": "scientificFollowUpReviewBoard.v1",
+      "path": "docs/contracts/schemas/scientificFollowUpReviewBoard.v1.json"
+    },
+    {
+      "name": "selectConsumptionProfileRequest.v1",
+      "path": "docs/contracts/schemas/selectConsumptionProfileRequest.v1.json"
+    },
+    {
+      "name": "summarizeSurveyDistributionRequest.v1",
+      "path": "docs/contracts/schemas/summarizeSurveyDistributionRequest.v1.json"
+    },
+    {
+      "name": "surveyDistributionSummaryReport.v1",
+      "path": "docs/contracts/schemas/surveyDistributionSummaryReport.v1.json"
+    },
+    {
+      "name": "toxclawDietaryEvidenceBundle.v1",
+      "path": "docs/contracts/schemas/toxclawDietaryEvidenceBundle.v1.json"
+    },
+    {
+      "name": "tradeRiskReviewBundle.v1",
+      "path": "docs/contracts/schemas/tradeRiskReviewBundle.v1.json"
+    },
+    {
+      "name": "uncertaintyAssumptionLedger.v1",
+      "path": "docs/contracts/schemas/uncertaintyAssumptionLedger.v1.json"
+    },
+    {
+      "name": "uncertaintyIntakeAssessment.v1",
+      "path": "docs/contracts/schemas/uncertaintyIntakeAssessment.v1.json"
+    },
+    {
+      "name": "versionPinnedAdapterReviewDossier.v1",
+      "path": "docs/contracts/schemas/versionPinnedAdapterReviewDossier.v1.json"
+    },
+    {
+      "name": "versionPinnedContaminantMonitoringReviewDossier.v1",
+      "path": "docs/contracts/schemas/versionPinnedContaminantMonitoringReviewDossier.v1.json"
+    },
+    {
+      "name": "versionPinnedMetalsMonitoringReviewDossier.v1",
+      "path": "docs/contracts/schemas/versionPinnedMetalsMonitoringReviewDossier.v1.json"
+    },
+    {
+      "name": "versionPinnedScientificFollowUpOwnerSignoffDossier.v1",
+      "path": "docs/contracts/schemas/versionPinnedScientificFollowUpOwnerSignoffDossier.v1.json"
+    },
+    {
+      "name": "versionPinnedTradeRiskReviewDossier.v1",
+      "path": "docs/contracts/schemas/versionPinnedTradeRiskReviewDossier.v1.json"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Build artifacts
+artifacts/
+build/
+dist/
+output/
+*.egg-info/
+
+# Local editor / OS files
+.DS_Store
+.claude/
+
+# Local task files
+*_tasks.json
+
+# Scratch / working data (one-off scripts, screenshots, raw regulatory source dumps)
+tmp/

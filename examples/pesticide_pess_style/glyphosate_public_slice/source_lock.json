@@ -1,0 +1,136 @@
+{
+  "casePackId": "glyphosate_public_slice_v1",
+  "lockedOn": "2026-05-10",
+  "purpose": "PESS-style Dietary Exposure MCP demonstration using public source anchors and illustrative screening inputs.",
+  "sourceAnchors": [
+    {
+      "sourceId": "pess.2026.ecoenvsafety.120201",
+      "title": "Modeling external exposure to pesticides in human populations: Developing an exposure scenario generator",
+      "url": "https://doi.org/10.1016/j.ecoenv.2026.120201",
+      "retrievedAt": "2026-05-10T00:00:00Z",
+      "casePackReviewedAt": "2026-05-10T00:00:00Z",
+      "publisherLastReviewed": null,
+      "retrievalMethod": "local_pdf_supplied_by_user; public DOI recorded for release package",
+      "observedUse": "Comparison anchor for PESS dietary-module method, route integration, Monte Carlo framing, and biomonitoring plausibility context.",
+      "lockedFacts": [
+        "PESS includes occupational, environmental, and dietary pesticide exposure modules.",
+        "The paper demonstrates endosulfan, mancozeb, and glyphosate.",
+        "The dietary module combines EFSA food consumption data with EFSA pesticide residue data.",
+        "PESS reports Monte Carlo dietary distributions and notes that negative normal-consumption draws are truncated to zero."
+      ]
+    },
+    {
+      "sourceId": "efsa.food_consumption.2026_reviewed",
+      "title": "EFSA Food consumption data report page",
+      "url": "https://www.efsa.europa.eu/en/data-report/food-consumption",
+      "retrievedAt": "2026-05-10T00:00:00Z",
+      "casePackReviewedAt": "2026-05-10T00:00:00Z",
+      "publisherLastReviewed": null,
+      "retrievalMethod": "manual_web_review",
+      "observedUse": "Public source anchor for EFSA Comprehensive European Food Consumption Database context.",
+      "lockedFacts": [
+        "EFSA describes the Comprehensive Food Consumption Database as a source of food consumption information across the EU.",
+        "EFSA states the database supports exposure estimates for hazards in food.",
+        "EFSA reports chronic and acute consumption statistics by population and food categories."
+      ]
+    },
+    {
+      "sourceId": "efsa.chemical_monitoring.pesticides",
+      "title": "EFSA Chemical monitoring data report page",
+      "url": "https://www.efsa.europa.eu/en/data-report/chemical-monitoring",
+      "retrievedAt": "2026-05-10T00:00:00Z",
+      "casePackReviewedAt": "2026-05-10T00:00:00Z",
+      "publisherLastReviewed": null,
+      "retrievalMethod": "manual_web_review",
+      "observedUse": "Public source anchor for pesticide-residue monitoring and annual-report context.",
+      "lockedFacts": [
+        "EFSA describes chemical monitoring data collection as covering contaminants, food additives, pesticide residues, and veterinary medicinal product residues.",
+        "EFSA links pesticide residues in food to Regulation (EC) No 396/2005 and annual pesticide-residue reports.",
+        "The page exposes pesticide monitoring dashboards and annual-report links."
+      ]
+    },
+    {
+      "sourceId": "ec.eu_pesticides_database",
+      "title": "EU Pesticides Database",
+      "url": "https://food.ec.europa.eu/plants/pesticides/eu-pesticides-database_en",
+      "retrievedAt": "2026-05-10T00:00:00Z",
+      "casePackReviewedAt": "2026-05-10T00:00:00Z",
+      "publisherLastReviewed": null,
+      "retrievalMethod": "manual_web_review",
+      "observedUse": "Public source anchor for EU active-substance and MRL lookup context.",
+      "lockedFacts": [
+        "The database supports searching active substances, food products, pesticide residues, and emergency authorisations.",
+        "The Commission states official information is published in the Official Journal of the European Union.",
+        "The page exposes data download and API routes for pesticide information."
+      ]
+    },
+    {
+      "sourceId": "ec.eu_mrl_legislation",
+      "title": "EU legislation on pesticide maximum residue levels",
+      "url": "https://food.ec.europa.eu/plants/pesticides/maximum-residue-levels/eu-legislation-mrls_en",
+      "retrievedAt": "2026-05-10T00:00:00Z",
+      "casePackReviewedAt": "2026-05-10T00:00:00Z",
+      "publisherLastReviewed": null,
+      "retrievalMethod": "manual_web_review",
+      "observedUse": "Public source anchor for MRL scope, default-MRL context, and consumer-safety framing.",
+      "lockedFacts": [
+        "EU legislation harmonises pesticide MRLs for agricultural products for food or feed.",
+        "The page states MRLs apply to fresh products and processed products after dilution or concentration adjustment.",
+        "The page states a default MRL applies where a pesticide is not specifically mentioned."
+      ]
+    },
+    {
+      "sourceId": "efsa.openfoodtox.3",
+      "title": "EFSA Chemical Hazards Database - OpenFoodTox",
+      "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+      "retrievedAt": "2026-05-10T00:00:00Z",
+      "casePackReviewedAt": "2026-05-10T00:00:00Z",
+      "publisherLastReviewed": null,
+      "retrievalMethod": "manual_web_review",
+      "observedUse": "Public source anchor for toxicological reference-value infrastructure.",
+      "lockedFacts": [
+        "OpenFoodTox provides structured hazard data from EFSA risk assessments.",
+        "The database covers pesticides, contaminants, food contact materials, additives, feed additives, and nutrients.",
+        "OpenFoodTox includes toxicological reference values and reference points."
+      ]
+    },
+    {
+      "sourceId": "efsa.glyphosate.topic.2026_reviewed",
+      "title": "EFSA glyphosate topic page",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/glyphosate",
+      "retrievedAt": "2026-05-10T00:00:00Z",
+      "casePackReviewedAt": "2026-05-10T00:00:00Z",
+      "publisherLastReviewed": null,
+      "retrievalMethod": "manual_web_review",
+      "observedUse": "Public source anchor for glyphosate regulatory context.",
+      "lockedFacts": [
+        "EFSA describes glyphosate as a widely used herbicide.",
+        "The page states glyphosate is currently approved as an active substance in the EU until 15 December 2033.",
+        "The page distinguishes active-substance approval from national product authorisation."
+      ]
+    }
+  ],
+  "screeningInputPosture": {
+    "residueValues": "Illustrative regulatory-screening inputs selected to exercise current Dietary MCP contracts; not row-level EFSA monitoring records.",
+    "consumptionValues": "Current governed Dietary MCP consumption profiles and a compact synthetic raw-survey fixture; not a full EFSA dashboard export.",
+    "chemicalIdentity": "Glyphosate selected because the current repo has the strongest defaults coverage for reference values, occurrence evidence, method evidence, MRL/trade records, and examples.",
+    "matrixSemantics": {
+      "submittedCommodityCode": "apple_juice",
+      "canonicalCommodityCode": "apples",
+      "residueMatrix": "raw_primary_commodity",
+      "consumptionMatrix": "processed_derivative",
+      "processingFactorDirection": "raw_residue_to_processed_food",
+      "processingFactorAppliedTo": "residue_concentration",
+      "processedFoodLabel": "apple_juice",
+      "consumptionValueBasis": "governed_apples_profile_used_as_processed_derivative_proxy",
+      "consumptionProxy": true,
+      "consumptionProxyRationale": "This public slice uses the governed apples consumption amount as a compact apple-juice derivative fixture; it is not a row-level apple-juice survey estimate."
+    },
+    "reviewStatus": "schema_reviewed_not_source_validated"
+  },
+  "nonClaims": [
+    "No EFSA PRIMo, DEEM, or PESS engine execution is claimed.",
+    "No official equivalence to EFSA monitoring datasets or dashboards is claimed.",
+    "No legal clearance, final regulatory decision, trade clearance, or PBPK internal-dose simulation is claimed."
+  ]
+}

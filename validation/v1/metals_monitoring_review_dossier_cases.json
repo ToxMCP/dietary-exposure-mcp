@@ -1,0 +1,267 @@
+{
+  "version": "v1",
+  "cases": [
+    {
+      "name": "mercury_monitoring_review_dossier_with_waiver_escalation",
+      "occurrenceRequest": {
+        "contaminantFamily": "mercury_food_contaminants",
+        "jurisdiction": "eu"
+      },
+      "reviewFocusRequest": {
+        "contaminantFamily": "mercury_food_contaminants",
+        "jurisdiction": "eu",
+        "focusFood": "tuna"
+      },
+      "decisions": [
+        {
+          "actionId": "review_occurrence_context",
+          "decisionStatus": "completed",
+          "rationale": "Occurrence context reviewed against the governed mercury occurrence support record.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-occurrence-registry"
+          ]
+        },
+        {
+          "actionId": "review_priority_food_groups",
+          "decisionStatus": "completed",
+          "rationale": "Priority fish groups and high-attention foods were reviewed explicitly.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_sensitive_populations",
+          "decisionStatus": "completed",
+          "rationale": "Sensitive-population context was reviewed for pregnancy-related and child-focused advice.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-review-focus-registry"
+          ]
+        },
+        {
+          "actionId": "review_commodity_focus_prompts",
+          "decisionStatus": "completed",
+          "rationale": "Commodity-focus prompts were completed for tuna and other predatory fish.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-review-focus-registry"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.monitoring_context.efsa.mercury.occurrence_monitoring.support",
+          "decisionStatus": "completed",
+          "rationale": "Monitoring-context assumption was reviewed against the governed occurrence record.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.sensitive_population_prompt_context",
+          "decisionStatus": "completed",
+          "rationale": "Sensitive-population prompt context was reviewed explicitly.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.trend_signal_context",
+          "decisionStatus": "waived",
+          "rationale": "Trend-signal context remains explicit as a controlled reviewer waiver.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_governance_links",
+          "decisionStatus": "completed",
+          "rationale": "Source, legal, method, dataset, and reference-value links were reviewed as governed context.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://regulatory-source-databases"
+          ]
+        }
+      ],
+      "expectedDossierStatus": "signed_off_with_waivers",
+      "expectedEscalationRequired": true,
+      "expectedEscalationActionIds": [
+        "review_scientific_ledger.trend_signal_context"
+      ],
+      "expectedEscalationTypesByAction": {
+        "review_scientific_ledger.trend_signal_context": "waiver_review"
+      }
+    },
+    {
+      "name": "inorganic_arsenic_monitoring_review_dossier_with_blocking_follow_up",
+      "occurrenceRequest": {
+        "contaminantFamily": "inorganic_arsenic_food_contaminants",
+        "jurisdiction": "eu"
+      },
+      "reviewFocusRequest": {
+        "contaminantFamily": "inorganic_arsenic_food_contaminants",
+        "jurisdiction": "eu",
+        "commodityGroup": "rice"
+      },
+      "decisions": [
+        {
+          "actionId": "review_occurrence_context",
+          "decisionStatus": "completed",
+          "rationale": "Occurrence context was reviewed for rice-driven inorganic arsenic monitoring.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-occurrence-registry"
+          ]
+        },
+        {
+          "actionId": "review_priority_food_groups",
+          "decisionStatus": "completed",
+          "rationale": "Priority rice and cereal groups were reviewed explicitly.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_commodity_focus_prompts",
+          "decisionStatus": "completed",
+          "rationale": "Commodity-focus prompts were completed for rice and infant foods.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-review-focus-registry"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.monitoring_context.efsa.inorganic_arsenic.occurrence_monitoring.support",
+          "decisionStatus": "completed",
+          "rationale": "Monitoring-context assumption was reviewed against the governed occurrence record.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.sensitive_population_prompt_context",
+          "decisionStatus": "completed",
+          "rationale": "Sensitive-population prompt context was reviewed explicitly.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_governance_links",
+          "decisionStatus": "acknowledged",
+          "rationale": "Governance links were reviewed but still require follow-up before signoff closes.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://regulatory-source-databases"
+          ]
+        }
+      ],
+      "expectedDossierStatus": "open",
+      "expectedEscalationRequired": true,
+      "expectedEscalationActionIds": [
+        "review_sensitive_populations",
+        "review_governance_links"
+      ],
+      "expectedEscalationTypesByAction": {
+        "review_sensitive_populations": "blocking_follow_up",
+        "review_governance_links": "blocking_follow_up"
+      }
+    },
+    {
+      "name": "mercury_monitoring_review_dossier_without_escalation",
+      "occurrenceRequest": {
+        "contaminantFamily": "mercury_food_contaminants",
+        "jurisdiction": "eu"
+      },
+      "reviewFocusRequest": {
+        "contaminantFamily": "mercury_food_contaminants",
+        "jurisdiction": "eu",
+        "focusFood": "tuna"
+      },
+      "decisions": [
+        {
+          "actionId": "review_occurrence_context",
+          "decisionStatus": "completed",
+          "rationale": "Occurrence context reviewed against the governed mercury occurrence support record.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-occurrence-registry"
+          ]
+        },
+        {
+          "actionId": "review_priority_food_groups",
+          "decisionStatus": "completed",
+          "rationale": "Priority fish groups and high-attention foods were reviewed explicitly.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_sensitive_populations",
+          "decisionStatus": "completed",
+          "rationale": "Sensitive-population context was reviewed for pregnancy-related and child-focused advice.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-review-focus-registry"
+          ]
+        },
+        {
+          "actionId": "review_commodity_focus_prompts",
+          "decisionStatus": "completed",
+          "rationale": "Commodity-focus prompts were completed for tuna and other predatory fish.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-review-focus-registry"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.monitoring_context.efsa.mercury.occurrence_monitoring.support",
+          "decisionStatus": "completed",
+          "rationale": "Monitoring-context assumption was reviewed against the governed occurrence record.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.sensitive_population_prompt_context",
+          "decisionStatus": "completed",
+          "rationale": "Sensitive-population prompt context was reviewed explicitly.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.trend_signal_context",
+          "decisionStatus": "completed",
+          "rationale": "Trend-signal context was reviewed explicitly.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://metals-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_governance_links",
+          "decisionStatus": "completed",
+          "rationale": "Source, legal, method, dataset, and reference-value links were reviewed as governed context.",
+          "reviewedAt": "2026-04-11",
+          "supportingUris": [
+            "docs://regulatory-source-databases"
+          ]
+        }
+      ],
+      "expectedDossierStatus": "signed_off",
+      "expectedEscalationRequired": false,
+      "expectedEscalationActionIds": [],
+      "expectedEscalationTypesByAction": {}
+    }
+  ]
+}

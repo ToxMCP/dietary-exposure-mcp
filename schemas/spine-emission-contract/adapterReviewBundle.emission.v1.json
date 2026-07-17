@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.ngra.ai/dietary-exposure/emission/adapterReviewBundle.v1.json",
+  "title": "AdapterReviewBundle (producer strict emission contract)",
+  "description": "Tightened additionalProperties:false mirror of docs/contracts/schemas/adapterReviewBundle.v1.json, declaring EXACTLY the top-level field set the real export_adapter_review_bundle seam emits (by_alias=True). Load-bearing review-arm fields the projection reads (review_status, matched/mismatch counts, notes[] / limitations[].message narrative) are constrained; embedded check/comparison records the projection does not deep-read are declared by type only.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "review_status",
+    "model_family",
+    "template_name",
+    "walkthrough_name",
+    "check_result",
+    "comparison_result",
+    "referenced_resources",
+    "dependencies",
+    "matched_field_count",
+    "mismatch_field_count"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "bundle_id": { "type": "string" },
+    "bundleProfile": { "type": "string" },
+    "review_status": { "type": "string", "minLength": 1 },
+    "model_family": { "type": "string", "minLength": 1 },
+    "template_name": { "type": "string", "minLength": 1 },
+    "walkthrough_name": { "type": "string", "minLength": 1 },
+    "check_result": { "type": "object" },
+    "comparison_result": { "type": "object" },
+    "referenced_resources": { "type": "array" },
+    "dependencies": { "type": "array" },
+    "matched_field_count": { "type": "integer", "minimum": 0 },
+    "mismatch_field_count": { "type": "integer", "minimum": 0 },
+    "confidentialityAnnotations": { "type": "array" },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "message"],
+        "properties": {
+          "code": { "type": "string" },
+          "message": { "type": "string" }
+        }
+      }
+    },
+    "notes": { "type": "array", "items": { "type": "string" } }
+  }
+}

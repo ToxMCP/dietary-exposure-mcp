@@ -1,0 +1,102 @@
+{
+  "version": "v1",
+  "cases": [
+    {
+      "name": "efsa_primo_tabular_alias_case",
+      "modelFamily": "efsa_primo_adapter",
+      "regionId": "eu_screening_default",
+      "populationGroup": "child_1_6",
+      "intakeWindow": "acute",
+      "scenarioClass": "bounded_acute",
+      "chemicalIdentity": {
+        "preferredName": "Adapter fixture substance",
+        "casrn": "100-00-0"
+      },
+      "residueRecords": [
+        {
+          "commodityCode": "apples",
+          "residueConcentrationMgPerKg": 0.18,
+          "lowerBoundMgPerKg": 0.12,
+          "upperBoundMgPerKg": 0.24,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "milk",
+          "residueConcentrationMgPerKg": 0.03,
+          "sourceType": "curated_default"
+        }
+      ],
+      "inputMode": "tabular_rows_v1",
+      "externalCaseId": "primo-fixture-001",
+      "externalEngineVersion": "3.1-harness",
+      "declaredTotalIntakeMgPerKgBwPerDay": 0.00416,
+      "declaredLowerBoundMgPerKgBwPerDay": 0.00304,
+      "declaredUpperBoundMgPerKgBwPerDay": 0.00528,
+      "rows": [
+        {
+          "commodity": "apple",
+          "iesti_mgkgbwday": 0.00336,
+          "hr_mgkg": 0.18,
+          "consumption_kg_day": 0.28,
+          "pf": 1.0,
+          "lb_mgkgbwday": 0.00224,
+          "ub_mgkgbwday": 0.00448
+        },
+        {
+          "commodity": "whole_milk",
+          "iesti_mgkgbwday": 0.0008,
+          "hr_mgkg": 0.03,
+          "consumption_kg_day": 0.4,
+          "pf": 1.0,
+          "lb_mgkgbwday": 0.0008,
+          "ub_mgkgbwday": 0.0008
+        }
+      ],
+      "expected": {
+        "totalIntakeMgPerKgBwPerDay": 0.00416,
+        "lowerBoundMgPerKgBwPerDay": 0.00304,
+        "upperBoundMgPerKgBwPerDay": 0.00528,
+        "commodityCodes": ["apples", "milk"],
+        "requiredSourceIds": ["efsa.primo", "efsa.default_body_weights.2012"],
+        "requiredQualityFlagCodes": ["external_adapter_normalized"],
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "epa_deem_csv_alias_case",
+      "modelFamily": "epa_deem_adapter",
+      "regionId": "eu_screening_default",
+      "populationGroup": "adult_general",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "chemicalIdentity": {
+        "preferredName": "Adapter fixture substance",
+        "casrn": "100-00-0"
+      },
+      "residueRecords": [
+        {
+          "commodityCode": "apples",
+          "residueConcentrationMgPerKg": 0.18,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "milk",
+          "residueConcentrationMgPerKg": 0.03,
+          "sourceType": "curated_default"
+        }
+      ],
+      "inputMode": "csv_v1",
+      "externalCaseId": "deem-fixture-001",
+      "externalEngineVersion": "4.02-harness",
+      "declaredTotalIntakeMgPerKgBwPerDay": 0.0005571428571428571,
+      "csvText": "food,exposure_mg_per_kg_bw_per_day,stmr_mgkg,food_consumption_kg_per_day,processing_factor\napples_raw,0.0004628571428571429,0.18,0.18,1.0\ncow_milk,0.00009428571428571429,0.03,0.22,1.0\n",
+      "expected": {
+        "totalIntakeMgPerKgBwPerDay": 0.0005571428571428571,
+        "commodityCodes": ["apples", "milk"],
+        "requiredSourceIds": ["epa.deem.fcid.4_02"],
+        "requiredQualityFlagCodes": ["external_adapter_normalized"],
+        "tolerance": 1e-12
+      }
+    }
+  ]
+}

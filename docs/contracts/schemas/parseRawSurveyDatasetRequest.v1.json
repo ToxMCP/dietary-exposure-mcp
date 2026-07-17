@@ -1,0 +1,121 @@
+{
+  "$defs": {
+    "RawSurveyRecordInput": {
+      "additionalProperties": false,
+      "properties": {
+        "subjectId": {
+          "title": "Subjectid",
+          "type": "string"
+        },
+        "bodyWeightKg": {
+          "exclusiveMinimum": 0.0,
+          "title": "Bodyweightkg",
+          "type": "number"
+        },
+        "daysInSurvey": {
+          "minimum": 1,
+          "title": "Daysinsurvey",
+          "type": "integer"
+        },
+        "commodityCode": {
+          "title": "Commoditycode",
+          "type": "string"
+        },
+        "consumptionKgPerDay": {
+          "minimum": 0.0,
+          "title": "Consumptionkgperday",
+          "type": "number"
+        },
+        "surveyWeight": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Surveyweight"
+        },
+        "samplingStratum": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Samplingstratum"
+        },
+        "samplingCluster": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Samplingcluster"
+        },
+        "surveyDayId": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Surveydayid"
+        }
+      },
+      "required": [
+        "subjectId",
+        "bodyWeightKg",
+        "daysInSurvey",
+        "commodityCode",
+        "consumptionKgPerDay"
+      ],
+      "title": "RawSurveyRecordInput",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "datasetId": {
+      "title": "Datasetid",
+      "type": "string"
+    },
+    "regionId": {
+      "title": "Regionid",
+      "type": "string"
+    },
+    "populationGroup": {
+      "title": "Populationgroup",
+      "type": "string"
+    },
+    "rawRecords": {
+      "items": {
+        "$ref": "#/$defs/RawSurveyRecordInput"
+      },
+      "maxItems": 100000,
+      "title": "Rawrecords",
+      "type": "array"
+    }
+  },
+  "required": [
+    "datasetId",
+    "regionId",
+    "populationGroup",
+    "rawRecords"
+  ],
+  "title": "ParseRawSurveyDatasetRequest",
+  "type": "object"
+}

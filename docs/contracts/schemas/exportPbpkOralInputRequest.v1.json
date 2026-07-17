@@ -1,0 +1,1267 @@
+{
+  "$defs": {
+    "CommodityConsumptionRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "commodity": {
+          "$ref": "#/$defs/CommodityReference"
+        },
+        "acute_kg_per_day": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Acute Kg Per Day"
+        },
+        "chronic_kg_per_day": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Chronic Kg Per Day"
+        },
+        "source_reference": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceReference"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "commodity"
+      ],
+      "title": "CommodityConsumptionRecord",
+      "type": "object"
+    },
+    "CommodityReference": {
+      "additionalProperties": false,
+      "properties": {
+        "taxonomy_id": {
+          "title": "Taxonomy Id",
+          "type": "string"
+        },
+        "commodity_code": {
+          "title": "Commodity Code",
+          "type": "string"
+        },
+        "canonical_name": {
+          "title": "Canonical Name",
+          "type": "string"
+        },
+        "food_group": {
+          "title": "Food Group",
+          "type": "string"
+        },
+        "mapping_status": {
+          "title": "Mapping Status",
+          "type": "string"
+        },
+        "foodex2_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Foodex2 Code"
+        },
+        "rpc_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rpc Code"
+        },
+        "rpcd_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rpcd Code"
+        },
+        "processed_status": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProcessedStatus"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "mapping_confidence": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/MappingConfidence"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "matched_input_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Matched Input Code"
+        },
+        "source_reference": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceReference"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "taxonomy_id",
+        "commodity_code",
+        "canonical_name",
+        "food_group",
+        "mapping_status"
+      ],
+      "title": "CommodityReference",
+      "type": "object"
+    },
+    "DietaryAssumptionRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "parameter": {
+          "title": "Parameter",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "Value"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        },
+        "source_classification": {
+          "$ref": "#/$defs/SourceClassification"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        },
+        "source_reference": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceReference"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "quality_flags": {
+          "items": {
+            "$ref": "#/$defs/QualityFlag"
+          },
+          "title": "Quality Flags",
+          "type": "array"
+        }
+      },
+      "required": [
+        "parameter",
+        "value",
+        "source_classification",
+        "rationale"
+      ],
+      "title": "DietaryAssumptionRecord",
+      "type": "object"
+    },
+    "DietaryCommodityResidueRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "record_id": {
+          "title": "Record Id",
+          "type": "string"
+        },
+        "commodity": {
+          "$ref": "#/$defs/CommodityReference"
+        },
+        "residue_concentration_mg_per_kg": {
+          "exclusiveMinimum": 0.0,
+          "title": "Residue Concentration Mg Per Kg",
+          "type": "number"
+        },
+        "lower_bound_mg_per_kg": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lower Bound Mg Per Kg"
+        },
+        "upper_bound_mg_per_kg": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Upper Bound Mg Per Kg"
+        },
+        "residue_unit": {
+          "default": "mg/kg",
+          "title": "Residue Unit",
+          "type": "string"
+        },
+        "source_type": {
+          "$ref": "#/$defs/ResidueSourceType"
+        },
+        "processing_factor": {
+          "exclusiveMinimum": 0.0,
+          "title": "Processing Factor",
+          "type": "number"
+        },
+        "processing_factor_source_classification": {
+          "$ref": "#/$defs/SourceClassification"
+        },
+        "processing_factor_source_reference": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceReference"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "region_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Region Id"
+        },
+        "time_context": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Time Context"
+        },
+        "review_status": {
+          "title": "Review Status",
+          "type": "string"
+        },
+        "source_reference": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceReference"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "provenance": {
+          "$ref": "#/$defs/ProvenanceBundle"
+        },
+        "quality_flags": {
+          "items": {
+            "$ref": "#/$defs/QualityFlag"
+          },
+          "title": "Quality Flags",
+          "type": "array"
+        },
+        "limitations": {
+          "items": {
+            "$ref": "#/$defs/LimitationNote"
+          },
+          "title": "Limitations",
+          "type": "array"
+        }
+      },
+      "required": [
+        "commodity",
+        "residue_concentration_mg_per_kg",
+        "source_type",
+        "processing_factor",
+        "processing_factor_source_classification",
+        "review_status",
+        "provenance"
+      ],
+      "title": "DietaryCommodityResidueRecord",
+      "type": "object"
+    },
+    "DietaryConsumptionProfile": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "profile_id": {
+          "title": "Profile Id",
+          "type": "string"
+        },
+        "display_name": {
+          "title": "Display Name",
+          "type": "string"
+        },
+        "population_group": {
+          "title": "Population Group",
+          "type": "string"
+        },
+        "profile_family": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Profile Family"
+        },
+        "regulatory_basis": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Regulatory Basis"
+        },
+        "review_status": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Review Status"
+        },
+        "survey_profile_source": {
+          "title": "Survey Profile Source",
+          "type": "string"
+        },
+        "region_id": {
+          "title": "Region Id",
+          "type": "string"
+        },
+        "body_weight_kg": {
+          "exclusiveMinimum": 0.0,
+          "title": "Body Weight Kg",
+          "type": "number"
+        },
+        "applicable_windows": {
+          "items": {
+            "$ref": "#/$defs/IntakeWindowSemantic"
+          },
+          "title": "Applicable Windows",
+          "type": "array"
+        },
+        "intake_unit": {
+          "default": "kg_food/day",
+          "title": "Intake Unit",
+          "type": "string"
+        },
+        "commodity_consumption": {
+          "items": {
+            "$ref": "#/$defs/CommodityConsumptionRecord"
+          },
+          "title": "Commodity Consumption",
+          "type": "array"
+        },
+        "provenance": {
+          "$ref": "#/$defs/ProvenanceBundle"
+        },
+        "quality_flags": {
+          "items": {
+            "$ref": "#/$defs/QualityFlag"
+          },
+          "title": "Quality Flags",
+          "type": "array"
+        },
+        "limitations": {
+          "items": {
+            "$ref": "#/$defs/LimitationNote"
+          },
+          "title": "Limitations",
+          "type": "array"
+        }
+      },
+      "required": [
+        "profile_id",
+        "display_name",
+        "population_group",
+        "survey_profile_source",
+        "region_id",
+        "body_weight_kg",
+        "applicable_windows",
+        "commodity_consumption",
+        "provenance"
+      ],
+      "title": "DietaryConsumptionProfile",
+      "type": "object"
+    },
+    "DietaryContributionRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "commodity": {
+          "$ref": "#/$defs/CommodityReference"
+        },
+        "intake_window_semantic": {
+          "$ref": "#/$defs/IntakeWindowSemantic"
+        },
+        "residue_concentration_mg_per_kg": {
+          "minimum": 0.0,
+          "title": "Residue Concentration Mg Per Kg",
+          "type": "number"
+        },
+        "consumption_kg_per_day": {
+          "minimum": 0.0,
+          "title": "Consumption Kg Per Day",
+          "type": "number"
+        },
+        "applied_processing_factor": {
+          "exclusiveMinimum": 0.0,
+          "title": "Applied Processing Factor",
+          "type": "number"
+        },
+        "contribution_mg_per_kg_bw_per_day": {
+          "minimum": 0.0,
+          "title": "Contribution Mg Per Kg Bw Per Day",
+          "type": "number"
+        },
+        "fraction_of_total": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Fraction Of Total",
+          "type": "number"
+        },
+        "lower_bound_intake_mg_per_kg_bw_per_day": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lower Bound Intake Mg Per Kg Bw Per Day"
+        },
+        "upper_bound_intake_mg_per_kg_bw_per_day": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Upper Bound Intake Mg Per Kg Bw Per Day"
+        },
+        "quality_flags": {
+          "items": {
+            "$ref": "#/$defs/QualityFlag"
+          },
+          "title": "Quality Flags",
+          "type": "array"
+        },
+        "limitations": {
+          "items": {
+            "$ref": "#/$defs/LimitationNote"
+          },
+          "title": "Limitations",
+          "type": "array"
+        }
+      },
+      "required": [
+        "commodity",
+        "intake_window_semantic",
+        "residue_concentration_mg_per_kg",
+        "consumption_kg_per_day",
+        "applied_processing_factor",
+        "contribution_mg_per_kg_bw_per_day",
+        "fraction_of_total"
+      ],
+      "title": "DietaryContributionRecord",
+      "type": "object"
+    },
+    "DietaryIntakeScenarioDefinition": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "scenario_id": {
+          "title": "Scenario Id",
+          "type": "string"
+        },
+        "chemical_identity": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Chemical Identity",
+          "type": "object"
+        },
+        "scenario_class": {
+          "$ref": "#/$defs/ScenarioClass"
+        },
+        "model_family": {
+          "$ref": "#/$defs/ModelFamily",
+          "default": "reference_dietary"
+        },
+        "intake_window_semantic": {
+          "$ref": "#/$defs/IntakeWindowSemantic"
+        },
+        "fit_for_purpose": {
+          "$ref": "#/$defs/FitForPurpose",
+          "default": "screening"
+        },
+        "residue_profile": {
+          "$ref": "#/$defs/DietaryResidueProfile"
+        },
+        "consumption_profile": {
+          "$ref": "#/$defs/DietaryConsumptionProfile"
+        },
+        "population_context": {
+          "$ref": "#/$defs/PopulationContext"
+        },
+        "provenance": {
+          "$ref": "#/$defs/ProvenanceBundle"
+        },
+        "quality_flags": {
+          "items": {
+            "$ref": "#/$defs/QualityFlag"
+          },
+          "title": "Quality Flags",
+          "type": "array"
+        },
+        "limitations": {
+          "items": {
+            "$ref": "#/$defs/LimitationNote"
+          },
+          "title": "Limitations",
+          "type": "array"
+        }
+      },
+      "required": [
+        "chemical_identity",
+        "scenario_class",
+        "intake_window_semantic",
+        "residue_profile",
+        "consumption_profile",
+        "population_context",
+        "provenance"
+      ],
+      "title": "DietaryIntakeScenarioDefinition",
+      "type": "object"
+    },
+    "DietaryIntakeSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "summary_id": {
+          "title": "Summary Id",
+          "type": "string"
+        },
+        "scenario_id": {
+          "title": "Scenario Id",
+          "type": "string"
+        },
+        "scenario_class": {
+          "$ref": "#/$defs/ScenarioClass"
+        },
+        "intake_window_semantic": {
+          "$ref": "#/$defs/IntakeWindowSemantic"
+        },
+        "route": {
+          "$ref": "#/$defs/Route",
+          "default": "oral"
+        },
+        "total_intake_mg_per_kg_bw_per_day": {
+          "minimum": 0.0,
+          "title": "Total Intake Mg Per Kg Bw Per Day",
+          "type": "number"
+        },
+        "lower_bound_total_intake_mg_per_kg_bw_per_day": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lower Bound Total Intake Mg Per Kg Bw Per Day"
+        },
+        "upper_bound_total_intake_mg_per_kg_bw_per_day": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Upper Bound Total Intake Mg Per Kg Bw Per Day"
+        },
+        "metric_label": {
+          "default": "external_oral_dose_mg_per_kg_bw_per_day",
+          "title": "Metric Label",
+          "type": "string"
+        },
+        "population_group": {
+          "title": "Population Group",
+          "type": "string"
+        },
+        "region_id": {
+          "title": "Region Id",
+          "type": "string"
+        },
+        "body_weight_kg": {
+          "exclusiveMinimum": 0.0,
+          "title": "Body Weight Kg",
+          "type": "number"
+        },
+        "fit_for_purpose": {
+          "$ref": "#/$defs/FitForPurpose"
+        },
+        "commodity_contributions": {
+          "items": {
+            "$ref": "#/$defs/DietaryContributionRecord"
+          },
+          "title": "Commodity Contributions",
+          "type": "array"
+        },
+        "dominant_commodity_contributors": {
+          "items": {
+            "$ref": "#/$defs/DietaryContributionRecord"
+          },
+          "title": "Dominant Commodity Contributors",
+          "type": "array"
+        },
+        "assumptions_applied": {
+          "items": {
+            "$ref": "#/$defs/DietaryAssumptionRecord"
+          },
+          "title": "Assumptions Applied",
+          "type": "array"
+        },
+        "provenance": {
+          "$ref": "#/$defs/ProvenanceBundle"
+        },
+        "quality_flags": {
+          "items": {
+            "$ref": "#/$defs/QualityFlag"
+          },
+          "title": "Quality Flags",
+          "type": "array"
+        },
+        "limitations": {
+          "items": {
+            "$ref": "#/$defs/LimitationNote"
+          },
+          "title": "Limitations",
+          "type": "array"
+        },
+        "result_metadata": {
+          "$ref": "#/$defs/ResultMetadata"
+        }
+      },
+      "required": [
+        "scenario_id",
+        "scenario_class",
+        "intake_window_semantic",
+        "total_intake_mg_per_kg_bw_per_day",
+        "population_group",
+        "region_id",
+        "body_weight_kg",
+        "fit_for_purpose",
+        "commodity_contributions",
+        "dominant_commodity_contributors",
+        "assumptions_applied",
+        "provenance",
+        "result_metadata"
+      ],
+      "title": "DietaryIntakeSummary",
+      "type": "object"
+    },
+    "DietaryResidueProfile": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "profile_id": {
+          "title": "Profile Id",
+          "type": "string"
+        },
+        "chemical_identity": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Chemical Identity",
+          "type": "object"
+        },
+        "region_id": {
+          "title": "Region Id",
+          "type": "string"
+        },
+        "records": {
+          "items": {
+            "$ref": "#/$defs/DietaryCommodityResidueRecord"
+          },
+          "title": "Records",
+          "type": "array"
+        },
+        "provenance": {
+          "$ref": "#/$defs/ProvenanceBundle"
+        },
+        "quality_flags": {
+          "items": {
+            "$ref": "#/$defs/QualityFlag"
+          },
+          "title": "Quality Flags",
+          "type": "array"
+        },
+        "limitations": {
+          "items": {
+            "$ref": "#/$defs/LimitationNote"
+          },
+          "title": "Limitations",
+          "type": "array"
+        }
+      },
+      "required": [
+        "chemical_identity",
+        "region_id",
+        "records",
+        "provenance"
+      ],
+      "title": "DietaryResidueProfile",
+      "type": "object"
+    },
+    "ExecutionStatus": {
+      "enum": [
+        "completed",
+        "failed"
+      ],
+      "title": "ExecutionStatus",
+      "type": "string"
+    },
+    "ExposurePlausibilityRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "schemaVersion": {
+          "default": "exposurePlausibilityRecord.v1",
+          "title": "Schemaversion",
+          "type": "string"
+        },
+        "recordId": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Recordid"
+        },
+        "chemicalId": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Chemicalid"
+        },
+        "chemicalName": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Chemicalname"
+        },
+        "classification": {
+          "title": "Classification",
+          "type": "string"
+        },
+        "decisionEffect": {
+          "title": "Decisioneffect",
+          "type": "string"
+        },
+        "ratioToHumanExposure": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ratiotohumanexposure"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        }
+      },
+      "required": [
+        "classification",
+        "decisionEffect",
+        "rationale"
+      ],
+      "title": "ExposurePlausibilityRecord",
+      "type": "object"
+    },
+    "FitForPurpose": {
+      "enum": [
+        "screening",
+        "downstream_export",
+        "benchmark",
+        "comparison"
+      ],
+      "title": "FitForPurpose",
+      "type": "string"
+    },
+    "IntakeWindowSemantic": {
+      "enum": [
+        "acute",
+        "chronic"
+      ],
+      "title": "IntakeWindowSemantic",
+      "type": "string"
+    },
+    "LimitationNote": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "title": "LimitationNote",
+      "type": "object"
+    },
+    "MappingConfidence": {
+      "enum": [
+        "reviewed",
+        "provisional",
+        "heuristic"
+      ],
+      "title": "MappingConfidence",
+      "type": "string"
+    },
+    "ModelFamily": {
+      "enum": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "title": "ModelFamily",
+      "type": "string"
+    },
+    "PopulationContext": {
+      "additionalProperties": false,
+      "properties": {
+        "population_group": {
+          "title": "Population Group",
+          "type": "string"
+        },
+        "region_id": {
+          "title": "Region Id",
+          "type": "string"
+        },
+        "body_weight_kg": {
+          "exclusiveMinimum": 0.0,
+          "title": "Body Weight Kg",
+          "type": "number"
+        },
+        "source_profile_id": {
+          "title": "Source Profile Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "population_group",
+        "region_id",
+        "body_weight_kg",
+        "source_profile_id"
+      ],
+      "title": "PopulationContext",
+      "type": "object"
+    },
+    "ProcessedStatus": {
+      "enum": [
+        "raw_primary_commodity",
+        "processed_derivative"
+      ],
+      "title": "ProcessedStatus",
+      "type": "string"
+    },
+    "ProvenanceBundle": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "defaults_version": {
+          "default": "v1",
+          "title": "Defaults Version",
+          "type": "string"
+        },
+        "algorithm_version": {
+          "title": "Algorithm Version",
+          "type": "string"
+        },
+        "generated_at": {
+          "format": "date-time",
+          "title": "Generated At",
+          "type": "string"
+        },
+        "source_references": {
+          "items": {
+            "$ref": "#/$defs/SourceReference"
+          },
+          "title": "Source References",
+          "type": "array"
+        }
+      },
+      "required": [
+        "algorithm_version",
+        "generated_at"
+      ],
+      "title": "ProvenanceBundle",
+      "type": "object"
+    },
+    "QualityFlag": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "severity": {
+          "$ref": "#/$defs/Severity"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "severity",
+        "message"
+      ],
+      "title": "QualityFlag",
+      "type": "object"
+    },
+    "ResidueSourceType": {
+      "enum": [
+        "monitoring",
+        "modeled",
+        "curated_default",
+        "user_supplied",
+        "reconciled"
+      ],
+      "title": "ResidueSourceType",
+      "type": "string"
+    },
+    "ResultMetadata": {
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/ExecutionStatus",
+          "description": "Execution state for this request."
+        },
+        "executed_at": {
+          "description": "UTC timestamp when execution finished.",
+          "format": "date-time",
+          "title": "Executed At",
+          "type": "string"
+        },
+        "execution_mode": {
+          "default": "synchronous",
+          "description": "Reserved for future async use.",
+          "title": "Execution Mode",
+          "type": "string"
+        },
+        "result_id": {
+          "description": "Stable identifier for this result envelope.",
+          "title": "Result Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "executed_at",
+        "result_id"
+      ],
+      "title": "ResultMetadata",
+      "type": "object"
+    },
+    "Route": {
+      "enum": [
+        "oral"
+      ],
+      "title": "Route",
+      "type": "string"
+    },
+    "ScenarioClass": {
+      "enum": [
+        "point_estimate",
+        "bounded_acute",
+        "bounded_chronic"
+      ],
+      "title": "ScenarioClass",
+      "type": "string"
+    },
+    "Severity": {
+      "enum": [
+        "info",
+        "warning",
+        "error"
+      ],
+      "title": "Severity",
+      "type": "string"
+    },
+    "SourceClassification": {
+      "enum": [
+        "user_input",
+        "curated_default",
+        "mapped",
+        "derived",
+        "heuristic"
+      ],
+      "title": "SourceClassification",
+      "type": "string"
+    },
+    "SourceOriginTag": {
+      "enum": [
+        "official_regulatory",
+        "curated_derived",
+        "illustrative_placeholder",
+        "internal_operational"
+      ],
+      "title": "SourceOriginTag",
+      "type": "string"
+    },
+    "SourceReference": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "effective_date": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Effective Date"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        },
+        "originTag": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceOriginTag"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "source_id",
+        "title"
+      ],
+      "title": "SourceReference",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "scenario": {
+      "$ref": "#/$defs/DietaryIntakeScenarioDefinition"
+    },
+    "summary": {
+      "$ref": "#/$defs/DietaryIntakeSummary"
+    },
+    "dosing_interval_hours": {
+      "default": 24.0,
+      "exclusiveMinimum": 0.0,
+      "title": "Dosing Interval Hours",
+      "type": "number"
+    },
+    "exposurePlausibilityRecords": {
+      "items": {
+        "$ref": "#/$defs/ExposurePlausibilityRecord"
+      },
+      "title": "Exposureplausibilityrecords",
+      "type": "array"
+    }
+  },
+  "required": [
+    "scenario",
+    "summary"
+  ],
+  "title": "ExportPbpkOralInputRequest",
+  "type": "object"
+}

@@ -1,0 +1,982 @@
+{
+  "version": "v1",
+  "cases": [
+    {
+      "name": "adult_chronic_single_commodity",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "adult_general",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "residueRecords": [
+        {
+          "commodityCode": "apples",
+          "residueConcentrationMgPerKg": 0.2,
+          "sourceType": "monitoring"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.0005142857142857143,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "child_acute_bounded_single_commodity",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "child_1_6",
+      "intakeWindow": "acute",
+      "scenarioClass": "bounded_acute",
+      "residueRecords": [
+        {
+          "commodityCode": "apples",
+          "residueConcentrationMgPerKg": 0.3,
+          "lowerBoundMgPerKg": 0.25,
+          "upperBoundMgPerKg": 0.35,
+          "sourceType": "monitoring"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.0056,
+      "expectedLowerBoundMgPerKgBwPerDay": 0.004666666666666667,
+      "expectedUpperBoundMgPerKgBwPerDay": 0.006533333333333334,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "adult_chronic_multi_commodity_with_processing",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "adult_general",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "residueRecords": [
+        {
+          "commodityCode": "apples",
+          "residueConcentrationMgPerKg": 0.2,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "spinach",
+          "residueConcentrationMgPerKg": 0.4,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "milk",
+          "residueConcentrationMgPerKg": 0.03,
+          "sourceType": "curated_default"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.0008657142857142857,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "child_chronic_multi_commodity_with_processing",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "child_1_6",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "residueRecords": [
+        {
+          "commodityCode": "rice",
+          "residueConcentrationMgPerKg": 0.12,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "spinach",
+          "residueConcentrationMgPerKg": 0.2,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "milk",
+          "residueConcentrationMgPerKg": 0.05,
+          "sourceType": "curated_default"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.00192,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "adult_acute_bounded_multi_commodity",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "adult_general",
+      "intakeWindow": "acute",
+      "scenarioClass": "bounded_acute",
+      "residueRecords": [
+        {
+          "commodityCode": "spinach",
+          "residueConcentrationMgPerKg": 0.5,
+          "lowerBoundMgPerKg": 0.4,
+          "upperBoundMgPerKg": 0.6,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "rice",
+          "residueConcentrationMgPerKg": 0.2,
+          "lowerBoundMgPerKg": 0.15,
+          "upperBoundMgPerKg": 0.25,
+          "sourceType": "monitoring"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.0016785714285714286,
+      "expectedLowerBoundMgPerKgBwPerDay": 0.0013071428571428572,
+      "expectedUpperBoundMgPerKgBwPerDay": 0.00205,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "child_chronic_bounded_two_commodity",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "child_1_6",
+      "intakeWindow": "chronic",
+      "scenarioClass": "bounded_chronic",
+      "residueRecords": [
+        {
+          "commodityCode": "apples",
+          "residueConcentrationMgPerKg": 0.16,
+          "lowerBoundMgPerKg": 0.12,
+          "upperBoundMgPerKg": 0.2,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "milk",
+          "residueConcentrationMgPerKg": 0.04,
+          "lowerBoundMgPerKg": 0.03,
+          "upperBoundMgPerKg": 0.05,
+          "sourceType": "curated_default"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.00208,
+      "expectedLowerBoundMgPerKgBwPerDay": 0.00156,
+      "expectedUpperBoundMgPerKgBwPerDay": 0.0026,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "adult_chronic_alias_resolution",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "adult_general",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "residueRecords": [
+        {
+          "commodityCode": "apples_raw",
+          "residueConcentrationMgPerKg": 0.22,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "cow_milk",
+          "residueConcentrationMgPerKg": 0.06,
+          "sourceType": "curated_default"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.0007542857142857143,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "adolescent_chronic_new_commodities",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "adolescent_11_17",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "residueRecords": [
+        {
+          "commodityCode": "oranges",
+          "residueConcentrationMgPerKg": 0.18,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "tomatoes",
+          "residueConcentrationMgPerKg": 0.12,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "wheat",
+          "residueConcentrationMgPerKg": 0.04,
+          "sourceType": "curated_default"
+        },
+        {
+          "commodityCode": "chicken",
+          "residueConcentrationMgPerKg": 0.09,
+          "sourceType": "curated_default"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.0008673076923076923,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "older_adult_acute_bounded_new_commodities",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "older_adult_65_plus",
+      "intakeWindow": "acute",
+      "scenarioClass": "bounded_acute",
+      "residueRecords": [
+        {
+          "commodityCode": "potatoes",
+          "residueConcentrationMgPerKg": 0.15,
+          "lowerBoundMgPerKg": 0.1,
+          "upperBoundMgPerKg": 0.2,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "salmon",
+          "residueConcentrationMgPerKg": 0.25,
+          "lowerBoundMgPerKg": 0.2,
+          "upperBoundMgPerKg": 0.3,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "orange",
+          "residueConcentrationMgPerKg": 0.08,
+          "lowerBoundMgPerKg": 0.06,
+          "upperBoundMgPerKg": 0.1,
+          "sourceType": "monitoring"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.001123529411764706,
+      "expectedLowerBoundMgPerKgBwPerDay": 0.0008205882352941177,
+      "expectedUpperBoundMgPerKgBwPerDay": 0.001426470588235294,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "adult_chronic_new_commodity_aliases",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "adult_general",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "residueRecords": [
+        {
+          "commodityCode": "orange",
+          "residueConcentrationMgPerKg": 0.1,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "fresh_tomatoes",
+          "residueConcentrationMgPerKg": 0.07,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "white_potatoes",
+          "residueConcentrationMgPerKg": 0.05,
+          "sourceType": "curated_default"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.0004142857142857143,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "adult_chronic_full_profile_ten_commodity",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "adult_general",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "residueRecords": [
+        {
+          "commodityCode": "apples",
+          "residueConcentrationMgPerKg": 0.11,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "oranges",
+          "residueConcentrationMgPerKg": 0.08,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "spinach",
+          "residueConcentrationMgPerKg": 0.19,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "tomatoes",
+          "residueConcentrationMgPerKg": 0.07,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "potatoes",
+          "residueConcentrationMgPerKg": 0.05,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "rice",
+          "residueConcentrationMgPerKg": 0.06,
+          "sourceType": "curated_default"
+        },
+        {
+          "commodityCode": "wheat",
+          "residueConcentrationMgPerKg": 0.03,
+          "sourceType": "curated_default"
+        },
+        {
+          "commodityCode": "milk",
+          "residueConcentrationMgPerKg": 0.02,
+          "sourceType": "curated_default"
+        },
+        {
+          "commodityCode": "chicken",
+          "residueConcentrationMgPerKg": 0.04,
+          "sourceType": "curated_default"
+        },
+        {
+          "commodityCode": "salmon",
+          "residueConcentrationMgPerKg": 0.09,
+          "sourceType": "monitoring"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.001102142857142857,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "adolescent_bounded_chronic_alias_mix",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "adolescent_11_17",
+      "intakeWindow": "chronic",
+      "scenarioClass": "bounded_chronic",
+      "residueRecords": [
+        {
+          "commodityCode": "apple",
+          "residueConcentrationMgPerKg": 0.14,
+          "lowerBoundMgPerKg": 0.1,
+          "upperBoundMgPerKg": 0.18,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "oranges_raw",
+          "residueConcentrationMgPerKg": 0.12,
+          "lowerBoundMgPerKg": 0.09,
+          "upperBoundMgPerKg": 0.15,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "whole_milk",
+          "residueConcentrationMgPerKg": 0.03,
+          "lowerBoundMgPerKg": 0.02,
+          "upperBoundMgPerKg": 0.04,
+          "sourceType": "curated_default"
+        },
+        {
+          "commodityCode": "salmon_fillet",
+          "residueConcentrationMgPerKg": 0.17,
+          "lowerBoundMgPerKg": 0.14,
+          "upperBoundMgPerKg": 0.2,
+          "sourceType": "monitoring"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.0009211538461538462,
+      "expectedLowerBoundMgPerKgBwPerDay": 0.000673076923076923,
+      "expectedUpperBoundMgPerKgBwPerDay": 0.0011692307692307692,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "older_adult_acute_processed_and_alias_mix",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "older_adult_65_plus",
+      "intakeWindow": "acute",
+      "scenarioClass": "bounded_acute",
+      "residueRecords": [
+        {
+          "commodityCode": "apple_juice",
+          "residueConcentrationMgPerKg": 0.09,
+          "lowerBoundMgPerKg": 0.07,
+          "upperBoundMgPerKg": 0.11,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "tomatoes_raw",
+          "residueConcentrationMgPerKg": 0.13,
+          "lowerBoundMgPerKg": 0.1,
+          "upperBoundMgPerKg": 0.16,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "chicken_meat",
+          "residueConcentrationMgPerKg": 0.06,
+          "lowerBoundMgPerKg": 0.04,
+          "upperBoundMgPerKg": 0.08,
+          "sourceType": "curated_default"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.0006896323529411765,
+      "expectedLowerBoundMgPerKgBwPerDay": 0.0005188970588235294,
+      "expectedUpperBoundMgPerKgBwPerDay": 0.0008603676470588236,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "adolescent_acute_alias_mix",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "adolescent_11_17",
+      "intakeWindow": "acute",
+      "scenarioClass": "bounded_acute",
+      "residueRecords": [
+        {
+          "commodityCode": "oranges_raw",
+          "residueConcentrationMgPerKg": 0.14,
+          "lowerBoundMgPerKg": 0.1,
+          "upperBoundMgPerKg": 0.18,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "tomatoes_raw",
+          "residueConcentrationMgPerKg": 0.11,
+          "lowerBoundMgPerKg": 0.08,
+          "upperBoundMgPerKg": 0.14,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "chicken_meat",
+          "residueConcentrationMgPerKg": 0.06,
+          "lowerBoundMgPerKg": 0.04,
+          "upperBoundMgPerKg": 0.08,
+          "sourceType": "curated_default"
+        },
+        {
+          "commodityCode": "salmon_fillet",
+          "residueConcentrationMgPerKg": 0.09,
+          "lowerBoundMgPerKg": 0.07,
+          "upperBoundMgPerKg": 0.11,
+          "sourceType": "curated_default"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.001421153846153846,
+      "expectedLowerBoundMgPerKgBwPerDay": 0.0010211538461538461,
+      "expectedUpperBoundMgPerKgBwPerDay": 0.001821153846153846,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "older_adult_chronic_processed_alias_mix",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "older_adult_65_plus",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "residueRecords": [
+        {
+          "commodityCode": "apple_juice",
+          "residueConcentrationMgPerKg": 0.18,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "wheat_grain",
+          "residueConcentrationMgPerKg": 0.05,
+          "sourceType": "curated_default"
+        },
+        {
+          "commodityCode": "poultry_chicken",
+          "residueConcentrationMgPerKg": 0.08,
+          "sourceType": "curated_default"
+        },
+        {
+          "commodityCode": "salmon_raw",
+          "residueConcentrationMgPerKg": 0.12,
+          "sourceType": "monitoring"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.000524264705882353,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "adult_chronic_bounded_five_commodity_mix",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "adult_general",
+      "intakeWindow": "chronic",
+      "scenarioClass": "bounded_chronic",
+      "residueRecords": [
+        {
+          "commodityCode": "oranges",
+          "residueConcentrationMgPerKg": 0.1,
+          "lowerBoundMgPerKg": 0.08,
+          "upperBoundMgPerKg": 0.12,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "potatoes",
+          "residueConcentrationMgPerKg": 0.07,
+          "lowerBoundMgPerKg": 0.05,
+          "upperBoundMgPerKg": 0.09,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "wheat",
+          "residueConcentrationMgPerKg": 0.03,
+          "lowerBoundMgPerKg": 0.02,
+          "upperBoundMgPerKg": 0.04,
+          "sourceType": "curated_default"
+        },
+        {
+          "commodityCode": "milk",
+          "residueConcentrationMgPerKg": 0.02,
+          "lowerBoundMgPerKg": 0.015,
+          "upperBoundMgPerKg": 0.025,
+          "sourceType": "curated_default"
+        },
+        {
+          "commodityCode": "salmon",
+          "residueConcentrationMgPerKg": 0.06,
+          "lowerBoundMgPerKg": 0.04,
+          "upperBoundMgPerKg": 0.08,
+          "sourceType": "monitoring"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.0005171428571428572,
+      "expectedLowerBoundMgPerKgBwPerDay": 0.0003842857142857143,
+      "expectedUpperBoundMgPerKgBwPerDay": 0.0006500000000000001,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "pregnant_chronic_new_commodity_mix",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "pregnant_adult",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "residueRecords": [
+        {
+          "commodityCode": "eggs",
+          "residueConcentrationMgPerKg": 0.08,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "oats",
+          "residueConcentrationMgPerKg": 0.05,
+          "sourceType": "curated_default"
+        },
+        {
+          "commodityCode": "beans_and_pulses",
+          "residueConcentrationMgPerKg": 0.07,
+          "sourceType": "curated_default"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.0001967741935483871,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "adult_chronic_processed_oatmeal_and_canned_beans",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "adult_general",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "residueRecords": [
+        {
+          "commodityCode": "oatmeal",
+          "residueConcentrationMgPerKg": 0.06,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "canned_beans",
+          "residueConcentrationMgPerKg": 0.04,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "hen_eggs",
+          "residueConcentrationMgPerKg": 0.03,
+          "sourceType": "curated_default"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 9.714285714285714e-05,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "child_acute_bounded_new_commodities",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "child_1_6",
+      "intakeWindow": "acute",
+      "scenarioClass": "bounded_acute",
+      "residueRecords": [
+        {
+          "commodityCode": "egg",
+          "residueConcentrationMgPerKg": 0.09,
+          "lowerBoundMgPerKg": 0.07,
+          "upperBoundMgPerKg": 0.11,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "rolled_oats",
+          "residueConcentrationMgPerKg": 0.05,
+          "lowerBoundMgPerKg": 0.03,
+          "upperBoundMgPerKg": 0.07,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "beans_canned",
+          "residueConcentrationMgPerKg": 0.04,
+          "lowerBoundMgPerKg": 0.02,
+          "upperBoundMgPerKg": 0.06,
+          "sourceType": "curated_default"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.001,
+      "expectedLowerBoundMgPerKgBwPerDay": 0.00064,
+      "expectedUpperBoundMgPerKgBwPerDay": 0.00136,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "older_adult_bounded_chronic_new_commodities",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "older_adult_65_plus",
+      "intakeWindow": "chronic",
+      "scenarioClass": "bounded_chronic",
+      "residueRecords": [
+        {
+          "commodityCode": "eggs",
+          "residueConcentrationMgPerKg": 0.07,
+          "lowerBoundMgPerKg": 0.05,
+          "upperBoundMgPerKg": 0.09,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "oats",
+          "residueConcentrationMgPerKg": 0.04,
+          "lowerBoundMgPerKg": 0.03,
+          "upperBoundMgPerKg": 0.05,
+          "sourceType": "curated_default"
+        },
+        {
+          "commodityCode": "beans_and_pulses",
+          "residueConcentrationMgPerKg": 0.06,
+          "lowerBoundMgPerKg": 0.04,
+          "upperBoundMgPerKg": 0.08,
+          "sourceType": "curated_default"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.00012058823529411765,
+      "expectedLowerBoundMgPerKgBwPerDay": 8.529411764705882e-05,
+      "expectedUpperBoundMgPerKgBwPerDay": 0.00015588235294117648,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "glyphosate_adult_chronic_processed_oatmeal_and_canned_beans",
+      "chemicalIdentity": {
+        "preferredName": "Glyphosate",
+        "casrn": "1071-83-6"
+      },
+      "populationGroup": "adult_general",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "residueRecords": [
+        {
+          "commodityCode": "oatmeal",
+          "residueConcentrationMgPerKg": 0.06,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "canned_beans",
+          "residueConcentrationMgPerKg": 0.04,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "hen_eggs",
+          "residueConcentrationMgPerKg": 0.03,
+          "sourceType": "curated_default"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 9.714285714285714e-05,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "imidacloprid_child_acute_bounded_new_commodities",
+      "chemicalIdentity": {
+        "preferredName": "Imidacloprid",
+        "casrn": "138261-41-3"
+      },
+      "populationGroup": "child_1_6",
+      "intakeWindow": "acute",
+      "scenarioClass": "bounded_acute",
+      "residueRecords": [
+        {
+          "commodityCode": "egg",
+          "residueConcentrationMgPerKg": 0.09,
+          "lowerBoundMgPerKg": 0.07,
+          "upperBoundMgPerKg": 0.11,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "rolled_oats",
+          "residueConcentrationMgPerKg": 0.05,
+          "lowerBoundMgPerKg": 0.03,
+          "upperBoundMgPerKg": 0.07,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "beans_canned",
+          "residueConcentrationMgPerKg": 0.04,
+          "lowerBoundMgPerKg": 0.02,
+          "upperBoundMgPerKg": 0.06,
+          "sourceType": "curated_default"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.001,
+      "expectedLowerBoundMgPerKgBwPerDay": 0.00064,
+      "expectedUpperBoundMgPerKgBwPerDay": 0.00136,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "pfas_adult_chronic_bounded",
+      "chemicalIdentity": {
+        "preferredName": "Sum of 4 PFAS",
+        "casrn": "N/A"
+      },
+      "populationGroup": "adult_general",
+      "intakeWindow": "chronic",
+      "scenarioClass": "bounded_chronic",
+      "residueRecords": [
+        {
+          "commodityCode": "eggs",
+          "residueConcentrationMgPerKg": 0.001,
+          "lowerBoundMgPerKg": 0.0005,
+          "upperBoundMgPerKg": 0.0015,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "salmon",
+          "residueConcentrationMgPerKg": 0.005,
+          "lowerBoundMgPerKg": 0.003,
+          "upperBoundMgPerKg": 0.007,
+          "sourceType": "monitoring"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.000003428571428571429,
+      "expectedLowerBoundMgPerKgBwPerDay": 0.000002,
+      "expectedUpperBoundMgPerKgBwPerDay": 0.000004857142857142858,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "bpa_adult_chronic_processed",
+      "chemicalIdentity": {
+        "preferredName": "Bisphenol A",
+        "casrn": "80-05-7"
+      },
+      "populationGroup": "adult_general",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "residueRecords": [
+        {
+          "commodityCode": "canned_beans",
+          "residueConcentrationMgPerKg": 0.05,
+          "sourceType": "monitoring"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.00003571428571428572,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "acrylamide_adult_chronic_processed",
+      "chemicalIdentity": {
+        "preferredName": "Acrylamide",
+        "casrn": "79-06-1"
+      },
+      "populationGroup": "adult_general",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "residueRecords": [
+        {
+          "commodityCode": "potatoes",
+          "residueConcentrationMgPerKg": 0.2,
+          "sourceType": "monitoring"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.0004571428571428571,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "processing_factor_oil_extraction_and_drying",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "adult_general",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "residueRecords": [
+        {
+          "commodityCode": "olive_oil",
+          "residueConcentrationMgPerKg": 0.5,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "raisins",
+          "residueConcentrationMgPerKg": 0.3,
+          "sourceType": "monitoring"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.0,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "us_adult_general_glyphosate_chronic",
+      "chemicalIdentity": {
+        "preferredName": "Glyphosate",
+        "casrn": "1071-83-6"
+      },
+      "populationGroup": "adult_general",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "residueRecords": [
+        {
+          "commodityCode": "apples",
+          "residueConcentrationMgPerKg": 0.5,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "potatoes",
+          "residueConcentrationMgPerKg": 0.3,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "wheat",
+          "residueConcentrationMgPerKg": 0.2,
+          "sourceType": "monitoring"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.002371428571428571,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inorganic_arsenic_adult_chronic",
+      "chemicalIdentity": {
+        "preferredName": "Inorganic arsenic",
+        "casrn": "N/A"
+      },
+      "populationGroup": "adult_general",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "residueRecords": [
+        {
+          "commodityCode": "rice",
+          "residueConcentrationMgPerKg": 0.15,
+          "sourceType": "monitoring"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.0002571428571428571,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "mercury_adult_chronic",
+      "chemicalIdentity": {
+        "preferredName": "Mercury",
+        "casrn": "7439-97-6"
+      },
+      "populationGroup": "adult_general",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "residueRecords": [
+        {
+          "commodityCode": "salmon",
+          "residueConcentrationMgPerKg": 0.5,
+          "sourceType": "monitoring"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.00028571428571428574,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "infant_0_6_mo_milk_chronic_scaling",
+      "chemicalIdentity": {
+        "preferredName": "Scaling substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "infant_0_6_mo",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "residueRecords": [
+        {
+          "commodityCode": "milk",
+          "residueConcentrationMgPerKg": 0.1,
+          "sourceType": "monitoring"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.001,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "adult_general_milk_chronic_scaling",
+      "chemicalIdentity": {
+        "preferredName": "Scaling substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "adult_general",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "residueRecords": [
+        {
+          "commodityCode": "milk",
+          "residueConcentrationMgPerKg": 0.1,
+          "sourceType": "monitoring"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.0003142857142857143,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "recipe_decomposition_apple_pie",
+      "chemicalIdentity": {
+        "preferredName": "Benchmark substance",
+        "casrn": "100-00-0"
+      },
+      "populationGroup": "recipe_test_pop",
+      "intakeWindow": "chronic",
+      "scenarioClass": "point_estimate",
+      "residueRecords": [
+        {
+          "commodityCode": "apples",
+          "residueConcentrationMgPerKg": 0.2,
+          "sourceType": "monitoring"
+        },
+        {
+          "commodityCode": "wheat",
+          "residueConcentrationMgPerKg": 0.1,
+          "sourceType": "monitoring"
+        }
+      ],
+      "expectedTotalIntakeMgPerKgBwPerDay": 0.00021428571428571433,
+      "tolerance": 1e-12
+    }
+  ]
+}

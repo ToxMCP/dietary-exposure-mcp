@@ -1,0 +1,56 @@
+{
+  "$defs": {
+    "ContaminantFamily": {
+      "enum": [
+        "pesticide_residue",
+        "microplastics_emerging",
+        "pfas_food_contaminants",
+        "acrylamide_process_contaminants",
+        "bisphenol_food_contact_migration",
+        "cadmium_food_contaminants",
+        "lead_food_contaminants",
+        "inorganic_arsenic_food_contaminants",
+        "mercury_food_contaminants",
+        "food_contaminant"
+      ],
+      "title": "ContaminantFamily",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "jurisdiction": {
+      "minLength": 1,
+      "title": "Jurisdiction",
+      "type": "string"
+    },
+    "datasetId": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Datasetid"
+    },
+    "contaminantFamily": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ContaminantFamily"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "jurisdiction"
+  ],
+  "title": "LookupConsumptionDatasetSupportRequest",
+  "type": "object"
+}

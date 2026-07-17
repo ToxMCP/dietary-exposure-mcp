@@ -1,0 +1,215 @@
+{
+  "defaultsVersion": "v1",
+  "files": [
+    {
+      "path": "defaults/v1/analytical_method_evidence_registry.json",
+      "sha256": "4aedfa55383272a804e512a590f7a726d7685ccf68fac62fa0466fce55e8f685",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/analytical_method_evidence_registry_content_expansion.json",
+      "sha256": "77cacded6594a2880d95293381053b3d0408216ad91a3c91fd89413c7db550fd",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/commodity_taxonomy.json",
+      "sha256": "422a1828e46121171fc4d3c01bd88b6b26df63514dbf724dc2b8a34f0583103b",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/composition_recipes.json",
+      "sha256": "ce158c39c9e68e7167f65d88b4d690333eafd9463538591556878dc694b94b6d",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/consumption_datasets.json",
+      "sha256": "f4ab7e025d21055b67e591699e64cfffacedaa560ac0a8af4a07394596f08cd1",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/consumption_profiles.json",
+      "sha256": "e10403e1bbd0edb10271586ef8f550007ae98f68830d5b5eae82c382243bdc34",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/consumption_profiles_pregnancy_public.json",
+      "sha256": "1abe3d41cc4b4ddcf105f00b7c9401ef26537fd9c57d0037e6cc915c58adab50",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/consumption_profiles_who_gems_public.json",
+      "sha256": "74daaa02befeb85a2c5e8ec79060e010717f1a5fe1f794284c376827e582c10a",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/contaminant_legal_limits_wave2.json",
+      "sha256": "7b5213823863c92049b4e95cc8215b4d38cb846c1168555788f833588a2cd05a",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/core_defaults.json",
+      "sha256": "f631b3b73bb858444b0e27456c4a154efeb81eb6025475316ee66f1bc611d761",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/emerging_contaminants.json",
+      "sha256": "9eb7bbcb26ec2160023c3f89a8d73bed912e7cfc003a9eff268d0cd2c3d90d13",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/food_vocabulary_crosswalk.json",
+      "sha256": "31fb8aad8ecfacc168f589955f691e2d1430fae4a80066e7c5c544ce5ee5fabe",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/jurisdiction_coverage_wave1.json",
+      "sha256": "b7d3a4ac20514eaa62918ff9663c5188a97b7d7f6c4b263f4c7b1088034da085",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/legal_authorities.json",
+      "sha256": "fc29653d5c23c0f0e330cbdf0640b65f4ed1cbe778a63d895f7fabab7e0bf456",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/legal_authorities_contaminant_legal_limits_wave2.json",
+      "sha256": "70afcae0d8fef5844fcc9495d4a7ecfd262c57952c58142d9368b8f09912ff31",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/legal_authorities_jurisdiction_wave1.json",
+      "sha256": "0d6de76591f34debe7108e40e1db11e5f1216e8e1f8bb9dc2eab62d6336599ee",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/metals_occurrence_registry.json",
+      "sha256": "ddbf8ca466065e5dabf8a89ebbdde033441f00b1b7a3ece0acb8fbd26d99f763",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/metals_review_focus_registry.json",
+      "sha256": "efe448936491d4045d39a0face2e3534f3d41fe88e0457f2117022340c6b7831",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/method_registry.json",
+      "sha256": "55babf31b8f587cb2eef7f5e422c55f31a83cf9fa78289776bf909836d2f3be1",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/method_registry_content_expansion.json",
+      "sha256": "b750b4d8ee04d51ffa8d4372e9887bc2d3b530f7994eb0521bfaff10703c95d0",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/method_registry_pesticide_expansion.json",
+      "sha256": "3b5221ab56f9d6eaf5d08dcc7b302275b1d3986c720eb1d9e8351fdfe82fcd5e",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/model_governance.json",
+      "sha256": "aba27caa42c1ab43606338c900f803751e94c525d46ec9d04298d774cd299f93",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/mrl_enforcement.json",
+      "sha256": "cdd7da76edc5f1a096344e7c8cea53d3e46b71472a734c52d7ced7dfbe4990ef",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/mrl_enforcement_eu.json",
+      "sha256": "d7fedf8194102411f9e47f6e7aa2ab207eb1c2797a00bf785676fdab60051973",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/mrl_enforcement_jurisdiction_wave1.json",
+      "sha256": "d9c95686f26582b18372e59ebe7e819603a7e56c3083d6fe2be7387d9a69a47a",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/occurrence_evidence_registry.json",
+      "sha256": "25df5df1f35519d0a35f15425ceea68e18295f616e007206cfdba244bf098041",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/occurrence_evidence_registry_content_expansion.json",
+      "sha256": "923edb686815ba6c2a3636531c3bcb126234ea0bfef1fade1ae5201d2590df81",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/openfoodtox_reference_value_provenance.json",
+      "sha256": "ca8ee8de1f369cad71a68d0f15615aa0057166424c1e94d13c21d70f25fbb2f0",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/reference_values.json",
+      "sha256": "a3e1b09ed05b538e3a0cd180523b6663d185491678b54048affd34aab546ef8e",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/reference_values_content_expansion.json",
+      "sha256": "6bf4b06465025f47e1baba2cca384c4a0ff49e7d92282f9d4a7b53b34d9e9e2e",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/reference_values_jurisdiction_wave1.json",
+      "sha256": "1d06aef6cb1a94d40d04ab0906f58e372ac9c54529198520520760a8f026f1f4",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/reference_values_openfoodtox.json",
+      "sha256": "1512c1d194f5e1d984e293bd87a2ff3d3a911053045373afe3363713c3a12cdb",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/regulatory_readiness_profiles.json",
+      "sha256": "2bd0db9727f4be4def5088c6593583beb38f75ad0001fe6731165f8db1403eb1",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/reporting_profiles.json",
+      "sha256": "59598dadaf4e2c8298cbfa133d9c1e6022a1a69a075d07384a1459c8afc624e8",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/source_catalog.json",
+      "sha256": "36529b2643a45f1bfd4741adf249766a03e4782be90c4db7d4e077512f25bb6a",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/source_catalog_contaminant_legal_limits_wave2.json",
+      "sha256": "ad5a156cac26abd9dab8b1620a06b280738a4697ea524d1bd8684b033925ceed",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/source_catalog_content_expansion.json",
+      "sha256": "c99c980dee762d6d2fe5e1849e77e22d68c55898d55d9b61455f265b875332f8",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/source_catalog_jurisdiction_wave1.json",
+      "sha256": "4d37e8d1ad6d68e557ab53b10d865b00c9a7062558673558d536b7dd116348c8",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/source_catalog_pesticide_expansion.json",
+      "sha256": "685c51de8ff1f9863887e819e175dadaa7d2f760b24df2383eb3eba1840d9b1c",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/v1/substance_synonyms.json",
+      "sha256": "4a0cecdd264c0412739f566582c3feaf089eb213a1b5ccf5a101c9bb8e31e536",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/extensions/v1/commodity_taxonomy/eu_mrl.json",
+      "sha256": "008c911916b0b7b885512cd852b00c2f9612ba74a8fa55d11cce5a79263194e3",
+      "defaultsVersion": "v1"
+    },
+    {
+      "path": "defaults/extensions/v1/reporting_profiles/netherlands_pfas_reporting.json",
+      "sha256": "bdbd5f8cdb2fb982e6cfc0b6e11508a8725d36a171d1966205543770e29eab70",
+      "defaultsVersion": "v1"
+    }
+  ]
+}

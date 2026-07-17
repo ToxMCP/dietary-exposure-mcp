@@ -1,0 +1,189 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "legal_authorities",
+  "validationProfile": "official_primary_wave1",
+  "authorities": [
+    {
+      "authorityId": "us.epa.pesticides.40cfr_part_180.govinfo_2024",
+      "title": "40 CFR Part 180 - Tolerances and Exemptions for Pesticide Chemical Residues in Food",
+      "citation": "40 CFR Part 180 (2024 annual edition)",
+      "jurisdiction": "us",
+      "contaminantFamily": "pesticide_residue",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "us.govinfo.cfr.40_180.part.2024",
+      "notes": [
+        "Wave-1 official U.S. pesticide tolerance legal anchor pinned to the GovInfo annual edition."
+      ]
+    },
+    {
+      "authorityId": "us.fda.inorganic_arsenic.rice_cereals.action_level.2020",
+      "title": "Guidance for Industry: Action Level for Inorganic Arsenic in Rice Cereals for Infants",
+      "citation": "FDA guidance, August 2020",
+      "jurisdiction": "us",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "regulatoryRole": "guidance",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "sourceId": "us.fda.inorganic_arsenic.rice_cereals.guidance.2020",
+      "notes": [
+        "Official final FDA action-level guidance used as an anchor-only U.S. inorganic arsenic record in wave 1."
+      ]
+    },
+    {
+      "authorityId": "us.fda.lead.processed_foods.action_levels.2025",
+      "title": "Guidance for Industry: Action Levels for Lead in Processed Food Intended for Babies and Young Children",
+      "citation": "FDA guidance, January 2025",
+      "jurisdiction": "us",
+      "contaminantFamily": "lead_food_contaminants",
+      "regulatoryRole": "guidance",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "sourceId": "us.fda.lead.processed_foods.guidance.2025",
+      "notes": [
+        "Official final FDA action-level guidance used as an anchor-only U.S. lead record in wave 1."
+      ]
+    },
+    {
+      "authorityId": "codex.ccpr.pesticide_database.2024",
+      "title": "Codex Pesticides Residues in Food Online Database",
+      "citation": "Codex online pesticide database",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "pesticide_residue",
+      "regulatoryRole": "guidance",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "sourceId": "codex.pesticide_database.2024",
+      "notes": [
+        "Official Codex pesticide database used as the wave-1 Codex pesticide anchor."
+      ]
+    },
+    {
+      "authorityId": "codex.cccf.cxs_193_1995.current_2025.cadmium",
+      "title": "General Standard for Contaminants and Toxins in Food and Feed (CXS 193-1995), current official text after the 2025 amendment",
+      "citation": "CXS 193-1995 (current official text, amendment 2025)",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "cadmium_food_contaminants",
+      "regulatoryRole": "guidance",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "sourceId": "codex.cxs_193_1995.current_2025",
+      "notes": [
+        "Official Codex contaminants anchor for cadmium in the current 2025 text."
+      ]
+    },
+    {
+      "authorityId": "codex.cccf.cxs_193_1995.current_2025.lead",
+      "title": "General Standard for Contaminants and Toxins in Food and Feed (CXS 193-1995), current official text after the 2025 amendment",
+      "citation": "CXS 193-1995 (current official text, amendment 2025)",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "lead_food_contaminants",
+      "regulatoryRole": "guidance",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "sourceId": "codex.cxs_193_1995.current_2025",
+      "notes": [
+        "Official Codex contaminants anchor for lead in the current 2025 text."
+      ]
+    },
+    {
+      "authorityId": "codex.cccf.cxs_193_1995.current_2025.inorganic_arsenic",
+      "title": "General Standard for Contaminants and Toxins in Food and Feed (CXS 193-1995), current official text after the 2025 amendment",
+      "citation": "CXS 193-1995 (current official text, amendment 2025)",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "regulatoryRole": "guidance",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "sourceId": "codex.cxs_193_1995.current_2025",
+      "notes": [
+        "Official Codex contaminants anchor for inorganic arsenic in the current 2025 text."
+      ]
+    },
+    {
+      "authorityId": "codex.cccf.cxs_193_1995.current_2025.mercury",
+      "title": "General Standard for Contaminants and Toxins in Food and Feed (CXS 193-1995), current official text after the 2025 amendment",
+      "citation": "CXS 193-1995 (current official text, amendment 2025)",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "mercury_food_contaminants",
+      "regulatoryRole": "guidance",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "sourceId": "codex.cxs_193_1995.current_2025",
+      "notes": [
+        "Official Codex contaminants anchor for mercury and methylmercury in the current 2025 text."
+      ]
+    },
+    {
+      "authorityId": "cn.nhc.pesticides.gb_2763_2026",
+      "title": "National Food Safety Standard - Maximum Residue Limits for Pesticides in Food",
+      "citation": "GB 2763-2026",
+      "jurisdiction": "cn",
+      "contaminantFamily": "pesticide_residue",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "cn.nhc.gb2763.2026.announcement",
+      "notes": [
+        "Official current Chinese pesticide residue legal anchor for wave 1."
+      ]
+    },
+    {
+      "authorityId": "cn.nhc.cadmium.gb_2762_2025",
+      "title": "National Food Safety Standard - Maximum Levels of Contaminants in Foods",
+      "citation": "GB 2762-2025",
+      "jurisdiction": "cn",
+      "contaminantFamily": "cadmium_food_contaminants",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "cn.nhc.gb2762.2025.announcement",
+      "notes": [
+        "Official current Chinese contaminant legal anchor for cadmium in wave 1."
+      ]
+    },
+    {
+      "authorityId": "cn.nhc.lead.gb_2762_2025",
+      "title": "National Food Safety Standard - Maximum Levels of Contaminants in Foods",
+      "citation": "GB 2762-2025",
+      "jurisdiction": "cn",
+      "contaminantFamily": "lead_food_contaminants",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "cn.nhc.gb2762.2025.announcement",
+      "notes": [
+        "Official current Chinese contaminant legal anchor for lead in wave 1."
+      ]
+    },
+    {
+      "authorityId": "cn.nhc.inorganic_arsenic.gb_2762_2025",
+      "title": "National Food Safety Standard - Maximum Levels of Contaminants in Foods",
+      "citation": "GB 2762-2025",
+      "jurisdiction": "cn",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "cn.nhc.gb2762.2025.announcement",
+      "notes": [
+        "Official current Chinese contaminant legal anchor for inorganic arsenic in wave 1."
+      ]
+    },
+    {
+      "authorityId": "cn.nhc.mercury.gb_2762_2025",
+      "title": "National Food Safety Standard - Maximum Levels of Contaminants in Foods",
+      "citation": "GB 2762-2025",
+      "jurisdiction": "cn",
+      "contaminantFamily": "mercury_food_contaminants",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "cn.nhc.gb2762.2025.announcement",
+      "notes": [
+        "Official current Chinese contaminant legal anchor for mercury and methylmercury in wave 1."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "occurrence_result": {
+    "contaminant_family": "mercury_food_contaminants",
+    "jurisdiction": "eu",
+    "authority": null,
+    "records": [
+      {
+        "record_id": "efsa.mercury.occurrence_monitoring.support",
+        "display_name": "Mercury occurrence and monitoring support",
+        "authority": "EFSA",
+        "jurisdiction": "eu",
+        "contaminant_family": "mercury_food_contaminants",
+        "occurrence_kind": "dietary_context_monitoring_bridge",
+        "focus_substances": [
+          "methylmercury",
+          "inorganic_mercury"
+        ],
+        "matrix_scope": [
+          "broad_food_supply",
+          "fish_and_seafood"
+        ],
+        "maturity_status": "established",
+        "evidence_support_status": "established",
+        "submission_use": "allowed",
+        "document_status": "final_current",
+        "source_ids": [
+          "efsa.mercury.food.2012",
+          "efsa.mercury.fish_consumption.2026",
+          "efsa.metals.topic.2026",
+          "eu.reg.2023_915",
+          "eu.reg.333_2007"
+        ],
+        "method_ids": [
+          "efsa.mercury.food.2012_opinion",
+          "eu.mercury.official_control.333_2007"
+        ],
+        "legal_authority_ids": [
+          "eu.mercury.contaminants.reg_2023_915",
+          "eu.mercury.official_control.reg_333_2007"
+        ],
+        "dataset_ids": [
+          "efsa.comprehensive_food_consumption_db.mercury_support"
+        ],
+        "reference_value_record_ids": [
+          "efsa.methylmercury.twi.2012",
+          "efsa.inorganic_mercury.twi.2012"
+        ],
+        "priority_food_groups": [
+          "fish_and_seafood",
+          "large_predatory_fish",
+          "crustaceans_and_molluscs"
+        ],
+        "high_attention_foods": [
+          "swordfish",
+          "shark",
+          "bigeye_tuna",
+          "bluefin_tuna"
+        ],
+        "sensitive_population_groups": [
+          "women_who_are_pregnant_or_planning_pregnancy",
+          "foetus_and_unborn_child",
+          "young_children",
+          "high_fish_consumers"
+        ],
+        "review_questions": [
+          "Does the occurrence set distinguish large predatory species from mixed fish categories before review conclusions are drawn?",
+          "Is species-specific national advice relevant for high consumers, pregnancy-related review, or other sensitive-population communication?",
+          "Are methylmercury-driven fish and seafood contributors interpreted against the governed methylmercury TWI rather than a generic total-mercury threshold?"
+        ],
+        "trend_signals": [
+          "review_species_specific_consumption_frequency_for_high_mercury_fish"
+        ],
+        "notes": [
+          "Links EFSA mercury and methylmercury food-risk context with EU contaminants-law and official-control sampling and analysis governance.",
+          "Carries current review-oriented fish-species context for high consumers and pregnancy-related advice without implying a native species-level mercury engine.",
+          "Exposed for review-oriented provenance and monitoring context only."
+        ]
+      }
+    ],
+    "overall_submission_use": "allowed",
+    "submission_candidate_allowed": true,
+    "notes": [
+      "Mercury occurrence support is exposed as governed EFSA dietary context linked to EU contaminants-law and official-control context.",
+      "Records include high-attention fish-species and sensitive-population metadata for review-oriented interpretation only.",
+      "Mercury occurrence records preserve fish and seafood sensitivity notes without implying a native mercury exposure engine.",
+      "Metals-occurrence record efsa.mercury.occurrence_monitoring.support: Supporting sources mix historical anchors (efsa.mercury.food.2012) with newer context records (efsa.mercury.fish_consumption.2026, efsa.metals.topic.2026, eu.reg.2023_915, eu.reg.333_2007); confirm the older evidence base is still fit for the intended use."
+    ]
+  },
+  "review_focus_result": {
+    "contaminant_family": "mercury_food_contaminants",
+    "jurisdiction": "eu",
+    "authority": null,
+    "commodity_group": null,
+    "focus_food": "tuna",
+    "records": [
+      {
+        "focus_id": "efsa.mercury.large_predatory_fish.review_focus",
+        "display_name": "Mercury large predatory fish review focus",
+        "authority": "EFSA",
+        "jurisdiction": "eu",
+        "contaminant_family": "mercury_food_contaminants",
+        "focus_kind": "commodity_group_review_focus",
+        "commodity_groups": [
+          "fish_and_seafood",
+          "large_predatory_fish"
+        ],
+        "focus_foods": [
+          "swordfish",
+          "shark",
+          "bigeye_tuna",
+          "bluefin_tuna"
+        ],
+        "sensitive_population_groups": [
+          "high_fish_consumers"
+        ],
+        "linked_occurrence_record_ids": [
+          "efsa.mercury.occurrence_monitoring.support"
+        ],
+        "maturity_status": "established",
+        "evidence_support_status": "established",
+        "submission_use": "allowed",
+        "document_status": "final_current",
+        "source_ids": [
+          "efsa.mercury.food.2012",
+          "efsa.mercury.fish_consumption.2026",
+          "eu.reg.2023_915",
+          "eu.reg.333_2007"
+        ],
+        "method_ids": [
+          "efsa.mercury.food.2012_opinion",
+          "eu.mercury.official_control.333_2007"
+        ],
+        "legal_authority_ids": [
+          "eu.mercury.contaminants.reg_2023_915",
+          "eu.mercury.official_control.reg_333_2007"
+        ],
+        "dataset_ids": [
+          "efsa.comprehensive_food_consumption_db.mercury_support"
+        ],
+        "reference_value_record_ids": [
+          "efsa.methylmercury.twi.2012",
+          "efsa.inorganic_mercury.twi.2012"
+        ],
+        "review_questions": [
+          "Does the review package preserve species-level visibility for large predatory fish before downstream communication or mitigation decisions are made?",
+          "Are methylmercury-driven fish contributors still interpreted against the governed methylmercury TWI rather than generic total-mercury logic?"
+        ],
+        "notes": [
+          "Keeps large predatory fish explicit in mercury review workflows.",
+          "Exposed for reviewer triage and commodity-priority context only."
+        ]
+      },
+      {
+        "focus_id": "efsa.mercury.sensitive_population_advice.review_focus",
+        "display_name": "Mercury sensitive-population advice review focus",
+        "authority": "EFSA",
+        "jurisdiction": "eu",
+        "contaminant_family": "mercury_food_contaminants",
+        "focus_kind": "population_sensitive_review_focus",
+        "commodity_groups": [
+          "fish_and_seafood",
+          "large_predatory_fish"
+        ],
+        "focus_foods": [
+          "swordfish",
+          "shark",
+          "bigeye_tuna",
+          "bluefin_tuna"
+        ],
+        "sensitive_population_groups": [
+          "women_who_are_pregnant_or_planning_pregnancy",
+          "foetus_and_unborn_child",
+          "young_children"
+        ],
+        "linked_occurrence_record_ids": [
+          "efsa.mercury.occurrence_monitoring.support"
+        ],
+        "maturity_status": "established",
+        "evidence_support_status": "established",
+        "submission_use": "allowed",
+        "document_status": "final_current",
+        "source_ids": [
+          "efsa.mercury.food.2012",
+          "efsa.mercury.fish_consumption.2026",
+          "eu.reg.2023_915",
+          "eu.reg.333_2007"
+        ],
+        "method_ids": [
+          "efsa.mercury.food.2012_opinion",
+          "eu.mercury.official_control.333_2007"
+        ],
+        "legal_authority_ids": [
+          "eu.mercury.contaminants.reg_2023_915",
+          "eu.mercury.official_control.reg_333_2007"
+        ],
+        "dataset_ids": [
+          "efsa.comprehensive_food_consumption_db.mercury_support"
+        ],
+        "reference_value_record_ids": [
+          "efsa.methylmercury.twi.2012"
+        ],
+        "review_questions": [
+          "Is pregnancy-related or child-specific reviewer advice preserved as governed context instead of being inferred ad hoc from generic fish categories?",
+          "Where national fish-advice layers differ, is that divergence being treated as review input rather than silently normalized away?"
+        ],
+        "notes": [
+          "Keeps sensitive-population fish-consumption advice explicit in mercury review workflows.",
+          "Exposed for reviewer triage and population-priority context only."
+        ]
+      }
+    ],
+    "overall_submission_use": "allowed",
+    "submission_candidate_allowed": true,
+    "notes": [
+      "Mercury review-focus records keep large predatory fish and sensitive-population advice explicit for reviewer follow-up.",
+      "The metals-review-focus registry is not a live occurrence database or native mercury decision engine.",
+      "Focus-food filter applied: tuna."
+    ]
+  },
+  "bundle_note": "Illustrative metals monitoring interpretation bundle for governed mercury review context."
+}

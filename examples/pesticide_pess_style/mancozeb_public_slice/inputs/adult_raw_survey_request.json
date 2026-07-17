@@ -1,0 +1,87 @@
+{
+  "datasetId": "mancozeb_public_slice_adult_survey",
+  "regionId": "eu_screening_default",
+  "populationGroup": "adult_general",
+  "rawRecords": [
+    {
+      "subjectId": "adult_001",
+      "bodyWeightKg": 70.0,
+      "commodityCode": "apple_juice",
+      "consumptionKgPerDay": 0.2,
+      "surveyWeight": 1.0,
+      "daysInSurvey": 1,
+      "samplingStratum": "public_slice",
+      "surveyDayId": "d1"
+    },
+    {
+      "subjectId": "adult_001",
+      "bodyWeightKg": 70.0,
+      "commodityCode": "rice",
+      "consumptionKgPerDay": 0.1,
+      "surveyWeight": 1.0,
+      "daysInSurvey": 1,
+      "samplingStratum": "public_slice",
+      "surveyDayId": "d1"
+    },
+    {
+      "subjectId": "adult_002",
+      "bodyWeightKg": 62.0,
+      "commodityCode": "apple_juice",
+      "consumptionKgPerDay": 0.0,
+      "surveyWeight": 1.2,
+      "daysInSurvey": 1,
+      "samplingStratum": "public_slice",
+      "surveyDayId": "d1"
+    },
+    {
+      "subjectId": "adult_002",
+      "bodyWeightKg": 62.0,
+      "commodityCode": "rice",
+      "consumptionKgPerDay": 0.25,
+      "surveyWeight": 1.2,
+      "daysInSurvey": 1,
+      "samplingStratum": "public_slice",
+      "surveyDayId": "d1"
+    },
+    {
+      "subjectId": "adult_003",
+      "bodyWeightKg": 80.0,
+      "commodityCode": "apple_juice",
+      "consumptionKgPerDay": 0.15,
+      "surveyWeight": 0.8,
+      "daysInSurvey": 1,
+      "samplingStratum": "public_slice",
+      "surveyDayId": "d1"
+    },
+    {
+      "subjectId": "adult_003",
+      "bodyWeightKg": 80.0,
+      "commodityCode": "rice",
+      "consumptionKgPerDay": 0.05,
+      "surveyWeight": 0.8,
+      "daysInSurvey": 1,
+      "samplingStratum": "public_slice",
+      "surveyDayId": "d1"
+    },
+    {
+      "subjectId": "adult_004",
+      "bodyWeightKg": 68.0,
+      "commodityCode": "apple_juice",
+      "consumptionKgPerDay": 0.0,
+      "surveyWeight": 1.0,
+      "daysInSurvey": 1,
+      "samplingStratum": "public_slice",
+      "surveyDayId": "d1"
+    },
+    {
+      "subjectId": "adult_004",
+      "bodyWeightKg": 68.0,
+      "commodityCode": "rice",
+      "consumptionKgPerDay": 0.0,
+      "surveyWeight": 1.0,
+      "daysInSurvey": 1,
+      "samplingStratum": "public_slice",
+      "surveyDayId": "d1"
+    }
+  ]
+}

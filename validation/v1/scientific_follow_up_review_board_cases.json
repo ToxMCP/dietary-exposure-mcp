@@ -1,0 +1,139 @@
+{
+  "version": "v1",
+  "cases": [
+    {
+      "name": "efsa_primo_internal_review_empty_follow_up_review_board",
+      "scenario": "efsa_primo",
+      "targetProfile": "eu_internal_review",
+      "expectedOverallStatus": "review_required",
+      "expectedSourceWorkflow": "adapter_review_dossier",
+      "expectedOwnerLaneByAction": {},
+      "expectedDueStateByAction": {},
+      "expectedOwnerLaneGroups": {},
+      "expectedDueStateGroups": {},
+      "expectedRecommendedTriageSequence": []
+    },
+    {
+      "name": "mercury_contaminant_internal_review_follow_up_review_board",
+      "scenario": "mercury_contaminant",
+      "targetProfile": "mercury_internal_review",
+      "expectedOverallStatus": "pass",
+      "expectedSourceWorkflow": "contaminant_monitoring_review_dossier",
+      "expectedOwnerLaneByAction": {
+        "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context": "scientific_reviewer",
+        "review_scientific_ledger.row_level_lod_coverage": "scientific_reviewer",
+        "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control": "scientific_reviewer",
+        "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control": "scientific_reviewer"
+      },
+      "expectedDueStateByAction": {
+        "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context": "current_cycle",
+        "review_scientific_ledger.row_level_lod_coverage": "current_cycle",
+        "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control": "current_cycle",
+        "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control": "current_cycle"
+      },
+      "expectedOwnerLaneGroups": {
+        "scientific_reviewer": [
+          "review_scientific_ledger.row_level_lod_coverage",
+          "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+          "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control",
+          "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control"
+        ]
+      },
+      "expectedDueStateGroups": {
+        "current_cycle": [
+          "review_scientific_ledger.row_level_lod_coverage",
+          "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+          "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control",
+          "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control"
+        ]
+      },
+      "expectedRecommendedTriageSequence": [
+        "review_scientific_ledger.row_level_lod_coverage",
+        "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+        "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control",
+        "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control"
+      ]
+    },
+    {
+      "name": "mercury_contaminant_mixed_follow_up_review_board",
+      "scenario": "mercury_contaminant_mixed",
+      "targetProfile": "mercury_internal_review",
+      "expectedOverallStatus": "review_required",
+      "expectedSourceWorkflow": "contaminant_monitoring_review_dossier",
+      "expectedOwnerLaneByAction": {
+        "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context": "review_lead",
+        "review_scientific_ledger.row_level_lod_coverage": "scientific_reviewer",
+        "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control": "scientific_reviewer",
+        "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control": "scientific_reviewer"
+      },
+      "expectedDueStateByAction": {
+        "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context": "immediate",
+        "review_scientific_ledger.row_level_lod_coverage": "closed",
+        "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control": "closed",
+        "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control": "closed"
+      },
+      "expectedOwnerLaneGroups": {
+        "review_lead": [
+          "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context"
+        ],
+        "scientific_reviewer": [
+          "review_scientific_ledger.row_level_lod_coverage",
+          "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control",
+          "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control"
+        ]
+      },
+      "expectedDueStateGroups": {
+        "immediate": [
+          "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context"
+        ],
+        "closed": [
+          "review_scientific_ledger.row_level_lod_coverage",
+          "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control",
+          "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control"
+        ]
+      },
+      "expectedRecommendedTriageSequence": [
+        "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+        "review_scientific_ledger.row_level_lod_coverage",
+        "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control",
+        "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control"
+      ]
+    },
+    {
+      "name": "mercury_metals_submission_follow_up_review_board",
+      "scenario": "mercury_metals",
+      "targetProfile": "mercury_submission_candidate",
+      "expectedOverallStatus": "review_required",
+      "expectedSourceWorkflow": "metals_monitoring_review_dossier",
+      "expectedOwnerLaneByAction": {
+        "review_scientific_ledger.monitoring_context.efsa.mercury.occurrence_monitoring.support": "scientific_reviewer",
+        "review_scientific_ledger.sensitive_population_prompt_context": "scientific_reviewer",
+        "review_scientific_ledger.trend_signal_context": "scientific_reviewer"
+      },
+      "expectedDueStateByAction": {
+        "review_scientific_ledger.monitoring_context.efsa.mercury.occurrence_monitoring.support": "current_cycle",
+        "review_scientific_ledger.sensitive_population_prompt_context": "current_cycle",
+        "review_scientific_ledger.trend_signal_context": "current_cycle"
+      },
+      "expectedOwnerLaneGroups": {
+        "scientific_reviewer": [
+          "review_scientific_ledger.monitoring_context.efsa.mercury.occurrence_monitoring.support",
+          "review_scientific_ledger.sensitive_population_prompt_context",
+          "review_scientific_ledger.trend_signal_context"
+        ]
+      },
+      "expectedDueStateGroups": {
+        "current_cycle": [
+          "review_scientific_ledger.monitoring_context.efsa.mercury.occurrence_monitoring.support",
+          "review_scientific_ledger.sensitive_population_prompt_context",
+          "review_scientific_ledger.trend_signal_context"
+        ]
+      },
+      "expectedRecommendedTriageSequence": [
+        "review_scientific_ledger.monitoring_context.efsa.mercury.occurrence_monitoring.support",
+        "review_scientific_ledger.sensitive_population_prompt_context",
+        "review_scientific_ledger.trend_signal_context"
+      ]
+    }
+  ]
+}

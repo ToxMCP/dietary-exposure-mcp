@@ -1,0 +1,311 @@
+{
+  "schema_version": "v1",
+  "packet_id": "metals-monitoring-signoff-5f11c8068762",
+  "overallSignoffStatus": "open",
+  "reviewerId": "runtime.metals",
+  "reviewerRole": "scientific_reviewer",
+  "sourceBundleId": "metals-monitoring-bundle-e060bf13f8e7",
+  "contaminantFamily": "mercury_food_contaminants",
+  "jurisdiction": "eu",
+  "authority": null,
+  "overallSubmissionUse": "allowed",
+  "submissionCandidateAllowed": true,
+  "legalLimitReviews": [
+    {
+      "contaminantFamily": "mercury_food_contaminants",
+      "jurisdiction": "eu",
+      "substanceKey": null,
+      "commodityCode": null,
+      "matrixGroup": null,
+      "authority": null,
+      "requestedLaneStatus": "no_curated_family_coverage",
+      "curatedScopeCommodityCodes": [],
+      "curatedScopeMatrixGroups": [],
+      "legalAuthorities": [],
+      "matchedRecords": [],
+      "coverageSummaries": [],
+      "overallSubmissionUse": "review_required",
+      "qualityFlags": [
+        {
+          "code": "coverage_gap",
+          "severity": "warning",
+          "message": "No governed contaminant legal-limit coverage is currently curated for family `mercury_food_contaminants` in jurisdiction `eu`."
+        },
+        {
+          "code": "no_jurisdiction_specific_legal_limit",
+          "severity": "warning",
+          "message": "No jurisdiction-specific contaminant legal limit matched the requested lane for `eu`."
+        }
+      ],
+      "notes": [
+        "No governed contaminant legal-limit records matched the requested filters.",
+        "Jurisdiction-specific contaminant legal-limit gaps are surfaced explicitly instead of borrowing values from another authority or matrix."
+      ]
+    }
+  ],
+  "actionItems": [
+    {
+      "actionId": "review_occurrence_context",
+      "category": "occurrence_context",
+      "title": "Review occurrence context",
+      "priority": "review_required",
+      "blocking": false,
+      "summary": "Review monitored occurrence context, high-attention foods, and trend signals before interpreting this metals family.",
+      "linkedRecordIds": [
+        "efsa.mercury.occurrence_monitoring.support"
+      ],
+      "decisionStatus": "pending",
+      "rationale": null,
+      "reviewedAt": null,
+      "supportingUris": [],
+      "resolved": false
+    },
+    {
+      "actionId": "review_priority_food_groups",
+      "category": "priority_food_groups",
+      "title": "Review priority food groups",
+      "priority": "review_required",
+      "blocking": false,
+      "summary": "Confirm that the highest-priority food groups and high-attention foods remain explicit in the review package.",
+      "linkedRecordIds": [
+        "efsa.mercury.occurrence_monitoring.support",
+        "efsa.mercury.large_predatory_fish.review_focus",
+        "efsa.mercury.sensitive_population_advice.review_focus"
+      ],
+      "decisionStatus": "pending",
+      "rationale": null,
+      "reviewedAt": null,
+      "supportingUris": [],
+      "resolved": false
+    },
+    {
+      "actionId": "review_sensitive_populations",
+      "category": "sensitive_populations",
+      "title": "Review sensitive populations",
+      "priority": "fail",
+      "blocking": true,
+      "summary": "Confirm that sensitive-population context is reviewed explicitly before reviewer signoff is recorded.",
+      "linkedRecordIds": [
+        "efsa.mercury.occurrence_monitoring.support",
+        "efsa.mercury.large_predatory_fish.review_focus",
+        "efsa.mercury.sensitive_population_advice.review_focus"
+      ],
+      "decisionStatus": "pending",
+      "rationale": null,
+      "reviewedAt": null,
+      "supportingUris": [],
+      "resolved": false
+    },
+    {
+      "actionId": "review_commodity_focus_prompts",
+      "category": "commodity_focus",
+      "title": "Review commodity-focus prompts",
+      "priority": "review_required",
+      "blocking": false,
+      "summary": "Work through the governed commodity- and population-focus prompts linked to this bundle.",
+      "linkedRecordIds": [
+        "efsa.mercury.large_predatory_fish.review_focus",
+        "efsa.mercury.sensitive_population_advice.review_focus"
+      ],
+      "decisionStatus": "pending",
+      "rationale": null,
+      "reviewedAt": null,
+      "supportingUris": [],
+      "resolved": false
+    },
+    {
+      "actionId": "review_scientific_ledger.monitoring_context.efsa.mercury.occurrence_monitoring.support",
+      "category": "scientific_ledger_assumption",
+      "title": "Review occurrence data ledger entry",
+      "priority": "review_required",
+      "blocking": false,
+      "summary": "Occurrence interpretation relies on governed monitoring-support context. Keep the governed scientific ledger rationale explicit in reviewer signoff.",
+      "linkedRecordIds": [
+        "monitoring_context.efsa.mercury.occurrence_monitoring.support",
+        "efsa.mercury.occurrence_monitoring.support"
+      ],
+      "decisionStatus": "pending",
+      "rationale": null,
+      "reviewedAt": null,
+      "supportingUris": [],
+      "resolved": false
+    },
+    {
+      "actionId": "review_scientific_ledger.sensitive_population_prompt_context",
+      "category": "scientific_ledger_assumption",
+      "title": "Review sensitive population context ledger entry",
+      "priority": "review_required",
+      "blocking": false,
+      "summary": "Sensitive-population focus remains prompt-based review context. Keep the governed scientific ledger rationale explicit in reviewer signoff.",
+      "linkedRecordIds": [
+        "sensitive_population_prompt_context",
+        "efsa.mercury.large_predatory_fish.review_focus",
+        "efsa.mercury.sensitive_population_advice.review_focus"
+      ],
+      "decisionStatus": "pending",
+      "rationale": null,
+      "reviewedAt": null,
+      "supportingUris": [],
+      "resolved": false
+    },
+    {
+      "actionId": "review_scientific_ledger.trend_signal_context",
+      "category": "scientific_ledger_uncertainty",
+      "title": "Review trend signal ledger entry",
+      "priority": "review_required",
+      "blocking": false,
+      "summary": "Trend signals remain qualitative review cues. Keep the governed scientific ledger rationale explicit in reviewer signoff.",
+      "linkedRecordIds": [
+        "trend_signal_context",
+        "efsa.mercury.occurrence_monitoring.support"
+      ],
+      "decisionStatus": "pending",
+      "rationale": null,
+      "reviewedAt": null,
+      "supportingUris": [],
+      "resolved": false
+    },
+    {
+      "actionId": "review_governance_links",
+      "category": "governance_links",
+      "title": "Review governance links",
+      "priority": "fail",
+      "blocking": true,
+      "summary": "Confirm that source, method, legal, dataset, and reference-value links are sufficient for the intended review use.",
+      "linkedRecordIds": [
+        "efsa.mercury.occurrence_monitoring.support",
+        "efsa.mercury.large_predatory_fish.review_focus",
+        "efsa.mercury.sensitive_population_advice.review_focus"
+      ],
+      "decisionStatus": "pending",
+      "rationale": null,
+      "reviewedAt": null,
+      "supportingUris": [],
+      "resolved": false
+    }
+  ],
+  "pendingActionIds": [
+    "review_occurrence_context",
+    "review_priority_food_groups",
+    "review_sensitive_populations",
+    "review_commodity_focus_prompts",
+    "review_scientific_ledger.monitoring_context.efsa.mercury.occurrence_monitoring.support",
+    "review_scientific_ledger.sensitive_population_prompt_context",
+    "review_scientific_ledger.trend_signal_context",
+    "review_governance_links"
+  ],
+  "acknowledgedActionIds": [],
+  "completedActionIds": [],
+  "waivedActionIds": [],
+  "unresolvedBlockingActionIds": [
+    "review_sensitive_populations",
+    "review_governance_links"
+  ],
+  "referencedResources": [
+    {
+      "role": "metals_occurrence_manifest",
+      "uri": "metals-occurrence://manifest",
+      "description": "Governed metals-occurrence registry used to provide monitoring and occurrence context.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "metals_occurrence_family",
+      "uri": "metals-occurrence://family/mercury_food_contaminants",
+      "description": "Family-specific metals-occurrence records used in the interpretation bundle.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "metals_review_focus_manifest",
+      "uri": "metals-review-focus://manifest",
+      "description": "Governed metals review-focus registry used to provide commodity and population review prompts.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "metals_review_focus_family",
+      "uri": "metals-review-focus://family/mercury_food_contaminants",
+      "description": "Family-specific metals review-focus records used in the interpretation bundle.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "documentation",
+      "uri": "docs://metals-monitoring-interpretation",
+      "description": "Operator documentation describing the metals monitoring interpretation bundle workflow.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "occurrence_documentation",
+      "uri": "docs://metals-occurrence-registry",
+      "description": "Operator documentation for governed metals-occurrence records.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "review_focus_documentation",
+      "uri": "docs://metals-review-focus-registry",
+      "description": "Operator documentation for governed metals review-focus records.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "contaminant_legal_limits_manifest",
+      "uri": "contaminant-legal-limits://manifest",
+      "description": "Governed contaminant legal-limit manifest used to keep legal-limit support depth explicit during metals monitoring review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "contaminant_legal_limits_family",
+      "uri": "contaminant-legal-limits://family/mercury_food_contaminants",
+      "description": "Family-specific governed contaminant legal-limit records reviewed alongside the metals monitoring bundle.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "jurisdiction_coverage_manifest",
+      "uri": "jurisdiction-coverage://manifest",
+      "description": "Machine-readable jurisdiction coverage manifest used to keep coverage depth explicit during metals monitoring review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "contaminant_legal_limits_jurisdiction",
+      "uri": "contaminant-legal-limits://jurisdiction/eu",
+      "description": "Jurisdiction-scoped contaminant legal-limit records considered during metals monitoring review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "jurisdiction_coverage_jurisdiction",
+      "uri": "jurisdiction-coverage://jurisdiction/eu",
+      "description": "Jurisdiction-scoped coverage posture used to keep legal-limit support limits explicit during review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "emerging_family_governance",
+      "uri": "emerging-contaminants://family/mercury_food_contaminants",
+      "description": "Governed family-level readiness and evidence-maturity posture for this metals family.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "metals_monitoring_signoff_docs",
+      "uri": "docs://metals-monitoring-signoff",
+      "description": "Operator guide for reviewer-facing metals monitoring signoff packets.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    }
+  ],
+  "notes": [
+    "Signoff packet is a reviewer-facing overlay on top of the metals monitoring interpretation bundle and does not change the underlying bundle content.",
+    "Waived actions remain explicitly visible so downstream reviewers can inspect accepted deviations from the default review sequence.",
+    "Signed-off status records closure of the governed review workflow only; it does not certify scientific correctness, submission readiness, or regulatory approval.",
+    "Attached legal-limit review snapshots remain visible in signoff so family-level partial or missing jurisdiction support cannot be mistaken for a complete legal-limit layer.",
+    "At least one blocking metals monitoring action remains unresolved in the signoff packet."
+  ]
+}

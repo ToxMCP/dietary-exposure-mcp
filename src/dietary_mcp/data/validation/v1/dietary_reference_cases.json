@@ -1,0 +1,270 @@
+{
+  "version": "v1",
+  "cases": [
+    {
+      "name": "adult_general_profile_coverage",
+      "populationGroup": "adult_general",
+      "regionId": "eu_screening_default",
+      "applicableWindows": ["acute", "chronic"],
+      "commodityCoverage": [
+        "apples",
+        "oranges",
+        "spinach",
+        "tomatoes",
+        "potatoes",
+        "rice",
+        "wheat",
+        "milk",
+        "chicken",
+        "salmon"
+      ],
+      "expectedProfileId": "eu_adult_general_v1",
+      "expectedBodyWeightKg": 70.0
+    },
+    {
+      "name": "child_1_6_profile_coverage",
+      "populationGroup": "child_1_6",
+      "regionId": "eu_screening_default",
+      "applicableWindows": ["acute", "chronic"],
+      "commodityCoverage": [
+        "apples",
+        "oranges",
+        "spinach",
+        "tomatoes",
+        "potatoes",
+        "rice",
+        "wheat",
+        "milk",
+        "chicken",
+        "salmon"
+      ],
+      "expectedProfileId": "eu_child_screening_v1",
+      "expectedBodyWeightKg": 15.0
+    },
+    {
+      "name": "adolescent_11_17_profile_coverage",
+      "populationGroup": "adolescent_11_17",
+      "regionId": "eu_screening_default",
+      "applicableWindows": ["acute", "chronic"],
+      "commodityCoverage": [
+        "apples",
+        "oranges",
+        "spinach",
+        "tomatoes",
+        "potatoes",
+        "rice",
+        "wheat",
+        "milk",
+        "chicken",
+        "salmon"
+      ],
+      "expectedProfileId": "eu_adolescent_screening_v1",
+      "expectedBodyWeightKg": 52.0
+    },
+    {
+      "name": "older_adult_65_plus_profile_coverage",
+      "populationGroup": "older_adult_65_plus",
+      "regionId": "eu_screening_default",
+      "applicableWindows": ["acute", "chronic"],
+      "commodityCoverage": [
+        "apples",
+        "oranges",
+        "spinach",
+        "tomatoes",
+        "potatoes",
+        "rice",
+        "wheat",
+        "milk",
+        "chicken",
+        "salmon"
+      ],
+      "expectedProfileId": "eu_older_adult_screening_v1",
+      "expectedBodyWeightKg": 68.0
+    },
+    {
+      "name": "adult_alias_profile_resolution",
+      "populationGroup": "adult_general",
+      "regionId": "eu_screening_default",
+      "applicableWindows": ["acute", "chronic"],
+      "commodityCoverage": [
+        "apple",
+        "orange",
+        "spinach_raw",
+        "fresh_tomatoes",
+        "white_potatoes",
+        "white_rice",
+        "wheat_grain",
+        "cow_milk",
+        "chicken_meat",
+        "atlantic_salmon"
+      ],
+      "expectedProfileId": "eu_adult_general_v1",
+      "expectedBodyWeightKg": 70.0,
+      "expectedMatchedCommodities": [
+        "apples",
+        "chicken",
+        "milk",
+        "oranges",
+        "potatoes",
+        "rice",
+        "salmon",
+        "spinach",
+        "tomatoes",
+        "wheat"
+      ]
+    },
+    {
+      "name": "child_alias_profile_resolution",
+      "populationGroup": "child_1_6",
+      "regionId": "eu_screening_default",
+      "applicableWindows": ["acute", "chronic"],
+      "commodityCoverage": [
+        "apples_raw",
+        "oranges_raw",
+        "leafy_spinach",
+        "tomatoes_raw",
+        "potatoes_raw",
+        "milled_rice",
+        "common_wheat",
+        "whole_milk",
+        "poultry_chicken",
+        "salmon_fillet"
+      ],
+      "expectedProfileId": "eu_child_screening_v1",
+      "expectedBodyWeightKg": 15.0,
+      "expectedMatchedCommodities": [
+        "apples",
+        "chicken",
+        "milk",
+        "oranges",
+        "potatoes",
+        "rice",
+        "salmon",
+        "spinach",
+        "tomatoes",
+        "wheat"
+      ]
+    },
+    {
+      "name": "adolescent_preferred_profile_acute_subset",
+      "populationGroup": "adolescent_11_17",
+      "regionId": "eu_screening_default",
+      "preferredProfileId": "eu_adolescent_screening_v1",
+      "applicableWindows": ["acute"],
+      "commodityCoverage": ["orange", "tomatoes_raw", "potatoes_raw", "wheat_grain", "chicken_meat"],
+      "expectedProfileId": "eu_adolescent_screening_v1",
+      "expectedBodyWeightKg": 52.0,
+      "expectedMatchedCommodities": ["chicken", "oranges", "potatoes", "tomatoes", "wheat"]
+    },
+    {
+      "name": "older_adult_preferred_profile_chronic_subset",
+      "populationGroup": "older_adult_65_plus",
+      "regionId": "eu_screening_default",
+      "preferredProfileId": "eu_older_adult_screening_v1",
+      "applicableWindows": ["chronic"],
+      "commodityCoverage": ["apple", "rice", "cow_milk", "fresh_tomatoes", "atlantic_salmon"],
+      "expectedProfileId": "eu_older_adult_screening_v1",
+      "expectedBodyWeightKg": 68.0,
+      "expectedMatchedCommodities": ["apples", "milk", "rice", "salmon", "tomatoes"]
+    },
+    {
+      "name": "adult_processed_alias_profile_resolution",
+      "populationGroup": "adult_general",
+      "regionId": "eu_screening_default",
+      "applicableWindows": ["acute", "chronic"],
+      "commodityCoverage": ["apple_juice", "tomatoes_raw", "whole_milk"],
+      "expectedProfileId": "eu_adult_general_v1",
+      "expectedBodyWeightKg": 70.0,
+      "expectedMatchedCommodities": ["apples", "milk", "tomatoes"]
+    },
+    {
+      "name": "older_adult_processed_and_alias_profile_resolution",
+      "populationGroup": "older_adult_65_plus",
+      "regionId": "eu_screening_default",
+      "preferredProfileId": "eu_older_adult_screening_v1",
+      "applicableWindows": ["acute", "chronic"],
+      "commodityCoverage": ["apple_juice", "orange", "wheat_grain", "poultry_chicken", "salmon_fillet"],
+      "expectedProfileId": "eu_older_adult_screening_v1",
+      "expectedBodyWeightKg": 68.0,
+      "expectedMatchedCommodities": ["apples", "chicken", "oranges", "salmon", "wheat"]
+    },
+    {
+      "name": "adolescent_processed_alias_profile_resolution",
+      "populationGroup": "adolescent_11_17",
+      "regionId": "eu_screening_default",
+      "preferredProfileId": "eu_adolescent_screening_v1",
+      "applicableWindows": ["chronic"],
+      "commodityCoverage": ["apple_juice", "orange", "tomatoes_raw", "wheat_grain", "salmon_fillet"],
+      "expectedProfileId": "eu_adolescent_screening_v1",
+      "expectedBodyWeightKg": 52.0,
+      "expectedMatchedCommodities": ["apples", "oranges", "salmon", "tomatoes", "wheat"]
+    },
+    {
+      "name": "child_preferred_profile_alias_subset",
+      "populationGroup": "child_1_6",
+      "regionId": "eu_screening_default",
+      "preferredProfileId": "eu_child_screening_v1",
+      "applicableWindows": ["chronic"],
+      "commodityCoverage": ["apples_raw", "orange", "rice", "whole_milk", "poultry_chicken"],
+      "expectedProfileId": "eu_child_screening_v1",
+      "expectedBodyWeightKg": 15.0,
+      "expectedMatchedCommodities": ["apples", "chicken", "milk", "oranges", "rice"]
+    },
+    {
+      "name": "adult_processed_leafy_and_fish_alias_resolution",
+      "populationGroup": "adult_general",
+      "regionId": "eu_screening_default",
+      "preferredProfileId": "eu_adult_general_v1",
+      "applicableWindows": ["chronic"],
+      "commodityCoverage": ["apple_juice", "oranges_raw", "spinach_raw", "white_potatoes", "salmon_raw"],
+      "expectedProfileId": "eu_adult_general_v1",
+      "expectedBodyWeightKg": 70.0,
+      "expectedMatchedCommodities": ["apples", "oranges", "potatoes", "salmon", "spinach"]
+    },
+    {
+      "name": "pregnant_adult_profile_coverage",
+      "populationGroup": "pregnant_adult",
+      "regionId": "eu_screening_default",
+      "applicableWindows": ["acute", "chronic"],
+      "commodityCoverage": [
+        "apples",
+        "oranges",
+        "spinach",
+        "tomatoes",
+        "potatoes",
+        "rice",
+        "wheat",
+        "milk",
+        "chicken",
+        "salmon",
+        "eggs",
+        "oats",
+        "beans_and_pulses"
+      ],
+      "expectedProfileId": "eu_pregnant_adult_screening_v1",
+      "expectedBodyWeightKg": 62.0
+    },
+    {
+      "name": "pregnant_adult_processed_alias_resolution",
+      "populationGroup": "pregnant_adult",
+      "regionId": "eu_screening_default",
+      "preferredProfileId": "eu_pregnant_adult_screening_v1",
+      "applicableWindows": ["chronic"],
+      "commodityCoverage": ["egg", "oatmeal", "canned_beans", "whole_milk", "salmon_fillet"],
+      "expectedProfileId": "eu_pregnant_adult_screening_v1",
+      "expectedBodyWeightKg": 62.0,
+      "expectedMatchedCommodities": ["beans_and_pulses", "eggs", "milk", "oats", "salmon"]
+    },
+    {
+      "name": "adult_new_commodity_alias_resolution",
+      "populationGroup": "adult_general",
+      "regionId": "eu_screening_default",
+      "preferredProfileId": "eu_adult_general_v1",
+      "applicableWindows": ["acute", "chronic"],
+      "commodityCoverage": ["hen_eggs", "rolled_oats", "dried_beans", "orange", "apple_juice"],
+      "expectedProfileId": "eu_adult_general_v1",
+      "expectedBodyWeightKg": 70.0,
+      "expectedMatchedCommodities": ["apples", "beans_and_pulses", "eggs", "oats", "oranges"]
+    }
+  ]
+}

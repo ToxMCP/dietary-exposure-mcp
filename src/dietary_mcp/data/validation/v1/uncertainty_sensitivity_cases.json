@@ -1,0 +1,73 @@
+{
+  "version": "v1",
+  "cases": [
+    {
+      "name": "weighted_uniform_sensitivity_case",
+      "datasetId": "uncertainty_weighted_survey",
+      "regionId": "eu",
+      "populationGroup": "adult_general",
+      "rawRecords": [
+        {
+          "subjectId": "s1",
+          "bodyWeightKg": 70.0,
+          "daysInSurvey": 1,
+          "commodityCode": "apples",
+          "consumptionKgPerDay": 0.5,
+          "surveyWeight": 4.0
+        },
+        {
+          "subjectId": "s2",
+          "bodyWeightKg": 65.0,
+          "daysInSurvey": 1,
+          "commodityCode": "apples",
+          "consumptionKgPerDay": 0.1,
+          "surveyWeight": 1.0
+        },
+        {
+          "subjectId": "s3",
+          "bodyWeightKg": 80.0,
+          "daysInSurvey": 1,
+          "commodityCode": "apples",
+          "consumptionKgPerDay": 0.0,
+          "surveyWeight": 1.0
+        }
+      ],
+      "chemicalIdentity": {
+        "preferredName": "SensitivityChemical"
+      },
+      "residueRecords": [
+        {
+          "commodityCode": "apples",
+          "residueConcentrationMgPerKg": 0.2,
+          "sourceType": "monitoring"
+        }
+      ],
+      "randomSeed": 301,
+      "outerIterationCount": 20,
+      "innerIterationCount": 60,
+      "residueUncertaintyModels": [
+        {
+          "commodityCode": "apples",
+          "distribution": "uniform",
+          "minMgPerKg": 0.1,
+          "maxMgPerKg": 0.4,
+          "processingFactorCv": 0.1
+        }
+      ],
+      "censoredDataPolicy": "middle_bound_half_lod_loq",
+      "expectedMeanMedian": 0.0012321576167398038,
+      "expectedPercentile95Median": 0.0026835703735744836,
+      "expectedPercentile99Median": 0.00300560745767303,
+      "expectedMaxMedian": 0.003125215610177181,
+      "expectedLedgerCodes": [
+        "survey_weighted_sampling"
+      ],
+      "expectedSensitivityInputs": [
+        "residue.apples",
+        "processing_factor.apples"
+      ],
+      "expectedWeightedSampling": true,
+      "tolerance": 1e-12
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "version": "v1",
+  "rules": [
+    {
+      "ruleId": "governance_snapshots_complete",
+      "description": "Applicable model-family or contaminant-family governance snapshots must be present on the dossier.",
+      "profiles": ["eu_internal_review", "eu_submission_candidate", "eu_consultation_exploratory"]
+    },
+    {
+      "ruleId": "source_resolution_complete",
+      "description": "All source ids referenced by the dossier must resolve to governed source records.",
+      "profiles": ["eu_internal_review", "eu_submission_candidate"]
+    },
+    {
+      "ruleId": "required_fingerprints_present",
+      "description": "Dossier must include all required pinned-resource fingerprints for governance-aware review.",
+      "profiles": ["eu_internal_review", "eu_submission_candidate", "eu_consultation_exploratory"]
+    },
+    {
+      "ruleId": "required_disclaimers_present",
+      "description": "Governance-required disclaimers must remain present in dossier-facing notes or limitations.",
+      "profiles": ["eu_internal_review", "eu_submission_candidate", "eu_consultation_exploratory"]
+    },
+    {
+      "ruleId": "scientific_integrity_verified",
+      "description": "Scientific blockers, unresolved error-quality flags, and open blocking signoff actions must not remain unresolved on the dossier.",
+      "profiles": ["eu_internal_review", "eu_submission_candidate", "eu_consultation_exploratory"]
+    },
+    {
+      "ruleId": "jurisdiction_consistency",
+      "description": "Target readiness jurisdiction must align with the dossier governance and interpretation context.",
+      "profiles": ["eu_internal_review", "eu_submission_candidate", "eu_consultation_exploratory"]
+    },
+    {
+      "ruleId": "data_currency_reviewed",
+      "description": "Historical data-period or source-currency limitations must remain explicit and block submission-candidate packaging until reviewed.",
+      "profiles": ["eu_internal_review", "eu_submission_candidate", "eu_consultation_exploratory"]
+    },
+    {
+      "ruleId": "legal_limit_support_explicit",
+      "description": "Legal-limit support posture must remain explicit on the dossier, and submission-candidate review is downgraded when support is partial or missing.",
+      "profiles": ["eu_internal_review", "eu_submission_candidate", "eu_consultation_exploratory"]
+    },
+    {
+      "ruleId": "deprecated_governance_status_allowed",
+      "description": "Deprecated governance states must not silently pass readiness review.",
+      "profiles": ["eu_internal_review", "eu_submission_candidate", "eu_consultation_exploratory"]
+    },
+    {
+      "ruleId": "model_submission_not_allowed",
+      "description": "Model-family or contaminant-family governance may block submission-candidate use or downgrade internal review.",
+      "profiles": ["eu_internal_review", "eu_submission_candidate"]
+    },
+    {
+      "ruleId": "normative_source_status_allowed",
+      "description": "Normative source document statuses must be compatible with the target readiness profile.",
+      "profiles": ["eu_internal_review", "eu_submission_candidate"]
+    },
+    {
+      "ruleId": "normative_source_submission_use",
+      "description": "Normative sources explicitly blocked from submission use fail submission-candidate review.",
+      "profiles": ["eu_submission_candidate"]
+    },
+    {
+      "ruleId": "technical_report_dependencies",
+      "description": "Technical-report dependencies require review before submission-candidate packaging.",
+      "profiles": ["eu_submission_candidate"]
+    },
+    {
+      "ruleId": "active_errata_status",
+      "description": "Active errata may downgrade or fail readiness depending on blocking status and profile.",
+      "profiles": ["eu_internal_review", "eu_submission_candidate"]
+    },
+    {
+      "ruleId": "consultation_model_status_allowed",
+      "description": "Consultation-oriented review allows compatible model or contaminant-family governance states.",
+      "profiles": ["eu_consultation_exploratory"]
+    },
+    {
+      "ruleId": "consultation_watermark_present",
+      "description": "Consultation-oriented review requires explicit consultation wording on the dossier.",
+      "profiles": ["eu_consultation_exploratory"]
+    },
+    {
+      "ruleId": "source_resolution_for_consultation",
+      "description": "Consultation-oriented review downgrades dossiers with unresolved governance sources.",
+      "profiles": ["eu_consultation_exploratory"]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "assessmentMode": "two_dimensional_monte_carlo",
+  "randomSeed": 20260601,
+  "outerIterationCount": 40,
+  "innerIterationCount": 80,
+  "censoredDataPolicy": "three_bound_sensitivity",
+  "residueUncertaintyModels": [
+    {
+      "commodityCode": "apples",
+      "distribution": "censored_lognormal",
+      "geometricMeanMgPerKg": 0.05,
+      "geometricSd": 1.8,
+      "lodMgPerKg": 0.005,
+      "loqMgPerKg": 0.01,
+      "processingFactorCv": 0.15
+    },
+    {
+      "commodityCode": "rice",
+      "distribution": "uniform",
+      "minMgPerKg": 0.0,
+      "maxMgPerKg": 0.05,
+      "processingFactorCv": 0.05
+    }
+  ],
+  "healthReference": {
+    "referenceType": "ADI",
+    "value": 0.023,
+    "unit": "mg/kg bw/day",
+    "sourceId": "efsa.openfoodtox.mancozeb.adi"
+  }
+}

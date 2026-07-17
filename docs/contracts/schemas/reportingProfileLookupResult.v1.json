@@ -1,0 +1,248 @@
+{
+  "$defs": {
+    "ContaminantFamily": {
+      "enum": [
+        "pesticide_residue",
+        "microplastics_emerging",
+        "pfas_food_contaminants",
+        "acrylamide_process_contaminants",
+        "bisphenol_food_contact_migration",
+        "cadmium_food_contaminants",
+        "lead_food_contaminants",
+        "inorganic_arsenic_food_contaminants",
+        "mercury_food_contaminants",
+        "food_contaminant"
+      ],
+      "title": "ContaminantFamily",
+      "type": "string"
+    },
+    "DocumentStatus": {
+      "enum": [
+        "final_current",
+        "superseded",
+        "draft",
+        "consultation",
+        "tool_metadata",
+        "dataset_current"
+      ],
+      "title": "DocumentStatus",
+      "type": "string"
+    },
+    "ReportingMetricKind": {
+      "enum": [
+        "sum_fixed_panel",
+        "relative_potency_equivalent",
+        "individual_analyte_panel"
+      ],
+      "title": "ReportingMetricKind",
+      "type": "string"
+    },
+    "ReportingProfileRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "profileId": {
+          "title": "Profileid",
+          "type": "string"
+        },
+        "displayName": {
+          "title": "Displayname",
+          "type": "string"
+        },
+        "authority": {
+          "title": "Authority",
+          "type": "string"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "contaminantFamily": {
+          "$ref": "#/$defs/ContaminantFamily"
+        },
+        "metricKind": {
+          "$ref": "#/$defs/ReportingMetricKind"
+        },
+        "profileRole": {
+          "$ref": "#/$defs/ReportingProfileRole"
+        },
+        "submissionUse": {
+          "$ref": "#/$defs/SubmissionUse"
+        },
+        "documentStatus": {
+          "$ref": "#/$defs/DocumentStatus"
+        },
+        "reportedUnit": {
+          "title": "Reportedunit",
+          "type": "string"
+        },
+        "matrixGroups": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Matrixgroups",
+          "type": "array"
+        },
+        "panelAnalytes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Panelanalytes",
+          "type": "array"
+        },
+        "aggregationBasis": {
+          "title": "Aggregationbasis",
+          "type": "string"
+        },
+        "weightingBasisSummary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Weightingbasissummary"
+        },
+        "sourceIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sourceids",
+          "type": "array"
+        },
+        "legalAuthorityIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Legalauthorityids",
+          "type": "array"
+        },
+        "referenceValueRecordIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Referencevaluerecordids",
+          "type": "array"
+        },
+        "notSubstitutableForProfileIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notsubstitutableforprofileids",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "profileId",
+        "displayName",
+        "authority",
+        "jurisdiction",
+        "contaminantFamily",
+        "metricKind",
+        "profileRole",
+        "submissionUse",
+        "documentStatus",
+        "reportedUnit",
+        "aggregationBasis"
+      ],
+      "title": "ReportingProfileRecord",
+      "type": "object"
+    },
+    "ReportingProfileRole": {
+      "enum": [
+        "primary_regulatory",
+        "regulatory_compliance_variant",
+        "national_advisory_optional",
+        "supporting_detail"
+      ],
+      "title": "ReportingProfileRole",
+      "type": "string"
+    },
+    "SubmissionUse": {
+      "enum": [
+        "allowed",
+        "review_required",
+        "not_allowed"
+      ],
+      "title": "SubmissionUse",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "contaminantFamily": {
+      "$ref": "#/$defs/ContaminantFamily"
+    },
+    "jurisdiction": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Jurisdiction"
+    },
+    "authority": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Authority"
+    },
+    "matrixGroup": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Matrixgroup"
+    },
+    "profiles": {
+      "items": {
+        "$ref": "#/$defs/ReportingProfileRecord"
+      },
+      "title": "Profiles",
+      "type": "array"
+    },
+    "recommendedPrimaryProfileIds": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Recommendedprimaryprofileids",
+      "type": "array"
+    },
+    "notes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "contaminantFamily"
+  ],
+  "title": "ReportingProfileLookupResult",
+  "type": "object"
+}

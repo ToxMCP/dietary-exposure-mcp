@@ -1,0 +1,346 @@
+{
+  "overall_status": "review_required",
+  "target_profile": {
+    "profile_id": "eu_internal_review",
+    "display_name": "EU internal review",
+    "jurisdiction": "eu",
+    "intended_use": "Internal scientific review with explicit governance and limitation tracking.",
+    "notes": [
+      "Allows compatibility harnesses and draft-aware governance snapshots.",
+      "Downgrades to review_required when submission gating or active errata require human judgment."
+    ]
+  },
+  "model_governance": {
+    "model_family": "efsa_primo_adapter",
+    "jurisdictions": [
+      "eu"
+    ],
+    "governance_status": "compatibility_harness_only",
+    "submission_allowed": false,
+    "current_version_label": "primo-3.1-harness",
+    "dataset_basis": "Public compatibility harness using Dietary MCP contracts plus governed public metadata",
+    "source_ids": [
+      "efsa.primo",
+      "efsa.primo.rev4.report.2024",
+      "efsa.default_body_weights.2012"
+    ],
+    "required_disclaimers": [
+      "No claim of official PRIMo engine equivalence, proprietary dataset reproduction, or regulatory endorsement is implied.",
+      "EFSA PRIMo adapter outputs are for internal review or consultation-oriented compatibility checks only."
+    ],
+    "errata": []
+  },
+  "emerging_contaminant": null,
+  "source_governance": [
+    {
+      "source_id": "dietary.food_vocab.crosswalk",
+      "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+      "organization": "Dietary MCP",
+      "kind": "curated_food_vocabulary_metadata",
+      "jurisdiction": "eu",
+      "document_status": "final_current",
+      "regulatory_role": "guidance",
+      "effective_date": "2026-04-10",
+      "url": "docs://food-vocabulary-crosswalk",
+      "origin_tag": "illustrative_placeholder",
+      "submission_use": "review_required",
+      "normative_for": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "notes": [
+        "Illustrative provisional crosswalk from current Dietary MCP canonical commodities to FoodEx2-like, RPC-like, and RPCD-like identifiers.",
+        "Codes in this pack are not official EFSA FoodEx2 or RPC/RPCD identifiers and are published for workflow-hardening and field-shape validation only."
+      ]
+    },
+    {
+      "source_id": "dietary.profile.eu_child_1_6",
+      "title": "Illustrative EU child dietary screening profile",
+      "organization": "Dietary MCP",
+      "kind": "curated_profile_metadata",
+      "jurisdiction": "eu",
+      "document_status": "final_current",
+      "regulatory_role": "guidance",
+      "effective_date": "2026-04-13",
+      "url": "docs://population-profile-guide",
+      "origin_tag": "illustrative_placeholder",
+      "submission_use": "review_required",
+      "normative_for": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "notes": [
+        "Illustrative curated child screening profile distributed with Dietary MCP defaults.",
+        "Expanded illustrative screening pack covers thirteen canonical commodity codes.",
+        "Use reviewed regional survey packs for regulator-facing decisions.",
+        "Project-maintained illustrative placeholder; not an externally governed survey pack."
+      ]
+    },
+    {
+      "source_id": "dietary.taxonomy.apples",
+      "title": "Dietary MCP commodity taxonomy entry for apples",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "document_status": "final_current",
+      "regulatory_role": "guidance",
+      "effective_date": null,
+      "url": "defaults://manifest",
+      "origin_tag": "curated_derived",
+      "submission_use": "review_required",
+      "normative_for": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "notes": [
+        "Governed taxonomy provenance entry for apples."
+      ]
+    },
+    {
+      "source_id": "dietary.taxonomy.milk",
+      "title": "Dietary MCP commodity taxonomy entry for milk",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "document_status": "final_current",
+      "regulatory_role": "guidance",
+      "effective_date": null,
+      "url": "defaults://manifest",
+      "origin_tag": "curated_derived",
+      "submission_use": "review_required",
+      "normative_for": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "notes": [
+        "Governed taxonomy provenance entry for milk."
+      ]
+    },
+    {
+      "source_id": "efsa.default_body_weights.2012",
+      "title": "EFSA harmonised default values for risk assessment",
+      "organization": "EFSA",
+      "kind": "official_guidance_metadata",
+      "jurisdiction": "eu",
+      "document_status": "final_current",
+      "regulatory_role": "guidance",
+      "effective_date": "2012-03-07",
+      "url": "https://www.efsa.europa.eu/en/press/news/120307a",
+      "origin_tag": "official_regulatory",
+      "submission_use": "review_required",
+      "normative_for": [
+        "reference_dietary",
+        "efsa_primo_adapter"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "notes": [
+        "Provides public default body-weight guidance.",
+        "Notes that 60 kg has commonly been used for worldwide adult populations, while 70 kg is more realistic for EU adults when actual EU data are absent."
+      ]
+    },
+    {
+      "source_id": "efsa.primo",
+      "title": "EFSA PRIMo pesticide residue intake model tools page",
+      "organization": "EFSA",
+      "kind": "official_model_metadata",
+      "jurisdiction": "eu",
+      "document_status": "tool_metadata",
+      "regulatory_role": "software_metadata",
+      "effective_date": null,
+      "url": "https://www.efsa.europa.eu/en/applications/pesticides/tools",
+      "origin_tag": "official_regulatory",
+      "submission_use": "not_allowed",
+      "normative_for": [
+        "efsa_primo_adapter"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "notes": [
+        "Used as model-family metadata for PRIMo-aligned adapter boundaries.",
+        "EFSA notes that PRIMo revision 3.1 remains the current version for MRL applications until formal endorsement of revision 4 in 2026."
+      ]
+    },
+    {
+      "source_id": "efsa.primo.rev4.report.2024",
+      "title": "EFSA PRIMo revision 4 technical report",
+      "organization": "EFSA",
+      "kind": "official_supporting_publication",
+      "jurisdiction": "eu",
+      "document_status": "final_current",
+      "regulatory_role": "technical_report",
+      "effective_date": "2024-08-09",
+      "url": "https://www.efsa.europa.eu/en/supporting/pub/en-8990",
+      "origin_tag": "official_regulatory",
+      "submission_use": "review_required",
+      "normative_for": [
+        "efsa_primo_adapter"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "notes": [
+        "Technical report describing PRIMo revision 4 public rollout and migration context.",
+        "Useful for governance and consultation-only review, but not itself the submission engine."
+      ]
+    }
+  ],
+  "applied_rules": [
+    {
+      "rule_id": "governance_snapshots_complete",
+      "profile_id": "eu_internal_review",
+      "status": "pass",
+      "message": "Applicable governance snapshots are present on the dossier.",
+      "blocking": false,
+      "note": null
+    },
+    {
+      "rule_id": "source_resolution_complete",
+      "profile_id": "eu_internal_review",
+      "status": "review_required",
+      "message": "Dossier references unresolved governed source ids: ['example.adapter.apples.monitoring', 'example.adapter.milk.default'].",
+      "blocking": false,
+      "note": null
+    },
+    {
+      "rule_id": "required_fingerprints_present",
+      "profile_id": "eu_internal_review",
+      "status": "pass",
+      "message": "All required dossier fingerprints are present.",
+      "blocking": false,
+      "note": null
+    },
+    {
+      "rule_id": "required_disclaimers_present",
+      "profile_id": "eu_internal_review",
+      "status": "pass",
+      "message": "All required governance disclaimers are present in dossier-facing notes or limitations.",
+      "blocking": false,
+      "note": null
+    },
+    {
+      "rule_id": "scientific_integrity_verified",
+      "profile_id": "eu_internal_review",
+      "status": "pass",
+      "message": "Scientific-integrity checks do not show unresolved critical scientific blockers.",
+      "blocking": false,
+      "note": null
+    },
+    {
+      "rule_id": "jurisdiction_consistency",
+      "profile_id": "eu_internal_review",
+      "status": "pass",
+      "message": "Target readiness jurisdiction is consistent with the dossier governance context.",
+      "blocking": false,
+      "note": null
+    },
+    {
+      "rule_id": "data_currency_reviewed",
+      "profile_id": "eu_internal_review",
+      "status": "pass",
+      "message": "No unresolved historical data-currency limitations remain on the dossier.",
+      "blocking": false,
+      "note": null
+    },
+    {
+      "rule_id": "legal_limit_support_explicit",
+      "profile_id": "eu_internal_review",
+      "status": "pass",
+      "message": "No dossier-carried legal-limit support reviews apply to this workflow.",
+      "blocking": false,
+      "note": null
+    },
+    {
+      "rule_id": "deprecated_governance_status_allowed",
+      "profile_id": "eu_internal_review",
+      "status": "pass",
+      "message": "No deprecated governance state blocks the selected readiness profile.",
+      "blocking": false,
+      "note": null
+    },
+    {
+      "rule_id": "model_submission_not_allowed",
+      "profile_id": "eu_internal_review",
+      "status": "review_required",
+      "message": "Current model family is not submission-capable and remains internal-review-only or harness-only.",
+      "blocking": false,
+      "note": null
+    },
+    {
+      "rule_id": "normative_source_status_allowed",
+      "profile_id": "eu_internal_review",
+      "status": "review_required",
+      "message": "Normative sources include draft, consultation, or tool-metadata records that require explicit human review.",
+      "blocking": false,
+      "note": "efsa.primo"
+    },
+    {
+      "rule_id": "active_errata_status",
+      "profile_id": "eu_internal_review",
+      "status": "pass",
+      "message": "No active errata require additional internal-review handling.",
+      "blocking": false,
+      "note": null
+    }
+  ],
+  "blocking_rules": [],
+  "warning_rules": [
+    {
+      "rule_id": "source_resolution_complete",
+      "profile_id": "eu_internal_review",
+      "status": "review_required",
+      "message": "Dossier references unresolved governed source ids: ['example.adapter.apples.monitoring', 'example.adapter.milk.default'].",
+      "blocking": false,
+      "note": null
+    },
+    {
+      "rule_id": "model_submission_not_allowed",
+      "profile_id": "eu_internal_review",
+      "status": "review_required",
+      "message": "Current model family is not submission-capable and remains internal-review-only or harness-only.",
+      "blocking": false,
+      "note": null
+    },
+    {
+      "rule_id": "normative_source_status_allowed",
+      "profile_id": "eu_internal_review",
+      "status": "review_required",
+      "message": "Normative sources include draft, consultation, or tool-metadata records that require explicit human review.",
+      "blocking": false,
+      "note": "efsa.primo"
+    }
+  ],
+  "legal_limit_reviews": [],
+  "scientific_follow_up_items": [],
+  "scientific_follow_up_queues": {
+    "open_action_ids": [],
+    "pending_action_ids": [],
+    "acknowledged_action_ids": [],
+    "completed_action_ids": [],
+    "waived_action_ids": [],
+    "escalated_action_ids": []
+  },
+  "required_disclaimers": [
+    "No claim of official PRIMo engine equivalence, proprietary dataset reproduction, or regulatory endorsement is implied.",
+    "EFSA PRIMo adapter outputs are for internal review or consultation-oriented compatibility checks only."
+  ],
+  "notes": [
+    "Readiness evaluation uses a fixed Phase 1 ruleset rather than a generic policy DSL.",
+    "Assessment combines governance checks with explicit scientific-integrity gates and does not imply final regulatory acceptance."
+  ]
+}

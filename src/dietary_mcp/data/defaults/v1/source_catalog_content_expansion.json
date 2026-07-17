@@ -1,0 +1,681 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "source_catalog",
+  "sources": [
+    {
+      "sourceId": "dietary.profile.eu_pregnant_adult",
+      "title": "Illustrative EU pregnant-adult dietary screening profile",
+      "organization": "Dietary MCP",
+      "kind": "curated_profile_metadata",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2026-04-13",
+      "url": "docs://population-profile-guide",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Illustrative curated pregnant-adult screening profile distributed with Dietary MCP defaults.",
+        "Expanded illustrative screening pack covers thirteen canonical commodity codes, including eggs, oats, and beans and pulses.",
+        "Use reviewed regional survey packs for regulator-facing decisions.",
+        "Project-maintained illustrative placeholder; not an externally governed survey pack."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.eggs",
+      "title": "Dietary MCP commodity taxonomy entry for eggs",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for eggs."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.oats",
+      "title": "Dietary MCP commodity taxonomy entry for oats",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for oats."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.beans_and_pulses",
+      "title": "Dietary MCP commodity taxonomy entry for beans and pulses",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for beans and pulses."
+      ]
+    },
+    {
+      "sourceId": "dietary.food_vocab.processed.oatmeal",
+      "title": "Dietary MCP processed commodity mapping for oatmeal",
+      "organization": "Dietary MCP",
+      "kind": "curated_food_vocabulary_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "food-vocabulary://processed/oatmeal",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "food_vocabulary_mapping"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Illustrative processed-commodity linkage from oats to oatmeal."
+      ]
+    },
+    {
+      "sourceId": "dietary.food_vocab.processed.canned_beans",
+      "title": "Dietary MCP processed commodity mapping for canned beans",
+      "organization": "Dietary MCP",
+      "kind": "curated_food_vocabulary_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "food-vocabulary://processed/canned_beans",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "food_vocabulary_mapping"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Illustrative processed-commodity linkage from beans and pulses to canned beans."
+      ]
+    },
+    {
+      "sourceId": "efsa.spirotetramat.mrl_opinion.2020",
+      "title": "Modification of the existing maximum residue levels for spirotetramat in small fruits and berries, kiwi fruits, garlic, Jerusalem artichokes, horseradishes and other minor crops",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2020-09-16",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/6237",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA reasoned opinion used as governed public residue-review context for spirotetramat in fruit, herb, and minor-crop matrices.",
+        "Dietary MCP uses this as review-oriented evidence and method provenance, not as a native enforcement database."
+      ]
+    },
+    {
+      "sourceId": "efsa.spirotetramat.mrl_opinion.2022",
+      "title": "Modification of the existing maximum residue levels for spirotetramat in herbs and edible flowers, leeks, spring onions and honey",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2022-01-20",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/7021",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA reasoned opinion used as governed public analytical-enforcement and matrix-scope context for spirotetramat in herbs, alliums, and honey."
+      ]
+    },
+    {
+      "sourceId": "jmpr.spirotetramat.report.2013",
+      "title": "Spirotetramat (JMPR 2013 evaluation)",
+      "organization": "FAO/WHO JMPR",
+      "kind": "official_scientific_report",
+      "jurisdiction": "codex_global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2013-01-01",
+      "url": "https://www.fao.org/fileadmin/user_upload/IPM_Pesticide/JMPR/Evaluations/2013/Spirotetramat.pdf",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official JMPR evaluation used as governed Codex-global residue and method context for spirotetramat.",
+        "Included to preserve parallel EFSA and JMPR review provenance for monitoring-oriented evidence handling."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.infant_formula",
+      "title": "Dietary MCP commodity taxonomy entry for infant formula",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for infant formula."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.fruit_juice",
+      "title": "Dietary MCP commodity taxonomy entry for fruit juice",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for fruit juice."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.purees",
+      "title": "Dietary MCP commodity taxonomy entry for fruit and vegetable purees",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for fruit and vegetable purees."
+      ]
+    },
+    {
+      "sourceId": "dietary.profile.eu_infant_0_6_mo",
+      "title": "Illustrative EU infant dietary screening profile",
+      "organization": "Dietary MCP",
+      "kind": "curated_profile_metadata",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2026-04-13",
+      "url": "docs://population-profile-guide",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Illustrative curated infant screening profile distributed with Dietary MCP defaults.",
+        "Project-maintained illustrative placeholder; not an externally governed survey pack."
+      ]
+    },
+    {
+      "sourceId": "dietary.profile.eu_toddler",
+      "title": "Illustrative EU toddler dietary screening profile",
+      "organization": "Dietary MCP",
+      "kind": "curated_profile_metadata",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2026-04-13",
+      "url": "docs://population-profile-guide",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Illustrative curated toddler screening profile distributed with Dietary MCP defaults.",
+        "Project-maintained illustrative placeholder; not an externally governed survey pack."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.olives",
+      "title": "Dietary MCP commodity taxonomy entry for olives",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for olives."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.grapes",
+      "title": "Dietary MCP commodity taxonomy entry for grapes",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for grapes."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.olive_oil",
+      "title": "Dietary MCP commodity taxonomy entry for olive oil",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for olive oil."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.raisins",
+      "title": "Dietary MCP commodity taxonomy entry for raisins",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for raisins."
+      ]
+    },
+    {
+      "sourceId": "dietary.food_vocab.processed.olive_oil",
+      "title": "Dietary MCP processed commodity mapping for olive oil",
+      "organization": "Dietary MCP",
+      "kind": "curated_food_vocabulary_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "food-vocabulary://processed/olive_oil",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "food_vocabulary_mapping"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Illustrative processed-commodity linkage from olives to olive oil."
+      ]
+    },
+    {
+      "sourceId": "dietary.food_vocab.processed.raisins",
+      "title": "Dietary MCP processed commodity mapping for raisins",
+      "organization": "Dietary MCP",
+      "kind": "curated_food_vocabulary_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "food-vocabulary://processed/raisins",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "food_vocabulary_mapping"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Illustrative processed-commodity linkage from grapes to raisins."
+      ]
+    },
+    {
+      "sourceId": "dietary.profile.us_adult_general",
+      "title": "Illustrative US adult dietary screening profile",
+      "organization": "Dietary MCP",
+      "kind": "curated_profile_metadata",
+      "jurisdiction": "us",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2026-04-14",
+      "url": "docs://population-profile-guide",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Illustrative curated US adult screening profile distributed with Dietary MCP defaults.",
+        "Use reviewed regional survey packs for actual US regulatory decisions.",
+        "Project-maintained illustrative placeholder; not an externally governed survey pack."
+      ]
+    },
+    {
+      "sourceId": "us.cfr.40_180",
+      "title": "40 CFR Part 180 - Tolerances and Exemptions for Pesticide Chemical Residues in Food",
+      "organization": "US EPA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "us",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2024-07-01",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2024-title40-vol26/xml/CFR-2024-title40-vol26-part180.xml",
+      "submissionUse": "allowed",
+      "normativeFor": [
+        "reference_dietary"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Primary US legal anchor for pesticide tolerances managed by EPA.",
+        "Pinned to the official GovInfo annual Title 40 edition revised as of July 1, 2024."
+      ]
+    },
+    {
+      "sourceId": "us.fda.cpg.action_levels",
+      "title": "FDA Compliance Policy Guides (CPG) - Action Levels for Poisonous or Deleterious Substances",
+      "organization": "US FDA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "us",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2000-08-01",
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-action-levels-poisonous-or-deleterious-substances-human-food-and-animal-feed",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "US FDA action-level guidance for evaluating food contaminants.",
+        "The official FDA guidance page identifies the current booklet as the August 2000 final guidance."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.beef_liver",
+      "title": "Dietary MCP commodity taxonomy entry for beef liver",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for beef liver."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.poultry_fat",
+      "title": "Dietary MCP commodity taxonomy entry for poultry fat",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for poultry fat."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.pork_kidney",
+      "title": "Dietary MCP commodity taxonomy entry for pork kidney",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for pork kidney."
+      ]
+    },
+    {
+      "sourceId": "dietary.recipe.apple_pie",
+      "title": "Dietary MCP recipe definition for apple pie",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed recipe provenance entry for apple pie."
+      ]
+    },
+    {
+      "sourceId": "dietary.profile.eu_recipe_test",
+      "title": "Dietary MCP recipe test profile",
+      "organization": "Dietary MCP",
+      "kind": "curated_profile_metadata",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "allowed",
+      "normativeFor": [
+        "reference_dietary"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed recipe test profile.",
+        "Project-maintained illustrative placeholder; not an externally governed survey pack."
+      ]
+    },
+    {
+      "sourceId": "cn.gb.2763",
+      "title": "National Food Safety Standard - Maximum Residue Limits for Pesticides in Food",
+      "organization": "National Health Commission (NHC), China",
+      "kind": "official_scientific_report",
+      "jurisdiction": "cn",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2026-02-26",
+      "url": "https://www.nhc.gov.cn/sps/c100088/202602/c0c4a9266f7e43cda1bf3bec59fc2786.shtml",
+      "submissionUse": "allowed",
+      "normativeFor": [
+        "reference_dietary"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Primary Chinese legal anchor for pesticide maximum residue limits.",
+        "The current official announcement publishes GB 2763-2026 and states that it replaces GB 2763-2021 and GB 2763.1-2022."
+      ]
+    },
+    {
+      "sourceId": "cn.gb.2762",
+      "title": "National Food Safety Standard - Maximum Levels of Contaminants in Foods",
+      "organization": "National Health Commission (NHC), China",
+      "kind": "official_scientific_report",
+      "jurisdiction": "cn",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2025-09-25",
+      "url": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml",
+      "submissionUse": "allowed",
+      "normativeFor": [
+        "reference_dietary"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Primary Chinese legal anchor for contaminants such as heavy metals.",
+        "The current official announcement publishes GB 2762-2025."
+      ]
+    },
+    {
+      "sourceId": "jp.mhlw.fsa",
+      "title": "Food Sanitation Act - Specifications and Standards for Foods",
+      "organization": "Ministry of Health, Labour and Welfare (MHLW), Japan",
+      "kind": "official_scientific_report",
+      "jurisdiction": "jp",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": null,
+      "url": "https://www.mhlw.go.jp/english/topics/foodsafety/",
+      "submissionUse": "allowed",
+      "normativeFor": [
+        "reference_dietary"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Primary Japanese legal anchor for pesticide maximum residue limits."
+      ]
+    },
+    {
+      "sourceId": "ca.hc.pmra.mrl_database",
+      "title": "Maximum Residue Limits for Pesticides",
+      "organization": "Health Canada PMRA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "ca",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": null,
+      "url": "https://pr-rp.hc-sc.gc.ca/mrl-lrm/index-eng.php",
+      "submissionUse": "allowed",
+      "normativeFor": [
+        "reference_dietary"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Primary Canadian legal anchor for pesticide maximum residue limits."
+      ]
+    }
+  ]
+}

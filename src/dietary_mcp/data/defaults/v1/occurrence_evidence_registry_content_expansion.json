@@ -1,0 +1,481 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "occurrence_evidence_registry",
+  "records": [
+    {
+      "recordId": "eu.pfas.occurrence_evidence.eggs_monitoring_context",
+      "displayName": "PFAS egg monitoring evidence context",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pfas_food_contaminants",
+      "evidenceKind": "food_monitoring_context",
+      "analytes": [
+        "sum_pfoa_pfna_pfhxs_pfos",
+        "sum4_pfas",
+        "pfoa",
+        "pfna",
+        "pfhxs",
+        "pfos"
+      ],
+      "matrixGroups": [
+        "eggs"
+      ],
+      "sampleSetSummary": "PFAS egg-specific monitoring review context linking EFSA food review, EU contaminants law, EU PFAS monitoring recommendation, and Dutch home-egg advisory reporting conventions.",
+      "measuredUnit": "ng/kg",
+      "dataPeriod": "2020-2026_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "transitional",
+      "evidenceSupportStatus": "limited",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.pfas.food.2020",
+        "efsa.pfas.topic.2026",
+        "eu.reco.2022_1431",
+        "eu.reg.2023_915",
+        "rivm.pfas.home_eggs.2025"
+      ],
+      "occurrenceRecordIds": [
+        "efsa.pfas.eggs.occurrence_monitoring.support"
+      ],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.pfas_support",
+        "ec.pfas_food_monitoring_2022_2025"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.pfas.analytical_method_evidence.eggs_monitoring_context"
+      ],
+      "legalAuthorityIds": [
+        "eu.contaminants.reg_2023_915",
+        "eu.pfas.monitoring.reco_2022_1431"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.pfas.sum4.twi"
+      ],
+      "linkedReviewFocusIds": [
+        "efsa.pfas.eggs.review_focus"
+      ],
+      "reportingProfileIds": [
+        "eu.pfas.efsa4.food_risk",
+        "eu.pfas.efsa4.ml_lower_bound",
+        "eu.pfas.individual_panel_detail"
+      ],
+      "notes": [
+        "Captures governed PFAS egg-monitoring context for review-oriented dietary evidence handling.",
+        "Exposed for evidence linkage and reporting-profile preservation, not as a native PFAS egg compliance engine."
+      ]
+    },
+    {
+      "recordId": "eu.pfas.occurrence_evidence.fish_monitoring_context",
+      "displayName": "PFAS fish and seafood monitoring evidence context",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pfas_food_contaminants",
+      "evidenceKind": "food_monitoring_context",
+      "analytes": [
+        "sum_pfoa_pfna_pfhxs_pfos",
+        "sum4_pfas",
+        "pfoa",
+        "pfna",
+        "pfhxs",
+        "pfos"
+      ],
+      "matrixGroups": [
+        "fish_and_seafood"
+      ],
+      "sampleSetSummary": "PFAS fish-specific monitoring review context linking EFSA food review, EU monitoring recommendation, and Dutch PEQ fish-advisory interpretation.",
+      "measuredUnit": "ng/kg",
+      "dataPeriod": "2020-2026_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "transitional",
+      "evidenceSupportStatus": "limited",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.pfas.food.2020",
+        "efsa.pfas.topic.2026",
+        "eu.reco.2022_1431",
+        "eu.reg.2023_915",
+        "rivm.pfas.peq_tool.v3.2025"
+      ],
+      "occurrenceRecordIds": [
+        "efsa.pfas.fish_and_seafood.occurrence_monitoring.support"
+      ],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.pfas_support",
+        "ec.pfas_food_monitoring_2022_2025"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.pfas.analytical_method_evidence.fish_monitoring_context"
+      ],
+      "legalAuthorityIds": [
+        "eu.contaminants.reg_2023_915",
+        "eu.pfas.monitoring.reco_2022_1431"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.pfas.sum4.twi"
+      ],
+      "linkedReviewFocusIds": [
+        "efsa.pfas.fish_and_seafood.review_focus"
+      ],
+      "reportingProfileIds": [
+        "eu.pfas.efsa4.food_risk",
+        "eu.pfas.efsa4.ml_lower_bound",
+        "eu.pfas.individual_panel_detail"
+      ],
+      "notes": [
+        "Captures governed PFAS fish-monitoring context for review-oriented dietary evidence handling.",
+        "Exposed for evidence linkage and reporting-profile preservation, not as a native PFAS fish compliance engine."
+      ]
+    },
+    {
+      "recordId": "eu.acrylamide.occurrence_evidence.fried_potato_products_context",
+      "displayName": "Acrylamide fried-potato monitoring evidence context",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminantFamily": "acrylamide_process_contaminants",
+      "evidenceKind": "process_contaminant_monitoring_context",
+      "analytes": [
+        "acrylamide"
+      ],
+      "matrixGroups": [
+        "fried_potato_products"
+      ],
+      "sampleSetSummary": "Acrylamide fried-potato review context linking the EFSA opinion with the EU mitigation and monitoring framework for potato-product interpretation.",
+      "measuredUnit": "ug/kg",
+      "dataPeriod": "2015-2019_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "limited",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.acrylamide.food.2015",
+        "eu.reg.2017_2158",
+        "eu.reco.2019_1888"
+      ],
+      "occurrenceRecordIds": [],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.acrylamide_support",
+        "eu.acrylamide_food_monitoring_2019"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.acrylamide.analytical_method_evidence.fried_potato_products_context"
+      ],
+      "legalAuthorityIds": [
+        "eu.acrylamide.reg_2017_2158",
+        "eu.acrylamide.monitoring.reco_2019_1888"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.acrylamide.neoplastic.bmdl10",
+        "efsa.acrylamide.neurotoxicity.bmdl10"
+      ],
+      "linkedReviewFocusIds": [],
+      "notes": [
+        "Captures governed acrylamide review context for fried potato products.",
+        "Exposed for evidence linkage and auditability, not as a native acrylamide exposure engine."
+      ]
+    },
+    {
+      "recordId": "eu.bpa.occurrence_evidence.canned_foods_context",
+      "displayName": "BPA canned-food review evidence context",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminantFamily": "bisphenol_food_contact_migration",
+      "evidenceKind": "food_contact_migration_review_context",
+      "analytes": [
+        "bisphenol_a",
+        "bpa"
+      ],
+      "matrixGroups": [
+        "canned_foods"
+      ],
+      "sampleSetSummary": "BPA canned-food review context linking the EFSA BPA opinion and current EU food-contact restrictions for canned-food interpretation.",
+      "measuredUnit": "ug/kg",
+      "dataPeriod": "2023-2026_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.bpa.food.2023",
+        "efsa.bisphenol.topic.2026",
+        "eu.reg.2024_3190"
+      ],
+      "occurrenceRecordIds": [],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.bpa_support"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.bpa.analytical_method_evidence.canned_foods_context"
+      ],
+      "legalAuthorityIds": [
+        "eu.bpa.fcm.reg_2024_3190"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.bpa.tdi.2023"
+      ],
+      "linkedReviewFocusIds": [],
+      "notes": [
+        "Captures governed BPA canned-food review context for migration-oriented dietary evidence handling.",
+        "Exposed for evidence linkage and auditability, not as a native BPA migration engine."
+      ]
+    },
+    {
+      "recordId": "eu.pfas.occurrence_evidence.milk_and_dairy_products_context",
+      "displayName": "PFAS milk and dairy monitoring evidence context",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pfas_food_contaminants",
+      "evidenceKind": "food_monitoring_context",
+      "analytes": [
+        "sum_pfoa_pfna_pfhxs_pfos",
+        "sum4_pfas",
+        "pfoa",
+        "pfna",
+        "pfhxs",
+        "pfos"
+      ],
+      "matrixGroups": [
+        "milk_and_dairy_products"
+      ],
+      "sampleSetSummary": "PFAS milk- and dairy-specific monitoring review context linking EFSA food review, EU contaminants law, and EU PFAS monitoring recommendation.",
+      "measuredUnit": "ng/kg",
+      "dataPeriod": "2020-2026_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "transitional",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.pfas.food.2020",
+        "efsa.pfas.topic.2026",
+        "eu.reco.2022_1431",
+        "eu.reg.2023_915"
+      ],
+      "occurrenceRecordIds": [],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.pfas_support",
+        "ec.pfas_food_monitoring_2022_2025"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.pfas.analytical_method_evidence.milk_and_dairy_products_context"
+      ],
+      "legalAuthorityIds": [
+        "eu.contaminants.reg_2023_915",
+        "eu.pfas.monitoring.reco_2022_1431"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.pfas.sum4.twi"
+      ],
+      "linkedReviewFocusIds": [],
+      "reportingProfileIds": [
+        "eu.pfas.efsa4.food_risk",
+        "eu.pfas.efsa4.ml_lower_bound",
+        "eu.pfas.individual_panel_detail"
+      ],
+      "notes": [
+        "Captures governed PFAS dairy-monitoring context for review-oriented dietary evidence handling.",
+        "Exposed for evidence linkage and reporting-profile preservation, not as a native PFAS dairy compliance engine."
+      ]
+    },
+    {
+      "recordId": "eu.acrylamide.occurrence_evidence.coffee_products_context",
+      "displayName": "Acrylamide coffee-product monitoring evidence context",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminantFamily": "acrylamide_process_contaminants",
+      "evidenceKind": "process_contaminant_monitoring_context",
+      "analytes": [
+        "acrylamide"
+      ],
+      "matrixGroups": [
+        "coffee_and_coffee_substitutes"
+      ],
+      "sampleSetSummary": "Acrylamide coffee-product review context linking the EFSA opinion with the EU mitigation and monitoring framework for roasted coffee and instant coffee interpretation.",
+      "measuredUnit": "ug/kg",
+      "dataPeriod": "2015-2019_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.acrylamide.food.2015",
+        "eu.reg.2017_2158",
+        "eu.reco.2019_1888"
+      ],
+      "occurrenceRecordIds": [],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.acrylamide_support",
+        "eu.acrylamide_food_monitoring_2019"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.acrylamide.analytical_method_evidence.coffee_products_context"
+      ],
+      "legalAuthorityIds": [
+        "eu.acrylamide.reg_2017_2158",
+        "eu.acrylamide.monitoring.reco_2019_1888"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.acrylamide.neoplastic.bmdl10",
+        "efsa.acrylamide.neurotoxicity.bmdl10"
+      ],
+      "linkedReviewFocusIds": [],
+      "notes": [
+        "Captures governed acrylamide review context for coffee products.",
+        "Exposed for evidence linkage and auditability, not as a native acrylamide exposure engine."
+      ]
+    },
+    {
+      "recordId": "eu.bpa.occurrence_evidence.beverages_context",
+      "displayName": "BPA beverage-contact review evidence context",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminantFamily": "bisphenol_food_contact_migration",
+      "evidenceKind": "food_contact_migration_review_context",
+      "analytes": [
+        "bisphenol_a",
+        "bpa"
+      ],
+      "matrixGroups": [
+        "beverages_and_drinks"
+      ],
+      "sampleSetSummary": "BPA beverage-contact review context linking the EFSA BPA opinion and current EU food-contact restrictions for beverage and drink interpretation.",
+      "measuredUnit": "ug/kg",
+      "dataPeriod": "2023-2026_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.bpa.food.2023",
+        "efsa.bisphenol.topic.2026",
+        "eu.reg.2024_3190"
+      ],
+      "occurrenceRecordIds": [],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.bpa_support"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.bpa.analytical_method_evidence.beverages_context"
+      ],
+      "legalAuthorityIds": [
+        "eu.bpa.fcm.reg_2024_3190"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.bpa.tdi.2023"
+      ],
+      "linkedReviewFocusIds": [],
+      "notes": [
+        "Captures governed BPA beverage-contact review context for migration-oriented dietary evidence handling.",
+        "Exposed for evidence linkage and auditability, not as a native BPA migration engine."
+      ]
+    },
+    {
+      "recordId": "eu.spirotetramat.occurrence_evidence.monitoring_context",
+      "displayName": "Spirotetramat pesticide-residue monitoring context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "evidenceKind": "food_monitoring_context",
+      "analytes": [
+        "spirotetramat",
+        "spirotetramat_total_residues"
+      ],
+      "matrixGroups": [
+        "citrus_fruits",
+        "herbs_and_edible_flowers",
+        "honey"
+      ],
+      "sampleSetSummary": "EFSA spirotetramat MRL-review context for fruit, herb, and honey residue interpretation, linked to OECD analytical and residue-definition guidance and preserved JMPR review provenance.",
+      "measuredUnit": "mg/kg",
+      "dataPeriod": "2013-2022_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.spirotetramat.mrl_opinion.2020",
+        "efsa.spirotetramat.mrl_opinion.2022",
+        "jmpr.spirotetramat.report.2013"
+      ],
+      "occurrenceRecordIds": [],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db",
+        "efsa.eu_menu_programme"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.spirotetramat.analytical_method_evidence.monitoring_context"
+      ],
+      "legalAuthorityIds": [
+        "eu.pesticide_residues.reg_396_2005",
+        "eu.active_substances.reg_283_2013"
+      ],
+      "referenceValueRecordIds": [],
+      "linkedReviewFocusIds": [],
+      "notes": [
+        "Captures governed spirotetramat pesticide-residue review context for fruit, herb, and honey oriented dietary evidence handling.",
+        "No EFSA public toxicological-reference-value extract is pinned in this pack until a clean public extract is curated."
+      ]
+    },
+    {
+      "recordId": "eu.difenoconazole.occurrence_evidence.monitoring_context",
+      "displayName": "Difenoconazole pesticide-residue monitoring context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "evidenceKind": "food_monitoring_context",
+      "analytes": [
+        "difenoconazole",
+        "difenoconazole_total_residues"
+      ],
+      "matrixGroups": [
+        "wheat_and_rye",
+        "citrus_fruits",
+        "tree_nuts",
+        "pulses",
+        "soya_beans"
+      ],
+      "sampleSetSummary": "EFSA difenoconazole residue-review context for cereals, citrus fruits, tree nuts, pulses, and soya beans, linked to OECD analytical and residue-definition guidance and preserved JMPR acute-reference-value provenance.",
+      "measuredUnit": "mg/kg",
+      "dataPeriod": "2011-2025_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.difenoconazole.peer_review.2011",
+        "efsa.difenoconazole.mrl_review.2024",
+        "efsa.difenoconazole.import_tolerance.2025",
+        "jmpr.difenoconazole.report.2013"
+      ],
+      "occurrenceRecordIds": [],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db",
+        "efsa.eu_menu_programme"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.difenoconazole.analytical_method_evidence.monitoring_context"
+      ],
+      "legalAuthorityIds": [
+        "eu.pesticide_residues.reg_396_2005",
+        "eu.active_substances.reg_283_2013"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.openfoodtox.difenoconazole.adi",
+        "efsa.openfoodtox.difenoconazole.arfd",
+        "jmpr.difenoconazole.arfd.2013"
+      ],
+      "linkedReviewFocusIds": [],
+      "notes": [
+        "Captures governed difenoconazole pesticide-residue review context with explicit EFSA versus JMPR acute reference-value preservation.",
+        "Exposed for evidence linkage and auditability, not as a native difenoconazole residue engine."
+      ]
+    }
+  ]
+}

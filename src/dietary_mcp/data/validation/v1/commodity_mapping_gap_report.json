@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "taxonomyId": "toxmcp_foods_v1",
+  "gaps": [
+    {
+      "gapId": "processed_cereal_products",
+      "status": "deferred",
+      "note": "Processed cereal product aliases beyond the rice baseline are not curated in v0.1."
+    },
+    {
+      "gapId": "animal_fat_subtypes",
+      "status": "deferred",
+      "note": "Subtype-specific animal fat mappings are deferred pending reviewed taxonomy governance."
+    }
+  ]
+}

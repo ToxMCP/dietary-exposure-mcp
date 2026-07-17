@@ -1,0 +1,1718 @@
+{
+  "dossier": {
+    "schema_version": "v1",
+    "dossier_id": "adapter-review-dossier-3511dd4919e7",
+    "bundle_profile": "internal_review",
+    "dossier_status": "match",
+    "review_bundle": {
+      "schema_version": "v1",
+      "bundle_id": "adapter-review-bundle-55ed536e92c3",
+      "bundle_profile": "internal_review",
+      "review_status": "match",
+      "model_family": "efsa_primo_adapter",
+      "template_name": "efsa_primo_tabular_template",
+      "walkthrough_name": "efsa_primo_tabular_alias_case",
+      "check_result": {
+        "status": "ok",
+        "model_family": "efsa_primo_adapter",
+        "input_mode": "csv_v1",
+        "template_name": "efsa_primo_tabular_template",
+        "walkthrough_name": "efsa_primo_tabular_alias_case",
+        "template_resource_uri": "adapter-template://efsa_primo_tabular_template",
+        "documentation_resource_uri": "docs://adapter-import-walkthroughs",
+        "profile_selection": {
+          "region_id": "eu_screening_default",
+          "population_group": "child_1_6",
+          "intake_window": "acute",
+          "scenario_class": "bounded_acute"
+        },
+        "chemical_identity": {
+          "preferredName": "Illustrative residue",
+          "casrn": "100-00-0"
+        },
+        "declared_totals": {
+          "total_intake_mg_per_kg_bw_per_day": 0.00416,
+          "lower_bound_mg_per_kg_bw_per_day": 0.00304,
+          "upper_bound_mg_per_kg_bw_per_day": 0.00528
+        },
+        "input_headers": [
+          "commodity",
+          "iesti_mgkgbwday",
+          "hr_mgkg",
+          "consumption_kg_day",
+          "pf",
+          "lb_mgkgbwday",
+          "ub_mgkgbwday"
+        ],
+        "header_resolution": [
+          {
+            "header": "commodity",
+            "canonical_field": "commodity_code",
+            "recognized": true
+          },
+          {
+            "header": "iesti_mgkgbwday",
+            "canonical_field": "contribution_mg_per_kg_bw_per_day",
+            "recognized": true
+          },
+          {
+            "header": "hr_mgkg",
+            "canonical_field": "residue_concentration_mg_per_kg",
+            "recognized": true
+          },
+          {
+            "header": "consumption_kg_day",
+            "canonical_field": "consumption_kg_per_day",
+            "recognized": true
+          },
+          {
+            "header": "pf",
+            "canonical_field": "applied_processing_factor",
+            "recognized": true
+          },
+          {
+            "header": "lb_mgkgbwday",
+            "canonical_field": "lower_bound_intake_mg_per_kg_bw_per_day",
+            "recognized": true
+          },
+          {
+            "header": "ub_mgkgbwday",
+            "canonical_field": "upper_bound_intake_mg_per_kg_bw_per_day",
+            "recognized": true
+          }
+        ],
+        "unmapped_headers": [],
+        "normalized_projection": {
+          "scenario_class": "bounded_acute",
+          "intake_window": "acute",
+          "population_group": "child_1_6",
+          "region_id": "eu_screening_default",
+          "body_weight_kg": 15.0,
+          "total_intake_mg_per_kg_bw_per_day": 0.00416,
+          "lower_bound_mg_per_kg_bw_per_day": 0.00304,
+          "upper_bound_mg_per_kg_bw_per_day": 0.00528,
+          "commodity_codes": [
+            "apples",
+            "milk"
+          ],
+          "commodity_contributions": [
+            {
+              "commodity_code": "apples",
+              "canonical_name": "Apples",
+              "foodex2_code": "EXAMPLE_FDX2_APPLES_RAW",
+              "rpc_code": "EXAMPLE_RPC_APPLES",
+              "rpcd_code": "EXAMPLE_RPCD_APPLES_RAW",
+              "processed_status": "raw_primary_commodity",
+              "mapping_confidence": "provisional",
+              "contribution_mg_per_kg_bw_per_day": 0.00336,
+              "fraction_of_total": 0.8076923076923078,
+              "residue_concentration_mg_per_kg": 0.18,
+              "consumption_kg_per_day": 0.28,
+              "applied_processing_factor": 1.0,
+              "lower_bound_mg_per_kg_bw_per_day": 0.00224,
+              "upper_bound_mg_per_kg_bw_per_day": 0.00448
+            },
+            {
+              "commodity_code": "milk",
+              "canonical_name": "Milk",
+              "foodex2_code": "EXAMPLE_FDX2_MILK_RAW",
+              "rpc_code": "EXAMPLE_RPC_MILK",
+              "rpcd_code": "EXAMPLE_RPCD_MILK_RAW",
+              "processed_status": "raw_primary_commodity",
+              "mapping_confidence": "provisional",
+              "contribution_mg_per_kg_bw_per_day": 0.0008,
+              "fraction_of_total": 0.19230769230769235,
+              "residue_concentration_mg_per_kg": 0.03,
+              "consumption_kg_per_day": 0.4,
+              "applied_processing_factor": 1.0,
+              "lower_bound_mg_per_kg_bw_per_day": 0.0008,
+              "upper_bound_mg_per_kg_bw_per_day": 0.0008
+            }
+          ],
+          "dominant_commodity_codes": [
+            "apples",
+            "milk"
+          ],
+          "source_ids": [
+            "dietary.food_vocab.crosswalk",
+            "dietary.profile.eu_child_1_6",
+            "dietary.taxonomy.apples",
+            "dietary.taxonomy.milk",
+            "efsa.default_body_weights.2012",
+            "efsa.primo",
+            "example.adapter.apples.monitoring",
+            "example.adapter.milk.default"
+          ],
+          "quality_flag_codes": [
+            "external_adapter_normalized"
+          ],
+          "limitation_codes": [
+            "default_processing_factor_applied",
+            "external_adapter_normalization",
+            "profile_limitations"
+          ],
+          "assumption_parameters": [
+            "adapter_case:efsa_primo_adapter",
+            "adapter_contribution_count:efsa_primo_adapter",
+            "adapter_engine_version:efsa_primo_adapter"
+          ]
+        },
+        "notes": [
+          "Adapter import checks normalize supplied CSV text through the adapter harness and return a stable projection without runtime-generated IDs or timestamps.",
+          "Successful results confirm CSV structure, numeric coercion, contribution-total reconciliation, commodity resolution, and profile selection for the declared scenario.",
+          "This tool validates a harnessed compatibility pathway only and does not execute an official PRIMo or DEEM engine."
+        ]
+      },
+      "comparison_result": {
+        "status": "match",
+        "walkthrough_name": "efsa_primo_tabular_alias_case",
+        "walkthrough_resource_uri": "adapter-walkthrough://efsa_primo_tabular_alias_case",
+        "template_name": "efsa_primo_tabular_template",
+        "model_family": "efsa_primo_adapter",
+        "compared_fields": [
+          {
+            "field": "template_name",
+            "matches": true,
+            "observed": "efsa_primo_tabular_template",
+            "expected": "efsa_primo_tabular_template",
+            "note": null
+          },
+          {
+            "field": "model_family",
+            "matches": true,
+            "observed": "efsa_primo_adapter",
+            "expected": "efsa_primo_adapter",
+            "note": null
+          },
+          {
+            "field": "unmapped_headers",
+            "matches": true,
+            "observed": [],
+            "expected": [],
+            "note": "Review is required when unrecognized CSV headers are present."
+          },
+          {
+            "field": "total_intake_mg_per_kg_bw_per_day",
+            "matches": true,
+            "observed": 0.00416,
+            "expected": 0.00416,
+            "note": "Numeric tolerance: 1e-12."
+          },
+          {
+            "field": "lower_bound_mg_per_kg_bw_per_day",
+            "matches": true,
+            "observed": 0.00304,
+            "expected": 0.00304,
+            "note": "Numeric tolerance: 1e-12."
+          },
+          {
+            "field": "upper_bound_mg_per_kg_bw_per_day",
+            "matches": true,
+            "observed": 0.00528,
+            "expected": 0.00528,
+            "note": "Numeric tolerance: 1e-12."
+          },
+          {
+            "field": "commodity_codes",
+            "matches": true,
+            "observed": [
+              "apples",
+              "milk"
+            ],
+            "expected": [
+              "apples",
+              "milk"
+            ],
+            "note": null
+          },
+          {
+            "field": "commodity_contributions_mg_per_kg_bw_per_day",
+            "matches": true,
+            "observed": {
+              "apples": 0.00336,
+              "milk": 0.0008
+            },
+            "expected": {
+              "apples": 0.00336,
+              "milk": 0.0008
+            },
+            "note": "Contribution values are compared on canonical commodity codes."
+          },
+          {
+            "field": "food_vocabulary_mappings",
+            "matches": true,
+            "observed": {
+              "apples": {
+                "foodex2Code": "EXAMPLE_FDX2_APPLES_RAW",
+                "rpcCode": "EXAMPLE_RPC_APPLES",
+                "rpcdCode": "EXAMPLE_RPCD_APPLES_RAW",
+                "processedStatus": "raw_primary_commodity",
+                "mappingConfidence": "provisional"
+              },
+              "milk": {
+                "foodex2Code": "EXAMPLE_FDX2_MILK_RAW",
+                "rpcCode": "EXAMPLE_RPC_MILK",
+                "rpcdCode": "EXAMPLE_RPCD_MILK_RAW",
+                "processedStatus": "raw_primary_commodity",
+                "mappingConfidence": "provisional"
+              }
+            },
+            "expected": {
+              "apples": {
+                "foodex2Code": "EXAMPLE_FDX2_APPLES_RAW",
+                "rpcCode": "EXAMPLE_RPC_APPLES",
+                "rpcdCode": "EXAMPLE_RPCD_APPLES_RAW",
+                "processedStatus": "raw_primary_commodity",
+                "mappingConfidence": "provisional"
+              },
+              "milk": {
+                "foodex2Code": "EXAMPLE_FDX2_MILK_RAW",
+                "rpcCode": "EXAMPLE_RPC_MILK",
+                "rpcdCode": "EXAMPLE_RPCD_MILK_RAW",
+                "processedStatus": "raw_primary_commodity",
+                "mappingConfidence": "provisional"
+              }
+            },
+            "note": "Food vocabulary fields are compared on canonical commodity codes with optional processed-commodity status retained."
+          },
+          {
+            "field": "dominant_commodity_codes",
+            "matches": true,
+            "observed": [
+              "apples",
+              "milk"
+            ],
+            "expected": [
+              "apples",
+              "milk"
+            ],
+            "note": null
+          },
+          {
+            "field": "required_source_ids_present",
+            "matches": true,
+            "observed": [
+              "dietary.food_vocab.crosswalk",
+              "dietary.profile.eu_child_1_6",
+              "dietary.taxonomy.apples",
+              "dietary.taxonomy.milk",
+              "efsa.default_body_weights.2012",
+              "efsa.primo",
+              "example.adapter.apples.monitoring",
+              "example.adapter.milk.default"
+            ],
+            "expected": [
+              "efsa.primo",
+              "efsa.default_body_weights.2012"
+            ],
+            "note": "Extra provenance source IDs are allowed; required official source IDs must be present."
+          },
+          {
+            "field": "required_quality_flag_codes_present",
+            "matches": true,
+            "observed": [
+              "external_adapter_normalized"
+            ],
+            "expected": [
+              "external_adapter_normalized"
+            ],
+            "note": "Extra quality flags are allowed; required harness quality flags must be present."
+          }
+        ],
+        "matched_fields": [
+          "template_name",
+          "model_family",
+          "unmapped_headers",
+          "total_intake_mg_per_kg_bw_per_day",
+          "lower_bound_mg_per_kg_bw_per_day",
+          "upper_bound_mg_per_kg_bw_per_day",
+          "commodity_codes",
+          "commodity_contributions_mg_per_kg_bw_per_day",
+          "food_vocabulary_mappings",
+          "dominant_commodity_codes",
+          "required_source_ids_present",
+          "required_quality_flag_codes_present"
+        ],
+        "mismatch_fields": [],
+        "notes": [
+          "This comparison is intentionally focused on stable normalized fields rather than runtime-generated IDs or timestamps.",
+          "Required source IDs and required quality flags are checked as subsets so user-supplied provenance can extend the result without causing false mismatches.",
+          "Review-required status indicates that at least one compared field diverged from the governed walkthrough baseline."
+        ]
+      },
+      "referenced_resources": [
+        {
+          "role": "template",
+          "uri": "adapter-template://efsa_primo_tabular_template",
+          "description": "Packaged adapter input template used to prepare the reviewed CSV text.",
+          "confidentiality_tag": "public",
+          "sanitisation_state": "retained"
+        },
+        {
+          "role": "walkthrough",
+          "uri": "adapter-walkthrough://efsa_primo_tabular_alias_case",
+          "description": "Governed walkthrough baseline used for the focused adapter review diff.",
+          "confidentiality_tag": "public",
+          "sanitisation_state": "retained"
+        },
+        {
+          "role": "documentation",
+          "uri": "docs://adapter-import-walkthroughs",
+          "description": "Operator documentation describing the adapter check and walkthrough comparison workflow.",
+          "confidentiality_tag": "public",
+          "sanitisation_state": "retained"
+        },
+        {
+          "role": "walkthrough_manifest_entry",
+          "uri": "adapter-import-walkthroughs://manifest",
+          "description": "Manifest listing the governed walkthroughs published by Dietary MCP.",
+          "confidentiality_tag": "public",
+          "sanitisation_state": "retained"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "dietary-mcp",
+          "version": "0.1.0",
+          "role": "producer"
+        },
+        {
+          "name": "dietary_check_adapter_import",
+          "version": "0.1.0",
+          "role": "check_workflow"
+        },
+        {
+          "name": "dietary_compare_adapter_import_to_walkthrough",
+          "version": "0.1.0",
+          "role": "comparison_workflow"
+        },
+        {
+          "name": "efsa_primo_adapter",
+          "version": "0.1.0",
+          "role": "model_family"
+        }
+      ],
+      "matched_field_count": 12,
+      "mismatch_field_count": 0,
+      "confidentiality_annotations": [
+        {
+          "target_path": "check_result.chemical_identity",
+          "target_kind": "field",
+          "confidentiality_tag": "confidential",
+          "rationale": "Chemical identity can remain non-public during internal review workflows."
+        },
+        {
+          "target_path": "check_result.declared_totals",
+          "target_kind": "field",
+          "confidentiality_tag": "confidential",
+          "rationale": "Declared case totals can encode non-public review context and are redacted from public exports."
+        }
+      ],
+      "limitations": [
+        {
+          "code": "screening_review_bundle",
+          "message": "Adapter review bundle supports compatibility review and audit handoff, not final regulatory conclusions."
+        }
+      ],
+      "notes": [
+        "Bundle packages the adapter check result, governed walkthrough diff, and referenced review resources into a single auditable handoff object.",
+        "Comparison findings are limited to stable normalized fields and do not include runtime-generated IDs or timestamps.",
+        "Review-required status indicates one or more focused diff fields diverged from the governed walkthrough baseline."
+      ]
+    },
+    "release_metadata": {
+      "resource_uri": "release://metadata-report",
+      "release_version": "0.1.0",
+      "defaults_version": "v1",
+      "metadata_report_sha256": "example-release-metadata-sha256",
+      "artifact_hashes": {
+        "adapterManifest": "example-adapter-manifest-sha256",
+        "adapterTemplateManifest": "example-template-manifest-sha256",
+        "adapterWalkthroughManifest": "example-walkthrough-manifest-sha256",
+        "modelGovernanceManifest": "example-model-governance-manifest-sha256",
+        "foodVocabularyCrosswalkManifest": "example-food-vocabulary-manifest-sha256",
+        "interoperabilityProfilesManifest": "example-interoperability-profiles-manifest-sha256",
+        "interoperabilityReadinessProfilesManifest": "example-interoperability-readiness-profiles-manifest-sha256",
+        "interoperabilityRulesManifest": "example-interoperability-rules-manifest-sha256",
+        "interoperabilityRemediationActionsManifest": "example-interoperability-remediation-actions-manifest-sha256",
+        "readinessProfilesManifest": "example-readiness-profiles-manifest-sha256",
+        "regulatoryRulesManifest": "example-regulatory-rules-manifest-sha256",
+        "sanitisationRulesManifest": "example-sanitisation-rules-manifest-sha256"
+      }
+    },
+    "source_governance_snapshot": [
+      {
+        "source_id": "dietary.food_vocab.crosswalk",
+        "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+        "organization": "Dietary MCP",
+        "kind": "curated_food_vocabulary_metadata",
+        "jurisdiction": "eu",
+        "document_status": "final_current",
+        "regulatory_role": "guidance",
+        "effective_date": "2026-04-10",
+        "url": "docs://food-vocabulary-crosswalk",
+        "origin_tag": "illustrative_placeholder",
+        "submission_use": "review_required",
+        "normative_for": [
+          "reference_dietary",
+          "adapter_stub",
+          "efsa_primo_adapter",
+          "epa_deem_adapter"
+        ],
+        "supersedes": [],
+        "superseded_by": [],
+        "notes": [
+          "Illustrative provisional crosswalk from current Dietary MCP canonical commodities to FoodEx2-like, RPC-like, and RPCD-like identifiers.",
+          "Codes in this pack are not official EFSA FoodEx2 or RPC/RPCD identifiers and are published for workflow-hardening and field-shape validation only."
+        ]
+      },
+      {
+        "source_id": "dietary.profile.eu_child_1_6",
+        "title": "Illustrative EU child dietary screening profile",
+        "organization": "Dietary MCP",
+        "kind": "curated_profile_metadata",
+        "jurisdiction": "eu",
+        "document_status": "final_current",
+        "regulatory_role": "guidance",
+        "effective_date": "2026-04-13",
+        "url": "docs://population-profile-guide",
+        "origin_tag": "illustrative_placeholder",
+        "submission_use": "review_required",
+        "normative_for": [
+          "reference_dietary",
+          "adapter_stub",
+          "efsa_primo_adapter",
+          "epa_deem_adapter"
+        ],
+        "supersedes": [],
+        "superseded_by": [],
+        "notes": [
+          "Illustrative curated child screening profile distributed with Dietary MCP defaults.",
+          "Expanded illustrative screening pack covers thirteen canonical commodity codes.",
+          "Use reviewed regional survey packs for regulator-facing decisions.",
+          "Project-maintained illustrative placeholder; not an externally governed survey pack."
+        ]
+      },
+      {
+        "source_id": "dietary.taxonomy.apples",
+        "title": "Dietary MCP commodity taxonomy entry for apples",
+        "organization": "Dietary MCP",
+        "kind": "curated_taxonomy_metadata",
+        "jurisdiction": "global",
+        "document_status": "final_current",
+        "regulatory_role": "guidance",
+        "effective_date": null,
+        "url": "defaults://manifest",
+        "origin_tag": "curated_derived",
+        "submission_use": "review_required",
+        "normative_for": [
+          "reference_dietary",
+          "adapter_stub",
+          "efsa_primo_adapter",
+          "epa_deem_adapter"
+        ],
+        "supersedes": [],
+        "superseded_by": [],
+        "notes": [
+          "Governed taxonomy provenance entry for apples."
+        ]
+      },
+      {
+        "source_id": "dietary.taxonomy.milk",
+        "title": "Dietary MCP commodity taxonomy entry for milk",
+        "organization": "Dietary MCP",
+        "kind": "curated_taxonomy_metadata",
+        "jurisdiction": "global",
+        "document_status": "final_current",
+        "regulatory_role": "guidance",
+        "effective_date": null,
+        "url": "defaults://manifest",
+        "origin_tag": "curated_derived",
+        "submission_use": "review_required",
+        "normative_for": [
+          "reference_dietary",
+          "adapter_stub",
+          "efsa_primo_adapter",
+          "epa_deem_adapter"
+        ],
+        "supersedes": [],
+        "superseded_by": [],
+        "notes": [
+          "Governed taxonomy provenance entry for milk."
+        ]
+      },
+      {
+        "source_id": "efsa.default_body_weights.2012",
+        "title": "EFSA harmonised default values for risk assessment",
+        "organization": "EFSA",
+        "kind": "official_guidance_metadata",
+        "jurisdiction": "eu",
+        "document_status": "final_current",
+        "regulatory_role": "guidance",
+        "effective_date": "2012-03-07",
+        "url": "https://www.efsa.europa.eu/en/press/news/120307a",
+        "origin_tag": "official_regulatory",
+        "submission_use": "review_required",
+        "normative_for": [
+          "reference_dietary",
+          "efsa_primo_adapter"
+        ],
+        "supersedes": [],
+        "superseded_by": [],
+        "notes": [
+          "Provides public default body-weight guidance.",
+          "Notes that 60 kg has commonly been used for worldwide adult populations, while 70 kg is more realistic for EU adults when actual EU data are absent."
+        ]
+      },
+      {
+        "source_id": "efsa.primo",
+        "title": "EFSA PRIMo pesticide residue intake model tools page",
+        "organization": "EFSA",
+        "kind": "official_model_metadata",
+        "jurisdiction": "eu",
+        "document_status": "tool_metadata",
+        "regulatory_role": "software_metadata",
+        "effective_date": null,
+        "url": "https://www.efsa.europa.eu/en/applications/pesticides/tools",
+        "origin_tag": "official_regulatory",
+        "submission_use": "not_allowed",
+        "normative_for": [
+          "efsa_primo_adapter"
+        ],
+        "supersedes": [],
+        "superseded_by": [],
+        "notes": [
+          "Used as model-family metadata for PRIMo-aligned adapter boundaries.",
+          "EFSA notes that PRIMo revision 3.1 remains the current version for MRL applications until formal endorsement of revision 4 in 2026."
+        ]
+      },
+      {
+        "source_id": "efsa.primo.rev4.report.2024",
+        "title": "EFSA PRIMo revision 4 technical report",
+        "organization": "EFSA",
+        "kind": "official_supporting_publication",
+        "jurisdiction": "eu",
+        "document_status": "final_current",
+        "regulatory_role": "technical_report",
+        "effective_date": "2024-08-09",
+        "url": "https://www.efsa.europa.eu/en/supporting/pub/en-8990",
+        "origin_tag": "official_regulatory",
+        "submission_use": "review_required",
+        "normative_for": [
+          "efsa_primo_adapter"
+        ],
+        "supersedes": [],
+        "superseded_by": [],
+        "notes": [
+          "Technical report describing PRIMo revision 4 public rollout and migration context.",
+          "Useful for governance and consultation-only review, but not itself the submission engine."
+        ]
+      }
+    ],
+    "model_governance_snapshot": {
+      "model_family": "efsa_primo_adapter",
+      "jurisdictions": [
+        "eu"
+      ],
+      "governance_status": "compatibility_harness_only",
+      "submission_allowed": false,
+      "current_version_label": "primo-3.1-harness",
+      "dataset_basis": "Public compatibility harness using Dietary MCP contracts plus governed public metadata",
+      "source_ids": [
+        "efsa.primo",
+        "efsa.primo.rev4.report.2024",
+        "efsa.default_body_weights.2012"
+      ],
+      "required_disclaimers": [
+        "No claim of official PRIMo engine equivalence, proprietary dataset reproduction, or regulatory endorsement is implied.",
+        "EFSA PRIMo adapter outputs are for internal review or consultation-oriented compatibility checks only."
+      ],
+      "errata": []
+    },
+    "pinned_resources": [
+      {
+        "role": "release_metadata_report",
+        "uri": "release://metadata-report",
+        "sha256": "example-release-metadata-sha256",
+        "description": "Illustrative release metadata report fingerprint.",
+        "confidentiality_tag": "confidential",
+        "sanitisation_state": "retained"
+      },
+      {
+        "role": "template_manifest",
+        "uri": "adapter-input-templates://manifest",
+        "sha256": "example-template-manifest-sha256",
+        "description": "Illustrative template manifest fingerprint.",
+        "confidentiality_tag": "public",
+        "sanitisation_state": "retained"
+      },
+      {
+        "role": "template_payload",
+        "uri": "adapter-template://efsa_primo_tabular_template",
+        "sha256": "example-template-payload-sha256",
+        "description": "Illustrative template payload fingerprint.",
+        "confidentiality_tag": "public",
+        "sanitisation_state": "retained"
+      },
+      {
+        "role": "walkthrough_manifest",
+        "uri": "adapter-import-walkthroughs://manifest",
+        "sha256": "example-walkthrough-manifest-sha256",
+        "description": "Illustrative walkthrough manifest fingerprint.",
+        "confidentiality_tag": "public",
+        "sanitisation_state": "retained"
+      },
+      {
+        "role": "walkthrough_payload",
+        "uri": "adapter-walkthrough://efsa_primo_tabular_alias_case",
+        "sha256": "example-walkthrough-payload-sha256",
+        "description": "Illustrative walkthrough payload fingerprint.",
+        "confidentiality_tag": "public",
+        "sanitisation_state": "retained"
+      },
+      {
+        "role": "source_catalog_manifest",
+        "uri": "source-catalog://manifest",
+        "sha256": "example-source-catalog-manifest-sha256",
+        "description": "Illustrative source catalog manifest fingerprint.",
+        "confidentiality_tag": "public",
+        "sanitisation_state": "retained"
+      },
+      {
+        "role": "model_governance_manifest",
+        "uri": "model-governance://manifest",
+        "sha256": "example-model-governance-manifest-sha256",
+        "description": "Illustrative model governance manifest fingerprint.",
+        "confidentiality_tag": "public",
+        "sanitisation_state": "retained"
+      }
+    ],
+    "confidentiality_annotations": [
+      {
+        "target_path": "check_result.chemical_identity",
+        "target_kind": "field",
+        "confidentiality_tag": "confidential",
+        "rationale": "Chemical identity can remain non-public during internal review workflows."
+      },
+      {
+        "target_path": "check_result.declared_totals",
+        "target_kind": "field",
+        "confidentiality_tag": "confidential",
+        "rationale": "Declared case totals can encode non-public review context and are redacted from public exports."
+      },
+      {
+        "target_path": "pinned_resources.release_metadata_report",
+        "target_kind": "resource",
+        "confidentiality_tag": "confidential",
+        "rationale": "Illustrative public dossier export removes the full release metadata report resource."
+      }
+    ],
+    "sanitisation_records": [],
+    "limitations": [
+      {
+        "code": "version_pinned_not_signed",
+        "message": "Illustrative dossier example uses placeholder hashes and is not cryptographically signed."
+      }
+    ],
+    "notes": [
+      "Example dossier shows the version-pinned export shape without requiring live release-report generation during artifact writing.",
+      "This dossier supports internal review or consultation-oriented exploration only and is not a submission-capable regulatory package in v0.1.",
+      "No claim of official PRIMo engine equivalence, proprietary dataset reproduction, or regulatory endorsement is implied.",
+      "EFSA PRIMo adapter outputs are for internal review or consultation-oriented compatibility checks only."
+    ]
+  },
+  "preview": {
+    "preview_status": "review_required",
+    "target_profile": {
+      "profile_id": "oht_85_iuclid_json_preview",
+      "display_name": "OHT 85 / IUCLID JSON preview for pesticide residue dossiers",
+      "target_family": "oht_iuclid_json_preview",
+      "oht_templates": [
+        "85-1",
+        "85-8",
+        "85-10"
+      ],
+      "notes": [
+        "This profile is a staged JSON preview for validation and field-mapping review only.",
+        "No claim of OECD Harmonised Template or IUCLID XML equivalence is made by this profile."
+      ]
+    },
+    "source_dossier_id": "adapter-review-dossier-3511dd4919e7",
+    "bundle_profile": "internal_review",
+    "profile_resource_uri": "interoperability://profile/oht_85_iuclid_json_preview",
+    "documentation_resource_uri": "docs://interoperability-preview",
+    "target_document": {
+      "oht85_1": {
+        "substanceIdentity": {
+          "preferredName": "Illustrative residue",
+          "casrn": "100-00-0"
+        }
+      },
+      "oht85_10": {
+        "supportingInformation": {
+          "population": {
+            "regionId": "eu_screening_default",
+            "populationGroup": "child_1_6"
+          },
+          "governedSources": [
+            {
+              "source_id": "dietary.food_vocab.crosswalk",
+              "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+              "organization": "Dietary MCP",
+              "kind": "curated_food_vocabulary_metadata",
+              "jurisdiction": "eu",
+              "document_status": "final_current",
+              "regulatory_role": "guidance",
+              "effective_date": "2026-04-10",
+              "url": "docs://food-vocabulary-crosswalk",
+              "origin_tag": "illustrative_placeholder",
+              "submission_use": "review_required",
+              "normative_for": [
+                "reference_dietary",
+                "adapter_stub",
+                "efsa_primo_adapter",
+                "epa_deem_adapter"
+              ],
+              "supersedes": [],
+              "superseded_by": [],
+              "notes": [
+                "Illustrative provisional crosswalk from current Dietary MCP canonical commodities to FoodEx2-like, RPC-like, and RPCD-like identifiers.",
+                "Codes in this pack are not official EFSA FoodEx2 or RPC/RPCD identifiers and are published for workflow-hardening and field-shape validation only."
+              ]
+            },
+            {
+              "source_id": "dietary.profile.eu_child_1_6",
+              "title": "Illustrative EU child dietary screening profile",
+              "organization": "Dietary MCP",
+              "kind": "curated_profile_metadata",
+              "jurisdiction": "eu",
+              "document_status": "final_current",
+              "regulatory_role": "guidance",
+              "effective_date": "2026-04-13",
+              "url": "docs://population-profile-guide",
+              "origin_tag": "illustrative_placeholder",
+              "submission_use": "review_required",
+              "normative_for": [
+                "reference_dietary",
+                "adapter_stub",
+                "efsa_primo_adapter",
+                "epa_deem_adapter"
+              ],
+              "supersedes": [],
+              "superseded_by": [],
+              "notes": [
+                "Illustrative curated child screening profile distributed with Dietary MCP defaults.",
+                "Expanded illustrative screening pack covers thirteen canonical commodity codes.",
+                "Use reviewed regional survey packs for regulator-facing decisions.",
+                "Project-maintained illustrative placeholder; not an externally governed survey pack."
+              ]
+            },
+            {
+              "source_id": "dietary.taxonomy.apples",
+              "title": "Dietary MCP commodity taxonomy entry for apples",
+              "organization": "Dietary MCP",
+              "kind": "curated_taxonomy_metadata",
+              "jurisdiction": "global",
+              "document_status": "final_current",
+              "regulatory_role": "guidance",
+              "effective_date": null,
+              "url": "defaults://manifest",
+              "origin_tag": "curated_derived",
+              "submission_use": "review_required",
+              "normative_for": [
+                "reference_dietary",
+                "adapter_stub",
+                "efsa_primo_adapter",
+                "epa_deem_adapter"
+              ],
+              "supersedes": [],
+              "superseded_by": [],
+              "notes": [
+                "Governed taxonomy provenance entry for apples."
+              ]
+            },
+            {
+              "source_id": "dietary.taxonomy.milk",
+              "title": "Dietary MCP commodity taxonomy entry for milk",
+              "organization": "Dietary MCP",
+              "kind": "curated_taxonomy_metadata",
+              "jurisdiction": "global",
+              "document_status": "final_current",
+              "regulatory_role": "guidance",
+              "effective_date": null,
+              "url": "defaults://manifest",
+              "origin_tag": "curated_derived",
+              "submission_use": "review_required",
+              "normative_for": [
+                "reference_dietary",
+                "adapter_stub",
+                "efsa_primo_adapter",
+                "epa_deem_adapter"
+              ],
+              "supersedes": [],
+              "superseded_by": [],
+              "notes": [
+                "Governed taxonomy provenance entry for milk."
+              ]
+            },
+            {
+              "source_id": "efsa.default_body_weights.2012",
+              "title": "EFSA harmonised default values for risk assessment",
+              "organization": "EFSA",
+              "kind": "official_guidance_metadata",
+              "jurisdiction": "eu",
+              "document_status": "final_current",
+              "regulatory_role": "guidance",
+              "effective_date": "2012-03-07",
+              "url": "https://www.efsa.europa.eu/en/press/news/120307a",
+              "origin_tag": "official_regulatory",
+              "submission_use": "review_required",
+              "normative_for": [
+                "reference_dietary",
+                "efsa_primo_adapter"
+              ],
+              "supersedes": [],
+              "superseded_by": [],
+              "notes": [
+                "Provides public default body-weight guidance.",
+                "Notes that 60 kg has commonly been used for worldwide adult populations, while 70 kg is more realistic for EU adults when actual EU data are absent."
+              ]
+            },
+            {
+              "source_id": "efsa.primo",
+              "title": "EFSA PRIMo pesticide residue intake model tools page",
+              "organization": "EFSA",
+              "kind": "official_model_metadata",
+              "jurisdiction": "eu",
+              "document_status": "tool_metadata",
+              "regulatory_role": "software_metadata",
+              "effective_date": null,
+              "url": "https://www.efsa.europa.eu/en/applications/pesticides/tools",
+              "origin_tag": "official_regulatory",
+              "submission_use": "not_allowed",
+              "normative_for": [
+                "efsa_primo_adapter"
+              ],
+              "supersedes": [],
+              "superseded_by": [],
+              "notes": [
+                "Used as model-family metadata for PRIMo-aligned adapter boundaries.",
+                "EFSA notes that PRIMo revision 3.1 remains the current version for MRL applications until formal endorsement of revision 4 in 2026."
+              ]
+            },
+            {
+              "source_id": "efsa.primo.rev4.report.2024",
+              "title": "EFSA PRIMo revision 4 technical report",
+              "organization": "EFSA",
+              "kind": "official_supporting_publication",
+              "jurisdiction": "eu",
+              "document_status": "final_current",
+              "regulatory_role": "technical_report",
+              "effective_date": "2024-08-09",
+              "url": "https://www.efsa.europa.eu/en/supporting/pub/en-8990",
+              "origin_tag": "official_regulatory",
+              "submission_use": "review_required",
+              "normative_for": [
+                "efsa_primo_adapter"
+              ],
+              "supersedes": [],
+              "superseded_by": [],
+              "notes": [
+                "Technical report describing PRIMo revision 4 public rollout and migration context.",
+                "Useful for governance and consultation-only review, but not itself the submission engine."
+              ]
+            }
+          ],
+          "modelGovernance": {
+            "model_family": "efsa_primo_adapter",
+            "jurisdictions": [
+              "eu"
+            ],
+            "governance_status": "compatibility_harness_only",
+            "submission_allowed": false,
+            "current_version_label": "primo-3.1-harness",
+            "dataset_basis": "Public compatibility harness using Dietary MCP contracts plus governed public metadata",
+            "source_ids": [
+              "efsa.primo",
+              "efsa.primo.rev4.report.2024",
+              "efsa.default_body_weights.2012"
+            ],
+            "required_disclaimers": [
+              "No claim of official PRIMo engine equivalence, proprietary dataset reproduction, or regulatory endorsement is implied.",
+              "EFSA PRIMo adapter outputs are for internal review or consultation-oriented compatibility checks only."
+            ],
+            "errata": []
+          },
+          "pinnedResources": [
+            {
+              "role": "release_metadata_report",
+              "uri": "release://metadata-report",
+              "sha256": "example-release-metadata-sha256",
+              "description": "Illustrative release metadata report fingerprint.",
+              "confidentiality_tag": "confidential",
+              "sanitisation_state": "retained"
+            },
+            {
+              "role": "template_manifest",
+              "uri": "adapter-input-templates://manifest",
+              "sha256": "example-template-manifest-sha256",
+              "description": "Illustrative template manifest fingerprint.",
+              "confidentiality_tag": "public",
+              "sanitisation_state": "retained"
+            },
+            {
+              "role": "template_payload",
+              "uri": "adapter-template://efsa_primo_tabular_template",
+              "sha256": "example-template-payload-sha256",
+              "description": "Illustrative template payload fingerprint.",
+              "confidentiality_tag": "public",
+              "sanitisation_state": "retained"
+            },
+            {
+              "role": "walkthrough_manifest",
+              "uri": "adapter-import-walkthroughs://manifest",
+              "sha256": "example-walkthrough-manifest-sha256",
+              "description": "Illustrative walkthrough manifest fingerprint.",
+              "confidentiality_tag": "public",
+              "sanitisation_state": "retained"
+            },
+            {
+              "role": "walkthrough_payload",
+              "uri": "adapter-walkthrough://efsa_primo_tabular_alias_case",
+              "sha256": "example-walkthrough-payload-sha256",
+              "description": "Illustrative walkthrough payload fingerprint.",
+              "confidentiality_tag": "public",
+              "sanitisation_state": "retained"
+            },
+            {
+              "role": "source_catalog_manifest",
+              "uri": "source-catalog://manifest",
+              "sha256": "example-source-catalog-manifest-sha256",
+              "description": "Illustrative source catalog manifest fingerprint.",
+              "confidentiality_tag": "public",
+              "sanitisation_state": "retained"
+            },
+            {
+              "role": "model_governance_manifest",
+              "uri": "model-governance://manifest",
+              "sha256": "example-model-governance-manifest-sha256",
+              "description": "Illustrative model governance manifest fingerprint.",
+              "confidentiality_tag": "public",
+              "sanitisation_state": "retained"
+            }
+          ]
+        }
+      },
+      "oht85_8": {
+        "dietaryExposure": {
+          "scenarioClass": "bounded_acute",
+          "intakeWindowSemantic": "acute",
+          "totalIntakeMgPerKgBwPerDay": 0.00416,
+          "lowerBoundMgPerKgBwPerDay": 0.00304,
+          "upperBoundMgPerKgBwPerDay": 0.00528,
+          "commodityContributions": [
+            {
+              "commodity_code": "apples",
+              "canonical_name": "Apples",
+              "foodex2_code": "EXAMPLE_FDX2_APPLES_RAW",
+              "rpc_code": "EXAMPLE_RPC_APPLES",
+              "rpcd_code": "EXAMPLE_RPCD_APPLES_RAW",
+              "processed_status": "raw_primary_commodity",
+              "mapping_confidence": "provisional",
+              "contribution_mg_per_kg_bw_per_day": 0.00336,
+              "fraction_of_total": 0.8076923076923078,
+              "residue_concentration_mg_per_kg": 0.18,
+              "consumption_kg_per_day": 0.28,
+              "applied_processing_factor": 1.0,
+              "lower_bound_mg_per_kg_bw_per_day": 0.00224,
+              "upper_bound_mg_per_kg_bw_per_day": 0.00448
+            },
+            {
+              "commodity_code": "milk",
+              "canonical_name": "Milk",
+              "foodex2_code": "EXAMPLE_FDX2_MILK_RAW",
+              "rpc_code": "EXAMPLE_RPC_MILK",
+              "rpcd_code": "EXAMPLE_RPCD_MILK_RAW",
+              "processed_status": "raw_primary_commodity",
+              "mapping_confidence": "provisional",
+              "contribution_mg_per_kg_bw_per_day": 0.0008,
+              "fraction_of_total": 0.19230769230769235,
+              "residue_concentration_mg_per_kg": 0.03,
+              "consumption_kg_per_day": 0.4,
+              "applied_processing_factor": 1.0,
+              "lower_bound_mg_per_kg_bw_per_day": 0.0008,
+              "upper_bound_mg_per_kg_bw_per_day": 0.0008
+            }
+          ]
+        }
+      }
+    },
+    "mapped_fields": [
+      {
+        "local_path": "review_bundle.check_result.chemical_identity.preferredName",
+        "target_path": "oht85_1.substanceIdentity.preferredName",
+        "support_level": "direct",
+        "required": true,
+        "value_present": true,
+        "value": "Illustrative residue",
+        "note": "Preferred substance name can be passed through directly."
+      },
+      {
+        "local_path": "review_bundle.check_result.chemical_identity.casrn",
+        "target_path": "oht85_1.substanceIdentity.casrn",
+        "support_level": "direct",
+        "required": false,
+        "value_present": true,
+        "value": "100-00-0",
+        "note": null
+      },
+      {
+        "local_path": "review_bundle.check_result.profile_selection.region_id",
+        "target_path": "oht85_10.supportingInformation.population.regionId",
+        "support_level": "direct",
+        "required": true,
+        "value_present": true,
+        "value": "eu_screening_default",
+        "note": null
+      },
+      {
+        "local_path": "review_bundle.check_result.profile_selection.population_group",
+        "target_path": "oht85_10.supportingInformation.population.populationGroup",
+        "support_level": "direct",
+        "required": true,
+        "value_present": true,
+        "value": "child_1_6",
+        "note": null
+      },
+      {
+        "local_path": "review_bundle.check_result.normalized_projection.scenario_class",
+        "target_path": "oht85_8.dietaryExposure.scenarioClass",
+        "support_level": "direct",
+        "required": true,
+        "value_present": true,
+        "value": "bounded_acute",
+        "note": null
+      },
+      {
+        "local_path": "review_bundle.check_result.normalized_projection.intake_window",
+        "target_path": "oht85_8.dietaryExposure.intakeWindowSemantic",
+        "support_level": "direct",
+        "required": true,
+        "value_present": true,
+        "value": "acute",
+        "note": null
+      },
+      {
+        "local_path": "review_bundle.check_result.normalized_projection.total_intake_mg_per_kg_bw_per_day",
+        "target_path": "oht85_8.dietaryExposure.totalIntakeMgPerKgBwPerDay",
+        "support_level": "direct",
+        "required": true,
+        "value_present": true,
+        "value": 0.00416,
+        "note": null
+      },
+      {
+        "local_path": "review_bundle.check_result.normalized_projection.lower_bound_mg_per_kg_bw_per_day",
+        "target_path": "oht85_8.dietaryExposure.lowerBoundMgPerKgBwPerDay",
+        "support_level": "direct",
+        "required": false,
+        "value_present": true,
+        "value": 0.00304,
+        "note": null
+      },
+      {
+        "local_path": "review_bundle.check_result.normalized_projection.upper_bound_mg_per_kg_bw_per_day",
+        "target_path": "oht85_8.dietaryExposure.upperBoundMgPerKgBwPerDay",
+        "support_level": "direct",
+        "required": false,
+        "value_present": true,
+        "value": 0.00528,
+        "note": null
+      },
+      {
+        "local_path": "review_bundle.check_result.normalized_projection.commodity_contributions",
+        "target_path": "oht85_8.dietaryExposure.commodityContributions",
+        "support_level": "derived",
+        "required": true,
+        "value_present": true,
+        "value": [
+          {
+            "commodity_code": "apples",
+            "canonical_name": "Apples",
+            "foodex2_code": "EXAMPLE_FDX2_APPLES_RAW",
+            "rpc_code": "EXAMPLE_RPC_APPLES",
+            "rpcd_code": "EXAMPLE_RPCD_APPLES_RAW",
+            "processed_status": "raw_primary_commodity",
+            "mapping_confidence": "provisional",
+            "contribution_mg_per_kg_bw_per_day": 0.00336,
+            "fraction_of_total": 0.8076923076923078,
+            "residue_concentration_mg_per_kg": 0.18,
+            "consumption_kg_per_day": 0.28,
+            "applied_processing_factor": 1.0,
+            "lower_bound_mg_per_kg_bw_per_day": 0.00224,
+            "upper_bound_mg_per_kg_bw_per_day": 0.00448
+          },
+          {
+            "commodity_code": "milk",
+            "canonical_name": "Milk",
+            "foodex2_code": "EXAMPLE_FDX2_MILK_RAW",
+            "rpc_code": "EXAMPLE_RPC_MILK",
+            "rpcd_code": "EXAMPLE_RPCD_MILK_RAW",
+            "processed_status": "raw_primary_commodity",
+            "mapping_confidence": "provisional",
+            "contribution_mg_per_kg_bw_per_day": 0.0008,
+            "fraction_of_total": 0.19230769230769235,
+            "residue_concentration_mg_per_kg": 0.03,
+            "consumption_kg_per_day": 0.4,
+            "applied_processing_factor": 1.0,
+            "lower_bound_mg_per_kg_bw_per_day": 0.0008,
+            "upper_bound_mg_per_kg_bw_per_day": 0.0008
+          }
+        ],
+        "note": "Stable MCP contributions are carried as a derived validation-only preview structure."
+      },
+      {
+        "local_path": "source_governance_snapshot",
+        "target_path": "oht85_10.supportingInformation.governedSources",
+        "support_level": "derived",
+        "required": true,
+        "value_present": true,
+        "value": [
+          {
+            "source_id": "dietary.food_vocab.crosswalk",
+            "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+            "organization": "Dietary MCP",
+            "kind": "curated_food_vocabulary_metadata",
+            "jurisdiction": "eu",
+            "document_status": "final_current",
+            "regulatory_role": "guidance",
+            "effective_date": "2026-04-10",
+            "url": "docs://food-vocabulary-crosswalk",
+            "origin_tag": "illustrative_placeholder",
+            "submission_use": "review_required",
+            "normative_for": [
+              "reference_dietary",
+              "adapter_stub",
+              "efsa_primo_adapter",
+              "epa_deem_adapter"
+            ],
+            "supersedes": [],
+            "superseded_by": [],
+            "notes": [
+              "Illustrative provisional crosswalk from current Dietary MCP canonical commodities to FoodEx2-like, RPC-like, and RPCD-like identifiers.",
+              "Codes in this pack are not official EFSA FoodEx2 or RPC/RPCD identifiers and are published for workflow-hardening and field-shape validation only."
+            ]
+          },
+          {
+            "source_id": "dietary.profile.eu_child_1_6",
+            "title": "Illustrative EU child dietary screening profile",
+            "organization": "Dietary MCP",
+            "kind": "curated_profile_metadata",
+            "jurisdiction": "eu",
+            "document_status": "final_current",
+            "regulatory_role": "guidance",
+            "effective_date": "2026-04-13",
+            "url": "docs://population-profile-guide",
+            "origin_tag": "illustrative_placeholder",
+            "submission_use": "review_required",
+            "normative_for": [
+              "reference_dietary",
+              "adapter_stub",
+              "efsa_primo_adapter",
+              "epa_deem_adapter"
+            ],
+            "supersedes": [],
+            "superseded_by": [],
+            "notes": [
+              "Illustrative curated child screening profile distributed with Dietary MCP defaults.",
+              "Expanded illustrative screening pack covers thirteen canonical commodity codes.",
+              "Use reviewed regional survey packs for regulator-facing decisions.",
+              "Project-maintained illustrative placeholder; not an externally governed survey pack."
+            ]
+          },
+          {
+            "source_id": "dietary.taxonomy.apples",
+            "title": "Dietary MCP commodity taxonomy entry for apples",
+            "organization": "Dietary MCP",
+            "kind": "curated_taxonomy_metadata",
+            "jurisdiction": "global",
+            "document_status": "final_current",
+            "regulatory_role": "guidance",
+            "effective_date": null,
+            "url": "defaults://manifest",
+            "origin_tag": "curated_derived",
+            "submission_use": "review_required",
+            "normative_for": [
+              "reference_dietary",
+              "adapter_stub",
+              "efsa_primo_adapter",
+              "epa_deem_adapter"
+            ],
+            "supersedes": [],
+            "superseded_by": [],
+            "notes": [
+              "Governed taxonomy provenance entry for apples."
+            ]
+          },
+          {
+            "source_id": "dietary.taxonomy.milk",
+            "title": "Dietary MCP commodity taxonomy entry for milk",
+            "organization": "Dietary MCP",
+            "kind": "curated_taxonomy_metadata",
+            "jurisdiction": "global",
+            "document_status": "final_current",
+            "regulatory_role": "guidance",
+            "effective_date": null,
+            "url": "defaults://manifest",
+            "origin_tag": "curated_derived",
+            "submission_use": "review_required",
+            "normative_for": [
+              "reference_dietary",
+              "adapter_stub",
+              "efsa_primo_adapter",
+              "epa_deem_adapter"
+            ],
+            "supersedes": [],
+            "superseded_by": [],
+            "notes": [
+              "Governed taxonomy provenance entry for milk."
+            ]
+          },
+          {
+            "source_id": "efsa.default_body_weights.2012",
+            "title": "EFSA harmonised default values for risk assessment",
+            "organization": "EFSA",
+            "kind": "official_guidance_metadata",
+            "jurisdiction": "eu",
+            "document_status": "final_current",
+            "regulatory_role": "guidance",
+            "effective_date": "2012-03-07",
+            "url": "https://www.efsa.europa.eu/en/press/news/120307a",
+            "origin_tag": "official_regulatory",
+            "submission_use": "review_required",
+            "normative_for": [
+              "reference_dietary",
+              "efsa_primo_adapter"
+            ],
+            "supersedes": [],
+            "superseded_by": [],
+            "notes": [
+              "Provides public default body-weight guidance.",
+              "Notes that 60 kg has commonly been used for worldwide adult populations, while 70 kg is more realistic for EU adults when actual EU data are absent."
+            ]
+          },
+          {
+            "source_id": "efsa.primo",
+            "title": "EFSA PRIMo pesticide residue intake model tools page",
+            "organization": "EFSA",
+            "kind": "official_model_metadata",
+            "jurisdiction": "eu",
+            "document_status": "tool_metadata",
+            "regulatory_role": "software_metadata",
+            "effective_date": null,
+            "url": "https://www.efsa.europa.eu/en/applications/pesticides/tools",
+            "origin_tag": "official_regulatory",
+            "submission_use": "not_allowed",
+            "normative_for": [
+              "efsa_primo_adapter"
+            ],
+            "supersedes": [],
+            "superseded_by": [],
+            "notes": [
+              "Used as model-family metadata for PRIMo-aligned adapter boundaries.",
+              "EFSA notes that PRIMo revision 3.1 remains the current version for MRL applications until formal endorsement of revision 4 in 2026."
+            ]
+          },
+          {
+            "source_id": "efsa.primo.rev4.report.2024",
+            "title": "EFSA PRIMo revision 4 technical report",
+            "organization": "EFSA",
+            "kind": "official_supporting_publication",
+            "jurisdiction": "eu",
+            "document_status": "final_current",
+            "regulatory_role": "technical_report",
+            "effective_date": "2024-08-09",
+            "url": "https://www.efsa.europa.eu/en/supporting/pub/en-8990",
+            "origin_tag": "official_regulatory",
+            "submission_use": "review_required",
+            "normative_for": [
+              "efsa_primo_adapter"
+            ],
+            "supersedes": [],
+            "superseded_by": [],
+            "notes": [
+              "Technical report describing PRIMo revision 4 public rollout and migration context.",
+              "Useful for governance and consultation-only review, but not itself the submission engine."
+            ]
+          }
+        ],
+        "note": null
+      },
+      {
+        "local_path": "model_governance_snapshot",
+        "target_path": "oht85_10.supportingInformation.modelGovernance",
+        "support_level": "derived",
+        "required": true,
+        "value_present": true,
+        "value": {
+          "model_family": "efsa_primo_adapter",
+          "jurisdictions": [
+            "eu"
+          ],
+          "governance_status": "compatibility_harness_only",
+          "submission_allowed": false,
+          "current_version_label": "primo-3.1-harness",
+          "dataset_basis": "Public compatibility harness using Dietary MCP contracts plus governed public metadata",
+          "source_ids": [
+            "efsa.primo",
+            "efsa.primo.rev4.report.2024",
+            "efsa.default_body_weights.2012"
+          ],
+          "required_disclaimers": [
+            "No claim of official PRIMo engine equivalence, proprietary dataset reproduction, or regulatory endorsement is implied.",
+            "EFSA PRIMo adapter outputs are for internal review or consultation-oriented compatibility checks only."
+          ],
+          "errata": []
+        },
+        "note": null
+      },
+      {
+        "local_path": "pinned_resources",
+        "target_path": "oht85_10.supportingInformation.pinnedResources",
+        "support_level": "derived",
+        "required": false,
+        "value_present": true,
+        "value": [
+          {
+            "role": "release_metadata_report",
+            "uri": "release://metadata-report",
+            "sha256": "example-release-metadata-sha256",
+            "description": "Illustrative release metadata report fingerprint.",
+            "confidentiality_tag": "confidential",
+            "sanitisation_state": "retained"
+          },
+          {
+            "role": "template_manifest",
+            "uri": "adapter-input-templates://manifest",
+            "sha256": "example-template-manifest-sha256",
+            "description": "Illustrative template manifest fingerprint.",
+            "confidentiality_tag": "public",
+            "sanitisation_state": "retained"
+          },
+          {
+            "role": "template_payload",
+            "uri": "adapter-template://efsa_primo_tabular_template",
+            "sha256": "example-template-payload-sha256",
+            "description": "Illustrative template payload fingerprint.",
+            "confidentiality_tag": "public",
+            "sanitisation_state": "retained"
+          },
+          {
+            "role": "walkthrough_manifest",
+            "uri": "adapter-import-walkthroughs://manifest",
+            "sha256": "example-walkthrough-manifest-sha256",
+            "description": "Illustrative walkthrough manifest fingerprint.",
+            "confidentiality_tag": "public",
+            "sanitisation_state": "retained"
+          },
+          {
+            "role": "walkthrough_payload",
+            "uri": "adapter-walkthrough://efsa_primo_tabular_alias_case",
+            "sha256": "example-walkthrough-payload-sha256",
+            "description": "Illustrative walkthrough payload fingerprint.",
+            "confidentiality_tag": "public",
+            "sanitisation_state": "retained"
+          },
+          {
+            "role": "source_catalog_manifest",
+            "uri": "source-catalog://manifest",
+            "sha256": "example-source-catalog-manifest-sha256",
+            "description": "Illustrative source catalog manifest fingerprint.",
+            "confidentiality_tag": "public",
+            "sanitisation_state": "retained"
+          },
+          {
+            "role": "model_governance_manifest",
+            "uri": "model-governance://manifest",
+            "sha256": "example-model-governance-manifest-sha256",
+            "description": "Illustrative model governance manifest fingerprint.",
+            "confidentiality_tag": "public",
+            "sanitisation_state": "retained"
+          }
+        ],
+        "note": null
+      }
+    ],
+    "unsupported_fields": [
+      {
+        "local_path": "review_bundle.check_result.input_headers",
+        "reason": "Import-template diagnostics do not have a stable OHT or IUCLID slot in this preview profile.",
+        "present": true,
+        "observed_value": [
+          "commodity",
+          "iesti_mgkgbwday",
+          "hr_mgkg",
+          "consumption_kg_day",
+          "pf",
+          "lb_mgkgbwday",
+          "ub_mgkgbwday"
+        ],
+        "suggested_action": "Retain in internal review bundle only."
+      },
+      {
+        "local_path": "review_bundle.check_result.header_resolution",
+        "reason": "CSV header-resolution diagnostics are tooling-specific and outside the staged preview.",
+        "present": true,
+        "observed_value": [
+          {
+            "header": "commodity",
+            "canonical_field": "commodity_code",
+            "recognized": true
+          },
+          {
+            "header": "iesti_mgkgbwday",
+            "canonical_field": "contribution_mg_per_kg_bw_per_day",
+            "recognized": true
+          },
+          {
+            "header": "hr_mgkg",
+            "canonical_field": "residue_concentration_mg_per_kg",
+            "recognized": true
+          },
+          {
+            "header": "consumption_kg_day",
+            "canonical_field": "consumption_kg_per_day",
+            "recognized": true
+          },
+          {
+            "header": "pf",
+            "canonical_field": "applied_processing_factor",
+            "recognized": true
+          },
+          {
+            "header": "lb_mgkgbwday",
+            "canonical_field": "lower_bound_intake_mg_per_kg_bw_per_day",
+            "recognized": true
+          },
+          {
+            "header": "ub_mgkgbwday",
+            "canonical_field": "upper_bound_intake_mg_per_kg_bw_per_day",
+            "recognized": true
+          }
+        ],
+        "suggested_action": "Retain in internal review bundle only."
+      },
+      {
+        "local_path": "review_bundle.comparison_result.compared_fields",
+        "reason": "Walkthrough comparison diagnostics are internal validation artifacts.",
+        "present": true,
+        "observed_value": [
+          {
+            "field": "template_name",
+            "matches": true,
+            "observed": "efsa_primo_tabular_template",
+            "expected": "efsa_primo_tabular_template",
+            "note": null
+          },
+          {
+            "field": "model_family",
+            "matches": true,
+            "observed": "efsa_primo_adapter",
+            "expected": "efsa_primo_adapter",
+            "note": null
+          },
+          {
+            "field": "unmapped_headers",
+            "matches": true,
+            "observed": [],
+            "expected": [],
+            "note": "Review is required when unrecognized CSV headers are present."
+          },
+          {
+            "field": "total_intake_mg_per_kg_bw_per_day",
+            "matches": true,
+            "observed": 0.00416,
+            "expected": 0.00416,
+            "note": "Numeric tolerance: 1e-12."
+          },
+          {
+            "field": "lower_bound_mg_per_kg_bw_per_day",
+            "matches": true,
+            "observed": 0.00304,
+            "expected": 0.00304,
+            "note": "Numeric tolerance: 1e-12."
+          },
+          {
+            "field": "upper_bound_mg_per_kg_bw_per_day",
+            "matches": true,
+            "observed": 0.00528,
+            "expected": 0.00528,
+            "note": "Numeric tolerance: 1e-12."
+          },
+          {
+            "field": "commodity_codes",
+            "matches": true,
+            "observed": [
+              "apples",
+              "milk"
+            ],
+            "expected": [
+              "apples",
+              "milk"
+            ],
+            "note": null
+          },
+          {
+            "field": "commodity_contributions_mg_per_kg_bw_per_day",
+            "matches": true,
+            "observed": {
+              "apples": 0.00336,
+              "milk": 0.0008
+            },
+            "expected": {
+              "apples": 0.00336,
+              "milk": 0.0008
+            },
+            "note": "Contribution values are compared on canonical commodity codes."
+          },
+          {
+            "field": "food_vocabulary_mappings",
+            "matches": true,
+            "observed": {
+              "apples": {
+                "foodex2Code": "EXAMPLE_FDX2_APPLES_RAW",
+                "rpcCode": "EXAMPLE_RPC_APPLES",
+                "rpcdCode": "EXAMPLE_RPCD_APPLES_RAW",
+                "processedStatus": "raw_primary_commodity",
+                "mappingConfidence": "provisional"
+              },
+              "milk": {
+                "foodex2Code": "EXAMPLE_FDX2_MILK_RAW",
+                "rpcCode": "EXAMPLE_RPC_MILK",
+                "rpcdCode": "EXAMPLE_RPCD_MILK_RAW",
+                "processedStatus": "raw_primary_commodity",
+                "mappingConfidence": "provisional"
+              }
+            },
+            "expected": {
+              "apples": {
+                "foodex2Code": "EXAMPLE_FDX2_APPLES_RAW",
+                "rpcCode": "EXAMPLE_RPC_APPLES",
+                "rpcdCode": "EXAMPLE_RPCD_APPLES_RAW",
+                "processedStatus": "raw_primary_commodity",
+                "mappingConfidence": "provisional"
+              },
+              "milk": {
+                "foodex2Code": "EXAMPLE_FDX2_MILK_RAW",
+                "rpcCode": "EXAMPLE_RPC_MILK",
+                "rpcdCode": "EXAMPLE_RPCD_MILK_RAW",
+                "processedStatus": "raw_primary_commodity",
+                "mappingConfidence": "provisional"
+              }
+            },
+            "note": "Food vocabulary fields are compared on canonical commodity codes with optional processed-commodity status retained."
+          },
+          {
+            "field": "dominant_commodity_codes",
+            "matches": true,
+            "observed": [
+              "apples",
+              "milk"
+            ],
+            "expected": [
+              "apples",
+              "milk"
+            ],
+            "note": null
+          },
+          {
+            "field": "required_source_ids_present",
+            "matches": true,
+            "observed": [
+              "dietary.food_vocab.crosswalk",
+              "dietary.profile.eu_child_1_6",
+              "dietary.taxonomy.apples",
+              "dietary.taxonomy.milk",
+              "efsa.default_body_weights.2012",
+              "efsa.primo",
+              "example.adapter.apples.monitoring",
+              "example.adapter.milk.default"
+            ],
+            "expected": [
+              "efsa.primo",
+              "efsa.default_body_weights.2012"
+            ],
+            "note": "Extra provenance source IDs are allowed; required official source IDs must be present."
+          },
+          {
+            "field": "required_quality_flag_codes_present",
+            "matches": true,
+            "observed": [
+              "external_adapter_normalized"
+            ],
+            "expected": [
+              "external_adapter_normalized"
+            ],
+            "note": "Extra quality flags are allowed; required harness quality flags must be present."
+          }
+        ],
+        "suggested_action": "Retain in internal review bundle only."
+      },
+      {
+        "local_path": "review_bundle.comparison_result.matched_fields",
+        "reason": "Walkthrough comparison diagnostics are internal validation artifacts.",
+        "present": true,
+        "observed_value": [
+          "template_name",
+          "model_family",
+          "unmapped_headers",
+          "total_intake_mg_per_kg_bw_per_day",
+          "lower_bound_mg_per_kg_bw_per_day",
+          "upper_bound_mg_per_kg_bw_per_day",
+          "commodity_codes",
+          "commodity_contributions_mg_per_kg_bw_per_day",
+          "food_vocabulary_mappings",
+          "dominant_commodity_codes",
+          "required_source_ids_present",
+          "required_quality_flag_codes_present"
+        ],
+        "suggested_action": "Retain in internal review bundle only."
+      },
+      {
+        "local_path": "confidentiality_annotations",
+        "reason": "Confidentiality annotations are MCP packaging metadata and outside the staged preview scope.",
+        "present": true,
+        "observed_value": [
+          {
+            "target_path": "check_result.chemical_identity",
+            "target_kind": "field",
+            "confidentiality_tag": "confidential",
+            "rationale": "Chemical identity can remain non-public during internal review workflows."
+          },
+          {
+            "target_path": "check_result.declared_totals",
+            "target_kind": "field",
+            "confidentiality_tag": "confidential",
+            "rationale": "Declared case totals can encode non-public review context and are redacted from public exports."
+          },
+          {
+            "target_path": "pinned_resources.release_metadata_report",
+            "target_kind": "resource",
+            "confidentiality_tag": "confidential",
+            "rationale": "Illustrative public dossier export removes the full release metadata report resource."
+          }
+        ],
+        "suggested_action": "Carry in MCP review artifacts, not in the preview payload."
+      }
+    ],
+    "missing_required_fields": [],
+    "notes": [
+      "This is a validation-only OHT/IUCLID-aligned JSON preview and not an XML submission payload.",
+      "Unsupported fields are reported explicitly so downstream teams can track manual review or future profile expansion.",
+      "No claim of IUCLID or OECD OHT XML equivalence is implied by this preview.",
+      "This profile is a staged JSON preview for validation and field-mapping review only.",
+      "No claim of OECD Harmonised Template or IUCLID XML equivalence is made by this profile."
+    ]
+  },
+  "target_profile": "eu_internal_exchange_preview"
+}

@@ -1,0 +1,32 @@
+{
+  "chemical_identity": {
+    "preferredName": "glyphosate"
+  },
+  "contaminant_family": "pesticide_residue",
+  "residue_records": [
+    {
+      "commodity_code": "grapes",
+      "residue_concentration_mg_per_kg": 0.2,
+      "lower_bound_mg_per_kg": null,
+      "upper_bound_mg_per_kg": null,
+      "residue_unit": "mg/kg",
+      "source_type": "monitoring",
+      "processing_factor": null,
+      "region_id": null,
+      "time_context": null,
+      "review_status": "reviewed",
+      "source_reference": {
+        "source_id": "example.trade.grapes.monitoring",
+        "title": "Illustrative trade-risk grapes residue input",
+        "effective_date": "2026-04-21",
+        "url": null,
+        "origin_tag": null
+      }
+    }
+  ],
+  "target_jurisdictions": [
+    "us",
+    "codex_global",
+    "cn"
+  ]
+}

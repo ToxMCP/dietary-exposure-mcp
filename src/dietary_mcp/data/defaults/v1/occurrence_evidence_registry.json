@@ -1,0 +1,824 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "occurrence_evidence_registry",
+  "records": [
+    {
+      "recordId": "eu.cadmium.occurrence_evidence.official_monitoring_context",
+      "displayName": "Cadmium official monitoring evidence context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "cadmium_food_contaminants",
+      "evidenceKind": "official_monitoring_context",
+      "analytes": [
+        "cadmium"
+      ],
+      "matrixGroups": [
+        "staple_plant_foods",
+        "molluscs",
+        "broad_food_supply"
+      ],
+      "sampleSetSummary": "EFSA dietary exposure and occurrence context linked to EU official-control and contaminants-law review.",
+      "measuredUnit": "mg/kg",
+      "dataPeriod": "2009-2012_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.cadmium.food.2009",
+        "efsa.cadmium.exposure.2012",
+        "efsa.metals.topic.2026",
+        "eu.reg.2023_915",
+        "eu.reg.333_2007"
+      ],
+      "occurrenceRecordIds": [
+        "efsa.cadmium.occurrence_monitoring.support"
+      ],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.cadmium_support"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.cadmium.analytical_method_evidence.official_control"
+      ],
+      "legalAuthorityIds": [
+        "eu.cadmium.contaminants.reg_2023_915",
+        "eu.cadmium.official_control.reg_333_2007"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.cadmium.twi.2009"
+      ],
+      "linkedReviewFocusIds": [
+        "efsa.cadmium.staple_plant_foods.review_focus",
+        "efsa.cadmium.molluscs.review_focus"
+      ],
+      "notes": [
+        "Captures governed occurrence context for cadmium food review and monitoring interpretation.",
+        "Exposed for evidence linkage and auditability, not as a native cadmium exposure engine."
+      ]
+    },
+    {
+      "recordId": "eu.lead.occurrence_evidence.official_monitoring_context",
+      "displayName": "Lead official monitoring evidence context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "lead_food_contaminants",
+      "evidenceKind": "official_monitoring_context",
+      "analytes": [
+        "lead"
+      ],
+      "matrixGroups": [
+        "broad_food_supply",
+        "game_meat",
+        "current_contributor_groups"
+      ],
+      "sampleSetSummary": "EFSA lead occurrence and exposure context linked to EU official-control and contaminants-law review.",
+      "measuredUnit": "mg/kg",
+      "dataPeriod": "2010-2025_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.lead.food.2010",
+        "efsa.lead.exposure.2012",
+        "efsa.lead.exposure.2025",
+        "efsa.metals.topic.2026",
+        "eu.reg.2023_915",
+        "eu.reg.333_2007"
+      ],
+      "occurrenceRecordIds": [
+        "efsa.lead.occurrence_monitoring.support"
+      ],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.lead_support"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.lead.analytical_method_evidence.official_control"
+      ],
+      "legalAuthorityIds": [
+        "eu.lead.contaminants.reg_2023_915",
+        "eu.lead.official_control.reg_333_2007"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.lead.developmental_neurotoxicity.bmdl01",
+        "efsa.lead.nephrotoxicity.bmdl10"
+      ],
+      "linkedReviewFocusIds": [
+        "efsa.lead.game_meat.review_focus",
+        "efsa.lead.current_contributor_groups.review_focus"
+      ],
+      "notes": [
+        "Captures governed occurrence context for lead food review and monitoring interpretation.",
+        "Exposed for evidence linkage and auditability, not as a native lead exposure engine."
+      ]
+    },
+    {
+      "recordId": "eu.inorganic_arsenic.occurrence_evidence.official_monitoring_context",
+      "displayName": "Inorganic arsenic official monitoring evidence context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "evidenceKind": "official_monitoring_context",
+      "analytes": [
+        "inorganic_arsenic"
+      ],
+      "matrixGroups": [
+        "rice_and_rice_based_products",
+        "broad_food_supply"
+      ],
+      "sampleSetSummary": "EFSA inorganic-arsenic occurrence and exposure context linked to EU official-control and contaminants-law review.",
+      "measuredUnit": "mg/kg",
+      "dataPeriod": "2021-2025_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.inorganic_arsenic.food.2024",
+        "efsa.inorganic_arsenic.news.2024",
+        "efsa.inorganic_arsenic.exposure.2021",
+        "efsa.metals.topic.2026",
+        "eu.reg.2025_1891",
+        "eu.reg.333_2007"
+      ],
+      "occurrenceRecordIds": [
+        "efsa.inorganic_arsenic.occurrence_monitoring.support"
+      ],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.inorganic_arsenic_support"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.inorganic_arsenic.analytical_method_evidence.official_control"
+      ],
+      "legalAuthorityIds": [
+        "eu.inorganic_arsenic.contaminants.reg_2025_1891",
+        "eu.inorganic_arsenic.official_control.reg_333_2007"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.inorganic_arsenic.skin_cancer.bmdl05"
+      ],
+      "linkedReviewFocusIds": [
+        "efsa.inorganic_arsenic.rice_products.review_focus"
+      ],
+      "notes": [
+        "Captures governed occurrence context for inorganic arsenic food review and monitoring interpretation.",
+        "Exposed for evidence linkage and auditability, not as a native inorganic-arsenic exposure engine."
+      ]
+    },
+    {
+      "recordId": "eu.mercury.occurrence_evidence.official_monitoring_context",
+      "displayName": "Mercury official monitoring evidence context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "mercury_food_contaminants",
+      "evidenceKind": "official_monitoring_context",
+      "analytes": [
+        "methylmercury",
+        "inorganic_mercury",
+        "total_mercury"
+      ],
+      "matrixGroups": [
+        "fish_and_seafood",
+        "large_predatory_fish",
+        "broad_food_supply"
+      ],
+      "sampleSetSummary": "EFSA mercury occurrence and dietary context linked to EU official-control and contaminants-law review.",
+      "measuredUnit": "mg/kg",
+      "dataPeriod": "2012-2026_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.mercury.food.2012",
+        "efsa.mercury.fish_consumption.2026",
+        "efsa.metals.topic.2026",
+        "eu.reg.2023_915",
+        "eu.reg.333_2007"
+      ],
+      "occurrenceRecordIds": [
+        "efsa.mercury.occurrence_monitoring.support"
+      ],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.mercury_support"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.mercury.analytical_method_evidence.official_control"
+      ],
+      "legalAuthorityIds": [
+        "eu.mercury.contaminants.reg_2023_915",
+        "eu.mercury.official_control.reg_333_2007"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.methylmercury.twi.2012",
+        "efsa.inorganic_mercury.twi.2012"
+      ],
+      "linkedReviewFocusIds": [
+        "efsa.mercury.large_predatory_fish.review_focus",
+        "efsa.mercury.sensitive_population_advice.review_focus"
+      ],
+      "notes": [
+        "Captures governed occurrence context for mercury food review and monitoring interpretation.",
+        "Exposed for evidence linkage and auditability, not as a native mercury exposure engine."
+      ]
+    },
+    {
+      "recordId": "eu.pfas.occurrence_evidence.food_monitoring_context",
+      "displayName": "PFAS food monitoring evidence context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pfas_food_contaminants",
+      "evidenceKind": "food_monitoring_context",
+      "analytes": [
+        "sum_pfoa_pfna_pfhxs_pfos",
+        "sum4_pfas",
+        "pfoa",
+        "pfna",
+        "pfhxs",
+        "pfos"
+      ],
+      "matrixGroups": [
+        "broad_food_supply",
+        "fish_and_seafood",
+        "eggs",
+        "offal"
+      ],
+      "sampleSetSummary": "EFSA PFAS dietary review context linked to EU food monitoring, food-consumption support, and contaminants-law provenance.",
+      "measuredUnit": "ng/kg",
+      "dataPeriod": "2020-2026_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "transitional",
+      "evidenceSupportStatus": "limited",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.pfas.food.2020",
+        "efsa.pfas.topic.2026",
+        "eu.reco.2022_1431",
+        "eu.reg.2023_915"
+      ],
+      "occurrenceRecordIds": [
+        "efsa.pfas.fish_and_seafood.occurrence_monitoring.support",
+        "efsa.pfas.eggs.occurrence_monitoring.support",
+        "efsa.pfas.offal.occurrence_monitoring.support"
+      ],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.pfas_support",
+        "ec.pfas_food_monitoring_2022_2025"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.pfas.analytical_method_evidence.monitoring_context"
+      ],
+      "legalAuthorityIds": [
+        "eu.contaminants.reg_2023_915",
+        "eu.pfas.monitoring.reco_2022_1431"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.pfas.sum4.twi"
+      ],
+      "linkedReviewFocusIds": [
+        "efsa.pfas.fish_and_seafood.review_focus",
+        "efsa.pfas.eggs.review_focus",
+        "efsa.pfas.offal.review_focus"
+      ],
+      "reportingProfileIds": [
+        "eu.pfas.efsa4.food_risk",
+        "eu.pfas.efsa4.ml_lower_bound",
+        "eu.pfas.individual_panel_detail"
+      ],
+      "notes": [
+        "Captures governed PFAS occurrence and monitoring context for review-oriented dietary evidence handling.",
+        "Exposed for evidence linkage and auditability, not as a native PFAS occurrence engine or submission-capable monitoring database.",
+        "Food-context linkage is still reviewer-controlled and should remain explicit for fish, eggs, and offal rather than being flattened into broad food supply."
+      ]
+    },
+    {
+      "recordId": "eu.acrylamide.occurrence_evidence.monitoring_context",
+      "displayName": "Acrylamide monitoring evidence context",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminantFamily": "acrylamide_process_contaminants",
+      "evidenceKind": "process_contaminant_monitoring_context",
+      "analytes": [
+        "acrylamide"
+      ],
+      "matrixGroups": [
+        "fried_potato_products",
+        "cereal_based_products",
+        "coffee",
+        "baby_foods",
+        "broad_food_supply"
+      ],
+      "sampleSetSummary": "EFSA acrylamide risk-opinion and EU mitigation and monitoring context for review-oriented food occurrence evidence.",
+      "measuredUnit": "ug/kg",
+      "dataPeriod": "2015-2019_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.acrylamide.food.2015",
+        "eu.reg.2017_2158",
+        "eu.reco.2019_1888"
+      ],
+      "occurrenceRecordIds": [],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.acrylamide_support",
+        "eu.acrylamide_food_monitoring_2019"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.acrylamide.analytical_method_evidence.monitoring_context"
+      ],
+      "legalAuthorityIds": [
+        "eu.acrylamide.reg_2017_2158",
+        "eu.acrylamide.monitoring.reco_2019_1888"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.acrylamide.neoplastic.bmdl10",
+        "efsa.acrylamide.neurotoxicity.bmdl10"
+      ],
+      "linkedReviewFocusIds": [],
+      "notes": [
+        "Captures governed acrylamide occurrence and mitigation-monitoring context for review-oriented dietary evidence handling.",
+        "Exposed for evidence linkage and auditability, not as a native acrylamide occurrence engine or final margin-of-exposure calculator."
+      ]
+    },
+    {
+      "recordId": "eu.bpa.occurrence_evidence.food_contact_context",
+      "displayName": "BPA food-contact dietary evidence context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "bisphenol_food_contact_migration",
+      "evidenceKind": "food_contact_migration_context",
+      "analytes": [
+        "bisphenol_a",
+        "bpa"
+      ],
+      "matrixGroups": [
+        "food_contact_materials",
+        "canned_foods",
+        "broad_food_supply"
+      ],
+      "sampleSetSummary": "EFSA BPA dietary context linked to food-consumption support and EU food-contact regulation provenance.",
+      "measuredUnit": "ng/kg",
+      "dataPeriod": "2023-2026_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.bpa.food.2023",
+        "efsa.bisphenol.topic.2026",
+        "eu.reg.2024_3190"
+      ],
+      "occurrenceRecordIds": [],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.bpa_support"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.bpa.analytical_method_evidence.food_contact_context"
+      ],
+      "legalAuthorityIds": [
+        "eu.bpa.fcm.reg_2024_3190"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.bpa.tdi.2023"
+      ],
+      "linkedReviewFocusIds": [],
+      "notes": [
+        "Captures governed BPA dietary and food-contact context for review-oriented migration evidence handling.",
+        "Exposed for evidence linkage and auditability, not as a native BPA migration engine or final food-contact compliance decision system."
+      ]
+    },
+    {
+      "recordId": "eu.glyphosate.occurrence_evidence.monitoring_context",
+      "displayName": "Glyphosate pesticide-residue monitoring evidence context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "evidenceKind": "pesticide_residue_monitoring_context",
+      "analytes": [
+        "glyphosate",
+        "glyphosate_total_residues"
+      ],
+      "matrixGroups": [
+        "wheat",
+        "beans_and_pulses",
+        "oilseeds",
+        "broad_food_supply"
+      ],
+      "sampleSetSummary": "EFSA pesticide-residue annual reporting context for glyphosate monitoring review, linked to EU residue law, OpenFoodTox reference values, and public annual reporting metadata.",
+      "measuredUnit": "mg/kg",
+      "dataPeriod": "2023_monitoring_cycle_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.openfoodtox",
+        "efsa.pesticide_residues.food.2025",
+        "efsa.pesticide_residues.national_summary.2025",
+        "eu.reg.396_2005"
+      ],
+      "occurrenceRecordIds": [],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db",
+        "efsa.eu_menu_programme"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.glyphosate.analytical_method_evidence.monitoring_context"
+      ],
+      "legalAuthorityIds": [
+        "eu.pesticide_residues.reg_396_2005",
+        "eu.active_substances.reg_283_2013"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.openfoodtox.glyphosate.adi",
+        "efsa.openfoodtox.glyphosate.arfd"
+      ],
+      "linkedReviewFocusIds": [],
+      "notes": [
+        "Captures governed glyphosate pesticide-residue monitoring context for review-oriented dietary evidence handling.",
+        "Exposed for evidence linkage and auditability, not as a native pesticide monitoring engine or submission-capable residue database."
+      ]
+    },
+    {
+      "recordId": "eu.acetamiprid.occurrence_evidence.monitoring_context",
+      "displayName": "Acetamiprid pesticide-residue monitoring evidence context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "evidenceKind": "pesticide_residue_monitoring_context",
+      "analytes": [
+        "acetamiprid",
+        "acetamiprid_total_residues"
+      ],
+      "matrixGroups": [
+        "apples",
+        "oranges",
+        "tomatoes",
+        "broad_food_supply"
+      ],
+      "sampleSetSummary": "EFSA pesticide-residue annual reporting context for acetamiprid monitoring review, linked to OpenFoodTox, the 2024 EFSA statement, EU residue law, and public annual reporting metadata.",
+      "measuredUnit": "mg/kg",
+      "dataPeriod": "2023-2024_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "transitional",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.openfoodtox",
+        "efsa.acetamiprid.statement.2024",
+        "efsa.pesticide_residues.food.2025",
+        "efsa.pesticide_residues.national_summary.2025",
+        "eu.reg.396_2005"
+      ],
+      "occurrenceRecordIds": [],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db",
+        "efsa.eu_menu_programme"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.acetamiprid.analytical_method_evidence.monitoring_context"
+      ],
+      "legalAuthorityIds": [
+        "eu.pesticide_residues.reg_396_2005",
+        "eu.active_substances.reg_283_2013"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.openfoodtox.acetamiprid.adi",
+        "efsa.openfoodtox.acetamiprid.arfd"
+      ],
+      "linkedReviewFocusIds": [],
+      "notes": [
+        "Captures governed acetamiprid pesticide-residue monitoring context for review-oriented dietary evidence handling.",
+        "Exposed for evidence linkage and auditability, not as a native pesticide monitoring engine or submission-capable residue database."
+      ]
+    },
+    {
+      "recordId": "eu.imidacloprid.occurrence_evidence.monitoring_context",
+      "displayName": "Imidacloprid pesticide-residue monitoring evidence context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "evidenceKind": "pesticide_residue_monitoring_context",
+      "analytes": [
+        "imidacloprid",
+        "imidacloprid_total_residues"
+      ],
+      "matrixGroups": [
+        "apples",
+        "tomatoes",
+        "organic_food_supply",
+        "broad_food_supply"
+      ],
+      "sampleSetSummary": "EFSA pesticide-residue annual reporting and organic-food findings context for imidacloprid monitoring review, linked to OpenFoodTox, developmental neurotoxicity public materials, EU residue law, and public annual reporting metadata.",
+      "measuredUnit": "mg/kg",
+      "dataPeriod": "2013-2025_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "transitional",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.openfoodtox",
+        "efsa.imidacloprid.dnt.2013",
+        "efsa.pesticide_residues.food.2025",
+        "efsa.pesticide_residues.national_summary.2025",
+        "efsa.pesticide_residues.organic_findings.2025",
+        "eu.reg.396_2005"
+      ],
+      "occurrenceRecordIds": [],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db",
+        "efsa.eu_menu_programme"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.imidacloprid.analytical_method_evidence.monitoring_context"
+      ],
+      "legalAuthorityIds": [
+        "eu.pesticide_residues.reg_396_2005",
+        "eu.active_substances.reg_283_2013"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.openfoodtox.imidacloprid.adi",
+        "efsa.openfoodtox.imidacloprid.arfd"
+      ],
+      "linkedReviewFocusIds": [],
+      "notes": [
+        "Captures governed imidacloprid pesticide-residue monitoring context for review-oriented dietary evidence handling.",
+        "Exposed for evidence linkage and auditability, not as a native pesticide monitoring engine or submission-capable residue database."
+      ]
+    },
+    {
+      "recordId": "eu.ethiprole.occurrence_evidence.monitoring_context",
+      "displayName": "Ethiprole pesticide-residue review evidence context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "evidenceKind": "pesticide_residue_monitoring_context",
+      "analytes": [
+        "ethiprole",
+        "ethiprole_total_residues"
+      ],
+      "matrixGroups": [
+        "rice",
+        "dry_commodities",
+        "broad_food_supply"
+      ],
+      "sampleSetSummary": "EFSA ethiprole residue-definition and toxicological-reference-value review context for rice and dry commodities, linked to EU residue law, EFSA toxicological reference values, and validated analytical enforcement metadata.",
+      "measuredUnit": "mg/kg",
+      "dataPeriod": "2024_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "transitional",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.ethiprole.trv.2024",
+        "eu.reg.396_2005"
+      ],
+      "occurrenceRecordIds": [],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db",
+        "efsa.eu_menu_programme"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.ethiprole.analytical_method_evidence.monitoring_context"
+      ],
+      "legalAuthorityIds": [
+        "eu.pesticide_residues.reg_396_2005",
+        "eu.active_substances.reg_283_2013"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.ethiprole.adi.2024",
+        "efsa.ethiprole.arfd.2024"
+      ],
+      "linkedReviewFocusIds": [],
+      "notes": [
+        "Captures governed ethiprole pesticide-residue review context for rice-oriented dietary evidence handling.",
+        "Exposed for evidence linkage and auditability, not as a native pesticide monitoring engine or submission-capable residue database."
+      ]
+    },
+    {
+      "recordId": "eu.tetraconazole.occurrence_evidence.monitoring_context",
+      "displayName": "Tetraconazole pesticide-residue review evidence context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "evidenceKind": "pesticide_residue_monitoring_context",
+      "analytes": [
+        "tetraconazole",
+        "tetraconazole_total_residues"
+      ],
+      "matrixGroups": [
+        "linseeds",
+        "poppy_seeds",
+        "high_oil_content",
+        "dry_commodities",
+        "broad_food_supply"
+      ],
+      "sampleSetSummary": "EFSA tetraconazole MRL and residue-definition review context for linseeds, poppy seeds, and other validated plant-matrix groups, linked to EU residue law, EFSA toxicological reference values, and analytical enforcement metadata.",
+      "measuredUnit": "mg/kg",
+      "dataPeriod": "2019_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "transitional",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.tetraconazole.mrl_opinion.2019",
+        "eu.reg.396_2005"
+      ],
+      "occurrenceRecordIds": [],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db",
+        "efsa.eu_menu_programme"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.tetraconazole.analytical_method_evidence.monitoring_context"
+      ],
+      "legalAuthorityIds": [
+        "eu.pesticide_residues.reg_396_2005",
+        "eu.active_substances.reg_283_2013"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.tetraconazole.adi.2019",
+        "efsa.tetraconazole.arfd.2019"
+      ],
+      "linkedReviewFocusIds": [],
+      "notes": [
+        "Captures governed tetraconazole pesticide-residue review context for linseed and poppy-seed oriented dietary evidence handling.",
+        "Exposed for evidence linkage and auditability, not as a native pesticide monitoring engine or submission-capable residue database."
+      ]
+    },
+    {
+      "recordId": "eu.tebuconazole.occurrence_evidence.monitoring_context",
+      "displayName": "Tebuconazole pesticide-residue review evidence context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "evidenceKind": "pesticide_residue_monitoring_context",
+      "analytes": [
+        "tebuconazole",
+        "tebuconazole_total_residues"
+      ],
+      "matrixGroups": [
+        "poppy_seeds",
+        "oilseeds",
+        "broad_food_supply"
+      ],
+      "sampleSetSummary": "EFSA tebuconazole MRL review context for poppy seeds and related oilseed matrices, linked to EU residue law, EFSA toxicological reference values, and analytical enforcement availability.",
+      "measuredUnit": "mg/kg",
+      "dataPeriod": "2013_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "transitional",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.tebuconazole.mrl_opinion.2013",
+        "eu.reg.396_2005"
+      ],
+      "occurrenceRecordIds": [],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db",
+        "efsa.eu_menu_programme"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.tebuconazole.analytical_method_evidence.monitoring_context"
+      ],
+      "legalAuthorityIds": [
+        "eu.pesticide_residues.reg_396_2005",
+        "eu.active_substances.reg_283_2013"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.tebuconazole.adi.2013",
+        "efsa.tebuconazole.arfd.2013"
+      ],
+      "linkedReviewFocusIds": [],
+      "notes": [
+        "Captures governed tebuconazole pesticide-residue review context for poppy-seed oriented dietary evidence handling.",
+        "Exposed for evidence linkage and auditability, not as a native pesticide monitoring engine or submission-capable residue database."
+      ]
+    },
+    {
+      "recordId": "eu.glufosinate.occurrence_evidence.monitoring_context",
+      "displayName": "Glufosinate pesticide-residue review evidence context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "evidenceKind": "pesticide_residue_monitoring_context",
+      "analytes": [
+        "glufosinate",
+        "glufosinate_total_residues"
+      ],
+      "matrixGroups": [
+        "soya_beans",
+        "maize",
+        "oilseeds",
+        "broad_food_supply"
+      ],
+      "sampleSetSummary": "EFSA glufosinate MRL and re-evaluation context for broad-food and soybean-oriented residue review, linked to EU residue law, EFSA toxicological reference values, and preserved JMPR conflict metadata.",
+      "measuredUnit": "mg/kg",
+      "dataPeriod": "2015-2024_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "transitional",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.glufosinate.mrl_review.2015",
+        "efsa.glufosinate.call_for_data.2024",
+        "jmpr.glufosinate.summary.2013",
+        "eu.reg.396_2005"
+      ],
+      "occurrenceRecordIds": [],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db",
+        "efsa.eu_menu_programme"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.glufosinate.analytical_method_evidence.monitoring_context"
+      ],
+      "legalAuthorityIds": [
+        "eu.pesticide_residues.reg_396_2005",
+        "eu.active_substances.reg_283_2013"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.glufosinate.adi.2007",
+        "jmpr.glufosinate.adi.2012",
+        "efsa.glufosinate.arfd.2007",
+        "jmpr.glufosinate.arfd.2012"
+      ],
+      "linkedReviewFocusIds": [],
+      "notes": [
+        "Captures governed glufosinate pesticide-residue review context with explicit EFSA versus JMPR toxicological reference-value preservation.",
+        "Exposed for evidence linkage and auditability, not as a native pesticide monitoring engine or submission-capable residue database."
+      ]
+    },
+    {
+      "recordId": "eu.oxamyl.occurrence_evidence.monitoring_context",
+      "displayName": "Oxamyl pesticide-residue review evidence context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "evidenceKind": "pesticide_residue_monitoring_context",
+      "analytes": [
+        "oxamyl",
+        "oxamyl_total_residues"
+      ],
+      "matrixGroups": [
+        "potatoes",
+        "melons",
+        "pears",
+        "broad_food_supply"
+      ],
+      "sampleSetSummary": "EFSA oxamyl peer-review and 2023 consumer-protection statement context for potato, cucurbit, and broad-food residue review, linked to EU residue law, EFSA low-TRV values, and preserved JMPR conflict metadata.",
+      "measuredUnit": "mg/kg",
+      "dataPeriod": "2022-2023_review_context",
+      "lowerBoundHandling": "review_occurrence_lower_bound_context",
+      "maturityStatus": "transitional",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.oxamyl.peer_review.2022",
+        "efsa.oxamyl.statement.2023",
+        "jmpr.oxamyl.summary.2012",
+        "eu.reg.396_2005"
+      ],
+      "occurrenceRecordIds": [],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db",
+        "efsa.eu_menu_programme"
+      ],
+      "methodEvidenceRecordIds": [
+        "eu.oxamyl.analytical_method_evidence.monitoring_context"
+      ],
+      "legalAuthorityIds": [
+        "eu.pesticide_residues.reg_396_2005",
+        "eu.active_substances.reg_283_2013"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.oxamyl.adi.2023",
+        "jmpr.oxamyl.adi.2012",
+        "efsa.oxamyl.arfd.2023",
+        "jmpr.oxamyl.arfd.2012"
+      ],
+      "linkedReviewFocusIds": [],
+      "notes": [
+        "Captures governed oxamyl pesticide-residue review context with explicit EFSA versus JMPR toxicological reference-value preservation.",
+        "Exposed for evidence linkage and auditability, not as a native pesticide monitoring engine or submission-capable residue database."
+      ]
+    }
+  ]
+}

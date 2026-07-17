@@ -1,0 +1,41 @@
+{
+  "chemical_identity": {
+    "preferredName": "Endosulfan",
+    "casrn": "115-29-7"
+  },
+  "region_id": "eu_screening_default",
+  "residue_records": [
+    {
+      "commodity_code": "apple_juice",
+      "residue_concentration_mg_per_kg": 0.01,
+      "lower_bound_mg_per_kg": 0.0,
+      "upper_bound_mg_per_kg": 0.05,
+      "residue_unit": "mg/kg",
+      "source_type": "user_supplied",
+      "review_status": "schema_reviewed_not_source_validated",
+      "source_reference": {
+        "source_id": "casepack.endosulfan.apple_juice.screening_residue",
+        "title": "Endosulfan apple_juice regulatory-screening residue input (EU MRL band) for PESS-style public slice",
+        "effective_date": "2026-06-01",
+        "url": "examples://pesticide_pess_style/endosulfan_public_slice/source_lock",
+        "originTag": "illustrative_placeholder"
+      }
+    },
+    {
+      "commodity_code": "rice",
+      "residue_concentration_mg_per_kg": 0.01,
+      "lower_bound_mg_per_kg": 0.0,
+      "upper_bound_mg_per_kg": 0.03,
+      "residue_unit": "mg/kg",
+      "source_type": "user_supplied",
+      "review_status": "schema_reviewed_not_source_validated",
+      "source_reference": {
+        "source_id": "casepack.endosulfan.rice.screening_residue",
+        "title": "Endosulfan rice regulatory-screening residue input (EU MRL band) for PESS-style public slice",
+        "effective_date": "2026-06-01",
+        "url": "examples://pesticide_pess_style/endosulfan_public_slice/source_lock",
+        "originTag": "illustrative_placeholder"
+      }
+    }
+  ]
+}

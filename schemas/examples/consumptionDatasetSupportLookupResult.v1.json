@@ -1,0 +1,113 @@
+{
+  "jurisdiction": "eu",
+  "dataset_id": null,
+  "contaminant_family": "pesticide_residue",
+  "datasets": [
+    {
+      "dataset_id": "efsa.comprehensive_food_consumption_db",
+      "display_name": "EFSA Comprehensive European Food Consumption Database",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminant_family": "pesticide_residue",
+      "dataset_kind": "individual_food_consumption_database",
+      "maturity_status": "established",
+      "submission_use": "review_required",
+      "document_status": "dataset_current",
+      "source_ids": [
+        "efsa.food_consumption.data"
+      ],
+      "method_ids": [
+        "efsa.primo.3_1_application",
+        "efsa.primo.4_transition_report"
+      ],
+      "compatible_model_families": [
+        "reference_dietary",
+        "efsa_primo_adapter"
+      ],
+      "notes": [
+        "Governed metadata entry for the EFSA food-consumption infrastructure used to support EU dietary exposure workflows.",
+        "This registry entry does not redistribute the underlying proprietary or access-controlled survey extracts."
+      ]
+    },
+    {
+      "dataset_id": "efsa.dietex_support",
+      "display_name": "EFSA DietEx dietary exposure support metadata",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminant_family": "pesticide_residue",
+      "dataset_kind": "exposure_tool_support_metadata",
+      "maturity_status": "transitional",
+      "submission_use": "review_required",
+      "document_status": "tool_metadata",
+      "source_ids": [
+        "efsa.dietex",
+        "efsa.food_consumption.data"
+      ],
+      "method_ids": [
+        "efsa.primo.4_transition_report"
+      ],
+      "compatible_model_families": [
+        "reference_dietary"
+      ],
+      "notes": [
+        "Governed metadata entry for DietEx as exposure-support tooling around EFSA food-consumption infrastructure.",
+        "DietEx is represented separately from PRIMo and is not treated as a submission engine in Dietary MCP."
+      ]
+    },
+    {
+      "dataset_id": "efsa.eu_menu_programme",
+      "display_name": "EFSA EU Menu standardised survey programme metadata",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminant_family": "pesticide_residue",
+      "dataset_kind": "survey_programme_metadata",
+      "maturity_status": "established",
+      "submission_use": "review_required",
+      "document_status": "dataset_current",
+      "source_ids": [
+        "efsa.food_consumption.data",
+        "efsa.eu_menu.programme"
+      ],
+      "method_ids": [
+        "efsa.primo.3_1_application",
+        "efsa.primo.4_transition_report"
+      ],
+      "compatible_model_families": [
+        "reference_dietary",
+        "efsa_primo_adapter"
+      ],
+      "notes": [
+        "Governed programme-level metadata for EFSA's EU Menu effort to standardise food consumption data collection across Member States.",
+        "This entry complements the Comprehensive Database registry record and does not redistribute raw survey files."
+      ]
+    },
+    {
+      "dataset_id": "who.gems_food_cluster_diets_2012",
+      "display_name": "WHO GEMS/Food Cluster Diets 2012",
+      "authority": "WHO",
+      "jurisdiction": "global",
+      "contaminant_family": "pesticide_residue",
+      "dataset_kind": "cluster_diet_dataset",
+      "maturity_status": "established",
+      "submission_use": "review_required",
+      "document_status": "dataset_current",
+      "source_ids": [
+        "who.gems.food.cluster_diets.2012"
+      ],
+      "method_ids": [
+        "jmpr.iedi_iesti"
+      ],
+      "compatible_model_families": [
+        "reference_dietary"
+      ],
+      "notes": [
+        "Governed metadata for chronic general-population cluster diets used in JMPR and related global screening contexts.",
+        "Not suitable for children-specific or shorter-than-lifetime exposure assessment."
+      ]
+    }
+  ],
+  "overall_submission_use": "review_required",
+  "notes": [
+    "EFSA food-consumption infrastructure and DietEx metadata are exposed as the primary EU pesticide dataset layer."
+  ]
+}

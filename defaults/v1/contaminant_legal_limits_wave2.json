@@ -1,0 +1,875 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "contaminant_legal_limits",
+  "validationProfile": "official_primary_wave2",
+  "records": [
+    {
+      "recordId": "us.fda.lead.processed_foods.general_baby_foods.ml.2025",
+      "jurisdiction": "us",
+      "contaminantFamily": "lead_food_contaminants",
+      "substanceKey": "lead",
+      "authority": "US FDA",
+      "legalAuthorityId": "us.fda.lead.processed_foods.action_levels.2025",
+      "sourceIds": [
+        "us.fda.lead.processed_foods.guidance.2025"
+      ],
+      "limitType": "action_level",
+      "matrixGroups": [
+        "processed_infant_food"
+      ],
+      "commodityCodes": [
+        "purees"
+      ],
+      "focusFoodDescription": "Processed foods intended for babies and young children including fruit, vegetable, and mixed purees; yogurts, custards, puddings; and single-ingredient meats.",
+      "limitValue": 0.01,
+      "unit": "mg/kg",
+      "expressionBasis": "as sold",
+      "populationScope": "babies_and_young_children",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2025-01-06",
+      "notes": [
+        "10 ppb converted to 0.01 mg/kg.",
+        "Current taxonomy matching is partial because the FDA category is broader than the shipped purees commodity code."
+      ]
+    },
+    {
+      "recordId": "us.fda.lead.processed_foods.root_vegetables.ml.2025",
+      "jurisdiction": "us",
+      "contaminantFamily": "lead_food_contaminants",
+      "substanceKey": "lead",
+      "authority": "US FDA",
+      "legalAuthorityId": "us.fda.lead.processed_foods.action_levels.2025",
+      "sourceIds": [
+        "us.fda.lead.processed_foods.guidance.2025"
+      ],
+      "limitType": "action_level",
+      "matrixGroups": [
+        "processed_infant_food"
+      ],
+      "commodityCodes": [
+        "potatoes"
+      ],
+      "focusFoodDescription": "Single-ingredient root vegetables intended for babies and young children.",
+      "limitValue": 0.02,
+      "unit": "mg/kg",
+      "expressionBasis": "as sold",
+      "populationScope": "babies_and_young_children",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2025-01-06",
+      "notes": [
+        "20 ppb converted to 0.02 mg/kg.",
+        "Current taxonomy matching is partial because the FDA category covers a broader root-vegetable class than potatoes alone."
+      ]
+    },
+    {
+      "recordId": "us.fda.lead.processed_foods.dry_infant_cereals.ml.2025",
+      "jurisdiction": "us",
+      "contaminantFamily": "lead_food_contaminants",
+      "substanceKey": "lead",
+      "authority": "US FDA",
+      "legalAuthorityId": "us.fda.lead.processed_foods.action_levels.2025",
+      "sourceIds": [
+        "us.fda.lead.processed_foods.guidance.2025"
+      ],
+      "limitType": "action_level",
+      "matrixGroups": [
+        "processed_infant_food"
+      ],
+      "commodityCodes": [],
+      "focusFoodDescription": "Dry infant cereals intended for babies and young children.",
+      "limitValue": 0.02,
+      "unit": "mg/kg",
+      "expressionBasis": "as sold",
+      "populationScope": "babies_and_young_children",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2025-01-06",
+      "notes": [
+        "20 ppb converted to 0.02 mg/kg.",
+        "No exact current-taxonomy dry infant cereal commodity is shipped, so this record remains matrix-scoped."
+      ]
+    },
+    {
+      "recordId": "us.fda.inorganic_arsenic.rice_cereals.ml.2020",
+      "jurisdiction": "us",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "substanceKey": "inorganic_arsenic",
+      "authority": "US FDA",
+      "legalAuthorityId": "us.fda.inorganic_arsenic.rice_cereals.action_level.2020",
+      "sourceIds": [
+        "us.fda.inorganic_arsenic.rice_cereals.guidance.2020"
+      ],
+      "limitType": "action_level",
+      "matrixGroups": [
+        "processed_infant_food"
+      ],
+      "commodityCodes": [
+        "rice"
+      ],
+      "focusFoodDescription": "Rice cereals for infants.",
+      "limitValue": 0.1,
+      "unit": "mg/kg",
+      "expressionBasis": "as sold",
+      "populationScope": "infants",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2020-08-05",
+      "notes": [
+        "100 ppb converted to 0.1 mg/kg.",
+        "Current taxonomy matching is partial because the FDA category is infant rice cereal rather than generic rice."
+      ]
+    },
+    {
+      "recordId": "us.fda.inorganic_arsenic.apple_juice.ml.2023",
+      "jurisdiction": "us",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "substanceKey": "inorganic_arsenic",
+      "authority": "US FDA",
+      "legalAuthorityId": "us.fda.inorganic_arsenic.apple_juice.action_level.2023",
+      "sourceIds": [
+        "us.fda.inorganic_arsenic.apple_juice.guidance.2023"
+      ],
+      "limitType": "action_level",
+      "matrixGroups": [
+        "processed_fruit"
+      ],
+      "commodityCodes": [
+        "apple_juice"
+      ],
+      "focusFoodDescription": "Apple juice.",
+      "limitValue": 0.01,
+      "unit": "mg/kg",
+      "expressionBasis": "as sold",
+      "populationScope": "general_population_with_child_focus",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2023-06-01",
+      "notes": [
+        "10 ppb converted to 0.01 mg/kg."
+      ]
+    },
+    {
+      "recordId": "us.fda.methylmercury.fish.ml.2007",
+      "jurisdiction": "us",
+      "contaminantFamily": "mercury_food_contaminants",
+      "substanceKey": "methylmercury",
+      "authority": "US FDA",
+      "legalAuthorityId": "us.fda.methylmercury.fish.cpg_540_600.2007",
+      "sourceIds": [
+        "us.fda.methylmercury.fish.cpg_540_600.2007"
+      ],
+      "limitType": "compliance_policy_guidance",
+      "matrixGroups": [
+        "aquatic_animals"
+      ],
+      "commodityCodes": [],
+      "focusFoodDescription": "Fresh, frozen, or processed fish, shellfish, crustaceans, and other aquatic animals; edible portion only.",
+      "limitValue": 1.0,
+      "unit": "mg/kg",
+      "expressionBasis": "edible portion",
+      "populationScope": "general_population",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2007-02-01",
+      "notes": [
+        "FDA CPG threshold expressed as mercury equivalent in excess of 1 ppm."
+      ]
+    },
+    {
+      "recordId": "codex.cxs_193_1995.cadmium.wheat.ml.2025",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "cadmium_food_contaminants",
+      "substanceKey": "cadmium",
+      "authority": "Codex Alimentarius",
+      "legalAuthorityId": "codex.cccf.cxs_193_1995.current_2025.cadmium",
+      "sourceIds": [
+        "codex.cxs_193_1995.current_2025"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "grain"
+      ],
+      "commodityCodes": [
+        "wheat"
+      ],
+      "focusFoodDescription": "Wheat including common wheat, durum wheat, spelt, and emmer.",
+      "limitValue": 0.2,
+      "unit": "mg/kg",
+      "expressionBasis": "whole commodity",
+      "populationScope": "general_population",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2025-11-10",
+      "notes": [
+        "Exact current Codex cadmium ML for wheat from CXS 193-1995."
+      ]
+    },
+    {
+      "recordId": "codex.cxs_193_1995.lead.apples.ml.2025",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "lead_food_contaminants",
+      "substanceKey": "lead",
+      "authority": "Codex Alimentarius",
+      "legalAuthorityId": "codex.cccf.cxs_193_1995.current_2025.lead",
+      "sourceIds": [
+        "codex.cxs_193_1995.current_2025"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "fruit"
+      ],
+      "commodityCodes": [
+        "apples"
+      ],
+      "focusFoodDescription": "Pome fruits row applied to apples.",
+      "limitValue": 0.1,
+      "unit": "mg/kg",
+      "expressionBasis": "whole commodity",
+      "populationScope": "general_population",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2025-11-10",
+      "notes": [
+        "Exact current Codex lead ML applied from the broad fruits row to apples, which sit wholly within that row."
+      ]
+    },
+    {
+      "recordId": "codex.cxs_193_1995.lead.grapes.ml.2025",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "lead_food_contaminants",
+      "substanceKey": "lead",
+      "authority": "Codex Alimentarius",
+      "legalAuthorityId": "codex.cccf.cxs_193_1995.current_2025.lead",
+      "sourceIds": [
+        "codex.cxs_193_1995.current_2025"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "fruit"
+      ],
+      "commodityCodes": [
+        "grapes"
+      ],
+      "focusFoodDescription": "Fruits row applied to grapes.",
+      "limitValue": 0.1,
+      "unit": "mg/kg",
+      "expressionBasis": "whole commodity",
+      "populationScope": "general_population",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2025-11-10",
+      "notes": [
+        "Exact current Codex lead ML applied from the broad fruits row to grapes, which sit wholly within that row."
+      ]
+    },
+    {
+      "recordId": "codex.cxs_193_1995.lead.apple_juice.ml.2025",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "lead_food_contaminants",
+      "substanceKey": "lead",
+      "authority": "Codex Alimentarius",
+      "legalAuthorityId": "codex.cccf.cxs_193_1995.current_2025.lead",
+      "sourceIds": [
+        "codex.cxs_193_1995.current_2025"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "processed_fruit"
+      ],
+      "commodityCodes": [
+        "apple_juice"
+      ],
+      "focusFoodDescription": "Fruit juices and nectars row applied to apple juice.",
+      "limitValue": 0.03,
+      "unit": "mg/kg",
+      "expressionBasis": "ready to drink",
+      "populationScope": "general_population_with_child_focus",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2025-11-10",
+      "notes": [
+        "Exact current Codex lead ML for fruit juices applied to apple juice.",
+        "Separate Codex rows exist for grape juice and juices made exclusively from berries and other small fruits, so this record is intentionally limited to apple juice."
+      ]
+    },
+    {
+      "recordId": "codex.cxs_193_1995.lead.wheat.ml.2025",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "lead_food_contaminants",
+      "substanceKey": "lead",
+      "authority": "Codex Alimentarius",
+      "legalAuthorityId": "codex.cccf.cxs_193_1995.current_2025.lead",
+      "sourceIds": [
+        "codex.cxs_193_1995.current_2025"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "grain"
+      ],
+      "commodityCodes": [
+        "wheat"
+      ],
+      "focusFoodDescription": "Cereal grains row applied to wheat.",
+      "limitValue": 0.2,
+      "unit": "mg/kg",
+      "expressionBasis": "whole commodity",
+      "populationScope": "general_population",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2025-11-10",
+      "notes": [
+        "Exact current Codex lead ML applied from the cereal grains row to wheat."
+      ]
+    },
+    {
+      "recordId": "codex.cxs_193_1995.lead.rice.ml.2025",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "lead_food_contaminants",
+      "substanceKey": "lead",
+      "authority": "Codex Alimentarius",
+      "legalAuthorityId": "codex.cccf.cxs_193_1995.current_2025.lead",
+      "sourceIds": [
+        "codex.cxs_193_1995.current_2025"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "grain"
+      ],
+      "commodityCodes": [
+        "rice"
+      ],
+      "focusFoodDescription": "Cereal grains row applied to rice.",
+      "limitValue": 0.2,
+      "unit": "mg/kg",
+      "expressionBasis": "whole commodity",
+      "populationScope": "general_population",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2025-11-10",
+      "notes": [
+        "Exact current Codex lead ML applied from the cereal grains row to rice."
+      ]
+    },
+    {
+      "recordId": "codex.cxs_193_1995.lead.infant_formula.ml.2025",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "lead_food_contaminants",
+      "substanceKey": "lead",
+      "authority": "Codex Alimentarius",
+      "legalAuthorityId": "codex.cccf.cxs_193_1995.current_2025.lead",
+      "sourceIds": [
+        "codex.cxs_193_1995.current_2025"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "processed_infant_food"
+      ],
+      "commodityCodes": [
+        "infant_formula"
+      ],
+      "focusFoodDescription": "Infant formula and formula for special medical purposes intended for infants; applied to the shipped infant_formula lane.",
+      "limitValue": 0.01,
+      "unit": "mg/kg",
+      "expressionBasis": "as consumed",
+      "populationScope": "infants",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2025-11-10",
+      "notes": [
+        "Exact current Codex lead ML applied to the shipped infant_formula commodity.",
+        "The Codex row also covers formula for special medical purposes intended for infants and follow-up formula."
+      ]
+    },
+    {
+      "recordId": "codex.cxs_193_1995.lead.milk.ml.2025",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "lead_food_contaminants",
+      "substanceKey": "lead",
+      "authority": "Codex Alimentarius",
+      "legalAuthorityId": "codex.cccf.cxs_193_1995.current_2025.lead",
+      "sourceIds": [
+        "codex.cxs_193_1995.current_2025"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "dairy"
+      ],
+      "commodityCodes": [
+        "milk"
+      ],
+      "focusFoodDescription": "Milk intended for consumption as liquid milk or for further processing.",
+      "limitValue": 0.02,
+      "unit": "mg/kg",
+      "expressionBasis": "whole commodity",
+      "populationScope": "general_population",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2025-11-10",
+      "notes": [
+        "Exact current Codex lead ML for milk."
+      ]
+    },
+    {
+      "recordId": "codex.cxs_193_1995.lead.salmon.ml.2025",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "lead_food_contaminants",
+      "substanceKey": "lead",
+      "authority": "Codex Alimentarius",
+      "legalAuthorityId": "codex.cccf.cxs_193_1995.current_2025.lead",
+      "sourceIds": [
+        "codex.cxs_193_1995.current_2025"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "aquatic_animals"
+      ],
+      "commodityCodes": [
+        "salmon"
+      ],
+      "focusFoodDescription": "Fish row applied to salmon.",
+      "limitValue": 0.3,
+      "unit": "mg/kg",
+      "expressionBasis": "whole commodity after removing digestive tract",
+      "populationScope": "general_population",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2025-11-10",
+      "notes": [
+        "Exact current Codex lead ML applied from the fish row to salmon."
+      ]
+    },
+    {
+      "recordId": "codex.cxs_193_1995.inorganic_arsenic.olive_oil.ml.2025",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "substanceKey": "inorganic_arsenic",
+      "authority": "Codex Alimentarius",
+      "legalAuthorityId": "codex.cccf.cxs_193_1995.current_2025.inorganic_arsenic",
+      "sourceIds": [
+        "codex.cxs_193_1995.current_2025"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "processed_fat_and_oil"
+      ],
+      "commodityCodes": [
+        "olive_oil"
+      ],
+      "focusFoodDescription": "Edible fats and oils row applied to olive oil.",
+      "limitValue": 0.1,
+      "unit": "mg/kg",
+      "expressionBasis": "whole commodity",
+      "populationScope": "general_population",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2025-11-10",
+      "notes": [
+        "Exact current Codex inorganic arsenic ML applied from the edible fats and oils row to olive oil.",
+        "The same Codex row contains fish-oil-specific notes on arsenic speciation, but those do not change the olive-oil lane."
+      ]
+    },
+    {
+      "recordId": "cn.nhc.cadmium.rice.ml.2025",
+      "jurisdiction": "cn",
+      "contaminantFamily": "cadmium_food_contaminants",
+      "substanceKey": "cadmium",
+      "authority": "NHC China",
+      "legalAuthorityId": "cn.nhc.cadmium.gb_2762_2025",
+      "sourceIds": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "grain"
+      ],
+      "commodityCodes": [
+        "rice"
+      ],
+      "focusFoodDescription": "Paddy, brown rice, rice, and rice flour.",
+      "limitValue": 0.2,
+      "unit": "mg/kg",
+      "expressionBasis": "as sold",
+      "populationScope": "general_population",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "effectiveDate": "2026-09-02",
+      "notes": [
+        "Exact GB 2762-2025 cadmium ML extracted from the official standard text."
+      ]
+    },
+    {
+      "recordId": "cn.nhc.cadmium.fish.ml.2025",
+      "jurisdiction": "cn",
+      "contaminantFamily": "cadmium_food_contaminants",
+      "substanceKey": "cadmium",
+      "authority": "NHC China",
+      "legalAuthorityId": "cn.nhc.cadmium.gb_2762_2025",
+      "sourceIds": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "fish"
+      ],
+      "commodityCodes": [],
+      "focusFoodDescription": "Fish and fish products.",
+      "limitValue": 0.1,
+      "unit": "mg/kg",
+      "expressionBasis": "as sold",
+      "populationScope": "general_population",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "effectiveDate": "2026-09-02",
+      "notes": [
+        "Exact GB 2762-2025 cadmium ML extracted from the official standard text."
+      ]
+    },
+    {
+      "recordId": "cn.nhc.cadmium.infant_auxiliary_cereal_foods.ml.2025",
+      "jurisdiction": "cn",
+      "contaminantFamily": "cadmium_food_contaminants",
+      "substanceKey": "cadmium",
+      "authority": "NHC China",
+      "legalAuthorityId": "cn.nhc.cadmium.gb_2762_2025",
+      "sourceIds": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "processed_infant_food"
+      ],
+      "commodityCodes": [],
+      "focusFoodDescription": "Infant and young-children auxiliary foods - cereal-based products.",
+      "limitValue": 0.06,
+      "unit": "mg/kg",
+      "expressionBasis": "as sold",
+      "populationScope": "infants_and_young_children",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "effectiveDate": "2026-09-02",
+      "notes": [
+        "Exact GB 2762-2025 cadmium ML extracted from the official standard text."
+      ]
+    },
+    {
+      "recordId": "cn.nhc.lead.grains.ml.2025",
+      "jurisdiction": "cn",
+      "contaminantFamily": "lead_food_contaminants",
+      "substanceKey": "lead",
+      "authority": "NHC China",
+      "legalAuthorityId": "cn.nhc.lead.gb_2762_2025",
+      "sourceIds": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "grain"
+      ],
+      "commodityCodes": [
+        "rice"
+      ],
+      "focusFoodDescription": "Grains and grain products including rice-related commodities.",
+      "limitValue": 0.2,
+      "unit": "mg/kg",
+      "expressionBasis": "as sold",
+      "populationScope": "general_population",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "effectiveDate": "2026-09-02",
+      "notes": [
+        "Exact GB 2762-2025 lead ML extracted from the official standard text."
+      ]
+    },
+    {
+      "recordId": "cn.nhc.lead.fish.ml.2025",
+      "jurisdiction": "cn",
+      "contaminantFamily": "lead_food_contaminants",
+      "substanceKey": "lead",
+      "authority": "NHC China",
+      "legalAuthorityId": "cn.nhc.lead.gb_2762_2025",
+      "sourceIds": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "fish"
+      ],
+      "commodityCodes": [],
+      "focusFoodDescription": "Fish and fish products.",
+      "limitValue": 0.5,
+      "unit": "mg/kg",
+      "expressionBasis": "as sold",
+      "populationScope": "general_population",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "effectiveDate": "2026-09-02",
+      "notes": [
+        "Exact GB 2762-2025 lead ML extracted from the official standard text."
+      ]
+    },
+    {
+      "recordId": "cn.nhc.lead.infant_formula.ml.2025",
+      "jurisdiction": "cn",
+      "contaminantFamily": "lead_food_contaminants",
+      "substanceKey": "lead",
+      "authority": "NHC China",
+      "legalAuthorityId": "cn.nhc.lead.gb_2762_2025",
+      "sourceIds": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "processed_infant_food"
+      ],
+      "commodityCodes": [
+        "infant_formula"
+      ],
+      "focusFoodDescription": "Infant formula food on a solid basis.",
+      "limitValue": 0.08,
+      "unit": "mg/kg",
+      "expressionBasis": "solid basis",
+      "populationScope": "infants",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "effectiveDate": "2026-09-02",
+      "notes": [
+        "Exact GB 2762-2025 lead ML extracted from the official standard text."
+      ]
+    },
+    {
+      "recordId": "cn.nhc.lead.infant_auxiliary_foods.ml.2025",
+      "jurisdiction": "cn",
+      "contaminantFamily": "lead_food_contaminants",
+      "substanceKey": "lead",
+      "authority": "NHC China",
+      "legalAuthorityId": "cn.nhc.lead.gb_2762_2025",
+      "sourceIds": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "processed_infant_food"
+      ],
+      "commodityCodes": [],
+      "focusFoodDescription": "Infant and young-children auxiliary foods.",
+      "limitValue": 0.2,
+      "unit": "mg/kg",
+      "expressionBasis": "as sold",
+      "populationScope": "infants_and_young_children",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "effectiveDate": "2026-09-02",
+      "notes": [
+        "Exact GB 2762-2025 lead ML extracted from the official standard text."
+      ]
+    },
+    {
+      "recordId": "cn.nhc.inorganic_arsenic.rice.ml.2025",
+      "jurisdiction": "cn",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "substanceKey": "inorganic_arsenic",
+      "authority": "NHC China",
+      "legalAuthorityId": "cn.nhc.inorganic_arsenic.gb_2762_2025",
+      "sourceIds": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "grain"
+      ],
+      "commodityCodes": [
+        "rice"
+      ],
+      "focusFoodDescription": "Rice and rice flour.",
+      "limitValue": 0.2,
+      "unit": "mg/kg",
+      "expressionBasis": "as sold",
+      "populationScope": "general_population",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "effectiveDate": "2026-09-02",
+      "notes": [
+        "Exact GB 2762-2025 inorganic-arsenic ML extracted from the official standard text."
+      ]
+    },
+    {
+      "recordId": "cn.nhc.inorganic_arsenic.fish.ml.2025",
+      "jurisdiction": "cn",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "substanceKey": "inorganic_arsenic",
+      "authority": "NHC China",
+      "legalAuthorityId": "cn.nhc.inorganic_arsenic.gb_2762_2025",
+      "sourceIds": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "fish"
+      ],
+      "commodityCodes": [],
+      "focusFoodDescription": "Fish and fish products.",
+      "limitValue": 0.1,
+      "unit": "mg/kg",
+      "expressionBasis": "as sold",
+      "populationScope": "general_population",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "effectiveDate": "2026-09-02",
+      "notes": [
+        "Exact GB 2762-2025 inorganic-arsenic ML extracted from the official standard text."
+      ]
+    },
+    {
+      "recordId": "cn.nhc.inorganic_arsenic.infant_auxiliary_cereal_foods.ml.2025",
+      "jurisdiction": "cn",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "substanceKey": "inorganic_arsenic",
+      "authority": "NHC China",
+      "legalAuthorityId": "cn.nhc.inorganic_arsenic.gb_2762_2025",
+      "sourceIds": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "processed_infant_food"
+      ],
+      "commodityCodes": [],
+      "focusFoodDescription": "Infant and young-children auxiliary foods - cereal-based products excluding algae products.",
+      "limitValue": 0.2,
+      "unit": "mg/kg",
+      "expressionBasis": "as sold",
+      "populationScope": "infants_and_young_children",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "effectiveDate": "2026-09-02",
+      "notes": [
+        "Exact GB 2762-2025 inorganic-arsenic ML extracted from the official standard text."
+      ]
+    },
+    {
+      "recordId": "cn.nhc.inorganic_arsenic.infant_canned_auxiliary_foods.non_aquatic_non_liver.ml.2025",
+      "jurisdiction": "cn",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "substanceKey": "inorganic_arsenic",
+      "authority": "NHC China",
+      "legalAuthorityId": "cn.nhc.inorganic_arsenic.gb_2762_2025",
+      "sourceIds": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "processed_infant_food"
+      ],
+      "commodityCodes": [],
+      "focusFoodDescription": "Infant canned auxiliary foods excluding aquatic-animal and animal-liver raw materials.",
+      "limitValue": 0.1,
+      "unit": "mg/kg",
+      "expressionBasis": "as sold",
+      "populationScope": "infants_and_young_children",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "effectiveDate": "2026-09-02",
+      "notes": [
+        "Exact GB 2762-2025 inorganic-arsenic ML extracted from the official standard text."
+      ]
+    },
+    {
+      "recordId": "cn.nhc.inorganic_arsenic.infant_canned_auxiliary_foods.aquatic_or_liver.ml.2025",
+      "jurisdiction": "cn",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "substanceKey": "inorganic_arsenic",
+      "authority": "NHC China",
+      "legalAuthorityId": "cn.nhc.inorganic_arsenic.gb_2762_2025",
+      "sourceIds": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "processed_infant_food"
+      ],
+      "commodityCodes": [],
+      "focusFoodDescription": "Infant canned auxiliary foods with aquatic-animal or animal-liver raw materials.",
+      "limitValue": 0.3,
+      "unit": "mg/kg",
+      "expressionBasis": "as sold",
+      "populationScope": "infants_and_young_children",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "effectiveDate": "2026-09-02",
+      "notes": [
+        "Exact GB 2762-2025 inorganic-arsenic ML extracted from the official standard text."
+      ]
+    },
+    {
+      "recordId": "cn.nhc.methylmercury.aquatic_animals.general.ml.2025",
+      "jurisdiction": "cn",
+      "contaminantFamily": "mercury_food_contaminants",
+      "substanceKey": "methylmercury",
+      "authority": "NHC China",
+      "legalAuthorityId": "cn.nhc.mercury.gb_2762_2025",
+      "sourceIds": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "aquatic_animals"
+      ],
+      "commodityCodes": [],
+      "focusFoodDescription": "Aquatic animals except carnivorous fish, tuna, orange roughy, swordfish, and shark.",
+      "limitValue": 0.5,
+      "unit": "mg/kg",
+      "expressionBasis": "as sold",
+      "populationScope": "general_population",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "effectiveDate": "2026-09-02",
+      "notes": [
+        "Exact GB 2762-2025 methylmercury ML extracted from the official standard text."
+      ]
+    },
+    {
+      "recordId": "cn.nhc.methylmercury.carnivorous_fish.ml.2025",
+      "jurisdiction": "cn",
+      "contaminantFamily": "mercury_food_contaminants",
+      "substanceKey": "methylmercury",
+      "authority": "NHC China",
+      "legalAuthorityId": "cn.nhc.mercury.gb_2762_2025",
+      "sourceIds": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "limitType": "maximum_level",
+      "matrixGroups": [
+        "carnivorous_fish"
+      ],
+      "commodityCodes": [],
+      "focusFoodDescription": "Carnivorous fish.",
+      "limitValue": 1.0,
+      "unit": "mg/kg",
+      "expressionBasis": "as sold",
+      "populationScope": "general_population",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "effectiveDate": "2026-09-02",
+      "notes": [
+        "Exact GB 2762-2025 methylmercury ML extracted from the official standard text.",
+        "This record is kept matrix-specific so current-taxonomy fish commodities are not silently classified as carnivorous."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "chemical_identity": {
+    "preferredName": "Mancozeb",
+    "casrn": "8018-01-7"
+  },
+  "region_id": "eu_screening_default",
+  "residue_records": [
+    {
+      "commodity_code": "apple_juice",
+      "residue_concentration_mg_per_kg": 0.05,
+      "lower_bound_mg_per_kg": 0.0,
+      "upper_bound_mg_per_kg": 0.1,
+      "residue_unit": "mg/kg",
+      "source_type": "user_supplied",
+      "review_status": "schema_reviewed_not_source_validated",
+      "source_reference": {
+        "source_id": "casepack.mancozeb.apple_juice.screening_residue",
+        "title": "Mancozeb apple_juice regulatory-screening residue input (EU MRL band) for PESS-style public slice",
+        "effective_date": "2026-06-01",
+        "url": "examples://pesticide_pess_style/mancozeb_public_slice/source_lock",
+        "originTag": "illustrative_placeholder"
+      }
+    },
+    {
+      "commodity_code": "rice",
+      "residue_concentration_mg_per_kg": 0.02,
+      "lower_bound_mg_per_kg": 0.0,
+      "upper_bound_mg_per_kg": 0.05,
+      "residue_unit": "mg/kg",
+      "source_type": "user_supplied",
+      "review_status": "schema_reviewed_not_source_validated",
+      "source_reference": {
+        "source_id": "casepack.mancozeb.rice.screening_residue",
+        "title": "Mancozeb rice regulatory-screening residue input (EU MRL band) for PESS-style public slice",
+        "effective_date": "2026-06-01",
+        "url": "examples://pesticide_pess_style/mancozeb_public_slice/source_lock",
+        "originTag": "illustrative_placeholder"
+      }
+    }
+  ]
+}

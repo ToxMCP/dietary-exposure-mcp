@@ -1,0 +1,60 @@
+name: Scientific correction
+description: Report a source, value, unit, population, jurisdiction, or interpretation concern.
+title: "[Science]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Primary authority outputs are preferred. Do not submit confidential
+        studies, applicant data, or unpublished regulatory material.
+  - type: dropdown
+    id: concern_type
+    attributes:
+      label: Concern type
+      options:
+        - Reference value or unit
+        - Population or assessment context
+        - Source currency or supersession
+        - Jurisdiction or legal interpretation
+        - Commodity or food mapping
+        - Exposure calculation or uncertainty
+        - Governance or overclaim risk
+        - Other scientific concern
+    validations:
+      required: true
+  - type: input
+    id: record
+    attributes:
+      label: Record, tool, or workflow
+      placeholder: recordId, tool name, or documentation path
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: Scientific concern
+      description: Explain the possible error and its consequence.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Primary sources
+      description: Provide DOI, official URL, version, date, and relevant table or section.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction or test
+      description: State the expected value, behavior, warning, or validation case.
+  - type: checkboxes
+    id: declarations
+    attributes:
+      label: Declarations
+      options:
+        - label: The material I linked is public and may be reviewed by maintainers.
+          required: true
+        - label: I understand that a workflow signoff is not regulator acceptance.
+          required: true

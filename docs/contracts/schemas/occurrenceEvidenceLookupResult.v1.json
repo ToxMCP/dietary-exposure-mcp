@@ -1,0 +1,308 @@
+{
+  "$defs": {
+    "ContaminantFamily": {
+      "enum": [
+        "pesticide_residue",
+        "microplastics_emerging",
+        "pfas_food_contaminants",
+        "acrylamide_process_contaminants",
+        "bisphenol_food_contact_migration",
+        "cadmium_food_contaminants",
+        "lead_food_contaminants",
+        "inorganic_arsenic_food_contaminants",
+        "mercury_food_contaminants",
+        "food_contaminant"
+      ],
+      "title": "ContaminantFamily",
+      "type": "string"
+    },
+    "DocumentStatus": {
+      "enum": [
+        "final_current",
+        "superseded",
+        "draft",
+        "consultation",
+        "tool_metadata",
+        "dataset_current"
+      ],
+      "title": "DocumentStatus",
+      "type": "string"
+    },
+    "EvidenceSupportStatus": {
+      "enum": [
+        "established",
+        "limited",
+        "emerging",
+        "insufficient"
+      ],
+      "title": "EvidenceSupportStatus",
+      "type": "string"
+    },
+    "MethodMaturityStatus": {
+      "enum": [
+        "established",
+        "transitional",
+        "exploratory",
+        "emerging"
+      ],
+      "title": "MethodMaturityStatus",
+      "type": "string"
+    },
+    "OccurrenceEvidenceRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "recordId": {
+          "title": "Recordid",
+          "type": "string"
+        },
+        "displayName": {
+          "title": "Displayname",
+          "type": "string"
+        },
+        "authority": {
+          "title": "Authority",
+          "type": "string"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "contaminantFamily": {
+          "$ref": "#/$defs/ContaminantFamily"
+        },
+        "evidenceKind": {
+          "title": "Evidencekind",
+          "type": "string"
+        },
+        "analytes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Analytes",
+          "type": "array"
+        },
+        "matrixGroups": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Matrixgroups",
+          "type": "array"
+        },
+        "sampleSetSummary": {
+          "title": "Samplesetsummary",
+          "type": "string"
+        },
+        "measuredUnit": {
+          "title": "Measuredunit",
+          "type": "string"
+        },
+        "dataPeriod": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dataperiod"
+        },
+        "lowerBoundHandling": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lowerboundhandling"
+        },
+        "maturityStatus": {
+          "$ref": "#/$defs/MethodMaturityStatus"
+        },
+        "evidenceSupportStatus": {
+          "$ref": "#/$defs/EvidenceSupportStatus"
+        },
+        "submissionUse": {
+          "$ref": "#/$defs/SubmissionUse"
+        },
+        "documentStatus": {
+          "$ref": "#/$defs/DocumentStatus"
+        },
+        "sourceIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sourceids",
+          "type": "array"
+        },
+        "occurrenceRecordIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Occurrencerecordids",
+          "type": "array"
+        },
+        "datasetIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Datasetids",
+          "type": "array"
+        },
+        "methodEvidenceRecordIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Methodevidencerecordids",
+          "type": "array"
+        },
+        "legalAuthorityIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Legalauthorityids",
+          "type": "array"
+        },
+        "referenceValueRecordIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Referencevaluerecordids",
+          "type": "array"
+        },
+        "linkedReviewFocusIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Linkedreviewfocusids",
+          "type": "array"
+        },
+        "reportingProfileIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Reportingprofileids",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "recordId",
+        "displayName",
+        "authority",
+        "jurisdiction",
+        "contaminantFamily",
+        "evidenceKind",
+        "sampleSetSummary",
+        "measuredUnit",
+        "maturityStatus",
+        "evidenceSupportStatus",
+        "submissionUse",
+        "documentStatus"
+      ],
+      "title": "OccurrenceEvidenceRecord",
+      "type": "object"
+    },
+    "SubmissionUse": {
+      "enum": [
+        "allowed",
+        "review_required",
+        "not_allowed"
+      ],
+      "title": "SubmissionUse",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "contaminantFamily": {
+      "$ref": "#/$defs/ContaminantFamily"
+    },
+    "jurisdiction": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Jurisdiction"
+    },
+    "authority": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Authority"
+    },
+    "analyte": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Analyte"
+    },
+    "matrixGroup": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Matrixgroup"
+    },
+    "records": {
+      "items": {
+        "$ref": "#/$defs/OccurrenceEvidenceRecord"
+      },
+      "title": "Records",
+      "type": "array"
+    },
+    "overallSubmissionUse": {
+      "$ref": "#/$defs/SubmissionUse"
+    },
+    "submissionCandidateAllowed": {
+      "title": "Submissioncandidateallowed",
+      "type": "boolean"
+    },
+    "notes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "contaminantFamily",
+    "overallSubmissionUse",
+    "submissionCandidateAllowed"
+  ],
+  "title": "OccurrenceEvidenceLookupResult",
+  "type": "object"
+}

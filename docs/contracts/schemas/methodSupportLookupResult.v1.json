@@ -1,0 +1,372 @@
+{
+  "$defs": {
+    "ContaminantFamily": {
+      "enum": [
+        "pesticide_residue",
+        "microplastics_emerging",
+        "pfas_food_contaminants",
+        "acrylamide_process_contaminants",
+        "bisphenol_food_contact_migration",
+        "cadmium_food_contaminants",
+        "lead_food_contaminants",
+        "inorganic_arsenic_food_contaminants",
+        "mercury_food_contaminants",
+        "food_contaminant"
+      ],
+      "title": "ContaminantFamily",
+      "type": "string"
+    },
+    "DocumentStatus": {
+      "enum": [
+        "final_current",
+        "superseded",
+        "draft",
+        "consultation",
+        "tool_metadata",
+        "dataset_current"
+      ],
+      "title": "DocumentStatus",
+      "type": "string"
+    },
+    "EmergingContaminantRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "familyId": {
+          "$ref": "#/$defs/ContaminantFamily"
+        },
+        "displayName": {
+          "title": "Displayname",
+          "type": "string"
+        },
+        "jurisdictions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Jurisdictions",
+          "type": "array"
+        },
+        "methodMaturityStatus": {
+          "$ref": "#/$defs/MethodMaturityStatus"
+        },
+        "evidenceSupportStatus": {
+          "$ref": "#/$defs/EvidenceSupportStatus"
+        },
+        "submissionUse": {
+          "$ref": "#/$defs/SubmissionUse"
+        },
+        "sourceIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sourceids",
+          "type": "array"
+        },
+        "methodIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Methodids",
+          "type": "array"
+        },
+        "defaultReadinessProfileIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Defaultreadinessprofileids",
+          "type": "array"
+        },
+        "hardFailureProfiles": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Hardfailureprofiles",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "familyId",
+        "displayName",
+        "jurisdictions",
+        "methodMaturityStatus",
+        "evidenceSupportStatus",
+        "submissionUse"
+      ],
+      "title": "EmergingContaminantRecord",
+      "type": "object"
+    },
+    "EvidenceSupportStatus": {
+      "enum": [
+        "established",
+        "limited",
+        "emerging",
+        "insufficient"
+      ],
+      "title": "EvidenceSupportStatus",
+      "type": "string"
+    },
+    "LegalAuthorityRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "authorityId": {
+          "title": "Authorityid",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "citation": {
+          "title": "Citation",
+          "type": "string"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "contaminantFamily": {
+          "$ref": "#/$defs/ContaminantFamily"
+        },
+        "regulatoryRole": {
+          "$ref": "#/$defs/RegulatoryRole"
+        },
+        "documentStatus": {
+          "$ref": "#/$defs/DocumentStatus"
+        },
+        "submissionUse": {
+          "$ref": "#/$defs/SubmissionUse"
+        },
+        "sourceId": {
+          "title": "Sourceid",
+          "type": "string"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "authorityId",
+        "title",
+        "citation",
+        "jurisdiction",
+        "contaminantFamily",
+        "regulatoryRole",
+        "documentStatus",
+        "submissionUse",
+        "sourceId"
+      ],
+      "title": "LegalAuthorityRecord",
+      "type": "object"
+    },
+    "MethodMaturityStatus": {
+      "enum": [
+        "established",
+        "transitional",
+        "exploratory",
+        "emerging"
+      ],
+      "title": "MethodMaturityStatus",
+      "type": "string"
+    },
+    "MethodRegistryRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "methodId": {
+          "title": "Methodid",
+          "type": "string"
+        },
+        "displayName": {
+          "title": "Displayname",
+          "type": "string"
+        },
+        "authority": {
+          "title": "Authority",
+          "type": "string"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "contaminantFamily": {
+          "$ref": "#/$defs/ContaminantFamily"
+        },
+        "methodType": {
+          "title": "Methodtype",
+          "type": "string"
+        },
+        "currentVersionLabel": {
+          "title": "Currentversionlabel",
+          "type": "string"
+        },
+        "maturityStatus": {
+          "$ref": "#/$defs/MethodMaturityStatus"
+        },
+        "evidenceSupportStatus": {
+          "$ref": "#/$defs/EvidenceSupportStatus"
+        },
+        "submissionUse": {
+          "$ref": "#/$defs/SubmissionUse"
+        },
+        "documentStatus": {
+          "$ref": "#/$defs/DocumentStatus"
+        },
+        "sourceIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sourceids",
+          "type": "array"
+        },
+        "modelFamily": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ModelFamily"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "methodId",
+        "displayName",
+        "authority",
+        "jurisdiction",
+        "contaminantFamily",
+        "methodType",
+        "currentVersionLabel",
+        "maturityStatus",
+        "evidenceSupportStatus",
+        "submissionUse",
+        "documentStatus"
+      ],
+      "title": "MethodRegistryRecord",
+      "type": "object"
+    },
+    "ModelFamily": {
+      "enum": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "title": "ModelFamily",
+      "type": "string"
+    },
+    "RegulatoryRole": {
+      "enum": [
+        "binding",
+        "guidance",
+        "technical_report",
+        "dataset",
+        "software_metadata"
+      ],
+      "title": "RegulatoryRole",
+      "type": "string"
+    },
+    "SubmissionUse": {
+      "enum": [
+        "allowed",
+        "review_required",
+        "not_allowed"
+      ],
+      "title": "SubmissionUse",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "contaminantFamily": {
+      "$ref": "#/$defs/ContaminantFamily"
+    },
+    "jurisdiction": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Jurisdiction"
+    },
+    "authority": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Authority"
+    },
+    "methods": {
+      "items": {
+        "$ref": "#/$defs/MethodRegistryRecord"
+      },
+      "title": "Methods",
+      "type": "array"
+    },
+    "legalAuthorities": {
+      "items": {
+        "$ref": "#/$defs/LegalAuthorityRecord"
+      },
+      "title": "Legalauthorities",
+      "type": "array"
+    },
+    "emergingContaminant": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/EmergingContaminantRecord"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "overallSubmissionUse": {
+      "$ref": "#/$defs/SubmissionUse"
+    },
+    "submissionCandidateAllowed": {
+      "title": "Submissioncandidateallowed",
+      "type": "boolean"
+    },
+    "notes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "contaminantFamily",
+    "overallSubmissionUse",
+    "submissionCandidateAllowed"
+  ],
+  "title": "MethodSupportLookupResult",
+  "type": "object"
+}

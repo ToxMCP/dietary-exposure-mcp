@@ -1,0 +1,351 @@
+{
+  "$defs": {
+    "CommodityReference": {
+      "additionalProperties": false,
+      "properties": {
+        "taxonomy_id": {
+          "title": "Taxonomy Id",
+          "type": "string"
+        },
+        "commodity_code": {
+          "title": "Commodity Code",
+          "type": "string"
+        },
+        "canonical_name": {
+          "title": "Canonical Name",
+          "type": "string"
+        },
+        "food_group": {
+          "title": "Food Group",
+          "type": "string"
+        },
+        "mapping_status": {
+          "title": "Mapping Status",
+          "type": "string"
+        },
+        "foodex2_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Foodex2 Code"
+        },
+        "rpc_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rpc Code"
+        },
+        "rpcd_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rpcd Code"
+        },
+        "processed_status": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProcessedStatus"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "mapping_confidence": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/MappingConfidence"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "matched_input_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Matched Input Code"
+        },
+        "source_reference": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceReference"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "taxonomy_id",
+        "commodity_code",
+        "canonical_name",
+        "food_group",
+        "mapping_status"
+      ],
+      "title": "CommodityReference",
+      "type": "object"
+    },
+    "IntakeWindowSemantic": {
+      "enum": [
+        "acute",
+        "chronic"
+      ],
+      "title": "IntakeWindowSemantic",
+      "type": "string"
+    },
+    "LimitationNote": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "title": "LimitationNote",
+      "type": "object"
+    },
+    "MappingConfidence": {
+      "enum": [
+        "reviewed",
+        "provisional",
+        "heuristic"
+      ],
+      "title": "MappingConfidence",
+      "type": "string"
+    },
+    "ProcessedStatus": {
+      "enum": [
+        "raw_primary_commodity",
+        "processed_derivative"
+      ],
+      "title": "ProcessedStatus",
+      "type": "string"
+    },
+    "QualityFlag": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "severity": {
+          "$ref": "#/$defs/Severity"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "severity",
+        "message"
+      ],
+      "title": "QualityFlag",
+      "type": "object"
+    },
+    "Severity": {
+      "enum": [
+        "info",
+        "warning",
+        "error"
+      ],
+      "title": "Severity",
+      "type": "string"
+    },
+    "SourceOriginTag": {
+      "enum": [
+        "official_regulatory",
+        "curated_derived",
+        "illustrative_placeholder",
+        "internal_operational"
+      ],
+      "title": "SourceOriginTag",
+      "type": "string"
+    },
+    "SourceReference": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "effective_date": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Effective Date"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        },
+        "originTag": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceOriginTag"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "source_id",
+        "title"
+      ],
+      "title": "SourceReference",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "commodity": {
+      "$ref": "#/$defs/CommodityReference"
+    },
+    "intake_window_semantic": {
+      "$ref": "#/$defs/IntakeWindowSemantic"
+    },
+    "residue_concentration_mg_per_kg": {
+      "minimum": 0.0,
+      "title": "Residue Concentration Mg Per Kg",
+      "type": "number"
+    },
+    "consumption_kg_per_day": {
+      "minimum": 0.0,
+      "title": "Consumption Kg Per Day",
+      "type": "number"
+    },
+    "applied_processing_factor": {
+      "exclusiveMinimum": 0.0,
+      "title": "Applied Processing Factor",
+      "type": "number"
+    },
+    "contribution_mg_per_kg_bw_per_day": {
+      "minimum": 0.0,
+      "title": "Contribution Mg Per Kg Bw Per Day",
+      "type": "number"
+    },
+    "fraction_of_total": {
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Fraction Of Total",
+      "type": "number"
+    },
+    "lower_bound_intake_mg_per_kg_bw_per_day": {
+      "anyOf": [
+        {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Lower Bound Intake Mg Per Kg Bw Per Day"
+    },
+    "upper_bound_intake_mg_per_kg_bw_per_day": {
+      "anyOf": [
+        {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Upper Bound Intake Mg Per Kg Bw Per Day"
+    },
+    "quality_flags": {
+      "items": {
+        "$ref": "#/$defs/QualityFlag"
+      },
+      "title": "Quality Flags",
+      "type": "array"
+    },
+    "limitations": {
+      "items": {
+        "$ref": "#/$defs/LimitationNote"
+      },
+      "title": "Limitations",
+      "type": "array"
+    }
+  },
+  "required": [
+    "commodity",
+    "intake_window_semantic",
+    "residue_concentration_mg_per_kg",
+    "consumption_kg_per_day",
+    "applied_processing_factor",
+    "contribution_mg_per_kg_bw_per_day",
+    "fraction_of_total"
+  ],
+  "title": "DietaryContributionRecord",
+  "type": "object"
+}

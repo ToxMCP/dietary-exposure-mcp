@@ -1,0 +1,308 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "regulatory_readiness_profiles",
+  "profiles": [
+    {
+      "profileId": "eu_internal_review",
+      "displayName": "EU internal review",
+      "jurisdiction": "eu",
+      "intendedUse": "Internal scientific review with explicit governance and limitation tracking.",
+      "notes": [
+        "Allows compatibility harnesses and draft-aware governance snapshots.",
+        "Downgrades to review_required when submission gating or active errata require human judgment."
+      ]
+    },
+    {
+      "profileId": "eu_submission_candidate",
+      "displayName": "EU submission candidate",
+      "jurisdiction": "eu",
+      "intendedUse": "Pre-submission screening for whether a dossier is structurally eligible for regulator-facing packaging.",
+      "notes": [
+        "Requires pinned governance snapshots and required disclaimers.",
+        "Current Dietary MCP model families are expected to fail this profile in Phase 1."
+      ]
+    },
+    {
+      "profileId": "eu_consultation_exploratory",
+      "displayName": "EU consultation exploratory",
+      "jurisdiction": "eu",
+      "intendedUse": "Consultation-oriented or exploratory review that tolerates draft-aware governance with explicit warnings.",
+      "notes": [
+        "Allows consultation-oriented sources and compatibility harnesses.",
+        "Requires governance snapshots and consultation disclaimers to remain explicit."
+      ]
+    },
+    {
+      "profileId": "microplastics_internal_review",
+      "displayName": "Microplastics internal review",
+      "jurisdiction": "eu",
+      "intendedUse": "Internal scientific review for microplastics and nanoplastics with explicit evidence and method-maturity limits.",
+      "notes": [
+        "This profile preserves the emerging-contaminant family boundary and keeps pesticide engines out of scope.",
+        "Intended for review-oriented assessment support only."
+      ]
+    },
+    {
+      "profileId": "microplastics_consultation_exploratory",
+      "displayName": "Microplastics consultation exploratory",
+      "jurisdiction": "eu",
+      "intendedUse": "Exploratory or consultation-oriented review of microplastics evidence with explicit maturity warnings.",
+      "notes": [
+        "Allows emerging-evidence review with explicit not_allowed submission posture."
+      ]
+    },
+    {
+      "profileId": "microplastics_submission_candidate",
+      "displayName": "Microplastics submission candidate",
+      "jurisdiction": "eu",
+      "intendedUse": "Hard-fail placeholder profile for submission-oriented microplastics use until reviewed official methods mature.",
+      "notes": [
+        "Submission-oriented use is expected to fail by default in v0.1.",
+        "This profile exists to make the hard governance limit machine-readable rather than implicit."
+      ]
+    },
+    {
+      "profileId": "pfas_internal_review",
+      "displayName": "PFAS internal review",
+      "jurisdiction": "eu",
+      "intendedUse": "Internal scientific review of PFAS food-contaminant evidence with explicit legal and monitoring provenance.",
+      "notes": [
+        "This profile supports review-oriented PFAS source lookup and documentation without implying a native PFAS submission engine."
+      ]
+    },
+    {
+      "profileId": "pfas_consultation_exploratory",
+      "displayName": "PFAS consultation exploratory",
+      "jurisdiction": "eu",
+      "intendedUse": "Exploratory or consultation-oriented PFAS review with explicit monitoring and evidence-context notes.",
+      "notes": [
+        "Allows governed PFAS source and monitoring context to be surfaced for consultation-oriented review."
+      ]
+    },
+    {
+      "profileId": "pfas_submission_candidate",
+      "displayName": "PFAS submission candidate",
+      "jurisdiction": "eu",
+      "intendedUse": "Hard-fail placeholder profile for submission-oriented PFAS use until a reviewed PFAS method pack is added.",
+      "notes": [
+        "PFAS legal and scientific sources are represented in Dietary MCP, but no native PFAS submission-capable engine is published in v0.1."
+      ]
+    },
+    {
+      "profileId": "acrylamide_internal_review",
+      "displayName": "Acrylamide internal review",
+      "jurisdiction": "eu",
+      "intendedUse": "Internal scientific review of acrylamide food-contaminant evidence with explicit mitigation and monitoring provenance.",
+      "notes": [
+        "This profile supports review-oriented acrylamide source lookup and documentation without implying a native acrylamide submission engine."
+      ]
+    },
+    {
+      "profileId": "acrylamide_consultation_exploratory",
+      "displayName": "Acrylamide consultation exploratory",
+      "jurisdiction": "eu",
+      "intendedUse": "Exploratory or consultation-oriented acrylamide review with explicit mitigation and occurrence-context notes.",
+      "notes": [
+        "Allows governed acrylamide source and monitoring context to be surfaced for consultation-oriented review."
+      ]
+    },
+    {
+      "profileId": "acrylamide_submission_candidate",
+      "displayName": "Acrylamide submission candidate",
+      "jurisdiction": "eu",
+      "intendedUse": "Submission-oriented acrylamide review with governed EFSA reference values, mitigation measures, and EU legal provenance.",
+      "notes": [
+        "Governed scientific and legal sources are represented in Dietary MCP.",
+        "Submission-candidate evaluation proceeds through standard readiness rules when dossier governance and fingerprint requirements are met."
+      ]
+    },
+    {
+      "profileId": "bisphenol_internal_review",
+      "displayName": "Bisphenol internal review",
+      "jurisdiction": "eu",
+      "intendedUse": "Internal scientific review of bisphenol dietary-exposure evidence with explicit food-contact and legal provenance.",
+      "notes": [
+        "This profile supports review-oriented bisphenol source lookup and documentation without implying a native food-contact migration engine."
+      ]
+    },
+    {
+      "profileId": "bisphenol_consultation_exploratory",
+      "displayName": "Bisphenol consultation exploratory",
+      "jurisdiction": "eu",
+      "intendedUse": "Exploratory or consultation-oriented bisphenol review with explicit food-contact migration context notes.",
+      "notes": [
+        "Allows governed bisphenol source and legal context to be surfaced for consultation-oriented review."
+      ]
+    },
+    {
+      "profileId": "bisphenol_submission_candidate",
+      "displayName": "Bisphenol submission candidate",
+      "jurisdiction": "eu",
+      "intendedUse": "Submission-oriented bisphenol review with governed EFSA TDI, food-contact migration limits, and EU legal provenance.",
+      "notes": [
+        "Governed scientific and legal sources are represented in Dietary MCP.",
+        "Submission-candidate evaluation proceeds through standard readiness rules when dossier governance and fingerprint requirements are met."
+      ]
+    },
+    {
+      "profileId": "cadmium_internal_review",
+      "displayName": "Cadmium internal review",
+      "jurisdiction": "eu",
+      "intendedUse": "Internal scientific review of cadmium food-contaminant evidence with explicit dietary exposure and legal provenance.",
+      "notes": [
+        "This profile supports review-oriented cadmium source lookup and documentation without implying a native cadmium submission engine."
+      ]
+    },
+    {
+      "profileId": "cadmium_consultation_exploratory",
+      "displayName": "Cadmium consultation exploratory",
+      "jurisdiction": "eu",
+      "intendedUse": "Exploratory or consultation-oriented cadmium review with explicit dietary exposure context notes.",
+      "notes": [
+        "Allows governed cadmium source and legal context to be surfaced for consultation-oriented review."
+      ]
+    },
+    {
+      "profileId": "cadmium_submission_candidate",
+      "displayName": "Cadmium submission candidate",
+      "jurisdiction": "eu",
+      "intendedUse": "Submission-oriented cadmium review with governed EFSA TWI, occurrence evidence, and EU legal provenance.",
+      "notes": [
+        "Governed scientific and legal sources are represented in Dietary MCP.",
+        "Submission-candidate evaluation proceeds through standard readiness rules when dossier governance and fingerprint requirements are met."
+      ]
+    },
+    {
+      "profileId": "lead_internal_review",
+      "displayName": "Lead internal review",
+      "jurisdiction": "eu",
+      "intendedUse": "Internal scientific review of lead food-contaminant evidence with explicit dietary exposure and legal provenance.",
+      "notes": [
+        "This profile supports review-oriented lead source lookup and documentation without implying a native lead submission engine."
+      ]
+    },
+    {
+      "profileId": "lead_consultation_exploratory",
+      "displayName": "Lead consultation exploratory",
+      "jurisdiction": "eu",
+      "intendedUse": "Exploratory or consultation-oriented lead review with explicit dietary exposure context notes.",
+      "notes": [
+        "Allows governed lead source and legal context to be surfaced for consultation-oriented review."
+      ]
+    },
+    {
+      "profileId": "lead_submission_candidate",
+      "displayName": "Lead submission candidate",
+      "jurisdiction": "eu",
+      "intendedUse": "Submission-oriented lead review with governed EFSA benchmark dose, occurrence evidence, and EU legal provenance.",
+      "notes": [
+        "Governed scientific and legal sources are represented in Dietary MCP.",
+        "Submission-candidate evaluation proceeds through standard readiness rules when dossier governance and fingerprint requirements are met."
+      ]
+    },
+    {
+      "profileId": "inorganic_arsenic_internal_review",
+      "displayName": "Inorganic arsenic internal review",
+      "jurisdiction": "eu",
+      "intendedUse": "Internal scientific review of inorganic arsenic food-contaminant evidence with explicit dietary exposure and legal provenance.",
+      "notes": [
+        "This profile supports review-oriented inorganic arsenic source lookup and documentation without implying a native inorganic-arsenic submission engine."
+      ]
+    },
+    {
+      "profileId": "inorganic_arsenic_consultation_exploratory",
+      "displayName": "Inorganic arsenic consultation exploratory",
+      "jurisdiction": "eu",
+      "intendedUse": "Exploratory or consultation-oriented inorganic arsenic review with explicit dietary exposure context notes.",
+      "notes": [
+        "Allows governed inorganic arsenic source and legal context to be surfaced for consultation-oriented review."
+      ]
+    },
+    {
+      "profileId": "inorganic_arsenic_submission_candidate",
+      "displayName": "Inorganic arsenic submission candidate",
+      "jurisdiction": "eu",
+      "intendedUse": "Submission-oriented inorganic arsenic review with governed EFSA benchmark dose, occurrence evidence, and EU legal provenance.",
+      "notes": [
+        "Governed scientific and legal sources are represented in Dietary MCP.",
+        "Submission-candidate evaluation proceeds through standard readiness rules when dossier governance and fingerprint requirements are met."
+      ]
+    },
+    {
+      "profileId": "mercury_internal_review",
+      "displayName": "Mercury internal review",
+      "jurisdiction": "eu",
+      "intendedUse": "Internal scientific review of mercury food-contaminant evidence with explicit methylmercury and inorganic-mercury dietary provenance.",
+      "notes": [
+        "This profile supports review-oriented mercury source lookup and documentation without implying a native mercury submission engine."
+      ]
+    },
+    {
+      "profileId": "mercury_consultation_exploratory",
+      "displayName": "Mercury consultation exploratory",
+      "jurisdiction": "eu",
+      "intendedUse": "Exploratory or consultation-oriented mercury review with explicit dietary exposure context notes.",
+      "notes": [
+        "Allows governed mercury source and legal context to be surfaced for consultation-oriented review."
+      ]
+    },
+    {
+      "profileId": "mercury_submission_candidate",
+      "displayName": "Mercury submission candidate",
+      "jurisdiction": "eu",
+      "intendedUse": "Submission-oriented mercury review with governed EFSA TWI, occurrence evidence, and EU legal provenance.",
+      "notes": [
+        "Governed scientific and legal sources are represented in Dietary MCP.",
+        "Submission-candidate evaluation proceeds through standard readiness rules when dossier governance and fingerprint requirements are met."
+      ]
+    },
+    {
+      "profileId": "us_epa_internal_review",
+      "displayName": "US EPA internal review",
+      "jurisdiction": "us",
+      "intendedUse": "Internal scientific review against US EPA tolerance frameworks and reference values.",
+      "notes": [
+        "Supports draft-aware governance for early US-bound dietary reviews.",
+        "Explicitly preserves EPA vs JMPR/EFSA reference value divergence."
+      ]
+    },
+    {
+      "profileId": "us_epa_submission_candidate",
+      "displayName": "US EPA submission candidate",
+      "jurisdiction": "us",
+      "intendedUse": "Pre-submission screening against EPA 40 CFR Part 180 tolerance rules.",
+      "notes": [
+        "Requires pinned US governance snapshots.",
+        "Will fail dynamically if cross-jurisdiction values (e.g. EFSA ADI) leak into the US assessment context."
+      ]
+    },
+    {
+      "profileId": "cn_gb_internal_review",
+      "displayName": "China GB internal review",
+      "jurisdiction": "cn",
+      "intendedUse": "Internal scientific review against Chinese GB standard frameworks and reference values.",
+      "notes": [
+        "Supports governance for early China-bound dietary reviews.",
+        "Explicitly preserves GB vs EPA/EFSA reference value divergence."
+      ]
+    },
+    {
+      "profileId": "jp_mhlw_internal_review",
+      "displayName": "Japan MHLW internal review",
+      "jurisdiction": "jp",
+      "intendedUse": "Internal scientific review against Japanese Food Sanitation Act standard frameworks and reference values.",
+      "notes": [
+        "Supports governance for early Japan-bound dietary reviews."
+      ]
+    },
+    {
+      "profileId": "ca_pmra_internal_review",
+      "displayName": "Canada PMRA internal review",
+      "jurisdiction": "ca",
+      "intendedUse": "Internal scientific review against Canadian PMRA standard frameworks and reference values.",
+      "notes": [
+        "Supports governance for early Canada-bound dietary reviews."
+      ]
+    }
+  ]
+}

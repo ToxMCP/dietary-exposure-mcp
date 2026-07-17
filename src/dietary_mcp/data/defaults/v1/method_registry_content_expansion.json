@@ -1,0 +1,31 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "method_registry",
+  "methods": [
+    {
+      "methodId": "efsa.spirotetramat.mrl_review.2022",
+      "displayName": "EFSA spirotetramat residue-review context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "methodType": "pesticide_residue_review_context",
+      "currentVersionLabel": "2022_review_context",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "sourceIds": [
+        "efsa.spirotetramat.mrl_opinion.2020",
+        "efsa.spirotetramat.mrl_opinion.2022",
+        "jmpr.spirotetramat.report.2013",
+        "oecd.analytical_methods.2017",
+        "oecd.residue.definition.2006"
+      ],
+      "modelFamily": "efsa_primo_adapter",
+      "notes": [
+        "Governed EFSA/JMPR review metadata for spirotetramat residue-review context across fruit, herb, allium, and honey matrices.",
+        "Dietary MCP records this as review-oriented method provenance and analytical-context linkage only."
+      ]
+    }
+  ]
+}

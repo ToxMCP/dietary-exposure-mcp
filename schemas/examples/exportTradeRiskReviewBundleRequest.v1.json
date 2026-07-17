@@ -1,0 +1,351 @@
+{
+  "trade_report": {
+    "chemical_identity": {
+      "preferredName": "glyphosate"
+    },
+    "resolved_substance_key": "glyphosate",
+    "jurisdiction_profiles": [
+      {
+        "jurisdiction": "us",
+        "mrl_violations": [],
+        "applicable_reference_values": [],
+        "trade_status": "inconclusive_no_limit",
+        "status_reason": "One or more requested residue commodities fall outside the curated jurisdiction-specific MRL scope.",
+        "mrl_coverage_status": "requested_pair_outside_curated_scope",
+        "mrl_curated_support_types": [
+          "enforcement_records",
+          "legal_anchors"
+        ],
+        "mrl_curated_scope_commodity_codes": [
+          "rice"
+        ],
+        "reference_value_jurisdiction_status": "family_curated_without_reference_value",
+        "reference_value_curated_support_types": [
+          "enforcement_records",
+          "legal_anchors"
+        ],
+        "coverage_summaries": [
+          {
+            "coverage_id": "us.pesticide_residue.glyphosate.wave1",
+            "jurisdiction": "us",
+            "contaminant_family": "pesticide_residue",
+            "substance_key": "glyphosate",
+            "coverage_level": "deep_curated",
+            "official_source_ids": [
+              "us.govinfo.cfr.40_180.part.2024",
+              "us.govinfo.cfr.40_180.364.2024"
+            ],
+            "legal_authority_ids": [
+              "us.epa.pesticides.40cfr_part_180.govinfo_2024"
+            ],
+            "reference_value_record_ids": [],
+            "enforcement_record_ids": [
+              "us.epa.glyphosate.rice.mrl"
+            ],
+            "legal_limit_record_ids": [],
+            "currency_metadata_complete": true,
+            "gap_reason": null,
+            "notes": [
+              "Wave-1 U.S. glyphosate coverage is deep-curated through official legal anchors plus exact curated tolerance coverage for current-taxonomy rice."
+            ]
+          }
+        ],
+        "quality_flags": [
+          {
+            "code": "no_jurisdiction_specific_reference_value",
+            "severity": "warning",
+            "message": "No jurisdiction-specific reference value matched `glyphosate` for `us`."
+          },
+          {
+            "code": "family_curated_without_reference_value",
+            "severity": "warning",
+            "message": "Jurisdiction `us` has governed curated support for `glyphosate`, but the repo does not ship a jurisdiction-specific reference value for this family."
+          },
+          {
+            "code": "missing_trade_limit",
+            "severity": "warning",
+            "message": "No applicable governed MRL was found for ['grapes'] in US."
+          },
+          {
+            "code": "no_curated_mrl_for_requested_pair",
+            "severity": "warning",
+            "message": "No curated jurisdiction-specific MRL was available for one or more requested substance/commodity pairs in US."
+          },
+          {
+            "code": "requested_trade_pair_outside_curated_scope",
+            "severity": "warning",
+            "message": "US ships curated MRLs for `glyphosate`, but one or more requested commodities fall outside the shipped scope. Curated scope includes: rice."
+          }
+        ],
+        "notes": [
+          "US ships curated MRLs for this substance, but the requested commodity set extends beyond the current shipped scope (rice).",
+          "US MRL support types attached to this lane: enforcement_records, legal_anchors.",
+          "US has governed curated support for this substance/family, but no jurisdiction-specific reference value is shipped.",
+          "US reference-value support types attached to this lane: enforcement_records, legal_anchors."
+        ]
+      },
+      {
+        "jurisdiction": "codex_global",
+        "mrl_violations": [],
+        "applicable_reference_values": [
+          {
+            "record_id": "jmpr.glyphosate.adi",
+            "substance_key": "glyphosate",
+            "substance_name": "Glyphosate",
+            "reference_type": "adi",
+            "authority": "JMPR",
+            "jurisdiction": "codex_global",
+            "contaminant_family": "pesticide_residue",
+            "value": 1.0,
+            "unit": "mg/kg bw/day",
+            "qualifier": null,
+            "assessment_label": null,
+            "assessment_year": null,
+            "population": null,
+            "source_output_id": null,
+            "source_ids": [
+              "fao.jmpr.dietary_risks.toolkit"
+            ],
+            "primary_source_id": "fao.jmpr.dietary_risks.toolkit",
+            "database_source_id": null,
+            "conflict_group_id": "glyphosate.adi.authority_conflict",
+            "document_status": "final_current",
+            "submission_use": "review_required",
+            "effective_date": null,
+            "notes": [
+              "Curated authority-specific record stub published to preserve conflicts rather than flatten them.",
+              "Consult the original JMPR monograph and Codex context before regulator-facing use."
+            ]
+          }
+        ],
+        "trade_status": "inconclusive_no_limit",
+        "status_reason": "The jurisdiction is curated for this substance/family, but no jurisdiction-specific MRL layer is shipped for the requested pair set.",
+        "mrl_coverage_status": "family_curated_without_mrl",
+        "mrl_curated_support_types": [
+          "legal_anchors"
+        ],
+        "mrl_curated_scope_commodity_codes": [],
+        "reference_value_jurisdiction_status": "exact_jurisdiction_value_present",
+        "reference_value_curated_support_types": [
+          "legal_anchors",
+          "reference_values"
+        ],
+        "coverage_summaries": [
+          {
+            "coverage_id": "codex_global.pesticide_residue.glyphosate.wave1",
+            "jurisdiction": "codex_global",
+            "contaminant_family": "pesticide_residue",
+            "substance_key": "glyphosate",
+            "coverage_level": "deep_curated",
+            "official_source_ids": [
+              "jmpr.glyphosate.report.2016",
+              "codex.pesticide_database.2024"
+            ],
+            "legal_authority_ids": [
+              "codex.ccpr.pesticide_database.2024"
+            ],
+            "reference_value_record_ids": [
+              "jmpr.glyphosate.adi"
+            ],
+            "enforcement_record_ids": [],
+            "legal_limit_record_ids": [],
+            "currency_metadata_complete": true,
+            "gap_reason": null,
+            "notes": [
+              "The official Codex/JMPR glyphosate ADI is curated, but no exact current-taxonomy CXL is shipped in wave 1."
+            ]
+          }
+        ],
+        "quality_flags": [
+          {
+            "code": "missing_trade_limit",
+            "severity": "warning",
+            "message": "No applicable governed MRL was found for ['grapes'] in CODEX_GLOBAL."
+          },
+          {
+            "code": "no_curated_mrl_for_requested_pair",
+            "severity": "warning",
+            "message": "No curated jurisdiction-specific MRL was available for one or more requested substance/commodity pairs in CODEX_GLOBAL."
+          },
+          {
+            "code": "family_curated_without_trade_mrl",
+            "severity": "warning",
+            "message": "CODEX_GLOBAL has governed curated support for `glyphosate`, but the repo does not yet ship a jurisdiction-specific MRL layer for this pair set."
+          }
+        ],
+        "notes": [
+          "CODEX_GLOBAL is curated for this substance/family, but the repo does not currently ship a jurisdiction-specific MRL layer for the requested pair set.",
+          "CODEX_GLOBAL MRL support types attached to this lane: legal_anchors.",
+          "CODEX_GLOBAL ships a jurisdiction-specific reference-value record for this lane.",
+          "CODEX_GLOBAL reference-value support types attached to this lane: legal_anchors, reference_values."
+        ]
+      },
+      {
+        "jurisdiction": "cn",
+        "mrl_violations": [],
+        "applicable_reference_values": [
+          {
+            "record_id": "cn.nhc.glyphosate.adi",
+            "substance_key": "glyphosate",
+            "substance_name": "Glyphosate",
+            "reference_type": "adi",
+            "authority": "NHC China",
+            "jurisdiction": "cn",
+            "contaminant_family": "pesticide_residue",
+            "value": 1.0,
+            "unit": "mg/kg bw/day",
+            "qualifier": null,
+            "assessment_label": null,
+            "assessment_year": null,
+            "population": null,
+            "source_output_id": null,
+            "source_ids": [
+              "cn.nhc.gb2763.2026.announcement",
+              "cn.aqsc.gb2763.2026"
+            ],
+            "primary_source_id": "cn.aqsc.gb2763.2026",
+            "database_source_id": null,
+            "conflict_group_id": "glyphosate.adi.authority_conflict",
+            "document_status": "final_current",
+            "submission_use": "review_required",
+            "effective_date": "2026-03-01",
+            "notes": [
+              "Governed Chinese ADI for glyphosate based on GB 2763-2026.",
+              "Published from the official 2026 standard text and retained separately so jurisdiction-specific values are not borrowed from EFSA or JMPR."
+            ]
+          }
+        ],
+        "trade_status": "inconclusive_no_limit",
+        "status_reason": "One or more requested residue commodities fall outside the curated jurisdiction-specific MRL scope.",
+        "mrl_coverage_status": "requested_pair_outside_curated_scope",
+        "mrl_curated_support_types": [
+          "enforcement_records",
+          "legal_anchors"
+        ],
+        "mrl_curated_scope_commodity_codes": [
+          "apples",
+          "rice"
+        ],
+        "reference_value_jurisdiction_status": "exact_jurisdiction_value_present",
+        "reference_value_curated_support_types": [
+          "enforcement_records",
+          "legal_anchors",
+          "reference_values"
+        ],
+        "coverage_summaries": [
+          {
+            "coverage_id": "cn.pesticide_residue.glyphosate.wave1",
+            "jurisdiction": "cn",
+            "contaminant_family": "pesticide_residue",
+            "substance_key": "glyphosate",
+            "coverage_level": "deep_curated",
+            "official_source_ids": [
+              "cn.nhc.gb2763.2026.announcement",
+              "cn.aqsc.gb2763.2026"
+            ],
+            "legal_authority_ids": [
+              "cn.nhc.pesticides.gb_2763_2026"
+            ],
+            "reference_value_record_ids": [
+              "cn.nhc.glyphosate.adi"
+            ],
+            "enforcement_record_ids": [
+              "cn.gb.glyphosate.apples.mrl",
+              "cn.gb.glyphosate.rice.mrl"
+            ],
+            "legal_limit_record_ids": [],
+            "currency_metadata_complete": true,
+            "gap_reason": null,
+            "notes": []
+          }
+        ],
+        "quality_flags": [
+          {
+            "code": "missing_trade_limit",
+            "severity": "warning",
+            "message": "No applicable governed MRL was found for ['grapes'] in CN."
+          },
+          {
+            "code": "no_curated_mrl_for_requested_pair",
+            "severity": "warning",
+            "message": "No curated jurisdiction-specific MRL was available for one or more requested substance/commodity pairs in CN."
+          },
+          {
+            "code": "requested_trade_pair_outside_curated_scope",
+            "severity": "warning",
+            "message": "CN ships curated MRLs for `glyphosate`, but one or more requested commodities fall outside the shipped scope. Curated scope includes: apples, rice."
+          }
+        ],
+        "notes": [
+          "CN ships curated MRLs for this substance, but the requested commodity set extends beyond the current shipped scope (apples, rice).",
+          "CN MRL support types attached to this lane: enforcement_records, legal_anchors.",
+          "CN ships a jurisdiction-specific reference-value record for this lane.",
+          "CN reference-value support types attached to this lane: enforcement_records, legal_anchors, reference_values."
+        ]
+      }
+    ],
+    "quality_flags": [
+      {
+        "code": "no_jurisdiction_specific_reference_value",
+        "severity": "warning",
+        "message": "No jurisdiction-specific reference value matched `glyphosate` for `us`."
+      },
+      {
+        "code": "family_curated_without_reference_value",
+        "severity": "warning",
+        "message": "Jurisdiction `us` has governed curated support for `glyphosate`, but the repo does not ship a jurisdiction-specific reference value for this family."
+      },
+      {
+        "code": "missing_trade_limit",
+        "severity": "warning",
+        "message": "No applicable governed MRL was found for ['grapes'] in US."
+      },
+      {
+        "code": "no_curated_mrl_for_requested_pair",
+        "severity": "warning",
+        "message": "No curated jurisdiction-specific MRL was available for one or more requested substance/commodity pairs in US."
+      },
+      {
+        "code": "requested_trade_pair_outside_curated_scope",
+        "severity": "warning",
+        "message": "US ships curated MRLs for `glyphosate`, but one or more requested commodities fall outside the shipped scope. Curated scope includes: rice."
+      },
+      {
+        "code": "missing_trade_limit",
+        "severity": "warning",
+        "message": "No applicable governed MRL was found for ['grapes'] in CODEX_GLOBAL."
+      },
+      {
+        "code": "no_curated_mrl_for_requested_pair",
+        "severity": "warning",
+        "message": "No curated jurisdiction-specific MRL was available for one or more requested substance/commodity pairs in CODEX_GLOBAL."
+      },
+      {
+        "code": "family_curated_without_trade_mrl",
+        "severity": "warning",
+        "message": "CODEX_GLOBAL has governed curated support for `glyphosate`, but the repo does not yet ship a jurisdiction-specific MRL layer for this pair set."
+      },
+      {
+        "code": "missing_trade_limit",
+        "severity": "warning",
+        "message": "No applicable governed MRL was found for ['grapes'] in CN."
+      },
+      {
+        "code": "no_curated_mrl_for_requested_pair",
+        "severity": "warning",
+        "message": "No curated jurisdiction-specific MRL was available for one or more requested substance/commodity pairs in CN."
+      },
+      {
+        "code": "requested_trade_pair_outside_curated_scope",
+        "severity": "warning",
+        "message": "CN ships curated MRLs for `glyphosate`, but one or more requested commodities fall outside the shipped scope. Curated scope includes: apples, rice."
+      }
+    ],
+    "notes": [
+      "Trade-risk screening preserves jurisdiction separation and does not borrow MRLs or reference values across authorities.",
+      "A pass status only means all applicable governed limits that were actually found were met for that jurisdiction; inspect MRL and reference-value coverage statuses before treating the lane as complete.",
+      "Inconclusive jurisdictions remain active review signals, not implicit passes: CN, CODEX_GLOBAL, US."
+    ]
+  },
+  "bundle_note": "Illustrative governed trade-risk review bundle for cross-jurisdiction residue screening."
+}

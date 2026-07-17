@@ -1,0 +1,241 @@
+{
+  "$defs": {
+    "ContaminantFamily": {
+      "enum": [
+        "pesticide_residue",
+        "microplastics_emerging",
+        "pfas_food_contaminants",
+        "acrylamide_process_contaminants",
+        "bisphenol_food_contact_migration",
+        "cadmium_food_contaminants",
+        "lead_food_contaminants",
+        "inorganic_arsenic_food_contaminants",
+        "mercury_food_contaminants",
+        "food_contaminant"
+      ],
+      "title": "ContaminantFamily",
+      "type": "string"
+    },
+    "DietaryCommodityResidueInput": {
+      "additionalProperties": false,
+      "properties": {
+        "commodity_code": {
+          "minLength": 1,
+          "title": "Commodity Code",
+          "type": "string"
+        },
+        "residue_concentration_mg_per_kg": {
+          "exclusiveMinimum": 0.0,
+          "title": "Residue Concentration Mg Per Kg",
+          "type": "number"
+        },
+        "lower_bound_mg_per_kg": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lower Bound Mg Per Kg"
+        },
+        "upper_bound_mg_per_kg": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Upper Bound Mg Per Kg"
+        },
+        "residue_unit": {
+          "default": "mg/kg",
+          "title": "Residue Unit",
+          "type": "string"
+        },
+        "source_type": {
+          "$ref": "#/$defs/ResidueSourceType"
+        },
+        "processing_factor": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Processing Factor"
+        },
+        "region_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Region Id"
+        },
+        "time_context": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Time Context"
+        },
+        "review_status": {
+          "default": "reviewed",
+          "title": "Review Status",
+          "type": "string"
+        },
+        "source_reference": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceReference"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "commodity_code",
+        "residue_concentration_mg_per_kg",
+        "source_type"
+      ],
+      "title": "DietaryCommodityResidueInput",
+      "type": "object"
+    },
+    "ResidueSourceType": {
+      "enum": [
+        "monitoring",
+        "modeled",
+        "curated_default",
+        "user_supplied",
+        "reconciled"
+      ],
+      "title": "ResidueSourceType",
+      "type": "string"
+    },
+    "SourceOriginTag": {
+      "enum": [
+        "official_regulatory",
+        "curated_derived",
+        "illustrative_placeholder",
+        "internal_operational"
+      ],
+      "title": "SourceOriginTag",
+      "type": "string"
+    },
+    "SourceReference": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "effective_date": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Effective Date"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        },
+        "originTag": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceOriginTag"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "source_id",
+        "title"
+      ],
+      "title": "SourceReference",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "chemical_identity": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Chemical Identity",
+      "type": "object"
+    },
+    "contaminant_family": {
+      "$ref": "#/$defs/ContaminantFamily",
+      "default": "pesticide_residue"
+    },
+    "residue_records": {
+      "items": {
+        "$ref": "#/$defs/DietaryCommodityResidueInput"
+      },
+      "maxItems": 2000,
+      "title": "Residue Records",
+      "type": "array"
+    },
+    "target_jurisdictions": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 100,
+      "title": "Target Jurisdictions",
+      "type": "array"
+    }
+  },
+  "required": [
+    "chemical_identity",
+    "residue_records"
+  ],
+  "title": "EvaluateGlobalTradeRiskRequest",
+  "type": "object"
+}

@@ -1,0 +1,21 @@
+{
+  "version": "v1",
+  "templates": [
+    {
+      "name": "efsa_primo_tabular_template",
+      "modelFamily": "efsa_primo_adapter",
+      "walkthroughName": "efsa_primo_tabular_alias_case",
+      "format": "csv",
+      "path": "templates/adapter_inputs/efsa_primo_tabular_template.csv",
+      "description": "Illustrative PRIMo-style acute tabular import with alias headers accepted by the adapter harness."
+    },
+    {
+      "name": "epa_deem_csv_template",
+      "modelFamily": "epa_deem_adapter",
+      "walkthroughName": "epa_deem_csv_alias_case",
+      "format": "csv",
+      "path": "templates/adapter_inputs/epa_deem_csv_template.csv",
+      "description": "Illustrative DEEM-style chronic CSV import with alias headers accepted by the adapter harness."
+    }
+  ]
+}

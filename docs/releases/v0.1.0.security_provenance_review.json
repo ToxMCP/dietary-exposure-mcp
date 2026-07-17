@@ -1,0 +1,15 @@
+{
+  "version": "0.1.0",
+  "status": "review_required",
+  "notes": [
+    "Dietary MCP does not handle secrets in v0.1.",
+    "Residue, consumption-profile, and processing-factor provenance are explicit and machine-readable.",
+    "Limitation notes are carried into comparison and downstream export payloads."
+  ],
+  "machineReadableInputs": [
+    "defaults/manifest.json",
+    "validation/v1/manifest.json",
+    "docs/contracts/schemas/manifest.json",
+    "schemas/examples/manifest.json"
+  ]
+}

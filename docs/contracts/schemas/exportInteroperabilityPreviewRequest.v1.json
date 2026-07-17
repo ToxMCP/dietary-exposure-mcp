@@ -1,0 +1,1389 @@
+{
+  "$defs": {
+    "AdapterImportCheckProfileSelection": {
+      "additionalProperties": false,
+      "properties": {
+        "region_id": {
+          "title": "Region Id",
+          "type": "string"
+        },
+        "population_group": {
+          "title": "Population Group",
+          "type": "string"
+        },
+        "intake_window": {
+          "$ref": "#/$defs/IntakeWindowSemantic"
+        },
+        "scenario_class": {
+          "$ref": "#/$defs/ScenarioClass"
+        }
+      },
+      "required": [
+        "region_id",
+        "population_group",
+        "intake_window",
+        "scenario_class"
+      ],
+      "title": "AdapterImportCheckProfileSelection",
+      "type": "object"
+    },
+    "AdapterImportCheckResult": {
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "default": "ok",
+          "title": "Status",
+          "type": "string"
+        },
+        "model_family": {
+          "$ref": "#/$defs/ModelFamily"
+        },
+        "input_mode": {
+          "default": "csv_v1",
+          "title": "Input Mode",
+          "type": "string"
+        },
+        "template_name": {
+          "title": "Template Name",
+          "type": "string"
+        },
+        "walkthrough_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Walkthrough Name"
+        },
+        "template_resource_uri": {
+          "title": "Template Resource Uri",
+          "type": "string"
+        },
+        "documentation_resource_uri": {
+          "default": "docs://adapter-import-walkthroughs",
+          "title": "Documentation Resource Uri",
+          "type": "string"
+        },
+        "profile_selection": {
+          "$ref": "#/$defs/AdapterImportCheckProfileSelection"
+        },
+        "chemical_identity": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Chemical Identity",
+          "type": "object"
+        },
+        "declared_totals": {
+          "$ref": "#/$defs/AdapterImportDeclaredTotals"
+        },
+        "input_headers": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Input Headers",
+          "type": "array"
+        },
+        "header_resolution": {
+          "items": {
+            "$ref": "#/$defs/AdapterImportHeaderResolution"
+          },
+          "title": "Header Resolution",
+          "type": "array"
+        },
+        "unmapped_headers": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Unmapped Headers",
+          "type": "array"
+        },
+        "normalized_projection": {
+          "$ref": "#/$defs/AdapterNormalizedProjection"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "model_family",
+        "template_name",
+        "template_resource_uri",
+        "profile_selection",
+        "chemical_identity",
+        "declared_totals",
+        "input_headers",
+        "header_resolution",
+        "normalized_projection"
+      ],
+      "title": "AdapterImportCheckResult",
+      "type": "object"
+    },
+    "AdapterImportDeclaredTotals": {
+      "additionalProperties": false,
+      "properties": {
+        "total_intake_mg_per_kg_bw_per_day": {
+          "minimum": 0.0,
+          "title": "Total Intake Mg Per Kg Bw Per Day",
+          "type": "number"
+        },
+        "lower_bound_mg_per_kg_bw_per_day": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lower Bound Mg Per Kg Bw Per Day"
+        },
+        "upper_bound_mg_per_kg_bw_per_day": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Upper Bound Mg Per Kg Bw Per Day"
+        }
+      },
+      "required": [
+        "total_intake_mg_per_kg_bw_per_day"
+      ],
+      "title": "AdapterImportDeclaredTotals",
+      "type": "object"
+    },
+    "AdapterImportHeaderResolution": {
+      "additionalProperties": false,
+      "properties": {
+        "header": {
+          "title": "Header",
+          "type": "string"
+        },
+        "canonical_field": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Canonical Field"
+        },
+        "recognized": {
+          "title": "Recognized",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "header",
+        "recognized"
+      ],
+      "title": "AdapterImportHeaderResolution",
+      "type": "object"
+    },
+    "AdapterImportWalkthroughComparisonField": {
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "title": "Field",
+          "type": "string"
+        },
+        "matches": {
+          "title": "Matches",
+          "type": "boolean"
+        },
+        "observed": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Observed"
+        },
+        "expected": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Expected"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Note"
+        }
+      },
+      "required": [
+        "field",
+        "matches"
+      ],
+      "title": "AdapterImportWalkthroughComparisonField",
+      "type": "object"
+    },
+    "AdapterNormalizedProjection": {
+      "additionalProperties": false,
+      "properties": {
+        "scenario_class": {
+          "$ref": "#/$defs/ScenarioClass"
+        },
+        "intake_window": {
+          "$ref": "#/$defs/IntakeWindowSemantic"
+        },
+        "population_group": {
+          "title": "Population Group",
+          "type": "string"
+        },
+        "region_id": {
+          "title": "Region Id",
+          "type": "string"
+        },
+        "body_weight_kg": {
+          "exclusiveMinimum": 0.0,
+          "title": "Body Weight Kg",
+          "type": "number"
+        },
+        "total_intake_mg_per_kg_bw_per_day": {
+          "minimum": 0.0,
+          "title": "Total Intake Mg Per Kg Bw Per Day",
+          "type": "number"
+        },
+        "lower_bound_mg_per_kg_bw_per_day": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lower Bound Mg Per Kg Bw Per Day"
+        },
+        "upper_bound_mg_per_kg_bw_per_day": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Upper Bound Mg Per Kg Bw Per Day"
+        },
+        "commodity_codes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Commodity Codes",
+          "type": "array"
+        },
+        "commodity_contributions": {
+          "items": {
+            "$ref": "#/$defs/AdapterNormalizedProjectionContribution"
+          },
+          "title": "Commodity Contributions",
+          "type": "array"
+        },
+        "dominant_commodity_codes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Dominant Commodity Codes",
+          "type": "array"
+        },
+        "source_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Ids",
+          "type": "array"
+        },
+        "quality_flag_codes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Quality Flag Codes",
+          "type": "array"
+        },
+        "limitation_codes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Limitation Codes",
+          "type": "array"
+        },
+        "assumption_parameters": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Assumption Parameters",
+          "type": "array"
+        }
+      },
+      "required": [
+        "scenario_class",
+        "intake_window",
+        "population_group",
+        "region_id",
+        "body_weight_kg",
+        "total_intake_mg_per_kg_bw_per_day",
+        "commodity_codes",
+        "commodity_contributions",
+        "dominant_commodity_codes",
+        "source_ids",
+        "quality_flag_codes",
+        "limitation_codes",
+        "assumption_parameters"
+      ],
+      "title": "AdapterNormalizedProjection",
+      "type": "object"
+    },
+    "AdapterNormalizedProjectionContribution": {
+      "additionalProperties": false,
+      "properties": {
+        "commodity_code": {
+          "title": "Commodity Code",
+          "type": "string"
+        },
+        "canonical_name": {
+          "title": "Canonical Name",
+          "type": "string"
+        },
+        "foodex2_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Foodex2 Code"
+        },
+        "rpc_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rpc Code"
+        },
+        "rpcd_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rpcd Code"
+        },
+        "processed_status": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProcessedStatus"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "mapping_confidence": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/MappingConfidence"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "contribution_mg_per_kg_bw_per_day": {
+          "minimum": 0.0,
+          "title": "Contribution Mg Per Kg Bw Per Day",
+          "type": "number"
+        },
+        "fraction_of_total": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Fraction Of Total",
+          "type": "number"
+        },
+        "residue_concentration_mg_per_kg": {
+          "minimum": 0.0,
+          "title": "Residue Concentration Mg Per Kg",
+          "type": "number"
+        },
+        "consumption_kg_per_day": {
+          "minimum": 0.0,
+          "title": "Consumption Kg Per Day",
+          "type": "number"
+        },
+        "applied_processing_factor": {
+          "exclusiveMinimum": 0.0,
+          "title": "Applied Processing Factor",
+          "type": "number"
+        },
+        "lower_bound_mg_per_kg_bw_per_day": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lower Bound Mg Per Kg Bw Per Day"
+        },
+        "upper_bound_mg_per_kg_bw_per_day": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Upper Bound Mg Per Kg Bw Per Day"
+        }
+      },
+      "required": [
+        "commodity_code",
+        "canonical_name",
+        "contribution_mg_per_kg_bw_per_day",
+        "fraction_of_total",
+        "residue_concentration_mg_per_kg",
+        "consumption_kg_per_day",
+        "applied_processing_factor"
+      ],
+      "title": "AdapterNormalizedProjectionContribution",
+      "type": "object"
+    },
+    "AdapterReviewBundle": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "bundle_id": {
+          "title": "Bundle Id",
+          "type": "string"
+        },
+        "bundleProfile": {
+          "$ref": "#/$defs/BundleProfile",
+          "default": "internal_review"
+        },
+        "review_status": {
+          "title": "Review Status",
+          "type": "string"
+        },
+        "model_family": {
+          "$ref": "#/$defs/ModelFamily"
+        },
+        "template_name": {
+          "title": "Template Name",
+          "type": "string"
+        },
+        "walkthrough_name": {
+          "title": "Walkthrough Name",
+          "type": "string"
+        },
+        "check_result": {
+          "$ref": "#/$defs/AdapterImportCheckResult"
+        },
+        "comparison_result": {
+          "$ref": "#/$defs/CompareAdapterImportToWalkthroughResult"
+        },
+        "referenced_resources": {
+          "items": {
+            "$ref": "#/$defs/ReviewResourceReference"
+          },
+          "title": "Referenced Resources",
+          "type": "array"
+        },
+        "dependencies": {
+          "items": {
+            "$ref": "#/$defs/DependencyDescriptor"
+          },
+          "title": "Dependencies",
+          "type": "array"
+        },
+        "matched_field_count": {
+          "minimum": 0,
+          "title": "Matched Field Count",
+          "type": "integer"
+        },
+        "mismatch_field_count": {
+          "minimum": 0,
+          "title": "Mismatch Field Count",
+          "type": "integer"
+        },
+        "confidentialityAnnotations": {
+          "items": {
+            "$ref": "#/$defs/ConfidentialityAnnotation"
+          },
+          "title": "Confidentialityannotations",
+          "type": "array"
+        },
+        "limitations": {
+          "items": {
+            "$ref": "#/$defs/LimitationNote"
+          },
+          "title": "Limitations",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "review_status",
+        "model_family",
+        "template_name",
+        "walkthrough_name",
+        "check_result",
+        "comparison_result",
+        "referenced_resources",
+        "dependencies",
+        "matched_field_count",
+        "mismatch_field_count"
+      ],
+      "title": "AdapterReviewBundle",
+      "type": "object"
+    },
+    "BundleProfile": {
+      "enum": [
+        "internal_review",
+        "submission_candidate",
+        "sanitised_public"
+      ],
+      "title": "BundleProfile",
+      "type": "string"
+    },
+    "CompareAdapterImportToWalkthroughResult": {
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "title": "Status",
+          "type": "string"
+        },
+        "walkthrough_name": {
+          "title": "Walkthrough Name",
+          "type": "string"
+        },
+        "walkthrough_resource_uri": {
+          "title": "Walkthrough Resource Uri",
+          "type": "string"
+        },
+        "template_name": {
+          "title": "Template Name",
+          "type": "string"
+        },
+        "model_family": {
+          "$ref": "#/$defs/ModelFamily"
+        },
+        "compared_fields": {
+          "items": {
+            "$ref": "#/$defs/AdapterImportWalkthroughComparisonField"
+          },
+          "title": "Compared Fields",
+          "type": "array"
+        },
+        "matched_fields": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Matched Fields",
+          "type": "array"
+        },
+        "mismatch_fields": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Mismatch Fields",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "status",
+        "walkthrough_name",
+        "walkthrough_resource_uri",
+        "template_name",
+        "model_family",
+        "compared_fields",
+        "matched_fields",
+        "mismatch_fields"
+      ],
+      "title": "CompareAdapterImportToWalkthroughResult",
+      "type": "object"
+    },
+    "ConfidentialityAnnotation": {
+      "additionalProperties": false,
+      "properties": {
+        "targetPath": {
+          "title": "Targetpath",
+          "type": "string"
+        },
+        "targetKind": {
+          "title": "Targetkind",
+          "type": "string"
+        },
+        "confidentialityTag": {
+          "$ref": "#/$defs/ConfidentialityTag"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        }
+      },
+      "required": [
+        "targetPath",
+        "targetKind",
+        "confidentialityTag",
+        "rationale"
+      ],
+      "title": "ConfidentialityAnnotation",
+      "type": "object"
+    },
+    "ConfidentialityTag": {
+      "enum": [
+        "public",
+        "confidential"
+      ],
+      "title": "ConfidentialityTag",
+      "type": "string"
+    },
+    "DependencyDescriptor": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "version": {
+          "title": "Version",
+          "type": "string"
+        },
+        "role": {
+          "title": "Role",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "version",
+        "role"
+      ],
+      "title": "DependencyDescriptor",
+      "type": "object"
+    },
+    "DocumentStatus": {
+      "enum": [
+        "final_current",
+        "superseded",
+        "draft",
+        "consultation",
+        "tool_metadata",
+        "dataset_current"
+      ],
+      "title": "DocumentStatus",
+      "type": "string"
+    },
+    "GovernanceStatus": {
+      "enum": [
+        "internal_reference_only",
+        "compatibility_harness_only",
+        "official_submission_engine",
+        "deprecated"
+      ],
+      "title": "GovernanceStatus",
+      "type": "string"
+    },
+    "IntakeWindowSemantic": {
+      "enum": [
+        "acute",
+        "chronic"
+      ],
+      "title": "IntakeWindowSemantic",
+      "type": "string"
+    },
+    "LimitationNote": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "title": "LimitationNote",
+      "type": "object"
+    },
+    "MappingConfidence": {
+      "enum": [
+        "reviewed",
+        "provisional",
+        "heuristic"
+      ],
+      "title": "MappingConfidence",
+      "type": "string"
+    },
+    "ModelErratumRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "erratumId": {
+          "title": "Erratumid",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "active": {
+          "default": true,
+          "title": "Active",
+          "type": "boolean"
+        },
+        "blocking": {
+          "default": false,
+          "title": "Blocking",
+          "type": "boolean"
+        },
+        "sourceId": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sourceid"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        }
+      },
+      "required": [
+        "erratumId",
+        "title",
+        "description"
+      ],
+      "title": "ModelErratumRecord",
+      "type": "object"
+    },
+    "ModelFamily": {
+      "enum": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "title": "ModelFamily",
+      "type": "string"
+    },
+    "ModelGovernanceRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "modelFamily": {
+          "$ref": "#/$defs/ModelFamily"
+        },
+        "jurisdictions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Jurisdictions",
+          "type": "array"
+        },
+        "governanceStatus": {
+          "$ref": "#/$defs/GovernanceStatus"
+        },
+        "submissionAllowed": {
+          "title": "Submissionallowed",
+          "type": "boolean"
+        },
+        "currentVersionLabel": {
+          "title": "Currentversionlabel",
+          "type": "string"
+        },
+        "datasetBasis": {
+          "title": "Datasetbasis",
+          "type": "string"
+        },
+        "sourceIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sourceids",
+          "type": "array"
+        },
+        "requiredDisclaimers": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Requireddisclaimers",
+          "type": "array"
+        },
+        "errata": {
+          "items": {
+            "$ref": "#/$defs/ModelErratumRecord"
+          },
+          "title": "Errata",
+          "type": "array"
+        }
+      },
+      "required": [
+        "modelFamily",
+        "jurisdictions",
+        "governanceStatus",
+        "submissionAllowed",
+        "currentVersionLabel",
+        "datasetBasis",
+        "sourceIds"
+      ],
+      "title": "ModelGovernanceRecord",
+      "type": "object"
+    },
+    "PinnedResourceFingerprint": {
+      "additionalProperties": false,
+      "properties": {
+        "role": {
+          "title": "Role",
+          "type": "string"
+        },
+        "uri": {
+          "title": "Uri",
+          "type": "string"
+        },
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "confidentialityTag": {
+          "$ref": "#/$defs/ConfidentialityTag",
+          "default": "public"
+        },
+        "sanitisationState": {
+          "$ref": "#/$defs/SanitisationState",
+          "default": "retained"
+        }
+      },
+      "required": [
+        "role",
+        "uri",
+        "sha256",
+        "description"
+      ],
+      "title": "PinnedResourceFingerprint",
+      "type": "object"
+    },
+    "ProcessedStatus": {
+      "enum": [
+        "raw_primary_commodity",
+        "processed_derivative"
+      ],
+      "title": "ProcessedStatus",
+      "type": "string"
+    },
+    "RegulatoryRole": {
+      "enum": [
+        "binding",
+        "guidance",
+        "technical_report",
+        "dataset",
+        "software_metadata"
+      ],
+      "title": "RegulatoryRole",
+      "type": "string"
+    },
+    "RegulatorySourceRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "sourceId": {
+          "title": "Sourceid",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "organization": {
+          "title": "Organization",
+          "type": "string"
+        },
+        "kind": {
+          "title": "Kind",
+          "type": "string"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "documentStatus": {
+          "$ref": "#/$defs/DocumentStatus"
+        },
+        "regulatoryRole": {
+          "$ref": "#/$defs/RegulatoryRole"
+        },
+        "effectiveDate": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Effectivedate"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "originTag": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceOriginTag"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "submissionUse": {
+          "$ref": "#/$defs/SubmissionUse"
+        },
+        "normativeFor": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Normativefor",
+          "type": "array"
+        },
+        "supersedes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Supersedes",
+          "type": "array"
+        },
+        "supersededBy": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Supersededby",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "sourceId",
+        "title",
+        "organization",
+        "kind",
+        "jurisdiction",
+        "documentStatus",
+        "regulatoryRole",
+        "url",
+        "submissionUse"
+      ],
+      "title": "RegulatorySourceRecord",
+      "type": "object"
+    },
+    "ReleaseMetadataSnapshot": {
+      "additionalProperties": false,
+      "properties": {
+        "resource_uri": {
+          "title": "Resource Uri",
+          "type": "string"
+        },
+        "release_version": {
+          "title": "Release Version",
+          "type": "string"
+        },
+        "defaults_version": {
+          "title": "Defaults Version",
+          "type": "string"
+        },
+        "metadata_report_sha256": {
+          "title": "Metadata Report Sha256",
+          "type": "string"
+        },
+        "artifact_hashes": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Artifact Hashes",
+          "type": "object"
+        }
+      },
+      "required": [
+        "resource_uri",
+        "release_version",
+        "defaults_version",
+        "metadata_report_sha256",
+        "artifact_hashes"
+      ],
+      "title": "ReleaseMetadataSnapshot",
+      "type": "object"
+    },
+    "ReviewResourceReference": {
+      "additionalProperties": false,
+      "properties": {
+        "role": {
+          "title": "Role",
+          "type": "string"
+        },
+        "uri": {
+          "title": "Uri",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "confidentialityTag": {
+          "$ref": "#/$defs/ConfidentialityTag",
+          "default": "public"
+        },
+        "sanitisationState": {
+          "$ref": "#/$defs/SanitisationState",
+          "default": "retained"
+        }
+      },
+      "required": [
+        "role",
+        "uri",
+        "description"
+      ],
+      "title": "ReviewResourceReference",
+      "type": "object"
+    },
+    "SanitisationRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "targetPath": {
+          "title": "Targetpath",
+          "type": "string"
+        },
+        "targetKind": {
+          "title": "Targetkind",
+          "type": "string"
+        },
+        "confidentialityTag": {
+          "$ref": "#/$defs/ConfidentialityTag"
+        },
+        "sanitisationState": {
+          "$ref": "#/$defs/SanitisationState"
+        },
+        "replacementMarker": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "type": "string"
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Replacementmarker"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Note"
+        }
+      },
+      "required": [
+        "targetPath",
+        "targetKind",
+        "confidentialityTag",
+        "sanitisationState"
+      ],
+      "title": "SanitisationRecord",
+      "type": "object"
+    },
+    "SanitisationState": {
+      "enum": [
+        "retained",
+        "redacted",
+        "removed"
+      ],
+      "title": "SanitisationState",
+      "type": "string"
+    },
+    "ScenarioClass": {
+      "enum": [
+        "point_estimate",
+        "bounded_acute",
+        "bounded_chronic"
+      ],
+      "title": "ScenarioClass",
+      "type": "string"
+    },
+    "SourceOriginTag": {
+      "enum": [
+        "official_regulatory",
+        "curated_derived",
+        "illustrative_placeholder",
+        "internal_operational"
+      ],
+      "title": "SourceOriginTag",
+      "type": "string"
+    },
+    "SubmissionUse": {
+      "enum": [
+        "allowed",
+        "review_required",
+        "not_allowed"
+      ],
+      "title": "SubmissionUse",
+      "type": "string"
+    },
+    "VersionPinnedAdapterReviewDossier": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "dossier_id": {
+          "title": "Dossier Id",
+          "type": "string"
+        },
+        "bundleProfile": {
+          "$ref": "#/$defs/BundleProfile",
+          "default": "internal_review"
+        },
+        "dossier_status": {
+          "title": "Dossier Status",
+          "type": "string"
+        },
+        "review_bundle": {
+          "$ref": "#/$defs/AdapterReviewBundle"
+        },
+        "release_metadata": {
+          "$ref": "#/$defs/ReleaseMetadataSnapshot"
+        },
+        "source_governance_snapshot": {
+          "items": {
+            "$ref": "#/$defs/RegulatorySourceRecord"
+          },
+          "title": "Source Governance Snapshot",
+          "type": "array"
+        },
+        "model_governance_snapshot": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ModelGovernanceRecord"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "pinned_resources": {
+          "items": {
+            "$ref": "#/$defs/PinnedResourceFingerprint"
+          },
+          "title": "Pinned Resources",
+          "type": "array"
+        },
+        "confidentialityAnnotations": {
+          "items": {
+            "$ref": "#/$defs/ConfidentialityAnnotation"
+          },
+          "title": "Confidentialityannotations",
+          "type": "array"
+        },
+        "sanitisationRecords": {
+          "items": {
+            "$ref": "#/$defs/SanitisationRecord"
+          },
+          "title": "Sanitisationrecords",
+          "type": "array"
+        },
+        "limitations": {
+          "items": {
+            "$ref": "#/$defs/LimitationNote"
+          },
+          "title": "Limitations",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "dossier_status",
+        "review_bundle",
+        "release_metadata",
+        "pinned_resources"
+      ],
+      "title": "VersionPinnedAdapterReviewDossier",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "dossier": {
+      "$ref": "#/$defs/VersionPinnedAdapterReviewDossier"
+    },
+    "targetProfile": {
+      "minLength": 1,
+      "title": "Targetprofile",
+      "type": "string"
+    }
+  },
+  "required": [
+    "dossier",
+    "targetProfile"
+  ],
+  "title": "ExportInteroperabilityPreviewRequest",
+  "type": "object"
+}

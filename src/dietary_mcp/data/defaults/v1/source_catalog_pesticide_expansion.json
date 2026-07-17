@@ -1,0 +1,210 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "source_catalog",
+  "sources": [
+    {
+      "sourceId": "efsa.difenoconazole.peer_review.2011",
+      "title": "Conclusion on the peer review of the pesticide risk assessment of the active substance difenoconazole",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2011-01-07",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/1967",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA peer review used as governed public toxicological-reference-value context for difenoconazole.",
+        "Dietary MCP uses this as review-oriented evidence and method provenance, not as a native enforcement database."
+      ]
+    },
+    {
+      "sourceId": "efsa.difenoconazole.mrl_review.2024",
+      "title": "Modification of the existing maximum residue levels for difenoconazole in wheat and rye",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2024-01-03",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/8207",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA reasoned opinion used as governed residue-review context for difenoconazole in cereal matrices.",
+        "Included for review-oriented monitoring and analytical-context linkage, not as a native MRL engine."
+      ]
+    },
+    {
+      "sourceId": "efsa.difenoconazole.import_tolerance.2025",
+      "title": "Setting of import tolerances for difenoconazole in various crops",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2025-06-13",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9472",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA import-tolerance opinion used as governed public analytical-enforcement and matrix-scope context for difenoconazole in citrus fruits, tree nuts, dry peas, and soya beans.",
+        "Retained for monitoring-oriented provenance and method linkage, not as a native import-tolerance engine."
+      ]
+    },
+    {
+      "sourceId": "jmpr.difenoconazole.report.2013",
+      "title": "Difenoconazole (JMPR 2013 evaluation)",
+      "organization": "FAO/WHO JMPR",
+      "kind": "official_scientific_report",
+      "jurisdiction": "codex_global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2013-01-01",
+      "url": "https://www.fao.org/fileadmin/user_upload/IPM_Pesticide/JMPR/Evaluations/2013/Difenoconazole.pdf",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official JMPR evaluation used as governed Codex-global residue and acute-reference-value context for difenoconazole.",
+        "Included to preserve EFSA versus JMPR acute-reference-value differences for review-oriented evidence handling."
+      ]
+    },
+    {
+      "sourceId": "efsa.glyphosate.peer_review.2023",
+      "title": "Conclusion on the peer review of the pesticide risk assessment of the active substance glyphosate",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2023-07-26",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/8164",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA peer review used as governed public toxicological-reference-value context for glyphosate.",
+        "Dietary MCP uses this as review-oriented evidence and method provenance."
+      ]
+    },
+    {
+      "sourceId": "jmpr.glyphosate.report.2016",
+      "title": "Glyphosate (JMPR 2016 evaluation)",
+      "organization": "FAO/WHO JMPR",
+      "kind": "official_scientific_report",
+      "jurisdiction": "codex_global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2016-05-01",
+      "url": "https://www.fao.org/fileadmin/user_upload/IPM_Pesticide/JMPR/Evaluations/2016/Glyphosate.pdf",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official JMPR evaluation used as governed Codex-global residue and reference-value context for glyphosate."
+      ]
+    },
+    {
+      "sourceId": "efsa.imidacloprid.peer_review.2013",
+      "title": "Conclusion on the peer review of the pesticide risk assessment for bees for the active substance imidacloprid",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2013-01-01",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/3068",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA peer review used as governed public toxicological-reference-value context for imidacloprid."
+      ]
+    },
+    {
+      "sourceId": "jmpr.imidacloprid.report.2001",
+      "title": "Imidacloprid (JMPR 2001 evaluation)",
+      "organization": "FAO/WHO JMPR",
+      "kind": "official_scientific_report",
+      "jurisdiction": "codex_global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2001-01-01",
+      "url": "https://www.fao.org/fileadmin/user_upload/IPM_Pesticide/JMPR/Evaluations/2001/Imidacloprid.pdf",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official JMPR evaluation used as governed Codex-global residue context for imidacloprid."
+      ]
+    },
+    {
+      "sourceId": "efsa.acetamiprid.peer_review.2016",
+      "title": "Conclusion on the peer review of the pesticide risk assessment of the active substance acetamiprid",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2016-11-25",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/4610",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA peer review used as governed public toxicological-reference-value context for acetamiprid."
+      ]
+    },
+    {
+      "sourceId": "jmpr.acetamiprid.report.2011",
+      "title": "Acetamiprid (JMPR 2011 evaluation)",
+      "organization": "FAO/WHO JMPR",
+      "kind": "official_scientific_report",
+      "jurisdiction": "codex_global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2011-01-01",
+      "url": "https://www.fao.org/fileadmin/user_upload/IPM_Pesticide/JMPR/Evaluations/2011/Acetamiprid.pdf",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official JMPR evaluation used as governed Codex-global residue context for acetamiprid."
+      ]
+    },
+    {
+      "sourceId": "cn.aqsc.gb2763.2026",
+      "title": "GB 2763-2026 National Food Safety Standard - Maximum Residue Limits for Pesticides in Food",
+      "organization": "Agricultural Product Quality and Safety Center, Ministry of Agriculture and Rural Affairs, China",
+      "kind": "official_regulatory_standard",
+      "jurisdiction": "cn",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2026-03-01",
+      "url": "http://www.aqsc.agri.cn/zlbz/bzgg/202602/P020260225608246362644.pdf",
+      "submissionUse": "allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official published standard text for GB 2763-2026.",
+        "The NHC announcement states that the standard took effect on 2026-03-01."
+      ]
+    }
+  ]
+}

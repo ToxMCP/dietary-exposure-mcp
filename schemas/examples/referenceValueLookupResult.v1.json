@@ -1,0 +1,276 @@
+{
+  "substance_key": "glyphosate",
+  "contaminant_family": "pesticide_residue",
+  "requested_jurisdiction_status": "unscoped_lookup",
+  "curated_support_types": [],
+  "authorities": [
+    {
+      "authority_id": "efsa.eu.pesticide_residue",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminant_family": "pesticide_residue",
+      "source_ids": [
+        "efsa.openfoodtox"
+      ],
+      "notes": [
+        "Authority-specific records are preserved as published and are not flattened into one canonical value."
+      ]
+    },
+    {
+      "authority_id": "fsc_japan.jp.pesticide_residue",
+      "authority": "FSC Japan",
+      "jurisdiction": "jp",
+      "contaminant_family": "pesticide_residue",
+      "source_ids": [
+        "jp.mhlw.fsa"
+      ],
+      "notes": [
+        "Authority-specific records are preserved as published and are not flattened into one canonical value."
+      ]
+    },
+    {
+      "authority_id": "jmpr.codex_global.pesticide_residue",
+      "authority": "JMPR",
+      "jurisdiction": "codex_global",
+      "contaminant_family": "pesticide_residue",
+      "source_ids": [
+        "fao.jmpr.dietary_risks.toolkit"
+      ],
+      "notes": [
+        "Authority-specific records are preserved as published and are not flattened into one canonical value."
+      ]
+    },
+    {
+      "authority_id": "nhc_china.cn.pesticide_residue",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "contaminant_family": "pesticide_residue",
+      "source_ids": [
+        "cn.aqsc.gb2763.2026",
+        "cn.nhc.gb2763.2026.announcement"
+      ],
+      "notes": [
+        "Authority-specific records are preserved as published and are not flattened into one canonical value."
+      ]
+    },
+    {
+      "authority_id": "pmra_canada.ca.pesticide_residue",
+      "authority": "PMRA Canada",
+      "jurisdiction": "ca",
+      "contaminant_family": "pesticide_residue",
+      "source_ids": [
+        "ca.hc.pmra.mrl_database"
+      ],
+      "notes": [
+        "Authority-specific records are preserved as published and are not flattened into one canonical value."
+      ]
+    }
+  ],
+  "matched_records": [
+    {
+      "record_id": "efsa.openfoodtox.glyphosate.adi",
+      "substance_key": "glyphosate",
+      "substance_name": "Glyphosate",
+      "reference_type": "adi",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminant_family": "pesticide_residue",
+      "value": 0.5,
+      "unit": "mg/kg bw/day",
+      "qualifier": null,
+      "assessment_label": null,
+      "assessment_year": null,
+      "population": null,
+      "source_output_id": null,
+      "source_ids": [
+        "efsa.openfoodtox"
+      ],
+      "primary_source_id": null,
+      "database_source_id": "efsa.openfoodtox",
+      "conflict_group_id": "glyphosate.adi.authority_conflict",
+      "document_status": "dataset_current",
+      "submission_use": "review_required",
+      "effective_date": null,
+      "notes": [
+        "Curated public-record extract for conflict-preserving lookup support.",
+        "OpenFoodTox is treated as the first-class public EFSA reference-value database layer, while the underlying EFSA scientific outputs remain authoritative."
+      ]
+    },
+    {
+      "record_id": "jp.fsc.glyphosate.adi",
+      "substance_key": "glyphosate",
+      "substance_name": "Glyphosate",
+      "reference_type": "adi",
+      "authority": "FSC Japan",
+      "jurisdiction": "jp",
+      "contaminant_family": "pesticide_residue",
+      "value": 1.0,
+      "unit": "mg/kg bw/day",
+      "qualifier": null,
+      "assessment_label": null,
+      "assessment_year": null,
+      "population": null,
+      "source_output_id": null,
+      "source_ids": [
+        "jp.mhlw.fsa"
+      ],
+      "primary_source_id": "jp.mhlw.fsa",
+      "database_source_id": null,
+      "conflict_group_id": "glyphosate.adi.authority_conflict",
+      "document_status": "final_current",
+      "submission_use": "review_required",
+      "effective_date": null,
+      "notes": [
+        "Governed Japanese ADI for glyphosate."
+      ]
+    },
+    {
+      "record_id": "jmpr.glyphosate.adi",
+      "substance_key": "glyphosate",
+      "substance_name": "Glyphosate",
+      "reference_type": "adi",
+      "authority": "JMPR",
+      "jurisdiction": "codex_global",
+      "contaminant_family": "pesticide_residue",
+      "value": 1.0,
+      "unit": "mg/kg bw/day",
+      "qualifier": null,
+      "assessment_label": null,
+      "assessment_year": null,
+      "population": null,
+      "source_output_id": null,
+      "source_ids": [
+        "fao.jmpr.dietary_risks.toolkit"
+      ],
+      "primary_source_id": "fao.jmpr.dietary_risks.toolkit",
+      "database_source_id": null,
+      "conflict_group_id": "glyphosate.adi.authority_conflict",
+      "document_status": "final_current",
+      "submission_use": "review_required",
+      "effective_date": null,
+      "notes": [
+        "Curated authority-specific record stub published to preserve conflicts rather than flatten them.",
+        "Consult the original JMPR monograph and Codex context before regulator-facing use."
+      ]
+    },
+    {
+      "record_id": "cn.nhc.glyphosate.adi",
+      "substance_key": "glyphosate",
+      "substance_name": "Glyphosate",
+      "reference_type": "adi",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "contaminant_family": "pesticide_residue",
+      "value": 1.0,
+      "unit": "mg/kg bw/day",
+      "qualifier": null,
+      "assessment_label": null,
+      "assessment_year": null,
+      "population": null,
+      "source_output_id": null,
+      "source_ids": [
+        "cn.nhc.gb2763.2026.announcement",
+        "cn.aqsc.gb2763.2026"
+      ],
+      "primary_source_id": "cn.aqsc.gb2763.2026",
+      "database_source_id": null,
+      "conflict_group_id": "glyphosate.adi.authority_conflict",
+      "document_status": "final_current",
+      "submission_use": "review_required",
+      "effective_date": "2026-03-01",
+      "notes": [
+        "Governed Chinese ADI for glyphosate based on GB 2763-2026.",
+        "Published from the official 2026 standard text and retained separately so jurisdiction-specific values are not borrowed from EFSA or JMPR."
+      ]
+    },
+    {
+      "record_id": "ca.pmra.glyphosate.adi",
+      "substance_key": "glyphosate",
+      "substance_name": "Glyphosate",
+      "reference_type": "adi",
+      "authority": "PMRA Canada",
+      "jurisdiction": "ca",
+      "contaminant_family": "pesticide_residue",
+      "value": 0.3,
+      "unit": "mg/kg bw/day",
+      "qualifier": null,
+      "assessment_label": null,
+      "assessment_year": null,
+      "population": null,
+      "source_output_id": null,
+      "source_ids": [
+        "ca.hc.pmra.mrl_database"
+      ],
+      "primary_source_id": "ca.hc.pmra.mrl_database",
+      "database_source_id": null,
+      "conflict_group_id": "glyphosate.adi.authority_conflict",
+      "document_status": "final_current",
+      "submission_use": "review_required",
+      "effective_date": null,
+      "notes": [
+        "Governed Canadian ADI for glyphosate. Diverges from US EPA and EFSA."
+      ]
+    },
+    {
+      "record_id": "efsa.openfoodtox.glyphosate.arfd",
+      "substance_key": "glyphosate",
+      "substance_name": "Glyphosate",
+      "reference_type": "arfd",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminant_family": "pesticide_residue",
+      "value": 0.5,
+      "unit": "mg/kg bw/day",
+      "qualifier": null,
+      "assessment_label": null,
+      "assessment_year": null,
+      "population": null,
+      "source_output_id": null,
+      "source_ids": [
+        "efsa.openfoodtox"
+      ],
+      "primary_source_id": null,
+      "database_source_id": "efsa.openfoodtox",
+      "conflict_group_id": null,
+      "document_status": "dataset_current",
+      "submission_use": "review_required",
+      "effective_date": null,
+      "notes": [
+        "Curated public-record extract for EFSA acute reference-value lookup support."
+      ]
+    }
+  ],
+  "visible_conflicts": [
+    {
+      "conflict_group_id": "glyphosate.adi.authority_conflict",
+      "substance_key": "glyphosate",
+      "contaminant_family": "pesticide_residue",
+      "record_ids": [
+        "efsa.openfoodtox.glyphosate.adi",
+        "jp.fsc.glyphosate.adi",
+        "jmpr.glyphosate.adi",
+        "cn.nhc.glyphosate.adi",
+        "ca.pmra.glyphosate.adi"
+      ],
+      "authorities": [
+        "EFSA",
+        "FSC Japan",
+        "JMPR",
+        "NHC China",
+        "PMRA Canada"
+      ],
+      "note": "Authority-specific values differ and require jurisdiction-aware selection."
+    }
+  ],
+  "coverage_summaries": [],
+  "quality_flags": [
+    {
+      "code": "reference_value_context_selection_required",
+      "severity": "warning",
+      "message": "Multiple governed records matched; select the authority, population, assessment year, and unit basis explicitly."
+    }
+  ],
+  "notes": [
+    "Multiple reference-value contexts were preserved and exposed without selecting a canonical record."
+  ]
+}

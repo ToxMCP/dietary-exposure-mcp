@@ -1,0 +1,85 @@
+{
+  "kind": "reporting_profiles",
+  "profiles": [
+    {
+      "profileId": "nl.pfas.rivm_peq.food_advisory",
+      "displayName": "NL PFAS RIVM home-egg PEQ advisory reporting",
+      "authority": "RIVM",
+      "jurisdiction": "netherlands",
+      "contaminantFamily": "pfas_food_contaminants",
+      "metricKind": "relative_potency_equivalent",
+      "profileRole": "national_advisory_optional",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "reportedUnit": "ng/kg PFOA-equivalent",
+      "matrixGroups": [
+        "eggs"
+      ],
+      "panelAnalytes": [
+        "pfos",
+        "pfoa",
+        "pfna",
+        "pfhxs"
+      ],
+      "aggregationBasis": "Relative-potency-weighted sum expressed as PFOA-equivalents for Dutch advisory interpretation when RIVM-supported PFAS analytes are available.",
+      "weightingBasisSummary": "Apply governed RIVM relative potency factors to supported PFAS analytes and report the weighted sum as PFOA-equivalents (PEQ).",
+      "sourceIds": [
+        "rivm.pfas.home_eggs.2025",
+        "rivm.pfas.rpf.addendum.2025",
+        "efsa.pfas.food.2020"
+      ],
+      "legalAuthorityIds": [],
+      "referenceValueRecordIds": [
+        "efsa.pfas.sum4.twi"
+      ],
+      "notSubstitutableForProfileIds": [
+        "eu.pfas.efsa4.food_risk",
+        "eu.pfas.efsa4.ml_lower_bound"
+      ],
+      "notes": [
+        "Optional Dutch advisory profile intended for home-produced egg risk communication and follow-up interpretation, not for EU maximum-level compliance reporting.",
+        "Current Dietary MCP PFAS analyte support remains narrower than the full RIVM RPF universe; only supported analytes should be used when this profile is invoked."
+      ]
+    },
+    {
+      "profileId": "nl.pfas.rivm_peq.biota_fish_advisory",
+      "displayName": "NL PFAS RIVM PEQ biota and fish advisory reporting",
+      "authority": "RIVM",
+      "jurisdiction": "netherlands",
+      "contaminantFamily": "pfas_food_contaminants",
+      "metricKind": "relative_potency_equivalent",
+      "profileRole": "national_advisory_optional",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "reportedUnit": "ng/kg PFOA-equivalent",
+      "matrixGroups": [
+        "fish_and_seafood"
+      ],
+      "panelAnalytes": [
+        "pfos",
+        "pfoa",
+        "pfna",
+        "pfhxs"
+      ],
+      "aggregationBasis": "Relative-potency-weighted sum expressed as PFOA-equivalents for Dutch biota and fish-consumption advisory interpretation when RIVM PEQ Tool V3 context is the governing convention.",
+      "weightingBasisSummary": "Apply governed RIVM relative potency factors to supported PFAS analytes and report the weighted sum as PFOA-equivalents (PEQ) for fish and biota advisory interpretation.",
+      "sourceIds": [
+        "rivm.pfas.peq_tool.v3.2025",
+        "rivm.pfas.rpf.addendum.2025",
+        "efsa.pfas.food.2020"
+      ],
+      "legalAuthorityIds": [],
+      "referenceValueRecordIds": [
+        "efsa.pfas.sum4.twi"
+      ],
+      "notSubstitutableForProfileIds": [
+        "eu.pfas.efsa4.food_risk",
+        "eu.pfas.efsa4.ml_lower_bound"
+      ],
+      "notes": [
+        "Optional Dutch advisory profile intended for fish and biota follow-up interpretation when RIVM PEQ Tool V3 is the governing reference.",
+        "Current Dietary MCP PFAS analyte support remains narrower than the full RIVM PEQ Tool analyte universe; only supported analytes should be used when this profile is invoked."
+      ]
+    }
+  ]
+}

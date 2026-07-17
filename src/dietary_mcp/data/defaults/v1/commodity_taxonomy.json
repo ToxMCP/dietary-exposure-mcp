@@ -1,0 +1,204 @@
+{
+  "defaultsVersion": "v1",
+  "taxonomyId": "toxmcp_foods_v1",
+  "commodities": [
+    {
+      "commodityCode": "apples",
+      "canonicalName": "Apples",
+      "foodGroup": "fruit",
+      "aliases": ["apple", "apples_raw"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "curated",
+      "sourceId": "dietary.taxonomy.apples"
+    },
+    {
+      "commodityCode": "oranges",
+      "canonicalName": "Oranges",
+      "foodGroup": "fruit",
+      "aliases": ["orange", "oranges_raw", "citrus_oranges"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "curated",
+      "sourceId": "dietary.taxonomy.oranges"
+    },
+    {
+      "commodityCode": "spinach",
+      "canonicalName": "Spinach",
+      "foodGroup": "vegetable",
+      "aliases": ["spinach_raw", "leafy_spinach"],
+      "defaultProcessingFactor": 0.9,
+      "mappingStatus": "curated",
+      "sourceId": "dietary.taxonomy.spinach"
+    },
+    {
+      "commodityCode": "tomatoes",
+      "canonicalName": "Tomatoes",
+      "foodGroup": "vegetable",
+      "aliases": ["tomato", "tomatoes_raw", "fresh_tomatoes"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "curated",
+      "sourceId": "dietary.taxonomy.tomatoes"
+    },
+    {
+      "commodityCode": "potatoes",
+      "canonicalName": "Potatoes",
+      "foodGroup": "tuber",
+      "aliases": ["potato", "potatoes_raw", "white_potatoes"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "curated",
+      "sourceId": "dietary.taxonomy.potatoes"
+    },
+    {
+      "commodityCode": "rice",
+      "canonicalName": "Rice",
+      "foodGroup": "grain",
+      "aliases": ["white_rice", "milled_rice"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "reviewed",
+      "sourceId": "dietary.taxonomy.rice"
+    },
+    {
+      "commodityCode": "wheat",
+      "canonicalName": "Wheat",
+      "foodGroup": "grain",
+      "aliases": ["wheat_grain", "common_wheat", "milling_wheat"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "reviewed",
+      "sourceId": "dietary.taxonomy.wheat"
+    },
+    {
+      "commodityCode": "milk",
+      "canonicalName": "Milk",
+      "foodGroup": "dairy",
+      "aliases": ["whole_milk", "cow_milk"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "curated",
+      "sourceId": "dietary.taxonomy.milk"
+    },
+    {
+      "commodityCode": "chicken",
+      "canonicalName": "Chicken",
+      "foodGroup": "meat",
+      "aliases": ["chicken_meat", "poultry_chicken", "raw_chicken"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "curated",
+      "sourceId": "dietary.taxonomy.chicken"
+    },
+    {
+      "commodityCode": "salmon",
+      "canonicalName": "Salmon",
+      "foodGroup": "fish",
+      "aliases": ["atlantic_salmon", "salmon_fillet", "salmon_raw"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "reviewed",
+      "sourceId": "dietary.taxonomy.salmon"
+    },
+    {
+      "commodityCode": "eggs",
+      "canonicalName": "Eggs",
+      "foodGroup": "eggs",
+      "aliases": ["egg", "hen_eggs", "table_eggs", "chicken_eggs"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "curated",
+      "sourceId": "dietary.taxonomy.eggs"
+    },
+    {
+      "commodityCode": "oats",
+      "canonicalName": "Oats",
+      "foodGroup": "grain",
+      "aliases": ["oat", "oat_grain", "rolled_oats", "oats_raw"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "curated",
+      "sourceId": "dietary.taxonomy.oats"
+    },
+    {
+      "commodityCode": "beans_and_pulses",
+      "canonicalName": "Beans and pulses",
+      "foodGroup": "legume",
+      "aliases": ["beans", "pulses", "dried_beans", "legumes"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "curated",
+      "sourceId": "dietary.taxonomy.beans_and_pulses"
+    },
+    {
+      "commodityCode": "infant_formula",
+      "canonicalName": "Infant formula",
+      "foodGroup": "processed_infant_food",
+      "aliases": ["formula", "infant_milk_formula"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "curated",
+      "sourceId": "dietary.taxonomy.infant_formula"
+    },
+    {
+      "commodityCode": "fruit_juice",
+      "canonicalName": "Fruit juice",
+      "foodGroup": "processed_fruit",
+      "aliases": ["juice", "mixed_fruit_juice"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "curated",
+      "sourceId": "dietary.taxonomy.fruit_juice"
+    },
+    {
+      "commodityCode": "purees",
+      "canonicalName": "Fruit and vegetable purees",
+      "foodGroup": "processed_infant_food",
+      "aliases": ["fruit_puree", "veg_puree", "infant_puree"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "curated",
+      "sourceId": "dietary.taxonomy.purees"
+    },
+    {
+      "commodityCode": "olives",
+      "canonicalName": "Olives",
+      "foodGroup": "fruit",
+      "aliases": ["olive", "fresh_olives", "olives_raw"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "curated",
+      "sourceId": "dietary.taxonomy.olives"
+    },
+    {
+      "commodityCode": "grapes",
+      "canonicalName": "Grapes",
+      "foodGroup": "fruit",
+      "aliases": ["grape", "fresh_grapes", "grapes_raw"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "curated",
+      "sourceId": "dietary.taxonomy.grapes"
+    },
+    {
+      "commodityCode": "beef_liver",
+      "canonicalName": "Beef liver",
+      "foodGroup": "meat",
+      "aliases": ["cattle_liver", "liver_beef", "bovine_liver"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "curated",
+      "sourceId": "dietary.taxonomy.beef_liver"
+    },
+    {
+      "commodityCode": "poultry_fat",
+      "canonicalName": "Poultry fat",
+      "foodGroup": "meat",
+      "aliases": ["chicken_fat", "fat_poultry"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "curated",
+      "sourceId": "dietary.taxonomy.poultry_fat"
+    },
+    {
+      "commodityCode": "pork_kidney",
+      "canonicalName": "Pork kidney",
+      "foodGroup": "meat",
+      "aliases": ["swine_kidney", "kidney_pork", "pig_kidney"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "curated",
+      "sourceId": "dietary.taxonomy.pork_kidney"
+    },
+    {
+      "commodityCode": "apple_pie",
+      "canonicalName": "Apple pie",
+      "foodGroup": "composite_food",
+      "aliases": ["pie_apple"],
+      "defaultProcessingFactor": 1.0,
+      "mappingStatus": "curated",
+      "sourceId": "dietary.recipe.apple_pie"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "$defs": {
+    "LimitationNote": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "title": "LimitationNote",
+      "type": "object"
+    },
+    "QualityFlag": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "severity": {
+          "$ref": "#/$defs/Severity"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "severity",
+        "message"
+      ],
+      "title": "QualityFlag",
+      "type": "object"
+    },
+    "RawSurveyRecordInput": {
+      "additionalProperties": false,
+      "properties": {
+        "subjectId": {
+          "title": "Subjectid",
+          "type": "string"
+        },
+        "bodyWeightKg": {
+          "exclusiveMinimum": 0.0,
+          "title": "Bodyweightkg",
+          "type": "number"
+        },
+        "daysInSurvey": {
+          "minimum": 1,
+          "title": "Daysinsurvey",
+          "type": "integer"
+        },
+        "commodityCode": {
+          "title": "Commoditycode",
+          "type": "string"
+        },
+        "consumptionKgPerDay": {
+          "minimum": 0.0,
+          "title": "Consumptionkgperday",
+          "type": "number"
+        },
+        "surveyWeight": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Surveyweight"
+        },
+        "samplingStratum": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Samplingstratum"
+        },
+        "samplingCluster": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Samplingcluster"
+        },
+        "surveyDayId": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Surveydayid"
+        }
+      },
+      "required": [
+        "subjectId",
+        "bodyWeightKg",
+        "daysInSurvey",
+        "commodityCode",
+        "consumptionKgPerDay"
+      ],
+      "title": "RawSurveyRecordInput",
+      "type": "object"
+    },
+    "Severity": {
+      "enum": [
+        "info",
+        "warning",
+        "error"
+      ],
+      "title": "Severity",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "datasetId": {
+      "title": "Datasetid",
+      "type": "string"
+    },
+    "regionId": {
+      "title": "Regionid",
+      "type": "string"
+    },
+    "populationGroup": {
+      "title": "Populationgroup",
+      "type": "string"
+    },
+    "records": {
+      "items": {
+        "$ref": "#/$defs/RawSurveyRecordInput"
+      },
+      "maxItems": 100000,
+      "title": "Records",
+      "type": "array"
+    },
+    "droppedRecordCount": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Droppedrecordcount",
+      "type": "integer"
+    },
+    "dataLossFraction": {
+      "default": 0.0,
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Datalossfraction",
+      "type": "number"
+    },
+    "unmappedCommodityCodes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unmappedcommoditycodes",
+      "type": "array"
+    },
+    "bodyWeightConflictSubjectIds": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Bodyweightconflictsubjectids",
+      "type": "array"
+    },
+    "quality_flags": {
+      "items": {
+        "$ref": "#/$defs/QualityFlag"
+      },
+      "title": "Quality Flags",
+      "type": "array"
+    },
+    "limitations": {
+      "items": {
+        "$ref": "#/$defs/LimitationNote"
+      },
+      "title": "Limitations",
+      "type": "array"
+    }
+  },
+  "required": [
+    "datasetId",
+    "regionId",
+    "populationGroup",
+    "records"
+  ],
+  "title": "DietarySurveyDatasetRecord",
+  "type": "object"
+}

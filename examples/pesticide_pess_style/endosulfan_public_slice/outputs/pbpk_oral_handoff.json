@@ -1,0 +1,166 @@
+{
+  "schema_version": "v1",
+  "bundle_id": "pbpk-bundle-5c1fdc6ad26c",
+  "route_dose_estimate": {
+    "schema_version": "v1",
+    "estimate_id": "route-dose-01f33742bdbf",
+    "scenario_id": "dietary-scenario-e6a46b57c263",
+    "chemical_identity": {
+      "preferredName": "Endosulfan",
+      "casrn": "115-29-7"
+    },
+    "route": "oral",
+    "dose_metric": "external_oral_dose_mg_per_kg_bw_per_day",
+    "intake_window_semantic": "acute",
+    "value_mg_per_kg_bw_per_day": 0.00024133333333333336,
+    "lower_bound_mg_per_kg_bw_per_day": 0.0,
+    "upper_bound_mg_per_kg_bw_per_day": 0.0009666666666666667,
+    "fit_for_purpose": "downstream_export",
+    "provenance": {
+      "schema_version": "v1",
+      "defaults_version": "v1",
+      "algorithm_version": "reference-dietary-intake-0.1.0",
+      "generated_at": "2026-06-01T16:29:17.921936Z",
+      "source_references": [
+        {
+          "source_id": "casepack.endosulfan.apple_juice.screening_residue",
+          "title": "Endosulfan apple_juice regulatory-screening residue input (EU MRL band) for PESS-style public slice",
+          "effective_date": "2026-06-01",
+          "url": "examples://pesticide_pess_style/endosulfan_public_slice/source_lock",
+          "originTag": "illustrative_placeholder"
+        },
+        {
+          "source_id": "dietary.food_vocab.processed.apple_juice",
+          "title": "Dietary MCP processed commodity mapping for apple juice",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "originTag": "illustrative_placeholder"
+        },
+        {
+          "source_id": "dietary.food_vocab.processed.apple_juice",
+          "title": "Dietary MCP processed commodity mapping for apple juice",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "originTag": "illustrative_placeholder"
+        },
+        {
+          "source_id": "casepack.endosulfan.rice.screening_residue",
+          "title": "Endosulfan rice regulatory-screening residue input (EU MRL band) for PESS-style public slice",
+          "effective_date": "2026-06-01",
+          "url": "examples://pesticide_pess_style/endosulfan_public_slice/source_lock",
+          "originTag": "illustrative_placeholder"
+        },
+        {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "originTag": "illustrative_placeholder"
+        },
+        {
+          "source_id": "dietary.taxonomy.rice",
+          "title": "Dietary MCP commodity taxonomy entry for rice",
+          "effective_date": null,
+          "url": "defaults://manifest",
+          "originTag": "curated_derived"
+        },
+        {
+          "source_id": "dietary.profile.eu_child_1_6",
+          "title": "Illustrative EU child dietary screening profile",
+          "effective_date": "2026-04-13",
+          "url": "docs://population-profile-guide",
+          "originTag": "illustrative_placeholder"
+        }
+      ]
+    },
+    "quality_flags": [],
+    "limitations": [
+      {
+        "code": "food_taxonomy_removed",
+        "message": "PBPK export normalizes the dietary result to oral dose semantics and omits commodity-taxonomy detail."
+      }
+    ]
+  },
+  "dosing_regimen": {
+    "schedule": "single_day",
+    "dose_frequency_per_day": 1.0,
+    "duration_days": 1.0
+  },
+  "dependencies": [
+    {
+      "name": "dietary-mcp",
+      "version": "0.1.0",
+      "role": "producer"
+    },
+    {
+      "name": "bounded_acute",
+      "version": "0.1.0",
+      "role": "workflow"
+    },
+    {
+      "name": "reference_dietary",
+      "version": "0.1.0",
+      "role": "model_family"
+    }
+  ],
+  "exposurePlausibilityRecords": [],
+  "provenance": {
+    "schema_version": "v1",
+    "defaults_version": "v1",
+    "algorithm_version": "reference-dietary-intake-0.1.0",
+    "generated_at": "2026-06-01T16:29:17.921975Z",
+    "source_references": [
+      {
+        "source_id": "casepack.endosulfan.apple_juice.screening_residue",
+        "title": "Endosulfan apple_juice regulatory-screening residue input (EU MRL band) for PESS-style public slice",
+        "effective_date": "2026-06-01",
+        "url": "examples://pesticide_pess_style/endosulfan_public_slice/source_lock",
+        "originTag": "illustrative_placeholder"
+      },
+      {
+        "source_id": "dietary.food_vocab.processed.apple_juice",
+        "title": "Dietary MCP processed commodity mapping for apple juice",
+        "effective_date": "2026-04-10",
+        "url": "docs://food-vocabulary-crosswalk",
+        "originTag": "illustrative_placeholder"
+      },
+      {
+        "source_id": "dietary.food_vocab.processed.apple_juice",
+        "title": "Dietary MCP processed commodity mapping for apple juice",
+        "effective_date": "2026-04-10",
+        "url": "docs://food-vocabulary-crosswalk",
+        "originTag": "illustrative_placeholder"
+      },
+      {
+        "source_id": "casepack.endosulfan.rice.screening_residue",
+        "title": "Endosulfan rice regulatory-screening residue input (EU MRL band) for PESS-style public slice",
+        "effective_date": "2026-06-01",
+        "url": "examples://pesticide_pess_style/endosulfan_public_slice/source_lock",
+        "originTag": "illustrative_placeholder"
+      },
+      {
+        "source_id": "dietary.food_vocab.crosswalk",
+        "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+        "effective_date": "2026-04-10",
+        "url": "docs://food-vocabulary-crosswalk",
+        "originTag": "illustrative_placeholder"
+      },
+      {
+        "source_id": "dietary.taxonomy.rice",
+        "title": "Dietary MCP commodity taxonomy entry for rice",
+        "effective_date": null,
+        "url": "defaults://manifest",
+        "originTag": "curated_derived"
+      },
+      {
+        "source_id": "dietary.profile.eu_child_1_6",
+        "title": "Illustrative EU child dietary screening profile",
+        "effective_date": "2026-04-13",
+        "url": "docs://population-profile-guide",
+        "originTag": "illustrative_placeholder"
+      }
+    ]
+  },
+  "limitations": [],
+  "quality_flags": []
+}

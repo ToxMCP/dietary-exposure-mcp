@@ -1,0 +1,33 @@
+{
+  "version": "v1",
+  "rules": [
+    {
+      "ruleId": "preview_profile_allowed",
+      "description": "The staged preview profile must be explicitly allowed for the selected interoperability readiness profile."
+    },
+    {
+      "ruleId": "source_dossier_consistent",
+      "description": "The staged preview must be derived from the supplied version-pinned dossier."
+    },
+    {
+      "ruleId": "preview_required_fields_complete",
+      "description": "All required mapped fields must be present in the staged preview."
+    },
+    {
+      "ruleId": "preview_target_document_present",
+      "description": "The staged preview must produce a non-empty target document."
+    },
+    {
+      "ruleId": "linked_dossier_readiness",
+      "description": "The linked dossier must satisfy the governed dossier-readiness profile for the selected interoperability gate."
+    },
+    {
+      "ruleId": "preview_unsupported_fields_allowed",
+      "description": "Unsupported local-only fields may require review or may block the selected interoperability gate."
+    },
+    {
+      "ruleId": "preview_non_direct_mappings_allowed",
+      "description": "Derived or review-required mappings may require review or may block the selected interoperability gate."
+    }
+  ]
+}

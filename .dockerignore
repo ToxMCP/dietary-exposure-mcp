@@ -1,0 +1,46 @@
+# Version control
+.git/
+.gitignore
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Virtual environments and uv managed envs
+.venv/
+venv/
+
+# Build artefacts
+build/
+dist/
+*.egg-info/
+*.eggs/
+
+# Tests – not needed in the production image
+tests/
+
+# Documentation and dev-only scripts
+docs/
+scripts/
+examples/
+output/
+
+# Editor / OS noise
+.DS_Store
+.claude/
+*.swp
+*.swo
+
+# CI / local task files
+tasks.json
+*.log
+
+# Secrets – should never be in the build context
+.env
+*.env
+*.pem
+*.key

@@ -1,0 +1,733 @@
+{
+  "schema_version": "v1",
+  "dossier_id": "sanitised-review-dossier-913bb943b507",
+  "derivedFromDossierId": "contaminant-monitoring-review-dossier-5383b8273189",
+  "bundleProfile": "sanitised_public",
+  "dossier_status": "open",
+  "sourceWorkflow": "contaminant_monitoring_review_dossier",
+  "publicReviewBundle": {
+    "schema_version": "v1",
+    "bundleProfile": "sanitised_public",
+    "sourceBundleId": "contaminant-monitoring-bundle-45467bd7a63b",
+    "sourcePacketId": "contaminant-monitoring-signoff-e3fc6dccfe07",
+    "checkStatus": "pass",
+    "overallSignoffStatus": "open",
+    "contaminantFamily": "mercury_food_contaminants",
+    "jurisdiction": "eu",
+    "authority": null,
+    "datasetId": "efsa.comprehensive_food_consumption_db.mercury_support",
+    "overallSubmissionUse": "allowed",
+    "submissionCandidateAllowed": true,
+    "reportingProfileSummary": null,
+    "pendingActionIds": [
+      "review_header_resolution_and_quality_flags",
+      "review_occurrence_evidence_context",
+      "review_analytical_method_context",
+      "review_linked_focus_records",
+      "review_scientific_ledger.row_level_lod_coverage",
+      "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+      "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control",
+      "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control",
+      "review_governance_links"
+    ],
+    "acknowledgedActionIds": [],
+    "completedActionIds": [],
+    "waivedActionIds": [],
+    "unresolvedBlockingActionIds": [
+      "review_governance_links"
+    ],
+    "referencedResources": [
+      {
+        "role": "documentation",
+        "uri": "docs://contaminant-monitoring-interpretation",
+        "description": "Operator documentation describing the contaminant monitoring interpretation bundle workflow.",
+        "confidentialityTag": "public",
+        "sanitisationState": "retained"
+      },
+      {
+        "role": "check_workflow_documentation",
+        "uri": "docs://contaminant-monitoring-import",
+        "description": "Operator documentation for contaminant monitoring import checks.",
+        "confidentialityTag": "public",
+        "sanitisationState": "retained"
+      },
+      {
+        "role": "occurrence_evidence_manifest",
+        "uri": "occurrence-evidence://manifest",
+        "description": "Governed occurrence-evidence manifest used to anchor contaminant monitoring review context.",
+        "confidentialityTag": "public",
+        "sanitisationState": "retained"
+      },
+      {
+        "role": "occurrence_evidence_family",
+        "uri": "occurrence-evidence://family/mercury_food_contaminants",
+        "description": "Family-specific occurrence-evidence records used in this monitoring interpretation bundle.",
+        "confidentialityTag": "public",
+        "sanitisationState": "retained"
+      },
+      {
+        "role": "analytical_method_evidence_manifest",
+        "uri": "analytical-method-evidence://manifest",
+        "description": "Governed analytical-method-evidence manifest used to anchor method-review context.",
+        "confidentialityTag": "public",
+        "sanitisationState": "retained"
+      },
+      {
+        "role": "analytical_method_evidence_family",
+        "uri": "analytical-method-evidence://family/mercury_food_contaminants",
+        "description": "Family-specific analytical-method-evidence records used in this monitoring interpretation bundle.",
+        "confidentialityTag": "public",
+        "sanitisationState": "retained"
+      },
+      {
+        "role": "occurrence_documentation",
+        "uri": "docs://occurrence-evidence-registry",
+        "description": "Operator documentation for governed occurrence-evidence records.",
+        "confidentialityTag": "public",
+        "sanitisationState": "retained"
+      },
+      {
+        "role": "analytical_method_documentation",
+        "uri": "docs://analytical-method-evidence-registry",
+        "description": "Operator documentation for governed analytical-method-evidence records.",
+        "confidentialityTag": "public",
+        "sanitisationState": "retained"
+      },
+      {
+        "role": "reporting_profiles_manifest",
+        "uri": "reporting-profiles://manifest",
+        "description": "Governed reporting-profile manifest covering primary EU and optional advisory reporting conventions.",
+        "confidentialityTag": "public",
+        "sanitisationState": "retained"
+      },
+      {
+        "role": "reporting_profiles_family",
+        "uri": "reporting-profiles://family/mercury_food_contaminants",
+        "description": "Family-specific governed reporting profiles considered during monitoring interpretation.",
+        "confidentialityTag": "public",
+        "sanitisationState": "retained"
+      },
+      {
+        "role": "reporting_profiles_documentation",
+        "uri": "docs://reporting-profiles-registry",
+        "description": "Operator guidance for governed reporting-profile usage and non-substitution posture.",
+        "confidentialityTag": "public",
+        "sanitisationState": "retained"
+      },
+      {
+        "role": "contaminant_legal_limits_manifest",
+        "uri": "contaminant-legal-limits://manifest",
+        "description": "Governed contaminant legal-limit manifest used to keep jurisdiction-specific legal-limit support explicit during monitoring review.",
+        "confidentialityTag": "public",
+        "sanitisationState": "retained"
+      },
+      {
+        "role": "contaminant_legal_limits_family",
+        "uri": "contaminant-legal-limits://family/mercury_food_contaminants",
+        "description": "Family-specific governed contaminant legal-limit records considered alongside the monitoring interpretation bundle.",
+        "confidentialityTag": "public",
+        "sanitisationState": "retained"
+      },
+      {
+        "role": "jurisdiction_coverage_manifest",
+        "uri": "jurisdiction-coverage://manifest",
+        "description": "Machine-readable jurisdiction-coverage manifest used to keep support depth explicit during monitoring review.",
+        "confidentialityTag": "public",
+        "sanitisationState": "retained"
+      },
+      {
+        "role": "jurisdiction_coverage_jurisdiction",
+        "uri": "jurisdiction-coverage://jurisdiction/eu",
+        "description": "Jurisdiction-scoped coverage posture used to avoid overreading partial or missing legal-limit support.",
+        "confidentialityTag": "public",
+        "sanitisationState": "retained"
+      },
+      {
+        "role": "contaminant_legal_limits_jurisdiction",
+        "uri": "contaminant-legal-limits://jurisdiction/eu",
+        "description": "Jurisdiction-scoped contaminant legal-limit records used to keep the monitoring review lane explicit.",
+        "confidentialityTag": "public",
+        "sanitisationState": "retained"
+      },
+      {
+        "role": "metals_review_focus_manifest",
+        "uri": "metals-review-focus://manifest",
+        "description": "Governed metals review-focus registry used to surface linked commodity and population follow-up context.",
+        "confidentialityTag": "public",
+        "sanitisationState": "retained"
+      },
+      {
+        "role": "metals_review_focus_family",
+        "uri": "metals-review-focus://family/mercury_food_contaminants",
+        "description": "Family-specific review-focus records linked from the contaminant monitoring check result.",
+        "confidentialityTag": "public",
+        "sanitisationState": "retained"
+      },
+      {
+        "role": "emerging_family_governance",
+        "uri": "emerging-contaminants://family/mercury_food_contaminants",
+        "description": "Family-level evidence-maturity and submission-governance posture for this contaminant family.",
+        "confidentialityTag": "public",
+        "sanitisationState": "retained"
+      },
+      {
+        "role": "contaminant_monitoring_signoff_docs",
+        "uri": "docs://contaminant-monitoring-signoff",
+        "description": "Operator guide for reviewer-facing contaminant monitoring signoff packets.",
+        "confidentialityTag": "public",
+        "sanitisationState": "retained"
+      }
+    ],
+    "notes": [
+      "Sanitised public contaminant monitoring bundle retains governed signoff state, legal-limit posture, and non-confidential review resources only.",
+      "Confidential fields and resources are represented in sanitisation_records rather than exposed directly.",
+      "Contaminant monitoring import checks validate supplied CSV text against governed occurrence and analytical-method evidence objects.",
+      "This workflow is review-oriented and does not create a native contaminant exposure engine or final regulatory decision.",
+      "Occurrence-evidence record eu.mercury.occurrence_evidence.official_monitoring_context: Supporting sources mix historical anchors (efsa.mercury.food.2012) with newer context records (efsa.mercury.fish_consumption.2026, efsa.metals.topic.2026, eu.reg.2023_915, eu.reg.333_2007); confirm the older evidence base is still fit for the intended use.",
+      "Occurrence-evidence record eu.mercury.occurrence_evidence.official_monitoring_context still depends on older supporting sources (efsa.mercury.food.2012) even though newer context records are also linked.",
+      "Analytical-method-evidence record eu.mercury.analytical_method_evidence.official_control: Supporting sources mix historical anchors (efsa.mercury.food.2012) with newer context records (eu.reg.2023_915, eu.reg.333_2007); confirm the older evidence base is still fit for the intended use.",
+      "Analytical-method-evidence record eu.mercury.analytical_method_evidence.official_control still depends on older supporting sources (efsa.mercury.food.2012) even though newer context records are also linked.",
+      "Broad-food-supply fallback matching was used for at least one evidence record; treat the matrix linkage as review support rather than a matrix-specific confirmation.",
+      "Interpretation bundle packages the contaminant monitoring check, governed evidence records, and reviewer prompts into one audit-ready object.",
+      "Bundle remains review-oriented and does not convert contaminant monitoring context into a native exposure or final decision engine.",
+      "Attached legal-limit review snapshots make exact, partial, anchor-only, or missing jurisdiction support explicit instead of implying a complete legal-limit layer.",
+      "EU does not currently ship curated contaminant legal-limit coverage for matrix group `broad_food_supply`.",
+      "EU does not currently ship curated contaminant legal-limit coverage for matrix group `fish_and_seafood`.",
+      "EU does not currently ship curated contaminant legal-limit coverage for matrix group `large_predatory_fish`.",
+      "Signoff packet is a reviewer-facing overlay on top of the contaminant monitoring interpretation bundle and does not change the underlying bundle content.",
+      "Waived actions remain explicitly visible so downstream reviewers can inspect accepted deviations from the default contaminant monitoring review sequence.",
+      "Signed-off status records closure of the governed review workflow only; it does not certify scientific correctness, submission readiness, or regulatory approval.",
+      "Attached legal-limit review snapshots remain visible in signoff so partial, anchor-only, or missing jurisdiction support cannot be mistaken for a complete legal-limit layer.",
+      "At least one blocking contaminant monitoring action remains unresolved in the signoff packet."
+    ]
+  },
+  "release_metadata": {
+    "resource_uri": "release://metadata-report",
+    "release_version": "0.1.0",
+    "defaults_version": "v1",
+    "metadata_report_sha256": "47b88f74d3e651ced76f90dc74cd3328b06243809716f3ddec653b564f6702ae",
+    "artifact_hashes": {
+      "adapterManifest": "9e5c6a0adbb0fd6544cabb069e3d0b35a11b1419f704f3355ec3c965428be37d",
+      "adapterTemplateManifest": "09014010cff3deaa33416af7b4e201e6ad4f0b5ae2d29b052780e8a9af9e03ad",
+      "adapterWalkthroughManifest": "20f13f27a8fa3b89fd893bfe00c002df930b9ff4ed9b24946360dc0a9470b0a4",
+      "referenceValuesManifest": "9563d3171bc70284f2e4c581aafc70f39ab80f017c703e3425ccf6ca402111fd",
+      "mrlEnforcementManifest": "9ff968083ad2ec23d722f6927ac93803ed68110a880baaf33c450c2e6318de17",
+      "contaminantLegalLimitsManifest": "0664f4d570ccb36aa70877ffbf6addbbce1b42d2fda2adef33ed8d846ad09a67",
+      "consumptionDatasetsManifest": "c6a25b002ac18dea4c6cab112d5cda93a93f12d594f5874c50f605b979bde545",
+      "methodRegistryManifest": "d016cabfdbd55f02deef2644ad248876d72cfc565d1f2487b148c183e90adb39",
+      "legalAuthoritiesManifest": "5c02a479dc8eb3d1aac812709a0074b99dc330761b4d13f97c9dc63e1f7fb018",
+      "reportingProfilesManifest": "69dadf23060b7332d6756799efea52a0b15c44af85d1449d3df6c9fdb418e42c",
+      "occurrenceEvidenceManifest": "13f7a8c89e3bb3c9f2900a689f702b7834bb2ca19201e926f5a0bfe6878e7a54",
+      "analyticalMethodEvidenceManifest": "ecd1fb8027044a61aa35b1e1297b9c230b549d517e67fe24baec806d491e0b25",
+      "metalsOccurrenceManifest": "00f380d54210efe7885c1aef4d571686d77e275abf020ae3644b371d377249cb",
+      "metalsReviewFocusManifest": "c6b046b073e62a36445e9f067bf93914d35e92116229a3050953298f86ef9d2c",
+      "emergingContaminantsManifest": "244fb660b79f81ffc80933cfd84cfd1294682eebe79f4dfc0c6eea315ee61173",
+      "jurisdictionCoverageManifest": "c5e2c133cffdf26a5f7e35202d98ad89a5d14d0f891dcf8bb874afc068ad9200",
+      "modelGovernanceManifest": "64f9e4073b0ca5d7188b33a6d444e05e8933a2dbdac1e3bd66b0d4751ce268bc",
+      "foodVocabularyCrosswalkManifest": "cca1faa9e4489f70bfd5fe50c64a81dfe5e53378cdc3a33c8d3de12858b5688e",
+      "interoperabilityProfilesManifest": "df185c4e3434731689fb05ec45a78c4ac478812eac9f34a21d75c6035cad4a47",
+      "interoperabilityReadinessProfilesManifest": "fe81c27f5a1d3d8091870e77bf8d05c74b1f7c2cc411c0e64c11a80f4c0bc54e",
+      "interoperabilityRulesManifest": "5aa9c3569c3461397c7a9a7fdaa317f3590ee975e7c74cdbff7a2e7aa3857e70",
+      "interoperabilityRemediationActionsManifest": "fd884a236a6f34989ea1358ab57ba2379e968c3414ac70e0fbcecbb276b7735e",
+      "readinessProfilesManifest": "a9435648525298f9e297964dbb04beb957b8f09ed9f852b3317efacedf397773",
+      "regulatoryRulesManifest": "7af591fbee7b52e49b708d6add11eb57bd6969d3cb507659a39b98654e48de21",
+      "sanitisationRulesManifest": "2627a95a0cea99b81a1900c272f701b26ffc6d08937e9e2e611c0060e9634c3b",
+      "contractsManifest": "87c224ec95943bfad6596ee0ba94a6719d468441998e8abcbd3f3244a53e1136",
+      "examplesManifest": "5949de6f414d0dec28d70364ecc9bb65e22790680e007984a5011def04093807",
+      "defaultsManifest": "232f06e93d662996a221eaa618052c5aa76991a1f3518800450365b0666365ab",
+      "validationManifest": "14573f98896e0990b516dff83cb16291f99984a9a8d6e1874b29e50d0c48faeb"
+    }
+  },
+  "sourceGovernanceSnapshot": [
+    {
+      "sourceId": "efsa.mercury.fish_consumption.2026",
+      "title": "Frequency of consumption of different species of fish, crustaceans and molluscs and the effectiveness of national advice in relation to mercury contamination",
+      "organization": "EFSA",
+      "kind": "official_event_annex",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2026-02-12",
+      "url": "https://www.efsa.europa.eu/sites/default/files/event/ANNEX%208.4.pdf",
+      "originTag": "official_regulatory",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA published this official annex on 12 February 2026 covering the frequency of consumption of different fish, crustacean, and mollusc species and the effectiveness of national advice related to mercury contamination.",
+        "Used in Dietary MCP as current official context for species-sensitive fish and seafood review, especially for high consumers and pregnancy-related advisory questions."
+      ]
+    },
+    {
+      "sourceId": "efsa.mercury.food.2012",
+      "title": "Scientific Opinion on the risk for public health related to the presence of mercury and methylmercury in food",
+      "organization": "EFSA",
+      "kind": "official_scientific_opinion",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2012-12-20",
+      "url": "https://www.efsa.europa.eu/sites/default/files/scientific_output/files/main_documents/2985.pdf",
+      "originTag": "official_regulatory",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA adopted the mercury and methylmercury opinion on 22 November 2012 and published it on 20 December 2012.",
+        "The opinion established a TWI of 1.3 micrograms per kilogram body weight per week for methylmercury and 4 micrograms per kilogram body weight per week for inorganic mercury."
+      ]
+    },
+    {
+      "sourceId": "efsa.metals.topic.2026",
+      "title": "Metals as contaminants in food",
+      "organization": "EFSA",
+      "kind": "official_topic_page",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2026-01-06",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food",
+      "originTag": "official_regulatory",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Current EFSA topic page summarising risk assessments and legal context for arsenic, cadmium, lead, mercury and other metals as contaminants in food.",
+        "Used in Dietary MCP as a maintained official context source for metals-contaminant governance."
+      ]
+    },
+    {
+      "sourceId": "eu.reg.2023_915",
+      "title": "Commission Regulation (EU) 2023/915 on maximum levels for certain contaminants in food",
+      "organization": "European Union",
+      "kind": "official_legal_act",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2023-04-25",
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/915/oj/eng",
+      "originTag": "official_regulatory",
+      "submissionUse": "allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Binding EU contaminant regulation that includes maximum levels for trace elements, PFAS, and other contaminants in food.",
+        "Used in Dietary MCP as a shared EU legal anchor for PFAS, cadmium, lead, and mercury food-contaminant governance."
+      ]
+    },
+    {
+      "sourceId": "eu.reg.333_2007",
+      "title": "Commission Regulation (EC) No 333/2007 laying down the methods of sampling and analysis for the official control of the levels of trace elements and processing contaminants in foodstuffs",
+      "organization": "European Union",
+      "kind": "official_legal_act",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2024-04-30",
+      "url": "https://eur-lex.europa.eu/eli/reg/2007/333/2024-04-30/eng",
+      "originTag": "official_regulatory",
+      "submissionUse": "allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Current consolidated EU official-control regulation covering sampling and analysis requirements for trace elements and processing contaminants in foodstuffs.",
+        "Used in Dietary MCP as the shared official-control source anchor for cadmium, lead, inorganic arsenic, and mercury food-contaminant governance."
+      ]
+    }
+  ],
+  "modelGovernanceSnapshot": null,
+  "emergingContaminantSnapshot": {
+    "familyId": "mercury_food_contaminants",
+    "displayName": "Mercury food contaminants and dietary exposure watchlist",
+    "jurisdictions": [
+      "eu",
+      "global"
+    ],
+    "methodMaturityStatus": "established",
+    "evidenceSupportStatus": "established",
+    "submissionUse": "allowed",
+    "sourceIds": [
+      "efsa.mercury.food.2012",
+      "efsa.metals.topic.2026",
+      "eu.reg.2023_915",
+      "eu.reg.333_2007"
+    ],
+    "methodIds": [
+      "efsa.mercury.food.2012_opinion",
+      "eu.mercury.official_control.333_2007"
+    ],
+    "defaultReadinessProfileIds": [
+      "mercury_internal_review",
+      "mercury_consultation_exploratory",
+      "mercury_submission_candidate"
+    ],
+    "hardFailureProfiles": [],
+    "notes": [
+      "This family is exposed as a governed mercury food contaminants and dietary exposure watchlist with explicit EFSA and EU legal provenance.",
+      "Submission-oriented use is allowed when the dossier meets standard governance and fingerprint requirements."
+    ]
+  },
+  "legalLimitReviews": [
+    {
+      "contaminantFamily": "mercury_food_contaminants",
+      "jurisdiction": "eu",
+      "substanceKey": null,
+      "commodityCode": null,
+      "matrixGroup": "broad_food_supply",
+      "authority": null,
+      "requestedLaneStatus": "no_curated_family_coverage",
+      "curatedScopeCommodityCodes": [],
+      "curatedScopeMatrixGroups": [],
+      "legalAuthorities": [],
+      "matchedRecords": [],
+      "coverageSummaries": [],
+      "overallSubmissionUse": "review_required",
+      "qualityFlags": [
+        {
+          "code": "coverage_gap",
+          "severity": "warning",
+          "message": "No governed contaminant legal-limit coverage is currently curated for family `mercury_food_contaminants` in jurisdiction `eu`."
+        },
+        {
+          "code": "no_jurisdiction_specific_legal_limit",
+          "severity": "warning",
+          "message": "No jurisdiction-specific contaminant legal limit matched the requested lane for `eu`."
+        },
+        {
+          "code": "no_curated_legal_limit_for_requested_lane",
+          "severity": "warning",
+          "message": "No curated contaminant legal-limit record matched matrix `broad_food_supply` in `eu`."
+        }
+      ],
+      "notes": [
+        "No governed contaminant legal-limit records matched the requested filters.",
+        "Jurisdiction-specific contaminant legal-limit gaps are surfaced explicitly instead of borrowing values from another authority or matrix."
+      ]
+    },
+    {
+      "contaminantFamily": "mercury_food_contaminants",
+      "jurisdiction": "eu",
+      "substanceKey": null,
+      "commodityCode": null,
+      "matrixGroup": "fish_and_seafood",
+      "authority": null,
+      "requestedLaneStatus": "no_curated_family_coverage",
+      "curatedScopeCommodityCodes": [],
+      "curatedScopeMatrixGroups": [],
+      "legalAuthorities": [],
+      "matchedRecords": [],
+      "coverageSummaries": [],
+      "overallSubmissionUse": "review_required",
+      "qualityFlags": [
+        {
+          "code": "coverage_gap",
+          "severity": "warning",
+          "message": "No governed contaminant legal-limit coverage is currently curated for family `mercury_food_contaminants` in jurisdiction `eu`."
+        },
+        {
+          "code": "no_jurisdiction_specific_legal_limit",
+          "severity": "warning",
+          "message": "No jurisdiction-specific contaminant legal limit matched the requested lane for `eu`."
+        },
+        {
+          "code": "no_curated_legal_limit_for_requested_lane",
+          "severity": "warning",
+          "message": "No curated contaminant legal-limit record matched matrix `fish_and_seafood` in `eu`."
+        }
+      ],
+      "notes": [
+        "No governed contaminant legal-limit records matched the requested filters.",
+        "Jurisdiction-specific contaminant legal-limit gaps are surfaced explicitly instead of borrowing values from another authority or matrix."
+      ]
+    },
+    {
+      "contaminantFamily": "mercury_food_contaminants",
+      "jurisdiction": "eu",
+      "substanceKey": null,
+      "commodityCode": null,
+      "matrixGroup": "large_predatory_fish",
+      "authority": null,
+      "requestedLaneStatus": "no_curated_family_coverage",
+      "curatedScopeCommodityCodes": [],
+      "curatedScopeMatrixGroups": [],
+      "legalAuthorities": [],
+      "matchedRecords": [],
+      "coverageSummaries": [],
+      "overallSubmissionUse": "review_required",
+      "qualityFlags": [
+        {
+          "code": "coverage_gap",
+          "severity": "warning",
+          "message": "No governed contaminant legal-limit coverage is currently curated for family `mercury_food_contaminants` in jurisdiction `eu`."
+        },
+        {
+          "code": "no_jurisdiction_specific_legal_limit",
+          "severity": "warning",
+          "message": "No jurisdiction-specific contaminant legal limit matched the requested lane for `eu`."
+        },
+        {
+          "code": "no_curated_legal_limit_for_requested_lane",
+          "severity": "warning",
+          "message": "No curated contaminant legal-limit record matched matrix `large_predatory_fish` in `eu`."
+        }
+      ],
+      "notes": [
+        "No governed contaminant legal-limit records matched the requested filters.",
+        "Jurisdiction-specific contaminant legal-limit gaps are surfaced explicitly instead of borrowing values from another authority or matrix."
+      ]
+    }
+  ],
+  "pinnedResources": [
+    {
+      "role": "source_catalog_manifest",
+      "uri": "source-catalog://manifest",
+      "sha256": "3fb567020dc2bbae21dba715c49ff951e4efb7ce5c9e78216500d459bba3c21f",
+      "description": "Manifest fingerprint for the governed source catalog available during contaminant monitoring review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "reference_values_manifest",
+      "uri": "reference-values://manifest",
+      "sha256": "9563d3171bc70284f2e4c581aafc70f39ab80f017c703e3425ccf6ca402111fd",
+      "description": "Manifest fingerprint for governed reference-value records available during contaminant monitoring review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "contaminant_legal_limits_manifest",
+      "uri": "contaminant-legal-limits://manifest",
+      "sha256": "0664f4d570ccb36aa70877ffbf6addbbce1b42d2fda2adef33ed8d846ad09a67",
+      "description": "Manifest fingerprint for governed contaminant legal-limit records available during contaminant monitoring review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "contaminant_legal_limits_family",
+      "uri": "contaminant-legal-limits://family/mercury_food_contaminants",
+      "sha256": "47baf115d98d3275480c90079405ed46c7e820fcc38b0ad4ff19366d8600fe8d",
+      "description": "Family-scoped contaminant legal-limit payload fingerprint used to keep legal-limit support explicit during review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "consumption_datasets_manifest",
+      "uri": "consumption-datasets://manifest",
+      "sha256": "c6a25b002ac18dea4c6cab112d5cda93a93f12d594f5874c50f605b979bde545",
+      "description": "Manifest fingerprint for governed consumption-dataset records available during contaminant monitoring review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "method_registry_manifest",
+      "uri": "method-registry://manifest",
+      "sha256": "d016cabfdbd55f02deef2644ad248876d72cfc565d1f2487b148c183e90adb39",
+      "description": "Manifest fingerprint for governed method-registry records available during contaminant monitoring review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "legal_authorities_manifest",
+      "uri": "legal-authorities://manifest",
+      "sha256": "5c02a479dc8eb3d1aac812709a0074b99dc330761b4d13f97c9dc63e1f7fb018",
+      "description": "Manifest fingerprint for governed legal-authority records available during contaminant monitoring review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "jurisdiction_coverage_manifest",
+      "uri": "jurisdiction-coverage://manifest",
+      "sha256": "c5e2c133cffdf26a5f7e35202d98ad89a5d14d0f891dcf8bb874afc068ad9200",
+      "description": "Manifest fingerprint for machine-readable jurisdiction coverage posture available during contaminant monitoring review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "occurrence_evidence_manifest",
+      "uri": "occurrence-evidence://manifest",
+      "sha256": "13f7a8c89e3bb3c9f2900a689f702b7834bb2ca19201e926f5a0bfe6878e7a54",
+      "description": "Manifest fingerprint for governed occurrence-evidence records available during contaminant monitoring review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "occurrence_evidence_family",
+      "uri": "occurrence-evidence://family/mercury_food_contaminants",
+      "sha256": "52e3a253d481629d22bb4c6002c521e57b7e35f743187f11954e0e71d0bceaca",
+      "description": "Exact governed occurrence-evidence family payload fingerprint used during review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "analytical_method_evidence_manifest",
+      "uri": "analytical-method-evidence://manifest",
+      "sha256": "ecd1fb8027044a61aa35b1e1297b9c230b549d517e67fe24baec806d491e0b25",
+      "description": "Manifest fingerprint for governed analytical-method-evidence records available during contaminant monitoring review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "analytical_method_evidence_family",
+      "uri": "analytical-method-evidence://family/mercury_food_contaminants",
+      "sha256": "9d3eb7104325b2d32fcaa52210b917203664123d6afe3f10ea6f065378b53fca",
+      "description": "Exact governed analytical-method-evidence family payload fingerprint used during review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "reporting_profiles_manifest",
+      "uri": "reporting-profiles://manifest",
+      "sha256": "69dadf23060b7332d6756799efea52a0b15c44af85d1449d3df6c9fdb418e42c",
+      "description": "Manifest fingerprint for governed reporting-profile records available during contaminant monitoring review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "metals_review_focus_manifest",
+      "uri": "metals-review-focus://manifest",
+      "sha256": "c6b046b073e62a36445e9f067bf93914d35e92116229a3050953298f86ef9d2c",
+      "description": "Manifest fingerprint for governed review-focus records available during contaminant monitoring review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "emerging_contaminants_manifest",
+      "uri": "emerging-contaminants://manifest",
+      "sha256": "244fb660b79f81ffc80933cfd84cfd1294682eebe79f4dfc0c6eea315ee61173",
+      "description": "Manifest fingerprint for governed emerging-contaminant family records available during review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "emerging_contaminant_family",
+      "uri": "emerging-contaminants://family/mercury_food_contaminants",
+      "sha256": "feeacc30449db57a3c6a1436d2e6d17db14166dc7cf1bb1e5fa0aaf14dc0a055",
+      "description": "Exact governed emerging-contaminant family record fingerprint used during review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "interpretation_documentation",
+      "uri": "docs://contaminant-monitoring-interpretation",
+      "sha256": "b96207daae237ff5fbee38df42291c5e7a4cc06aa235d0d976363f33ceb550e9",
+      "description": "Operator documentation fingerprint for the contaminant monitoring interpretation bundle workflow.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "signoff_documentation",
+      "uri": "docs://contaminant-monitoring-signoff",
+      "sha256": "7b03d7f0114f6c69a77e576248035176f05f20fa09f019d749890a5ef5ad9f4d",
+      "description": "Operator documentation fingerprint for the contaminant monitoring signoff packet workflow.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "occurrence_documentation",
+      "uri": "docs://occurrence-evidence-registry",
+      "sha256": "d7d8144718140a5df4cb6d0a47ca2eb2d03a55c337018248c34d34e92fd07f2d",
+      "description": "Operator documentation fingerprint for governed occurrence-evidence records.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "analytical_method_documentation",
+      "uri": "docs://analytical-method-evidence-registry",
+      "sha256": "d3de36cd06c15ba0f76e473d1feb6b318093c01478c5801abdc333eb58fd6b7b",
+      "description": "Operator documentation fingerprint for governed analytical-method-evidence records.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "reporting_profiles_documentation",
+      "uri": "docs://reporting-profiles-registry",
+      "sha256": "d781961a4f36be170448f2ae6e00be472c856f3e00e649c4ed3a61ada11a19d0",
+      "description": "Operator documentation fingerprint for governed reporting-profile usage and non-substitution posture.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "contaminant_legal_limits_jurisdiction",
+      "uri": "contaminant-legal-limits://jurisdiction/eu",
+      "sha256": "b817710b581e5a8cd12ca5061f9fdaafbf543e1aeb8cefc97cb06a7f1ded015d",
+      "description": "Jurisdiction-scoped contaminant legal-limit payload fingerprint used to keep support depth explicit during review.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "jurisdiction_coverage_jurisdiction",
+      "uri": "jurisdiction-coverage://jurisdiction/eu",
+      "sha256": "b817710b581e5a8cd12ca5061f9fdaafbf543e1aeb8cefc97cb06a7f1ded015d",
+      "description": "Jurisdiction-scoped coverage posture fingerprint used to prevent overreading partial or missing legal-limit support.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    },
+    {
+      "role": "metals_review_focus_family",
+      "uri": "metals-review-focus://family/mercury_food_contaminants",
+      "sha256": "6d59d47280a798407abd58d45350e015cdb4e75bea3a27c58b0444bafccf1460",
+      "description": "Exact governed review-focus family payload fingerprint linked from the monitoring interpretation bundle.",
+      "confidentialityTag": "public",
+      "sanitisationState": "retained"
+    }
+  ],
+  "escalationRequired": true,
+  "escalationActionIds": [
+    "review_governance_links"
+  ],
+  "sanitisationRecords": [
+    {
+      "targetPath": "pinned_resources.release_metadata_report",
+      "targetKind": "resource",
+      "confidentialityTag": "confidential",
+      "sanitisationState": "removed",
+      "replacementMarker": {
+        "type": "removed_resource",
+        "reason": "confidential_resource",
+        "resourceRole": "release_metadata_report"
+      },
+      "note": "Confidential pinned resources are omitted from sanitised public dossiers."
+    }
+  ],
+  "limitations": [
+    {
+      "code": "version_pinned_not_signed",
+      "message": "This dossier is version-pinned through release and resource fingerprints but is not cryptographically signed in v0.1."
+    },
+    {
+      "code": "review_only_contaminant_monitoring_dossier",
+      "message": "This dossier records contaminant monitoring review and escalation posture only and does not represent a native exposure engine or final regulatory decision package."
+    },
+    {
+      "code": "legal_limit_scope.broad_food_supply",
+      "message": "EU does not currently ship curated contaminant legal-limit coverage for matrix group `broad_food_supply`. No cross-jurisdiction or cross-matrix borrowing is implied."
+    },
+    {
+      "code": "legal_limit_scope.fish_and_seafood",
+      "message": "EU does not currently ship curated contaminant legal-limit coverage for matrix group `fish_and_seafood`. No cross-jurisdiction or cross-matrix borrowing is implied."
+    },
+    {
+      "code": "legal_limit_scope.large_predatory_fish",
+      "message": "EU does not currently ship curated contaminant legal-limit coverage for matrix group `large_predatory_fish`. No cross-jurisdiction or cross-matrix borrowing is implied."
+    },
+    {
+      "code": "sanitised_public_bundle",
+      "message": "Sanitised public dossier omits confidential fields and resources and should not be treated as a complete internal review record."
+    }
+  ],
+  "notes": [
+    "Sanitised public dossier derived from a version-pinned internal review dossier.",
+    "Retained provenance and pinned fingerprints remain machine-readable for public review of non-confidential content.",
+    "Sanitised public contaminant monitoring dossier preserves legal-limit review posture so partial, anchor-only, or missing jurisdiction support remains explicit in non-confidential exchange.",
+    "Version-pinned dossier captures the exact release metadata hashes and governed contaminant-monitoring manifests used during review.",
+    "Escalation items are derived only from explicit waivers and unresolved blocking actions recorded in the signoff packet.",
+    "This dossier captures a governed review state and escalation posture only; it does not certify scientific correctness, submission readiness, or a submission-capable contaminant monitoring decision package.",
+    "Family- and jurisdiction-scoped contaminant legal-limit payloads are pinned so exact, partial, anchor-only, or missing support remains explicit in downstream review.",
+    "At least one reviewer waiver or unresolved blocking action remains visible in the dossier escalation overlay."
+  ]
+}

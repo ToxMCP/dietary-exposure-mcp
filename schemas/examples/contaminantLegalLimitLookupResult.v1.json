@@ -1,0 +1,101 @@
+{
+  "contaminant_family": "inorganic_arsenic_food_contaminants",
+  "jurisdiction": "cn",
+  "substance_key": "inorganic_arsenic",
+  "commodity_code": "rice",
+  "matrix_group": null,
+  "authority": null,
+  "requested_lane_status": "exact_curated_match",
+  "curated_scope_commodity_codes": [
+    "rice"
+  ],
+  "curated_scope_matrix_groups": [
+    "fish",
+    "grain",
+    "processed_infant_food"
+  ],
+  "legal_authorities": [
+    {
+      "authority_id": "cn.nhc.inorganic_arsenic.gb_2762_2025",
+      "title": "National Food Safety Standard - Maximum Levels of Contaminants in Foods",
+      "citation": "GB 2762-2025",
+      "jurisdiction": "cn",
+      "contaminant_family": "inorganic_arsenic_food_contaminants",
+      "regulatory_role": "binding",
+      "document_status": "final_current",
+      "submission_use": "allowed",
+      "source_id": "cn.nhc.gb2762.2025.announcement",
+      "notes": [
+        "Official current Chinese contaminant legal anchor for inorganic arsenic in wave 1."
+      ]
+    }
+  ],
+  "matched_records": [
+    {
+      "record_id": "cn.nhc.inorganic_arsenic.rice.ml.2025",
+      "jurisdiction": "cn",
+      "contaminant_family": "inorganic_arsenic_food_contaminants",
+      "substance_key": "inorganic_arsenic",
+      "authority": "NHC China",
+      "legal_authority_id": "cn.nhc.inorganic_arsenic.gb_2762_2025",
+      "source_ids": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "limit_type": "maximum_level",
+      "matrix_groups": [
+        "grain"
+      ],
+      "commodity_codes": [
+        "rice"
+      ],
+      "focus_food_description": "Rice and rice flour.",
+      "limit_value": 0.2,
+      "unit": "mg/kg",
+      "expression_basis": "as sold",
+      "population_scope": "general_population",
+      "document_status": "final_current",
+      "submission_use": "allowed",
+      "effective_date": "2026-09-02",
+      "notes": [
+        "Exact GB 2762-2025 inorganic-arsenic ML extracted from the official standard text."
+      ]
+    }
+  ],
+  "coverage_summaries": [
+    {
+      "coverage_id": "cn.inorganic_arsenic_food_contaminants.inorganic_arsenic.wave1",
+      "jurisdiction": "cn",
+      "contaminant_family": "inorganic_arsenic_food_contaminants",
+      "substance_key": "inorganic_arsenic",
+      "coverage_level": "deep_curated",
+      "official_source_ids": [
+        "cn.nhc.gb2762.2025.announcement",
+        "cn.cfsa.gb2762.2025.standard_text"
+      ],
+      "legal_authority_ids": [
+        "cn.nhc.inorganic_arsenic.gb_2762_2025"
+      ],
+      "reference_value_record_ids": [],
+      "enforcement_record_ids": [],
+      "legal_limit_record_ids": [
+        "cn.nhc.inorganic_arsenic.rice.ml.2025",
+        "cn.nhc.inorganic_arsenic.fish.ml.2025",
+        "cn.nhc.inorganic_arsenic.infant_auxiliary_cereal_foods.ml.2025",
+        "cn.nhc.inorganic_arsenic.infant_canned_auxiliary_foods.non_aquatic_non_liver.ml.2025",
+        "cn.nhc.inorganic_arsenic.infant_canned_auxiliary_foods.aquatic_or_liver.ml.2025"
+      ],
+      "currency_metadata_complete": true,
+      "gap_reason": "No China jurisdiction-specific dietary reference-value layer is shipped; curated numeric legal-limit support currently reflects the exact GB 2762-2025 MLs extracted for this lane.",
+      "notes": [
+        "Wave-2 hardening upgraded this lane from anchor-only to deep-curated through exact GB 2762-2025 inorganic-arsenic ML extraction."
+      ]
+    }
+  ],
+  "overall_submission_use": "allowed",
+  "quality_flags": [],
+  "notes": [
+    "Machine-readable jurisdiction coverage summaries are attached for this legal-limit lane (deep_curated).",
+    "Jurisdiction-specific contaminant legal limits are preserved as published and are not borrowed across authorities."
+  ]
+}

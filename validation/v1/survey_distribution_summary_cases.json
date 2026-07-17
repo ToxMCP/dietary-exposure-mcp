@@ -1,0 +1,64 @@
+{
+  "version": "v1",
+  "cases": [
+    {
+      "name": "test_survey_distribution",
+      "datasetId": "test_survey",
+      "regionId": "eu",
+      "populationGroup": "adult_general",
+      "rawRecords": [
+        {
+          "subjectId": "s1",
+          "bodyWeightKg": 70.0,
+          "daysInSurvey": 2,
+          "commodityCode": "apples",
+          "consumptionKgPerDay": 0.4
+        },
+        {
+          "subjectId": "s2",
+          "bodyWeightKg": 70.0,
+          "daysInSurvey": 2,
+          "commodityCode": "apples",
+          "consumptionKgPerDay": 0.0
+        },
+        {
+          "subjectId": "s3",
+          "bodyWeightKg": 70.0,
+          "daysInSurvey": 2,
+          "commodityCode": "apples",
+          "consumptionKgPerDay": 0.6
+        },
+        {
+          "subjectId": "s4",
+          "bodyWeightKg": 70.0,
+          "daysInSurvey": 2,
+          "commodityCode": "apples",
+          "consumptionKgPerDay": 0.2
+        }
+      ],
+      "chemicalIdentity": {
+        "preferredName": "TestChemical"
+      },
+      "residueRecords": [
+        {
+          "commodityCode": "apples",
+          "residueConcentrationMgPerKg": 0.5,
+          "sourceType": "monitoring"
+        }
+      ],
+      "expectedTotalSubjects": 4,
+      "expectedConsumersOnlyCount": 3,
+      "expectedZeroIntakePrevalence": 0.25,
+      "expectedMeanMgPerKgBwPerDay": 0.002142857142857143,
+      "expectedPercentile95MgPerKgBwPerDay": 0.004071428571428571,
+      "expectedMaxMgPerKgBwPerDay": 0.004285714285714286,
+      "expectedPercentile99MgPerKgBwPerDay": 0.004242857142857143,
+      "expectedPercentile999MgPerKgBwPerDay": 0.004281428571428571,
+      "expectedConsumersOnlyMeanMgPerKgBwPerDay": 0.002857142857142857,
+      "expectedConsumersOnlyPercentile95MgPerKgBwPerDay": 0.004142857142857142,
+      "expectedConsumersOnlyPercentile99MgPerKgBwPerDay": 0.004257142857142857,
+      "expectedConsumersOnlyPercentile999MgPerKgBwPerDay": 0.004282857142857143,
+      "tolerance": 1e-12
+    }
+  ]
+}

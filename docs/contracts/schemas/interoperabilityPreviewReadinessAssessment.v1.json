@@ -1,0 +1,209 @@
+{
+  "$defs": {
+    "InteroperabilityReadinessProfile": {
+      "additionalProperties": false,
+      "properties": {
+        "profileId": {
+          "title": "Profileid",
+          "type": "string"
+        },
+        "displayName": {
+          "title": "Displayname",
+          "type": "string"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "intendedUse": {
+          "title": "Intendeduse",
+          "type": "string"
+        },
+        "allowedPreviewProfiles": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Allowedpreviewprofiles",
+          "type": "array"
+        },
+        "requiredDossierReadinessProfile": {
+          "title": "Requireddossierreadinessprofile",
+          "type": "string"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "profileId",
+        "displayName",
+        "jurisdiction",
+        "intendedUse",
+        "requiredDossierReadinessProfile"
+      ],
+      "title": "InteroperabilityReadinessProfile",
+      "type": "object"
+    },
+    "InteroperabilityRuleResult": {
+      "additionalProperties": false,
+      "properties": {
+        "ruleId": {
+          "title": "Ruleid",
+          "type": "string"
+        },
+        "profileId": {
+          "title": "Profileid",
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/ReadinessStatus"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "blocking": {
+          "default": false,
+          "title": "Blocking",
+          "type": "boolean"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Note"
+        }
+      },
+      "required": [
+        "ruleId",
+        "profileId",
+        "status",
+        "message"
+      ],
+      "title": "InteroperabilityRuleResult",
+      "type": "object"
+    },
+    "ReadinessStatus": {
+      "enum": [
+        "pass",
+        "review_required",
+        "fail"
+      ],
+      "title": "ReadinessStatus",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "overallStatus": {
+      "$ref": "#/$defs/ReadinessStatus"
+    },
+    "targetProfile": {
+      "$ref": "#/$defs/InteroperabilityReadinessProfile"
+    },
+    "sourcePreviewProfileId": {
+      "title": "Sourcepreviewprofileid",
+      "type": "string"
+    },
+    "linkedDossierReadinessProfile": {
+      "title": "Linkeddossierreadinessprofile",
+      "type": "string"
+    },
+    "linkedDossierReadinessStatus": {
+      "$ref": "#/$defs/ReadinessStatus"
+    },
+    "appliedRules": {
+      "items": {
+        "$ref": "#/$defs/InteroperabilityRuleResult"
+      },
+      "title": "Appliedrules",
+      "type": "array"
+    },
+    "blockingRules": {
+      "items": {
+        "$ref": "#/$defs/InteroperabilityRuleResult"
+      },
+      "title": "Blockingrules",
+      "type": "array"
+    },
+    "warningRules": {
+      "items": {
+        "$ref": "#/$defs/InteroperabilityRuleResult"
+      },
+      "title": "Warningrules",
+      "type": "array"
+    },
+    "missingRequiredFields": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Missingrequiredfields",
+      "type": "array"
+    },
+    "unsupportedFieldPaths": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unsupportedfieldpaths",
+      "type": "array"
+    },
+    "derivedMappingPaths": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Derivedmappingpaths",
+      "type": "array"
+    },
+    "reviewRequiredMappingPaths": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Reviewrequiredmappingpaths",
+      "type": "array"
+    },
+    "directMappingCount": {
+      "minimum": 0,
+      "title": "Directmappingcount",
+      "type": "integer"
+    },
+    "derivedMappingCount": {
+      "minimum": 0,
+      "title": "Derivedmappingcount",
+      "type": "integer"
+    },
+    "reviewRequiredMappingCount": {
+      "minimum": 0,
+      "title": "Reviewrequiredmappingcount",
+      "type": "integer"
+    },
+    "notes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "overallStatus",
+    "targetProfile",
+    "sourcePreviewProfileId",
+    "linkedDossierReadinessProfile",
+    "linkedDossierReadinessStatus",
+    "directMappingCount",
+    "derivedMappingCount",
+    "reviewRequiredMappingCount"
+  ],
+  "title": "InteroperabilityPreviewReadinessAssessment",
+  "type": "object"
+}

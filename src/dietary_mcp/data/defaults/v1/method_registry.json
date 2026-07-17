@@ -1,0 +1,725 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "method_registry",
+  "methods": [
+    {
+      "methodId": "efsa.primo.3_1_application",
+      "displayName": "EFSA PRIMo 3.1 application version",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "methodType": "dietary_exposure_model",
+      "currentVersionLabel": "3.1",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "tool_metadata",
+      "sourceIds": [
+        "efsa.primo"
+      ],
+      "modelFamily": "efsa_primo_adapter",
+      "notes": [
+        "Official PRIMo application boundary preserved as governed method metadata.",
+        "Dietary MCP does not implement PRIMo 3.1 natively; the adapter family remains a compatibility harness only."
+      ]
+    },
+    {
+      "methodId": "efsa.primo.4_transition_report",
+      "displayName": "EFSA PRIMo revision 4 transition report",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "methodType": "dietary_exposure_model_transition",
+      "currentVersionLabel": "4",
+      "maturityStatus": "transitional",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.primo",
+        "efsa.primo.rev4.report.2024"
+      ],
+      "modelFamily": "efsa_primo_adapter",
+      "notes": [
+        "Governed transition metadata for PRIMo revision 4 public rollout.",
+        "Retained separately from the current application version so clients can distinguish public transition context from submission-capable use."
+      ]
+    },
+    {
+      "methodId": "epa.deem.4_02",
+      "displayName": "EPA DEEM-FCID Version 4.02",
+      "authority": "US EPA",
+      "jurisdiction": "us",
+      "contaminantFamily": "pesticide_residue",
+      "methodType": "dietary_exposure_model",
+      "currentVersionLabel": "4.02",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "tool_metadata",
+      "sourceIds": [
+        "epa.deem.fcid.4_02",
+        "epa.deem.errata"
+      ],
+      "modelFamily": "epa_deem_adapter",
+      "notes": [
+        "Governed DEEM metadata preserved separately from the internal Dietary MCP adapter harness."
+      ]
+    },
+    {
+      "methodId": "jmpr.iedi_iesti",
+      "displayName": "JMPR IEDI and IESTI dietary risk methods",
+      "authority": "JMPR",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "pesticide_residue",
+      "methodType": "dietary_risk_assessment_methodology",
+      "currentVersionLabel": "public_toolkit_summary",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "fao.jmpr.dietary_risks.toolkit",
+        "who.gems.food.cluster_diets.2012"
+      ],
+      "notes": [
+        "Governed global methodology metadata for IEDI and IESTI support."
+      ]
+    },
+    {
+      "methodId": "oecd.residue_definition.guidance",
+      "displayName": "OECD residue-definition guidance",
+      "authority": "OECD",
+      "jurisdiction": "global",
+      "contaminantFamily": "pesticide_residue",
+      "methodType": "residue_definition_guidance",
+      "currentVersionLabel": "second_edition",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "oecd.residue.definition.2006"
+      ],
+      "notes": [
+        "Governed OECD residue-definition guidance metadata."
+      ]
+    },
+    {
+      "methodId": "oecd.analytical_methods.guidance",
+      "displayName": "OECD pesticide residue analytical methods guidance",
+      "authority": "OECD",
+      "jurisdiction": "global",
+      "contaminantFamily": "pesticide_residue",
+      "methodType": "analytical_method_guidance",
+      "currentVersionLabel": "2017",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "oecd.analytical_methods.2017"
+      ],
+      "notes": [
+        "Governed OECD analytical-method guidance metadata."
+      ]
+    },
+    {
+      "methodId": "oecd.processed_commodities.guidance",
+      "displayName": "OECD processed-commodities guidance",
+      "authority": "OECD",
+      "jurisdiction": "global",
+      "contaminantFamily": "pesticide_residue",
+      "methodType": "processed_commodity_guidance",
+      "currentVersionLabel": "2008",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "oecd.processed_commodities.2008"
+      ],
+      "notes": [
+        "Governed OECD processed-commodity guidance metadata."
+      ]
+    },
+    {
+      "methodId": "efsa.pesticide_residues.2023_annual_report",
+      "displayName": "EFSA 2023 EU pesticide-residues annual report context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "methodType": "official_monitoring_assessment_report",
+      "currentVersionLabel": "2023_monitoring_cycle",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.pesticide_residues.food.2025",
+        "eu.reg.396_2005"
+      ],
+      "notes": [
+        "Governed public monitoring-assessment metadata for the 2023 annual EU pesticide residues report.",
+        "Retained as review context and audit support, not as a native residue-monitoring engine."
+      ]
+    },
+    {
+      "methodId": "efsa.pesticide_residues.2023_national_summary",
+      "displayName": "EFSA 2023 national pesticide-residue summary context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "methodType": "official_monitoring_support_context",
+      "currentVersionLabel": "2023_member_state_summary_cycle",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.pesticide_residues.national_summary.2025",
+        "eu.reg.396_2005"
+      ],
+      "notes": [
+        "Governed audit-trail metadata for the Member State national summary reports linked to the 2023 EU pesticide residues cycle.",
+        "Retained as review context and documentation support, not as a native monitoring database."
+      ]
+    },
+    {
+      "methodId": "efsa.ethiprole.residue_definitions_and_trv.2024",
+      "displayName": "EFSA ethiprole residue-definition and TRV review 2024",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "methodType": "substance_specific_trv_and_residue_definition_review",
+      "currentVersionLabel": "2024_review",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.ethiprole.trv.2024",
+        "eu.reg.396_2005"
+      ],
+      "notes": [
+        "Governed EFSA review metadata for ethiprole residue definitions and toxicological reference values in a rice-focused import-tolerance context.",
+        "Retained as review context for evidence linkage and audit support, not as a native residue-review engine."
+      ]
+    },
+    {
+      "methodId": "efsa.tetraconazole.mrl_review.2019",
+      "displayName": "EFSA tetraconazole MRL and residue-definition review 2019",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "methodType": "substance_specific_trv_and_residue_definition_review",
+      "currentVersionLabel": "2019_mrl_opinion",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.tetraconazole.mrl_opinion.2019",
+        "eu.reg.396_2005"
+      ],
+      "notes": [
+        "Governed EFSA review metadata for tetraconazole residue definitions, toxicological reference values, and analytical enforcement in a kaki, linseed, and poppy-seed context.",
+        "Retained as review context for evidence linkage and audit support, not as a native residue-review engine."
+      ]
+    },
+    {
+      "methodId": "efsa.tebuconazole.mrl_review.2013",
+      "displayName": "EFSA tebuconazole poppy-seed MRL review 2013",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "methodType": "substance_specific_trv_and_residue_definition_review",
+      "currentVersionLabel": "2013_mrl_opinion",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.tebuconazole.mrl_opinion.2013",
+        "eu.reg.396_2005"
+      ],
+      "notes": [
+        "Governed EFSA review metadata for tebuconazole residue-review context in poppy seed, including analytical enforcement availability and consumer-risk screening against EFSA toxicological reference values.",
+        "Retained as review context for evidence linkage and audit support, not as a native residue-review engine."
+      ]
+    },
+    {
+      "methodId": "efsa.glufosinate.mrl_review.2015",
+      "displayName": "EFSA glufosinate MRL review 2015",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "methodType": "substance_specific_trv_and_residue_definition_review",
+      "currentVersionLabel": "2015_article_12_review",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.glufosinate.mrl_review.2015",
+        "efsa.glufosinate.call_for_data.2024",
+        "eu.reg.396_2005"
+      ],
+      "notes": [
+        "Governed EFSA review metadata for glufosinate residue definitions, PRIMo-based consumer screening, and the current Article 43 re-evaluation context.",
+        "Retained as review context for evidence linkage and audit support, not as a native residue-review engine."
+      ]
+    },
+    {
+      "methodId": "efsa.oxamyl.peer_review.2022",
+      "displayName": "EFSA oxamyl peer review 2022",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "methodType": "substance_specific_trv_and_residue_definition_review",
+      "currentVersionLabel": "2022_peer_review_and_2023_statement_context",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.oxamyl.peer_review.2022",
+        "efsa.oxamyl.statement.2023",
+        "eu.reg.396_2005"
+      ],
+      "notes": [
+        "Governed EFSA review metadata for oxamyl residue-review context across potatoes, tomatoes, cucurbits, peppers, aubergines, and related consumer-protection follow-up.",
+        "Retained as review context for evidence linkage and audit support, not as a native residue-review engine."
+      ]
+    },
+    {
+      "methodId": "efsa.microplastics.food_statement.2016",
+      "displayName": "EFSA microplastics food statement 2016",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "microplastics_emerging",
+      "methodType": "emerging_contaminant_scientific_statement",
+      "currentVersionLabel": "2016_statement",
+      "maturityStatus": "emerging",
+      "evidenceSupportStatus": "limited",
+      "submissionUse": "not_allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.microplastics.statement.2016"
+      ],
+      "notes": [
+        "Governed EFSA source for microplastics evidence limits and method immaturity.",
+        "This record is intentionally isolated from pesticide-residue method support."
+      ]
+    },
+    {
+      "methodId": "fda.microplastics.foods.current",
+      "displayName": "FDA current position on microplastics and nanoplastics in foods",
+      "authority": "US FDA",
+      "jurisdiction": "us",
+      "contaminantFamily": "microplastics_emerging",
+      "methodType": "emerging_contaminant_regulatory_position",
+      "currentVersionLabel": "current_page",
+      "maturityStatus": "emerging",
+      "evidenceSupportStatus": "limited",
+      "submissionUse": "not_allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "fda.microplastics.foods"
+      ],
+      "notes": [
+        "Governed FDA source for the current state of methods and risk conclusions related to microplastics in foods."
+      ]
+    },
+    {
+      "methodId": "who.microplastics.oral_exposure",
+      "displayName": "WHO oral exposure review for nano- and microplastics",
+      "authority": "WHO",
+      "jurisdiction": "global",
+      "contaminantFamily": "microplastics_emerging",
+      "methodType": "emerging_contaminant_review",
+      "currentVersionLabel": "2022_report",
+      "maturityStatus": "emerging",
+      "evidenceSupportStatus": "limited",
+      "submissionUse": "not_allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "who.microplastics.oral_exposure.2022"
+      ],
+      "notes": [
+        "Governed WHO review metadata for oral-exposure evidence on microplastics and nanoplastics."
+      ]
+    },
+    {
+      "methodId": "efsa.pfas.food.2020_opinion",
+      "displayName": "EFSA PFAS in food 2020 scientific opinion",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pfas_food_contaminants",
+      "methodType": "contaminant_risk_assessment_opinion",
+      "currentVersionLabel": "2020_twi_opinion",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.pfas.food.2020",
+        "efsa.pfas.topic.2026"
+      ],
+      "notes": [
+        "Governed EFSA PFAS food-contaminant opinion metadata used to anchor TWI provenance and exposure context.",
+        "Dietary MCP does not treat this as a native PFAS calculation engine."
+      ]
+    },
+    {
+      "methodId": "ec.pfas.monitoring.2022_2025",
+      "displayName": "EC PFAS in food monitoring recommendation 2022-2025",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pfas_food_contaminants",
+      "methodType": "occurrence_monitoring_programme",
+      "currentVersionLabel": "2022_2025",
+      "maturityStatus": "transitional",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "eu.reco.2022_1431",
+        "efsa.pfas.topic.2026"
+      ],
+      "notes": [
+        "Governed EU monitoring-programme metadata for PFAS occurrence data collection in food.",
+        "Published as monitoring support context rather than as a public occurrence dataset extract."
+      ]
+    },
+    {
+      "methodId": "efsa.acrylamide.food.2015_opinion",
+      "displayName": "EFSA acrylamide in food 2015 scientific opinion",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "acrylamide_process_contaminants",
+      "methodType": "process_contaminant_risk_assessment_opinion",
+      "currentVersionLabel": "2015_opinion",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.acrylamide.food.2015"
+      ],
+      "notes": [
+        "Governed EFSA acrylamide opinion metadata used to anchor benchmark-dose provenance and dietary exposure context.",
+        "Dietary MCP does not treat this as a native acrylamide calculation engine."
+      ]
+    },
+    {
+      "methodId": "eu.acrylamide.mitigation.2017",
+      "displayName": "EU acrylamide mitigation and benchmark-level regulation",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminantFamily": "acrylamide_process_contaminants",
+      "methodType": "process_contaminant_mitigation_regulation",
+      "currentVersionLabel": "2017_2158",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "eu.reg.2017_2158"
+      ],
+      "notes": [
+        "Governed EU regulatory metadata for mitigation measures and benchmark levels for acrylamide in food."
+      ]
+    },
+    {
+      "methodId": "eu.acrylamide.monitoring.2019",
+      "displayName": "EU acrylamide monitoring recommendation 2019",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminantFamily": "acrylamide_process_contaminants",
+      "methodType": "occurrence_monitoring_programme",
+      "currentVersionLabel": "2019_1888",
+      "maturityStatus": "transitional",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "eu.reco.2019_1888",
+        "efsa.acrylamide.food.2015"
+      ],
+      "notes": [
+        "Governed EU monitoring-programme metadata for acrylamide occurrence data collection and reporting to EFSA."
+      ]
+    },
+    {
+      "methodId": "efsa.bpa.food.2023_opinion",
+      "displayName": "EFSA BPA in foodstuffs 2023 scientific opinion",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "bisphenol_food_contact_migration",
+      "methodType": "food_contact_migration_risk_assessment_opinion",
+      "currentVersionLabel": "2023_tdi_opinion",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.bpa.food.2023",
+        "efsa.bisphenol.topic.2026"
+      ],
+      "notes": [
+        "Governed EFSA BPA opinion metadata used to anchor TDI provenance and dietary foodstuffs exposure context.",
+        "Dietary MCP does not treat this as a native food-contact migration engine."
+      ]
+    },
+    {
+      "methodId": "eu.bpa.fcm.2024_3190",
+      "displayName": "EU BPA and bisphenol food-contact regulation 2024",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminantFamily": "bisphenol_food_contact_migration",
+      "methodType": "food_contact_material_regulation",
+      "currentVersionLabel": "2024_3190",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "eu.reg.2024_3190",
+        "efsa.bisphenol.topic.2026"
+      ],
+      "notes": [
+        "Governed EU food-contact regulation metadata for BPA and other hazardous bisphenols.",
+        "Published as legal-context support rather than as a native migration model."
+      ]
+    },
+    {
+      "methodId": "efsa.cadmium.food.2009_opinion",
+      "displayName": "EFSA cadmium in food 2009 scientific opinion",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "cadmium_food_contaminants",
+      "methodType": "metals_contaminant_risk_assessment_opinion",
+      "currentVersionLabel": "2009_twi_opinion",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.cadmium.food.2009",
+        "efsa.metals.topic.2026"
+      ],
+      "notes": [
+        "Governed EFSA cadmium opinion metadata used to anchor TWI provenance and dietary exposure context.",
+        "Dietary MCP does not treat this as a native cadmium calculation engine."
+      ]
+    },
+    {
+      "methodId": "efsa.cadmium.exposure.2012_report",
+      "displayName": "EFSA cadmium dietary exposure report 2012",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "cadmium_food_contaminants",
+      "methodType": "dietary_exposure_assessment_report",
+      "currentVersionLabel": "2012_exposure_report",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.cadmium.exposure.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "notes": [
+        "Governed EFSA exposure-report metadata for chronic dietary cadmium exposure assessment using individual food consumption data."
+      ]
+    },
+    {
+      "methodId": "efsa.lead.food.2010_opinion",
+      "displayName": "EFSA lead in food 2010 scientific opinion",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "lead_food_contaminants",
+      "methodType": "metals_contaminant_risk_assessment_opinion",
+      "currentVersionLabel": "2010_bmdl_opinion",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.lead.food.2010",
+        "efsa.metals.topic.2026"
+      ],
+      "notes": [
+        "Governed EFSA lead opinion metadata used to anchor benchmark-dose provenance and dietary exposure context.",
+        "Dietary MCP does not treat this as a native lead calculation engine."
+      ]
+    },
+    {
+      "methodId": "efsa.lead.exposure.2012_report",
+      "displayName": "EFSA lead dietary exposure report 2012",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "lead_food_contaminants",
+      "methodType": "dietary_exposure_assessment_report",
+      "currentVersionLabel": "2012_exposure_report",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.lead.exposure.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "notes": [
+        "Governed EFSA exposure-report metadata for dietary lead exposure assessment in the European population."
+      ]
+    },
+    {
+      "methodId": "efsa.inorganic_arsenic.food.2024_opinion",
+      "displayName": "EFSA inorganic arsenic in food 2024 scientific opinion",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "methodType": "metals_contaminant_risk_assessment_opinion",
+      "currentVersionLabel": "2024_bmdl_opinion",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.inorganic_arsenic.food.2024",
+        "efsa.metals.topic.2026"
+      ],
+      "notes": [
+        "Governed EFSA inorganic arsenic opinion metadata used to anchor benchmark-dose provenance and dietary exposure context.",
+        "Dietary MCP does not treat this as a native inorganic-arsenic calculation engine."
+      ]
+    },
+    {
+      "methodId": "efsa.inorganic_arsenic.exposure.2021_report",
+      "displayName": "EFSA inorganic arsenic dietary exposure report 2021",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "methodType": "dietary_exposure_assessment_report",
+      "currentVersionLabel": "2021_exposure_report",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.inorganic_arsenic.exposure.2021",
+        "efsa.metals.topic.2026"
+      ],
+      "notes": [
+        "Governed EFSA exposure-report metadata for chronic dietary inorganic arsenic exposure assessment using individual food consumption data."
+      ]
+    },
+    {
+      "methodId": "eu.cadmium.official_control.333_2007",
+      "displayName": "EU cadmium official-control sampling and analysis regulation",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminantFamily": "cadmium_food_contaminants",
+      "methodType": "official_control_sampling_and_analysis_regulation",
+      "currentVersionLabel": "consolidated_2024_04_30",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "eu.reg.333_2007",
+        "eu.reg.2023_915"
+      ],
+      "notes": [
+        "Governed EU official-control metadata for sampling and analysis of cadmium levels in foodstuffs.",
+        "Dietary MCP exposes this as official-control governance context and not as a native cadmium quantitative engine."
+      ]
+    },
+    {
+      "methodId": "eu.lead.official_control.333_2007",
+      "displayName": "EU lead official-control sampling and analysis regulation",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminantFamily": "lead_food_contaminants",
+      "methodType": "official_control_sampling_and_analysis_regulation",
+      "currentVersionLabel": "consolidated_2024_04_30",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "eu.reg.333_2007",
+        "eu.reg.2023_915"
+      ],
+      "notes": [
+        "Governed EU official-control metadata for sampling and analysis of lead levels in foodstuffs.",
+        "Dietary MCP exposes this as official-control governance context and not as a native lead quantitative engine."
+      ]
+    },
+    {
+      "methodId": "eu.inorganic_arsenic.official_control.333_2007",
+      "displayName": "EU inorganic arsenic official-control sampling and analysis regulation",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "methodType": "official_control_sampling_and_analysis_regulation",
+      "currentVersionLabel": "consolidated_2024_04_30",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "eu.reg.333_2007",
+        "eu.reg.2025_1891"
+      ],
+      "notes": [
+        "Governed EU official-control metadata for sampling and analysis of inorganic arsenic levels in foodstuffs.",
+        "Dietary MCP exposes this as official-control governance context and not as a native inorganic-arsenic quantitative engine."
+      ]
+    },
+    {
+      "methodId": "efsa.mercury.food.2012_opinion",
+      "displayName": "EFSA mercury and methylmercury in food 2012 scientific opinion",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "mercury_food_contaminants",
+      "methodType": "metals_contaminant_risk_assessment_opinion",
+      "currentVersionLabel": "2012_twi_opinion",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.mercury.food.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "notes": [
+        "Governed EFSA mercury opinion metadata used to anchor methylmercury and inorganic-mercury TWI provenance and dietary exposure context.",
+        "Dietary MCP does not treat this as a native mercury calculation engine."
+      ]
+    },
+    {
+      "methodId": "eu.mercury.official_control.333_2007",
+      "displayName": "EU mercury official-control sampling and analysis regulation",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminantFamily": "mercury_food_contaminants",
+      "methodType": "official_control_sampling_and_analysis_regulation",
+      "currentVersionLabel": "consolidated_2024_04_30",
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "eu.reg.333_2007",
+        "eu.reg.2023_915"
+      ],
+      "notes": [
+        "Governed EU official-control metadata for sampling and analysis of mercury levels in foodstuffs.",
+        "Dietary MCP exposes this as official-control governance context and not as a native mercury quantitative engine."
+      ]
+    }
+  ]
+}

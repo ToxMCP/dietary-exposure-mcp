@@ -1,0 +1,59 @@
+name: Bug report
+description: Report a reproducible software or contract defect.
+title: "[Bug]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Do not include credentials, personal data, unpublished dossiers, or
+        confidential regulatory material.
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: v0.1.0-rc1 or commit SHA
+    validations:
+      required: true
+  - type: dropdown
+    id: transport
+    attributes:
+      label: Transport
+      options:
+        - stdio
+        - Streamable HTTP behind a gateway
+        - Direct Python API
+        - Build or validation tooling
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Provide sanitized inputs and exact commands where possible.
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Include only non-sensitive logs, schemas, or quality flags.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Public-data confirmation
+      options:
+        - label: I removed secrets, personal data, local paths, and confidential dossier content.
+          required: true

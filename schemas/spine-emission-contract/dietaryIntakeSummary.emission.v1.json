@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.ngra.ai/dietary-exposure/emission/dietaryIntakeSummary.v1.json",
+  "title": "DietaryIntakeSummary (producer strict emission contract)",
+  "description": "Tightened additionalProperties:false mirror of docs/contracts/schemas/dietaryIntakeSummary.v1.json, declaring EXACTLY the top-level field set the real DietaryRuntime.summarize_intake seam emits (model_dump(mode='json', by_alias=True)), recon'd across point_estimate + bounded_acute optional-path variants. Load-bearing fields the projection reads (route/scenario_class/fit_for_purpose/intake_window_semantic enums, total_intake numeric, metric_label, limitations narrative) are constrained; nested objects the projection does not read deeply are declared by type only so the producer keeps full control of their shape (this is still a strict SUBSET: every emission it accepts the released schema also accepts).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "scenario_id",
+    "scenario_class",
+    "intake_window_semantic",
+    "route",
+    "total_intake_mg_per_kg_bw_per_day",
+    "population_group",
+    "region_id",
+    "body_weight_kg",
+    "fit_for_purpose",
+    "commodity_contributions",
+    "dominant_commodity_contributors",
+    "assumptions_applied",
+    "provenance",
+    "result_metadata"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "summary_id": { "type": "string" },
+    "scenario_id": { "type": "string", "minLength": 1 },
+    "scenario_class": { "enum": ["point_estimate", "bounded_acute", "bounded_chronic"] },
+    "intake_window_semantic": { "type": "string", "minLength": 1 },
+    "route": { "type": "string", "minLength": 1 },
+    "total_intake_mg_per_kg_bw_per_day": { "type": "number", "minimum": 0 },
+    "lower_bound_total_intake_mg_per_kg_bw_per_day": { "type": ["number", "null"], "minimum": 0 },
+    "upper_bound_total_intake_mg_per_kg_bw_per_day": { "type": ["number", "null"], "minimum": 0 },
+    "metric_label": { "type": "string", "minLength": 1 },
+    "population_group": { "type": "string", "minLength": 1 },
+    "region_id": { "type": "string", "minLength": 1 },
+    "body_weight_kg": { "type": "number", "minimum": 0 },
+    "fit_for_purpose": { "enum": ["screening", "downstream_export", "benchmark", "comparison"] },
+    "commodity_contributions": { "type": "array" },
+    "dominant_commodity_contributors": { "type": "array" },
+    "assumptions_applied": { "type": "array" },
+    "provenance": { "type": "object" },
+    "quality_flags": { "type": "array" },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "message"],
+        "properties": {
+          "code": { "type": "string" },
+          "message": { "type": "string" }
+        }
+      }
+    },
+    "result_metadata": { "type": "object" }
+  }
+}

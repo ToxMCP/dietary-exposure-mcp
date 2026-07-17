@@ -1,0 +1,274 @@
+{
+  "$defs": {
+    "ContaminantFamily": {
+      "enum": [
+        "pesticide_residue",
+        "microplastics_emerging",
+        "pfas_food_contaminants",
+        "acrylamide_process_contaminants",
+        "bisphenol_food_contact_migration",
+        "cadmium_food_contaminants",
+        "lead_food_contaminants",
+        "inorganic_arsenic_food_contaminants",
+        "mercury_food_contaminants",
+        "food_contaminant"
+      ],
+      "title": "ContaminantFamily",
+      "type": "string"
+    },
+    "DocumentStatus": {
+      "enum": [
+        "final_current",
+        "superseded",
+        "draft",
+        "consultation",
+        "tool_metadata",
+        "dataset_current"
+      ],
+      "title": "DocumentStatus",
+      "type": "string"
+    },
+    "EvidenceSupportStatus": {
+      "enum": [
+        "established",
+        "limited",
+        "emerging",
+        "insufficient"
+      ],
+      "title": "EvidenceSupportStatus",
+      "type": "string"
+    },
+    "MetalsReviewFocusRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "focusId": {
+          "title": "Focusid",
+          "type": "string"
+        },
+        "displayName": {
+          "title": "Displayname",
+          "type": "string"
+        },
+        "authority": {
+          "title": "Authority",
+          "type": "string"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "contaminantFamily": {
+          "$ref": "#/$defs/ContaminantFamily"
+        },
+        "focusKind": {
+          "title": "Focuskind",
+          "type": "string"
+        },
+        "commodityGroups": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Commoditygroups",
+          "type": "array"
+        },
+        "focusFoods": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Focusfoods",
+          "type": "array"
+        },
+        "sensitivePopulationGroups": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sensitivepopulationgroups",
+          "type": "array"
+        },
+        "linkedOccurrenceRecordIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Linkedoccurrencerecordids",
+          "type": "array"
+        },
+        "maturityStatus": {
+          "$ref": "#/$defs/MethodMaturityStatus"
+        },
+        "evidenceSupportStatus": {
+          "$ref": "#/$defs/EvidenceSupportStatus"
+        },
+        "submissionUse": {
+          "$ref": "#/$defs/SubmissionUse"
+        },
+        "documentStatus": {
+          "$ref": "#/$defs/DocumentStatus"
+        },
+        "sourceIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sourceids",
+          "type": "array"
+        },
+        "methodIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Methodids",
+          "type": "array"
+        },
+        "legalAuthorityIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Legalauthorityids",
+          "type": "array"
+        },
+        "datasetIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Datasetids",
+          "type": "array"
+        },
+        "referenceValueRecordIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Referencevaluerecordids",
+          "type": "array"
+        },
+        "reviewQuestions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Reviewquestions",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "focusId",
+        "displayName",
+        "authority",
+        "jurisdiction",
+        "contaminantFamily",
+        "focusKind",
+        "maturityStatus",
+        "evidenceSupportStatus",
+        "submissionUse",
+        "documentStatus"
+      ],
+      "title": "MetalsReviewFocusRecord",
+      "type": "object"
+    },
+    "MethodMaturityStatus": {
+      "enum": [
+        "established",
+        "transitional",
+        "exploratory",
+        "emerging"
+      ],
+      "title": "MethodMaturityStatus",
+      "type": "string"
+    },
+    "SubmissionUse": {
+      "enum": [
+        "allowed",
+        "review_required",
+        "not_allowed"
+      ],
+      "title": "SubmissionUse",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "contaminantFamily": {
+      "$ref": "#/$defs/ContaminantFamily"
+    },
+    "jurisdiction": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Jurisdiction"
+    },
+    "authority": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Authority"
+    },
+    "commodityGroup": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Commoditygroup"
+    },
+    "focusFood": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Focusfood"
+    },
+    "records": {
+      "items": {
+        "$ref": "#/$defs/MetalsReviewFocusRecord"
+      },
+      "title": "Records",
+      "type": "array"
+    },
+    "overallSubmissionUse": {
+      "$ref": "#/$defs/SubmissionUse"
+    },
+    "submissionCandidateAllowed": {
+      "title": "Submissioncandidateallowed",
+      "type": "boolean"
+    },
+    "notes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "contaminantFamily",
+    "overallSubmissionUse",
+    "submissionCandidateAllowed"
+  ],
+  "title": "MetalsReviewFocusLookupResult",
+  "type": "object"
+}

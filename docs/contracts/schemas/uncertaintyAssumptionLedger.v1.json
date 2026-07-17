@@ -1,0 +1,65 @@
+{
+  "$defs": {
+    "Severity": {
+      "enum": [
+        "info",
+        "warning",
+        "error"
+      ],
+      "title": "Severity",
+      "type": "string"
+    },
+    "UncertaintyAssumptionLedgerEntry": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "severity": {
+          "$ref": "#/$defs/Severity"
+        },
+        "category": {
+          "title": "Category",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "conservative": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Conservative"
+        }
+      },
+      "required": [
+        "code",
+        "severity",
+        "category",
+        "message"
+      ],
+      "title": "UncertaintyAssumptionLedgerEntry",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "entries": {
+      "items": {
+        "$ref": "#/$defs/UncertaintyAssumptionLedgerEntry"
+      },
+      "title": "Entries",
+      "type": "array"
+    }
+  },
+  "title": "UncertaintyAssumptionLedger",
+  "type": "object"
+}

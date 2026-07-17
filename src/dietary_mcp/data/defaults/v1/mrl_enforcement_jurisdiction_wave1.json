@@ -1,0 +1,451 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "mrl_enforcement",
+  "validationProfile": "official_primary_wave1",
+  "records": [
+    {
+      "recordId": "us.epa.imidacloprid.apples.mrl",
+      "substanceKey": "imidacloprid",
+      "commodityCode": "apples",
+      "authority": "US EPA",
+      "jurisdiction": "us",
+      "mrlValueMgPerKg": 0.5,
+      "effectiveDate": "2024-07-01",
+      "sourceIds": [
+        "us.govinfo.cfr.40_180.472.2024"
+      ],
+      "notes": [
+        "Official U.S. tolerance for imidacloprid on apples."
+      ]
+    },
+    {
+      "recordId": "us.epa.imidacloprid.grapes.mrl",
+      "substanceKey": "imidacloprid",
+      "commodityCode": "grapes",
+      "authority": "US EPA",
+      "jurisdiction": "us",
+      "mrlValueMgPerKg": 1.0,
+      "effectiveDate": "2024-07-01",
+      "sourceIds": [
+        "us.govinfo.cfr.40_180.472.2024"
+      ],
+      "notes": [
+        "Official U.S. tolerance for imidacloprid on grapes."
+      ]
+    },
+    {
+      "recordId": "us.epa.imidacloprid.rice.mrl",
+      "substanceKey": "imidacloprid",
+      "commodityCode": "rice",
+      "authority": "US EPA",
+      "jurisdiction": "us",
+      "mrlValueMgPerKg": 0.05,
+      "effectiveDate": "2024-07-01",
+      "sourceIds": [
+        "us.govinfo.cfr.40_180.472.2024"
+      ],
+      "notes": [
+        "Official U.S. tolerance for imidacloprid on rice grain."
+      ]
+    },
+    {
+      "recordId": "us.epa.glufosinate.rice.mrl",
+      "substanceKey": "glufosinate",
+      "commodityCode": "rice",
+      "authority": "US EPA",
+      "jurisdiction": "us",
+      "mrlValueMgPerKg": 1.0,
+      "effectiveDate": "2024-07-01",
+      "sourceIds": [
+        "us.govinfo.cfr.40_180.473.2024"
+      ],
+      "notes": [
+        "Official U.S. tolerance for glufosinate-ammonium on rice grain."
+      ]
+    },
+    {
+      "recordId": "us.epa.oxamyl.tomatoes.mrl",
+      "substanceKey": "oxamyl",
+      "commodityCode": "tomatoes",
+      "authority": "US EPA",
+      "jurisdiction": "us",
+      "mrlValueMgPerKg": 2.0,
+      "effectiveDate": "2024-07-01",
+      "sourceIds": [
+        "us.govinfo.cfr.40_180.303.2024"
+      ],
+      "notes": [
+        "Official U.S. tolerance for oxamyl on tomatoes."
+      ]
+    },
+    {
+      "recordId": "codex.imidacloprid.apples.mrl",
+      "substanceKey": "imidacloprid",
+      "commodityCode": "apples",
+      "authority": "Codex Alimentarius",
+      "jurisdiction": "codex_global",
+      "mrlValueMgPerKg": 0.5,
+      "effectiveDate": "2004-01-01",
+      "sourceIds": [
+        "codex.pesticide_database.2024"
+      ],
+      "notes": [
+        "Current Codex CXL for imidacloprid on apples.",
+        "Effective date is normalized to the CAC adoption year published in the Codex database."
+      ]
+    },
+    {
+      "recordId": "codex.imidacloprid.grapes.mrl",
+      "substanceKey": "imidacloprid",
+      "commodityCode": "grapes",
+      "authority": "Codex Alimentarius",
+      "jurisdiction": "codex_global",
+      "mrlValueMgPerKg": 1.0,
+      "effectiveDate": "2004-01-01",
+      "sourceIds": [
+        "codex.pesticide_database.2024"
+      ],
+      "notes": [
+        "Current Codex CXL for imidacloprid on grapes.",
+        "Effective date is normalized to the CAC adoption year published in the Codex database."
+      ]
+    },
+    {
+      "recordId": "codex.imidacloprid.tomatoes.mrl",
+      "substanceKey": "imidacloprid",
+      "commodityCode": "tomatoes",
+      "authority": "Codex Alimentarius",
+      "jurisdiction": "codex_global",
+      "mrlValueMgPerKg": 0.5,
+      "effectiveDate": "2004-01-01",
+      "sourceIds": [
+        "codex.pesticide_database.2024"
+      ],
+      "notes": [
+        "Current Codex CXL for imidacloprid on tomatoes.",
+        "Effective date is normalized to the CAC adoption year published in the Codex database."
+      ]
+    },
+    {
+      "recordId": "codex.acetamiprid.grapes.mrl",
+      "substanceKey": "acetamiprid",
+      "commodityCode": "grapes",
+      "authority": "Codex Alimentarius",
+      "jurisdiction": "codex_global",
+      "mrlValueMgPerKg": 0.5,
+      "effectiveDate": "2012-01-01",
+      "sourceIds": [
+        "codex.pesticide_database.2024"
+      ],
+      "notes": [
+        "Current Codex CXL for acetamiprid on grapes.",
+        "Effective date is normalized to the CAC adoption year published in the Codex database."
+      ]
+    },
+    {
+      "recordId": "codex.glufosinate.grapes.mrl",
+      "substanceKey": "glufosinate",
+      "commodityCode": "grapes",
+      "authority": "Codex Alimentarius",
+      "jurisdiction": "codex_global",
+      "mrlValueMgPerKg": 0.15,
+      "effectiveDate": "2013-01-01",
+      "sourceIds": [
+        "codex.pesticide_database.2024"
+      ],
+      "notes": [
+        "Current Codex CXL for glufosinate-ammonium on grapes.",
+        "Effective date is normalized to the CAC adoption year published in the Codex database."
+      ]
+    },
+    {
+      "recordId": "codex.glufosinate.rice.mrl",
+      "substanceKey": "glufosinate",
+      "commodityCode": "rice",
+      "authority": "Codex Alimentarius",
+      "jurisdiction": "codex_global",
+      "mrlValueMgPerKg": 0.9,
+      "effectiveDate": "2013-01-01",
+      "sourceIds": [
+        "codex.pesticide_database.2024"
+      ],
+      "notes": [
+        "Current Codex CXL for glufosinate-ammonium on rice.",
+        "Effective date is normalized to the CAC adoption year published in the Codex database."
+      ]
+    },
+    {
+      "recordId": "codex.glufosinate.potatoes.mrl",
+      "substanceKey": "glufosinate",
+      "commodityCode": "potatoes",
+      "authority": "Codex Alimentarius",
+      "jurisdiction": "codex_global",
+      "mrlValueMgPerKg": 0.1,
+      "effectiveDate": "2013-01-01",
+      "sourceIds": [
+        "codex.pesticide_database.2024"
+      ],
+      "notes": [
+        "Current Codex CXL for glufosinate-ammonium on potatoes.",
+        "Effective date is normalized to the CAC adoption year published in the Codex database."
+      ]
+    },
+    {
+      "recordId": "codex.oxamyl.tomatoes.mrl",
+      "substanceKey": "oxamyl",
+      "commodityCode": "tomatoes",
+      "authority": "Codex Alimentarius",
+      "jurisdiction": "codex_global",
+      "mrlValueMgPerKg": 0.01,
+      "effectiveDate": "2018-01-01",
+      "sourceIds": [
+        "codex.pesticide_database.2024"
+      ],
+      "notes": [
+        "Current Codex CXL for oxamyl on tomatoes.",
+        "Effective date is normalized to the CAC adoption year published in the Codex database."
+      ]
+    },
+    {
+      "recordId": "codex.oxamyl.potatoes.mrl",
+      "substanceKey": "oxamyl",
+      "commodityCode": "potatoes",
+      "authority": "Codex Alimentarius",
+      "jurisdiction": "codex_global",
+      "mrlValueMgPerKg": 0.01,
+      "effectiveDate": "2018-01-01",
+      "sourceIds": [
+        "codex.pesticide_database.2024"
+      ],
+      "notes": [
+        "Current Codex CXL for oxamyl on potatoes.",
+        "Effective date is normalized to the CAC adoption year published in the Codex database."
+      ]
+    },
+    {
+      "recordId": "cn.gb.glyphosate.rice.mrl",
+      "substanceKey": "glyphosate",
+      "commodityCode": "rice",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "mrlValueMgPerKg": 0.1,
+      "effectiveDate": "2026-03-01",
+      "sourceIds": [
+        "cn.aqsc.gb2763.2026"
+      ],
+      "notes": [
+        "Official Chinese MRL for glyphosate on rice from GB 2763-2026."
+      ]
+    },
+    {
+      "recordId": "cn.gb.imidacloprid.apples.mrl",
+      "substanceKey": "imidacloprid",
+      "commodityCode": "apples",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "mrlValueMgPerKg": 0.5,
+      "effectiveDate": "2026-03-01",
+      "sourceIds": [
+        "cn.aqsc.gb2763.2026"
+      ],
+      "notes": [
+        "Official Chinese MRL for imidacloprid on apples from GB 2763-2026."
+      ]
+    },
+    {
+      "recordId": "cn.gb.imidacloprid.grapes.mrl",
+      "substanceKey": "imidacloprid",
+      "commodityCode": "grapes",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "mrlValueMgPerKg": 2.0,
+      "effectiveDate": "2026-03-01",
+      "sourceIds": [
+        "cn.aqsc.gb2763.2026"
+      ],
+      "notes": [
+        "Official Chinese MRL for imidacloprid on grapes from GB 2763-2026."
+      ]
+    },
+    {
+      "recordId": "cn.gb.imidacloprid.rice.mrl",
+      "substanceKey": "imidacloprid",
+      "commodityCode": "rice",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "mrlValueMgPerKg": 0.2,
+      "effectiveDate": "2026-03-01",
+      "sourceIds": [
+        "cn.aqsc.gb2763.2026"
+      ],
+      "notes": [
+        "Official Chinese MRL for imidacloprid on rice from GB 2763-2026."
+      ]
+    },
+    {
+      "recordId": "cn.gb.imidacloprid.tomatoes.mrl",
+      "substanceKey": "imidacloprid",
+      "commodityCode": "tomatoes",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "mrlValueMgPerKg": 1.0,
+      "effectiveDate": "2026-03-01",
+      "sourceIds": [
+        "cn.aqsc.gb2763.2026"
+      ],
+      "notes": [
+        "Official Chinese MRL for imidacloprid on tomatoes from GB 2763-2026."
+      ]
+    },
+    {
+      "recordId": "cn.gb.imidacloprid.potatoes.mrl",
+      "substanceKey": "imidacloprid",
+      "commodityCode": "potatoes",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "mrlValueMgPerKg": 0.5,
+      "effectiveDate": "2026-03-01",
+      "sourceIds": [
+        "cn.aqsc.gb2763.2026"
+      ],
+      "notes": [
+        "Official Chinese MRL for imidacloprid on potatoes from GB 2763-2026."
+      ]
+    },
+    {
+      "recordId": "cn.gb.acetamiprid.apples.mrl",
+      "substanceKey": "acetamiprid",
+      "commodityCode": "apples",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "mrlValueMgPerKg": 0.8,
+      "effectiveDate": "2026-03-01",
+      "sourceIds": [
+        "cn.aqsc.gb2763.2026"
+      ],
+      "notes": [
+        "Official Chinese MRL for acetamiprid on apples from GB 2763-2026."
+      ]
+    },
+    {
+      "recordId": "cn.gb.acetamiprid.grapes.mrl",
+      "substanceKey": "acetamiprid",
+      "commodityCode": "grapes",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "mrlValueMgPerKg": 2.0,
+      "effectiveDate": "2026-03-01",
+      "sourceIds": [
+        "cn.aqsc.gb2763.2026"
+      ],
+      "notes": [
+        "Official Chinese MRL for acetamiprid on grapes from GB 2763-2026."
+      ]
+    },
+    {
+      "recordId": "cn.gb.acetamiprid.tomatoes.mrl",
+      "substanceKey": "acetamiprid",
+      "commodityCode": "tomatoes",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "mrlValueMgPerKg": 0.2,
+      "effectiveDate": "2026-03-01",
+      "sourceIds": [
+        "cn.aqsc.gb2763.2026"
+      ],
+      "notes": [
+        "Official Chinese MRL for acetamiprid on tomatoes from GB 2763-2026."
+      ]
+    },
+    {
+      "recordId": "cn.gb.glufosinate.grapes.mrl",
+      "substanceKey": "glufosinate",
+      "commodityCode": "grapes",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "mrlValueMgPerKg": 0.6,
+      "effectiveDate": "2026-03-01",
+      "sourceIds": [
+        "cn.aqsc.gb2763.2026"
+      ],
+      "notes": [
+        "Official Chinese MRL for glufosinate on grapes from GB 2763-2026."
+      ]
+    },
+    {
+      "recordId": "cn.gb.glufosinate.rice.mrl",
+      "substanceKey": "glufosinate",
+      "commodityCode": "rice",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "mrlValueMgPerKg": 0.9,
+      "effectiveDate": "2026-03-01",
+      "sourceIds": [
+        "cn.aqsc.gb2763.2026"
+      ],
+      "notes": [
+        "Official Chinese MRL for glufosinate on rice from GB 2763-2026."
+      ]
+    },
+    {
+      "recordId": "cn.gb.glufosinate.tomatoes.mrl",
+      "substanceKey": "glufosinate",
+      "commodityCode": "tomatoes",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "mrlValueMgPerKg": 0.5,
+      "effectiveDate": "2026-03-01",
+      "sourceIds": [
+        "cn.aqsc.gb2763.2026"
+      ],
+      "notes": [
+        "Official Chinese MRL for glufosinate on tomatoes from GB 2763-2026."
+      ]
+    },
+    {
+      "recordId": "cn.gb.glufosinate.potatoes.mrl",
+      "substanceKey": "glufosinate",
+      "commodityCode": "potatoes",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "mrlValueMgPerKg": 0.05,
+      "effectiveDate": "2026-03-01",
+      "sourceIds": [
+        "cn.aqsc.gb2763.2026"
+      ],
+      "notes": [
+        "Official Chinese MRL for glufosinate on potatoes from GB 2763-2026."
+      ]
+    },
+    {
+      "recordId": "cn.gb.oxamyl.tomatoes.mrl",
+      "substanceKey": "oxamyl",
+      "commodityCode": "tomatoes",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "mrlValueMgPerKg": 2.0,
+      "effectiveDate": "2026-03-01",
+      "sourceIds": [
+        "cn.aqsc.gb2763.2026"
+      ],
+      "notes": [
+        "Official Chinese MRL for oxamyl on tomatoes from GB 2763-2026."
+      ]
+    },
+    {
+      "recordId": "cn.gb.oxamyl.potatoes.mrl",
+      "substanceKey": "oxamyl",
+      "commodityCode": "potatoes",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "mrlValueMgPerKg": 0.1,
+      "effectiveDate": "2026-03-01",
+      "sourceIds": [
+        "cn.aqsc.gb2763.2026"
+      ],
+      "notes": [
+        "Official Chinese MRL for oxamyl on potatoes from GB 2763-2026."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "contaminant_family": "pfas_food_contaminants",
+  "jurisdiction": null,
+  "authority": null,
+  "matrix_group": "eggs",
+  "profiles": [
+    {
+      "profile_id": "nl.pfas.rivm_peq.food_advisory",
+      "display_name": "NL PFAS RIVM home-egg PEQ advisory reporting",
+      "authority": "RIVM",
+      "jurisdiction": "netherlands",
+      "contaminant_family": "pfas_food_contaminants",
+      "metric_kind": "relative_potency_equivalent",
+      "profile_role": "national_advisory_optional",
+      "submission_use": "review_required",
+      "document_status": "final_current",
+      "reported_unit": "ng/kg PFOA-equivalent",
+      "matrix_groups": [
+        "eggs"
+      ],
+      "panel_analytes": [
+        "pfos",
+        "pfoa",
+        "pfna",
+        "pfhxs"
+      ],
+      "aggregation_basis": "Relative-potency-weighted sum expressed as PFOA-equivalents for Dutch advisory interpretation when RIVM-supported PFAS analytes are available.",
+      "weighting_basis_summary": "Apply governed RIVM relative potency factors to supported PFAS analytes and report the weighted sum as PFOA-equivalents (PEQ).",
+      "source_ids": [
+        "rivm.pfas.home_eggs.2025",
+        "rivm.pfas.rpf.addendum.2025",
+        "efsa.pfas.food.2020"
+      ],
+      "legal_authority_ids": [],
+      "reference_value_record_ids": [
+        "efsa.pfas.sum4.twi"
+      ],
+      "not_substitutable_for_profile_ids": [
+        "eu.pfas.efsa4.food_risk",
+        "eu.pfas.efsa4.ml_lower_bound"
+      ],
+      "notes": [
+        "Optional Dutch advisory profile intended for home-produced egg risk communication and follow-up interpretation, not for EU maximum-level compliance reporting.",
+        "Current Dietary MCP PFAS analyte support remains narrower than the full RIVM RPF universe; only supported analytes should be used when this profile is invoked."
+      ]
+    },
+    {
+      "profile_id": "eu.pfas.efsa4.food_risk",
+      "display_name": "EU PFAS EFSA-4 food-risk reporting",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminant_family": "pfas_food_contaminants",
+      "metric_kind": "sum_fixed_panel",
+      "profile_role": "primary_regulatory",
+      "submission_use": "review_required",
+      "document_status": "final_current",
+      "reported_unit": "ng/kg",
+      "matrix_groups": [
+        "broad_food_supply",
+        "fish_and_seafood",
+        "eggs",
+        "offal"
+      ],
+      "panel_analytes": [
+        "pfos",
+        "pfoa",
+        "pfna",
+        "pfhxs"
+      ],
+      "aggregation_basis": "Equal-weight sum of PFOS, PFOA, PFNA, and PFHxS for EU food-risk reporting aligned with the EFSA 2020 PFAS opinion.",
+      "weighting_basis_summary": "No potency weighting is applied; the profile preserves the explicit EFSA-4 analyte panel.",
+      "source_ids": [
+        "efsa.pfas.food.2020",
+        "efsa.pfas.topic.2026"
+      ],
+      "legal_authority_ids": [],
+      "reference_value_record_ids": [
+        "efsa.pfas.sum4.twi"
+      ],
+      "not_substitutable_for_profile_ids": [],
+      "notes": [
+        "Primary EU health-based PFAS reporting profile for review-oriented food exposure interpretation.",
+        "This profile is the default Dietary MCP PFAS reporting basis for EU food-risk review."
+      ]
+    },
+    {
+      "profile_id": "eu.pfas.efsa4.ml_lower_bound",
+      "display_name": "EU PFAS EFSA-4 lower-bound ML compliance reporting",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminant_family": "pfas_food_contaminants",
+      "metric_kind": "sum_fixed_panel",
+      "profile_role": "regulatory_compliance_variant",
+      "submission_use": "review_required",
+      "document_status": "final_current",
+      "reported_unit": "ng/kg",
+      "matrix_groups": [
+        "fish_and_seafood",
+        "eggs",
+        "offal"
+      ],
+      "panel_analytes": [
+        "pfos",
+        "pfoa",
+        "pfna",
+        "pfhxs"
+      ],
+      "aggregation_basis": "Lower-bound compliance-oriented sum of linear and branched PFOS, PFOA, PFNA, and PFHxS aligned with current EU contaminant maximum-level reporting.",
+      "weighting_basis_summary": "No potency weighting is applied; this profile preserves the EU compliance-oriented lower-bound EFSA-4 sum.",
+      "source_ids": [
+        "eu.reg.2023_915",
+        "eu.reco.2022_1431"
+      ],
+      "legal_authority_ids": [
+        "eu.contaminants.reg_2023_915",
+        "eu.pfas.monitoring.reco_2022_1431"
+      ],
+      "reference_value_record_ids": [],
+      "not_substitutable_for_profile_ids": [
+        "eu.pfas.efsa4.food_risk"
+      ],
+      "notes": [
+        "Use this profile for EU contaminant-law style PFAS sum reporting, especially when matrix-specific maximum-level review is in scope.",
+        "This compliance-oriented profile does not replace the primary EFSA food-risk reporting profile."
+      ]
+    },
+    {
+      "profile_id": "eu.pfas.individual_panel_detail",
+      "display_name": "EU PFAS individual analyte panel detail",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminant_family": "pfas_food_contaminants",
+      "metric_kind": "individual_analyte_panel",
+      "profile_role": "supporting_detail",
+      "submission_use": "review_required",
+      "document_status": "final_current",
+      "reported_unit": "ng/kg",
+      "matrix_groups": [
+        "broad_food_supply",
+        "fish_and_seafood",
+        "eggs",
+        "offal"
+      ],
+      "panel_analytes": [
+        "pfos",
+        "pfoa",
+        "pfna",
+        "pfhxs"
+      ],
+      "aggregation_basis": "Preserve analyte-level PFOS, PFOA, PFNA, and PFHxS measurements alongside any aggregate PFAS metric.",
+      "weighting_basis_summary": "No aggregation beyond analyte-level preservation is implied by this supporting-detail profile.",
+      "source_ids": [
+        "eu.reco.2022_1431",
+        "eu.reg.2023_915"
+      ],
+      "legal_authority_ids": [
+        "eu.pfas.monitoring.reco_2022_1431"
+      ],
+      "reference_value_record_ids": [],
+      "not_substitutable_for_profile_ids": [
+        "eu.pfas.efsa4.food_risk",
+        "eu.pfas.efsa4.ml_lower_bound"
+      ],
+      "notes": [
+        "Supporting-detail profile that keeps the analyte panel explicit in review bundles and monitoring imports.",
+        "Use this profile together with, not instead of, the main EFSA-4 aggregate profiles."
+      ]
+    }
+  ],
+  "recommended_primary_profile_ids": [
+    "eu.pfas.efsa4.food_risk"
+  ],
+  "notes": [
+    "PFAS reporting profiles keep EU EFSA-4 risk and compliance reporting distinct from optional national advisory metrics.",
+    "Optional national advisory profiles do not replace the primary EU EFSA-4 reporting basis for food-regulatory review.",
+    "Matrix-group filter applied: eggs."
+  ]
+}

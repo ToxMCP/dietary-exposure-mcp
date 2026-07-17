@@ -1,0 +1,143 @@
+{
+  "version": "v1",
+  "profiles": [
+    {
+      "profileId": "oht_85_iuclid_json_preview",
+      "displayName": "OHT 85 / IUCLID JSON preview for pesticide residue dossiers",
+      "targetFamily": "oht_iuclid_json_preview",
+      "ohtTemplates": [
+        "85-1",
+        "85-8",
+        "85-10"
+      ],
+      "notes": [
+        "This profile is a staged JSON preview for validation and field-mapping review only.",
+        "No claim of OECD Harmonised Template or IUCLID XML equivalence is made by this profile."
+      ],
+      "mappedFields": [
+        {
+          "localPath": "review_bundle.check_result.chemical_identity.preferredName",
+          "targetPath": "oht85_1.substanceIdentity.preferredName",
+          "supportLevel": "direct",
+          "required": true,
+          "note": "Preferred substance name can be passed through directly."
+        },
+        {
+          "localPath": "review_bundle.check_result.chemical_identity.casrn",
+          "targetPath": "oht85_1.substanceIdentity.casrn",
+          "supportLevel": "direct",
+          "required": false
+        },
+        {
+          "localPath": "review_bundle.check_result.profile_selection.region_id",
+          "targetPath": "oht85_10.supportingInformation.population.regionId",
+          "supportLevel": "direct",
+          "required": true
+        },
+        {
+          "localPath": "review_bundle.check_result.profile_selection.population_group",
+          "targetPath": "oht85_10.supportingInformation.population.populationGroup",
+          "supportLevel": "direct",
+          "required": true
+        },
+        {
+          "localPath": "review_bundle.check_result.normalized_projection.scenario_class",
+          "targetPath": "oht85_8.dietaryExposure.scenarioClass",
+          "supportLevel": "direct",
+          "required": true
+        },
+        {
+          "localPath": "review_bundle.check_result.normalized_projection.intake_window",
+          "targetPath": "oht85_8.dietaryExposure.intakeWindowSemantic",
+          "supportLevel": "direct",
+          "required": true
+        },
+        {
+          "localPath": "review_bundle.check_result.normalized_projection.total_intake_mg_per_kg_bw_per_day",
+          "targetPath": "oht85_8.dietaryExposure.totalIntakeMgPerKgBwPerDay",
+          "supportLevel": "direct",
+          "required": true
+        },
+        {
+          "localPath": "review_bundle.check_result.normalized_projection.lower_bound_mg_per_kg_bw_per_day",
+          "targetPath": "oht85_8.dietaryExposure.lowerBoundMgPerKgBwPerDay",
+          "supportLevel": "direct",
+          "required": false
+        },
+        {
+          "localPath": "review_bundle.check_result.normalized_projection.upper_bound_mg_per_kg_bw_per_day",
+          "targetPath": "oht85_8.dietaryExposure.upperBoundMgPerKgBwPerDay",
+          "supportLevel": "direct",
+          "required": false
+        },
+        {
+          "localPath": "review_bundle.check_result.normalized_projection.commodity_contributions",
+          "targetPath": "oht85_8.dietaryExposure.commodityContributions",
+          "supportLevel": "derived",
+          "required": true,
+          "note": "Stable MCP contributions are carried as a derived validation-only preview structure."
+        },
+        {
+          "localPath": "source_governance_snapshot",
+          "targetPath": "oht85_10.supportingInformation.governedSources",
+          "supportLevel": "derived",
+          "required": true
+        },
+        {
+          "localPath": "model_governance_snapshot",
+          "targetPath": "oht85_10.supportingInformation.modelGovernance",
+          "supportLevel": "derived",
+          "required": true
+        },
+        {
+          "localPath": "pinned_resources",
+          "targetPath": "oht85_10.supportingInformation.pinnedResources",
+          "supportLevel": "derived",
+          "required": false
+        }
+      ],
+      "unsupportedFields": [
+        {
+          "localPath": "review_bundle.check_result.input_headers",
+          "reason": "Import-template diagnostics do not have a stable OHT or IUCLID slot in this preview profile.",
+          "suggestedAction": "Retain in internal review bundle only."
+        },
+        {
+          "localPath": "review_bundle.check_result.header_resolution",
+          "reason": "CSV header-resolution diagnostics are tooling-specific and outside the staged preview.",
+          "suggestedAction": "Retain in internal review bundle only."
+        },
+        {
+          "localPath": "review_bundle.check_result.unmapped_headers",
+          "reason": "Unmapped-header diagnostics are tooling-specific and not represented in the staged preview.",
+          "suggestedAction": "Address during internal review before any downstream export."
+        },
+        {
+          "localPath": "review_bundle.comparison_result.compared_fields",
+          "reason": "Walkthrough comparison diagnostics are internal validation artifacts.",
+          "suggestedAction": "Retain in internal review bundle only."
+        },
+        {
+          "localPath": "review_bundle.comparison_result.matched_fields",
+          "reason": "Walkthrough comparison diagnostics are internal validation artifacts.",
+          "suggestedAction": "Retain in internal review bundle only."
+        },
+        {
+          "localPath": "review_bundle.comparison_result.mismatch_fields",
+          "reason": "Walkthrough comparison diagnostics are internal validation artifacts.",
+          "suggestedAction": "Retain in internal review bundle only."
+        },
+        {
+          "localPath": "confidentiality_annotations",
+          "reason": "Confidentiality annotations are MCP packaging metadata and outside the staged preview scope.",
+          "suggestedAction": "Carry in MCP review artifacts, not in the preview payload."
+        },
+        {
+          "localPath": "sanitisation_records",
+          "reason": "Sanitisation records are MCP packaging metadata and outside the staged preview scope.",
+          "suggestedAction": "Carry in MCP review artifacts, not in the preview payload."
+        }
+      ]
+    }
+  ]
+}

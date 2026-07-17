@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.ngra.ai/dietary-exposure/emission/scientificFollowUpReviewBoard.v1.json",
+  "title": "scientificFollowUpReviewBoard (producer strict emission contract)",
+  "description": "Tightened additionalProperties:false mirror of the real DietaryRuntime.export_scientific_follow_up_review_board emission (by_alias=True). The board_note operator input is appended verbatim into notes[]; the projection deep-scans notes[] for FREE_TEXT_OVERCLAIM. Field set recon'd from the real producer chain.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "overallStatus",
+    "sourceBundleId",
+    "sourceDossierId",
+    "sourceWorkflow",
+    "documentationResourceUri"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "board_id": { "type": "string" },
+    "overallStatus": { "type": "string", "minLength": 1 },
+    "targetProfile": { "type": "object" },
+    "sourceBundleId": { "type": "string", "minLength": 1 },
+    "sourceDossierId": { "type": "string", "minLength": 1 },
+    "sourceDossierStatus": { "type": "string" },
+    "sourceWorkflow": { "type": "string", "minLength": 1 },
+    "bundleProfile": { "type": "string" },
+    "legalLimitReviews": { "type": "array" },
+    "actionItems": { "type": "array" },
+    "ownerLanes": { "type": "array" },
+    "dueStateGroups": { "type": "array" },
+    "immediateActionIds": { "type": "array" },
+    "currentCycleActionIds": { "type": "array" },
+    "inProgressActionIds": { "type": "array" },
+    "closedActionIds": { "type": "array" },
+    "recommendedTriageSequence": { "type": "array" },
+    "documentationResourceUri": { "type": "string", "minLength": 1 },
+    "referencedResources": { "type": "array" },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

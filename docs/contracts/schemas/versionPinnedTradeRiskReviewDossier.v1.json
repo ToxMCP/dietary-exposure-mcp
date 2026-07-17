@@ -1,0 +1,1056 @@
+{
+  "$defs": {
+    "BundleProfile": {
+      "enum": [
+        "internal_review",
+        "submission_candidate",
+        "sanitised_public"
+      ],
+      "title": "BundleProfile",
+      "type": "string"
+    },
+    "ConfidentialityAnnotation": {
+      "additionalProperties": false,
+      "properties": {
+        "targetPath": {
+          "title": "Targetpath",
+          "type": "string"
+        },
+        "targetKind": {
+          "title": "Targetkind",
+          "type": "string"
+        },
+        "confidentialityTag": {
+          "$ref": "#/$defs/ConfidentialityTag"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        }
+      },
+      "required": [
+        "targetPath",
+        "targetKind",
+        "confidentialityTag",
+        "rationale"
+      ],
+      "title": "ConfidentialityAnnotation",
+      "type": "object"
+    },
+    "ConfidentialityTag": {
+      "enum": [
+        "public",
+        "confidential"
+      ],
+      "title": "ConfidentialityTag",
+      "type": "string"
+    },
+    "ContaminantFamily": {
+      "enum": [
+        "pesticide_residue",
+        "microplastics_emerging",
+        "pfas_food_contaminants",
+        "acrylamide_process_contaminants",
+        "bisphenol_food_contact_migration",
+        "cadmium_food_contaminants",
+        "lead_food_contaminants",
+        "inorganic_arsenic_food_contaminants",
+        "mercury_food_contaminants",
+        "food_contaminant"
+      ],
+      "title": "ContaminantFamily",
+      "type": "string"
+    },
+    "DependencyDescriptor": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "version": {
+          "title": "Version",
+          "type": "string"
+        },
+        "role": {
+          "title": "Role",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "version",
+        "role"
+      ],
+      "title": "DependencyDescriptor",
+      "type": "object"
+    },
+    "DocumentStatus": {
+      "enum": [
+        "final_current",
+        "superseded",
+        "draft",
+        "consultation",
+        "tool_metadata",
+        "dataset_current"
+      ],
+      "title": "DocumentStatus",
+      "type": "string"
+    },
+    "GlobalTradeRiskReport": {
+      "additionalProperties": false,
+      "properties": {
+        "chemical_identity": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Chemical Identity",
+          "type": "object"
+        },
+        "resolvedSubstanceKey": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Resolvedsubstancekey"
+        },
+        "jurisdiction_profiles": {
+          "items": {
+            "$ref": "#/$defs/JurisdictionRiskProfile"
+          },
+          "title": "Jurisdiction Profiles",
+          "type": "array"
+        },
+        "qualityFlags": {
+          "items": {
+            "$ref": "#/$defs/QualityFlag"
+          },
+          "title": "Qualityflags",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "chemical_identity",
+        "jurisdiction_profiles"
+      ],
+      "title": "GlobalTradeRiskReport",
+      "type": "object"
+    },
+    "JurisdictionCoverageLevel": {
+      "enum": [
+        "deep_curated",
+        "anchor_only",
+        "explicit_gap"
+      ],
+      "title": "JurisdictionCoverageLevel",
+      "type": "string"
+    },
+    "JurisdictionCoverageRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "coverageId": {
+          "title": "Coverageid",
+          "type": "string"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "contaminantFamily": {
+          "$ref": "#/$defs/ContaminantFamily"
+        },
+        "substanceKey": {
+          "title": "Substancekey",
+          "type": "string"
+        },
+        "coverageLevel": {
+          "$ref": "#/$defs/JurisdictionCoverageLevel"
+        },
+        "officialSourceIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Officialsourceids",
+          "type": "array"
+        },
+        "legalAuthorityIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Legalauthorityids",
+          "type": "array"
+        },
+        "referenceValueRecordIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Referencevaluerecordids",
+          "type": "array"
+        },
+        "enforcementRecordIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Enforcementrecordids",
+          "type": "array"
+        },
+        "legalLimitRecordIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Legallimitrecordids",
+          "type": "array"
+        },
+        "currencyMetadataComplete": {
+          "title": "Currencymetadatacomplete",
+          "type": "boolean"
+        },
+        "gapReason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Gapreason"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "coverageId",
+        "jurisdiction",
+        "contaminantFamily",
+        "substanceKey",
+        "coverageLevel",
+        "currencyMetadataComplete"
+      ],
+      "title": "JurisdictionCoverageRecord",
+      "type": "object"
+    },
+    "JurisdictionRiskProfile": {
+      "additionalProperties": false,
+      "properties": {
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "mrl_violations": {
+          "items": {
+            "$ref": "#/$defs/QualityFlag"
+          },
+          "title": "Mrl Violations",
+          "type": "array"
+        },
+        "applicable_reference_values": {
+          "items": {
+            "$ref": "#/$defs/ReferenceValueRecord"
+          },
+          "title": "Applicable Reference Values",
+          "type": "array"
+        },
+        "trade_status": {
+          "title": "Trade Status",
+          "type": "string"
+        },
+        "statusReason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Statusreason"
+        },
+        "mrlCoverageStatus": {
+          "$ref": "#/$defs/TradeMrlCoverageStatus",
+          "default": "unscoped_lookup"
+        },
+        "mrlCuratedSupportTypes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Mrlcuratedsupporttypes",
+          "type": "array"
+        },
+        "mrlCuratedScopeCommodityCodes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Mrlcuratedscopecommoditycodes",
+          "type": "array"
+        },
+        "referenceValueJurisdictionStatus": {
+          "$ref": "#/$defs/ReferenceValueJurisdictionStatus",
+          "default": "unscoped_lookup"
+        },
+        "referenceValueCuratedSupportTypes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Referencevaluecuratedsupporttypes",
+          "type": "array"
+        },
+        "coverageSummaries": {
+          "items": {
+            "$ref": "#/$defs/JurisdictionCoverageRecord"
+          },
+          "title": "Coveragesummaries",
+          "type": "array"
+        },
+        "qualityFlags": {
+          "items": {
+            "$ref": "#/$defs/QualityFlag"
+          },
+          "title": "Qualityflags",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "jurisdiction",
+        "trade_status"
+      ],
+      "title": "JurisdictionRiskProfile",
+      "type": "object"
+    },
+    "LimitationNote": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "title": "LimitationNote",
+      "type": "object"
+    },
+    "PinnedResourceFingerprint": {
+      "additionalProperties": false,
+      "properties": {
+        "role": {
+          "title": "Role",
+          "type": "string"
+        },
+        "uri": {
+          "title": "Uri",
+          "type": "string"
+        },
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "confidentialityTag": {
+          "$ref": "#/$defs/ConfidentialityTag",
+          "default": "public"
+        },
+        "sanitisationState": {
+          "$ref": "#/$defs/SanitisationState",
+          "default": "retained"
+        }
+      },
+      "required": [
+        "role",
+        "uri",
+        "sha256",
+        "description"
+      ],
+      "title": "PinnedResourceFingerprint",
+      "type": "object"
+    },
+    "QualityFlag": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "severity": {
+          "$ref": "#/$defs/Severity"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "severity",
+        "message"
+      ],
+      "title": "QualityFlag",
+      "type": "object"
+    },
+    "ReferenceValueJurisdictionStatus": {
+      "enum": [
+        "exact_jurisdiction_value_present",
+        "jurisdiction_value_exists_but_filter_unmatched",
+        "family_curated_without_reference_value",
+        "anchor_only_family",
+        "explicit_gap",
+        "no_curated_family_coverage",
+        "unscoped_lookup"
+      ],
+      "title": "ReferenceValueJurisdictionStatus",
+      "type": "string"
+    },
+    "ReferenceValueRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "recordId": {
+          "title": "Recordid",
+          "type": "string"
+        },
+        "substanceKey": {
+          "title": "Substancekey",
+          "type": "string"
+        },
+        "substanceName": {
+          "title": "Substancename",
+          "type": "string"
+        },
+        "referenceType": {
+          "title": "Referencetype",
+          "type": "string"
+        },
+        "authority": {
+          "title": "Authority",
+          "type": "string"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "contaminantFamily": {
+          "$ref": "#/$defs/ContaminantFamily"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        },
+        "qualifier": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Qualifier"
+        },
+        "assessmentLabel": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Assessmentlabel"
+        },
+        "assessmentYear": {
+          "anyOf": [
+            {
+              "maximum": 2100,
+              "minimum": 1900,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Assessmentyear"
+        },
+        "population": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Population"
+        },
+        "sourceOutputId": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sourceoutputid"
+        },
+        "sourceIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sourceids",
+          "type": "array"
+        },
+        "primarySourceId": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Primarysourceid"
+        },
+        "databaseSourceId": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Databasesourceid"
+        },
+        "conflictGroupId": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Conflictgroupid"
+        },
+        "documentStatus": {
+          "$ref": "#/$defs/DocumentStatus"
+        },
+        "submissionUse": {
+          "$ref": "#/$defs/SubmissionUse"
+        },
+        "effectiveDate": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Effectivedate"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "recordId",
+        "substanceKey",
+        "substanceName",
+        "referenceType",
+        "authority",
+        "jurisdiction",
+        "contaminantFamily",
+        "sourceIds",
+        "documentStatus",
+        "submissionUse"
+      ],
+      "title": "ReferenceValueRecord",
+      "type": "object"
+    },
+    "RegulatoryRole": {
+      "enum": [
+        "binding",
+        "guidance",
+        "technical_report",
+        "dataset",
+        "software_metadata"
+      ],
+      "title": "RegulatoryRole",
+      "type": "string"
+    },
+    "RegulatorySourceRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "sourceId": {
+          "title": "Sourceid",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "organization": {
+          "title": "Organization",
+          "type": "string"
+        },
+        "kind": {
+          "title": "Kind",
+          "type": "string"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "documentStatus": {
+          "$ref": "#/$defs/DocumentStatus"
+        },
+        "regulatoryRole": {
+          "$ref": "#/$defs/RegulatoryRole"
+        },
+        "effectiveDate": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Effectivedate"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "originTag": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceOriginTag"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "submissionUse": {
+          "$ref": "#/$defs/SubmissionUse"
+        },
+        "normativeFor": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Normativefor",
+          "type": "array"
+        },
+        "supersedes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Supersedes",
+          "type": "array"
+        },
+        "supersededBy": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Supersededby",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "sourceId",
+        "title",
+        "organization",
+        "kind",
+        "jurisdiction",
+        "documentStatus",
+        "regulatoryRole",
+        "url",
+        "submissionUse"
+      ],
+      "title": "RegulatorySourceRecord",
+      "type": "object"
+    },
+    "ReleaseMetadataSnapshot": {
+      "additionalProperties": false,
+      "properties": {
+        "resource_uri": {
+          "title": "Resource Uri",
+          "type": "string"
+        },
+        "release_version": {
+          "title": "Release Version",
+          "type": "string"
+        },
+        "defaults_version": {
+          "title": "Defaults Version",
+          "type": "string"
+        },
+        "metadata_report_sha256": {
+          "title": "Metadata Report Sha256",
+          "type": "string"
+        },
+        "artifact_hashes": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Artifact Hashes",
+          "type": "object"
+        }
+      },
+      "required": [
+        "resource_uri",
+        "release_version",
+        "defaults_version",
+        "metadata_report_sha256",
+        "artifact_hashes"
+      ],
+      "title": "ReleaseMetadataSnapshot",
+      "type": "object"
+    },
+    "ReviewResourceReference": {
+      "additionalProperties": false,
+      "properties": {
+        "role": {
+          "title": "Role",
+          "type": "string"
+        },
+        "uri": {
+          "title": "Uri",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "confidentialityTag": {
+          "$ref": "#/$defs/ConfidentialityTag",
+          "default": "public"
+        },
+        "sanitisationState": {
+          "$ref": "#/$defs/SanitisationState",
+          "default": "retained"
+        }
+      },
+      "required": [
+        "role",
+        "uri",
+        "description"
+      ],
+      "title": "ReviewResourceReference",
+      "type": "object"
+    },
+    "SanitisationState": {
+      "enum": [
+        "retained",
+        "redacted",
+        "removed"
+      ],
+      "title": "SanitisationState",
+      "type": "string"
+    },
+    "Severity": {
+      "enum": [
+        "info",
+        "warning",
+        "error"
+      ],
+      "title": "Severity",
+      "type": "string"
+    },
+    "SourceOriginTag": {
+      "enum": [
+        "official_regulatory",
+        "curated_derived",
+        "illustrative_placeholder",
+        "internal_operational"
+      ],
+      "title": "SourceOriginTag",
+      "type": "string"
+    },
+    "SubmissionUse": {
+      "enum": [
+        "allowed",
+        "review_required",
+        "not_allowed"
+      ],
+      "title": "SubmissionUse",
+      "type": "string"
+    },
+    "TradeMrlCoverageStatus": {
+      "enum": [
+        "all_requested_pairs_exactly_curated",
+        "requested_pair_outside_curated_scope",
+        "family_curated_without_mrl",
+        "anchor_only_family",
+        "explicit_gap",
+        "no_curated_family_coverage",
+        "unscoped_lookup"
+      ],
+      "title": "TradeMrlCoverageStatus",
+      "type": "string"
+    },
+    "TradeRiskReviewBundle": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "bundleId": {
+          "title": "Bundleid",
+          "type": "string"
+        },
+        "bundleProfile": {
+          "$ref": "#/$defs/BundleProfile",
+          "default": "internal_review"
+        },
+        "reviewStatus": {
+          "title": "Reviewstatus",
+          "type": "string"
+        },
+        "tradeReport": {
+          "$ref": "#/$defs/GlobalTradeRiskReport"
+        },
+        "coveredSourceIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Coveredsourceids",
+          "type": "array"
+        },
+        "reviewPrompts": {
+          "items": {
+            "$ref": "#/$defs/TradeRiskReviewPrompt"
+          },
+          "title": "Reviewprompts",
+          "type": "array"
+        },
+        "documentationResourceUri": {
+          "default": "docs://trade-risk-review",
+          "title": "Documentationresourceuri",
+          "type": "string"
+        },
+        "referencedResources": {
+          "items": {
+            "$ref": "#/$defs/ReviewResourceReference"
+          },
+          "title": "Referencedresources",
+          "type": "array"
+        },
+        "dependencies": {
+          "items": {
+            "$ref": "#/$defs/DependencyDescriptor"
+          },
+          "title": "Dependencies",
+          "type": "array"
+        },
+        "limitations": {
+          "items": {
+            "$ref": "#/$defs/LimitationNote"
+          },
+          "title": "Limitations",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "reviewStatus",
+        "tradeReport"
+      ],
+      "title": "TradeRiskReviewBundle",
+      "type": "object"
+    },
+    "TradeRiskReviewPrompt": {
+      "additionalProperties": false,
+      "properties": {
+        "promptId": {
+          "title": "Promptid",
+          "type": "string"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "category": {
+          "title": "Category",
+          "type": "string"
+        },
+        "prompt": {
+          "title": "Prompt",
+          "type": "string"
+        },
+        "linkedRecordIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Linkedrecordids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "promptId",
+        "jurisdiction",
+        "category",
+        "prompt"
+      ],
+      "title": "TradeRiskReviewPrompt",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "dossierId": {
+      "title": "Dossierid",
+      "type": "string"
+    },
+    "bundleProfile": {
+      "$ref": "#/$defs/BundleProfile",
+      "default": "internal_review"
+    },
+    "dossierStatus": {
+      "title": "Dossierstatus",
+      "type": "string"
+    },
+    "reviewBundle": {
+      "$ref": "#/$defs/TradeRiskReviewBundle"
+    },
+    "releaseMetadata": {
+      "$ref": "#/$defs/ReleaseMetadataSnapshot"
+    },
+    "sourceGovernanceSnapshot": {
+      "items": {
+        "$ref": "#/$defs/RegulatorySourceRecord"
+      },
+      "title": "Sourcegovernancesnapshot",
+      "type": "array"
+    },
+    "pinnedResources": {
+      "items": {
+        "$ref": "#/$defs/PinnedResourceFingerprint"
+      },
+      "title": "Pinnedresources",
+      "type": "array"
+    },
+    "confidentialityAnnotations": {
+      "items": {
+        "$ref": "#/$defs/ConfidentialityAnnotation"
+      },
+      "title": "Confidentialityannotations",
+      "type": "array"
+    },
+    "limitations": {
+      "items": {
+        "$ref": "#/$defs/LimitationNote"
+      },
+      "title": "Limitations",
+      "type": "array"
+    },
+    "notes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "dossierStatus",
+    "reviewBundle",
+    "releaseMetadata"
+  ],
+  "title": "VersionPinnedTradeRiskReviewDossier",
+  "type": "object"
+}

@@ -1,0 +1,128 @@
+{
+  "overall_status": "review_required",
+  "target_profile": {
+    "profile_id": "eu_internal_exchange_preview",
+    "display_name": "EU internal exchange preview",
+    "jurisdiction": "eu",
+    "intended_use": "Internal exchange of a staged OHT/IUCLID-aligned JSON preview for review workflows.",
+    "allowed_preview_profiles": [
+      "oht_85_iuclid_json_preview"
+    ],
+    "required_dossier_readiness_profile": "eu_internal_review",
+    "notes": [
+      "Unsupported fields and derived mappings remain review items rather than blockers for internal exchange."
+    ]
+  },
+  "source_preview_profile_id": "oht_85_iuclid_json_preview",
+  "linked_dossier_readiness_profile": "eu_internal_review",
+  "linked_dossier_readiness_status": "review_required",
+  "applied_rules": [
+    {
+      "rule_id": "preview_profile_allowed",
+      "profile_id": "eu_internal_exchange_preview",
+      "status": "pass",
+      "message": "Preview profile is allowed for the selected interoperability readiness profile.",
+      "blocking": false,
+      "note": null
+    },
+    {
+      "rule_id": "source_dossier_consistent",
+      "profile_id": "eu_internal_exchange_preview",
+      "status": "pass",
+      "message": "Preview source dossier matches the supplied version-pinned dossier.",
+      "blocking": false,
+      "note": null
+    },
+    {
+      "rule_id": "preview_required_fields_complete",
+      "profile_id": "eu_internal_exchange_preview",
+      "status": "pass",
+      "message": "Preview contains all required mapped source fields.",
+      "blocking": false,
+      "note": null
+    },
+    {
+      "rule_id": "preview_target_document_present",
+      "profile_id": "eu_internal_exchange_preview",
+      "status": "pass",
+      "message": "Preview produced a non-empty staged target document.",
+      "blocking": false,
+      "note": null
+    },
+    {
+      "rule_id": "linked_dossier_readiness",
+      "profile_id": "eu_internal_exchange_preview",
+      "status": "review_required",
+      "message": "Linked dossier readiness assessment requires human review before treating the preview as exchange-ready.",
+      "blocking": false,
+      "note": "eu_internal_review"
+    },
+    {
+      "rule_id": "preview_unsupported_fields_allowed",
+      "profile_id": "eu_internal_exchange_preview",
+      "status": "review_required",
+      "message": "Preview still carries unsupported local-only fields that require review or block the selected gate.",
+      "blocking": false,
+      "note": "confidentiality_annotations, review_bundle.check_result.header_resolution, review_bundle.check_result.input_headers, review_bundle.comparison_result.compared_fields, review_bundle.comparison_result.matched_fields"
+    },
+    {
+      "rule_id": "preview_non_direct_mappings_allowed",
+      "profile_id": "eu_internal_exchange_preview",
+      "status": "review_required",
+      "message": "Preview still depends on derived or review-required mappings that require review or block the selected gate.",
+      "blocking": false,
+      "note": "model_governance_snapshot, pinned_resources, review_bundle.check_result.normalized_projection.commodity_contributions, source_governance_snapshot"
+    }
+  ],
+  "blocking_rules": [],
+  "warning_rules": [
+    {
+      "rule_id": "linked_dossier_readiness",
+      "profile_id": "eu_internal_exchange_preview",
+      "status": "review_required",
+      "message": "Linked dossier readiness assessment requires human review before treating the preview as exchange-ready.",
+      "blocking": false,
+      "note": "eu_internal_review"
+    },
+    {
+      "rule_id": "preview_unsupported_fields_allowed",
+      "profile_id": "eu_internal_exchange_preview",
+      "status": "review_required",
+      "message": "Preview still carries unsupported local-only fields that require review or block the selected gate.",
+      "blocking": false,
+      "note": "confidentiality_annotations, review_bundle.check_result.header_resolution, review_bundle.check_result.input_headers, review_bundle.comparison_result.compared_fields, review_bundle.comparison_result.matched_fields"
+    },
+    {
+      "rule_id": "preview_non_direct_mappings_allowed",
+      "profile_id": "eu_internal_exchange_preview",
+      "status": "review_required",
+      "message": "Preview still depends on derived or review-required mappings that require review or block the selected gate.",
+      "blocking": false,
+      "note": "model_governance_snapshot, pinned_resources, review_bundle.check_result.normalized_projection.commodity_contributions, source_governance_snapshot"
+    }
+  ],
+  "missing_required_fields": [],
+  "unsupported_field_paths": [
+    "confidentiality_annotations",
+    "review_bundle.check_result.header_resolution",
+    "review_bundle.check_result.input_headers",
+    "review_bundle.comparison_result.compared_fields",
+    "review_bundle.comparison_result.matched_fields"
+  ],
+  "derived_mapping_paths": [
+    "model_governance_snapshot",
+    "pinned_resources",
+    "review_bundle.check_result.normalized_projection.commodity_contributions",
+    "source_governance_snapshot"
+  ],
+  "review_required_mapping_paths": [],
+  "direct_mapping_count": 9,
+  "derived_mapping_count": 4,
+  "review_required_mapping_count": 0,
+  "notes": [
+    "Interoperability readiness uses a fixed ruleset layered on top of the staged OHT/IUCLID-aligned JSON preview.",
+    "This assessment does not imply XML conformance, dossier completeness, or final regulatory acceptance.",
+    "Linked dossier readiness profile: eu_internal_review.",
+    "Unsupported fields and derived mappings remain review items rather than blockers for internal exchange."
+  ]
+}

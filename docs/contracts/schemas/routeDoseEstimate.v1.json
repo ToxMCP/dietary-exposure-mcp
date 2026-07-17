@@ -1,0 +1,278 @@
+{
+  "$defs": {
+    "FitForPurpose": {
+      "enum": [
+        "screening",
+        "downstream_export",
+        "benchmark",
+        "comparison"
+      ],
+      "title": "FitForPurpose",
+      "type": "string"
+    },
+    "IntakeWindowSemantic": {
+      "enum": [
+        "acute",
+        "chronic"
+      ],
+      "title": "IntakeWindowSemantic",
+      "type": "string"
+    },
+    "LimitationNote": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "title": "LimitationNote",
+      "type": "object"
+    },
+    "ProvenanceBundle": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "defaults_version": {
+          "default": "v1",
+          "title": "Defaults Version",
+          "type": "string"
+        },
+        "algorithm_version": {
+          "title": "Algorithm Version",
+          "type": "string"
+        },
+        "generated_at": {
+          "format": "date-time",
+          "title": "Generated At",
+          "type": "string"
+        },
+        "source_references": {
+          "items": {
+            "$ref": "#/$defs/SourceReference"
+          },
+          "title": "Source References",
+          "type": "array"
+        }
+      },
+      "required": [
+        "algorithm_version",
+        "generated_at"
+      ],
+      "title": "ProvenanceBundle",
+      "type": "object"
+    },
+    "QualityFlag": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "severity": {
+          "$ref": "#/$defs/Severity"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "severity",
+        "message"
+      ],
+      "title": "QualityFlag",
+      "type": "object"
+    },
+    "Route": {
+      "enum": [
+        "oral"
+      ],
+      "title": "Route",
+      "type": "string"
+    },
+    "Severity": {
+      "enum": [
+        "info",
+        "warning",
+        "error"
+      ],
+      "title": "Severity",
+      "type": "string"
+    },
+    "SourceOriginTag": {
+      "enum": [
+        "official_regulatory",
+        "curated_derived",
+        "illustrative_placeholder",
+        "internal_operational"
+      ],
+      "title": "SourceOriginTag",
+      "type": "string"
+    },
+    "SourceReference": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "effective_date": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Effective Date"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        },
+        "originTag": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceOriginTag"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "source_id",
+        "title"
+      ],
+      "title": "SourceReference",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "estimate_id": {
+      "title": "Estimate Id",
+      "type": "string"
+    },
+    "scenario_id": {
+      "title": "Scenario Id",
+      "type": "string"
+    },
+    "chemical_identity": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Chemical Identity",
+      "type": "object"
+    },
+    "route": {
+      "$ref": "#/$defs/Route",
+      "default": "oral"
+    },
+    "dose_metric": {
+      "default": "external_oral_dose_mg_per_kg_bw_per_day",
+      "title": "Dose Metric",
+      "type": "string"
+    },
+    "intake_window_semantic": {
+      "$ref": "#/$defs/IntakeWindowSemantic"
+    },
+    "value_mg_per_kg_bw_per_day": {
+      "minimum": 0.0,
+      "title": "Value Mg Per Kg Bw Per Day",
+      "type": "number"
+    },
+    "lower_bound_mg_per_kg_bw_per_day": {
+      "anyOf": [
+        {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Lower Bound Mg Per Kg Bw Per Day"
+    },
+    "upper_bound_mg_per_kg_bw_per_day": {
+      "anyOf": [
+        {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Upper Bound Mg Per Kg Bw Per Day"
+    },
+    "fit_for_purpose": {
+      "$ref": "#/$defs/FitForPurpose"
+    },
+    "provenance": {
+      "$ref": "#/$defs/ProvenanceBundle"
+    },
+    "quality_flags": {
+      "items": {
+        "$ref": "#/$defs/QualityFlag"
+      },
+      "title": "Quality Flags",
+      "type": "array"
+    },
+    "limitations": {
+      "items": {
+        "$ref": "#/$defs/LimitationNote"
+      },
+      "title": "Limitations",
+      "type": "array"
+    }
+  },
+  "required": [
+    "scenario_id",
+    "chemical_identity",
+    "intake_window_semantic",
+    "value_mg_per_kg_bw_per_day",
+    "fit_for_purpose",
+    "provenance"
+  ],
+  "title": "RouteDoseEstimate",
+  "type": "object"
+}

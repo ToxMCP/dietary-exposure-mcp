@@ -1,0 +1,6124 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "substance_synonyms",
+  "entries": [
+    {
+      "canonicalKey": "glyphosate",
+      "synonyms": [
+        "glyphosate (acid)"
+      ],
+      "sourceId": "dietary.substance_synonyms.glyphosate"
+    },
+    {
+      "canonicalKey": "hyoscyamine_and_scopolamine_group",
+      "synonyms": [
+        "(-)-Hyoscyamine and (-)-Scopolamine group"
+      ],
+      "sourceId": "dietary.substance_synonyms.hyoscyamine_and_scopolamine_group"
+    },
+    {
+      "canonicalKey": "3_chloro_4_chloromethyl_1_2_pyrrolidone_with_ratio_of_and_isomers_not_exactly_31",
+      "synonyms": [
+        "(3RS,4RS;3RS,4SR)-3-chloro-4-chloromethyl-1-(alpha,alpha,alpha-trifluoro-m-tolyl)-2-pyrrolidone with ratio of (1RS,2RS)(trans)- and (1RS,2SR)(cis)-isomers not exactly 3:1"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_chloro_4_chloromethyl_1_2_pyrrolidone_with_ratio_of_and_isomers_not_exactly_31"
+    },
+    {
+      "canonicalKey": "isomer_of_avermectin_b1a",
+      "synonyms": [
+        "(8,9-Z)-isomer of avermectin B1a"
+      ],
+      "sourceId": "dietary.substance_synonyms.isomer_of_avermectin_b1a"
+    },
+    {
+      "canonicalKey": "810_dodecadien_1_ol",
+      "synonyms": [
+        "(E,E)-8,10-Dodecadien-1-ol"
+      ],
+      "sourceId": "dietary.substance_synonyms.810_dodecadien_1_ol"
+    },
+    {
+      "canonicalKey": "hexa_24_dienoic_acid",
+      "synonyms": [
+        "(E,E)-Hexa-2,4-dienoic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.hexa_24_dienoic_acid"
+    },
+    {
+      "canonicalKey": "24_dinitro_6_phenyl_but_2_enoate",
+      "synonyms": [
+        "(RS)-2,4-dinitro-6-(octan-2-yl)phenyl (2 E/Z)-but-2-enoate"
+      ],
+      "sourceId": "dietary.substance_synonyms.24_dinitro_6_phenyl_but_2_enoate"
+    },
+    {
+      "canonicalKey": "amino_2_oxoethylsulfinylacetic_acid",
+      "synonyms": [
+        "({2-[(Ethoxymethyl)(2-ethyl-6-methylphenyl)amino]-2-oxoethyl}sulfinyl)acetic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.amino_2_oxoethylsulfinylacetic_acid"
+    },
+    {
+      "canonicalKey": "124_triazole",
+      "synonyms": [
+        "1,2,4-Triazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.124_triazole"
+    },
+    {
+      "canonicalKey": "12_benzisothiazol_3_one_11_dioxide_sodium_salt",
+      "synonyms": [
+        "1,2-Benzisothiazol-3(2H)-one 1,1-dioxide sodium salt"
+      ],
+      "sourceId": "dietary.substance_synonyms.12_benzisothiazol_3_one_11_dioxide_sodium_salt"
+    },
+    {
+      "canonicalKey": "12_cyclohexanedicarboxylic_acid_diisononyl_ester",
+      "synonyms": [
+        "1,2-Cyclohexanedicarboxylic acid, diisononyl ester"
+      ],
+      "sourceId": "dietary.substance_synonyms.12_cyclohexanedicarboxylic_acid_diisononyl_ester"
+    },
+    {
+      "canonicalKey": "13_dichloropropene",
+      "synonyms": [
+        "1,3-Dichloropropene"
+      ],
+      "sourceId": "dietary.substance_synonyms.13_dichloropropene"
+    },
+    {
+      "canonicalKey": "14_butanediol",
+      "synonyms": [
+        "1,4-Butanediol"
+      ],
+      "sourceId": "dietary.substance_synonyms.14_butanediol"
+    },
+    {
+      "canonicalKey": "14_dimethylnaphthalene",
+      "synonyms": [
+        "1,4-Dimethylnaphthalene"
+      ],
+      "sourceId": "dietary.substance_synonyms.14_dimethylnaphthalene"
+    },
+    {
+      "canonicalKey": "1_methyl_3_trifluoromethyl_1h_pyrazole_4_carboxylic_acid",
+      "synonyms": [
+        "1-Methyl-3-trifluoromethyl-1H-pyrazole-4-carboxylic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.1_methyl_3_trifluoromethyl_1h_pyrazole_4_carboxylic_acid"
+    },
+    {
+      "canonicalKey": "1_methylcyclopropene",
+      "synonyms": [
+        "1-Methylcyclopropene"
+      ],
+      "sourceId": "dietary.substance_synonyms.1_methylcyclopropene"
+    },
+    {
+      "canonicalKey": "1_naphthylacetic_acid",
+      "synonyms": [
+        "1-Naphthylacetic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.1_naphthylacetic_acid"
+    },
+    {
+      "canonicalKey": "1_phenylethan_1_ol",
+      "synonyms": [
+        "1-Phenylethan-1-ol"
+      ],
+      "sourceId": "dietary.substance_synonyms.1_phenylethan_1_ol"
+    },
+    {
+      "canonicalKey": "1_amido_2_carboxy_45_cyclohexene",
+      "synonyms": [
+        "1-amido-2-carboxy-4,5-cyclohexene"
+      ],
+      "sourceId": "dietary.substance_synonyms.1_amido_2_carboxy_45_cyclohexene"
+    },
+    {
+      "canonicalKey": "22_bispropane",
+      "synonyms": [
+        "2,2-Bis(4-hydroxyphenyl)propane"
+      ],
+      "sourceId": "dietary.substance_synonyms.22_bispropane"
+    },
+    {
+      "canonicalKey": "22_bispropane_bisether",
+      "synonyms": [
+        "2,2-Bis(4-hydroxyphenyl)propane bis(2,3-epoxypropyl)ether"
+      ],
+      "sourceId": "dietary.substance_synonyms.22_bispropane_bisether"
+    },
+    {
+      "canonicalKey": "22_bispropane_bisether_hydrolysis_products",
+      "synonyms": [
+        "2,2-Bis(4-hydroxyphenyl)propane bis(2,3-epoxypropyl)ether hydrolysis products"
+      ],
+      "sourceId": "dietary.substance_synonyms.22_bispropane_bisether_hydrolysis_products"
+    },
+    {
+      "canonicalKey": "2378_tcdd",
+      "synonyms": [
+        "2,3,7,8-TCDD"
+      ],
+      "sourceId": "dietary.substance_synonyms.2378_tcdd"
+    },
+    {
+      "canonicalKey": "2468_tetramethyl_1357_tetraoxacyclooctane",
+      "synonyms": [
+        "2,4,6,8-Tetramethyl-1,3,5,7-tetraoxacyclooctane"
+      ],
+      "sourceId": "dietary.substance_synonyms.2468_tetramethyl_1357_tetraoxacyclooctane"
+    },
+    {
+      "canonicalKey": "24_d",
+      "synonyms": [
+        "2,4-D"
+      ],
+      "sourceId": "dietary.substance_synonyms.24_d"
+    },
+    {
+      "canonicalKey": "24_db",
+      "synonyms": [
+        "2,4-DB"
+      ],
+      "sourceId": "dietary.substance_synonyms.24_db"
+    },
+    {
+      "canonicalKey": "26_dichlorobenzamide",
+      "synonyms": [
+        "2,6-Dichlorobenzamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.26_dichlorobenzamide"
+    },
+    {
+      "canonicalKey": "2_1_3_propan_2_ol",
+      "synonyms": [
+        "2-(1-Chlorocyclopropyl)1-(2-chlorophenyl)-3-(1,2,4-triazol-1-yl)-propan-2-ol"
+      ],
+      "sourceId": "dietary.substance_synonyms.2_1_3_propan_2_ol"
+    },
+    {
+      "canonicalKey": "2_acetamide",
+      "synonyms": [
+        "2-(1-Naphthyl)acetamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.2_acetamide"
+    },
+    {
+      "canonicalKey": "2_chloro_4_3_methylbenzoic_acid",
+      "synonyms": [
+        "2-Chloro-4-(methylsulfonyl)-3-[(2,2,2-trifluoroethoxy)methyl]benzoic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.2_chloro_4_3_methylbenzoic_acid"
+    },
+    {
+      "canonicalKey": "2_chlorobenzamide",
+      "synonyms": [
+        "2-Chlorobenzamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.2_chlorobenzamide"
+    },
+    {
+      "canonicalKey": "2_chlorobenzoic_acid",
+      "synonyms": [
+        "2-Chlorobenzoic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.2_chlorobenzoic_acid"
+    },
+    {
+      "canonicalKey": "2_ethylhexanol",
+      "synonyms": [
+        "2-Ethylhexanol"
+      ],
+      "sourceId": "dietary.substance_synonyms.2_ethylhexanol"
+    },
+    {
+      "canonicalKey": "2_naphthyloxyacetic_acid",
+      "synonyms": [
+        "2-Naphthyloxyacetic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.2_naphthyloxyacetic_acid"
+    },
+    {
+      "canonicalKey": "2_phenylphenol",
+      "synonyms": [
+        "2-Phenylphenol"
+      ],
+      "sourceId": "dietary.substance_synonyms.2_phenylphenol"
+    },
+    {
+      "canonicalKey": "2_sulfamoyl_3_methylbenzoic_acid_methyl_ester",
+      "synonyms": [
+        "2-Sulfamoyl-3-methylbenzoic acid methyl ester"
+      ],
+      "sourceId": "dietary.substance_synonyms.2_sulfamoyl_3_methylbenzoic_acid_methyl_ester"
+    },
+    {
+      "canonicalKey": "2_amino_2_oxoethane_sulfonic_acid",
+      "synonyms": [
+        "2-[(2-Ethyl-6-methylphenyl) amino]-2-oxoethane sulfonic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.2_amino_2_oxoethane_sulfonic_acid"
+    },
+    {
+      "canonicalKey": "2_amino_2_oxoethanesulfonic_acid",
+      "synonyms": [
+        "2-[(Ethoxymethyl)(2-ethyl-6-methylphenyl)amino]-2-oxoethanesulfonic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.2_amino_2_oxoethanesulfonic_acid"
+    },
+    {
+      "canonicalKey": "2_2_chloro_4_3_methylbenzoyl_46_dihydroxycyclohexane_13_dione",
+      "synonyms": [
+        "2-{2-Chloro-4-(methylsulfonyl)-3-[(2,2,2-trifluoroethoxy)methyl]benzoyl}-4,6-dihydroxycyclohexane-1,3-dione"
+      ],
+      "sourceId": "dietary.substance_synonyms.2_2_chloro_4_3_methylbenzoyl_46_dihydroxycyclohexane_13_dione"
+    },
+    {
+      "canonicalKey": "24_hydroxymethyl_avermectin_b1",
+      "synonyms": [
+        "24-hydroxymethyl-avermectin B1"
+      ],
+      "sourceId": "dietary.substance_synonyms.24_hydroxymethyl_avermectin_b1"
+    },
+    {
+      "canonicalKey": "25_hydroxycholecalciferol",
+      "synonyms": [
+        "25-Hydroxycholecalciferol"
+      ],
+      "sourceId": "dietary.substance_synonyms.25_hydroxycholecalciferol"
+    },
+    {
+      "canonicalKey": "356_trichloro_2_pyridinol",
+      "synonyms": [
+        "3,5,6-Trichloro-2-pyridinol"
+      ],
+      "sourceId": "dietary.substance_synonyms.356_trichloro_2_pyridinol"
+    },
+    {
+      "canonicalKey": "35_dichloro_4_hydroxybenzoic_acid",
+      "synonyms": [
+        "3,5-Dichloro-4-hydroxybenzoic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.35_dichloro_4_hydroxybenzoic_acid"
+    },
+    {
+      "canonicalKey": "35_dichloroaniline",
+      "synonyms": [
+        "3,5-dichloroaniline"
+      ],
+      "sourceId": "dietary.substance_synonyms.35_dichloroaniline"
+    },
+    {
+      "canonicalKey": "36_dichloropyridine_2_carboxylic_acid",
+      "synonyms": [
+        "3,6-dichloropyridine-2-carboxylic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.36_dichloropyridine_2_carboxylic_acid"
+    },
+    {
+      "canonicalKey": "3_6_fluoro_24_quinazolinedione",
+      "synonyms": [
+        "3-(2,4-Dichlorophenyl)-6-fluoro-2,4(1H,3H)-quinazolinedione"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_6_fluoro_24_quinazolinedione"
+    },
+    {
+      "canonicalKey": "3_1_n_1h_pyrazole_4_carboxamide",
+      "synonyms": [
+        "3-(Difluoromethyl)-1-(b-Dglucopyranosyloxy)-N-(3',4',5'-trifluorobiphenyl-2-yl)-1H-pyrazole-4-carboxamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_1_n_1h_pyrazole_4_carboxamide"
+    },
+    {
+      "canonicalKey": "3_1_methyl_1h_pyrazole_4_carboxylic_acid",
+      "synonyms": [
+        "3-(Difluoromethyl)-1-methyl-1H-pyrazole-4-carboxylic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_1_methyl_1h_pyrazole_4_carboxylic_acid"
+    },
+    {
+      "canonicalKey": "3_1h_pyrazole_4_carboxylic_acid",
+      "synonyms": [
+        "3-(Difluoromethyl)-1H-pyrazole-4-carboxylic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_1h_pyrazole_4_carboxylic_acid"
+    },
+    {
+      "canonicalKey": "3_1_methyl_1h_pyrazole_4_carboxamide",
+      "synonyms": [
+        "3-(difluoromethyl)-1-methyl-1H-pyrazole-4-carboxamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_1_methyl_1h_pyrazole_4_carboxamide"
+    },
+    {
+      "canonicalKey": "3_1h_pyrazole_5_carboxylic_acid",
+      "synonyms": [
+        "3-(trifluoromethyl)-1H-pyrazole-5-carboxylic acid (IN-E8S72)"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_1h_pyrazole_5_carboxylic_acid"
+    },
+    {
+      "canonicalKey": "3_carbamoyl_245_trichlorobenzoic_acid",
+      "synonyms": [
+        "3-Carbamoyl-2,4,5-trichlorobenzoic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_carbamoyl_245_trichlorobenzoic_acid"
+    },
+    {
+      "canonicalKey": "3_chloro_4_hydroxyaniline",
+      "synonyms": [
+        "3-Chloro-4-hydroxyaniline"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_chloro_4_hydroxyaniline"
+    },
+    {
+      "canonicalKey": "3_chloroaniline",
+      "synonyms": [
+        "3-Chloroaniline"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_chloroaniline"
+    },
+    {
+      "canonicalKey": "3_desmethyl_f8426_benzoic_acid",
+      "synonyms": [
+        "3-Desmethyl-F8426-benzoic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_desmethyl_f8426_benzoic_acid"
+    },
+    {
+      "canonicalKey": "3_desmethyl_f8426_chloropropionic_acid",
+      "synonyms": [
+        "3-Desmethyl-F8426-chloropropionic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_desmethyl_f8426_chloropropionic_acid"
+    },
+    {
+      "canonicalKey": "3_desmethyl_f8426_propionic_acid",
+      "synonyms": [
+        "3-Desmethyl-F8426-propionic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_desmethyl_f8426_propionic_acid"
+    },
+    {
+      "canonicalKey": "3_hydroxymethyl_f8426_benzoic_acid",
+      "synonyms": [
+        "3-Hydroxymethyl-F8426-benzoic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_hydroxymethyl_f8426_benzoic_acid"
+    },
+    {
+      "canonicalKey": "3_hydroxymethyl_f8426_chloropropionic_acid",
+      "synonyms": [
+        "3-Hydroxymethyl-F8426-chloropropionic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_hydroxymethyl_f8426_chloropropionic_acid"
+    },
+    {
+      "canonicalKey": "3_methylbutyl_butyrate",
+      "synonyms": [
+        "3-Methylbutyl butyrate"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_methylbutyl_butyrate"
+    },
+    {
+      "canonicalKey": "3_monochloropropane_12_diol",
+      "synonyms": [
+        "3-Monochloropropane-1,2-diol"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_monochloropropane_12_diol"
+    },
+    {
+      "canonicalKey": "3_monochloropropane_12_diol_fatty_acid_esters",
+      "synonyms": [
+        "3-Monochloropropane-1,2-diol fatty acid esters"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_monochloropropane_12_diol_fatty_acid_esters"
+    },
+    {
+      "canonicalKey": "3_trifluoromethyl_1h_pyrazole_4_carboxylic_acid",
+      "synonyms": [
+        "3-Trifluoromethyl-1H-pyrazole-4-carboxylic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_trifluoromethyl_1h_pyrazole_4_carboxylic_acid"
+    },
+    {
+      "canonicalKey": "3_hydroxy_45_cyclohexene_12_dicarboximide",
+      "synonyms": [
+        "3-hydroxy-4,5-cyclohexene-1,2-dicarboximide"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_hydroxy_45_cyclohexene_12_dicarboximide"
+    },
+    {
+      "canonicalKey": "3_methyl_2_sulfamoylbenzoic_acid",
+      "synonyms": [
+        "3-methyl-2-sulfamoylbenzoic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.3_methyl_2_sulfamoylbenzoic_acid"
+    },
+    {
+      "canonicalKey": "415_diacetoxyscirpenol",
+      "synonyms": [
+        "4,15-Diacetoxyscirpenol"
+      ],
+      "sourceId": "dietary.substance_synonyms.415_diacetoxyscirpenol"
+    },
+    {
+      "canonicalKey": "45_cyclohexene_12_dicarboximide",
+      "synonyms": [
+        "4,5-cyclohexene-1,2-dicarboximide"
+      ],
+      "sourceId": "dietary.substance_synonyms.45_cyclohexene_12_dicarboximide"
+    },
+    {
+      "canonicalKey": "4_benzene_ethanol",
+      "synonyms": [
+        "4-(1,1-Dimethylethyl)benzene ethanol"
+      ],
+      "sourceId": "dietary.substance_synonyms.4_benzene_ethanol"
+    },
+    {
+      "canonicalKey": "4_acetylbenzene_sulfonamide",
+      "synonyms": [
+        "4-Acetylbenzene sulfonamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.4_acetylbenzene_sulfonamide"
+    },
+    {
+      "canonicalKey": "4_aminophenol",
+      "synonyms": [
+        "4-Aminophenol"
+      ],
+      "sourceId": "dietary.substance_synonyms.4_aminophenol"
+    },
+    {
+      "canonicalKey": "4_fluoro_3_phenoxybenzoic_acid",
+      "synonyms": [
+        "4-Fluoro-3-phenoxybenzoic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.4_fluoro_3_phenoxybenzoic_acid"
+    },
+    {
+      "canonicalKey": "4_methyl_5_propoxy_24_dihydro_3h_124_triazol_3_one",
+      "synonyms": [
+        "4-Methyl-5-propoxy-2,4-dihydro-3H-1,2,4-triazol-3-one"
+      ],
+      "sourceId": "dietary.substance_synonyms.4_methyl_5_propoxy_24_dihydro_3h_124_triazol_3_one"
+    },
+    {
+      "canonicalKey": "4_methyl_6_135_triazin_2_one",
+      "synonyms": [
+        "4-Methyl-6-(methylamino)-1,3,5-triazin-2(1H)-one"
+      ],
+      "sourceId": "dietary.substance_synonyms.4_methyl_6_135_triazin_2_one"
+    },
+    {
+      "canonicalKey": "4_methylimidazolidin_2_one",
+      "synonyms": [
+        "4-Methylimidazolidin-2-one"
+      ],
+      "sourceId": "dietary.substance_synonyms.4_methylimidazolidin_2_one"
+    },
+    {
+      "canonicalKey": "4_methylimidazolidine_2_thione",
+      "synonyms": [
+        "4-Methylimidazolidine-2-thione"
+      ],
+      "sourceId": "dietary.substance_synonyms.4_methylimidazolidine_2_thione"
+    },
+    {
+      "canonicalKey": "4_trifluoro_methoxyaniline",
+      "synonyms": [
+        "4-Trifluoro-methoxyaniline"
+      ],
+      "sourceId": "dietary.substance_synonyms.4_trifluoro_methoxyaniline"
+    },
+    {
+      "canonicalKey": "4_fluoro_3_phenoxybenzaldehyde",
+      "synonyms": [
+        "4-fluoro-3-phenoxybenzaldehyde"
+      ],
+      "sourceId": "dietary.substance_synonyms.4_fluoro_3_phenoxybenzaldehyde"
+    },
+    {
+      "canonicalKey": "56_dihydroimidazo21_c124dithiazole_3_thione",
+      "synonyms": [
+        "5,6-dihydroimidazo[2,1-c][1,2,4]dithiazole-3-thione"
+      ],
+      "sourceId": "dietary.substance_synonyms.56_dihydroimidazo21_c124dithiazole_3_thione"
+    },
+    {
+      "canonicalKey": "5_4_methyl_24_dihydro_3h_124_triazol_3_one",
+      "synonyms": [
+        "5-(2-Hydroxypropoxy)-4-methyl-2,4-dihydro-3H-1,2,4-triazol-3-one (M02)"
+      ],
+      "sourceId": "dietary.substance_synonyms.5_4_methyl_24_dihydro_3h_124_triazol_3_one"
+    },
+    {
+      "canonicalKey": "5_2_pyridinone",
+      "synonyms": [
+        "5-(Trifluoromethyl)-2(1H)-pyridinone"
+      ],
+      "sourceId": "dietary.substance_synonyms.5_2_pyridinone"
+    },
+    {
+      "canonicalKey": "5_hydroxy_45_cyclohexene_12_dicarboximide",
+      "synonyms": [
+        "5-hydroxy-4,5-cyclohexene-1,2-dicarboximide"
+      ],
+      "sourceId": "dietary.substance_synonyms.5_hydroxy_45_cyclohexene_12_dicarboximide"
+    },
+    {
+      "canonicalKey": "6_135_triazine_24_diamine",
+      "synonyms": [
+        "6-(2,2,2-Trifluoroethoxy)-1,3,5-triazine-2,4-diamine"
+      ],
+      "sourceId": "dietary.substance_synonyms.6_135_triazine_24_diamine"
+    },
+    {
+      "canonicalKey": "6_135_triazine_24_diol",
+      "synonyms": [
+        "6-(tert-butylamino)-1,3,5-triazine-2,4-diol"
+      ],
+      "sourceId": "dietary.substance_synonyms.6_135_triazine_24_diol"
+    },
+    {
+      "canonicalKey": "6_hydroxy_12_benzothiazol_3_one_11_dioxide",
+      "synonyms": [
+        "6-Hydroxy-1,2-benzothiazol-3(2H)-one 1,1-dioxide"
+      ],
+      "sourceId": "dietary.substance_synonyms.6_hydroxy_12_benzothiazol_3_one_11_dioxide"
+    },
+    {
+      "canonicalKey": "7_methyl_12_benzisothiazol_3_one_11_dioxide",
+      "synonyms": [
+        "7-Methyl-1,2-benzisothiazol-3(2H)-one 1,1-dioxide"
+      ],
+      "sourceId": "dietary.substance_synonyms.7_methyl_12_benzisothiazol_3_one_11_dioxide"
+    },
+    {
+      "canonicalKey": "8_hydroxyquinoline",
+      "synonyms": [
+        "8-Hydroxyquinoline"
+      ],
+      "sourceId": "dietary.substance_synonyms.8_hydroxyquinoline"
+    },
+    {
+      "canonicalKey": "abamectin",
+      "synonyms": [
+        "Abamectin"
+      ],
+      "sourceId": "dietary.substance_synonyms.abamectin"
+    },
+    {
+      "canonicalKey": "acephate",
+      "synonyms": [
+        "Acephate"
+      ],
+      "sourceId": "dietary.substance_synonyms.acephate"
+    },
+    {
+      "canonicalKey": "acequinocyl",
+      "synonyms": [
+        "Acequinocyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.acequinocyl"
+    },
+    {
+      "canonicalKey": "acesulfame_potassium",
+      "synonyms": [
+        "Acesulfame potassium"
+      ],
+      "sourceId": "dietary.substance_synonyms.acesulfame_potassium"
+    },
+    {
+      "canonicalKey": "acetamiprid",
+      "synonyms": [
+        "Acetamiprid"
+      ],
+      "sourceId": "dietary.substance_synonyms.acetamiprid"
+    },
+    {
+      "canonicalKey": "acetochlor",
+      "synonyms": [
+        "Acetochlor"
+      ],
+      "sourceId": "dietary.substance_synonyms.acetochlor"
+    },
+    {
+      "canonicalKey": "acetone",
+      "synonyms": [
+        "Acetone"
+      ],
+      "sourceId": "dietary.substance_synonyms.acetone"
+    },
+    {
+      "canonicalKey": "acetyl_asulam",
+      "synonyms": [
+        "Acetyl asulam"
+      ],
+      "sourceId": "dietary.substance_synonyms.acetyl_asulam"
+    },
+    {
+      "canonicalKey": "acetyl_sulfanilamide",
+      "synonyms": [
+        "Acetyl sulfanilamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.acetyl_sulfanilamide"
+    },
+    {
+      "canonicalKey": "acibenzolar_s_methyl",
+      "synonyms": [
+        "Acibenzolar-S-methyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.acibenzolar_s_methyl"
+    },
+    {
+      "canonicalKey": "aclonifen",
+      "synonyms": [
+        "Aclonifen"
+      ],
+      "sourceId": "dietary.substance_synonyms.aclonifen"
+    },
+    {
+      "canonicalKey": "acrinathrin",
+      "synonyms": [
+        "Acrinathrin"
+      ],
+      "sourceId": "dietary.substance_synonyms.acrinathrin"
+    },
+    {
+      "canonicalKey": "acrylate_group",
+      "synonyms": [
+        "Acrylate group"
+      ],
+      "sourceId": "dietary.substance_synonyms.acrylate_group"
+    },
+    {
+      "canonicalKey": "advantame",
+      "synonyms": [
+        "Advantame"
+      ],
+      "sourceId": "dietary.substance_synonyms.advantame"
+    },
+    {
+      "canonicalKey": "aldicarb",
+      "synonyms": [
+        "Aldicarb"
+      ],
+      "sourceId": "dietary.substance_synonyms.aldicarb"
+    },
+    {
+      "canonicalKey": "aldrin",
+      "synonyms": [
+        "Aldrin"
+      ],
+      "sourceId": "dietary.substance_synonyms.aldrin"
+    },
+    {
+      "canonicalKey": "alkyl_linear_with_even_number_of_carbon_atoms_dimethylamines",
+      "synonyms": [
+        "Alkyl, linear with even number of carbon atoms (C12-C20) dimethylamines"
+      ],
+      "sourceId": "dietary.substance_synonyms.alkyl_linear_with_even_number_of_carbon_atoms_dimethylamines"
+    },
+    {
+      "canonicalKey": "all_rac_alpha_tocopherol",
+      "synonyms": [
+        "All-rac-alpha-tocopherol"
+      ],
+      "sourceId": "dietary.substance_synonyms.all_rac_alpha_tocopherol"
+    },
+    {
+      "canonicalKey": "all_rac_alpha_tocopheryl_acetate",
+      "synonyms": [
+        "All-rac-alpha-tocopheryl acetate"
+      ],
+      "sourceId": "dietary.substance_synonyms.all_rac_alpha_tocopheryl_acetate"
+    },
+    {
+      "canonicalKey": "allura_red_ac",
+      "synonyms": [
+        "Allura Red AC"
+      ],
+      "sourceId": "dietary.substance_synonyms.allura_red_ac"
+    },
+    {
+      "canonicalKey": "allyl_isothiocyanate",
+      "synonyms": [
+        "Allyl isothiocyanate"
+      ],
+      "sourceId": "dietary.substance_synonyms.allyl_isothiocyanate"
+    },
+    {
+      "canonicalKey": "aluminium",
+      "synonyms": [
+        "Aluminium (total)"
+      ],
+      "sourceId": "dietary.substance_synonyms.aluminium"
+    },
+    {
+      "canonicalKey": "aluminium_ammonium_sulphate_dodecahydrate",
+      "synonyms": [
+        "Aluminium ammonium sulphate dodecahydrate"
+      ],
+      "sourceId": "dietary.substance_synonyms.aluminium_ammonium_sulphate_dodecahydrate"
+    },
+    {
+      "canonicalKey": "aluminium_phosphide",
+      "synonyms": [
+        "Aluminium phosphide"
+      ],
+      "sourceId": "dietary.substance_synonyms.aluminium_phosphide"
+    },
+    {
+      "canonicalKey": "aluminium_sulphate",
+      "synonyms": [
+        "Aluminium sulphate"
+      ],
+      "sourceId": "dietary.substance_synonyms.aluminium_sulphate"
+    },
+    {
+      "canonicalKey": "amaranth",
+      "synonyms": [
+        "Amaranth"
+      ],
+      "sourceId": "dietary.substance_synonyms.amaranth"
+    },
+    {
+      "canonicalKey": "ametoctradin",
+      "synonyms": [
+        "Ametoctradin"
+      ],
+      "sourceId": "dietary.substance_synonyms.ametoctradin"
+    },
+    {
+      "canonicalKey": "amidosulfuron",
+      "synonyms": [
+        "Amidosulfuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.amidosulfuron"
+    },
+    {
+      "canonicalKey": "aminopyralid",
+      "synonyms": [
+        "Aminopyralid"
+      ],
+      "sourceId": "dietary.substance_synonyms.aminopyralid"
+    },
+    {
+      "canonicalKey": "amisulbrom",
+      "synonyms": [
+        "Amisulbrom"
+      ],
+      "sourceId": "dietary.substance_synonyms.amisulbrom"
+    },
+    {
+      "canonicalKey": "amitraz",
+      "synonyms": [
+        "Amitraz"
+      ],
+      "sourceId": "dietary.substance_synonyms.amitraz"
+    },
+    {
+      "canonicalKey": "amitrole",
+      "synonyms": [
+        "Amitrole"
+      ],
+      "sourceId": "dietary.substance_synonyms.amitrole"
+    },
+    {
+      "canonicalKey": "ammonium_polyphosphate",
+      "synonyms": [
+        "Ammonium polyphosphate"
+      ],
+      "sourceId": "dietary.substance_synonyms.ammonium_polyphosphate"
+    },
+    {
+      "canonicalKey": "ammonium_sulphate",
+      "synonyms": [
+        "Ammonium sulphate"
+      ],
+      "sourceId": "dietary.substance_synonyms.ammonium_sulphate"
+    },
+    {
+      "canonicalKey": "annatto_extract",
+      "synonyms": [
+        "Annatto extract (alkali-processed norbixin, acid-precipitated, Annatto F)"
+      ],
+      "sourceId": "dietary.substance_synonyms.annatto_extract"
+    },
+    {
+      "canonicalKey": "antimony_trioxide",
+      "synonyms": [
+        "Antimony trioxide"
+      ],
+      "sourceId": "dietary.substance_synonyms.antimony_trioxide"
+    },
+    {
+      "canonicalKey": "aqueous_extract_from_the_germinated_seeds_of_sweet_lupinus_albus",
+      "synonyms": [
+        "Aqueous extract from the germinated seeds of sweet Lupinus albus"
+      ],
+      "sourceId": "dietary.substance_synonyms.aqueous_extract_from_the_germinated_seeds_of_sweet_lupinus_albus"
+    },
+    {
+      "canonicalKey": "inorganic_arsenic",
+      "synonyms": [
+        "Arsenic, inorganic derivates"
+      ],
+      "sourceId": "dietary.substance_synonyms.inorganic_arsenic"
+    },
+    {
+      "canonicalKey": "ascorbic_acid",
+      "synonyms": [
+        "Ascorbic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.ascorbic_acid"
+    },
+    {
+      "canonicalKey": "ascorbyl_palmitate",
+      "synonyms": [
+        "Ascorbyl palmitate"
+      ],
+      "sourceId": "dietary.substance_synonyms.ascorbyl_palmitate"
+    },
+    {
+      "canonicalKey": "aspartame",
+      "synonyms": [
+        "Aspartame"
+      ],
+      "sourceId": "dietary.substance_synonyms.aspartame"
+    },
+    {
+      "canonicalKey": "astaxanthin",
+      "synonyms": [
+        "Astaxanthin"
+      ],
+      "sourceId": "dietary.substance_synonyms.astaxanthin"
+    },
+    {
+      "canonicalKey": "asulam_sodium",
+      "synonyms": [
+        "Asulam Sodium"
+      ],
+      "sourceId": "dietary.substance_synonyms.asulam_sodium"
+    },
+    {
+      "canonicalKey": "asulam_glucoside",
+      "synonyms": [
+        "Asulam glucoside"
+      ],
+      "sourceId": "dietary.substance_synonyms.asulam_glucoside"
+    },
+    {
+      "canonicalKey": "atrazine",
+      "synonyms": [
+        "Atrazine"
+      ],
+      "sourceId": "dietary.substance_synonyms.atrazine"
+    },
+    {
+      "canonicalKey": "azadirachtin_extract",
+      "synonyms": [
+        "Azadirachtin extract (Mitsui AgriScience International S.A/B.V source)"
+      ],
+      "sourceId": "dietary.substance_synonyms.azadirachtin_extract"
+    },
+    {
+      "canonicalKey": "azaspiracids",
+      "synonyms": [
+        "Azaspiracids"
+      ],
+      "sourceId": "dietary.substance_synonyms.azaspiracids"
+    },
+    {
+      "canonicalKey": "azimsulfuron",
+      "synonyms": [
+        "Azimsulfuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.azimsulfuron"
+    },
+    {
+      "canonicalKey": "azinphos_methyl",
+      "synonyms": [
+        "Azinphos-methyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.azinphos_methyl"
+    },
+    {
+      "canonicalKey": "azocyclotin",
+      "synonyms": [
+        "Azocyclotin"
+      ],
+      "sourceId": "dietary.substance_synonyms.azocyclotin"
+    },
+    {
+      "canonicalKey": "azoxystrobin",
+      "synonyms": [
+        "Azoxystrobin"
+      ],
+      "sourceId": "dietary.substance_synonyms.azoxystrobin"
+    },
+    {
+      "canonicalKey": "basic_cobaltous_carbonate_monohydrate",
+      "synonyms": [
+        "Basic cobaltous carbonate monohydrate"
+      ],
+      "sourceId": "dietary.substance_synonyms.basic_cobaltous_carbonate_monohydrate"
+    },
+    {
+      "canonicalKey": "benalaxyl",
+      "synonyms": [
+        "Benalaxyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.benalaxyl"
+    },
+    {
+      "canonicalKey": "benalaxyl_m",
+      "synonyms": [
+        "Benalaxyl-M"
+      ],
+      "sourceId": "dietary.substance_synonyms.benalaxyl_m"
+    },
+    {
+      "canonicalKey": "benfluralin",
+      "synonyms": [
+        "Benfluralin"
+      ],
+      "sourceId": "dietary.substance_synonyms.benfluralin"
+    },
+    {
+      "canonicalKey": "benfuracarb",
+      "synonyms": [
+        "Benfuracarb"
+      ],
+      "sourceId": "dietary.substance_synonyms.benfuracarb"
+    },
+    {
+      "canonicalKey": "bensulfuron_methyl",
+      "synonyms": [
+        "Bensulfuron-methyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.bensulfuron_methyl"
+    },
+    {
+      "canonicalKey": "bentazone",
+      "synonyms": [
+        "Bentazone"
+      ],
+      "sourceId": "dietary.substance_synonyms.bentazone"
+    },
+    {
+      "canonicalKey": "benthiavalicarb_isopropyl",
+      "synonyms": [
+        "Benthiavalicarb-isopropyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.benthiavalicarb_isopropyl"
+    },
+    {
+      "canonicalKey": "benzene_13_diol",
+      "synonyms": [
+        "Benzene-1,3-diol"
+      ],
+      "sourceId": "dietary.substance_synonyms.benzene_13_diol"
+    },
+    {
+      "canonicalKey": "benzoic_acid",
+      "synonyms": [
+        "Benzoic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.benzoic_acid"
+    },
+    {
+      "canonicalKey": "benzophenone",
+      "synonyms": [
+        "Benzophenone"
+      ],
+      "sourceId": "dietary.substance_synonyms.benzophenone"
+    },
+    {
+      "canonicalKey": "benzophenone_and_4_hydroxybenzophenone",
+      "synonyms": [
+        "Benzophenone and 4-Hydroxybenzophenone"
+      ],
+      "sourceId": "dietary.substance_synonyms.benzophenone_and_4_hydroxybenzophenone"
+    },
+    {
+      "canonicalKey": "benzovindiflupyr",
+      "synonyms": [
+        "Benzovindiflupyr"
+      ],
+      "sourceId": "dietary.substance_synonyms.benzovindiflupyr"
+    },
+    {
+      "canonicalKey": "benzyl_alcohol",
+      "synonyms": [
+        "Benzyl alcohol"
+      ],
+      "sourceId": "dietary.substance_synonyms.benzyl_alcohol"
+    },
+    {
+      "canonicalKey": "beta_cypermethrin",
+      "synonyms": [
+        "Beta-Cypermethrin"
+      ],
+      "sourceId": "dietary.substance_synonyms.beta_cypermethrin"
+    },
+    {
+      "canonicalKey": "beta_apo_8_carotenal",
+      "synonyms": [
+        "Beta-apo-8'-carotenal"
+      ],
+      "sourceId": "dietary.substance_synonyms.beta_apo_8_carotenal"
+    },
+    {
+      "canonicalKey": "beta_cyclodextrin",
+      "synonyms": [
+        "Beta-cyclodextrin"
+      ],
+      "sourceId": "dietary.substance_synonyms.beta_cyclodextrin"
+    },
+    {
+      "canonicalKey": "betaine",
+      "synonyms": [
+        "Betaine"
+      ],
+      "sourceId": "dietary.substance_synonyms.betaine"
+    },
+    {
+      "canonicalKey": "bifenazate",
+      "synonyms": [
+        "Bifenazate"
+      ],
+      "sourceId": "dietary.substance_synonyms.bifenazate"
+    },
+    {
+      "canonicalKey": "bifenox",
+      "synonyms": [
+        "Bifenox"
+      ],
+      "sourceId": "dietary.substance_synonyms.bifenox"
+    },
+    {
+      "canonicalKey": "bifenthrin",
+      "synonyms": [
+        "Bifenthrin"
+      ],
+      "sourceId": "dietary.substance_synonyms.bifenthrin"
+    },
+    {
+      "canonicalKey": "bisphthalate",
+      "synonyms": [
+        "Bis(2-ethylhexyl)phthalate"
+      ],
+      "sourceId": "dietary.substance_synonyms.bisphthalate"
+    },
+    {
+      "canonicalKey": "bispyribac_sodium",
+      "synonyms": [
+        "Bispyribac-sodium"
+      ],
+      "sourceId": "dietary.substance_synonyms.bispyribac_sodium"
+    },
+    {
+      "canonicalKey": "bitertanol",
+      "synonyms": [
+        "Bitertanol"
+      ],
+      "sourceId": "dietary.substance_synonyms.bitertanol"
+    },
+    {
+      "canonicalKey": "bixafen",
+      "synonyms": [
+        "Bixafen"
+      ],
+      "sourceId": "dietary.substance_synonyms.bixafen"
+    },
+    {
+      "canonicalKey": "bixin",
+      "synonyms": [
+        "Bixin"
+      ],
+      "sourceId": "dietary.substance_synonyms.bixin"
+    },
+    {
+      "canonicalKey": "bordeaux_mixture",
+      "synonyms": [
+        "Bordeaux mixture"
+      ],
+      "sourceId": "dietary.substance_synonyms.bordeaux_mixture"
+    },
+    {
+      "canonicalKey": "boric_acid",
+      "synonyms": [
+        "Boric acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.boric_acid"
+    },
+    {
+      "canonicalKey": "boron_compounds",
+      "synonyms": [
+        "Boron compounds"
+      ],
+      "sourceId": "dietary.substance_synonyms.boron_compounds"
+    },
+    {
+      "canonicalKey": "brilliant_black_bn",
+      "synonyms": [
+        "Brilliant Black BN"
+      ],
+      "sourceId": "dietary.substance_synonyms.brilliant_black_bn"
+    },
+    {
+      "canonicalKey": "brilliant_blue_fcf",
+      "synonyms": [
+        "Brilliant Blue FCF"
+      ],
+      "sourceId": "dietary.substance_synonyms.brilliant_blue_fcf"
+    },
+    {
+      "canonicalKey": "bromomethane",
+      "synonyms": [
+        "Bromomethane"
+      ],
+      "sourceId": "dietary.substance_synonyms.bromomethane"
+    },
+    {
+      "canonicalKey": "bromoxynil",
+      "synonyms": [
+        "Bromoxynil"
+      ],
+      "sourceId": "dietary.substance_synonyms.bromoxynil"
+    },
+    {
+      "canonicalKey": "bromoxynil_heptanoate",
+      "synonyms": [
+        "Bromoxynil heptanoate"
+      ],
+      "sourceId": "dietary.substance_synonyms.bromoxynil_heptanoate"
+    },
+    {
+      "canonicalKey": "bromoxynil_octanoate",
+      "synonyms": [
+        "Bromoxynil octanoate"
+      ],
+      "sourceId": "dietary.substance_synonyms.bromoxynil_octanoate"
+    },
+    {
+      "canonicalKey": "bromuconazole",
+      "synonyms": [
+        "Bromuconazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.bromuconazole"
+    },
+    {
+      "canonicalKey": "brown_ht",
+      "synonyms": [
+        "Brown HT"
+      ],
+      "sourceId": "dietary.substance_synonyms.brown_ht"
+    },
+    {
+      "canonicalKey": "bupirimate",
+      "synonyms": [
+        "Bupirimate"
+      ],
+      "sourceId": "dietary.substance_synonyms.bupirimate"
+    },
+    {
+      "canonicalKey": "buprofezin",
+      "synonyms": [
+        "Buprofezin"
+      ],
+      "sourceId": "dietary.substance_synonyms.buprofezin"
+    },
+    {
+      "canonicalKey": "butane_13_diol",
+      "synonyms": [
+        "Butane-1,3-diol"
+      ],
+      "sourceId": "dietary.substance_synonyms.butane_13_diol"
+    },
+    {
+      "canonicalKey": "butyl_methacrylate",
+      "synonyms": [
+        "Butyl Methacrylate"
+      ],
+      "sourceId": "dietary.substance_synonyms.butyl_methacrylate"
+    },
+    {
+      "canonicalKey": "butyl_acetate",
+      "synonyms": [
+        "Butyl acetate"
+      ],
+      "sourceId": "dietary.substance_synonyms.butyl_acetate"
+    },
+    {
+      "canonicalKey": "butylated_hydroxyanisole",
+      "synonyms": [
+        "Butylated hydroxyanisole"
+      ],
+      "sourceId": "dietary.substance_synonyms.butylated_hydroxyanisole"
+    },
+    {
+      "canonicalKey": "butylated_hydroxytoluene",
+      "synonyms": [
+        "Butylated hydroxytoluene"
+      ],
+      "sourceId": "dietary.substance_synonyms.butylated_hydroxytoluene"
+    },
+    {
+      "canonicalKey": "butylbenzylphthalate",
+      "synonyms": [
+        "Butylbenzylphthalate"
+      ],
+      "sourceId": "dietary.substance_synonyms.butylbenzylphthalate"
+    },
+    {
+      "canonicalKey": "cadmium",
+      "synonyms": [
+        "Cadmium (total)"
+      ],
+      "sourceId": "dietary.substance_synonyms.cadmium"
+    },
+    {
+      "canonicalKey": "cadusafos",
+      "synonyms": [
+        "Cadusafos"
+      ],
+      "sourceId": "dietary.substance_synonyms.cadusafos"
+    },
+    {
+      "canonicalKey": "calcium",
+      "synonyms": [
+        "Calcium (total)"
+      ],
+      "sourceId": "dietary.substance_synonyms.calcium"
+    },
+    {
+      "canonicalKey": "calcium_l_ascorbate_dihydrate",
+      "synonyms": [
+        "Calcium L-ascorbate dihydrate"
+      ],
+      "sourceId": "dietary.substance_synonyms.calcium_l_ascorbate_dihydrate"
+    },
+    {
+      "canonicalKey": "calcium_benzoate",
+      "synonyms": [
+        "Calcium benzoate"
+      ],
+      "sourceId": "dietary.substance_synonyms.calcium_benzoate"
+    },
+    {
+      "canonicalKey": "calcium_di_l_glutamate",
+      "synonyms": [
+        "Calcium di-L-glutamate"
+      ],
+      "sourceId": "dietary.substance_synonyms.calcium_di_l_glutamate"
+    },
+    {
+      "canonicalKey": "calcium_disodium_edta",
+      "synonyms": [
+        "Calcium disodium EDTA"
+      ],
+      "sourceId": "dietary.substance_synonyms.calcium_disodium_edta"
+    },
+    {
+      "canonicalKey": "calcium_ferrocyanide",
+      "synonyms": [
+        "Calcium ferrocyanide"
+      ],
+      "sourceId": "dietary.substance_synonyms.calcium_ferrocyanide"
+    },
+    {
+      "canonicalKey": "calcium_phosphide",
+      "synonyms": [
+        "Calcium phosphide"
+      ],
+      "sourceId": "dietary.substance_synonyms.calcium_phosphide"
+    },
+    {
+      "canonicalKey": "calcium_stearoyl_2_lactylate",
+      "synonyms": [
+        "Calcium stearoyl-2-lactylate"
+      ],
+      "sourceId": "dietary.substance_synonyms.calcium_stearoyl_2_lactylate"
+    },
+    {
+      "canonicalKey": "calcium_tartrate",
+      "synonyms": [
+        "Calcium tartrate (E 354)"
+      ],
+      "sourceId": "dietary.substance_synonyms.calcium_tartrate"
+    },
+    {
+      "canonicalKey": "camphechlor",
+      "synonyms": [
+        "Camphechlor"
+      ],
+      "sourceId": "dietary.substance_synonyms.camphechlor"
+    },
+    {
+      "canonicalKey": "canthaxanthin",
+      "synonyms": [
+        "Canthaxanthin"
+      ],
+      "sourceId": "dietary.substance_synonyms.canthaxanthin"
+    },
+    {
+      "canonicalKey": "captan",
+      "synonyms": [
+        "Captan"
+      ],
+      "sourceId": "dietary.substance_synonyms.captan"
+    },
+    {
+      "canonicalKey": "caramel_colours",
+      "synonyms": [
+        "Caramel colours"
+      ],
+      "sourceId": "dietary.substance_synonyms.caramel_colours"
+    },
+    {
+      "canonicalKey": "carbaryl",
+      "synonyms": [
+        "Carbaryl"
+      ],
+      "sourceId": "dietary.substance_synonyms.carbaryl"
+    },
+    {
+      "canonicalKey": "carbendazim",
+      "synonyms": [
+        "Carbendazim"
+      ],
+      "sourceId": "dietary.substance_synonyms.carbendazim"
+    },
+    {
+      "canonicalKey": "carbetamide",
+      "synonyms": [
+        "Carbetamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.carbetamide"
+    },
+    {
+      "canonicalKey": "carbofuran",
+      "synonyms": [
+        "Carbofuran"
+      ],
+      "sourceId": "dietary.substance_synonyms.carbofuran"
+    },
+    {
+      "canonicalKey": "carbosulfan",
+      "synonyms": [
+        "Carbosulfan"
+      ],
+      "sourceId": "dietary.substance_synonyms.carbosulfan"
+    },
+    {
+      "canonicalKey": "carboxin",
+      "synonyms": [
+        "Carboxin"
+      ],
+      "sourceId": "dietary.substance_synonyms.carboxin"
+    },
+    {
+      "canonicalKey": "carfentrazone",
+      "synonyms": [
+        "Carfentrazone"
+      ],
+      "sourceId": "dietary.substance_synonyms.carfentrazone"
+    },
+    {
+      "canonicalKey": "carfentrazone_ethyl",
+      "synonyms": [
+        "Carfentrazone-ethyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.carfentrazone_ethyl"
+    },
+    {
+      "canonicalKey": "carmoisine",
+      "synonyms": [
+        "Carmoisine"
+      ],
+      "sourceId": "dietary.substance_synonyms.carmoisine"
+    },
+    {
+      "canonicalKey": "carnauba_wax",
+      "synonyms": [
+        "Carnauba wax"
+      ],
+      "sourceId": "dietary.substance_synonyms.carnauba_wax"
+    },
+    {
+      "canonicalKey": "carrageenan",
+      "synonyms": [
+        "Carrageenan"
+      ],
+      "sourceId": "dietary.substance_synonyms.carrageenan"
+    },
+    {
+      "canonicalKey": "chlorantraniliprole",
+      "synonyms": [
+        "Chlorantraniliprole"
+      ],
+      "sourceId": "dietary.substance_synonyms.chlorantraniliprole"
+    },
+    {
+      "canonicalKey": "chlorate",
+      "synonyms": [
+        "Chlorate"
+      ],
+      "sourceId": "dietary.substance_synonyms.chlorate"
+    },
+    {
+      "canonicalKey": "chlordane",
+      "synonyms": [
+        "Chlordane"
+      ],
+      "sourceId": "dietary.substance_synonyms.chlordane"
+    },
+    {
+      "canonicalKey": "chloridazon",
+      "synonyms": [
+        "Chloridazon"
+      ],
+      "sourceId": "dietary.substance_synonyms.chloridazon"
+    },
+    {
+      "canonicalKey": "chlorine",
+      "synonyms": [
+        "Chlorine"
+      ],
+      "sourceId": "dietary.substance_synonyms.chlorine"
+    },
+    {
+      "canonicalKey": "chlorine_dioxide",
+      "synonyms": [
+        "Chlorine dioxide"
+      ],
+      "sourceId": "dietary.substance_synonyms.chlorine_dioxide"
+    },
+    {
+      "canonicalKey": "chlorite",
+      "synonyms": [
+        "Chlorite"
+      ],
+      "sourceId": "dietary.substance_synonyms.chlorite"
+    },
+    {
+      "canonicalKey": "chlormequat_chloride",
+      "synonyms": [
+        "Chlormequat chloride"
+      ],
+      "sourceId": "dietary.substance_synonyms.chlormequat_chloride"
+    },
+    {
+      "canonicalKey": "chlorothalonil",
+      "synonyms": [
+        "Chlorothalonil"
+      ],
+      "sourceId": "dietary.substance_synonyms.chlorothalonil"
+    },
+    {
+      "canonicalKey": "chlorpropham",
+      "synonyms": [
+        "Chlorpropham"
+      ],
+      "sourceId": "dietary.substance_synonyms.chlorpropham"
+    },
+    {
+      "canonicalKey": "chlorpyrifos",
+      "synonyms": [
+        "Chlorpyrifos"
+      ],
+      "sourceId": "dietary.substance_synonyms.chlorpyrifos"
+    },
+    {
+      "canonicalKey": "chlorsulfuron",
+      "synonyms": [
+        "Chlorsulfuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.chlorsulfuron"
+    },
+    {
+      "canonicalKey": "chlorthal_dimethyl",
+      "synonyms": [
+        "Chlorthal-dimethyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.chlorthal_dimethyl"
+    },
+    {
+      "canonicalKey": "choline",
+      "synonyms": [
+        "Choline"
+      ],
+      "sourceId": "dietary.substance_synonyms.choline"
+    },
+    {
+      "canonicalKey": "choline_chloride",
+      "synonyms": [
+        "Choline chloride"
+      ],
+      "sourceId": "dietary.substance_synonyms.choline_chloride"
+    },
+    {
+      "canonicalKey": "chromafenozide",
+      "synonyms": [
+        "Chromafenozide"
+      ],
+      "sourceId": "dietary.substance_synonyms.chromafenozide"
+    },
+    {
+      "canonicalKey": "chromium",
+      "synonyms": [
+        "Chromium(III)"
+      ],
+      "sourceId": "dietary.substance_synonyms.chromium"
+    },
+    {
+      "canonicalKey": "citral",
+      "synonyms": [
+        "Citral"
+      ],
+      "sourceId": "dietary.substance_synonyms.citral"
+    },
+    {
+      "canonicalKey": "class_i_plain_caramel",
+      "synonyms": [
+        "Class I Plain Caramel"
+      ],
+      "sourceId": "dietary.substance_synonyms.class_i_plain_caramel"
+    },
+    {
+      "canonicalKey": "class_ii_caustic_sulphite_caramel",
+      "synonyms": [
+        "Class II Caustic Sulphite Caramel"
+      ],
+      "sourceId": "dietary.substance_synonyms.class_ii_caustic_sulphite_caramel"
+    },
+    {
+      "canonicalKey": "class_iii_ammonia_caramel",
+      "synonyms": [
+        "Class III Ammonia Caramel"
+      ],
+      "sourceId": "dietary.substance_synonyms.class_iii_ammonia_caramel"
+    },
+    {
+      "canonicalKey": "class_iv_sulphite_ammonia_caramel",
+      "synonyms": [
+        "Class IV Sulphite Ammonia Caramel"
+      ],
+      "sourceId": "dietary.substance_synonyms.class_iv_sulphite_ammonia_caramel"
+    },
+    {
+      "canonicalKey": "clethodim",
+      "synonyms": [
+        "Clethodim"
+      ],
+      "sourceId": "dietary.substance_synonyms.clethodim"
+    },
+    {
+      "canonicalKey": "clodinafop_propargyl",
+      "synonyms": [
+        "Clodinafop-propargyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.clodinafop_propargyl"
+    },
+    {
+      "canonicalKey": "clofentezine",
+      "synonyms": [
+        "Clofentezine"
+      ],
+      "sourceId": "dietary.substance_synonyms.clofentezine"
+    },
+    {
+      "canonicalKey": "clomazone",
+      "synonyms": [
+        "Clomazone"
+      ],
+      "sourceId": "dietary.substance_synonyms.clomazone"
+    },
+    {
+      "canonicalKey": "clothianidin",
+      "synonyms": [
+        "Clothianidin"
+      ],
+      "sourceId": "dietary.substance_synonyms.clothianidin"
+    },
+    {
+      "canonicalKey": "cobalt_acetate_tetrahydrate",
+      "synonyms": [
+        "Cobalt acetate tetrahydrate"
+      ],
+      "sourceId": "dietary.substance_synonyms.cobalt_acetate_tetrahydrate"
+    },
+    {
+      "canonicalKey": "cobalt_carbonate_46",
+      "synonyms": [
+        "Cobalt carbonate 46%"
+      ],
+      "sourceId": "dietary.substance_synonyms.cobalt_carbonate_46"
+    },
+    {
+      "canonicalKey": "cobalt_sulphate_heptahydrate",
+      "synonyms": [
+        "Cobalt sulphate heptahydrate"
+      ],
+      "sourceId": "dietary.substance_synonyms.cobalt_sulphate_heptahydrate"
+    },
+    {
+      "canonicalKey": "cobalt_derivatives",
+      "synonyms": [
+        "Cobalt(II) derivatives"
+      ],
+      "sourceId": "dietary.substance_synonyms.cobalt_derivatives"
+    },
+    {
+      "canonicalKey": "cochineal_carminic_acid_carmines",
+      "synonyms": [
+        "Cochineal, carminic acid, carmines (E 120)"
+      ],
+      "sourceId": "dietary.substance_synonyms.cochineal_carminic_acid_carmines"
+    },
+    {
+      "canonicalKey": "codeine",
+      "synonyms": [
+        "Codeine"
+      ],
+      "sourceId": "dietary.substance_synonyms.codeine"
+    },
+    {
+      "canonicalKey": "copper_oxide",
+      "synonyms": [
+        "Copper (I) oxide"
+      ],
+      "sourceId": "dietary.substance_synonyms.copper_oxide"
+    },
+    {
+      "canonicalKey": "copper",
+      "synonyms": [
+        "Copper (total)"
+      ],
+      "sourceId": "dietary.substance_synonyms.copper"
+    },
+    {
+      "canonicalKey": "copper_chelate_of_l_lysinate_hcl",
+      "synonyms": [
+        "Copper chelate of L-lysinate-HCl"
+      ],
+      "sourceId": "dietary.substance_synonyms.copper_chelate_of_l_lysinate_hcl"
+    },
+    {
+      "canonicalKey": "copper_compounds",
+      "synonyms": [
+        "Copper compounds"
+      ],
+      "sourceId": "dietary.substance_synonyms.copper_compounds"
+    },
+    {
+      "canonicalKey": "copper_hydroxide",
+      "synonyms": [
+        "Copper hydroxide"
+      ],
+      "sourceId": "dietary.substance_synonyms.copper_hydroxide"
+    },
+    {
+      "canonicalKey": "coumarin",
+      "synonyms": [
+        "Coumarin"
+      ],
+      "sourceId": "dietary.substance_synonyms.coumarin"
+    },
+    {
+      "canonicalKey": "curcumin",
+      "synonyms": [
+        "Curcumin"
+      ],
+      "sourceId": "dietary.substance_synonyms.curcumin"
+    },
+    {
+      "canonicalKey": "cyanamide",
+      "synonyms": [
+        "Cyanamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.cyanamide"
+    },
+    {
+      "canonicalKey": "cyanogenic_glycosides",
+      "synonyms": [
+        "Cyanogenic glycosides"
+      ],
+      "sourceId": "dietary.substance_synonyms.cyanogenic_glycosides"
+    },
+    {
+      "canonicalKey": "cyantraniliprole",
+      "synonyms": [
+        "Cyantraniliprole"
+      ],
+      "sourceId": "dietary.substance_synonyms.cyantraniliprole"
+    },
+    {
+      "canonicalKey": "cyanuric_acid",
+      "synonyms": [
+        "Cyanuric acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.cyanuric_acid"
+    },
+    {
+      "canonicalKey": "cyazofamid",
+      "synonyms": [
+        "Cyazofamid"
+      ],
+      "sourceId": "dietary.substance_synonyms.cyazofamid"
+    },
+    {
+      "canonicalKey": "cyclanilide",
+      "synonyms": [
+        "Cyclanilide"
+      ],
+      "sourceId": "dietary.substance_synonyms.cyclanilide"
+    },
+    {
+      "canonicalKey": "cyclaniliprole",
+      "synonyms": [
+        "Cyclaniliprole"
+      ],
+      "sourceId": "dietary.substance_synonyms.cyclaniliprole"
+    },
+    {
+      "canonicalKey": "cyclaniliprole_metabolite",
+      "synonyms": [
+        "Cyclaniliprole metabolite (NSY-28)"
+      ],
+      "sourceId": "dietary.substance_synonyms.cyclaniliprole_metabolite"
+    },
+    {
+      "canonicalKey": "cycloxydim",
+      "synonyms": [
+        "Cycloxydim"
+      ],
+      "sourceId": "dietary.substance_synonyms.cycloxydim"
+    },
+    {
+      "canonicalKey": "cyflufenamid",
+      "synonyms": [
+        "Cyflufenamid"
+      ],
+      "sourceId": "dietary.substance_synonyms.cyflufenamid"
+    },
+    {
+      "canonicalKey": "cyflumetofen",
+      "synonyms": [
+        "Cyflumetofen"
+      ],
+      "sourceId": "dietary.substance_synonyms.cyflumetofen"
+    },
+    {
+      "canonicalKey": "cyflumetofen_metabolite",
+      "synonyms": [
+        "Cyflumetofen metabolite (A-2)"
+      ],
+      "sourceId": "dietary.substance_synonyms.cyflumetofen_metabolite"
+    },
+    {
+      "canonicalKey": "cyhalofop_butyl",
+      "synonyms": [
+        "Cyhalofop-butyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.cyhalofop_butyl"
+    },
+    {
+      "canonicalKey": "cyhexatin",
+      "synonyms": [
+        "Cyhexatin"
+      ],
+      "sourceId": "dietary.substance_synonyms.cyhexatin"
+    },
+    {
+      "canonicalKey": "cymoxanil",
+      "synonyms": [
+        "Cymoxanil"
+      ],
+      "sourceId": "dietary.substance_synonyms.cymoxanil"
+    },
+    {
+      "canonicalKey": "cynanchum_wilfordii_hemsley_phlomis_umbrosa_turcz_and_angelica_gigas_nakai_extract",
+      "synonyms": [
+        "Cynanchum wilfordii Hemsley, Phlomis umbrosa Turcz. and Angelica gigas Nakai extract (EstroG-100)"
+      ],
+      "sourceId": "dietary.substance_synonyms.cynanchum_wilfordii_hemsley_phlomis_umbrosa_turcz_and_angelica_gigas_nakai_extract"
+    },
+    {
+      "canonicalKey": "cypermethrin",
+      "synonyms": [
+        "Cypermethrin"
+      ],
+      "sourceId": "dietary.substance_synonyms.cypermethrin"
+    },
+    {
+      "canonicalKey": "cyproconazole",
+      "synonyms": [
+        "Cyproconazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.cyproconazole"
+    },
+    {
+      "canonicalKey": "cyprodinil",
+      "synonyms": [
+        "Cyprodinil"
+      ],
+      "sourceId": "dietary.substance_synonyms.cyprodinil"
+    },
+    {
+      "canonicalKey": "cyromazine",
+      "synonyms": [
+        "Cyromazine"
+      ],
+      "sourceId": "dietary.substance_synonyms.cyromazine"
+    },
+    {
+      "canonicalKey": "d_ribose",
+      "synonyms": [
+        "D(-)-ribose"
+      ],
+      "sourceId": "dietary.substance_synonyms.d_ribose"
+    },
+    {
+      "canonicalKey": "d_biotin",
+      "synonyms": [
+        "D-(+)-biotin"
+      ],
+      "sourceId": "dietary.substance_synonyms.d_biotin"
+    },
+    {
+      "canonicalKey": "d_alpha_tocopheryl_acetate",
+      "synonyms": [
+        "D-alpha-tocopheryl acetate"
+      ],
+      "sourceId": "dietary.substance_synonyms.d_alpha_tocopheryl_acetate"
+    },
+    {
+      "canonicalKey": "ddt",
+      "synonyms": [
+        "DDT"
+      ],
+      "sourceId": "dietary.substance_synonyms.ddt"
+    },
+    {
+      "canonicalKey": "dazomet",
+      "synonyms": [
+        "Dazomet"
+      ],
+      "sourceId": "dietary.substance_synonyms.dazomet"
+    },
+    {
+      "canonicalKey": "decoquinate",
+      "synonyms": [
+        "Decoquinate"
+      ],
+      "sourceId": "dietary.substance_synonyms.decoquinate"
+    },
+    {
+      "canonicalKey": "delta9_tetrahydrocannabinol",
+      "synonyms": [
+        "Delta9-Tetrahydrocannabinol"
+      ],
+      "sourceId": "dietary.substance_synonyms.delta9_tetrahydrocannabinol"
+    },
+    {
+      "canonicalKey": "deltamethrin",
+      "synonyms": [
+        "Deltamethrin"
+      ],
+      "sourceId": "dietary.substance_synonyms.deltamethrin"
+    },
+    {
+      "canonicalKey": "deoxynivalenol",
+      "synonyms": [
+        "Deoxynivalenol"
+      ],
+      "sourceId": "dietary.substance_synonyms.deoxynivalenol"
+    },
+    {
+      "canonicalKey": "deoxynivalenol_3_acetyldeoxynivalenol_15_acetyldeoxynivalenol_and_deoxynivalenol_3_o_glucoside_group",
+      "synonyms": [
+        "Deoxynivalenol, 3-Acetyldeoxynivalenol, 15-Acetyldeoxynivalenol and Deoxynivalenol-3-O-glucoside group"
+      ],
+      "sourceId": "dietary.substance_synonyms.deoxynivalenol_3_acetyldeoxynivalenol_15_acetyldeoxynivalenol_and_deoxynivalenol_3_o_glucoside_group"
+    },
+    {
+      "canonicalKey": "desamino_asulam",
+      "synonyms": [
+        "Desamino asulam"
+      ],
+      "sourceId": "dietary.substance_synonyms.desamino_asulam"
+    },
+    {
+      "canonicalKey": "desethyl_hydroxy_terbuthylazine",
+      "synonyms": [
+        "Desethyl-hydroxy-terbuthylazine"
+      ],
+      "sourceId": "dietary.substance_synonyms.desethyl_hydroxy_terbuthylazine"
+    },
+    {
+      "canonicalKey": "desethyl_terbuthylazine",
+      "synonyms": [
+        "Desethyl-terbuthylazine"
+      ],
+      "sourceId": "dietary.substance_synonyms.desethyl_terbuthylazine"
+    },
+    {
+      "canonicalKey": "desmedipham",
+      "synonyms": [
+        "Desmedipham"
+      ],
+      "sourceId": "dietary.substance_synonyms.desmedipham"
+    },
+    {
+      "canonicalKey": "diadipate",
+      "synonyms": [
+        "Di(2-ethylhexyl)adipate"
+      ],
+      "sourceId": "dietary.substance_synonyms.diadipate"
+    },
+    {
+      "canonicalKey": "di_butylphthalate",
+      "synonyms": [
+        "Di-Butylphthalate"
+      ],
+      "sourceId": "dietary.substance_synonyms.di_butylphthalate"
+    },
+    {
+      "canonicalKey": "di_isodecylphthalate",
+      "synonyms": [
+        "Di-isodecylphthalate"
+      ],
+      "sourceId": "dietary.substance_synonyms.di_isodecylphthalate"
+    },
+    {
+      "canonicalKey": "di_isononylphthalate",
+      "synonyms": [
+        "Di-isononylphthalate"
+      ],
+      "sourceId": "dietary.substance_synonyms.di_isononylphthalate"
+    },
+    {
+      "canonicalKey": "diazinon",
+      "synonyms": [
+        "Diazinon"
+      ],
+      "sourceId": "dietary.substance_synonyms.diazinon"
+    },
+    {
+      "canonicalKey": "dicamba",
+      "synonyms": [
+        "Dicamba"
+      ],
+      "sourceId": "dietary.substance_synonyms.dicamba"
+    },
+    {
+      "canonicalKey": "dichlobenil",
+      "synonyms": [
+        "Dichlobenil"
+      ],
+      "sourceId": "dietary.substance_synonyms.dichlobenil"
+    },
+    {
+      "canonicalKey": "dichlorprop_p",
+      "synonyms": [
+        "Dichlorprop-P"
+      ],
+      "sourceId": "dietary.substance_synonyms.dichlorprop_p"
+    },
+    {
+      "canonicalKey": "dichlorprop_p_2_ethylhexyl",
+      "synonyms": [
+        "Dichlorprop-P-2-ethylhexyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.dichlorprop_p_2_ethylhexyl"
+    },
+    {
+      "canonicalKey": "diclazuril",
+      "synonyms": [
+        "Diclazuril"
+      ],
+      "sourceId": "dietary.substance_synonyms.diclazuril"
+    },
+    {
+      "canonicalKey": "diclofop",
+      "synonyms": [
+        "Diclofop"
+      ],
+      "sourceId": "dietary.substance_synonyms.diclofop"
+    },
+    {
+      "canonicalKey": "diclofop_methyl",
+      "synonyms": [
+        "Diclofop-methyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.diclofop_methyl"
+    },
+    {
+      "canonicalKey": "dicloran",
+      "synonyms": [
+        "Dicloran"
+      ],
+      "sourceId": "dietary.substance_synonyms.dicloran"
+    },
+    {
+      "canonicalKey": "dicofol",
+      "synonyms": [
+        "Dicofol"
+      ],
+      "sourceId": "dietary.substance_synonyms.dicofol"
+    },
+    {
+      "canonicalKey": "dicopper_chloride_trihydroxide",
+      "synonyms": [
+        "Dicopper chloride trihydroxide"
+      ],
+      "sourceId": "dietary.substance_synonyms.dicopper_chloride_trihydroxide"
+    },
+    {
+      "canonicalKey": "dicyandiamide",
+      "synonyms": [
+        "Dicyandiamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.dicyandiamide"
+    },
+    {
+      "canonicalKey": "dieldrin",
+      "synonyms": [
+        "Dieldrin"
+      ],
+      "sourceId": "dietary.substance_synonyms.dieldrin"
+    },
+    {
+      "canonicalKey": "diethofencarb",
+      "synonyms": [
+        "Diethofencarb"
+      ],
+      "sourceId": "dietary.substance_synonyms.diethofencarb"
+    },
+    {
+      "canonicalKey": "difenoconazole",
+      "synonyms": [
+        "Difenoconazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.difenoconazole"
+    },
+    {
+      "canonicalKey": "diflubenzuron",
+      "synonyms": [
+        "Diflubenzuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.diflubenzuron"
+    },
+    {
+      "canonicalKey": "diflufenican",
+      "synonyms": [
+        "Diflufenican"
+      ],
+      "sourceId": "dietary.substance_synonyms.diflufenican"
+    },
+    {
+      "canonicalKey": "dimethachlor",
+      "synonyms": [
+        "Dimethachlor"
+      ],
+      "sourceId": "dietary.substance_synonyms.dimethachlor"
+    },
+    {
+      "canonicalKey": "dimethenamid",
+      "synonyms": [
+        "Dimethenamid"
+      ],
+      "sourceId": "dietary.substance_synonyms.dimethenamid"
+    },
+    {
+      "canonicalKey": "dimethenamid_esa",
+      "synonyms": [
+        "Dimethenamid-ESA"
+      ],
+      "sourceId": "dietary.substance_synonyms.dimethenamid_esa"
+    },
+    {
+      "canonicalKey": "dimethenamid_oxa",
+      "synonyms": [
+        "Dimethenamid-OXA"
+      ],
+      "sourceId": "dietary.substance_synonyms.dimethenamid_oxa"
+    },
+    {
+      "canonicalKey": "dimethenamid_p",
+      "synonyms": [
+        "Dimethenamid-P"
+      ],
+      "sourceId": "dietary.substance_synonyms.dimethenamid_p"
+    },
+    {
+      "canonicalKey": "dimethenamid_p_metabolite",
+      "synonyms": [
+        "Dimethenamid-P metabolite (M656H026)"
+      ],
+      "sourceId": "dietary.substance_synonyms.dimethenamid_p_metabolite"
+    },
+    {
+      "canonicalKey": "dimethipin",
+      "synonyms": [
+        "Dimethipin"
+      ],
+      "sourceId": "dietary.substance_synonyms.dimethipin"
+    },
+    {
+      "canonicalKey": "dimethoate",
+      "synonyms": [
+        "Dimethoate"
+      ],
+      "sourceId": "dietary.substance_synonyms.dimethoate"
+    },
+    {
+      "canonicalKey": "dimethomorph",
+      "synonyms": [
+        "Dimethomorph"
+      ],
+      "sourceId": "dietary.substance_synonyms.dimethomorph"
+    },
+    {
+      "canonicalKey": "dimethyl_polysiloxane",
+      "synonyms": [
+        "Dimethyl polysiloxane (E 900)"
+      ],
+      "sourceId": "dietary.substance_synonyms.dimethyl_polysiloxane"
+    },
+    {
+      "canonicalKey": "dimoxystrobin",
+      "synonyms": [
+        "Dimoxystrobin"
+      ],
+      "sourceId": "dietary.substance_synonyms.dimoxystrobin"
+    },
+    {
+      "canonicalKey": "diniconazole_m",
+      "synonyms": [
+        "Diniconazole-M"
+      ],
+      "sourceId": "dietary.substance_synonyms.diniconazole_m"
+    },
+    {
+      "canonicalKey": "diphenylamine",
+      "synonyms": [
+        "Diphenylamine"
+      ],
+      "sourceId": "dietary.substance_synonyms.diphenylamine"
+    },
+    {
+      "canonicalKey": "dipotassium_tartrate",
+      "synonyms": [
+        "Dipotassium tartrate (E 336(ii))"
+      ],
+      "sourceId": "dietary.substance_synonyms.dipotassium_tartrate"
+    },
+    {
+      "canonicalKey": "diquat_dibromide",
+      "synonyms": [
+        "Diquat dibromide"
+      ],
+      "sourceId": "dietary.substance_synonyms.diquat_dibromide"
+    },
+    {
+      "canonicalKey": "disodium_phosphonate",
+      "synonyms": [
+        "Disodium phosphonate"
+      ],
+      "sourceId": "dietary.substance_synonyms.disodium_phosphonate"
+    },
+    {
+      "canonicalKey": "disulfoton",
+      "synonyms": [
+        "Disulfoton"
+      ],
+      "sourceId": "dietary.substance_synonyms.disulfoton"
+    },
+    {
+      "canonicalKey": "dithianon",
+      "synonyms": [
+        "Dithianon"
+      ],
+      "sourceId": "dietary.substance_synonyms.dithianon"
+    },
+    {
+      "canonicalKey": "diuron",
+      "synonyms": [
+        "Diuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.diuron"
+    },
+    {
+      "canonicalKey": "dodecyldimethylamine",
+      "synonyms": [
+        "Dodecyldimethylamine"
+      ],
+      "sourceId": "dietary.substance_synonyms.dodecyldimethylamine"
+    },
+    {
+      "canonicalKey": "dodemorph_acetate",
+      "synonyms": [
+        "Dodemorph acetate"
+      ],
+      "sourceId": "dietary.substance_synonyms.dodemorph_acetate"
+    },
+    {
+      "canonicalKey": "dodine",
+      "synonyms": [
+        "Dodine"
+      ],
+      "sourceId": "dietary.substance_synonyms.dodine"
+    },
+    {
+      "canonicalKey": "domoic_acid",
+      "synonyms": [
+        "Domoic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.domoic_acid"
+    },
+    {
+      "canonicalKey": "domoic_acid_c5_diastereomer",
+      "synonyms": [
+        "Domoic acid C5'-diastereomer"
+      ],
+      "sourceId": "dietary.substance_synonyms.domoic_acid_c5_diastereomer"
+    },
+    {
+      "canonicalKey": "ecklonia_cava_phlorotannins",
+      "synonyms": [
+        "Ecklonia cava phlorotannins"
+      ],
+      "sourceId": "dietary.substance_synonyms.ecklonia_cava_phlorotannins"
+    },
+    {
+      "canonicalKey": "emamectin",
+      "synonyms": [
+        "Emamectin"
+      ],
+      "sourceId": "dietary.substance_synonyms.emamectin"
+    },
+    {
+      "canonicalKey": "endosulfan",
+      "synonyms": [
+        "Endosulfan"
+      ],
+      "sourceId": "dietary.substance_synonyms.endosulfan"
+    },
+    {
+      "canonicalKey": "endrin",
+      "synonyms": [
+        "Endrin"
+      ],
+      "sourceId": "dietary.substance_synonyms.endrin"
+    },
+    {
+      "canonicalKey": "epoxiconazole",
+      "synonyms": [
+        "Epoxiconazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.epoxiconazole"
+    },
+    {
+      "canonicalKey": "epoxidised_soybean_oil",
+      "synonyms": [
+        "Epoxidised soybean oil"
+      ],
+      "sourceId": "dietary.substance_synonyms.epoxidised_soybean_oil"
+    },
+    {
+      "canonicalKey": "epoxidised_vegetable_oil",
+      "synonyms": [
+        "Epoxidised vegetable oil"
+      ],
+      "sourceId": "dietary.substance_synonyms.epoxidised_vegetable_oil"
+    },
+    {
+      "canonicalKey": "ergot_alkaloids",
+      "synonyms": [
+        "Ergot alkaloids"
+      ],
+      "sourceId": "dietary.substance_synonyms.ergot_alkaloids"
+    },
+    {
+      "canonicalKey": "erucic_acid",
+      "synonyms": [
+        "Erucic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.erucic_acid"
+    },
+    {
+      "canonicalKey": "erythorbic_acid",
+      "synonyms": [
+        "Erythorbic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.erythorbic_acid"
+    },
+    {
+      "canonicalKey": "erythrosine",
+      "synonyms": [
+        "Erythrosine"
+      ],
+      "sourceId": "dietary.substance_synonyms.erythrosine"
+    },
+    {
+      "canonicalKey": "esfenvalerate",
+      "synonyms": [
+        "Esfenvalerate"
+      ],
+      "sourceId": "dietary.substance_synonyms.esfenvalerate"
+    },
+    {
+      "canonicalKey": "ethametsulfuron_methyl",
+      "synonyms": [
+        "Ethametsulfuron methyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.ethametsulfuron_methyl"
+    },
+    {
+      "canonicalKey": "ethane_12_diamine",
+      "synonyms": [
+        "Ethane-1,2-diamine"
+      ],
+      "sourceId": "dietary.substance_synonyms.ethane_12_diamine"
+    },
+    {
+      "canonicalKey": "ethephon",
+      "synonyms": [
+        "Ethephon"
+      ],
+      "sourceId": "dietary.substance_synonyms.ethephon"
+    },
+    {
+      "canonicalKey": "ethirimol",
+      "synonyms": [
+        "Ethirimol"
+      ],
+      "sourceId": "dietary.substance_synonyms.ethirimol"
+    },
+    {
+      "canonicalKey": "ethofumesate",
+      "synonyms": [
+        "Ethofumesate"
+      ],
+      "sourceId": "dietary.substance_synonyms.ethofumesate"
+    },
+    {
+      "canonicalKey": "ethoprophos",
+      "synonyms": [
+        "Ethoprophos"
+      ],
+      "sourceId": "dietary.substance_synonyms.ethoprophos"
+    },
+    {
+      "canonicalKey": "ethoxyquin",
+      "synonyms": [
+        "Ethoxyquin"
+      ],
+      "sourceId": "dietary.substance_synonyms.ethoxyquin"
+    },
+    {
+      "canonicalKey": "ethyl_acetate",
+      "synonyms": [
+        "Ethyl acetate"
+      ],
+      "sourceId": "dietary.substance_synonyms.ethyl_acetate"
+    },
+    {
+      "canonicalKey": "ethyl_acrylate",
+      "synonyms": [
+        "Ethyl acrylate"
+      ],
+      "sourceId": "dietary.substance_synonyms.ethyl_acrylate"
+    },
+    {
+      "canonicalKey": "ethyl_ester_of_beta_apo_8_carotenoic_acid",
+      "synonyms": [
+        "Ethyl ester of beta-apo-8'-carotenoic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.ethyl_ester_of_beta_apo_8_carotenoic_acid"
+    },
+    {
+      "canonicalKey": "ethyl_lauroyl_arginate",
+      "synonyms": [
+        "Ethyl lauroyl arginate"
+      ],
+      "sourceId": "dietary.substance_synonyms.ethyl_lauroyl_arginate"
+    },
+    {
+      "canonicalKey": "ethyl_lauroyl_arginate_hydrochloride",
+      "synonyms": [
+        "Ethyl lauroyl arginate hydrochloride"
+      ],
+      "sourceId": "dietary.substance_synonyms.ethyl_lauroyl_arginate_hydrochloride"
+    },
+    {
+      "canonicalKey": "ethyl_tert_butyl_ether",
+      "synonyms": [
+        "Ethyl tert-butyl ether"
+      ],
+      "sourceId": "dietary.substance_synonyms.ethyl_tert_butyl_ether"
+    },
+    {
+      "canonicalKey": "ethylene_glycol_and_diethylene_glycol",
+      "synonyms": [
+        "Ethylene glycol and diethylene glycol"
+      ],
+      "sourceId": "dietary.substance_synonyms.ethylene_glycol_and_diethylene_glycol"
+    },
+    {
+      "canonicalKey": "ethylene_glycol_bis33_bisbutyrate",
+      "synonyms": [
+        "Ethylene glycol bis[3,3-bis(3-tert-butyl-4-hydroxyphenyl)butyrate]"
+      ],
+      "sourceId": "dietary.substance_synonyms.ethylene_glycol_bis33_bisbutyrate"
+    },
+    {
+      "canonicalKey": "ethylenethiourea",
+      "synonyms": [
+        "Ethylenethiourea"
+      ],
+      "sourceId": "dietary.substance_synonyms.ethylenethiourea"
+    },
+    {
+      "canonicalKey": "etofenprox",
+      "synonyms": [
+        "Etofenprox"
+      ],
+      "sourceId": "dietary.substance_synonyms.etofenprox"
+    },
+    {
+      "canonicalKey": "etoxazole",
+      "synonyms": [
+        "Etoxazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.etoxazole"
+    },
+    {
+      "canonicalKey": "etridiazole",
+      "synonyms": [
+        "Etridiazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.etridiazole"
+    },
+    {
+      "canonicalKey": "eugenol",
+      "synonyms": [
+        "Eugenol"
+      ],
+      "sourceId": "dietary.substance_synonyms.eugenol"
+    },
+    {
+      "canonicalKey": "f8426_alpha_sulfodeschloropropionic_acid",
+      "synonyms": [
+        "F8426-alpha-sulfodeschloropropionic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.f8426_alpha_sulfodeschloropropionic_acid"
+    },
+    {
+      "canonicalKey": "f8426_benzoic_acid",
+      "synonyms": [
+        "F8426-benzoic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.f8426_benzoic_acid"
+    },
+    {
+      "canonicalKey": "f8426_dicarboxylic_acid",
+      "synonyms": [
+        "F8426-dicarboxylic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.f8426_dicarboxylic_acid"
+    },
+    {
+      "canonicalKey": "f8426_propionic_acid",
+      "synonyms": [
+        "F8426-propionic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.f8426_propionic_acid"
+    },
+    {
+      "canonicalKey": "famoxadone",
+      "synonyms": [
+        "Famoxadone"
+      ],
+      "sourceId": "dietary.substance_synonyms.famoxadone"
+    },
+    {
+      "canonicalKey": "fenamidone_metabolite",
+      "synonyms": [
+        "Fenamidone metabolite (RPA 410193)"
+      ],
+      "sourceId": "dietary.substance_synonyms.fenamidone_metabolite"
+    },
+    {
+      "canonicalKey": "fenamiphos",
+      "synonyms": [
+        "Fenamiphos (aka phenamiphos)"
+      ],
+      "sourceId": "dietary.substance_synonyms.fenamiphos"
+    },
+    {
+      "canonicalKey": "fenarimol",
+      "synonyms": [
+        "Fenarimol"
+      ],
+      "sourceId": "dietary.substance_synonyms.fenarimol"
+    },
+    {
+      "canonicalKey": "fenazaquin",
+      "synonyms": [
+        "Fenazaquin"
+      ],
+      "sourceId": "dietary.substance_synonyms.fenazaquin"
+    },
+    {
+      "canonicalKey": "fenbuconazole",
+      "synonyms": [
+        "Fenbuconazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.fenbuconazole"
+    },
+    {
+      "canonicalKey": "fenbutatin_oxide",
+      "synonyms": [
+        "Fenbutatin oxide"
+      ],
+      "sourceId": "dietary.substance_synonyms.fenbutatin_oxide"
+    },
+    {
+      "canonicalKey": "fenhexamid",
+      "synonyms": [
+        "Fenhexamid"
+      ],
+      "sourceId": "dietary.substance_synonyms.fenhexamid"
+    },
+    {
+      "canonicalKey": "fenitrothion",
+      "synonyms": [
+        "Fenitrothion"
+      ],
+      "sourceId": "dietary.substance_synonyms.fenitrothion"
+    },
+    {
+      "canonicalKey": "fenoxaprop_p_ethyl",
+      "synonyms": [
+        "Fenoxaprop-P-ethyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.fenoxaprop_p_ethyl"
+    },
+    {
+      "canonicalKey": "fenoxaprop_ethyl",
+      "synonyms": [
+        "Fenoxaprop-ethyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.fenoxaprop_ethyl"
+    },
+    {
+      "canonicalKey": "fenoxycarb",
+      "synonyms": [
+        "Fenoxycarb"
+      ],
+      "sourceId": "dietary.substance_synonyms.fenoxycarb"
+    },
+    {
+      "canonicalKey": "fenpicoxamid",
+      "synonyms": [
+        "Fenpicoxamid"
+      ],
+      "sourceId": "dietary.substance_synonyms.fenpicoxamid"
+    },
+    {
+      "canonicalKey": "fenpropidin",
+      "synonyms": [
+        "Fenpropidin"
+      ],
+      "sourceId": "dietary.substance_synonyms.fenpropidin"
+    },
+    {
+      "canonicalKey": "fenpropimorph",
+      "synonyms": [
+        "Fenpropimorph"
+      ],
+      "sourceId": "dietary.substance_synonyms.fenpropimorph"
+    },
+    {
+      "canonicalKey": "fenpyrazamine",
+      "synonyms": [
+        "Fenpyrazamine"
+      ],
+      "sourceId": "dietary.substance_synonyms.fenpyrazamine"
+    },
+    {
+      "canonicalKey": "fenpyroximate",
+      "synonyms": [
+        "Fenpyroximate"
+      ],
+      "sourceId": "dietary.substance_synonyms.fenpyroximate"
+    },
+    {
+      "canonicalKey": "fenthion",
+      "synonyms": [
+        "Fenthion"
+      ],
+      "sourceId": "dietary.substance_synonyms.fenthion"
+    },
+    {
+      "canonicalKey": "fentin_acetate",
+      "synonyms": [
+        "Fentin acetate"
+      ],
+      "sourceId": "dietary.substance_synonyms.fentin_acetate"
+    },
+    {
+      "canonicalKey": "fentin_hydroxide",
+      "synonyms": [
+        "Fentin hydroxide"
+      ],
+      "sourceId": "dietary.substance_synonyms.fentin_hydroxide"
+    },
+    {
+      "canonicalKey": "ferric_pyrophosphate",
+      "synonyms": [
+        "Ferric pyrophosphate"
+      ],
+      "sourceId": "dietary.substance_synonyms.ferric_pyrophosphate"
+    },
+    {
+      "canonicalKey": "fipronil",
+      "synonyms": [
+        "Fipronil"
+      ],
+      "sourceId": "dietary.substance_synonyms.fipronil"
+    },
+    {
+      "canonicalKey": "flazasulfuron",
+      "synonyms": [
+        "Flazasulfuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.flazasulfuron"
+    },
+    {
+      "canonicalKey": "flonicamid",
+      "synonyms": [
+        "Flonicamid"
+      ],
+      "sourceId": "dietary.substance_synonyms.flonicamid"
+    },
+    {
+      "canonicalKey": "florasulam",
+      "synonyms": [
+        "Florasulam"
+      ],
+      "sourceId": "dietary.substance_synonyms.florasulam"
+    },
+    {
+      "canonicalKey": "florpyrauxifen",
+      "synonyms": [
+        "Florpyrauxifen"
+      ],
+      "sourceId": "dietary.substance_synonyms.florpyrauxifen"
+    },
+    {
+      "canonicalKey": "florpyrauxifen_benzyl",
+      "synonyms": [
+        "Florpyrauxifen-benzyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.florpyrauxifen_benzyl"
+    },
+    {
+      "canonicalKey": "fluazifop_p",
+      "synonyms": [
+        "Fluazifop-P"
+      ],
+      "sourceId": "dietary.substance_synonyms.fluazifop_p"
+    },
+    {
+      "canonicalKey": "fluazifop_p_butyl",
+      "synonyms": [
+        "Fluazifop-P-butyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.fluazifop_p_butyl"
+    },
+    {
+      "canonicalKey": "fluazinam",
+      "synonyms": [
+        "Fluazinam"
+      ],
+      "sourceId": "dietary.substance_synonyms.fluazinam"
+    },
+    {
+      "canonicalKey": "flubendiamide",
+      "synonyms": [
+        "Flubendiamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.flubendiamide"
+    },
+    {
+      "canonicalKey": "fludioxonil",
+      "synonyms": [
+        "Fludioxonil"
+      ],
+      "sourceId": "dietary.substance_synonyms.fludioxonil"
+    },
+    {
+      "canonicalKey": "flufenoxuron",
+      "synonyms": [
+        "Flufenoxuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.flufenoxuron"
+    },
+    {
+      "canonicalKey": "flumetralin",
+      "synonyms": [
+        "Flumetralin"
+      ],
+      "sourceId": "dietary.substance_synonyms.flumetralin"
+    },
+    {
+      "canonicalKey": "flumioxazin",
+      "synonyms": [
+        "Flumioxazin"
+      ],
+      "sourceId": "dietary.substance_synonyms.flumioxazin"
+    },
+    {
+      "canonicalKey": "fluometuron",
+      "synonyms": [
+        "Fluometuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.fluometuron"
+    },
+    {
+      "canonicalKey": "fluopicolide",
+      "synonyms": [
+        "Fluopicolide"
+      ],
+      "sourceId": "dietary.substance_synonyms.fluopicolide"
+    },
+    {
+      "canonicalKey": "fluopyram",
+      "synonyms": [
+        "Fluopyram"
+      ],
+      "sourceId": "dietary.substance_synonyms.fluopyram"
+    },
+    {
+      "canonicalKey": "fluoride",
+      "synonyms": [
+        "Fluoride"
+      ],
+      "sourceId": "dietary.substance_synonyms.fluoride"
+    },
+    {
+      "canonicalKey": "fluoroglycofene",
+      "synonyms": [
+        "Fluoroglycofene"
+      ],
+      "sourceId": "dietary.substance_synonyms.fluoroglycofene"
+    },
+    {
+      "canonicalKey": "fluoxastrobin",
+      "synonyms": [
+        "Fluoxastrobin"
+      ],
+      "sourceId": "dietary.substance_synonyms.fluoxastrobin"
+    },
+    {
+      "canonicalKey": "flupyradifurone",
+      "synonyms": [
+        "Flupyradifurone"
+      ],
+      "sourceId": "dietary.substance_synonyms.flupyradifurone"
+    },
+    {
+      "canonicalKey": "flupyrsulfuron_methyl_sodium",
+      "synonyms": [
+        "Flupyrsulfuron-methyl-sodium"
+      ],
+      "sourceId": "dietary.substance_synonyms.flupyrsulfuron_methyl_sodium"
+    },
+    {
+      "canonicalKey": "fluquinconazole",
+      "synonyms": [
+        "Fluquinconazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.fluquinconazole"
+    },
+    {
+      "canonicalKey": "fluroxypyr",
+      "synonyms": [
+        "Fluroxypyr"
+      ],
+      "sourceId": "dietary.substance_synonyms.fluroxypyr"
+    },
+    {
+      "canonicalKey": "flurprimidol",
+      "synonyms": [
+        "Flurprimidol"
+      ],
+      "sourceId": "dietary.substance_synonyms.flurprimidol"
+    },
+    {
+      "canonicalKey": "flusilazole",
+      "synonyms": [
+        "Flusilazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.flusilazole"
+    },
+    {
+      "canonicalKey": "flutianil",
+      "synonyms": [
+        "Flutianil"
+      ],
+      "sourceId": "dietary.substance_synonyms.flutianil"
+    },
+    {
+      "canonicalKey": "flutianil_metabolite",
+      "synonyms": [
+        "Flutianil metabolite (OC 63421)"
+      ],
+      "sourceId": "dietary.substance_synonyms.flutianil_metabolite"
+    },
+    {
+      "canonicalKey": "flutolanil",
+      "synonyms": [
+        "Flutolanil"
+      ],
+      "sourceId": "dietary.substance_synonyms.flutolanil"
+    },
+    {
+      "canonicalKey": "flutriafol",
+      "synonyms": [
+        "Flutriafol"
+      ],
+      "sourceId": "dietary.substance_synonyms.flutriafol"
+    },
+    {
+      "canonicalKey": "fluxapyroxad",
+      "synonyms": [
+        "Fluxapyroxad"
+      ],
+      "sourceId": "dietary.substance_synonyms.fluxapyroxad"
+    },
+    {
+      "canonicalKey": "folates",
+      "synonyms": [
+        "Folates"
+      ],
+      "sourceId": "dietary.substance_synonyms.folates"
+    },
+    {
+      "canonicalKey": "folic_acid",
+      "synonyms": [
+        "Folic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.folic_acid"
+    },
+    {
+      "canonicalKey": "folpet",
+      "synonyms": [
+        "Folpet"
+      ],
+      "sourceId": "dietary.substance_synonyms.folpet"
+    },
+    {
+      "canonicalKey": "foramsulfuron",
+      "synonyms": [
+        "Foramsulfuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.foramsulfuron"
+    },
+    {
+      "canonicalKey": "forchlorfenuron",
+      "synonyms": [
+        "Forchlorfenuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.forchlorfenuron"
+    },
+    {
+      "canonicalKey": "formaldehyde",
+      "synonyms": [
+        "Formaldehyde"
+      ],
+      "sourceId": "dietary.substance_synonyms.formaldehyde"
+    },
+    {
+      "canonicalKey": "formetanate_hydrochloride",
+      "synonyms": [
+        "Formetanate hydrochloride"
+      ],
+      "sourceId": "dietary.substance_synonyms.formetanate_hydrochloride"
+    },
+    {
+      "canonicalKey": "formic_acid",
+      "synonyms": [
+        "Formic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.formic_acid"
+    },
+    {
+      "canonicalKey": "formyl_asulam",
+      "synonyms": [
+        "Formyl asulam"
+      ],
+      "sourceId": "dietary.substance_synonyms.formyl_asulam"
+    },
+    {
+      "canonicalKey": "fosetyl_aluminium",
+      "synonyms": [
+        "Fosetyl-aluminium"
+      ],
+      "sourceId": "dietary.substance_synonyms.fosetyl_aluminium"
+    },
+    {
+      "canonicalKey": "fosthiazate",
+      "synonyms": [
+        "Fosthiazate"
+      ],
+      "sourceId": "dietary.substance_synonyms.fosthiazate"
+    },
+    {
+      "canonicalKey": "fuberidazole",
+      "synonyms": [
+        "Fuberidazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.fuberidazole"
+    },
+    {
+      "canonicalKey": "fumonisins",
+      "synonyms": [
+        "Fumonisins"
+      ],
+      "sourceId": "dietary.substance_synonyms.fumonisins"
+    },
+    {
+      "canonicalKey": "furfural",
+      "synonyms": [
+        "Furfural"
+      ],
+      "sourceId": "dietary.substance_synonyms.furfural"
+    },
+    {
+      "canonicalKey": "furfural_diethyl_acetal",
+      "synonyms": [
+        "Furfural diethyl acetal"
+      ],
+      "sourceId": "dietary.substance_synonyms.furfural_diethyl_acetal"
+    },
+    {
+      "canonicalKey": "gamma_cyhalothrin",
+      "synonyms": [
+        "Gamma-cyhalothrin"
+      ],
+      "sourceId": "dietary.substance_synonyms.gamma_cyhalothrin"
+    },
+    {
+      "canonicalKey": "gamma_hexachlorocyclohexane",
+      "synonyms": [
+        "Gamma-hexachlorocyclohexane"
+      ],
+      "sourceId": "dietary.substance_synonyms.gamma_hexachlorocyclohexane"
+    },
+    {
+      "canonicalKey": "gibberellic_acid",
+      "synonyms": [
+        "Gibberellic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.gibberellic_acid"
+    },
+    {
+      "canonicalKey": "gibberellin_a4",
+      "synonyms": [
+        "Gibberellin A4"
+      ],
+      "sourceId": "dietary.substance_synonyms.gibberellin_a4"
+    },
+    {
+      "canonicalKey": "gibberellin_a7",
+      "synonyms": [
+        "Gibberellin A7"
+      ],
+      "sourceId": "dietary.substance_synonyms.gibberellin_a7"
+    },
+    {
+      "canonicalKey": "glucuronide_conjugate_of_sedaxane_metabolite",
+      "synonyms": [
+        "Glucuronide conjugate of Sedaxane metabolite (CSCD658906)"
+      ],
+      "sourceId": "dietary.substance_synonyms.glucuronide_conjugate_of_sedaxane_metabolite"
+    },
+    {
+      "canonicalKey": "glufosinate",
+      "synonyms": [
+        "Glufosinate-ammonium"
+      ],
+      "sourceId": "dietary.substance_synonyms.glufosinate"
+    },
+    {
+      "canonicalKey": "glycerol_esters_of_wood_rosin",
+      "synonyms": [
+        "Glycerol esters of wood rosin (GEWR)"
+      ],
+      "sourceId": "dietary.substance_synonyms.glycerol_esters_of_wood_rosin"
+    },
+    {
+      "canonicalKey": "glycerol_esters_of_wood_rosin_from_pinus_palustris_and_pinus_elliottii",
+      "synonyms": [
+        "Glycerol esters of wood rosin (GEWR) from Pinus palustris and Pinus elliottii"
+      ],
+      "sourceId": "dietary.substance_synonyms.glycerol_esters_of_wood_rosin_from_pinus_palustris_and_pinus_elliottii"
+    },
+    {
+      "canonicalKey": "green_s",
+      "synonyms": [
+        "Green S"
+      ],
+      "sourceId": "dietary.substance_synonyms.green_s"
+    },
+    {
+      "canonicalKey": "guazatine_acetates",
+      "synonyms": [
+        "Guazatine acetates"
+      ],
+      "sourceId": "dietary.substance_synonyms.guazatine_acetates"
+    },
+    {
+      "canonicalKey": "halauxifen_methyl",
+      "synonyms": [
+        "Halauxifen-methyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.halauxifen_methyl"
+    },
+    {
+      "canonicalKey": "halofuginone_hydrobromide",
+      "synonyms": [
+        "Halofuginone hydrobromide"
+      ],
+      "sourceId": "dietary.substance_synonyms.halofuginone_hydrobromide"
+    },
+    {
+      "canonicalKey": "haloxyfop_p",
+      "synonyms": [
+        "Haloxyfop-P"
+      ],
+      "sourceId": "dietary.substance_synonyms.haloxyfop_p"
+    },
+    {
+      "canonicalKey": "hemp",
+      "synonyms": [
+        "Hemp (Cannabis genus)"
+      ],
+      "sourceId": "dietary.substance_synonyms.hemp"
+    },
+    {
+      "canonicalKey": "heptachlor",
+      "synonyms": [
+        "Heptachlor"
+      ],
+      "sourceId": "dietary.substance_synonyms.heptachlor"
+    },
+    {
+      "canonicalKey": "hexythiazox",
+      "synonyms": [
+        "Hexythiazox"
+      ],
+      "sourceId": "dietary.substance_synonyms.hexythiazox"
+    },
+    {
+      "canonicalKey": "hydrogenated_poly_1_decene",
+      "synonyms": [
+        "Hydrogenated poly-1-decene"
+      ],
+      "sourceId": "dietary.substance_synonyms.hydrogenated_poly_1_decene"
+    },
+    {
+      "canonicalKey": "hydroxy_terbuthylazine",
+      "synonyms": [
+        "Hydroxy-terbuthylazine"
+      ],
+      "sourceId": "dietary.substance_synonyms.hydroxy_terbuthylazine"
+    },
+    {
+      "canonicalKey": "hymexazol",
+      "synonyms": [
+        "Hymexazol"
+      ],
+      "sourceId": "dietary.substance_synonyms.hymexazol"
+    },
+    {
+      "canonicalKey": "in_sxs67",
+      "synonyms": [
+        "IN-SXS67 (Oxathiapiprolin metabolite)"
+      ],
+      "sourceId": "dietary.substance_synonyms.in_sxs67"
+    },
+    {
+      "canonicalKey": "imazalil",
+      "synonyms": [
+        "Imazalil"
+      ],
+      "sourceId": "dietary.substance_synonyms.imazalil"
+    },
+    {
+      "canonicalKey": "imazamox",
+      "synonyms": [
+        "Imazamox"
+      ],
+      "sourceId": "dietary.substance_synonyms.imazamox"
+    },
+    {
+      "canonicalKey": "imazaquin",
+      "synonyms": [
+        "Imazaquin"
+      ],
+      "sourceId": "dietary.substance_synonyms.imazaquin"
+    },
+    {
+      "canonicalKey": "imazosulfuron",
+      "synonyms": [
+        "Imazosulfuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.imazosulfuron"
+    },
+    {
+      "canonicalKey": "imidacloprid",
+      "synonyms": [
+        "Imidacloprid"
+      ],
+      "sourceId": "dietary.substance_synonyms.imidacloprid"
+    },
+    {
+      "canonicalKey": "imidazolidin_2_one",
+      "synonyms": [
+        "Imidazolidin-2-one"
+      ],
+      "sourceId": "dietary.substance_synonyms.imidazolidin_2_one"
+    },
+    {
+      "canonicalKey": "indigo_carmine",
+      "synonyms": [
+        "Indigo Carmine"
+      ],
+      "sourceId": "dietary.substance_synonyms.indigo_carmine"
+    },
+    {
+      "canonicalKey": "indoxacarb",
+      "synonyms": [
+        "Indoxacarb"
+      ],
+      "sourceId": "dietary.substance_synonyms.indoxacarb"
+    },
+    {
+      "canonicalKey": "inorganic_mercury",
+      "synonyms": [
+        "Inorganic mercury"
+      ],
+      "sourceId": "dietary.substance_synonyms.inorganic_mercury"
+    },
+    {
+      "canonicalKey": "iodine",
+      "synonyms": [
+        "Iodine (total)"
+      ],
+      "sourceId": "dietary.substance_synonyms.iodine"
+    },
+    {
+      "canonicalKey": "iodosulfuron_methyl_sodium",
+      "synonyms": [
+        "Iodosulfuron-methyl-sodium"
+      ],
+      "sourceId": "dietary.substance_synonyms.iodosulfuron_methyl_sodium"
+    },
+    {
+      "canonicalKey": "ipconazole",
+      "synonyms": [
+        "Ipconazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.ipconazole"
+    },
+    {
+      "canonicalKey": "iprodione",
+      "synonyms": [
+        "Iprodione"
+      ],
+      "sourceId": "dietary.substance_synonyms.iprodione"
+    },
+    {
+      "canonicalKey": "iprodione_metabolite",
+      "synonyms": [
+        "Iprodione metabolite (M 610F007)"
+      ],
+      "sourceId": "dietary.substance_synonyms.iprodione_metabolite"
+    },
+    {
+      "canonicalKey": "iprovalicarb",
+      "synonyms": [
+        "Iprovalicarb"
+      ],
+      "sourceId": "dietary.substance_synonyms.iprovalicarb"
+    },
+    {
+      "canonicalKey": "iron",
+      "synonyms": [
+        "Iron (total)"
+      ],
+      "sourceId": "dietary.substance_synonyms.iron"
+    },
+    {
+      "canonicalKey": "iron_powder",
+      "synonyms": [
+        "Iron powder"
+      ],
+      "sourceId": "dietary.substance_synonyms.iron_powder"
+    },
+    {
+      "canonicalKey": "iron_sulfate_anhydrous",
+      "synonyms": [
+        "Iron sulfate anhydrous"
+      ],
+      "sourceId": "dietary.substance_synonyms.iron_sulfate_anhydrous"
+    },
+    {
+      "canonicalKey": "iron_sulfate_heptahydrate",
+      "synonyms": [
+        "Iron sulfate heptahydrate"
+      ],
+      "sourceId": "dietary.substance_synonyms.iron_sulfate_heptahydrate"
+    },
+    {
+      "canonicalKey": "iron_sulfate_monohydrate",
+      "synonyms": [
+        "Iron sulfate monohydrate"
+      ],
+      "sourceId": "dietary.substance_synonyms.iron_sulfate_monohydrate"
+    },
+    {
+      "canonicalKey": "isobutanol",
+      "synonyms": [
+        "Isobutanol"
+      ],
+      "sourceId": "dietary.substance_synonyms.isobutanol"
+    },
+    {
+      "canonicalKey": "isoeugenol",
+      "synonyms": [
+        "Isoeugenol"
+      ],
+      "sourceId": "dietary.substance_synonyms.isoeugenol"
+    },
+    {
+      "canonicalKey": "isofetamid",
+      "synonyms": [
+        "Isofetamid"
+      ],
+      "sourceId": "dietary.substance_synonyms.isofetamid"
+    },
+    {
+      "canonicalKey": "isofetamid_metabolite",
+      "synonyms": [
+        "Isofetamid metabolite (3-MTCA)"
+      ],
+      "sourceId": "dietary.substance_synonyms.isofetamid_metabolite"
+    },
+    {
+      "canonicalKey": "isoflucypram",
+      "synonyms": [
+        "Isoflucypram"
+      ],
+      "sourceId": "dietary.substance_synonyms.isoflucypram"
+    },
+    {
+      "canonicalKey": "isopentyl_acetate",
+      "synonyms": [
+        "Isopentyl acetate"
+      ],
+      "sourceId": "dietary.substance_synonyms.isopentyl_acetate"
+    },
+    {
+      "canonicalKey": "isoproturon",
+      "synonyms": [
+        "Isoproturon"
+      ],
+      "sourceId": "dietary.substance_synonyms.isoproturon"
+    },
+    {
+      "canonicalKey": "isopyrazam",
+      "synonyms": [
+        "Isopyrazam"
+      ],
+      "sourceId": "dietary.substance_synonyms.isopyrazam"
+    },
+    {
+      "canonicalKey": "isoxaben",
+      "synonyms": [
+        "Isoxaben"
+      ],
+      "sourceId": "dietary.substance_synonyms.isoxaben"
+    },
+    {
+      "canonicalKey": "isoxaflutole",
+      "synonyms": [
+        "Isoxaflutole"
+      ],
+      "sourceId": "dietary.substance_synonyms.isoxaflutole"
+    },
+    {
+      "canonicalKey": "isoxaflutole_metabolite",
+      "synonyms": [
+        "Isoxaflutole metabolite (RPA 203328)"
+      ],
+      "sourceId": "dietary.substance_synonyms.isoxaflutole_metabolite"
+    },
+    {
+      "canonicalKey": "kresoxim_methyl",
+      "synonyms": [
+        "Kresoxim-methyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.kresoxim_methyl"
+    },
+    {
+      "canonicalKey": "l_tartaric_acid_disodium_salt",
+      "synonyms": [
+        "L(+)-Tartaric acid, disodium salt"
+      ],
+      "sourceId": "dietary.substance_synonyms.l_tartaric_acid_disodium_salt"
+    },
+    {
+      "canonicalKey": "l_glutamic_acid",
+      "synonyms": [
+        "L-Glutamic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.l_glutamic_acid"
+    },
+    {
+      "canonicalKey": "l_glutamic_acid_nn_diacetic_acid_tetrasodium_salt",
+      "synonyms": [
+        "L-Glutamic acid, N,N-diacetic acid, tetrasodium salt"
+      ],
+      "sourceId": "dietary.substance_synonyms.l_glutamic_acid_nn_diacetic_acid_tetrasodium_salt"
+    },
+    {
+      "canonicalKey": "l_tartaric_acid",
+      "synonyms": [
+        "L-Tartaric acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.l_tartaric_acid"
+    },
+    {
+      "canonicalKey": "lambda_cyhalothrin",
+      "synonyms": [
+        "Lambda-cyhalothrin"
+      ],
+      "sourceId": "dietary.substance_synonyms.lambda_cyhalothrin"
+    },
+    {
+      "canonicalKey": "lasalocid_sodium",
+      "synonyms": [
+        "Lasalocid sodium"
+      ],
+      "sourceId": "dietary.substance_synonyms.lasalocid_sodium"
+    },
+    {
+      "canonicalKey": "lead",
+      "synonyms": [
+        "Lead (total)"
+      ],
+      "sourceId": "dietary.substance_synonyms.lead"
+    },
+    {
+      "canonicalKey": "lenacil",
+      "synonyms": [
+        "Lenacil"
+      ],
+      "sourceId": "dietary.substance_synonyms.lenacil"
+    },
+    {
+      "canonicalKey": "limonene",
+      "synonyms": [
+        "Limonene"
+      ],
+      "sourceId": "dietary.substance_synonyms.limonene"
+    },
+    {
+      "canonicalKey": "linuron",
+      "synonyms": [
+        "Linuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.linuron"
+    },
+    {
+      "canonicalKey": "lufenuron",
+      "synonyms": [
+        "Lufenuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.lufenuron"
+    },
+    {
+      "canonicalKey": "lutein",
+      "synonyms": [
+        "Lutein"
+      ],
+      "sourceId": "dietary.substance_synonyms.lutein"
+    },
+    {
+      "canonicalKey": "lutein_ester",
+      "synonyms": [
+        "Lutein ester (Tagetes erecta)"
+      ],
+      "sourceId": "dietary.substance_synonyms.lutein_ester"
+    },
+    {
+      "canonicalKey": "lycopene",
+      "synonyms": [
+        "Lycopene"
+      ],
+      "sourceId": "dietary.substance_synonyms.lycopene"
+    },
+    {
+      "canonicalKey": "mcpb",
+      "synonyms": [
+        "MCPB"
+      ],
+      "sourceId": "dietary.substance_synonyms.mcpb"
+    },
+    {
+      "canonicalKey": "maduramicin_ammonium",
+      "synonyms": [
+        "Maduramicin ammonium"
+      ],
+      "sourceId": "dietary.substance_synonyms.maduramicin_ammonium"
+    },
+    {
+      "canonicalKey": "magnesium",
+      "synonyms": [
+        "Magnesium (total)"
+      ],
+      "sourceId": "dietary.substance_synonyms.magnesium"
+    },
+    {
+      "canonicalKey": "magnesium_di_l_glutamate",
+      "synonyms": [
+        "Magnesium di-L-glutamate"
+      ],
+      "sourceId": "dietary.substance_synonyms.magnesium_di_l_glutamate"
+    },
+    {
+      "canonicalKey": "magnesium_phosphide",
+      "synonyms": [
+        "Magnesium phosphide"
+      ],
+      "sourceId": "dietary.substance_synonyms.magnesium_phosphide"
+    },
+    {
+      "canonicalKey": "magnesium_salts",
+      "synonyms": [
+        "Magnesium salts"
+      ],
+      "sourceId": "dietary.substance_synonyms.magnesium_salts"
+    },
+    {
+      "canonicalKey": "malathion",
+      "synonyms": [
+        "Malathion"
+      ],
+      "sourceId": "dietary.substance_synonyms.malathion"
+    },
+    {
+      "canonicalKey": "maleic_anhydride",
+      "synonyms": [
+        "Maleic anhydride"
+      ],
+      "sourceId": "dietary.substance_synonyms.maleic_anhydride"
+    },
+    {
+      "canonicalKey": "maleic_hydrazide",
+      "synonyms": [
+        "Maleic hydrazide"
+      ],
+      "sourceId": "dietary.substance_synonyms.maleic_hydrazide"
+    },
+    {
+      "canonicalKey": "malonyl_sulfanilamide",
+      "synonyms": [
+        "Malonyl sulfanilamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.malonyl_sulfanilamide"
+    },
+    {
+      "canonicalKey": "malonyl_asulam",
+      "synonyms": [
+        "Malonyl-asulam"
+      ],
+      "sourceId": "dietary.substance_synonyms.malonyl_asulam"
+    },
+    {
+      "canonicalKey": "maltol",
+      "synonyms": [
+        "Maltol"
+      ],
+      "sourceId": "dietary.substance_synonyms.maltol"
+    },
+    {
+      "canonicalKey": "mancozeb",
+      "synonyms": [
+        "Mancozeb"
+      ],
+      "sourceId": "dietary.substance_synonyms.mancozeb"
+    },
+    {
+      "canonicalKey": "mandestrobin",
+      "synonyms": [
+        "Mandestrobin"
+      ],
+      "sourceId": "dietary.substance_synonyms.mandestrobin"
+    },
+    {
+      "canonicalKey": "mandipropamid",
+      "synonyms": [
+        "Mandipropamid"
+      ],
+      "sourceId": "dietary.substance_synonyms.mandipropamid"
+    },
+    {
+      "canonicalKey": "manganese",
+      "synonyms": [
+        "Manganese (total)"
+      ],
+      "sourceId": "dietary.substance_synonyms.manganese"
+    },
+    {
+      "canonicalKey": "mecoprop_p",
+      "synonyms": [
+        "Mecoprop-P"
+      ],
+      "sourceId": "dietary.substance_synonyms.mecoprop_p"
+    },
+    {
+      "canonicalKey": "mefentrifluconazole",
+      "synonyms": [
+        "Mefentrifluconazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.mefentrifluconazole"
+    },
+    {
+      "canonicalKey": "mefentrifluconazole_metabolite",
+      "synonyms": [
+        "Mefentrifluconazole metabolite (M750F015)"
+      ],
+      "sourceId": "dietary.substance_synonyms.mefentrifluconazole_metabolite"
+    },
+    {
+      "canonicalKey": "melamine",
+      "synonyms": [
+        "Melamine"
+      ],
+      "sourceId": "dietary.substance_synonyms.melamine"
+    },
+    {
+      "canonicalKey": "menthol",
+      "synonyms": [
+        "Menthol"
+      ],
+      "sourceId": "dietary.substance_synonyms.menthol"
+    },
+    {
+      "canonicalKey": "mepanipyrim",
+      "synonyms": [
+        "Mepanipyrim"
+      ],
+      "sourceId": "dietary.substance_synonyms.mepanipyrim"
+    },
+    {
+      "canonicalKey": "mepiquat_chloride",
+      "synonyms": [
+        "Mepiquat chloride"
+      ],
+      "sourceId": "dietary.substance_synonyms.mepiquat_chloride"
+    },
+    {
+      "canonicalKey": "mercuric_chloride",
+      "synonyms": [
+        "Mercuric chloride"
+      ],
+      "sourceId": "dietary.substance_synonyms.mercuric_chloride"
+    },
+    {
+      "canonicalKey": "mercury_total",
+      "synonyms": [
+        "Mercury (total)"
+      ],
+      "sourceId": "dietary.substance_synonyms.mercury_total"
+    },
+    {
+      "canonicalKey": "mesosulfuron_methyl",
+      "synonyms": [
+        "Mesosulfuron-methyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.mesosulfuron_methyl"
+    },
+    {
+      "canonicalKey": "mesotrione",
+      "synonyms": [
+        "Mesotrione"
+      ],
+      "sourceId": "dietary.substance_synonyms.mesotrione"
+    },
+    {
+      "canonicalKey": "metaflumizone",
+      "synonyms": [
+        "Metaflumizone"
+      ],
+      "sourceId": "dietary.substance_synonyms.metaflumizone"
+    },
+    {
+      "canonicalKey": "metalaxyl_m",
+      "synonyms": [
+        "Metalaxyl-M"
+      ],
+      "sourceId": "dietary.substance_synonyms.metalaxyl_m"
+    },
+    {
+      "canonicalKey": "metam_sodium",
+      "synonyms": [
+        "Metam-sodium"
+      ],
+      "sourceId": "dietary.substance_synonyms.metam_sodium"
+    },
+    {
+      "canonicalKey": "metamitron",
+      "synonyms": [
+        "Metamitron"
+      ],
+      "sourceId": "dietary.substance_synonyms.metamitron"
+    },
+    {
+      "canonicalKey": "metatartaric_acid",
+      "synonyms": [
+        "Metatartaric acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.metatartaric_acid"
+    },
+    {
+      "canonicalKey": "metazachlor",
+      "synonyms": [
+        "Metazachlor"
+      ],
+      "sourceId": "dietary.substance_synonyms.metazachlor"
+    },
+    {
+      "canonicalKey": "metconazole",
+      "synonyms": [
+        "Metconazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.metconazole"
+    },
+    {
+      "canonicalKey": "methacrylic_acid",
+      "synonyms": [
+        "Methacrylic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.methacrylic_acid"
+    },
+    {
+      "canonicalKey": "methamidophos",
+      "synonyms": [
+        "Methamidophos"
+      ],
+      "sourceId": "dietary.substance_synonyms.methamidophos"
+    },
+    {
+      "canonicalKey": "methidathion",
+      "synonyms": [
+        "Methidathion"
+      ],
+      "sourceId": "dietary.substance_synonyms.methidathion"
+    },
+    {
+      "canonicalKey": "methiocarb",
+      "synonyms": [
+        "Methiocarb"
+      ],
+      "sourceId": "dietary.substance_synonyms.methiocarb"
+    },
+    {
+      "canonicalKey": "methomyl",
+      "synonyms": [
+        "Methomyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.methomyl"
+    },
+    {
+      "canonicalKey": "methoxy_f8426_despropionate",
+      "synonyms": [
+        "Methoxy-F8426-despropionate"
+      ],
+      "sourceId": "dietary.substance_synonyms.methoxy_f8426_despropionate"
+    },
+    {
+      "canonicalKey": "methoxyfenozide",
+      "synonyms": [
+        "Methoxyfenozide"
+      ],
+      "sourceId": "dietary.substance_synonyms.methoxyfenozide"
+    },
+    {
+      "canonicalKey": "methyl_2_furoate_furfural_furfuryl_alcohol_and_furfuryl_acetate_group",
+      "synonyms": [
+        "Methyl 2-furoate, furfural, furfuryl alcohol and furfuryl acetate group"
+      ],
+      "sourceId": "dietary.substance_synonyms.methyl_2_furoate_furfural_furfuryl_alcohol_and_furfuryl_acetate_group"
+    },
+    {
+      "canonicalKey": "methyl_n_n_dl_alaninate",
+      "synonyms": [
+        "Methyl N-(malonyl)-N-(2,6-xylyl)-DL-alaninate"
+      ],
+      "sourceId": "dietary.substance_synonyms.methyl_n_n_dl_alaninate"
+    },
+    {
+      "canonicalKey": "methyl_acrylate",
+      "synonyms": [
+        "Methyl acrylate"
+      ],
+      "sourceId": "dietary.substance_synonyms.methyl_acrylate"
+    },
+    {
+      "canonicalKey": "methyl_isothiocyanate",
+      "synonyms": [
+        "Methyl isothiocyanate"
+      ],
+      "sourceId": "dietary.substance_synonyms.methyl_isothiocyanate"
+    },
+    {
+      "canonicalKey": "methyl_methacrylate",
+      "synonyms": [
+        "Methyl methacrylate"
+      ],
+      "sourceId": "dietary.substance_synonyms.methyl_methacrylate"
+    },
+    {
+      "canonicalKey": "methyl_paraben_ethyl_paraben_and_their_sodium_salts_group",
+      "synonyms": [
+        "Methyl paraben, ethyl paraben and their sodium salts group"
+      ],
+      "sourceId": "dietary.substance_synonyms.methyl_paraben_ethyl_paraben_and_their_sodium_salts_group"
+    },
+    {
+      "canonicalKey": "methylmercuric_chloride",
+      "synonyms": [
+        "Methylmercuric chloride"
+      ],
+      "sourceId": "dietary.substance_synonyms.methylmercuric_chloride"
+    },
+    {
+      "canonicalKey": "methylmercury",
+      "synonyms": [
+        "Methylmercury"
+      ],
+      "sourceId": "dietary.substance_synonyms.methylmercury"
+    },
+    {
+      "canonicalKey": "metobromuron",
+      "synonyms": [
+        "Metobromuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.metobromuron"
+    },
+    {
+      "canonicalKey": "metosulam",
+      "synonyms": [
+        "Metosulam"
+      ],
+      "sourceId": "dietary.substance_synonyms.metosulam"
+    },
+    {
+      "canonicalKey": "metrafenone",
+      "synonyms": [
+        "Metrafenone"
+      ],
+      "sourceId": "dietary.substance_synonyms.metrafenone"
+    },
+    {
+      "canonicalKey": "metribuzin",
+      "synonyms": [
+        "Metribuzin"
+      ],
+      "sourceId": "dietary.substance_synonyms.metribuzin"
+    },
+    {
+      "canonicalKey": "metsulfuron_methyl",
+      "synonyms": [
+        "Metsulfuron-methyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.metsulfuron_methyl"
+    },
+    {
+      "canonicalKey": "mevinphos",
+      "synonyms": [
+        "Mevinphos"
+      ],
+      "sourceId": "dietary.substance_synonyms.mevinphos"
+    },
+    {
+      "canonicalKey": "microcrystalline_wax",
+      "synonyms": [
+        "Microcrystalline wax"
+      ],
+      "sourceId": "dietary.substance_synonyms.microcrystalline_wax"
+    },
+    {
+      "canonicalKey": "mineral_oil_with_medium_and_low_viscosity",
+      "synonyms": [
+        "Mineral oil with medium and low viscosity (class I)"
+      ],
+      "sourceId": "dietary.substance_synonyms.mineral_oil_with_medium_and_low_viscosity"
+    },
+    {
+      "canonicalKey": "mineral_oils",
+      "synonyms": [
+        "Mineral oils"
+      ],
+      "sourceId": "dietary.substance_synonyms.mineral_oils"
+    },
+    {
+      "canonicalKey": "mixed_acetic_and_tartaric_acid_esters_of_mono_and_diglycerides_of_fatty_acids",
+      "synonyms": [
+        "Mixed acetic and tartaric acid esters of mono- and diglycerides of fatty acids (E 472f)"
+      ],
+      "sourceId": "dietary.substance_synonyms.mixed_acetic_and_tartaric_acid_esters_of_mono_and_diglycerides_of_fatty_acids"
+    },
+    {
+      "canonicalKey": "molinate",
+      "synonyms": [
+        "Molinate"
+      ],
+      "sourceId": "dietary.substance_synonyms.molinate"
+    },
+    {
+      "canonicalKey": "molybdenum",
+      "synonyms": [
+        "Molybdenum (total)"
+      ],
+      "sourceId": "dietary.substance_synonyms.molybdenum"
+    },
+    {
+      "canonicalKey": "monensin_sodium",
+      "synonyms": [
+        "Monensin sodium"
+      ],
+      "sourceId": "dietary.substance_synonyms.monensin_sodium"
+    },
+    {
+      "canonicalKey": "mono_and_diacetyltartaric_acid_esters_of_mono_and_diglycerides_of_fatty_acids",
+      "synonyms": [
+        "Mono- and diacetyltartaric acid esters of mono- and diglycerides of fatty acids (E 472e)"
+      ],
+      "sourceId": "dietary.substance_synonyms.mono_and_diacetyltartaric_acid_esters_of_mono_and_diglycerides_of_fatty_acids"
+    },
+    {
+      "canonicalKey": "monoammonium_l_glutamate",
+      "synonyms": [
+        "Monoammonium L-glutamate"
+      ],
+      "sourceId": "dietary.substance_synonyms.monoammonium_l_glutamate"
+    },
+    {
+      "canonicalKey": "monocrotophos",
+      "synonyms": [
+        "Monocrotophos"
+      ],
+      "sourceId": "dietary.substance_synonyms.monocrotophos"
+    },
+    {
+      "canonicalKey": "monopotassium_l_glutamate",
+      "synonyms": [
+        "Monopotassium L-glutamate"
+      ],
+      "sourceId": "dietary.substance_synonyms.monopotassium_l_glutamate"
+    },
+    {
+      "canonicalKey": "monosaccharide_of_avermectin_b1",
+      "synonyms": [
+        "Monosaccharide of avermectin B1"
+      ],
+      "sourceId": "dietary.substance_synonyms.monosaccharide_of_avermectin_b1"
+    },
+    {
+      "canonicalKey": "monosodium_l_glutamate",
+      "synonyms": [
+        "Monosodium L-glutamate"
+      ],
+      "sourceId": "dietary.substance_synonyms.monosodium_l_glutamate"
+    },
+    {
+      "canonicalKey": "monosodium_tartrate",
+      "synonyms": [
+        "Monosodium tartrate (E 335(i))"
+      ],
+      "sourceId": "dietary.substance_synonyms.monosodium_tartrate"
+    },
+    {
+      "canonicalKey": "morphine",
+      "synonyms": [
+        "Morphine"
+      ],
+      "sourceId": "dietary.substance_synonyms.morphine"
+    },
+    {
+      "canonicalKey": "myclobutanil",
+      "synonyms": [
+        "Myclobutanil"
+      ],
+      "sourceId": "dietary.substance_synonyms.myclobutanil"
+    },
+    {
+      "canonicalKey": "nn_dimethyl_6_135_triazine_24_diamine",
+      "synonyms": [
+        "N,N-dimethyl-6-(2,2,2-trifluoroethoxy)-1,3,5-triazine-2,4-diamine"
+      ],
+      "sourceId": "dietary.substance_synonyms.nn_dimethyl_6_135_triazine_24_diamine"
+    },
+    {
+      "canonicalKey": "n_n_aminocarbonylmethylsulfonic_acid",
+      "synonyms": [
+        "N-(2,6-dimethylphenyl)-N-(1H-pyrazol-1-ylmethyl)aminocarbonylmethylsulfonic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.n_n_aminocarbonylmethylsulfonic_acid"
+    },
+    {
+      "canonicalKey": "n_n_oxalamide",
+      "synonyms": [
+        "N-(2,6-dimethylphenyl)-N-(1H-pyrazol-1-ylmethyl)oxalamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.n_n_oxalamide"
+    },
+    {
+      "canonicalKey": "n_acetamide",
+      "synonyms": [
+        "N-(2-aminoethyl)acetamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.n_acetamide"
+    },
+    {
+      "canonicalKey": "n_2_methylalanine",
+      "synonyms": [
+        "N-(4-amino-6-hydroxy-1,3,5-triazin-2-yl)-2-methylalanine"
+      ],
+      "sourceId": "dietary.substance_synonyms.n_2_methylalanine"
+    },
+    {
+      "canonicalKey": "n_2_benzenesulfonamide",
+      "synonyms": [
+        "N-(carbamimidoylcarbamoyl)-2-(3,3,3-trifluoropropyl)benzenesulfonamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.n_2_benzenesulfonamide"
+    },
+    {
+      "canonicalKey": "n_methyl_2_pyrrolidone",
+      "synonyms": [
+        "N-Methyl-2-pyrrolidone"
+      ],
+      "sourceId": "dietary.substance_synonyms.n_methyl_2_pyrrolidone"
+    },
+    {
+      "canonicalKey": "n_phenyl_n_oxalamide",
+      "synonyms": [
+        "N-[(2-hydroxycarbonyl-6-methyl)phenyl]-N-(1H-pyrazol-1-ylmethyl)oxalamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.n_phenyl_n_oxalamide"
+    },
+    {
+      "canonicalKey": "n_2_thiophen_3_yl_1_methyl_3_trifluoromethyl_1h_pyrazole_4_carboxamide",
+      "synonyms": [
+        "N-[2-(3-hydroxy-1,3-dimethylbutyl) thiophen-3-yl]-1-methyl-3-trifluoromethyl-1H-pyrazole-4-carboxamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.n_2_thiophen_3_yl_1_methyl_3_trifluoromethyl_1h_pyrazole_4_carboxamide"
+    },
+    {
+      "canonicalKey": "n_4_6_hydroxy_135_triazin_2_yl_2_methylalanine",
+      "synonyms": [
+        "N-[4-(ethylamino)-6-hydroxy-1,3,5-triazin-2-yl]-2-methylalanine"
+      ],
+      "sourceId": "dietary.substance_synonyms.n_4_6_hydroxy_135_triazin_2_yl_2_methylalanine"
+    },
+    {
+      "canonicalKey": "n_methyl_6_135_triazine_24_diamine",
+      "synonyms": [
+        "N-methyl-6-(2,2,2-trifluoroethoxy)-1,3,5-triazine-2,4-diamine"
+      ],
+      "sourceId": "dietary.substance_synonyms.n_methyl_6_135_triazine_24_diamine"
+    },
+    {
+      "canonicalKey": "naled",
+      "synonyms": [
+        "Naled"
+      ],
+      "sourceId": "dietary.substance_synonyms.naled"
+    },
+    {
+      "canonicalKey": "napropamide",
+      "synonyms": [
+        "Napropamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.napropamide"
+    },
+    {
+      "canonicalKey": "napropamide_m",
+      "synonyms": [
+        "Napropamide-M"
+      ],
+      "sourceId": "dietary.substance_synonyms.napropamide_m"
+    },
+    {
+      "canonicalKey": "narasin",
+      "synonyms": [
+        "Narasin"
+      ],
+      "sourceId": "dietary.substance_synonyms.narasin"
+    },
+    {
+      "canonicalKey": "neohesperidin_dihydrochalcone",
+      "synonyms": [
+        "Neohesperidin dihydrochalcone"
+      ],
+      "sourceId": "dietary.substance_synonyms.neohesperidin_dihydrochalcone"
+    },
+    {
+      "canonicalKey": "neotame",
+      "synonyms": [
+        "Neotame"
+      ],
+      "sourceId": "dietary.substance_synonyms.neotame"
+    },
+    {
+      "canonicalKey": "nicarbazin",
+      "synonyms": [
+        "Nicarbazin"
+      ],
+      "sourceId": "dietary.substance_synonyms.nicarbazin"
+    },
+    {
+      "canonicalKey": "nickel",
+      "synonyms": [
+        "Nickel (total)"
+      ],
+      "sourceId": "dietary.substance_synonyms.nickel"
+    },
+    {
+      "canonicalKey": "nicosulfuron",
+      "synonyms": [
+        "Nicosulfuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.nicosulfuron"
+    },
+    {
+      "canonicalKey": "nicotinamide",
+      "synonyms": [
+        "Nicotinamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.nicotinamide"
+    },
+    {
+      "canonicalKey": "nicotine",
+      "synonyms": [
+        "Nicotine"
+      ],
+      "sourceId": "dietary.substance_synonyms.nicotine"
+    },
+    {
+      "canonicalKey": "nicotinic_acid",
+      "synonyms": [
+        "Nicotinic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.nicotinic_acid"
+    },
+    {
+      "canonicalKey": "nisin",
+      "synonyms": [
+        "Nisin"
+      ],
+      "sourceId": "dietary.substance_synonyms.nisin"
+    },
+    {
+      "canonicalKey": "nitrate",
+      "synonyms": [
+        "Nitrate"
+      ],
+      "sourceId": "dietary.substance_synonyms.nitrate"
+    },
+    {
+      "canonicalKey": "nitrite",
+      "synonyms": [
+        "Nitrite"
+      ],
+      "sourceId": "dietary.substance_synonyms.nitrite"
+    },
+    {
+      "canonicalKey": "nivalenol",
+      "synonyms": [
+        "Nivalenol"
+      ],
+      "sourceId": "dietary.substance_synonyms.nivalenol"
+    },
+    {
+      "canonicalKey": "nivalenol_and_nivalenol_3_glucoside",
+      "synonyms": [
+        "Nivalenol and Nivalenol-3-glucoside"
+      ],
+      "sourceId": "dietary.substance_synonyms.nivalenol_and_nivalenol_3_glucoside"
+    },
+    {
+      "canonicalKey": "norbixin",
+      "synonyms": [
+        "Norbixin"
+      ],
+      "sourceId": "dietary.substance_synonyms.norbixin"
+    },
+    {
+      "canonicalKey": "o_methyl_o_hydrogen_o_phosphorothioate",
+      "synonyms": [
+        "O-methyl O-hydrogen O-(2,6-dichloro-4-methylphenyl) phosphorothioate"
+      ],
+      "sourceId": "dietary.substance_synonyms.o_methyl_o_hydrogen_o_phosphorothioate"
+    },
+    {
+      "canonicalKey": "ochratoxin_a",
+      "synonyms": [
+        "Ochratoxin A"
+      ],
+      "sourceId": "dietary.substance_synonyms.ochratoxin_a"
+    },
+    {
+      "canonicalKey": "okadaic_acid_group_toxins",
+      "synonyms": [
+        "Okadaic acid group toxins"
+      ],
+      "sourceId": "dietary.substance_synonyms.okadaic_acid_group_toxins"
+    },
+    {
+      "canonicalKey": "omethoate",
+      "synonyms": [
+        "Omethoate"
+      ],
+      "sourceId": "dietary.substance_synonyms.omethoate"
+    },
+    {
+      "canonicalKey": "opium_alkaloids",
+      "synonyms": [
+        "Opium alkaloids"
+      ],
+      "sourceId": "dietary.substance_synonyms.opium_alkaloids"
+    },
+    {
+      "canonicalKey": "organotin_compounds",
+      "synonyms": [
+        "Organotin compounds (including TBT, DBT, TPT and DOT)"
+      ],
+      "sourceId": "dietary.substance_synonyms.organotin_compounds"
+    },
+    {
+      "canonicalKey": "orthosulfamuron",
+      "synonyms": [
+        "Orthosulfamuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.orthosulfamuron"
+    },
+    {
+      "canonicalKey": "oryzalin",
+      "synonyms": [
+        "Oryzalin"
+      ],
+      "sourceId": "dietary.substance_synonyms.oryzalin"
+    },
+    {
+      "canonicalKey": "ostreocin_d",
+      "synonyms": [
+        "Ostreocin-D"
+      ],
+      "sourceId": "dietary.substance_synonyms.ostreocin_d"
+    },
+    {
+      "canonicalKey": "oxadiazon",
+      "synonyms": [
+        "Oxadiazon"
+      ],
+      "sourceId": "dietary.substance_synonyms.oxadiazon"
+    },
+    {
+      "canonicalKey": "oxamyl",
+      "synonyms": [
+        "Oxamyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.oxamyl"
+    },
+    {
+      "canonicalKey": "oxasulfuron",
+      "synonyms": [
+        "Oxasulfuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.oxasulfuron"
+    },
+    {
+      "canonicalKey": "oxathiapiprolin",
+      "synonyms": [
+        "Oxathiapiprolin"
+      ],
+      "sourceId": "dietary.substance_synonyms.oxathiapiprolin"
+    },
+    {
+      "canonicalKey": "oxetan_3_ol",
+      "synonyms": [
+        "Oxetan-3-ol"
+      ],
+      "sourceId": "dietary.substance_synonyms.oxetan_3_ol"
+    },
+    {
+      "canonicalKey": "oxydemeton_methyl",
+      "synonyms": [
+        "Oxydemeton-methyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.oxydemeton_methyl"
+    },
+    {
+      "canonicalKey": "oxyfluorfen",
+      "synonyms": [
+        "Oxyfluorfen"
+      ],
+      "sourceId": "dietary.substance_synonyms.oxyfluorfen"
+    },
+    {
+      "canonicalKey": "paclobutrazol",
+      "synonyms": [
+        "Paclobutrazol"
+      ],
+      "sourceId": "dietary.substance_synonyms.paclobutrazol"
+    },
+    {
+      "canonicalKey": "palytoxin",
+      "synonyms": [
+        "Palytoxin"
+      ],
+      "sourceId": "dietary.substance_synonyms.palytoxin"
+    },
+    {
+      "canonicalKey": "palytoxins",
+      "synonyms": [
+        "Palytoxins (sum of PlTX and ostreocin-D)"
+      ],
+      "sourceId": "dietary.substance_synonyms.palytoxins"
+    },
+    {
+      "canonicalKey": "panax_notoginseng_and_astragalus_membranaceus_extract",
+      "synonyms": [
+        "Panax notoginseng and Astragalus membranaceus extract"
+      ],
+      "sourceId": "dietary.substance_synonyms.panax_notoginseng_and_astragalus_membranaceus_extract"
+    },
+    {
+      "canonicalKey": "pantothenic_acid",
+      "synonyms": [
+        "Pantothenic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.pantothenic_acid"
+    },
+    {
+      "canonicalKey": "paprika_extract",
+      "synonyms": [
+        "Paprika extract"
+      ],
+      "sourceId": "dietary.substance_synonyms.paprika_extract"
+    },
+    {
+      "canonicalKey": "paraquat",
+      "synonyms": [
+        "Paraquat"
+      ],
+      "sourceId": "dietary.substance_synonyms.paraquat"
+    },
+    {
+      "canonicalKey": "parathion",
+      "synonyms": [
+        "Parathion"
+      ],
+      "sourceId": "dietary.substance_synonyms.parathion"
+    },
+    {
+      "canonicalKey": "parathion_methyl",
+      "synonyms": [
+        "Parathion-methyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.parathion_methyl"
+    },
+    {
+      "canonicalKey": "paromomycin_sulphate",
+      "synonyms": [
+        "Paromomycin sulphate"
+      ],
+      "sourceId": "dietary.substance_synonyms.paromomycin_sulphate"
+    },
+    {
+      "canonicalKey": "patent_blue_v",
+      "synonyms": [
+        "Patent Blue V (calcium salt)"
+      ],
+      "sourceId": "dietary.substance_synonyms.patent_blue_v"
+    },
+    {
+      "canonicalKey": "pectenotoxins",
+      "synonyms": [
+        "Pectenotoxins"
+      ],
+      "sourceId": "dietary.substance_synonyms.pectenotoxins"
+    },
+    {
+      "canonicalKey": "penconazole",
+      "synonyms": [
+        "Penconazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.penconazole"
+    },
+    {
+      "canonicalKey": "pencycuron",
+      "synonyms": [
+        "Pencycuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.pencycuron"
+    },
+    {
+      "canonicalKey": "pendimethalin",
+      "synonyms": [
+        "Pendimethalin"
+      ],
+      "sourceId": "dietary.substance_synonyms.pendimethalin"
+    },
+    {
+      "canonicalKey": "penflufen",
+      "synonyms": [
+        "Penflufen"
+      ],
+      "sourceId": "dietary.substance_synonyms.penflufen"
+    },
+    {
+      "canonicalKey": "penoxsulam",
+      "synonyms": [
+        "Penoxsulam"
+      ],
+      "sourceId": "dietary.substance_synonyms.penoxsulam"
+    },
+    {
+      "canonicalKey": "penthiopyrad",
+      "synonyms": [
+        "Penthiopyrad"
+      ],
+      "sourceId": "dietary.substance_synonyms.penthiopyrad"
+    },
+    {
+      "canonicalKey": "perchlorate",
+      "synonyms": [
+        "Perchlorate"
+      ],
+      "sourceId": "dietary.substance_synonyms.perchlorate"
+    },
+    {
+      "canonicalKey": "perfluorooctane_sulfonate",
+      "synonyms": [
+        "Perfluorooctane sulfonate"
+      ],
+      "sourceId": "dietary.substance_synonyms.perfluorooctane_sulfonate"
+    },
+    {
+      "canonicalKey": "perfluorooctanoic_acid",
+      "synonyms": [
+        "Perfluorooctanoic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.perfluorooctanoic_acid"
+    },
+    {
+      "canonicalKey": "pethoxamid",
+      "synonyms": [
+        "Pethoxamid"
+      ],
+      "sourceId": "dietary.substance_synonyms.pethoxamid"
+    },
+    {
+      "canonicalKey": "pethoxamid_metabolite",
+      "synonyms": [
+        "Pethoxamid metabolite (MET-22)"
+      ],
+      "sourceId": "dietary.substance_synonyms.pethoxamid_metabolite"
+    },
+    {
+      "canonicalKey": "phenol",
+      "synonyms": [
+        "Phenol"
+      ],
+      "sourceId": "dietary.substance_synonyms.phenol"
+    },
+    {
+      "canonicalKey": "phorate",
+      "synonyms": [
+        "Phorate"
+      ],
+      "sourceId": "dietary.substance_synonyms.phorate"
+    },
+    {
+      "canonicalKey": "phosalone",
+      "synonyms": [
+        "Phosalone"
+      ],
+      "sourceId": "dietary.substance_synonyms.phosalone"
+    },
+    {
+      "canonicalKey": "phosmet",
+      "synonyms": [
+        "Phosmet"
+      ],
+      "sourceId": "dietary.substance_synonyms.phosmet"
+    },
+    {
+      "canonicalKey": "phosphates",
+      "synonyms": [
+        "Phosphates"
+      ],
+      "sourceId": "dietary.substance_synonyms.phosphates"
+    },
+    {
+      "canonicalKey": "phosphine",
+      "synonyms": [
+        "Phosphine"
+      ],
+      "sourceId": "dietary.substance_synonyms.phosphine"
+    },
+    {
+      "canonicalKey": "phosphonic_acid",
+      "synonyms": [
+        "Phosphonic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.phosphonic_acid"
+    },
+    {
+      "canonicalKey": "phosphoric_acid",
+      "synonyms": [
+        "Phosphoric acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.phosphoric_acid"
+    },
+    {
+      "canonicalKey": "phosphoric_acid_phosphates_di_tri_and_polyphosphates",
+      "synonyms": [
+        "Phosphoric acid-phosphates - di-, tri- and polyphosphates (E 338-341, E 343, E 450-452)"
+      ],
+      "sourceId": "dietary.substance_synonyms.phosphoric_acid_phosphates_di_tri_and_polyphosphates"
+    },
+    {
+      "canonicalKey": "phosphorus",
+      "synonyms": [
+        "Phosphorus (total)"
+      ],
+      "sourceId": "dietary.substance_synonyms.phosphorus"
+    },
+    {
+      "canonicalKey": "picloram",
+      "synonyms": [
+        "Picloram"
+      ],
+      "sourceId": "dietary.substance_synonyms.picloram"
+    },
+    {
+      "canonicalKey": "picolinafen",
+      "synonyms": [
+        "Picolinafen"
+      ],
+      "sourceId": "dietary.substance_synonyms.picolinafen"
+    },
+    {
+      "canonicalKey": "pinoxaden",
+      "synonyms": [
+        "Pinoxaden"
+      ],
+      "sourceId": "dietary.substance_synonyms.pinoxaden"
+    },
+    {
+      "canonicalKey": "pinoxaden_metabolite",
+      "synonyms": [
+        "Pinoxaden metabolite (NOA 447204)"
+      ],
+      "sourceId": "dietary.substance_synonyms.pinoxaden_metabolite"
+    },
+    {
+      "canonicalKey": "pirimicarb",
+      "synonyms": [
+        "Pirimicarb"
+      ],
+      "sourceId": "dietary.substance_synonyms.pirimicarb"
+    },
+    {
+      "canonicalKey": "pirimiphos_methyl",
+      "synonyms": [
+        "Pirimiphos-methyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.pirimiphos_methyl"
+    },
+    {
+      "canonicalKey": "plant_sterol_oxidation_products",
+      "synonyms": [
+        "Plant sterol oxidation products"
+      ],
+      "sourceId": "dietary.substance_synonyms.plant_sterol_oxidation_products"
+    },
+    {
+      "canonicalKey": "polyester_of_adipic_acid_with_13_butanediol_12_propanediol_and_2_ethyl_1_hexanol",
+      "synonyms": [
+        "Polyester of adipic acid with 1,3-butanediol, 1,2-propanediol and 2-ethyl-1-hexanol"
+      ],
+      "sourceId": "dietary.substance_synonyms.polyester_of_adipic_acid_with_13_butanediol_12_propanediol_and_2_ethyl_1_hexanol"
+    },
+    {
+      "canonicalKey": "polyethylene_glycol_ethers_of_linear_and_branched_primary_alcohols",
+      "synonyms": [
+        "Polyethylene glycol (EO = 1-50) ethers of linear and branched primary (C8 - C22) alcohols"
+      ],
+      "sourceId": "dietary.substance_synonyms.polyethylene_glycol_ethers_of_linear_and_branched_primary_alcohols"
+    },
+    {
+      "canonicalKey": "polyethylene_glycols",
+      "synonyms": [
+        "Polyethylene glycols (200-10000)"
+      ],
+      "sourceId": "dietary.substance_synonyms.polyethylene_glycols"
+    },
+    {
+      "canonicalKey": "polyethylene_waxes_oxidised",
+      "synonyms": [
+        "Polyethylene waxes oxidised"
+      ],
+      "sourceId": "dietary.substance_synonyms.polyethylene_waxes_oxidised"
+    },
+    {
+      "canonicalKey": "polyglycerol_polyricinoleate",
+      "synonyms": [
+        "Polyglycerol polyricinoleate"
+      ],
+      "sourceId": "dietary.substance_synonyms.polyglycerol_polyricinoleate"
+    },
+    {
+      "canonicalKey": "polyoxyethylene_sorbitan_monooleate",
+      "synonyms": [
+        "Polyoxyethylene sorbitan monooleate"
+      ],
+      "sourceId": "dietary.substance_synonyms.polyoxyethylene_sorbitan_monooleate"
+    },
+    {
+      "canonicalKey": "polyphosphates",
+      "synonyms": [
+        "Polyphosphates"
+      ],
+      "sourceId": "dietary.substance_synonyms.polyphosphates"
+    },
+    {
+      "canonicalKey": "polypropylene_glycol",
+      "synonyms": [
+        "Polypropylene glycol"
+      ],
+      "sourceId": "dietary.substance_synonyms.polypropylene_glycol"
+    },
+    {
+      "canonicalKey": "polysorbates",
+      "synonyms": [
+        "Polysorbates"
+      ],
+      "sourceId": "dietary.substance_synonyms.polysorbates"
+    },
+    {
+      "canonicalKey": "ponceau_4r",
+      "synonyms": [
+        "Ponceau 4R"
+      ],
+      "sourceId": "dietary.substance_synonyms.ponceau_4r"
+    },
+    {
+      "canonicalKey": "potassium",
+      "synonyms": [
+        "Potassium (total)"
+      ],
+      "sourceId": "dietary.substance_synonyms.potassium"
+    },
+    {
+      "canonicalKey": "potassium_acid_tartrate",
+      "synonyms": [
+        "Potassium acid tartrate"
+      ],
+      "sourceId": "dietary.substance_synonyms.potassium_acid_tartrate"
+    },
+    {
+      "canonicalKey": "potassium_benzoate",
+      "synonyms": [
+        "Potassium benzoate"
+      ],
+      "sourceId": "dietary.substance_synonyms.potassium_benzoate"
+    },
+    {
+      "canonicalKey": "potassium_ferrocyanide",
+      "synonyms": [
+        "Potassium ferrocyanide"
+      ],
+      "sourceId": "dietary.substance_synonyms.potassium_ferrocyanide"
+    },
+    {
+      "canonicalKey": "potassium_nitrate",
+      "synonyms": [
+        "Potassium nitrate"
+      ],
+      "sourceId": "dietary.substance_synonyms.potassium_nitrate"
+    },
+    {
+      "canonicalKey": "potassium_nitrite",
+      "synonyms": [
+        "Potassium nitrite"
+      ],
+      "sourceId": "dietary.substance_synonyms.potassium_nitrite"
+    },
+    {
+      "canonicalKey": "potassium_phosphonates",
+      "synonyms": [
+        "Potassium phosphonates"
+      ],
+      "sourceId": "dietary.substance_synonyms.potassium_phosphonates"
+    },
+    {
+      "canonicalKey": "potassium_sodium_tartrate",
+      "synonyms": [
+        "Potassium sodium tartrate (E 337)"
+      ],
+      "sourceId": "dietary.substance_synonyms.potassium_sodium_tartrate"
+    },
+    {
+      "canonicalKey": "potassium_sorbate",
+      "synonyms": [
+        "Potassium sorbate"
+      ],
+      "sourceId": "dietary.substance_synonyms.potassium_sorbate"
+    },
+    {
+      "canonicalKey": "potassium_thiocyanate",
+      "synonyms": [
+        "Potassium thiocyanate"
+      ],
+      "sourceId": "dietary.substance_synonyms.potassium_thiocyanate"
+    },
+    {
+      "canonicalKey": "processed_eucheuma_seaweed",
+      "synonyms": [
+        "Processed Eucheuma seaweed"
+      ],
+      "sourceId": "dietary.substance_synonyms.processed_eucheuma_seaweed"
+    },
+    {
+      "canonicalKey": "prochloraz",
+      "synonyms": [
+        "Prochloraz"
+      ],
+      "sourceId": "dietary.substance_synonyms.prochloraz"
+    },
+    {
+      "canonicalKey": "procymidone",
+      "synonyms": [
+        "Procymidone"
+      ],
+      "sourceId": "dietary.substance_synonyms.procymidone"
+    },
+    {
+      "canonicalKey": "profenofos",
+      "synonyms": [
+        "Profenofos"
+      ],
+      "sourceId": "dietary.substance_synonyms.profenofos"
+    },
+    {
+      "canonicalKey": "prohexadione_calcium",
+      "synonyms": [
+        "Prohexadione-calcium"
+      ],
+      "sourceId": "dietary.substance_synonyms.prohexadione_calcium"
+    },
+    {
+      "canonicalKey": "propachlor",
+      "synonyms": [
+        "Propachlor"
+      ],
+      "sourceId": "dietary.substance_synonyms.propachlor"
+    },
+    {
+      "canonicalKey": "propamocarb_hydrochloride",
+      "synonyms": [
+        "Propamocarb hydrochloride"
+      ],
+      "sourceId": "dietary.substance_synonyms.propamocarb_hydrochloride"
+    },
+    {
+      "canonicalKey": "propan_2_ol",
+      "synonyms": [
+        "Propan-2-ol"
+      ],
+      "sourceId": "dietary.substance_synonyms.propan_2_ol"
+    },
+    {
+      "canonicalKey": "propane_12_diol_alginate",
+      "synonyms": [
+        "Propane-1,2-diol alginate"
+      ],
+      "sourceId": "dietary.substance_synonyms.propane_12_diol_alginate"
+    },
+    {
+      "canonicalKey": "propane_12_diol_esters_of_fatty_acids",
+      "synonyms": [
+        "Propane-1,2-diol esters of fatty acids (E 477)"
+      ],
+      "sourceId": "dietary.substance_synonyms.propane_12_diol_esters_of_fatty_acids"
+    },
+    {
+      "canonicalKey": "propanil",
+      "synonyms": [
+        "Propanil"
+      ],
+      "sourceId": "dietary.substance_synonyms.propanil"
+    },
+    {
+      "canonicalKey": "propaquizafop",
+      "synonyms": [
+        "Propaquizafop"
+      ],
+      "sourceId": "dietary.substance_synonyms.propaquizafop"
+    },
+    {
+      "canonicalKey": "propiconazole",
+      "synonyms": [
+        "Propiconazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.propiconazole"
+    },
+    {
+      "canonicalKey": "propineb",
+      "synonyms": [
+        "Propineb"
+      ],
+      "sourceId": "dietary.substance_synonyms.propineb"
+    },
+    {
+      "canonicalKey": "propineb_metabolite",
+      "synonyms": [
+        "Propineb metabolite (Propined-DIDT)"
+      ],
+      "sourceId": "dietary.substance_synonyms.propineb_metabolite"
+    },
+    {
+      "canonicalKey": "propisochlor",
+      "synonyms": [
+        "Propisochlor"
+      ],
+      "sourceId": "dietary.substance_synonyms.propisochlor"
+    },
+    {
+      "canonicalKey": "propoxycarbazone_sodium",
+      "synonyms": [
+        "Propoxycarbazone-sodium"
+      ],
+      "sourceId": "dietary.substance_synonyms.propoxycarbazone_sodium"
+    },
+    {
+      "canonicalKey": "propyl_gallate",
+      "synonyms": [
+        "Propyl gallate"
+      ],
+      "sourceId": "dietary.substance_synonyms.propyl_gallate"
+    },
+    {
+      "canonicalKey": "propylene_glycol",
+      "synonyms": [
+        "Propylene glycol"
+      ],
+      "sourceId": "dietary.substance_synonyms.propylene_glycol"
+    },
+    {
+      "canonicalKey": "propyzamide",
+      "synonyms": [
+        "Propyzamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.propyzamide"
+    },
+    {
+      "canonicalKey": "proquinazid",
+      "synonyms": [
+        "Proquinazid"
+      ],
+      "sourceId": "dietary.substance_synonyms.proquinazid"
+    },
+    {
+      "canonicalKey": "prosulfocarb",
+      "synonyms": [
+        "Prosulfocarb"
+      ],
+      "sourceId": "dietary.substance_synonyms.prosulfocarb"
+    },
+    {
+      "canonicalKey": "prosulfuron",
+      "synonyms": [
+        "Prosulfuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.prosulfuron"
+    },
+    {
+      "canonicalKey": "prothioconazole",
+      "synonyms": [
+        "Prothioconazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.prothioconazole"
+    },
+    {
+      "canonicalKey": "pydiflumetofen",
+      "synonyms": [
+        "Pydiflumetofen"
+      ],
+      "sourceId": "dietary.substance_synonyms.pydiflumetofen"
+    },
+    {
+      "canonicalKey": "pymetrozine",
+      "synonyms": [
+        "Pymetrozine"
+      ],
+      "sourceId": "dietary.substance_synonyms.pymetrozine"
+    },
+    {
+      "canonicalKey": "pyraclostrobin",
+      "synonyms": [
+        "Pyraclostrobin"
+      ],
+      "sourceId": "dietary.substance_synonyms.pyraclostrobin"
+    },
+    {
+      "canonicalKey": "pyraflufen_ethyl",
+      "synonyms": [
+        "Pyraflufen-ethyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.pyraflufen_ethyl"
+    },
+    {
+      "canonicalKey": "pyrethrins",
+      "synonyms": [
+        "Pyrethrins"
+      ],
+      "sourceId": "dietary.substance_synonyms.pyrethrins"
+    },
+    {
+      "canonicalKey": "pyridaben",
+      "synonyms": [
+        "Pyridaben"
+      ],
+      "sourceId": "dietary.substance_synonyms.pyridaben"
+    },
+    {
+      "canonicalKey": "pyridalyl",
+      "synonyms": [
+        "Pyridalyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.pyridalyl"
+    },
+    {
+      "canonicalKey": "pyridate",
+      "synonyms": [
+        "Pyridate"
+      ],
+      "sourceId": "dietary.substance_synonyms.pyridate"
+    },
+    {
+      "canonicalKey": "pyridoxine_hydrochloride",
+      "synonyms": [
+        "Pyridoxine hydrochloride"
+      ],
+      "sourceId": "dietary.substance_synonyms.pyridoxine_hydrochloride"
+    },
+    {
+      "canonicalKey": "pyrimethanil",
+      "synonyms": [
+        "Pyrimethanil"
+      ],
+      "sourceId": "dietary.substance_synonyms.pyrimethanil"
+    },
+    {
+      "canonicalKey": "pyriofenone",
+      "synonyms": [
+        "Pyriofenone"
+      ],
+      "sourceId": "dietary.substance_synonyms.pyriofenone"
+    },
+    {
+      "canonicalKey": "pyriproxyfen",
+      "synonyms": [
+        "Pyriproxyfen"
+      ],
+      "sourceId": "dietary.substance_synonyms.pyriproxyfen"
+    },
+    {
+      "canonicalKey": "pyroxsulam",
+      "synonyms": [
+        "Pyroxsulam"
+      ],
+      "sourceId": "dietary.substance_synonyms.pyroxsulam"
+    },
+    {
+      "canonicalKey": "quillaia_extract",
+      "synonyms": [
+        "Quillaia extract"
+      ],
+      "sourceId": "dietary.substance_synonyms.quillaia_extract"
+    },
+    {
+      "canonicalKey": "quillaja_bark",
+      "synonyms": [
+        "Quillaja bark"
+      ],
+      "sourceId": "dietary.substance_synonyms.quillaja_bark"
+    },
+    {
+      "canonicalKey": "quinmerac",
+      "synonyms": [
+        "Quinmerac"
+      ],
+      "sourceId": "dietary.substance_synonyms.quinmerac"
+    },
+    {
+      "canonicalKey": "quinoclamine",
+      "synonyms": [
+        "Quinoclamine"
+      ],
+      "sourceId": "dietary.substance_synonyms.quinoclamine"
+    },
+    {
+      "canonicalKey": "quinoline_yellow",
+      "synonyms": [
+        "Quinoline Yellow"
+      ],
+      "sourceId": "dietary.substance_synonyms.quinoline_yellow"
+    },
+    {
+      "canonicalKey": "quizalofop_p",
+      "synonyms": [
+        "Quizalofop-P"
+      ],
+      "sourceId": "dietary.substance_synonyms.quizalofop_p"
+    },
+    {
+      "canonicalKey": "quizalofop_p_ethyl",
+      "synonyms": [
+        "Quizalofop-P-ethyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.quizalofop_p_ethyl"
+    },
+    {
+      "canonicalKey": "quizalofop_p_tefuryl",
+      "synonyms": [
+        "Quizalofop-P-tefuryl"
+      ],
+      "sourceId": "dietary.substance_synonyms.quizalofop_p_tefuryl"
+    },
+    {
+      "canonicalKey": "rrr_alpha_tocopherol",
+      "synonyms": [
+        "RRR-alpha-Tocopherol"
+      ],
+      "sourceId": "dietary.substance_synonyms.rrr_alpha_tocopherol"
+    },
+    {
+      "canonicalKey": "riboflavin",
+      "synonyms": [
+        "Riboflavin"
+      ],
+      "sourceId": "dietary.substance_synonyms.riboflavin"
+    },
+    {
+      "canonicalKey": "riboflavin_5_phosphate_sodium",
+      "synonyms": [
+        "Riboflavin-5'-phosphate sodium"
+      ],
+      "sourceId": "dietary.substance_synonyms.riboflavin_5_phosphate_sodium"
+    },
+    {
+      "canonicalKey": "rimsulfuron",
+      "synonyms": [
+        "Rimsulfuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.rimsulfuron"
+    },
+    {
+      "canonicalKey": "robenidine_hydrochloride",
+      "synonyms": [
+        "Robenidine hydrochloride"
+      ],
+      "sourceId": "dietary.substance_synonyms.robenidine_hydrochloride"
+    },
+    {
+      "canonicalKey": "s_abscisic_acid",
+      "synonyms": [
+        "S-abscisic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.s_abscisic_acid"
+    },
+    {
+      "canonicalKey": "saccharin",
+      "synonyms": [
+        "Saccharin"
+      ],
+      "sourceId": "dietary.substance_synonyms.saccharin"
+    },
+    {
+      "canonicalKey": "salinomycin_sodium",
+      "synonyms": [
+        "Salinomycin sodium"
+      ],
+      "sourceId": "dietary.substance_synonyms.salinomycin_sodium"
+    },
+    {
+      "canonicalKey": "saxitoxins",
+      "synonyms": [
+        "Saxitoxins"
+      ],
+      "sourceId": "dietary.substance_synonyms.saxitoxins"
+    },
+    {
+      "canonicalKey": "sedaxane",
+      "synonyms": [
+        "Sedaxane"
+      ],
+      "sourceId": "dietary.substance_synonyms.sedaxane"
+    },
+    {
+      "canonicalKey": "sedaxane_metabolite",
+      "synonyms": [
+        "Sedaxane metabolite (CSCD658906)"
+      ],
+      "sourceId": "dietary.substance_synonyms.sedaxane_metabolite"
+    },
+    {
+      "canonicalKey": "selenium",
+      "synonyms": [
+        "Selenium (total)"
+      ],
+      "sourceId": "dietary.substance_synonyms.selenium"
+    },
+    {
+      "canonicalKey": "semduramicin_sodium",
+      "synonyms": [
+        "Semduramicin sodium"
+      ],
+      "sourceId": "dietary.substance_synonyms.semduramicin_sodium"
+    },
+    {
+      "canonicalKey": "semduramicin_sodium_formulation",
+      "synonyms": [
+        "Semduramicin sodium formulation (Aviax 5%)"
+      ],
+      "sourceId": "dietary.substance_synonyms.semduramicin_sodium_formulation"
+    },
+    {
+      "canonicalKey": "silthiofam",
+      "synonyms": [
+        "Silthiofam"
+      ],
+      "sourceId": "dietary.substance_synonyms.silthiofam"
+    },
+    {
+      "canonicalKey": "simazine",
+      "synonyms": [
+        "Simazine"
+      ],
+      "sourceId": "dietary.substance_synonyms.simazine"
+    },
+    {
+      "canonicalKey": "sintofen",
+      "synonyms": [
+        "Sintofen (aka cintofen)"
+      ],
+      "sourceId": "dietary.substance_synonyms.sintofen"
+    },
+    {
+      "canonicalKey": "sodium_5_nitroguaiacolate",
+      "synonyms": [
+        "Sodium 5-nitroguaiacolate"
+      ],
+      "sourceId": "dietary.substance_synonyms.sodium_5_nitroguaiacolate"
+    },
+    {
+      "canonicalKey": "sodium_ascorbate",
+      "synonyms": [
+        "Sodium ascorbate"
+      ],
+      "sourceId": "dietary.substance_synonyms.sodium_ascorbate"
+    },
+    {
+      "canonicalKey": "sodium_ascorbyl_phosphate",
+      "synonyms": [
+        "Sodium ascorbyl phosphate"
+      ],
+      "sourceId": "dietary.substance_synonyms.sodium_ascorbyl_phosphate"
+    },
+    {
+      "canonicalKey": "sodium_benzoate",
+      "synonyms": [
+        "Sodium benzoate"
+      ],
+      "sourceId": "dietary.substance_synonyms.sodium_benzoate"
+    },
+    {
+      "canonicalKey": "sodium_calcium_ascorbyl_phosphate",
+      "synonyms": [
+        "Sodium calcium ascorbyl phosphate"
+      ],
+      "sourceId": "dietary.substance_synonyms.sodium_calcium_ascorbyl_phosphate"
+    },
+    {
+      "canonicalKey": "sodium_chlorite",
+      "synonyms": [
+        "Sodium chlorite"
+      ],
+      "sourceId": "dietary.substance_synonyms.sodium_chlorite"
+    },
+    {
+      "canonicalKey": "sodium_diacetate",
+      "synonyms": [
+        "Sodium diacetate"
+      ],
+      "sourceId": "dietary.substance_synonyms.sodium_diacetate"
+    },
+    {
+      "canonicalKey": "sodium_erythorbate",
+      "synonyms": [
+        "Sodium erythorbate"
+      ],
+      "sourceId": "dietary.substance_synonyms.sodium_erythorbate"
+    },
+    {
+      "canonicalKey": "sodium_ferrocyanide",
+      "synonyms": [
+        "Sodium ferrocyanide"
+      ],
+      "sourceId": "dietary.substance_synonyms.sodium_ferrocyanide"
+    },
+    {
+      "canonicalKey": "sodium_nitrate",
+      "synonyms": [
+        "Sodium nitrate"
+      ],
+      "sourceId": "dietary.substance_synonyms.sodium_nitrate"
+    },
+    {
+      "canonicalKey": "sodium_nitrite",
+      "synonyms": [
+        "Sodium nitrite"
+      ],
+      "sourceId": "dietary.substance_synonyms.sodium_nitrite"
+    },
+    {
+      "canonicalKey": "sodium_o_nitrophenolate",
+      "synonyms": [
+        "Sodium o-nitrophenolate"
+      ],
+      "sourceId": "dietary.substance_synonyms.sodium_o_nitrophenolate"
+    },
+    {
+      "canonicalKey": "sodium_p_nitrophenolate",
+      "synonyms": [
+        "Sodium p-nitrophenolate"
+      ],
+      "sourceId": "dietary.substance_synonyms.sodium_p_nitrophenolate"
+    },
+    {
+      "canonicalKey": "sodium_stearoyl_2_lactylate",
+      "synonyms": [
+        "Sodium stearoyl-2-lactylate"
+      ],
+      "sourceId": "dietary.substance_synonyms.sodium_stearoyl_2_lactylate"
+    },
+    {
+      "canonicalKey": "sodium_stearoyl_2_lactylate_and_calcium_stearoyl_2_lactylate",
+      "synonyms": [
+        "Sodium stearoyl-2-lactylate and calcium stearoyl-2-lactylate"
+      ],
+      "sourceId": "dietary.substance_synonyms.sodium_stearoyl_2_lactylate_and_calcium_stearoyl_2_lactylate"
+    },
+    {
+      "canonicalKey": "sodium_tetraborate",
+      "synonyms": [
+        "Sodium tetraborate"
+      ],
+      "sourceId": "dietary.substance_synonyms.sodium_tetraborate"
+    },
+    {
+      "canonicalKey": "sorbitan_monolaurate",
+      "synonyms": [
+        "Sorbitan monolaurate"
+      ],
+      "sourceId": "dietary.substance_synonyms.sorbitan_monolaurate"
+    },
+    {
+      "canonicalKey": "sorbitan_monooleate",
+      "synonyms": [
+        "Sorbitan monooleate"
+      ],
+      "sourceId": "dietary.substance_synonyms.sorbitan_monooleate"
+    },
+    {
+      "canonicalKey": "sorbitan_monopalmitate",
+      "synonyms": [
+        "Sorbitan monopalmitate"
+      ],
+      "sourceId": "dietary.substance_synonyms.sorbitan_monopalmitate"
+    },
+    {
+      "canonicalKey": "sorbitan_monostearate",
+      "synonyms": [
+        "Sorbitan monostearate"
+      ],
+      "sourceId": "dietary.substance_synonyms.sorbitan_monostearate"
+    },
+    {
+      "canonicalKey": "sorbitan_tristearate",
+      "synonyms": [
+        "Sorbitan tristearate"
+      ],
+      "sourceId": "dietary.substance_synonyms.sorbitan_tristearate"
+    },
+    {
+      "canonicalKey": "spinetoram",
+      "synonyms": [
+        "Spinetoram"
+      ],
+      "sourceId": "dietary.substance_synonyms.spinetoram"
+    },
+    {
+      "canonicalKey": "spinosad",
+      "synonyms": [
+        "Spinosad"
+      ],
+      "sourceId": "dietary.substance_synonyms.spinosad"
+    },
+    {
+      "canonicalKey": "spirodiclofen",
+      "synonyms": [
+        "Spirodiclofen"
+      ],
+      "sourceId": "dietary.substance_synonyms.spirodiclofen"
+    },
+    {
+      "canonicalKey": "spiromesifen",
+      "synonyms": [
+        "Spiromesifen"
+      ],
+      "sourceId": "dietary.substance_synonyms.spiromesifen"
+    },
+    {
+      "canonicalKey": "spirotetramat",
+      "synonyms": [
+        "Spirotetramat"
+      ],
+      "sourceId": "dietary.substance_synonyms.spirotetramat"
+    },
+    {
+      "canonicalKey": "spiroxamine",
+      "synonyms": [
+        "Spiroxamine"
+      ],
+      "sourceId": "dietary.substance_synonyms.spiroxamine"
+    },
+    {
+      "canonicalKey": "spiroxamine_metabolite",
+      "synonyms": [
+        "Spiroxamine metabolite (M13)"
+      ],
+      "sourceId": "dietary.substance_synonyms.spiroxamine_metabolite"
+    },
+    {
+      "canonicalKey": "steviol_glycosides",
+      "synonyms": [
+        "Steviol glycosides"
+      ],
+      "sourceId": "dietary.substance_synonyms.steviol_glycosides"
+    },
+    {
+      "canonicalKey": "sucralose",
+      "synonyms": [
+        "Sucralose"
+      ],
+      "sourceId": "dietary.substance_synonyms.sucralose"
+    },
+    {
+      "canonicalKey": "sucroglycerides",
+      "synonyms": [
+        "Sucroglycerides"
+      ],
+      "sourceId": "dietary.substance_synonyms.sucroglycerides"
+    },
+    {
+      "canonicalKey": "sucrose_acetate_isobutyrate",
+      "synonyms": [
+        "Sucrose acetate isobutyrate"
+      ],
+      "sourceId": "dietary.substance_synonyms.sucrose_acetate_isobutyrate"
+    },
+    {
+      "canonicalKey": "sucrose_esters_of_fatty_acids",
+      "synonyms": [
+        "Sucrose esters of fatty acids"
+      ],
+      "sourceId": "dietary.substance_synonyms.sucrose_esters_of_fatty_acids"
+    },
+    {
+      "canonicalKey": "sulcotrione",
+      "synonyms": [
+        "Sulcotrione"
+      ],
+      "sourceId": "dietary.substance_synonyms.sulcotrione"
+    },
+    {
+      "canonicalKey": "sulfanilamide",
+      "synonyms": [
+        "Sulfanilamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.sulfanilamide"
+    },
+    {
+      "canonicalKey": "sulfanilic_acid",
+      "synonyms": [
+        "Sulfanilic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.sulfanilic_acid"
+    },
+    {
+      "canonicalKey": "sulfate_ion",
+      "synonyms": [
+        "Sulfate ion"
+      ],
+      "sourceId": "dietary.substance_synonyms.sulfate_ion"
+    },
+    {
+      "canonicalKey": "sulfosulfuron",
+      "synonyms": [
+        "Sulfosulfuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.sulfosulfuron"
+    },
+    {
+      "canonicalKey": "sulfoxaflor",
+      "synonyms": [
+        "Sulfoxaflor"
+      ],
+      "sourceId": "dietary.substance_synonyms.sulfoxaflor"
+    },
+    {
+      "canonicalKey": "sulfur_dioxide_and_sulfites_group",
+      "synonyms": [
+        "Sulfur dioxide and sulfites group"
+      ],
+      "sourceId": "dietary.substance_synonyms.sulfur_dioxide_and_sulfites_group"
+    },
+    {
+      "canonicalKey": "sulfuryl_fluoride",
+      "synonyms": [
+        "Sulfuryl fluoride"
+      ],
+      "sourceId": "dietary.substance_synonyms.sulfuryl_fluoride"
+    },
+    {
+      "canonicalKey": "sunset_yellow_fcf",
+      "synonyms": [
+        "Sunset Yellow FCF"
+      ],
+      "sourceId": "dietary.substance_synonyms.sunset_yellow_fcf"
+    },
+    {
+      "canonicalKey": "t_2_and_ht_2_toxins",
+      "synonyms": [
+        "T-2 and HT-2 toxins"
+      ],
+      "sourceId": "dietary.substance_synonyms.t_2_and_ht_2_toxins"
+    },
+    {
+      "canonicalKey": "t_2_toxin_ht_2_toxin_and_its_phase_i_ii_metabolites",
+      "synonyms": [
+        "T-2 toxin, HT-2 toxin and its phase I/II metabolites"
+      ],
+      "sourceId": "dietary.substance_synonyms.t_2_toxin_ht_2_toxin_and_its_phase_i_ii_metabolites"
+    },
+    {
+      "canonicalKey": "t_2_toxin_ht_2_toxin_neosolaniol_and_its_phase_ii_metabolites",
+      "synonyms": [
+        "T-2 toxin, HT-2 toxin, Neosolaniol and its phase II metabolites"
+      ],
+      "sourceId": "dietary.substance_synonyms.t_2_toxin_ht_2_toxin_neosolaniol_and_its_phase_ii_metabolites"
+    },
+    {
+      "canonicalKey": "tartaric_acid_esters_of_mono_and_diglycerides_of_fatty_acids",
+      "synonyms": [
+        "Tartaric acid esters of mono- and diglycerides of fatty acids (E 472d)"
+      ],
+      "sourceId": "dietary.substance_synonyms.tartaric_acid_esters_of_mono_and_diglycerides_of_fatty_acids"
+    },
+    {
+      "canonicalKey": "tartrazine",
+      "synonyms": [
+        "Tartrazine"
+      ],
+      "sourceId": "dietary.substance_synonyms.tartrazine"
+    },
+    {
+      "canonicalKey": "tau_fluvalinate",
+      "synonyms": [
+        "Tau-fluvalinate"
+      ],
+      "sourceId": "dietary.substance_synonyms.tau_fluvalinate"
+    },
+    {
+      "canonicalKey": "tebuconazole",
+      "synonyms": [
+        "Tebuconazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.tebuconazole"
+    },
+    {
+      "canonicalKey": "tebufenozide",
+      "synonyms": [
+        "Tebufenozide"
+      ],
+      "sourceId": "dietary.substance_synonyms.tebufenozide"
+    },
+    {
+      "canonicalKey": "tebufenpyrad",
+      "synonyms": [
+        "Tebufenpyrad"
+      ],
+      "sourceId": "dietary.substance_synonyms.tebufenpyrad"
+    },
+    {
+      "canonicalKey": "teflubenzuron",
+      "synonyms": [
+        "Teflubenzuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.teflubenzuron"
+    },
+    {
+      "canonicalKey": "tefluthrin",
+      "synonyms": [
+        "Tefluthrin"
+      ],
+      "sourceId": "dietary.substance_synonyms.tefluthrin"
+    },
+    {
+      "canonicalKey": "tembotrione",
+      "synonyms": [
+        "Tembotrione"
+      ],
+      "sourceId": "dietary.substance_synonyms.tembotrione"
+    },
+    {
+      "canonicalKey": "terbufos",
+      "synonyms": [
+        "Terbufos"
+      ],
+      "sourceId": "dietary.substance_synonyms.terbufos"
+    },
+    {
+      "canonicalKey": "terbuthylazine",
+      "synonyms": [
+        "Terbuthylazine"
+      ],
+      "sourceId": "dietary.substance_synonyms.terbuthylazine"
+    },
+    {
+      "canonicalKey": "terephthalic_acid_bis_ester",
+      "synonyms": [
+        "Terephthalic acid, bis(2-ethylhexyl) ester"
+      ],
+      "sourceId": "dietary.substance_synonyms.terephthalic_acid_bis_ester"
+    },
+    {
+      "canonicalKey": "tertiary_butylhydroquinone",
+      "synonyms": [
+        "Tertiary-Butylhydroquinone"
+      ],
+      "sourceId": "dietary.substance_synonyms.tertiary_butylhydroquinone"
+    },
+    {
+      "canonicalKey": "tetra_basic_zinc_chloride",
+      "synonyms": [
+        "Tetra-Basic Zinc Chloride"
+      ],
+      "sourceId": "dietary.substance_synonyms.tetra_basic_zinc_chloride"
+    },
+    {
+      "canonicalKey": "tetrabromobisphenol_a",
+      "synonyms": [
+        "Tetrabromobisphenol A"
+      ],
+      "sourceId": "dietary.substance_synonyms.tetrabromobisphenol_a"
+    },
+    {
+      "canonicalKey": "tetraconazole",
+      "synonyms": [
+        "Tetraconazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.tetraconazole"
+    },
+    {
+      "canonicalKey": "tetrahydrocurcuminoids_from_turmeric",
+      "synonyms": [
+        "Tetrahydrocurcuminoids from turmeric (Curcuma longa L.)"
+      ],
+      "sourceId": "dietary.substance_synonyms.tetrahydrocurcuminoids_from_turmeric"
+    },
+    {
+      "canonicalKey": "tetrodotoxin_and_its_analogues",
+      "synonyms": [
+        "Tetrodotoxin (TTX) and its analogues"
+      ],
+      "sourceId": "dietary.substance_synonyms.tetrodotoxin_and_its_analogues"
+    },
+    {
+      "canonicalKey": "thiabendazole",
+      "synonyms": [
+        "Thiabendazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.thiabendazole"
+    },
+    {
+      "canonicalKey": "thiacloprid",
+      "synonyms": [
+        "Thiacloprid"
+      ],
+      "sourceId": "dietary.substance_synonyms.thiacloprid"
+    },
+    {
+      "canonicalKey": "thiamethoxam",
+      "synonyms": [
+        "Thiamethoxam"
+      ],
+      "sourceId": "dietary.substance_synonyms.thiamethoxam"
+    },
+    {
+      "canonicalKey": "thiamin",
+      "synonyms": [
+        "Thiamin"
+      ],
+      "sourceId": "dietary.substance_synonyms.thiamin"
+    },
+    {
+      "canonicalKey": "thidiazuron",
+      "synonyms": [
+        "Thidiazuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.thidiazuron"
+    },
+    {
+      "canonicalKey": "thiencarbazone_methyl",
+      "synonyms": [
+        "Thiencarbazone-methyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.thiencarbazone_methyl"
+    },
+    {
+      "canonicalKey": "thiencarbazone_methyl_carboxylic_acid",
+      "synonyms": [
+        "Thiencarbazone-methyl carboxylic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.thiencarbazone_methyl_carboxylic_acid"
+    },
+    {
+      "canonicalKey": "thifensulfuron_methyl",
+      "synonyms": [
+        "Thifensulfuron-methyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.thifensulfuron_methyl"
+    },
+    {
+      "canonicalKey": "thiobencarb",
+      "synonyms": [
+        "Thiobencarb"
+      ],
+      "sourceId": "dietary.substance_synonyms.thiobencarb"
+    },
+    {
+      "canonicalKey": "thiodicarb",
+      "synonyms": [
+        "Thiodicarb"
+      ],
+      "sourceId": "dietary.substance_synonyms.thiodicarb"
+    },
+    {
+      "canonicalKey": "thiram",
+      "synonyms": [
+        "Thiram"
+      ],
+      "sourceId": "dietary.substance_synonyms.thiram"
+    },
+    {
+      "canonicalKey": "tocopherols",
+      "synonyms": [
+        "Tocopherols (mixed)"
+      ],
+      "sourceId": "dietary.substance_synonyms.tocopherols"
+    },
+    {
+      "canonicalKey": "tolclofos_methyl",
+      "synonyms": [
+        "Tolclofos-methyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.tolclofos_methyl"
+    },
+    {
+      "canonicalKey": "tolclofos_methyl_metabolite",
+      "synonyms": [
+        "Tolclofos-methyl metabolite (DM-TM-CH2OH)"
+      ],
+      "sourceId": "dietary.substance_synonyms.tolclofos_methyl_metabolite"
+    },
+    {
+      "canonicalKey": "tolylfluanid",
+      "synonyms": [
+        "Tolylfluanid"
+      ],
+      "sourceId": "dietary.substance_synonyms.tolylfluanid"
+    },
+    {
+      "canonicalKey": "topramezone",
+      "synonyms": [
+        "Topramezone"
+      ],
+      "sourceId": "dietary.substance_synonyms.topramezone"
+    },
+    {
+      "canonicalKey": "topramezone_bas_670h",
+      "synonyms": [
+        "Topramezone BAS 670H"
+      ],
+      "sourceId": "dietary.substance_synonyms.topramezone_bas_670h"
+    },
+    {
+      "canonicalKey": "tralkoxydim",
+      "synonyms": [
+        "Tralkoxydim"
+      ],
+      "sourceId": "dietary.substance_synonyms.tralkoxydim"
+    },
+    {
+      "canonicalKey": "trans_anethole",
+      "synonyms": [
+        "Trans-anethole"
+      ],
+      "sourceId": "dietary.substance_synonyms.trans_anethole"
+    },
+    {
+      "canonicalKey": "tri_allate",
+      "synonyms": [
+        "Tri-allate"
+      ],
+      "sourceId": "dietary.substance_synonyms.tri_allate"
+    },
+    {
+      "canonicalKey": "tri_n_butyl_acetyl_citrate",
+      "synonyms": [
+        "Tri-n-butyl acetyl citrate"
+      ],
+      "sourceId": "dietary.substance_synonyms.tri_n_butyl_acetyl_citrate"
+    },
+    {
+      "canonicalKey": "triadimefon",
+      "synonyms": [
+        "Triadimefon"
+      ],
+      "sourceId": "dietary.substance_synonyms.triadimefon"
+    },
+    {
+      "canonicalKey": "triadimenol",
+      "synonyms": [
+        "Triadimenol"
+      ],
+      "sourceId": "dietary.substance_synonyms.triadimenol"
+    },
+    {
+      "canonicalKey": "triazamate",
+      "synonyms": [
+        "Triazamate"
+      ],
+      "sourceId": "dietary.substance_synonyms.triazamate"
+    },
+    {
+      "canonicalKey": "triazole_acetic_acid",
+      "synonyms": [
+        "Triazole acetic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.triazole_acetic_acid"
+    },
+    {
+      "canonicalKey": "triazole_alanine",
+      "synonyms": [
+        "Triazole alanine"
+      ],
+      "sourceId": "dietary.substance_synonyms.triazole_alanine"
+    },
+    {
+      "canonicalKey": "triazole_lactic_acid",
+      "synonyms": [
+        "Triazole lactic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.triazole_lactic_acid"
+    },
+    {
+      "canonicalKey": "triazophos",
+      "synonyms": [
+        "Triazophos"
+      ],
+      "sourceId": "dietary.substance_synonyms.triazophos"
+    },
+    {
+      "canonicalKey": "triazoxide",
+      "synonyms": [
+        "Triazoxide"
+      ],
+      "sourceId": "dietary.substance_synonyms.triazoxide"
+    },
+    {
+      "canonicalKey": "tribasic_copper_sulfate",
+      "synonyms": [
+        "Tribasic copper sulfate"
+      ],
+      "sourceId": "dietary.substance_synonyms.tribasic_copper_sulfate"
+    },
+    {
+      "canonicalKey": "tribenuron_methyl",
+      "synonyms": [
+        "Tribenuron-methyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.tribenuron_methyl"
+    },
+    {
+      "canonicalKey": "trichloronitromethane",
+      "synonyms": [
+        "Trichloronitromethane"
+      ],
+      "sourceId": "dietary.substance_synonyms.trichloronitromethane"
+    },
+    {
+      "canonicalKey": "triclopyr",
+      "synonyms": [
+        "Triclopyr"
+      ],
+      "sourceId": "dietary.substance_synonyms.triclopyr"
+    },
+    {
+      "canonicalKey": "triclopyr_butoxyethyl_ester",
+      "synonyms": [
+        "Triclopyr-butoxyethyl ester"
+      ],
+      "sourceId": "dietary.substance_synonyms.triclopyr_butoxyethyl_ester"
+    },
+    {
+      "canonicalKey": "trifloxystrobin",
+      "synonyms": [
+        "Trifloxystrobin"
+      ],
+      "sourceId": "dietary.substance_synonyms.trifloxystrobin"
+    },
+    {
+      "canonicalKey": "trifloxystrobin_metabolite",
+      "synonyms": [
+        "Trifloxystrobin metabolite (NOA 413161)"
+      ],
+      "sourceId": "dietary.substance_synonyms.trifloxystrobin_metabolite"
+    },
+    {
+      "canonicalKey": "triflumizole",
+      "synonyms": [
+        "Triflumizole"
+      ],
+      "sourceId": "dietary.substance_synonyms.triflumizole"
+    },
+    {
+      "canonicalKey": "triflumuron",
+      "synonyms": [
+        "Triflumuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.triflumuron"
+    },
+    {
+      "canonicalKey": "trifluoroacetic_acid",
+      "synonyms": [
+        "Trifluoroacetic acid (TFA)"
+      ],
+      "sourceId": "dietary.substance_synonyms.trifluoroacetic_acid"
+    },
+    {
+      "canonicalKey": "trifluralin",
+      "synonyms": [
+        "Trifluralin"
+      ],
+      "sourceId": "dietary.substance_synonyms.trifluralin"
+    },
+    {
+      "canonicalKey": "triflusulfuron_methyl",
+      "synonyms": [
+        "Triflusulfuron-methyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.triflusulfuron_methyl"
+    },
+    {
+      "canonicalKey": "triflusulfuron_methyl_metabolite",
+      "synonyms": [
+        "Triflusulfuron-methyl metabolite (IN-JK555)"
+      ],
+      "sourceId": "dietary.substance_synonyms.triflusulfuron_methyl_metabolite"
+    },
+    {
+      "canonicalKey": "trinexapac_ethyl",
+      "synonyms": [
+        "Trinexapac-ethyl"
+      ],
+      "sourceId": "dietary.substance_synonyms.trinexapac_ethyl"
+    },
+    {
+      "canonicalKey": "trisodium_phosphate",
+      "synonyms": [
+        "Trisodium phosphate"
+      ],
+      "sourceId": "dietary.substance_synonyms.trisodium_phosphate"
+    },
+    {
+      "canonicalKey": "triticonazole",
+      "synonyms": [
+        "Triticonazole"
+      ],
+      "sourceId": "dietary.substance_synonyms.triticonazole"
+    },
+    {
+      "canonicalKey": "tritosulfuron",
+      "synonyms": [
+        "Tritosulfuron"
+      ],
+      "sourceId": "dietary.substance_synonyms.tritosulfuron"
+    },
+    {
+      "canonicalKey": "uranium",
+      "synonyms": [
+        "Uranium (total)"
+      ],
+      "sourceId": "dietary.substance_synonyms.uranium"
+    },
+    {
+      "canonicalKey": "valiphenal",
+      "synonyms": [
+        "Valiphenal"
+      ],
+      "sourceId": "dietary.substance_synonyms.valiphenal"
+    },
+    {
+      "canonicalKey": "vanillin",
+      "synonyms": [
+        "Vanillin"
+      ],
+      "sourceId": "dietary.substance_synonyms.vanillin"
+    },
+    {
+      "canonicalKey": "vinclozolin",
+      "synonyms": [
+        "Vinclozolin"
+      ],
+      "sourceId": "dietary.substance_synonyms.vinclozolin"
+    },
+    {
+      "canonicalKey": "vitamin_a",
+      "synonyms": [
+        "Vitamin A"
+      ],
+      "sourceId": "dietary.substance_synonyms.vitamin_a"
+    },
+    {
+      "canonicalKey": "vitamin_b12",
+      "synonyms": [
+        "Vitamin B12"
+      ],
+      "sourceId": "dietary.substance_synonyms.vitamin_b12"
+    },
+    {
+      "canonicalKey": "vitamin_b6",
+      "synonyms": [
+        "Vitamin B6"
+      ],
+      "sourceId": "dietary.substance_synonyms.vitamin_b6"
+    },
+    {
+      "canonicalKey": "vitamin_d",
+      "synonyms": [
+        "Vitamin D"
+      ],
+      "sourceId": "dietary.substance_synonyms.vitamin_d"
+    },
+    {
+      "canonicalKey": "vitamin_d2",
+      "synonyms": [
+        "Vitamin D2"
+      ],
+      "sourceId": "dietary.substance_synonyms.vitamin_d2"
+    },
+    {
+      "canonicalKey": "vitamin_d3",
+      "synonyms": [
+        "Vitamin D3"
+      ],
+      "sourceId": "dietary.substance_synonyms.vitamin_d3"
+    },
+    {
+      "canonicalKey": "vitamin_e",
+      "synonyms": [
+        "Vitamin E"
+      ],
+      "sourceId": "dietary.substance_synonyms.vitamin_e"
+    },
+    {
+      "canonicalKey": "vitamin_k1",
+      "synonyms": [
+        "Vitamin K1"
+      ],
+      "sourceId": "dietary.substance_synonyms.vitamin_k1"
+    },
+    {
+      "canonicalKey": "white_mineral_oil_with_high_viscosity",
+      "synonyms": [
+        "White mineral oil with high viscosity (kinematic viscosity at 100 °C not less than 11 mm²/s)"
+      ],
+      "sourceId": "dietary.substance_synonyms.white_mineral_oil_with_high_viscosity"
+    },
+    {
+      "canonicalKey": "white_mineral_oil_with_medium_viscosity",
+      "synonyms": [
+        "White mineral oil with medium viscosity (kinematic viscosity between 8.5 - 11 mm²/s at 100 °C)"
+      ],
+      "sourceId": "dietary.substance_synonyms.white_mineral_oil_with_medium_viscosity"
+    },
+    {
+      "canonicalKey": "yessotoxins",
+      "synonyms": [
+        "Yessotoxins"
+      ],
+      "sourceId": "dietary.substance_synonyms.yessotoxins"
+    },
+    {
+      "canonicalKey": "zearalenone",
+      "synonyms": [
+        "Zearalenone"
+      ],
+      "sourceId": "dietary.substance_synonyms.zearalenone"
+    },
+    {
+      "canonicalKey": "zearalenone_and_its_phase_i_ii_metabolites",
+      "synonyms": [
+        "Zearalenone and its phase I/II metabolites"
+      ],
+      "sourceId": "dietary.substance_synonyms.zearalenone_and_its_phase_i_ii_metabolites"
+    },
+    {
+      "canonicalKey": "zeaxanthin",
+      "synonyms": [
+        "Zeaxanthin"
+      ],
+      "sourceId": "dietary.substance_synonyms.zeaxanthin"
+    },
+    {
+      "canonicalKey": "zeta_cypermethrin",
+      "synonyms": [
+        "Zeta-cypermethrin"
+      ],
+      "sourceId": "dietary.substance_synonyms.zeta_cypermethrin"
+    },
+    {
+      "canonicalKey": "zinc",
+      "synonyms": [
+        "Zinc (total)"
+      ],
+      "sourceId": "dietary.substance_synonyms.zinc"
+    },
+    {
+      "canonicalKey": "zinc_chelate_of_amino_acids_hydrate",
+      "synonyms": [
+        "Zinc chelate of amino acids, hydrate"
+      ],
+      "sourceId": "dietary.substance_synonyms.zinc_chelate_of_amino_acids_hydrate"
+    },
+    {
+      "canonicalKey": "zinc_phosphide",
+      "synonyms": [
+        "Zinc phosphide"
+      ],
+      "sourceId": "dietary.substance_synonyms.zinc_phosphide"
+    },
+    {
+      "canonicalKey": "zinc_sulphate_monohydrate",
+      "synonyms": [
+        "Zinc sulphate monohydrate"
+      ],
+      "sourceId": "dietary.substance_synonyms.zinc_sulphate_monohydrate"
+    },
+    {
+      "canonicalKey": "zoxamide",
+      "synonyms": [
+        "Zoxamide"
+      ],
+      "sourceId": "dietary.substance_synonyms.zoxamide"
+    },
+    {
+      "canonicalKey": "aminoacetic_acid",
+      "synonyms": [
+        "[(6-Ethyl-3-hydroxy-2-methylphenyl)amino](oxo)acetic acid"
+      ],
+      "sourceId": "dietary.substance_synonyms.aminoacetic_acid"
+    },
+    {
+      "canonicalKey": "alpha_cypermethrin",
+      "synonyms": [
+        "alpha-Cypermethrin"
+      ],
+      "sourceId": "dietary.substance_synonyms.alpha_cypermethrin"
+    },
+    {
+      "canonicalKey": "beta_cyfluthrin",
+      "synonyms": [
+        "beta-Cyfluthrin"
+      ],
+      "sourceId": "dietary.substance_synonyms.beta_cyfluthrin"
+    },
+    {
+      "canonicalKey": "beta_cyfluthrin_metabolite",
+      "synonyms": [
+        "beta-Cyfluthrin metabolite (4-OH-FPB acid)"
+      ],
+      "sourceId": "dietary.substance_synonyms.beta_cyfluthrin_metabolite"
+    },
+    {
+      "canonicalKey": "d_carvone",
+      "synonyms": [
+        "d-Carvone"
+      ],
+      "sourceId": "dietary.substance_synonyms.d_carvone"
+    },
+    {
+      "canonicalKey": "l_carvone",
+      "synonyms": [
+        "l-Carvone"
+      ],
+      "sourceId": "dietary.substance_synonyms.l_carvone"
+    }
+  ]
+}

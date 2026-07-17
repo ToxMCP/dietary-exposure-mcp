@@ -1,0 +1,70 @@
+name: Track-B scientific-invariants gate
+
+# ADVISORY governance gate (the repo is on the GitHub Free plan, so private repos
+# have no required-status-checks: a red job here does not mechanically block merge;
+# it is a visible, attributed CI signal enforced by merge discipline). The runtime
+# bridge ALSO fails closed (VENDOR_DIGEST_MISMATCH / UNRECOGNIZED_SPINE_SCHEMA_ID /
+# ENGINE_UNAVAILABLE / PROJECTION_INCOMPLETE / SOURCE_CONTRACT_VIOLATION), so a
+# tampered engine or a non-contract packet blocks the gate even when CI is advisory.
+#
+# What it does: vendor:verify hard-fails on any tampered/untracked vendored engine
+# file, then the gate projects every RELEASED server-authored interpretive object
+# (dietaryIntakeSummary -> RouteDoseEstimate; the contaminant interpretation /
+# signoff / adapter-review documents -> ToxMcpObject) onto its canonical schema-spine
+# shape and runs the digest-pinned spine policy engine over the projection through a
+# fail-closed Node bridge. The governance test suite additionally proves every
+# advertised code bites on a producer-contract-valid fault and the guard rejects a
+# forbidden packet.
+#
+# PROMOTE-TO-BLOCKING: when the repo gains branch protection / rulesets (Team/Pro or
+# public), mark this job a required status check.
+
+on:
+  pull_request:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  scientific-invariants:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "20"
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+      - uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86 # v5
+      - name: Install project
+        run: |
+          if [ -f uv.lock ]; then
+            uv sync --all-extras --dev || uv sync --dev
+          else
+            python -m pip install -e ".[dev]"
+          fi
+      - name: vendor:verify (digest integrity of the vendored spine engine)
+        run: |
+          if [ -f uv.lock ]; then
+            uv run python scripts/vendor_verify.py
+          else
+            python scripts/vendor_verify.py
+          fi
+      - name: scientific-invariants gate (project + run vendored spine policy engine)
+        run: |
+          if [ -f uv.lock ]; then
+            uv run python scripts/scientific_invariants_gate.py --json
+          else
+            python scripts/scientific_invariants_gate.py --json
+          fi
+      - name: governance adversarial self-tests (per-code bite proofs + fail-closed)
+        run: |
+          if [ -f uv.lock ]; then
+            uv run pytest tests/governance_spine/ -q
+          else
+            pytest tests/governance_spine/ -q
+          fi

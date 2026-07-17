@@ -1,0 +1,187 @@
+{
+  "$defs": {
+    "LimitationNote": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "title": "LimitationNote",
+      "type": "object"
+    },
+    "QualityFlag": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "severity": {
+          "$ref": "#/$defs/Severity"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "severity",
+        "message"
+      ],
+      "title": "QualityFlag",
+      "type": "object"
+    },
+    "Severity": {
+      "enum": [
+        "info",
+        "warning",
+        "error"
+      ],
+      "title": "Severity",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "datasetId": {
+      "title": "Datasetid",
+      "type": "string"
+    },
+    "populationGroup": {
+      "title": "Populationgroup",
+      "type": "string"
+    },
+    "chemicalIdentity": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Chemicalidentity",
+      "type": "object"
+    },
+    "totalSubjects": {
+      "title": "Totalsubjects",
+      "type": "integer"
+    },
+    "consumersOnlyCount": {
+      "title": "Consumersonlycount",
+      "type": "integer"
+    },
+    "zeroIntakePrevalence": {
+      "title": "Zerointakeprevalence",
+      "type": "number"
+    },
+    "meanIntakeMgPerKgBwPerDay": {
+      "title": "Meanintakemgperkgbwperday",
+      "type": "number"
+    },
+    "percentile95MgPerKgBwPerDay": {
+      "title": "Percentile95Mgperkgbwperday",
+      "type": "number"
+    },
+    "percentile99MgPerKgBwPerDay": {
+      "title": "Percentile99Mgperkgbwperday",
+      "type": "number"
+    },
+    "percentile999MgPerKgBwPerDay": {
+      "title": "Percentile999Mgperkgbwperday",
+      "type": "number"
+    },
+    "maxMgPerKgBwPerDay": {
+      "title": "Maxmgperkgbwperday",
+      "type": "number"
+    },
+    "consumersOnlyMeanMgPerKgBwPerDay": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Consumersonlymeanmgperkgbwperday"
+    },
+    "consumersOnlyPercentile95MgPerKgBwPerDay": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Consumersonlypercentile95Mgperkgbwperday"
+    },
+    "consumersOnlyPercentile99MgPerKgBwPerDay": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Consumersonlypercentile99Mgperkgbwperday"
+    },
+    "consumersOnlyPercentile999MgPerKgBwPerDay": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Consumersonlypercentile999Mgperkgbwperday"
+    },
+    "quality_flags": {
+      "items": {
+        "$ref": "#/$defs/QualityFlag"
+      },
+      "title": "Quality Flags",
+      "type": "array"
+    },
+    "limitations": {
+      "items": {
+        "$ref": "#/$defs/LimitationNote"
+      },
+      "title": "Limitations",
+      "type": "array"
+    }
+  },
+  "required": [
+    "datasetId",
+    "populationGroup",
+    "chemicalIdentity",
+    "totalSubjects",
+    "consumersOnlyCount",
+    "zeroIntakePrevalence",
+    "meanIntakeMgPerKgBwPerDay",
+    "percentile95MgPerKgBwPerDay",
+    "percentile99MgPerKgBwPerDay",
+    "percentile999MgPerKgBwPerDay",
+    "maxMgPerKgBwPerDay"
+  ],
+  "title": "SurveyDistributionSummaryReport",
+  "type": "object"
+}

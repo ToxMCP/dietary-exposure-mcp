@@ -1,0 +1,132 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.ngra.ai/dietary-exposure/emission/metalsMonitoringInterpretationBundle.v1.json",
+  "title": "metalsMonitoringInterpretationBundle (producer strict emission contract)",
+  "description": "Tightened additionalProperties:false mirror of the real DietaryRuntime.export_metals_monitoring_interpretation_bundle emission (by_alias=True). Load-bearing narrative fields the projection deep-scans (notes[], limitations[].message) and the submission-use fields are constrained; embedded governed sub-records are declared by type only.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contaminantFamily",
+    "overallSubmissionUse",
+    "submissionCandidateAllowed"
+  ],
+  "properties": {
+    "authority": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "bundleProfile": {
+      "type": "string"
+    },
+    "bundle_id": {
+      "type": "string"
+    },
+    "contaminantFamily": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coveredDatasetIds": {
+      "type": "array"
+    },
+    "coveredLegalAuthorityIds": {
+      "type": "array"
+    },
+    "coveredMethodIds": {
+      "type": "array"
+    },
+    "coveredReferenceValueRecordIds": {
+      "type": "array"
+    },
+    "coveredSourceIds": {
+      "type": "array"
+    },
+    "dependencies": {
+      "type": "array"
+    },
+    "focusFoods": {
+      "type": "array"
+    },
+    "highAttentionFoods": {
+      "type": "array"
+    },
+    "jurisdiction": {
+      "type": "string"
+    },
+    "legalLimitReviews": {
+      "type": "array"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "message"
+        ],
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "linkedOccurrenceRecordIds": {
+      "type": "array"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "occurrenceRecords": {
+      "type": "array"
+    },
+    "overallSubmissionUse": {
+      "enum": [
+        "allowed",
+        "review_required",
+        "not_allowed"
+      ]
+    },
+    "priorityFoodGroups": {
+      "type": "array"
+    },
+    "recommendedSequence": {
+      "type": "array"
+    },
+    "referencedResources": {
+      "type": "array"
+    },
+    "reviewFocusRecords": {
+      "type": "array"
+    },
+    "reviewPrompts": {
+      "type": "array"
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "sensitivePopulationGroups": {
+      "type": "array"
+    },
+    "submissionCandidateAllowed": {
+      "type": "boolean"
+    },
+    "trendSignals": {
+      "type": "array"
+    },
+    "uncertaintyAndAssumptionLedger": {
+      "type": "array"
+    },
+    "unresolvedLinkedOccurrenceRecordIds": {
+      "type": "array"
+    }
+  }
+}

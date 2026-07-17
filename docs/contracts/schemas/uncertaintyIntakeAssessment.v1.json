@@ -1,0 +1,576 @@
+{
+  "$defs": {
+    "CensoredDataPolicy": {
+      "enum": [
+        "lower_bound_zero",
+        "middle_bound_half_lod_loq",
+        "upper_bound_lod_loq",
+        "three_bound_sensitivity"
+      ],
+      "title": "CensoredDataPolicy",
+      "type": "string"
+    },
+    "HealthReferenceExceedanceSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "referenceType": {
+          "$ref": "#/$defs/HealthReferenceType"
+        },
+        "referenceValue": {
+          "title": "Referencevalue",
+          "type": "number"
+        },
+        "referenceUnit": {
+          "title": "Referenceunit",
+          "type": "string"
+        },
+        "exceedanceProbability": {
+          "$ref": "#/$defs/UncertaintyMetricInterval"
+        },
+        "percentOfReference": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/UncertaintyMetricInterval"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "highPercentileMetric": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Highpercentilemetric"
+        },
+        "highPercentileExposureRatio": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/UncertaintyMetricInterval"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "marginOfExposure": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/UncertaintyMetricInterval"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "referenceType",
+        "referenceValue",
+        "referenceUnit",
+        "exceedanceProbability"
+      ],
+      "title": "HealthReferenceExceedanceSummary",
+      "type": "object"
+    },
+    "HealthReferenceType": {
+      "enum": [
+        "ADI",
+        "ARfD",
+        "TDI",
+        "BMDL",
+        "MOE_REFERENCE_POINT"
+      ],
+      "title": "HealthReferenceType",
+      "type": "string"
+    },
+    "LimitationNote": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "title": "LimitationNote",
+      "type": "object"
+    },
+    "ProvenanceBundle": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "defaults_version": {
+          "default": "v1",
+          "title": "Defaults Version",
+          "type": "string"
+        },
+        "algorithm_version": {
+          "title": "Algorithm Version",
+          "type": "string"
+        },
+        "generated_at": {
+          "format": "date-time",
+          "title": "Generated At",
+          "type": "string"
+        },
+        "source_references": {
+          "items": {
+            "$ref": "#/$defs/SourceReference"
+          },
+          "title": "Source References",
+          "type": "array"
+        }
+      },
+      "required": [
+        "algorithm_version",
+        "generated_at"
+      ],
+      "title": "ProvenanceBundle",
+      "type": "object"
+    },
+    "QualityFlag": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "severity": {
+          "$ref": "#/$defs/Severity"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "severity",
+        "message"
+      ],
+      "title": "QualityFlag",
+      "type": "object"
+    },
+    "SensitivityRankingRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "inputName": {
+          "title": "Inputname",
+          "type": "string"
+        },
+        "metric": {
+          "title": "Metric",
+          "type": "string"
+        },
+        "rankCorrelation": {
+          "title": "Rankcorrelation",
+          "type": "number"
+        },
+        "method": {
+          "default": "spearman",
+          "title": "Method",
+          "type": "string"
+        }
+      },
+      "required": [
+        "inputName",
+        "metric",
+        "rankCorrelation"
+      ],
+      "title": "SensitivityRankingRecord",
+      "type": "object"
+    },
+    "Severity": {
+      "enum": [
+        "info",
+        "warning",
+        "error"
+      ],
+      "title": "Severity",
+      "type": "string"
+    },
+    "SourceOriginTag": {
+      "enum": [
+        "official_regulatory",
+        "curated_derived",
+        "illustrative_placeholder",
+        "internal_operational"
+      ],
+      "title": "SourceOriginTag",
+      "type": "string"
+    },
+    "SourceReference": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "effective_date": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Effective Date"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        },
+        "originTag": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceOriginTag"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "source_id",
+        "title"
+      ],
+      "title": "SourceReference",
+      "type": "object"
+    },
+    "UncertaintyAssessmentMode": {
+      "enum": [
+        "two_dimensional_monte_carlo"
+      ],
+      "title": "UncertaintyAssessmentMode",
+      "type": "string"
+    },
+    "UncertaintyAssumptionLedger": {
+      "additionalProperties": false,
+      "properties": {
+        "entries": {
+          "items": {
+            "$ref": "#/$defs/UncertaintyAssumptionLedgerEntry"
+          },
+          "title": "Entries",
+          "type": "array"
+        }
+      },
+      "title": "UncertaintyAssumptionLedger",
+      "type": "object"
+    },
+    "UncertaintyAssumptionLedgerEntry": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "severity": {
+          "$ref": "#/$defs/Severity"
+        },
+        "category": {
+          "title": "Category",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "conservative": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Conservative"
+        }
+      },
+      "required": [
+        "code",
+        "severity",
+        "category",
+        "message"
+      ],
+      "title": "UncertaintyAssumptionLedgerEntry",
+      "type": "object"
+    },
+    "UncertaintyDistributionSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "mean": {
+          "$ref": "#/$defs/UncertaintyMetricInterval"
+        },
+        "percentile95": {
+          "$ref": "#/$defs/UncertaintyMetricInterval"
+        },
+        "percentile99": {
+          "$ref": "#/$defs/UncertaintyMetricInterval"
+        },
+        "percentile999": {
+          "$ref": "#/$defs/UncertaintyMetricInterval"
+        },
+        "max": {
+          "$ref": "#/$defs/UncertaintyMetricInterval"
+        },
+        "consumersOnlyMean": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/UncertaintyMetricInterval"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "consumersOnlyPercentile95": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/UncertaintyMetricInterval"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "mean",
+        "percentile95",
+        "percentile99",
+        "percentile999",
+        "max"
+      ],
+      "title": "UncertaintyDistributionSummary",
+      "type": "object"
+    },
+    "UncertaintyMetricInterval": {
+      "additionalProperties": false,
+      "properties": {
+        "median": {
+          "title": "Median",
+          "type": "number"
+        },
+        "lower95": {
+          "title": "Lower95",
+          "type": "number"
+        },
+        "upper95": {
+          "title": "Upper95",
+          "type": "number"
+        }
+      },
+      "required": [
+        "median",
+        "lower95",
+        "upper95"
+      ],
+      "title": "UncertaintyMetricInterval",
+      "type": "object"
+    },
+    "UncertaintyReproducibilityRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "randomSeed": {
+          "title": "Randomseed",
+          "type": "integer"
+        },
+        "rngAlgorithm": {
+          "title": "Rngalgorithm",
+          "type": "string"
+        },
+        "modelFingerprint": {
+          "title": "Modelfingerprint",
+          "type": "string"
+        },
+        "inputFingerprint": {
+          "title": "Inputfingerprint",
+          "type": "string"
+        },
+        "simulationFingerprint": {
+          "title": "Simulationfingerprint",
+          "type": "string"
+        },
+        "numpyVersion": {
+          "title": "Numpyversion",
+          "type": "string"
+        },
+        "scipyVersion": {
+          "title": "Scipyversion",
+          "type": "string"
+        }
+      },
+      "required": [
+        "randomSeed",
+        "rngAlgorithm",
+        "modelFingerprint",
+        "inputFingerprint",
+        "simulationFingerprint",
+        "numpyVersion",
+        "scipyVersion"
+      ],
+      "title": "UncertaintyReproducibilityRecord",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "assessmentId": {
+      "title": "Assessmentid",
+      "type": "string"
+    },
+    "datasetId": {
+      "title": "Datasetid",
+      "type": "string"
+    },
+    "populationGroup": {
+      "title": "Populationgroup",
+      "type": "string"
+    },
+    "chemicalIdentity": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Chemicalidentity",
+      "type": "object"
+    },
+    "assessmentMode": {
+      "$ref": "#/$defs/UncertaintyAssessmentMode"
+    },
+    "outerIterationCount": {
+      "title": "Outeriterationcount",
+      "type": "integer"
+    },
+    "innerIterationCount": {
+      "title": "Inneriterationcount",
+      "type": "integer"
+    },
+    "totalSubjects": {
+      "title": "Totalsubjects",
+      "type": "integer"
+    },
+    "weightedSampling": {
+      "title": "Weightedsampling",
+      "type": "boolean"
+    },
+    "censoredDataPolicy": {
+      "$ref": "#/$defs/CensoredDataPolicy"
+    },
+    "distributionSummary": {
+      "$ref": "#/$defs/UncertaintyDistributionSummary"
+    },
+    "censoredPolicySummaries": {
+      "additionalProperties": {
+        "$ref": "#/$defs/UncertaintyDistributionSummary"
+      },
+      "title": "Censoredpolicysummaries",
+      "type": "object"
+    },
+    "healthReferenceExceedance": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/HealthReferenceExceedanceSummary"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "sensitivityRanking": {
+      "items": {
+        "$ref": "#/$defs/SensitivityRankingRecord"
+      },
+      "title": "Sensitivityranking",
+      "type": "array"
+    },
+    "uncertaintyAssumptionLedger": {
+      "$ref": "#/$defs/UncertaintyAssumptionLedger"
+    },
+    "reproducibility": {
+      "$ref": "#/$defs/UncertaintyReproducibilityRecord"
+    },
+    "qualityFlags": {
+      "items": {
+        "$ref": "#/$defs/QualityFlag"
+      },
+      "title": "Qualityflags",
+      "type": "array"
+    },
+    "limitations": {
+      "items": {
+        "$ref": "#/$defs/LimitationNote"
+      },
+      "title": "Limitations",
+      "type": "array"
+    },
+    "provenance": {
+      "$ref": "#/$defs/ProvenanceBundle"
+    }
+  },
+  "required": [
+    "datasetId",
+    "populationGroup",
+    "chemicalIdentity",
+    "assessmentMode",
+    "outerIterationCount",
+    "innerIterationCount",
+    "totalSubjects",
+    "weightedSampling",
+    "censoredDataPolicy",
+    "distributionSummary",
+    "uncertaintyAssumptionLedger",
+    "reproducibility",
+    "provenance"
+  ],
+  "title": "UncertaintyIntakeAssessment",
+  "type": "object"
+}

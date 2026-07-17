@@ -1,0 +1,72 @@
+{
+  "contaminant_family": "mercury_food_contaminants",
+  "jurisdiction": "eu",
+  "authority": null,
+  "analyte": "methylmercury",
+  "matrix_group": null,
+  "records": [
+    {
+      "record_id": "eu.mercury.analytical_method_evidence.official_control",
+      "display_name": "Mercury official-control analytical method evidence",
+      "authority": "European Union",
+      "jurisdiction": "eu",
+      "contaminant_family": "mercury_food_contaminants",
+      "evidence_kind": "official_control_sampling_and_analysis",
+      "analytes": [
+        "methylmercury",
+        "inorganic_mercury",
+        "total_mercury"
+      ],
+      "matrix_groups": [
+        "fish_and_seafood",
+        "large_predatory_fish",
+        "broad_food_supply"
+      ],
+      "technique_summary": "Official-control sampling and analysis governance for mercury levels in foodstuffs.",
+      "method_code": null,
+      "lod_summary": "Import rows should preserve lod when available for method-review traceability.",
+      "lod_value": null,
+      "lod_unit": null,
+      "loq_summary": "Import rows should preserve loq where reported to support lower-bound and review context.",
+      "loq_value": null,
+      "loq_unit": null,
+      "recovery_summary": "Recovery information should be retained where available to support analytical review context.",
+      "recovery_range_percent": null,
+      "measurement_uncertainty_summary": "Measurement uncertainty should be retained where available for official-control review context.",
+      "measurement_uncertainty_percent": null,
+      "storage_stability_summary": "Storage-stability evidence is external to this pack and should be linked separately when available.",
+      "sampling_plan_summary": "Sampling-plan context follows the governed EU official-control regulation and linked EFSA review material.",
+      "sampling_plan_reference": null,
+      "maturity_status": "established",
+      "evidence_support_status": "established",
+      "submission_use": "allowed",
+      "document_status": "final_current",
+      "source_ids": [
+        "eu.reg.333_2007",
+        "efsa.mercury.food.2012",
+        "eu.reg.2023_915"
+      ],
+      "method_ids": [
+        "eu.mercury.official_control.333_2007",
+        "efsa.mercury.food.2012_opinion"
+      ],
+      "legal_authority_ids": [
+        "eu.mercury.official_control.reg_333_2007",
+        "eu.mercury.contaminants.reg_2023_915"
+      ],
+      "reporting_profile_ids": [],
+      "notes": [
+        "Preserves analytical-method context for mercury review and monitoring import checks.",
+        "Dietary MCP does not execute this method; it records its governed review context."
+      ]
+    }
+  ],
+  "overall_submission_use": "allowed",
+  "submission_candidate_allowed": true,
+  "notes": [
+    "Analytical-method evidence is exposed as governed sampling, LOQ, recovery, uncertainty, and official-control context.",
+    "These records preserve validation context and do not imply a native laboratory-method execution engine.",
+    "Analytical-method-evidence record eu.mercury.analytical_method_evidence.official_control: Supporting sources mix historical anchors (efsa.mercury.food.2012) with newer context records (eu.reg.2023_915, eu.reg.333_2007); confirm the older evidence base is still fit for the intended use.",
+    "Analyte filter applied: methylmercury."
+  ]
+}

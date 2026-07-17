@@ -1,0 +1,36 @@
+{
+  "version": "v1",
+  "cases": [
+    {
+      "name": "efsa_primo_oht_preview_review_required",
+      "scenario": "efsa_primo",
+      "targetProfile": "oht_85_iuclid_json_preview",
+      "expectedPreviewStatus": "review_required",
+      "expectedMissingRequiredFields": [],
+      "expectedUnsupportedFieldPaths": [
+        "review_bundle.check_result.input_headers",
+        "review_bundle.check_result.header_resolution",
+        "review_bundle.comparison_result.compared_fields",
+        "review_bundle.comparison_result.matched_fields",
+        "confidentiality_annotations"
+      ]
+    },
+    {
+      "name": "efsa_primo_oht_preview_missing_governance_fail",
+      "scenario": "efsa_primo",
+      "targetProfile": "oht_85_iuclid_json_preview",
+      "omitModelGovernanceSnapshot": true,
+      "expectedPreviewStatus": "fail",
+      "expectedMissingRequiredFields": [
+        "model_governance_snapshot"
+      ],
+      "expectedUnsupportedFieldPaths": [
+        "review_bundle.check_result.input_headers",
+        "review_bundle.check_result.header_resolution",
+        "review_bundle.comparison_result.compared_fields",
+        "review_bundle.comparison_result.matched_fields",
+        "confidentiality_annotations"
+      ]
+    }
+  ]
+}

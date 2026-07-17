@@ -1,0 +1,82 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "model_governance",
+  "families": [
+    {
+      "modelFamily": "reference_dietary",
+      "jurisdictions": ["eu"],
+      "governanceStatus": "internal_reference_only",
+      "submissionAllowed": false,
+      "currentVersionLabel": "dietary-mcp-reference-v0.1",
+      "datasetBasis": "Governed public defaults and illustrative screening assumptions",
+      "sourceIds": [
+        "who.gems.food.cluster_diets.2012",
+        "efsa.default_body_weights.2012"
+      ],
+      "requiredDisclaimers": [
+        "Reference dietary calculations are internal screening support only and are not an official submission engine."
+      ],
+      "errata": []
+    },
+    {
+      "modelFamily": "adapter_stub",
+      "jurisdictions": ["eu"],
+      "governanceStatus": "internal_reference_only",
+      "submissionAllowed": false,
+      "currentVersionLabel": "dietary-mcp-adapter-stub-v0.1",
+      "datasetBasis": "Stub adapter using the native deterministic kernel only",
+      "sourceIds": [
+        "efsa.default_body_weights.2012"
+      ],
+      "requiredDisclaimers": [
+        "Adapter stub outputs are compatibility placeholders and are not regulator-facing submission results."
+      ],
+      "errata": []
+    },
+    {
+      "modelFamily": "efsa_primo_adapter",
+      "jurisdictions": ["eu"],
+      "governanceStatus": "compatibility_harness_only",
+      "submissionAllowed": false,
+      "currentVersionLabel": "primo-3.1-harness",
+      "datasetBasis": "Public compatibility harness using Dietary MCP contracts plus governed public metadata",
+      "sourceIds": [
+        "efsa.primo",
+        "efsa.primo.rev4.report.2024",
+        "efsa.default_body_weights.2012"
+      ],
+      "requiredDisclaimers": [
+        "No claim of official PRIMo engine equivalence, proprietary dataset reproduction, or regulatory endorsement is implied.",
+        "EFSA PRIMo adapter outputs are for internal review or consultation-oriented compatibility checks only."
+      ],
+      "errata": []
+    },
+    {
+      "modelFamily": "epa_deem_adapter",
+      "jurisdictions": ["eu", "us"],
+      "governanceStatus": "compatibility_harness_only",
+      "submissionAllowed": false,
+      "currentVersionLabel": "deem-fcid-4.02-harness",
+      "datasetBasis": "Public compatibility harness using Dietary MCP contracts plus official DEEM metadata",
+      "sourceIds": [
+        "epa.deem.fcid.4_02",
+        "epa.deem.errata"
+      ],
+      "requiredDisclaimers": [
+        "No claim of official DEEM engine equivalence, proprietary dataset reproduction, or regulatory endorsement is implied.",
+        "EPA DEEM adapter outputs are for compatibility review only and are not official submission calculations."
+      ],
+      "errata": [
+        {
+          "erratumId": "epa_deem_official_errata_list_present",
+          "title": "Official DEEM errata list is published separately",
+          "description": "EPA maintains DEEM errata outside the installer package; compatibility review should consider that errata may affect the official engine independently of the Dietary MCP harness.",
+          "active": true,
+          "blocking": false,
+          "sourceId": "epa.deem.errata",
+          "url": "https://www.epa.gov/pesticide-science-and-assessing-pesticide-risks/dietary-exposure-evaluation-model-deem-errata-list"
+        }
+      ]
+    }
+  ]
+}

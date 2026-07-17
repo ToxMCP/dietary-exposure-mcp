@@ -1,0 +1,80 @@
+{
+  "casePackId": "endosulfan_public_slice_v1",
+  "lockedOn": "2026-06-01",
+  "purpose": "PESS-style Dietary Exposure MCP demonstration for Endosulfan using public source anchors, governed EFSA OpenFoodTox reference values, and illustrative screening residue inputs.",
+  "sourceAnchors": [
+    {
+      "sourceId": "pess.2026.ecoenvsafety.120201",
+      "title": "Modeling external exposure to pesticides in human populations: Developing an exposure scenario generator",
+      "url": "https://doi.org/10.1016/j.ecoenv.2026.120201",
+      "retrievedAt": "2026-06-01T00:00:00Z",
+      "casePackReviewedAt": "2026-06-01T00:00:00Z",
+      "publisherLastReviewed": null,
+      "retrievalMethod": "manual_web_review",
+      "observedUse": "PESS head-to-head comparison anchor for the dietary module.",
+      "lockedFacts": [
+        "PESS demonstrates endosulfan, mancozeb, and glyphosate dietary exposure.",
+        "EFSA OpenFoodTox records an endosulfan ADI of 6.0 ug/kg bw/day (EFSA CONTAM, 2005) and an ARfD of 0.015 mg/kg bw/day (EFSA PPR, 2012).",
+        "EU MRLs for endosulfan are set at or near the analytical limit of quantification."
+      ]
+    },
+    {
+      "sourceId": "efsa.openfoodtox.3",
+      "title": "EFSA Chemical Hazards Database - OpenFoodTox",
+      "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+      "retrievedAt": "2026-06-01T00:00:00Z",
+      "casePackReviewedAt": "2026-06-01T00:00:00Z",
+      "publisherLastReviewed": null,
+      "retrievalMethod": "manual_web_review",
+      "observedUse": "Governed toxicological reference values (ADI/ARfD) used for health-reference context.",
+      "lockedFacts": [
+        "OpenFoodTox record efsa.openfoodtox.endosulfan.adi.65 provides the ADI used here.",
+        "OpenFoodTox record efsa.openfoodtox.endosulfan.arfd.775 provides the ARfD."
+      ]
+    },
+    {
+      "sourceId": "ec.eu_mrl_legislation",
+      "title": "EU legislation on pesticide maximum residue levels",
+      "url": "https://food.ec.europa.eu/plants/pesticides/maximum-residue-levels/eu-legislation-mrls_en",
+      "retrievedAt": "2026-06-01T00:00:00Z",
+      "casePackReviewedAt": "2026-06-01T00:00:00Z",
+      "publisherLastReviewed": null,
+      "retrievalMethod": "manual_web_review",
+      "observedUse": "MRL-band context anchor for the illustrative screening residue inputs.",
+      "lockedFacts": [
+        "Endosulfan is an organochlorine insecticide whose EU approval lapsed; EU MRLs sit at or near the analytical LOQ band (~0.01-0.05 mg/kg)."
+      ]
+    },
+    {
+      "sourceId": "ec.eu_pesticides_database",
+      "title": "EU Pesticides Database",
+      "url": "https://food.ec.europa.eu/plants/pesticides/eu-pesticides-database_en",
+      "retrievedAt": "2026-06-01T00:00:00Z",
+      "casePackReviewedAt": "2026-06-01T00:00:00Z",
+      "publisherLastReviewed": null,
+      "retrievalMethod": "manual_web_review",
+      "observedUse": "Public source anchor for EU active-substance and MRL lookup context.",
+      "lockedFacts": []
+    }
+  ],
+  "screeningInputPosture": {
+    "residueValues": "Illustrative regulatory-screening inputs within the observed EU MRL band; not row-level EFSA monitoring records.",
+    "referenceValues": "REAL governed EFSA OpenFoodTox values (ADI 0.006 mg/kg bw/day; ARfD 0.015 mg/kg bw/day).",
+    "matrixSemantics": {
+      "submittedCommodityCode": "apple_juice",
+      "canonicalCommodityCode": "apples",
+      "residueMatrix": "raw_primary_commodity",
+      "consumptionMatrix": "processed_derivative",
+      "processingFactorDirection": "raw_residue_to_processed_food",
+      "consumptionValueBasis": "governed_apples_profile_used_as_processed_derivative_proxy",
+      "consumptionProxy": true
+    },
+    "reviewStatus": "schema_reviewed_not_source_validated",
+    "chemicalIdentityNote": "DTXSID not locked in this public slice; preferredName + CASRN provided."
+  },
+  "nonClaims": [
+    "No EFSA PRIMo, DEEM, or PESS engine execution is claimed.",
+    "No official equivalence to EFSA monitoring datasets or dashboards is claimed.",
+    "No legal clearance, final regulatory decision, trade clearance, or PBPK internal-dose simulation is claimed."
+  ]
+}

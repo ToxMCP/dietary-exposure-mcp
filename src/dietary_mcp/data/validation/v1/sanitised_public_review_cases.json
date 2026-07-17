@@ -1,0 +1,86 @@
+{
+  "version": "v1",
+  "cases": [
+    {
+      "name": "efsa_primo_internal_dossier_to_sanitised_public",
+      "scenario": "efsa_primo",
+      "expectedBundleProfile": "sanitised_public",
+      "expectedSourceWorkflow": "adapter_review_dossier",
+      "expectedRemovedResourceRoles": [
+        "release_metadata_report"
+      ],
+      "expectedRedactedFieldPaths": [
+        "check_result.chemical_identity",
+        "check_result.declared_totals"
+      ]
+    },
+    {
+      "name": "epa_deem_internal_dossier_to_sanitised_public",
+      "scenario": "epa_deem",
+      "expectedBundleProfile": "sanitised_public",
+      "expectedSourceWorkflow": "adapter_review_dossier",
+      "expectedRemovedResourceRoles": [
+        "release_metadata_report"
+      ],
+      "expectedRedactedFieldPaths": [
+        "check_result.chemical_identity",
+        "check_result.declared_totals"
+      ]
+    },
+    {
+      "name": "mercury_contaminant_internal_dossier_to_sanitised_public",
+      "scenario": "mercury_contaminant",
+      "expectedBundleProfile": "sanitised_public",
+      "expectedSourceWorkflow": "contaminant_monitoring_review_dossier",
+      "expectedRemovedResourceRoles": [
+        "release_metadata_report"
+      ],
+      "expectedRedactedFieldPaths": [],
+      "expectedLegalLimitReviewCount": 3,
+      "expectedEscalationRequired": false
+    },
+    {
+      "name": "mercury_metals_internal_dossier_to_sanitised_public",
+      "scenario": "mercury_metals",
+      "expectedBundleProfile": "sanitised_public",
+      "expectedSourceWorkflow": "metals_monitoring_review_dossier",
+      "expectedRemovedResourceRoles": [
+        "release_metadata_report"
+      ],
+      "expectedRedactedFieldPaths": [],
+      "expectedLegalLimitReviewCount": 1,
+      "expectedEscalationRequired": false
+    },
+    {
+      "name": "glyphosate_trade_risk_review_dossier_to_sanitised_public",
+      "scenario": "trade_risk_glyphosate",
+      "expectedBundleProfile": "sanitised_public",
+      "expectedSourceWorkflow": "trade_risk_review_dossier",
+      "expectedRemovedResourceRoles": [
+        "mrl_enforcement_substance_lane",
+        "reference_value_substance_lane",
+        "release_metadata_report"
+      ],
+      "expectedRedactedFieldPaths": [
+        "review_bundle.trade_report.chemical_identity",
+        "review_bundle.trade_report.resolved_substance_key"
+      ],
+      "expectedLegalLimitReviewCount": 0,
+      "expectedEscalationRequired": false
+    },
+    {
+      "name": "mercury_owner_signoff_dossier_to_sanitised_public",
+      "scenario": "scientific_follow_up_owner_signoff_mercury_waiver",
+      "expectedBundleProfile": "sanitised_public",
+      "expectedSourceWorkflow": "scientific_follow_up_owner_signoff_dossier",
+      "expectedRemovedResourceRoles": [
+        "owner_signoff_packet_payload",
+        "release_metadata_report",
+        "source_dossier_payload"
+      ],
+      "expectedRedactedFieldPaths": [],
+      "expectedLegalLimitReviewCount": 3,
+      "expectedEscalationRequired": true
+    }
+  ]
+}

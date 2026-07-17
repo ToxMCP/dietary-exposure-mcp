@@ -1,0 +1,158 @@
+{
+  "$defs": {
+    "ResidueUncertaintyDistribution": {
+      "enum": [
+        "point",
+        "empirical",
+        "uniform",
+        "triangular",
+        "lognormal",
+        "censored_lognormal"
+      ],
+      "title": "ResidueUncertaintyDistribution",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "commodityCode": {
+      "title": "Commoditycode",
+      "type": "string"
+    },
+    "distribution": {
+      "$ref": "#/$defs/ResidueUncertaintyDistribution"
+    },
+    "pointMgPerKg": {
+      "anyOf": [
+        {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Pointmgperkg"
+    },
+    "empiricalValuesMgPerKg": {
+      "items": {
+        "type": "number"
+      },
+      "maxItems": 10000,
+      "minItems": 0,
+      "title": "Empiricalvaluesmgperkg",
+      "type": "array"
+    },
+    "minMgPerKg": {
+      "anyOf": [
+        {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Minmgperkg"
+    },
+    "modeMgPerKg": {
+      "anyOf": [
+        {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Modemgperkg"
+    },
+    "maxMgPerKg": {
+      "anyOf": [
+        {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Maxmgperkg"
+    },
+    "geometricMeanMgPerKg": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0.0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Geometricmeanmgperkg"
+    },
+    "geometricSd": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 1.0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Geometricsd"
+    },
+    "lodMgPerKg": {
+      "anyOf": [
+        {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Lodmgperkg"
+    },
+    "loqMgPerKg": {
+      "anyOf": [
+        {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Loqmgperkg"
+    },
+    "processingFactorCv": {
+      "anyOf": [
+        {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Processingfactorcv"
+    }
+  },
+  "required": [
+    "commodityCode",
+    "distribution"
+  ],
+  "title": "ResidueUncertaintyModel",
+  "type": "object"
+}

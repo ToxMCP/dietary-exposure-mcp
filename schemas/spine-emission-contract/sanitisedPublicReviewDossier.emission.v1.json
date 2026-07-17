@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.ngra.ai/dietary-exposure/emission/sanitisedPublicReviewDossier.v1.json",
+  "title": "sanitisedPublicReviewDossier (producer strict emission contract)",
+  "description": "Tightened additionalProperties:false mirror of the real DietaryRuntime.export_sanitised_public_review_dossier emission (by_alias=True). PUBLIC-release artifact: notes[]/limitations[] and the embedded publicReviewBundle.notes are the highest-stakes overclaim surface and are deep-scanned. notes[]/limitations[] are constrained.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "derivedFromDossierId",
+    "publicReviewBundle"
+  ],
+  "properties": {
+    "bundleProfile": {
+      "type": "string"
+    },
+    "derivedFromDossierId": {
+      "type": "string"
+    },
+    "dossier_id": {
+      "type": "string"
+    },
+    "dossier_status": {
+      "type": "string"
+    },
+    "emergingContaminantSnapshot": {
+      "type": "object"
+    },
+    "escalationActionIds": {
+      "type": "array"
+    },
+    "escalationRequired": {
+      "type": "boolean"
+    },
+    "legalLimitReviews": {
+      "type": "array"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "message"
+        ],
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "modelGovernanceSnapshot": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pinnedResources": {
+      "type": "array"
+    },
+    "publicReviewBundle": {
+      "type": "object"
+    },
+    "release_metadata": {
+      "type": "object"
+    },
+    "sanitisationRecords": {
+      "type": "array"
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "sourceGovernanceSnapshot": {
+      "type": "array"
+    },
+    "sourceWorkflow": {
+      "type": "string"
+    }
+  }
+}

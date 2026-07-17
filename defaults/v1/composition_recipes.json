@@ -1,0 +1,24 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "composition_recipes",
+  "records": [
+    {
+      "recipeId": "dietary.recipe.apple_pie",
+      "compositeCommodityCode": "apple_pie",
+      "components": [
+        {
+          "commodityCode": "apples",
+          "proportion": 0.5
+        },
+        {
+          "commodityCode": "wheat",
+          "proportion": 0.5
+        }
+      ],
+      "sourceIds": [],
+      "notes": [
+        "Illustrative composite recipe for apple pie."
+      ]
+    }
+  ]
+}

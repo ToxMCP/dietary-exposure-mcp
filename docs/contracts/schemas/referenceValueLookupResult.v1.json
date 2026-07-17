@@ -1,0 +1,555 @@
+{
+  "$defs": {
+    "AuthorityRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "authorityId": {
+          "title": "Authorityid",
+          "type": "string"
+        },
+        "authority": {
+          "title": "Authority",
+          "type": "string"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "contaminantFamily": {
+          "$ref": "#/$defs/ContaminantFamily"
+        },
+        "sourceIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sourceids",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "authorityId",
+        "authority",
+        "jurisdiction",
+        "contaminantFamily"
+      ],
+      "title": "AuthorityRecord",
+      "type": "object"
+    },
+    "ContaminantFamily": {
+      "enum": [
+        "pesticide_residue",
+        "microplastics_emerging",
+        "pfas_food_contaminants",
+        "acrylamide_process_contaminants",
+        "bisphenol_food_contact_migration",
+        "cadmium_food_contaminants",
+        "lead_food_contaminants",
+        "inorganic_arsenic_food_contaminants",
+        "mercury_food_contaminants",
+        "food_contaminant"
+      ],
+      "title": "ContaminantFamily",
+      "type": "string"
+    },
+    "DocumentStatus": {
+      "enum": [
+        "final_current",
+        "superseded",
+        "draft",
+        "consultation",
+        "tool_metadata",
+        "dataset_current"
+      ],
+      "title": "DocumentStatus",
+      "type": "string"
+    },
+    "JurisdictionCoverageLevel": {
+      "enum": [
+        "deep_curated",
+        "anchor_only",
+        "explicit_gap"
+      ],
+      "title": "JurisdictionCoverageLevel",
+      "type": "string"
+    },
+    "JurisdictionCoverageRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "coverageId": {
+          "title": "Coverageid",
+          "type": "string"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "contaminantFamily": {
+          "$ref": "#/$defs/ContaminantFamily"
+        },
+        "substanceKey": {
+          "title": "Substancekey",
+          "type": "string"
+        },
+        "coverageLevel": {
+          "$ref": "#/$defs/JurisdictionCoverageLevel"
+        },
+        "officialSourceIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Officialsourceids",
+          "type": "array"
+        },
+        "legalAuthorityIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Legalauthorityids",
+          "type": "array"
+        },
+        "referenceValueRecordIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Referencevaluerecordids",
+          "type": "array"
+        },
+        "enforcementRecordIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Enforcementrecordids",
+          "type": "array"
+        },
+        "legalLimitRecordIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Legallimitrecordids",
+          "type": "array"
+        },
+        "currencyMetadataComplete": {
+          "title": "Currencymetadatacomplete",
+          "type": "boolean"
+        },
+        "gapReason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Gapreason"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "coverageId",
+        "jurisdiction",
+        "contaminantFamily",
+        "substanceKey",
+        "coverageLevel",
+        "currencyMetadataComplete"
+      ],
+      "title": "JurisdictionCoverageRecord",
+      "type": "object"
+    },
+    "QualityFlag": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "severity": {
+          "$ref": "#/$defs/Severity"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "severity",
+        "message"
+      ],
+      "title": "QualityFlag",
+      "type": "object"
+    },
+    "ReferenceValueJurisdictionStatus": {
+      "enum": [
+        "exact_jurisdiction_value_present",
+        "jurisdiction_value_exists_but_filter_unmatched",
+        "family_curated_without_reference_value",
+        "anchor_only_family",
+        "explicit_gap",
+        "no_curated_family_coverage",
+        "unscoped_lookup"
+      ],
+      "title": "ReferenceValueJurisdictionStatus",
+      "type": "string"
+    },
+    "ReferenceValueRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "recordId": {
+          "title": "Recordid",
+          "type": "string"
+        },
+        "substanceKey": {
+          "title": "Substancekey",
+          "type": "string"
+        },
+        "substanceName": {
+          "title": "Substancename",
+          "type": "string"
+        },
+        "referenceType": {
+          "title": "Referencetype",
+          "type": "string"
+        },
+        "authority": {
+          "title": "Authority",
+          "type": "string"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "contaminantFamily": {
+          "$ref": "#/$defs/ContaminantFamily"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        },
+        "qualifier": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Qualifier"
+        },
+        "assessmentLabel": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Assessmentlabel"
+        },
+        "assessmentYear": {
+          "anyOf": [
+            {
+              "maximum": 2100,
+              "minimum": 1900,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Assessmentyear"
+        },
+        "population": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Population"
+        },
+        "sourceOutputId": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sourceoutputid"
+        },
+        "sourceIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sourceids",
+          "type": "array"
+        },
+        "primarySourceId": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Primarysourceid"
+        },
+        "databaseSourceId": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Databasesourceid"
+        },
+        "conflictGroupId": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Conflictgroupid"
+        },
+        "documentStatus": {
+          "$ref": "#/$defs/DocumentStatus"
+        },
+        "submissionUse": {
+          "$ref": "#/$defs/SubmissionUse"
+        },
+        "effectiveDate": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Effectivedate"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "recordId",
+        "substanceKey",
+        "substanceName",
+        "referenceType",
+        "authority",
+        "jurisdiction",
+        "contaminantFamily",
+        "sourceIds",
+        "documentStatus",
+        "submissionUse"
+      ],
+      "title": "ReferenceValueRecord",
+      "type": "object"
+    },
+    "Severity": {
+      "enum": [
+        "info",
+        "warning",
+        "error"
+      ],
+      "title": "Severity",
+      "type": "string"
+    },
+    "SourceConflictGroup": {
+      "additionalProperties": false,
+      "properties": {
+        "conflictGroupId": {
+          "title": "Conflictgroupid",
+          "type": "string"
+        },
+        "substanceKey": {
+          "title": "Substancekey",
+          "type": "string"
+        },
+        "contaminantFamily": {
+          "$ref": "#/$defs/ContaminantFamily"
+        },
+        "recordIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Recordids",
+          "type": "array"
+        },
+        "authorities": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Authorities",
+          "type": "array"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Note"
+        }
+      },
+      "required": [
+        "conflictGroupId",
+        "substanceKey",
+        "contaminantFamily"
+      ],
+      "title": "SourceConflictGroup",
+      "type": "object"
+    },
+    "SubmissionUse": {
+      "enum": [
+        "allowed",
+        "review_required",
+        "not_allowed"
+      ],
+      "title": "SubmissionUse",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "substanceKey": {
+      "title": "Substancekey",
+      "type": "string"
+    },
+    "contaminantFamily": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ContaminantFamily"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "requestedJurisdictionStatus": {
+      "$ref": "#/$defs/ReferenceValueJurisdictionStatus",
+      "default": "unscoped_lookup"
+    },
+    "curatedSupportTypes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Curatedsupporttypes",
+      "type": "array"
+    },
+    "authorities": {
+      "items": {
+        "$ref": "#/$defs/AuthorityRecord"
+      },
+      "title": "Authorities",
+      "type": "array"
+    },
+    "matchedRecords": {
+      "items": {
+        "$ref": "#/$defs/ReferenceValueRecord"
+      },
+      "title": "Matchedrecords",
+      "type": "array"
+    },
+    "visibleConflicts": {
+      "items": {
+        "$ref": "#/$defs/SourceConflictGroup"
+      },
+      "title": "Visibleconflicts",
+      "type": "array"
+    },
+    "coverageSummaries": {
+      "items": {
+        "$ref": "#/$defs/JurisdictionCoverageRecord"
+      },
+      "title": "Coveragesummaries",
+      "type": "array"
+    },
+    "qualityFlags": {
+      "items": {
+        "$ref": "#/$defs/QualityFlag"
+      },
+      "title": "Qualityflags",
+      "type": "array"
+    },
+    "notes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "substanceKey"
+  ],
+  "title": "ReferenceValueLookupResult",
+  "type": "object"
+}

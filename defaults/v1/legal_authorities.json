@@ -1,0 +1,301 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "legal_authorities",
+  "authorities": [
+    {
+      "authorityId": "eu.pesticide_residues.reg_396_2005",
+      "title": "Regulation (EC) No 396/2005 on maximum residue levels of pesticides",
+      "citation": "Regulation (EC) No 396/2005",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "eu.reg.396_2005",
+      "notes": [
+        "Primary EU legal anchor for pesticide residue limits in food and feed."
+      ]
+    },
+    {
+      "authorityId": "eu.active_substances.reg_283_2013",
+      "title": "Commission Regulation (EU) No 283/2013 on data requirements for active substances",
+      "citation": "Commission Regulation (EU) No 283/2013",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "eu.reg.283_2013",
+      "notes": [
+        "Primary EU legal anchor for active-substance data requirements relevant to pesticide dossiers."
+      ]
+    },
+    {
+      "authorityId": "eu.contaminants.reg_2023_915",
+      "title": "Commission Regulation (EU) 2023/915 on maximum levels for certain contaminants in food",
+      "citation": "Commission Regulation (EU) 2023/915",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pfas_food_contaminants",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "eu.reg.2023_915",
+      "notes": [
+        "Primary EU legal anchor for PFAS maximum levels in certain foodstuffs."
+      ]
+    },
+    {
+      "authorityId": "eu.pfas.monitoring.reco_2022_1431",
+      "title": "Commission Recommendation (EU) 2022/1431 on the monitoring of perfluoroalkyl substances in food",
+      "citation": "Commission Recommendation (EU) 2022/1431",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pfas_food_contaminants",
+      "regulatoryRole": "guidance",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "sourceId": "eu.reco.2022_1431",
+      "notes": [
+        "EU monitoring recommendation retained separately from binding contaminant limits."
+      ]
+    },
+    {
+      "authorityId": "eu.acrylamide.reg_2017_2158",
+      "title": "Commission Regulation (EU) 2017/2158 establishing mitigation measures and benchmark levels for the reduction of the presence of acrylamide in food",
+      "citation": "Commission Regulation (EU) 2017/2158",
+      "jurisdiction": "eu",
+      "contaminantFamily": "acrylamide_process_contaminants",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "eu.reg.2017_2158",
+      "notes": [
+        "Primary EU legal anchor for mitigation measures and benchmark levels related to acrylamide in food."
+      ]
+    },
+    {
+      "authorityId": "eu.acrylamide.monitoring.reco_2019_1888",
+      "title": "Commission Recommendation (EU) 2019/1888 on the monitoring of the presence of acrylamide in certain foods",
+      "citation": "Commission Recommendation (EU) 2019/1888",
+      "jurisdiction": "eu",
+      "contaminantFamily": "acrylamide_process_contaminants",
+      "regulatoryRole": "guidance",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "sourceId": "eu.reco.2019_1888",
+      "notes": [
+        "EU monitoring recommendation retained separately from binding acrylamide mitigation requirements."
+      ]
+    },
+    {
+      "authorityId": "eu.bpa.fcm.reg_2024_3190",
+      "title": "Commission Regulation (EU) 2024/3190 on the use of BPA and other bisphenols in certain materials and articles intended to come into contact with food",
+      "citation": "Commission Regulation (EU) 2024/3190",
+      "jurisdiction": "eu",
+      "contaminantFamily": "bisphenol_food_contact_migration",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "eu.reg.2024_3190",
+      "notes": [
+        "Primary EU legal anchor for BPA and hazardous bisphenol restrictions in certain food-contact materials and articles."
+      ]
+    },
+    {
+      "authorityId": "eu.cadmium.contaminants.reg_2023_915",
+      "title": "Commission Regulation (EU) 2023/915 on maximum levels for certain contaminants in food",
+      "citation": "Commission Regulation (EU) 2023/915",
+      "jurisdiction": "eu",
+      "contaminantFamily": "cadmium_food_contaminants",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "eu.reg.2023_915",
+      "notes": [
+        "Primary EU legal anchor for cadmium maximum levels in certain foodstuffs."
+      ]
+    },
+    {
+      "authorityId": "eu.lead.contaminants.reg_2023_915",
+      "title": "Commission Regulation (EU) 2023/915 on maximum levels for certain contaminants in food",
+      "citation": "Commission Regulation (EU) 2023/915",
+      "jurisdiction": "eu",
+      "contaminantFamily": "lead_food_contaminants",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "eu.reg.2023_915",
+      "notes": [
+        "Primary EU legal anchor for lead maximum levels in certain foodstuffs."
+      ]
+    },
+    {
+      "authorityId": "eu.inorganic_arsenic.contaminants.reg_2025_1891",
+      "title": "Commission Regulation (EU) 2025/1891 amending Regulation (EU) 2023/915 as regards maximum levels of inorganic arsenic in fish and other seafood",
+      "citation": "Commission Regulation (EU) 2025/1891",
+      "jurisdiction": "eu",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "eu.reg.2025_1891",
+      "notes": [
+        "Current specific EU legal anchor for inorganic arsenic maximum levels in fish and other seafood."
+      ]
+    },
+    {
+      "authorityId": "eu.cadmium.official_control.reg_333_2007",
+      "title": "Commission Regulation (EC) No 333/2007 laying down the methods of sampling and analysis for the official control of the levels of trace elements and processing contaminants in foodstuffs",
+      "citation": "Commission Regulation (EC) No 333/2007",
+      "jurisdiction": "eu",
+      "contaminantFamily": "cadmium_food_contaminants",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "eu.reg.333_2007",
+      "notes": [
+        "Shared EU official-control legal anchor for cadmium sampling and analysis in foodstuffs."
+      ]
+    },
+    {
+      "authorityId": "eu.lead.official_control.reg_333_2007",
+      "title": "Commission Regulation (EC) No 333/2007 laying down the methods of sampling and analysis for the official control of the levels of trace elements and processing contaminants in foodstuffs",
+      "citation": "Commission Regulation (EC) No 333/2007",
+      "jurisdiction": "eu",
+      "contaminantFamily": "lead_food_contaminants",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "eu.reg.333_2007",
+      "notes": [
+        "Shared EU official-control legal anchor for lead sampling and analysis in foodstuffs."
+      ]
+    },
+    {
+      "authorityId": "eu.inorganic_arsenic.official_control.reg_333_2007",
+      "title": "Commission Regulation (EC) No 333/2007 laying down the methods of sampling and analysis for the official control of the levels of trace elements and processing contaminants in foodstuffs",
+      "citation": "Commission Regulation (EC) No 333/2007",
+      "jurisdiction": "eu",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "eu.reg.333_2007",
+      "notes": [
+        "Shared EU official-control legal anchor for inorganic arsenic sampling and analysis in foodstuffs."
+      ]
+    },
+    {
+      "authorityId": "eu.mercury.contaminants.reg_2023_915",
+      "title": "Commission Regulation (EU) 2023/915 on maximum levels for certain contaminants in food",
+      "citation": "Commission Regulation (EU) 2023/915",
+      "jurisdiction": "eu",
+      "contaminantFamily": "mercury_food_contaminants",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "eu.reg.2023_915",
+      "notes": [
+        "Primary EU legal anchor for mercury maximum levels in certain foodstuffs."
+      ]
+    },
+    {
+      "authorityId": "eu.mercury.official_control.reg_333_2007",
+      "title": "Commission Regulation (EC) No 333/2007 laying down the methods of sampling and analysis for the official control of the levels of trace elements and processing contaminants in foodstuffs",
+      "citation": "Commission Regulation (EC) No 333/2007",
+      "jurisdiction": "eu",
+      "contaminantFamily": "mercury_food_contaminants",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "eu.reg.333_2007",
+      "notes": [
+        "Shared EU official-control legal anchor for mercury sampling and analysis in foodstuffs."
+      ]
+    },
+    {
+      "authorityId": "us.epa.pesticides.40cfr_part_180",
+      "title": "40 CFR Part 180 - Tolerances and Exemptions for Pesticide Chemical Residues in Food",
+      "citation": "40 CFR Part 180",
+      "jurisdiction": "us",
+      "contaminantFamily": "pesticide_residue",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "us.cfr.40_180",
+      "notes": [
+        "Primary US legal anchor for pesticide tolerances managed by EPA."
+      ]
+    },
+    {
+      "authorityId": "us.fda.action_levels.cpg",
+      "title": "FDA Compliance Policy Guides (CPG) - Action Levels for Poisonous or Deleterious Substances in Human Food and Animal Feed",
+      "citation": "FDA CPG",
+      "jurisdiction": "us",
+      "contaminantFamily": "pfas_food_contaminants",
+      "regulatoryRole": "guidance",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "sourceId": "us.fda.cpg.action_levels",
+      "notes": [
+        "US FDA action-level guidance for evaluating food contaminants.",
+        "Governed explicitly separately from binding EPA tolerances."
+      ]
+    },
+    {
+      "authorityId": "cn.nhc.pesticides.gb_2763",
+      "title": "National Food Safety Standard - Maximum Residue Limits for Pesticides in Food",
+      "citation": "GB 2763",
+      "jurisdiction": "cn",
+      "contaminantFamily": "pesticide_residue",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "cn.gb.2763",
+      "notes": [
+        "Primary Chinese legal anchor for pesticide maximum residue limits."
+      ]
+    },
+    {
+      "authorityId": "cn.nhc.contaminants.gb_2762",
+      "title": "National Food Safety Standard - Maximum Levels of Contaminants in Foods",
+      "citation": "GB 2762",
+      "jurisdiction": "cn",
+      "contaminantFamily": "cadmium_food_contaminants",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "cn.gb.2762",
+      "notes": [
+        "Primary Chinese legal anchor for contaminants such as heavy metals."
+      ]
+    },
+    {
+      "authorityId": "jp.mhlw.food_sanitation_act",
+      "title": "Food Sanitation Act - Specifications and Standards for Foods, Food Additives, etc.",
+      "citation": "Food Sanitation Act",
+      "jurisdiction": "jp",
+      "contaminantFamily": "pesticide_residue",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "jp.mhlw.fsa",
+      "notes": [
+        "Primary Japanese legal anchor for pesticide maximum residue limits managed by MHLW."
+      ]
+    },
+    {
+      "authorityId": "ca.hc.pmra.mrl",
+      "title": "Pest Control Products Act - Maximum Residue Limits for Pesticides",
+      "citation": "PCPA MRL",
+      "jurisdiction": "ca",
+      "contaminantFamily": "pesticide_residue",
+      "regulatoryRole": "binding",
+      "documentStatus": "final_current",
+      "submissionUse": "allowed",
+      "sourceId": "ca.hc.pmra.mrl_database",
+      "notes": [
+        "Primary Canadian legal anchor for pesticide maximum residue limits managed by PMRA."
+      ]
+    }
+  ]
+}

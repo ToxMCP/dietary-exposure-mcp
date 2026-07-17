@@ -1,0 +1,368 @@
+{
+  "cases": [
+    {
+      "name": "mercury_contaminant_monitoring_signoff_open",
+      "request": {
+        "contaminantFamily": "mercury_food_contaminants",
+        "jurisdiction": "eu",
+        "datasetId": "efsa.comprehensive_food_consumption_db.mercury_support",
+        "csvText": "food,contaminant,result,unit,loq,recovery_percent,measurement_uncertainty_percent,sampling_year\nswordfish,methylmercury,0.72,mg/kg,0.01,94,12,2025\nbluefin_tuna,methylmercury,0.55,mg/kg,0.01,92,11,2025\n"
+      },
+      "bundleNote": "Validation case for open contaminant monitoring signoff.",
+      "reviewerId": "validation.contaminant.reviewer",
+      "reviewerRole": "scientific_reviewer",
+      "decisions": [
+        {
+          "actionId": "review_header_resolution_and_quality_flags",
+          "decisionStatus": "completed",
+          "rationale": "Header alias resolution and quality flags were reviewed.",
+          "supportingUris": [
+            "docs://contaminant-monitoring-import"
+          ]
+        },
+        {
+          "actionId": "review_occurrence_evidence_context",
+          "decisionStatus": "completed",
+          "rationale": "Occurrence evidence context was reviewed.",
+          "supportingUris": [
+            "docs://occurrence-evidence-registry"
+          ]
+        },
+        {
+          "actionId": "review_analytical_method_context",
+          "decisionStatus": "completed",
+          "rationale": "Analytical-method context was reviewed.",
+          "supportingUris": [
+            "docs://analytical-method-evidence-registry"
+          ]
+        },
+        {
+          "actionId": "review_linked_focus_records",
+          "decisionStatus": "acknowledged",
+          "rationale": "Linked focus records were triaged and remain open for deeper review.",
+          "supportingUris": [
+            "docs://contaminant-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.row_level_lod_coverage",
+          "decisionStatus": "completed",
+          "rationale": "Row-level LOD coverage gap was reviewed against the governed method context.",
+          "supportingUris": [
+            "docs://contaminant-monitoring-import"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+          "decisionStatus": "completed",
+          "rationale": "Lower-bound handling assumption was reviewed explicitly.",
+          "supportingUris": [
+            "docs://contaminant-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control",
+          "decisionStatus": "completed",
+          "rationale": "Storage-stability context was reviewed explicitly.",
+          "supportingUris": [
+            "docs://analytical-method-evidence-registry"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control",
+          "decisionStatus": "completed",
+          "rationale": "Sampling-plan context was reviewed explicitly.",
+          "supportingUris": [
+            "docs://analytical-method-evidence-registry"
+          ]
+        }
+      ],
+      "expectedOverallSignoffStatus": "open",
+      "expectedActionIds": [
+        "review_header_resolution_and_quality_flags",
+        "review_occurrence_evidence_context",
+        "review_analytical_method_context",
+        "review_linked_focus_records",
+        "review_scientific_ledger.row_level_lod_coverage",
+        "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+        "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control",
+        "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control",
+        "review_governance_links"
+      ],
+      "expectedPendingActionIds": [
+        "review_governance_links"
+      ],
+      "expectedAcknowledgedActionIds": [
+        "review_linked_focus_records"
+      ],
+      "expectedCompletedActionIds": [
+        "review_header_resolution_and_quality_flags",
+        "review_occurrence_evidence_context",
+        "review_analytical_method_context",
+        "review_scientific_ledger.row_level_lod_coverage",
+        "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+        "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control",
+        "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control"
+      ],
+      "expectedWaivedActionIds": [],
+      "expectedUnresolvedBlockingActionIds": [
+        "review_governance_links"
+      ]
+    },
+    {
+      "name": "mercury_contaminant_monitoring_signoff_signed_off_with_waivers",
+      "request": {
+        "contaminantFamily": "mercury_food_contaminants",
+        "jurisdiction": "eu",
+        "datasetId": "efsa.comprehensive_food_consumption_db.mercury_support",
+        "csvText": "food,contaminant,result,unit,loq,recovery_percent,measurement_uncertainty_percent,sampling_year\nswordfish,methylmercury,0.72,mg/kg,0.01,94,12,2025\nbluefin_tuna,methylmercury,0.55,mg/kg,0.01,92,11,2025\n"
+      },
+      "bundleNote": "Validation case for signed-off contaminant monitoring signoff with explicit waiver.",
+      "reviewerId": "validation.contaminant.reviewer",
+      "reviewerRole": "scientific_reviewer",
+      "decisions": [
+        {
+          "actionId": "review_header_resolution_and_quality_flags",
+          "decisionStatus": "completed",
+          "rationale": "Header alias resolution and quality flags were reviewed.",
+          "supportingUris": [
+            "docs://contaminant-monitoring-import"
+          ]
+        },
+        {
+          "actionId": "review_occurrence_evidence_context",
+          "decisionStatus": "completed",
+          "rationale": "Occurrence evidence context was reviewed.",
+          "supportingUris": [
+            "docs://occurrence-evidence-registry"
+          ]
+        },
+        {
+          "actionId": "review_analytical_method_context",
+          "decisionStatus": "completed",
+          "rationale": "Analytical-method context was reviewed.",
+          "supportingUris": [
+            "docs://analytical-method-evidence-registry"
+          ]
+        },
+        {
+          "actionId": "review_linked_focus_records",
+          "decisionStatus": "completed",
+          "rationale": "Linked review-focus records were reviewed.",
+          "supportingUris": [
+            "docs://contaminant-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.row_level_lod_coverage",
+          "decisionStatus": "completed",
+          "rationale": "Row-level LOD coverage gap was reviewed against the governed method context.",
+          "supportingUris": [
+            "docs://contaminant-monitoring-import"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+          "decisionStatus": "waived",
+          "rationale": "Lower-bound handling assumption remains explicit as a controlled reviewer waiver.",
+          "supportingUris": [
+            "docs://contaminant-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control",
+          "decisionStatus": "completed",
+          "rationale": "Storage-stability context was reviewed explicitly.",
+          "supportingUris": [
+            "docs://analytical-method-evidence-registry"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control",
+          "decisionStatus": "completed",
+          "rationale": "Sampling-plan context was reviewed explicitly.",
+          "supportingUris": [
+            "docs://analytical-method-evidence-registry"
+          ]
+        },
+        {
+          "actionId": "review_governance_links",
+          "decisionStatus": "completed",
+          "rationale": "Governance links were reviewed.",
+          "supportingUris": [
+            "docs://regulatory-source-databases"
+          ]
+        }
+      ],
+      "expectedOverallSignoffStatus": "signed_off_with_waivers",
+      "expectedActionIds": [
+        "review_header_resolution_and_quality_flags",
+        "review_occurrence_evidence_context",
+        "review_analytical_method_context",
+        "review_linked_focus_records",
+        "review_scientific_ledger.row_level_lod_coverage",
+        "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context",
+        "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control",
+        "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control",
+        "review_governance_links"
+      ],
+      "expectedPendingActionIds": [],
+      "expectedAcknowledgedActionIds": [],
+      "expectedCompletedActionIds": [
+        "review_header_resolution_and_quality_flags",
+        "review_occurrence_evidence_context",
+        "review_analytical_method_context",
+        "review_linked_focus_records",
+        "review_scientific_ledger.row_level_lod_coverage",
+        "review_scientific_ledger.storage_stability.eu.mercury.analytical_method_evidence.official_control",
+        "review_scientific_ledger.sampling_plan.eu.mercury.analytical_method_evidence.official_control",
+        "review_governance_links"
+      ],
+      "expectedWaivedActionIds": [
+        "review_scientific_ledger.lower_bound_handling.eu.mercury.occurrence_evidence.official_monitoring_context"
+      ],
+      "expectedUnresolvedBlockingActionIds": []
+    },
+    {
+      "name": "inorganic_arsenic_contaminant_monitoring_signoff_open_with_blocking_acknowledged",
+      "request": {
+        "contaminantFamily": "inorganic_arsenic_food_contaminants",
+        "jurisdiction": "eu",
+        "occurrenceEvidenceRecordIds": [
+          "eu.inorganic_arsenic.occurrence_evidence.official_monitoring_context"
+        ],
+        "analyticalMethodEvidenceRecordIds": [
+          "eu.inorganic_arsenic.analytical_method_evidence.official_control"
+        ],
+        "csvText": "matrix,analyte,concentration,concentration_unit,loq,year\nrice,inorganic_arsenic,0.12,mg/kg,0.005,2024\nrice_based_infant_foods,inorganic_arsenic,0.08,mg/kg,0.005,2024\n"
+      },
+      "bundleNote": "Validation case for inorganic arsenic contaminant monitoring signoff.",
+      "reviewerId": "validation.contaminant.reviewer",
+      "reviewerRole": "scientific_reviewer",
+      "decisions": [
+        {
+          "actionId": "review_header_resolution_and_quality_flags",
+          "decisionStatus": "completed",
+          "rationale": "Header alias resolution and quality flags were reviewed.",
+          "supportingUris": [
+            "docs://contaminant-monitoring-import"
+          ]
+        },
+        {
+          "actionId": "review_occurrence_evidence_context",
+          "decisionStatus": "completed",
+          "rationale": "Occurrence evidence context was reviewed.",
+          "supportingUris": [
+            "docs://occurrence-evidence-registry"
+          ]
+        },
+        {
+          "actionId": "review_analytical_method_context",
+          "decisionStatus": "completed",
+          "rationale": "Analytical-method context was reviewed.",
+          "supportingUris": [
+            "docs://analytical-method-evidence-registry"
+          ]
+        },
+        {
+          "actionId": "review_linked_focus_records",
+          "decisionStatus": "completed",
+          "rationale": "Linked review-focus records were reviewed.",
+          "supportingUris": [
+            "docs://contaminant-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.row_level_lod_coverage",
+          "decisionStatus": "completed",
+          "rationale": "Row-level LOD coverage gap was reviewed against the governed method context.",
+          "supportingUris": [
+            "docs://contaminant-monitoring-import"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.row_level_recovery_percent_coverage",
+          "decisionStatus": "completed",
+          "rationale": "Recovery coverage gap was reviewed against the governed method context.",
+          "supportingUris": [
+            "docs://contaminant-monitoring-import"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.row_level_measurement_uncertainty_percent_coverage",
+          "decisionStatus": "completed",
+          "rationale": "Measurement-uncertainty coverage gap was reviewed against the governed method context.",
+          "supportingUris": [
+            "docs://contaminant-monitoring-import"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.lower_bound_handling.eu.inorganic_arsenic.occurrence_evidence.official_monitoring_context",
+          "decisionStatus": "completed",
+          "rationale": "Lower-bound handling assumption was reviewed explicitly.",
+          "supportingUris": [
+            "docs://contaminant-monitoring-interpretation"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.storage_stability.eu.inorganic_arsenic.analytical_method_evidence.official_control",
+          "decisionStatus": "completed",
+          "rationale": "Storage-stability context was reviewed explicitly.",
+          "supportingUris": [
+            "docs://analytical-method-evidence-registry"
+          ]
+        },
+        {
+          "actionId": "review_scientific_ledger.sampling_plan.eu.inorganic_arsenic.analytical_method_evidence.official_control",
+          "decisionStatus": "completed",
+          "rationale": "Sampling-plan context was reviewed explicitly.",
+          "supportingUris": [
+            "docs://analytical-method-evidence-registry"
+          ]
+        },
+        {
+          "actionId": "review_governance_links",
+          "decisionStatus": "acknowledged",
+          "rationale": "Governance links were reviewed but remain open pending secondary legal review.",
+          "supportingUris": [
+            "docs://regulatory-source-databases"
+          ]
+        }
+      ],
+      "expectedOverallSignoffStatus": "open",
+      "expectedActionIds": [
+        "review_header_resolution_and_quality_flags",
+        "review_occurrence_evidence_context",
+        "review_analytical_method_context",
+        "review_linked_focus_records",
+        "review_scientific_ledger.row_level_lod_coverage",
+        "review_scientific_ledger.row_level_recovery_percent_coverage",
+        "review_scientific_ledger.row_level_measurement_uncertainty_percent_coverage",
+        "review_scientific_ledger.lower_bound_handling.eu.inorganic_arsenic.occurrence_evidence.official_monitoring_context",
+        "review_scientific_ledger.storage_stability.eu.inorganic_arsenic.analytical_method_evidence.official_control",
+        "review_scientific_ledger.sampling_plan.eu.inorganic_arsenic.analytical_method_evidence.official_control",
+        "review_governance_links"
+      ],
+      "expectedPendingActionIds": [],
+      "expectedAcknowledgedActionIds": [
+        "review_governance_links"
+      ],
+      "expectedCompletedActionIds": [
+        "review_header_resolution_and_quality_flags",
+        "review_occurrence_evidence_context",
+        "review_analytical_method_context",
+        "review_linked_focus_records",
+        "review_scientific_ledger.row_level_lod_coverage",
+        "review_scientific_ledger.row_level_recovery_percent_coverage",
+        "review_scientific_ledger.row_level_measurement_uncertainty_percent_coverage",
+        "review_scientific_ledger.lower_bound_handling.eu.inorganic_arsenic.occurrence_evidence.official_monitoring_context",
+        "review_scientific_ledger.storage_stability.eu.inorganic_arsenic.analytical_method_evidence.official_control",
+        "review_scientific_ledger.sampling_plan.eu.inorganic_arsenic.analytical_method_evidence.official_control"
+      ],
+      "expectedWaivedActionIds": [],
+      "expectedUnresolvedBlockingActionIds": [
+        "review_governance_links"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1699 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "source_catalog",
+  "sources": [
+    {
+      "sourceId": "dietary.profile.eu_adult_general",
+      "title": "Illustrative EU adult dietary screening profile",
+      "organization": "Dietary MCP",
+      "kind": "curated_profile_metadata",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2026-04-13",
+      "url": "docs://population-profile-guide",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Illustrative curated adult screening profile distributed with Dietary MCP defaults.",
+        "Expanded illustrative screening pack covers thirteen canonical commodity codes.",
+        "Suitable for internal screening and review-support workflows, not as a proprietary survey replacement.",
+        "Project-maintained illustrative placeholder; not an externally governed survey pack."
+      ]
+    },
+    {
+      "sourceId": "dietary.profile.eu_child_1_6",
+      "title": "Illustrative EU child dietary screening profile",
+      "organization": "Dietary MCP",
+      "kind": "curated_profile_metadata",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2026-04-13",
+      "url": "docs://population-profile-guide",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Illustrative curated child screening profile distributed with Dietary MCP defaults.",
+        "Expanded illustrative screening pack covers thirteen canonical commodity codes.",
+        "Use reviewed regional survey packs for regulator-facing decisions.",
+        "Project-maintained illustrative placeholder; not an externally governed survey pack."
+      ]
+    },
+    {
+      "sourceId": "dietary.profile.eu_adolescent_11_17",
+      "title": "Illustrative EU adolescent dietary screening profile",
+      "organization": "Dietary MCP",
+      "kind": "curated_profile_metadata",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2026-04-13",
+      "url": "docs://population-profile-guide",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Illustrative curated adolescent screening profile distributed with Dietary MCP defaults.",
+        "Expanded illustrative screening pack covers thirteen canonical commodity codes.",
+        "Use reviewed regional survey packs for regulator-facing decisions.",
+        "Project-maintained illustrative placeholder; not an externally governed survey pack."
+      ]
+    },
+    {
+      "sourceId": "dietary.profile.eu_older_adult_65_plus",
+      "title": "Illustrative EU older-adult dietary screening profile",
+      "organization": "Dietary MCP",
+      "kind": "curated_profile_metadata",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2026-04-13",
+      "url": "docs://population-profile-guide",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Illustrative curated older-adult screening profile distributed with Dietary MCP defaults.",
+        "Expanded illustrative screening pack covers thirteen canonical commodity codes.",
+        "Use reviewed regional survey packs for regulator-facing decisions.",
+        "Project-maintained illustrative placeholder; not an externally governed survey pack."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.apples",
+      "title": "Dietary MCP commodity taxonomy entry for apples",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for apples."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.oranges",
+      "title": "Dietary MCP commodity taxonomy entry for oranges",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for oranges."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.spinach",
+      "title": "Dietary MCP commodity taxonomy entry for spinach",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for spinach."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.tomatoes",
+      "title": "Dietary MCP commodity taxonomy entry for tomatoes",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for tomatoes."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.potatoes",
+      "title": "Dietary MCP commodity taxonomy entry for potatoes",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for potatoes."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.rice",
+      "title": "Dietary MCP commodity taxonomy entry for rice",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for rice."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.wheat",
+      "title": "Dietary MCP commodity taxonomy entry for wheat",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for wheat."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.milk",
+      "title": "Dietary MCP commodity taxonomy entry for milk",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for milk."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.chicken",
+      "title": "Dietary MCP commodity taxonomy entry for chicken",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for chicken."
+      ]
+    },
+    {
+      "sourceId": "dietary.taxonomy.salmon",
+      "title": "Dietary MCP commodity taxonomy entry for salmon",
+      "organization": "Dietary MCP",
+      "kind": "curated_taxonomy_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "defaults://manifest",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Governed taxonomy provenance entry for salmon."
+      ]
+    },
+    {
+      "sourceId": "dietary.food_vocab.crosswalk",
+      "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+      "organization": "Dietary MCP",
+      "kind": "curated_food_vocabulary_metadata",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2026-04-10",
+      "url": "docs://food-vocabulary-crosswalk",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Illustrative provisional crosswalk from current Dietary MCP canonical commodities to FoodEx2-like, RPC-like, and RPCD-like identifiers.",
+        "Codes in this pack are not official EFSA FoodEx2 or RPC/RPCD identifiers and are published for workflow-hardening and field-shape validation only."
+      ]
+    },
+    {
+      "sourceId": "dietary.food_vocab.processed.apple_juice",
+      "title": "Dietary MCP processed commodity mapping for apple juice",
+      "organization": "Dietary MCP",
+      "kind": "curated_food_vocabulary_metadata",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2026-04-10",
+      "url": "docs://food-vocabulary-crosswalk",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Illustrative processed-commodity linkage from apples to apple juice with a provisional processing-factor recommendation."
+      ]
+    },
+    {
+      "sourceId": "dietary.food_vocab.processed.frozen_spinach",
+      "title": "Dietary MCP processed commodity mapping for frozen spinach",
+      "organization": "Dietary MCP",
+      "kind": "curated_food_vocabulary_metadata",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2026-04-10",
+      "url": "docs://food-vocabulary-crosswalk",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Illustrative processed-commodity linkage from spinach to frozen spinach."
+      ]
+    },
+    {
+      "sourceId": "dietary.food_vocab.processed.cooked_rice",
+      "title": "Dietary MCP processed commodity mapping for cooked rice",
+      "organization": "Dietary MCP",
+      "kind": "curated_food_vocabulary_metadata",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2026-04-10",
+      "url": "docs://food-vocabulary-crosswalk",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Illustrative processed-commodity linkage from rice to cooked rice."
+      ]
+    },
+    {
+      "sourceId": "dietary.food_vocab.processed.yogurt",
+      "title": "Dietary MCP processed commodity mapping for yogurt",
+      "organization": "Dietary MCP",
+      "kind": "curated_food_vocabulary_metadata",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2026-04-10",
+      "url": "docs://food-vocabulary-crosswalk",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Illustrative processed-commodity linkage from milk to yogurt."
+      ]
+    },
+    {
+      "sourceId": "who.gems.food.cluster_diets.2012",
+      "title": "WHO GEMS/Food Cluster Diets 2012 public dataset",
+      "organization": "WHO",
+      "kind": "official_public_dataset",
+      "jurisdiction": "global",
+      "documentStatus": "dataset_current",
+      "regulatoryRole": "dataset",
+      "effectiveDate": null,
+      "url": "https://cdn.who.int/media/docs/default-source/food-safety/gems-food/gems-food-cluster-diets-2012-consumption.xls?sfvrsn=fc263737_6",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Public chronic model-diet dataset with 17 supra-national clusters.",
+        "Used in Dietary MCP as a public seed source for chronic general-population profiles."
+      ]
+    },
+    {
+      "sourceId": "efsa.primo",
+      "title": "EFSA PRIMo pesticide residue intake model tools page",
+      "organization": "EFSA",
+      "kind": "official_model_metadata",
+      "jurisdiction": "eu",
+      "documentStatus": "tool_metadata",
+      "regulatoryRole": "software_metadata",
+      "effectiveDate": null,
+      "url": "https://www.efsa.europa.eu/en/applications/pesticides/tools",
+      "submissionUse": "not_allowed",
+      "normativeFor": [
+        "efsa_primo_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Used as model-family metadata for PRIMo-aligned adapter boundaries.",
+        "EFSA notes that PRIMo revision 3.1 remains the current version for MRL applications until formal endorsement of revision 4 in 2026."
+      ]
+    },
+    {
+      "sourceId": "efsa.primo.rev4.report.2024",
+      "title": "EFSA PRIMo revision 4 technical report",
+      "organization": "EFSA",
+      "kind": "official_supporting_publication",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2024-08-09",
+      "url": "https://www.efsa.europa.eu/en/supporting/pub/en-8990",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "efsa_primo_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Technical report describing PRIMo revision 4 public rollout and migration context.",
+        "Useful for governance and consultation-only review, but not itself the submission engine."
+      ]
+    },
+    {
+      "sourceId": "efsa.default_body_weights.2012",
+      "title": "EFSA harmonised default values for risk assessment",
+      "organization": "EFSA",
+      "kind": "official_guidance_metadata",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2012-03-07",
+      "url": "https://www.efsa.europa.eu/en/press/news/120307a",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "reference_dietary",
+        "efsa_primo_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Provides public default body-weight guidance.",
+        "Notes that 60 kg has commonly been used for worldwide adult populations, while 70 kg is more realistic for EU adults when actual EU data are absent."
+      ]
+    },
+    {
+      "sourceId": "epa.deem.fcid.4_02",
+      "title": "EPA DEEM-FCID/Calendex software installer page",
+      "organization": "US EPA",
+      "kind": "official_model_metadata",
+      "jurisdiction": "us",
+      "documentStatus": "tool_metadata",
+      "regulatoryRole": "software_metadata",
+      "effectiveDate": null,
+      "url": "https://www.epa.gov/pesticide-science-and-assessing-pesticide-risks/deem-fcidcalendex-software-installer",
+      "submissionUse": "not_allowed",
+      "normativeFor": [
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Documents that DEEM-FCID Version 4.02 is based on 2005-2010 NHANES/WWEIA data.",
+        "Used in Dietary MCP as metadata for DEEM-aligned adapter boundaries rather than as a native public contract."
+      ]
+    },
+    {
+      "sourceId": "epa.deem.errata",
+      "title": "EPA Dietary Exposure Evaluation Model (DEEM) errata list",
+      "organization": "US EPA",
+      "kind": "official_model_metadata",
+      "jurisdiction": "us",
+      "documentStatus": "tool_metadata",
+      "regulatoryRole": "software_metadata",
+      "effectiveDate": null,
+      "url": "https://www.epa.gov/pesticide-science-and-assessing-pesticide-risks/dietary-exposure-evaluation-model-deem-errata-list",
+      "submissionUse": "review_required",
+      "normativeFor": [
+        "epa_deem_adapter"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EPA publishes DEEM errata separately from the installer page.",
+        "Dietary MCP uses this record to surface official errata awareness in adapter governance."
+      ]
+    },
+    {
+      "sourceId": "efsa.openfoodtox",
+      "title": "EFSA OpenFoodTox 3.0 public chemical hazards database",
+      "organization": "EFSA",
+      "kind": "official_public_dataset",
+      "jurisdiction": "eu",
+      "documentStatus": "dataset_current",
+      "regulatoryRole": "dataset",
+      "effectiveDate": "2026-04-30",
+      "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [
+        "efsa.openfoodtox.2023_snapshot"
+      ],
+      "supersededBy": [],
+      "notes": [
+        "OpenFoodTox 3.0 is the current EFSA database release and includes outputs published through December 2025.",
+        "Dietary MCP uses OpenFoodTox as the first-class public EFSA reference-value database layer, while preserving the boundary that original scientific outputs remain authoritative."
+      ]
+    },
+    {
+      "sourceId": "efsa.openfoodtox.2023_snapshot",
+      "title": "EFSA OpenFoodTox 2.0 reference-values snapshot (version 6)",
+      "organization": "EFSA",
+      "kind": "official_public_dataset_snapshot",
+      "jurisdiction": "eu",
+      "documentStatus": "superseded",
+      "regulatoryRole": "dataset",
+      "effectiveDate": "2023-09-13",
+      "url": "https://zenodo.org/records/8120114",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [
+        "efsa.openfoodtox"
+      ],
+      "notes": [
+        "Pinned version-6 snapshot with EFSA outputs through September 2022; source DOI 10.5281/zenodo.8120114.",
+        "The bundled bulk reference-value extract is retained for reproducible review but is superseded by OpenFoodTox 3.0 and must not be treated as current."
+      ]
+    },
+    {
+      "sourceId": "efsa.food_consumption.data",
+      "title": "EFSA food consumption data infrastructure overview",
+      "organization": "EFSA",
+      "kind": "official_public_dataset",
+      "jurisdiction": "eu",
+      "documentStatus": "dataset_current",
+      "regulatoryRole": "dataset",
+      "effectiveDate": "2022-12-15",
+      "url": "https://www.efsa.europa.eu/en/data-report/food-consumption-data",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official EFSA entry point for the Comprehensive European Food Consumption Database and related dietary-exposure data infrastructure.",
+        "Used in Dietary MCP as governed dataset metadata for EU pesticide dietary exposure support."
+      ]
+    },
+    {
+      "sourceId": "efsa.dietex",
+      "title": "EFSA DietEx exposure-assessment tool page",
+      "organization": "EFSA",
+      "kind": "official_model_metadata",
+      "jurisdiction": "eu",
+      "documentStatus": "tool_metadata",
+      "regulatoryRole": "software_metadata",
+      "effectiveDate": null,
+      "url": "https://www.efsa.europa.eu/en/science/tools-and-resources/dietex",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official EFSA metadata for the DietEx dietary exposure support tool.",
+        "Dietary MCP exposes DietEx as a governed support-tool record, not as a native submission engine."
+      ]
+    },
+    {
+      "sourceId": "fao.jmpr.dietary_risks.toolkit",
+      "title": "FAO Pesticide Registration Toolkit dietary risks overview",
+      "organization": "FAO",
+      "kind": "official_guidance_metadata",
+      "jurisdiction": "codex_global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "https://www.fao.org/pesticide-registration-toolkit/registration-tools/registration-criteria/human-health-risks/dietary-risks/en/",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official FAO toolkit summary of dietary pesticide risk assessment principles and the role of JMPR/Codex methods.",
+        "Used in Dietary MCP as governed methodology metadata for IEDI and IESTI support context."
+      ]
+    },
+    {
+      "sourceId": "codex.procedural_manual.risk_analysis",
+      "title": "Codex Procedural Manual Section 4 Risk Analysis",
+      "organization": "Codex Alimentarius",
+      "kind": "official_guidance_metadata",
+      "jurisdiction": "codex_global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "https://www.fao.org/fao-who-codexalimentarius/codex-texts/procedural-manual/sections/section4/en/",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official Codex risk-analysis framework used as a governed global policy reference."
+      ]
+    },
+    {
+      "sourceId": "oecd.residue.definition.2006",
+      "title": "OECD guidance document on the definition of residue, second edition",
+      "organization": "OECD",
+      "kind": "official_guidance_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "https://www.oecd.org/en/publications/guidance-document-on-the-definition-of-residue-second-edition_3f534d5f-en.html",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "OECD residue-definition guidance included as governed method metadata."
+      ]
+    },
+    {
+      "sourceId": "oecd.analytical_methods.2017",
+      "title": "OECD guidance document on pesticide residue analytical methods",
+      "organization": "OECD",
+      "kind": "official_guidance_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "https://www.oecd.org/en/publications/guidance-document-on-pesticide-residue-analytical-methods_5900bd46-en.html",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "OECD analytical-method guidance included as governed method metadata."
+      ]
+    },
+    {
+      "sourceId": "oecd.processed_commodities.2008",
+      "title": "OECD guidance document on magnitude of pesticide residues in processed commodities",
+      "organization": "OECD",
+      "kind": "official_guidance_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "https://www.oecd.org/en/publications/guidance-document-on-magnitude-of-pesticide-residues-in-processed-commodities_e2b71e69-en.html",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "OECD processed-commodity guidance included as governed method metadata."
+      ]
+    },
+    {
+      "sourceId": "oecd.research_data.2025",
+      "title": "OECD guidance document on the generation, reporting and use of research data for regulatory assessments",
+      "organization": "OECD",
+      "kind": "official_guidance_metadata",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "https://www.oecd.org/en/publications/guidance-document-on-the-generation-reporting-and-use-of-research-data-for-regulatory-assessments_8d49ec1d-en.html",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "OECD research-data governance guidance included as provenance and auditability metadata."
+      ]
+    },
+    {
+      "sourceId": "efsa.uncertainty.2018",
+      "title": "EFSA guidance on uncertainty analysis in scientific assessments",
+      "organization": "EFSA",
+      "kind": "official_guidance_metadata",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/5123",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA uncertainty-analysis guidance included as governed method metadata."
+      ]
+    },
+    {
+      "sourceId": "eu.reg.396_2005",
+      "title": "Regulation (EC) No 396/2005 on maximum residue levels of pesticides",
+      "organization": "European Union",
+      "kind": "official_legal_act",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": null,
+      "url": "https://eur-lex.europa.eu/eli/reg/2005/396/oj/eng",
+      "submissionUse": "allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EU legal anchor for pesticide maximum residue levels and related dietary consumer protection context."
+      ]
+    },
+    {
+      "sourceId": "eu.reg.283_2013",
+      "title": "Commission Regulation (EU) No 283/2013 on data requirements for active substances",
+      "organization": "European Union",
+      "kind": "official_legal_act",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": null,
+      "url": "https://eur-lex.europa.eu/eli/reg/2013/283/oj/eng",
+      "submissionUse": "allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EU legal anchor for data requirements relevant to pesticide active-substance submissions."
+      ]
+    },
+    {
+      "sourceId": "efsa.microplastics.statement.2016",
+      "title": "EFSA statement on the presence of microplastics and nanoplastics in food",
+      "organization": "EFSA",
+      "kind": "official_supporting_publication",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": null,
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/4501",
+      "submissionUse": "not_allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA states that occurrence data and methods remain limited and that there is no dedicated food-contaminant legislation for micro- and nanoplastics.",
+        "Used in Dietary MCP as a governed source for emerging-contaminant method immaturity and evidence limitations."
+      ]
+    },
+    {
+      "sourceId": "fda.microplastics.foods",
+      "title": "FDA microplastics and nanoplastics in foods",
+      "organization": "US FDA",
+      "kind": "official_guidance_metadata",
+      "jurisdiction": "us",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": null,
+      "url": "https://www.fda.gov/food/environmental-contaminants-food/microplastics-and-nanoplastics-foods",
+      "submissionUse": "not_allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "FDA states that current evidence does not demonstrate human-health risk at detected food levels and that standardised methods are still developing.",
+        "Used in Dietary MCP as governed US emerging-contaminant posture metadata."
+      ]
+    },
+    {
+      "sourceId": "who.microplastics.oral_exposure.2022",
+      "title": "WHO dietary and inhalation exposure to nano- and microplastic particles and potential implications for human health",
+      "organization": "WHO",
+      "kind": "official_supporting_publication",
+      "jurisdiction": "global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": null,
+      "url": "https://www.who.int/publications/i/item/9789240054608",
+      "submissionUse": "not_allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "WHO review used in Dietary MCP as governed global metadata for oral-exposure evidence limitations and research maturity."
+      ]
+    },
+    {
+      "sourceId": "efsa.acetamiprid.statement.2024",
+      "title": "Statement on the toxicological properties and maximum residue levels of acetamiprid and its metabolites",
+      "organization": "EFSA",
+      "kind": "official_scientific_statement",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2024-05-15",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/8759",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA adopted the statement on 27 March 2024 and published it on 15 May 2024.",
+        "The statement proposed lowering the ADI and ARfD for acetamiprid to 0.005 mg/kg bw/day to account for developmental neurotoxicity uncertainty."
+      ]
+    },
+    {
+      "sourceId": "eu.reg.2025_158",
+      "title": "Commission Regulation (EU) 2025/158 on acetamiprid maximum residue levels",
+      "organization": "European Union",
+      "kind": "binding_regulation",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2025-08-19",
+      "url": "https://eur-lex.europa.eu/eli/reg/2025/158/oj/eng",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "The Regulation applies from 19 August 2025 and records that EFSA established lower ADI and ARfD values for acetamiprid.",
+        "It is linked here as the binding MRL risk-management context; the EFSA statement remains the primary scientific source for the 0.005 mg/kg bw values."
+      ]
+    },
+    {
+      "sourceId": "efsa.imidacloprid.dnt.2013",
+      "title": "Developmental neurotoxicity potential of acetamiprid and imidacloprid",
+      "organization": "EFSA",
+      "kind": "official_news_update",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2013-12-17",
+      "url": "https://www.efsa.europa.eu/en/press/news/131217",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA public developmental neurotoxicity update for acetamiprid and imidacloprid.",
+        "Dietary MCP uses this as governed public context alongside OpenFoodTox for imidacloprid toxicological reference-value extracts and review-oriented monitoring provenance."
+      ]
+    },
+    {
+      "sourceId": "efsa.glufosinate.call_for_data.2024",
+      "title": "Call for data to submit data covering residue and toxicological data gaps for glufosinate",
+      "organization": "EFSA",
+      "kind": "official_call_for_data",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2024-12-10",
+      "url": "https://www.efsa.europa.eu/en/call/call-data-submit-data-covering-residue-and-toxicological-data-gaps-glufosinate",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA public call-for-data page documenting the current EU review context for glufosinate under Article 43 of Regulation (EC) No 396/2005.",
+        "The page explicitly notes that the EU ADI and ARfD remain 0.021 mg/kg bw/day and 0.021 mg/kg bw, while JMPR established more critical values of 0.01 mg/kg bw/day and 0.01 mg/kg bw."
+      ]
+    },
+    {
+      "sourceId": "efsa.glufosinate.mrl_review.2015",
+      "title": "Review of the existing maximum residue levels for glufosinate",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2015-01-23",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/3950",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA Article 12 MRL review for glufosinate under Regulation (EC) No 396/2005.",
+        "Dietary MCP uses this as governed EU residue-review context for commodity scope, PRIMo screening provenance, and analytical-enforcement linkage."
+      ]
+    },
+    {
+      "sourceId": "jmpr.glufosinate.summary.2013",
+      "title": "JMPR summary report response to specific concerns raised by CCPR for glufosinate-ammonium",
+      "organization": "FAO/WHO JMPR",
+      "kind": "official_scientific_report",
+      "jurisdiction": "codex_global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2013-10-02",
+      "url": "https://www.fao.org/fileadmin/templates/agphome/documents/Pests_Pesticides/JMPR/2013_JMPR_Summary_Report_Oct_2.pdf",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official JMPR summary report documenting the glufosinate-ammonium ADI and ARfD of 0.01 mg/kg bw/day and 0.01 mg/kg bw.",
+        "Included to preserve explicit EFSA versus JMPR toxicological-reference-value differences rather than flattening them into one canonical record."
+      ]
+    },
+    {
+      "sourceId": "efsa.oxamyl.statement.2023",
+      "title": "Statement on the risk assessment of maximum residue levels (MRLs) for oxamyl in view of consumer protection",
+      "organization": "EFSA",
+      "kind": "official_scientific_statement",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2023-03-01",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/7823",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA consumer-protection statement reassessing existing oxamyl MRLs under Article 43 of Regulation (EC) No 396/2005 using lower toxicological reference values.",
+        "The statement reports an ADI of 0.0001 mg/kg bw/day and an ARfD of 0.0001 mg/kg bw and identifies widespread acute and chronic dietary exposure concerns even under lower-LOQ scenarios."
+      ]
+    },
+    {
+      "sourceId": "efsa.oxamyl.peer_review.2022",
+      "title": "Peer review of the pesticide risk assessment of the active substance oxamyl",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2022-05-18",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/7296",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA peer review covering oxamyl representative uses on potato, tobacco, tomato, cucurbits, pepper and aubergine.",
+        "Dietary MCP uses this as governed EU review context for crop scope and residue-review provenance in the oxamyl monitoring layer."
+      ]
+    },
+    {
+      "sourceId": "jmpr.oxamyl.summary.2012",
+      "title": "JMPR summary report response to specific concerns raised by CCPR for oxamyl",
+      "organization": "FAO/WHO JMPR",
+      "kind": "official_scientific_report",
+      "jurisdiction": "codex_global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2012-10-01",
+      "url": "https://www.fao.org/fileadmin/templates/agphome/documents/Pests_Pesticides/JMPR/2012_JMPR_Summary_Report__F2_.pdf",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official JMPR summary report documenting the oxamyl ADI and ARfD of 0.009 mg/kg bw/day and 0.009 mg/kg bw.",
+        "Included to preserve explicit EFSA versus JMPR toxicological-reference-value differences and residue-definition context for oxamyl."
+      ]
+    },
+    {
+      "sourceId": "efsa.ethiprole.trv.2024",
+      "title": "Setting of residue definitions and toxicological reference values for ethiprole",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2024-12-18",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9129",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA report establishing residue definitions and toxicological reference values for ethiprole in the context of a rice-focused import-tolerance application under Regulation (EC) No 396/2005.",
+        "The report derived an ADI of 0.002 mg/kg bw per day, an ARfD of 0.005 mg/kg bw, and validated analytical enforcement at an LOQ of 0.002 mg/kg in dry commodities."
+      ]
+    },
+    {
+      "sourceId": "efsa.tetraconazole.mrl_opinion.2019",
+      "title": "Modification of the existing maximum residue levels for tetraconazole in kaki/Japanese persimmon, linseeds and poppy seeds",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2019-02-08",
+      "url": "https://www.efsa.europa.eu/pl/efsajournal/pub/5577",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA reasoned opinion covering tetraconazole MRLs for kaki/Japanese persimmon, linseeds and poppy seeds under Regulation (EC) No 396/2005.",
+        "The public summary identified an ADI of 0.004 mg/kg bw/day, an ARfD of 0.05 mg/kg bw, and sufficiently validated LC-MS/MS enforcement at an LOQ of 0.01 mg/kg across high-water, high-oil, high-acid and dry/high-starch matrices."
+      ]
+    },
+    {
+      "sourceId": "efsa.tebuconazole.mrl_opinion.2013",
+      "title": "Reasoned opinion on the modification of the existing MRL for tebuconazole in poppy seed",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2013-05-29",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/3248",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA reasoned opinion covering tebuconazole MRL modification for poppy seed under Regulation (EC) No 396/2005.",
+        "The reasoned opinion reported adequate analytical enforcement methods for the commodity under consideration and a consumer-risk conclusion that did not exceed the toxicological reference values used in the EFSA peer-review context."
+      ]
+    },
+    {
+      "sourceId": "efsa.pesticide_residues.food.2025",
+      "title": "The 2023 European Union report on pesticide residues in food",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2025-05-14",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9304",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA published the 2023 annual European Union pesticide residues report on 14 May 2025.",
+        "Dietary MCP uses this as governed public monitoring context for pesticide-residue occurrence review rather than as a native probabilistic or submission engine."
+      ]
+    },
+    {
+      "sourceId": "efsa.pesticide_residues.organic_findings.2025",
+      "title": "Pesticide residues in organic food: overview of available data and analysis of findings",
+      "organization": "EFSA",
+      "kind": "official_supporting_publication",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2025-10-15",
+      "url": "https://www.efsa.europa.eu/en/supporting/pub/en-9423",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA supporting publication that summarises available findings on pesticide residues in organic food and feed.",
+        "Dietary MCP uses this as governed public audit-trail context for review-oriented imidacloprid monitoring evidence, not as a raw monitoring-table redistribution layer."
+      ]
+    },
+    {
+      "sourceId": "efsa.pesticide_residues.national_summary.2025",
+      "title": "National summary reports on pesticide residue analysis performed in 2023",
+      "organization": "EFSA",
+      "kind": "official_supporting_publication",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2025-05-14",
+      "url": "https://www.efsa.europa.eu/en/supporting/pub/en-9320",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Supporting publication linked to the 2023 European Union pesticide residues report, preserving Member State summary-report context.",
+        "Dietary MCP uses this as governed audit-trail context for pesticide monitoring review rather than redistributing national raw monitoring tables."
+      ]
+    },
+    {
+      "sourceId": "efsa.eu_menu.programme",
+      "title": "EFSA EU Menu project on standardised food consumption data",
+      "organization": "EFSA",
+      "kind": "official_dataset_programme_metadata",
+      "jurisdiction": "eu",
+      "documentStatus": "dataset_current",
+      "regulatoryRole": "dataset",
+      "effectiveDate": "2022-12-15",
+      "url": "https://www.efsa.europa.eu/en/data-report/food-consumption-data",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA describes the EU Menu project as the programme that standardises food consumption data collection across Member States.",
+        "Dietary MCP uses this as governed programme metadata rather than redistributing raw survey extracts."
+      ]
+    },
+    {
+      "sourceId": "efsa.pfas.food.2020",
+      "title": "Risk to human health related to the presence of perfluoroalkyl substances in food",
+      "organization": "EFSA",
+      "kind": "official_scientific_opinion",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2020-09-17",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/6223",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA established a group tolerable weekly intake of 4.4 ng/kg bw/week for the sum of PFOA, PFOS, PFNA, and PFHxS.",
+        "Dietary MCP uses this source as governed EFSA provenance for PFAS food-contaminant reference-value support."
+      ]
+    },
+    {
+      "sourceId": "efsa.pfas.topic.2026",
+      "title": "Per- and polyfluoroalkyl substances (PFAS)",
+      "organization": "EFSA",
+      "kind": "official_topic_page",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2026-03-16",
+      "url": "https://www.efsa.europa.eu/en/topics/per-and-polyfluoroalkyl-substances-pfas",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Current EFSA topic page that links the 2020 PFAS opinion, the Commission monitoring recommendation, and current EFSA work on TFA and PFAS monitoring.",
+        "Used in Dietary MCP as a maintained official context source for PFAS food-contaminant governance."
+      ]
+    },
+    {
+      "sourceId": "eu.reco.2022_1431",
+      "title": "Commission Recommendation (EU) 2022/1431 on the monitoring of perfluoroalkyl substances in food",
+      "organization": "European Union",
+      "kind": "official_recommendation",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2022-08-26",
+      "url": "https://eur-lex.europa.eu/eli/reco/2022/1431/oj/eng",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "European Commission recommendation for Member States to monitor the presence of PFAS in food from 2022 to 2025.",
+        "Used in Dietary MCP as governed EU monitoring-programme metadata rather than as a binding submission rule."
+      ]
+    },
+    {
+      "sourceId": "eu.reg.2023_915",
+      "title": "Commission Regulation (EU) 2023/915 on maximum levels for certain contaminants in food",
+      "organization": "European Union",
+      "kind": "official_legal_act",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2023-04-25",
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/915/oj/eng",
+      "submissionUse": "allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Binding EU contaminant regulation that includes maximum levels for trace elements, PFAS, and other contaminants in food.",
+        "Used in Dietary MCP as a shared EU legal anchor for PFAS, cadmium, lead, and mercury food-contaminant governance."
+      ]
+    },
+    {
+      "sourceId": "rivm.pfas.home_eggs.2025",
+      "title": "Risk assessment of PFAS through consumption of home-produced eggs in the Netherlands",
+      "organization": "RIVM",
+      "kind": "official_scientific_report",
+      "jurisdiction": "netherlands",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2025-04-15",
+      "url": "https://www.rivm.nl/en/publications/risk-assessment-of-pfas-through-consumption-of-home-produced-eggs-in-netherlands",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "RIVM applies PFOA-equivalent style PFAS reporting for Dutch advisory interpretation of home-produced eggs.",
+        "Used in Dietary MCP as governed Dutch advisory-source metadata for optional PFAS reporting-profile extensions."
+      ]
+    },
+    {
+      "sourceId": "rivm.pfas.rpf.addendum.2025",
+      "title": "Addendum on Relative Potency Factors (RPFs) for PFAS",
+      "organization": "RIVM",
+      "kind": "official_scientific_report",
+      "jurisdiction": "netherlands",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2025-06-23",
+      "url": "https://www.rivm.nl/en/publications/addendum-on-relative-potency-factors-rpfs-for-pfas",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "RIVM publishes updated relative potency factor context for PFAS mixture interpretation in Dutch advisory workflows.",
+        "Used in Dietary MCP as governed weighting-basis metadata for optional PFAS PEQ-style reporting profiles."
+      ]
+    },
+    {
+      "sourceId": "rivm.pfas.peq_tool.v3.2025",
+      "title": "RIVM PEQ Tool V3",
+      "organization": "RIVM",
+      "kind": "official_software_metadata",
+      "jurisdiction": "netherlands",
+      "documentStatus": "tool_metadata",
+      "regulatoryRole": "software_metadata",
+      "effectiveDate": "2025-06-23",
+      "url": "https://www.rivm.nl/documenten/rivm-peq-tool",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "RIVM PEQ Tool V3 is positioned for PFAS mixture calculation and assessment in drinking water, bathing water, biota, source water, irrigation, and fish-consumption advisory contexts.",
+        "Used in Dietary MCP as governed Dutch fish and biota advisory-source metadata for optional PFAS reporting-profile extensions."
+      ]
+    },
+    {
+      "sourceId": "efsa.microplastics.request.2025",
+      "title": "Microplastics: European Parliament requests scientific advice from EFSA",
+      "organization": "EFSA",
+      "kind": "official_news_metadata",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2025-12-09",
+      "url": "https://www.efsa.europa.eu/en/news/microplastics-european-parliament-requests-scientific-advice-efsa",
+      "submissionUse": "not_allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA states that major knowledge gaps remain and that a new scientific opinion on microplastics in food, water, and air is expected by the end of 2027.",
+        "Used in Dietary MCP to keep the microplastics governance layer aligned with the latest official EFSA status update."
+      ]
+    },
+    {
+      "sourceId": "efsa.acrylamide.food.2015",
+      "title": "Scientific Opinion on acrylamide in food",
+      "organization": "EFSA",
+      "kind": "official_scientific_opinion",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2015-06-04",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/4104",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA published the scientific opinion on 4 June 2015 after adoption on 30 April 2015.",
+        "The opinion selected BMDL10 values of 0.17 mg/kg bw/day for neoplastic effects and 0.43 mg/kg bw/day for peripheral neuropathy."
+      ]
+    },
+    {
+      "sourceId": "eu.reg.2017_2158",
+      "title": "Commission Regulation (EU) 2017/2158 establishing mitigation measures and benchmark levels for the reduction of the presence of acrylamide in food",
+      "organization": "European Union",
+      "kind": "official_legal_act",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2017-11-20",
+      "url": "https://eur-lex.europa.eu/eli/reg/2017/2158/oj/eng",
+      "submissionUse": "allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Binding EU regulation establishing mitigation measures and benchmark levels for the reduction of acrylamide in food.",
+        "Used in Dietary MCP as the main EU legal anchor for the acrylamide process-contaminant family."
+      ]
+    },
+    {
+      "sourceId": "eu.reco.2019_1888",
+      "title": "Commission Recommendation (EU) 2019/1888 on the monitoring of the presence of acrylamide in certain foods",
+      "organization": "European Union",
+      "kind": "official_recommendation",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2019-11-07",
+      "url": "https://eur-lex.europa.eu/eli/reco/2019/1888/oj/eng",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Commission recommendation for monitoring the presence of acrylamide in certain foods and reporting data to EFSA.",
+        "Used in Dietary MCP as governed monitoring-programme metadata rather than as a binding submission rule."
+      ]
+    },
+    {
+      "sourceId": "efsa.bpa.food.2023",
+      "title": "Re-evaluation of the risks to public health related to the presence of bisphenol A (BPA) in foodstuffs",
+      "organization": "EFSA",
+      "kind": "official_scientific_opinion",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2023-04-19",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/6857",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA published the BPA re-evaluation on 19 April 2023 after adoption on 6 December 2022.",
+        "The opinion established a TDI of 0.2 ng BPA/kg bw/day and concluded there is a health concern from dietary BPA exposure."
+      ]
+    },
+    {
+      "sourceId": "efsa.bisphenol.topic.2026",
+      "title": "Bisphenol A and other bisphenols",
+      "organization": "EFSA",
+      "kind": "official_topic_page",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2026-03-27",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/bisphenol",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Current EFSA topic page summarising the 2023 BPA opinion and the 2024 EU BPA food-contact regulation.",
+        "Used in Dietary MCP as a maintained official context source for bisphenol food-contact migration governance."
+      ]
+    },
+    {
+      "sourceId": "eu.reg.2024_3190",
+      "title": "Commission Regulation (EU) 2024/3190 on the use of bisphenol A (BPA) and other bisphenols and bisphenol derivatives with harmonised classification for specific hazardous properties in certain materials and articles intended to come into contact with food",
+      "organization": "European Union",
+      "kind": "official_legal_act",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2024-12-19",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/3190/oj/eng",
+      "submissionUse": "allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Binding EU food-contact regulation restricting BPA and other hazardous bisphenols in certain materials and articles intended to come into contact with food.",
+        "Used in Dietary MCP as the EU legal anchor for the bisphenol food-contact migration family."
+      ]
+    },
+    {
+      "sourceId": "efsa.cadmium.food.2009",
+      "title": "Cadmium in food - Scientific opinion of the Panel on Contaminants in the Food Chain",
+      "organization": "EFSA",
+      "kind": "official_scientific_opinion",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2009-03-20",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/980",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA published the cadmium opinion on 20 March 2009 after adoption on 30 January 2009.",
+        "The opinion established a tolerable weekly intake of 2.5 micrograms per kilogram body weight per week for cadmium."
+      ]
+    },
+    {
+      "sourceId": "efsa.cadmium.exposure.2012",
+      "title": "Cadmium dietary exposure in Europe",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2012-01-18",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/2551",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA published the cadmium dietary exposure report on 18 January 2012 after approval on 17 January 2012.",
+        "The report used detailed individual food consumption data to estimate chronic dietary exposure and identify major contributing food groups."
+      ]
+    },
+    {
+      "sourceId": "efsa.metals.topic.2026",
+      "title": "Metals as contaminants in food",
+      "organization": "EFSA",
+      "kind": "official_topic_page",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2026-01-06",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Current EFSA topic page summarising risk assessments and legal context for arsenic, cadmium, lead, mercury and other metals as contaminants in food.",
+        "Used in Dietary MCP as a maintained official context source for metals-contaminant governance."
+      ]
+    },
+    {
+      "sourceId": "efsa.lead.food.2010",
+      "title": "Scientific Opinion on Lead in Food",
+      "organization": "EFSA",
+      "kind": "official_scientific_opinion",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2010-04-20",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/1570",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA published the lead opinion in April 2010 after adoption in March 2010.",
+        "The opinion derived benchmark dose reference points including a BMDL01 of 0.50 micrograms per kilogram body weight per day for developmental neurotoxicity."
+      ]
+    },
+    {
+      "sourceId": "efsa.lead.exposure.2012",
+      "title": "Lead dietary exposure in the European population",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2012-07-11",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/2831",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA approved the lead dietary exposure report on 4 July 2012 and published it on 11 July 2012.",
+        "The report estimated dietary lead exposure in the European population using 144,206 analytical results and the EFSA Comprehensive Food Consumption Database."
+      ]
+    },
+    {
+      "sourceId": "efsa.lead.exposure.2025",
+      "title": "Lead dietary exposure in the European population",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2025-08-08",
+      "url": "https://www.efsa.europa.eu/en/supporting/pub/en-9577",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA published a 2025 supporting-publication update of lead dietary exposure in the European population on 8 August 2025.",
+        "Used in Dietary MCP as current official context for contributor review, including higher-occurrence attention for game meat and certain plant-derived categories."
+      ]
+    },
+    {
+      "sourceId": "efsa.inorganic_arsenic.food.2024",
+      "title": "Update of the risk assessment of inorganic arsenic in food",
+      "organization": "EFSA",
+      "kind": "official_scientific_opinion",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2024-01-18",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/8488",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA published the updated inorganic arsenic risk assessment on 18 January 2024.",
+        "The opinion used a benchmark-dose approach and concluded that consumer exposure to inorganic arsenic in food raises a health concern."
+      ]
+    },
+    {
+      "sourceId": "efsa.inorganic_arsenic.news.2024",
+      "title": "Inorganic arsenic in food - health concerns confirmed",
+      "organization": "EFSA",
+      "kind": "official_news_page",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2024-01-18",
+      "url": "https://www.efsa.europa.eu/en/news/inorganic-arsenic-food-health-concerns-confirmed",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA published this official news summary on 18 January 2024 alongside the updated inorganic arsenic opinion.",
+        "Used in Dietary MCP as official context stating that rice, rice-based products, and grains and grain-based products are the main contributors to dietary exposure, with drinking water as an additional but usually lower European contributor."
+      ]
+    },
+    {
+      "sourceId": "efsa.inorganic_arsenic.exposure.2021",
+      "title": "Chronic dietary exposure to inorganic arsenic",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2021-01-29",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/6380",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA approved the inorganic arsenic exposure report in December 2020 and published it on 29 January 2021.",
+        "The report updated chronic dietary exposure estimates using consumption data from 23 European countries and 44 dietary surveys."
+      ]
+    },
+    {
+      "sourceId": "eu.reg.2025_1891",
+      "title": "Commission Regulation (EU) 2025/1891 amending Regulation (EU) 2023/915 as regards maximum levels of inorganic arsenic in fish and other seafood",
+      "organization": "European Union",
+      "kind": "official_legal_act",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2025-09-17",
+      "url": "https://eur-lex.europa.eu/eli/reg/2025/1891/oj/eng",
+      "submissionUse": "allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Binding EU amendment to the contaminants framework setting maximum levels of inorganic arsenic in fish and other seafood.",
+        "Used in Dietary MCP as the current specific EU legal anchor for inorganic arsenic food-contaminant governance."
+      ]
+    },
+    {
+      "sourceId": "eu.reg.333_2007",
+      "title": "Commission Regulation (EC) No 333/2007 laying down the methods of sampling and analysis for the official control of the levels of trace elements and processing contaminants in foodstuffs",
+      "organization": "European Union",
+      "kind": "official_legal_act",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2024-04-30",
+      "url": "https://eur-lex.europa.eu/eli/reg/2007/333/2024-04-30/eng",
+      "submissionUse": "allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Current consolidated EU official-control regulation covering sampling and analysis requirements for trace elements and processing contaminants in foodstuffs.",
+        "Used in Dietary MCP as the shared official-control source anchor for cadmium, lead, inorganic arsenic, and mercury food-contaminant governance."
+      ]
+    },
+    {
+      "sourceId": "efsa.mercury.food.2012",
+      "title": "Scientific Opinion on the risk for public health related to the presence of mercury and methylmercury in food",
+      "organization": "EFSA",
+      "kind": "official_scientific_opinion",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2012-12-20",
+      "url": "https://www.efsa.europa.eu/sites/default/files/scientific_output/files/main_documents/2985.pdf",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA adopted the mercury and methylmercury opinion on 22 November 2012 and published it on 20 December 2012.",
+        "The opinion established a TWI of 1.3 micrograms per kilogram body weight per week for methylmercury and 4 micrograms per kilogram body weight per week for inorganic mercury."
+      ]
+    },
+    {
+      "sourceId": "efsa.mercury.fish_consumption.2026",
+      "title": "Frequency of consumption of different species of fish, crustaceans and molluscs and the effectiveness of national advice in relation to mercury contamination",
+      "organization": "EFSA",
+      "kind": "official_event_annex",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2026-02-12",
+      "url": "https://www.efsa.europa.eu/sites/default/files/event/ANNEX%208.4.pdf",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA published this official annex on 12 February 2026 covering the frequency of consumption of different fish, crustacean, and mollusc species and the effectiveness of national advice related to mercury contamination.",
+        "Used in Dietary MCP as current official context for species-sensitive fish and seafood review, especially for high consumers and pregnancy-related advisory questions."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,479 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "metals_occurrence_registry",
+  "records": [
+    {
+      "recordId": "efsa.cadmium.occurrence_monitoring.support",
+      "displayName": "Cadmium occurrence and monitoring support",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "cadmium_food_contaminants",
+      "occurrenceKind": "dietary_exposure_monitoring_bridge",
+      "focusSubstances": [
+        "cadmium"
+      ],
+      "matrixScope": [
+        "broad_food_supply"
+      ],
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.cadmium.food.2009",
+        "efsa.cadmium.exposure.2012",
+        "efsa.metals.topic.2026",
+        "eu.reg.2023_915",
+        "eu.reg.333_2007"
+      ],
+      "methodIds": [
+        "efsa.cadmium.food.2009_opinion",
+        "efsa.cadmium.exposure.2012_report",
+        "eu.cadmium.official_control.333_2007"
+      ],
+      "legalAuthorityIds": [
+        "eu.cadmium.contaminants.reg_2023_915",
+        "eu.cadmium.official_control.reg_333_2007"
+      ],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.cadmium_support"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.cadmium.twi.2009"
+      ],
+      "priorityFoodGroups": [
+        "cereals_and_cereal_products",
+        "vegetables_and_vegetable_products",
+        "starchy_roots_and_tubers",
+        "seafood_molluscs"
+      ],
+      "highAttentionFoods": [
+        "bread_and_rolls",
+        "potatoes",
+        "leafy_vegetables",
+        "bivalve_molluscs"
+      ],
+      "sensitivePopulationGroups": [
+        "toddlers_and_children",
+        "high_consumers_of_plant_based_staples"
+      ],
+      "reviewQuestions": [
+        "Are cereal-, vegetable-, and tuber-based contributors represented explicitly in the monitored occurrence set?",
+        "Do molluscs or other locally high-occurrence foods require separate review instead of being diluted into broad categories?",
+        "Is chronic cadmium review being interpreted against the governed EFSA TWI rather than an acute screening frame?"
+      ],
+      "trendSignals": [],
+      "notes": [
+        "Links EFSA cadmium opinion and dietary exposure reporting with EU contaminants-law and official-control sampling and analysis governance.",
+        "Priority interpretation remains focused on chronic contributors from staple plant foods, with separate attention for molluscs where occurrence can be elevated.",
+        "Exposed for review-oriented provenance and monitoring context only."
+      ]
+    },
+    {
+      "recordId": "efsa.lead.occurrence_monitoring.support",
+      "displayName": "Lead occurrence and monitoring support",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "lead_food_contaminants",
+      "occurrenceKind": "dietary_exposure_monitoring_bridge",
+      "focusSubstances": [
+        "lead"
+      ],
+      "matrixScope": [
+        "broad_food_supply"
+      ],
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.lead.food.2010",
+        "efsa.lead.exposure.2012",
+        "efsa.lead.exposure.2025",
+        "efsa.metals.topic.2026",
+        "eu.reg.2023_915",
+        "eu.reg.333_2007"
+      ],
+      "methodIds": [
+        "efsa.lead.food.2010_opinion",
+        "efsa.lead.exposure.2012_report",
+        "eu.lead.official_control.333_2007"
+      ],
+      "legalAuthorityIds": [
+        "eu.lead.contaminants.reg_2023_915",
+        "eu.lead.official_control.reg_333_2007"
+      ],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.lead_support"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.lead.developmental_neurotoxicity.bmdl01",
+        "efsa.lead.nephrotoxicity.bmdl10"
+      ],
+      "priorityFoodGroups": [
+        "meat_and_meat_products",
+        "bread_and_rolls",
+        "vegetables_and_vegetable_products",
+        "coffee_cocoa_tea_and_infusions"
+      ],
+      "highAttentionFoods": [
+        "game_meat",
+        "offal",
+        "wild_game_products"
+      ],
+      "sensitivePopulationGroups": [
+        "infants_and_children",
+        "women_of_childbearing_age",
+        "high_consumers_of_game_meat"
+      ],
+      "reviewQuestions": [
+        "Are game meat and other high-occurrence animal-source foods reviewed separately from general meat categories?",
+        "Does the occurrence package preserve contributor visibility for bread, vegetables, and beverage-derived categories rather than collapsing them into residual groups?",
+        "Is lead review framed against the governed benchmark-dose context for developmental and renal effects rather than a threshold-style TWI?"
+      ],
+      "trendSignals": [
+        "review_current_occurrence_in_legumes_nuts_oilseeds_spices",
+        "review_current_occurrence_in_vegetables_and_vegetable_products",
+        "review_current_occurrence_in_coffee_cocoa_tea_and_infusions"
+      ],
+      "notes": [
+        "Links EFSA lead opinion and dietary exposure reporting with EU contaminants-law and official-control sampling and analysis governance.",
+        "Includes current review-oriented signals from EFSA's 2025 exposure update so contributor review is not frozen at the 2012 reporting layer.",
+        "Exposed for review-oriented provenance and monitoring context only."
+      ]
+    },
+    {
+      "recordId": "efsa.inorganic_arsenic.occurrence_monitoring.support",
+      "displayName": "Inorganic arsenic occurrence and monitoring support",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "occurrenceKind": "dietary_exposure_monitoring_bridge",
+      "focusSubstances": [
+        "inorganic_arsenic"
+      ],
+      "matrixScope": [
+        "broad_food_supply",
+        "rice_and_cereal_products"
+      ],
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.inorganic_arsenic.food.2024",
+        "efsa.inorganic_arsenic.news.2024",
+        "efsa.inorganic_arsenic.exposure.2021",
+        "efsa.metals.topic.2026",
+        "eu.reg.2025_1891",
+        "eu.reg.333_2007"
+      ],
+      "methodIds": [
+        "efsa.inorganic_arsenic.food.2024_opinion",
+        "efsa.inorganic_arsenic.exposure.2021_report",
+        "eu.inorganic_arsenic.official_control.333_2007"
+      ],
+      "legalAuthorityIds": [
+        "eu.inorganic_arsenic.contaminants.reg_2025_1891",
+        "eu.inorganic_arsenic.official_control.reg_333_2007"
+      ],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.inorganic_arsenic_support"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.inorganic_arsenic.skin_cancer.bmdl05"
+      ],
+      "priorityFoodGroups": [
+        "rice_and_rice_based_products",
+        "grains_and_grain_based_products",
+        "fish_and_seafood_context",
+        "drinking_water_context"
+      ],
+      "highAttentionFoods": [
+        "rice",
+        "rice_cakes",
+        "rice_drinks",
+        "rice_based_infant_foods"
+      ],
+      "sensitivePopulationGroups": [
+        "infants_and_young_children_high_rice_consumers",
+        "high_rice_consumers"
+      ],
+      "reviewQuestions": [
+        "Are rice and rice-based products separated clearly enough to review concentrated exposure drivers?",
+        "Where seafood occurrence is present, has inorganic arsenic speciation context been considered rather than assuming total arsenic is sufficient?",
+        "Is the review framed against the governed benchmark-dose and margin-of-exposure context rather than a threshold-style tolerable intake?"
+      ],
+      "trendSignals": [],
+      "notes": [
+        "Links EFSA inorganic-arsenic risk-assessment and dietary exposure reporting with current EU contaminants-law and official-control governance.",
+        "Highlights rice- and grain-based exposure drivers explicitly so occurrence review can remain aligned with current EFSA communication on dietary contributors.",
+        "Exposed for review-oriented provenance and monitoring context only."
+      ]
+    },
+    {
+      "recordId": "efsa.mercury.occurrence_monitoring.support",
+      "displayName": "Mercury occurrence and monitoring support",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "mercury_food_contaminants",
+      "occurrenceKind": "dietary_context_monitoring_bridge",
+      "focusSubstances": [
+        "methylmercury",
+        "inorganic_mercury"
+      ],
+      "matrixScope": [
+        "broad_food_supply",
+        "fish_and_seafood"
+      ],
+      "maturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.mercury.food.2012",
+        "efsa.mercury.fish_consumption.2026",
+        "efsa.metals.topic.2026",
+        "eu.reg.2023_915",
+        "eu.reg.333_2007"
+      ],
+      "methodIds": [
+        "efsa.mercury.food.2012_opinion",
+        "eu.mercury.official_control.333_2007"
+      ],
+      "legalAuthorityIds": [
+        "eu.mercury.contaminants.reg_2023_915",
+        "eu.mercury.official_control.reg_333_2007"
+      ],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.mercury_support"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.methylmercury.twi.2012",
+        "efsa.inorganic_mercury.twi.2012"
+      ],
+      "priorityFoodGroups": [
+        "fish_and_seafood",
+        "large_predatory_fish",
+        "crustaceans_and_molluscs"
+      ],
+      "highAttentionFoods": [
+        "swordfish",
+        "shark",
+        "bigeye_tuna",
+        "bluefin_tuna"
+      ],
+      "sensitivePopulationGroups": [
+        "women_who_are_pregnant_or_planning_pregnancy",
+        "foetus_and_unborn_child",
+        "young_children",
+        "high_fish_consumers"
+      ],
+      "reviewQuestions": [
+        "Does the occurrence set distinguish large predatory species from mixed fish categories before review conclusions are drawn?",
+        "Is species-specific national advice relevant for high consumers, pregnancy-related review, or other sensitive-population communication?",
+        "Are methylmercury-driven fish and seafood contributors interpreted against the governed methylmercury TWI rather than a generic total-mercury threshold?"
+      ],
+      "trendSignals": [
+        "review_species_specific_consumption_frequency_for_high_mercury_fish"
+      ],
+      "notes": [
+        "Links EFSA mercury and methylmercury food-risk context with EU contaminants-law and official-control sampling and analysis governance.",
+        "Carries current review-oriented fish-species context for high consumers and pregnancy-related advice without implying a native species-level mercury engine.",
+        "Exposed for review-oriented provenance and monitoring context only."
+      ]
+    },
+    {
+      "recordId": "efsa.pfas.fish_and_seafood.occurrence_monitoring.support",
+      "displayName": "PFAS fish and seafood occurrence and monitoring support",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pfas_food_contaminants",
+      "occurrenceKind": "dietary_context_monitoring_bridge",
+      "focusSubstances": [
+        "sum4_pfas",
+        "pfoa",
+        "pfna",
+        "pfhxs",
+        "pfos"
+      ],
+      "matrixScope": [
+        "fish_and_seafood"
+      ],
+      "maturityStatus": "transitional",
+      "evidenceSupportStatus": "limited",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.pfas.food.2020",
+        "efsa.pfas.topic.2026",
+        "eu.reco.2022_1431",
+        "eu.reg.2023_915",
+        "rivm.pfas.peq_tool.v3.2025"
+      ],
+      "methodIds": [
+        "efsa.pfas.food.2020_opinion",
+        "ec.pfas.monitoring.2022_2025"
+      ],
+      "legalAuthorityIds": [
+        "eu.contaminants.reg_2023_915",
+        "eu.pfas.monitoring.reco_2022_1431"
+      ],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.pfas_support",
+        "ec.pfas_food_monitoring_2022_2025"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.pfas.sum4.twi"
+      ],
+      "priorityFoodGroups": [
+        "fish_and_seafood"
+      ],
+      "highAttentionFoods": [
+        "eel",
+        "swordfish",
+        "salmon"
+      ],
+      "sensitivePopulationGroups": [
+        "women_who_are_pregnant_or_planning_pregnancy",
+        "foetus_and_unborn_child",
+        "young_children",
+        "high_fish_consumers"
+      ],
+      "reviewQuestions": [
+        "Does the review package preserve fish and seafood contributors explicitly instead of flattening them into broad food supply?",
+        "Where fish-specific PFAS advisory layers differ, is that divergence being treated as review input rather than silently normalized away?"
+      ],
+      "trendSignals": [],
+      "notes": [
+        "Keeps PFAS fish and seafood context explicit for reviewer-controlled monitoring interpretation.",
+        "Exposed for governed provenance and food-priority review support only."
+      ]
+    },
+    {
+      "recordId": "efsa.pfas.eggs.occurrence_monitoring.support",
+      "displayName": "PFAS eggs occurrence and monitoring support",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pfas_food_contaminants",
+      "occurrenceKind": "dietary_context_monitoring_bridge",
+      "focusSubstances": [
+        "sum4_pfas",
+        "pfoa",
+        "pfna",
+        "pfhxs",
+        "pfos"
+      ],
+      "matrixScope": [
+        "eggs"
+      ],
+      "maturityStatus": "transitional",
+      "evidenceSupportStatus": "limited",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.pfas.food.2020",
+        "efsa.pfas.topic.2026",
+        "eu.reco.2022_1431",
+        "eu.reg.2023_915",
+        "rivm.pfas.home_eggs.2025"
+      ],
+      "methodIds": [
+        "efsa.pfas.food.2020_opinion",
+        "ec.pfas.monitoring.2022_2025"
+      ],
+      "legalAuthorityIds": [
+        "eu.contaminants.reg_2023_915",
+        "eu.pfas.monitoring.reco_2022_1431"
+      ],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.pfas_support",
+        "ec.pfas_food_monitoring_2022_2025"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.pfas.sum4.twi"
+      ],
+      "priorityFoodGroups": [
+        "eggs"
+      ],
+      "highAttentionFoods": [
+        "eggs",
+        "backyard_eggs"
+      ],
+      "sensitivePopulationGroups": [
+        "young_children",
+        "high_consumers_of_locally_sourced_eggs"
+      ],
+      "reviewQuestions": [
+        "Are egg-related PFAS contributors preserved explicitly rather than diluted into mixed animal-product categories?",
+        "Where home-produced or locally sourced eggs are relevant, is that context kept visible in reviewer follow-up?"
+      ],
+      "trendSignals": [],
+      "notes": [
+        "Keeps PFAS egg-monitoring context explicit for reviewer-controlled occurrence interpretation.",
+        "Exposed for governed provenance and food-priority review support only."
+      ]
+    },
+    {
+      "recordId": "efsa.pfas.offal.occurrence_monitoring.support",
+      "displayName": "PFAS offal occurrence and monitoring support",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pfas_food_contaminants",
+      "occurrenceKind": "dietary_context_monitoring_bridge",
+      "focusSubstances": [
+        "sum4_pfas",
+        "pfoa",
+        "pfna",
+        "pfhxs",
+        "pfos"
+      ],
+      "matrixScope": [
+        "offal"
+      ],
+      "maturityStatus": "transitional",
+      "evidenceSupportStatus": "limited",
+      "submissionUse": "review_required",
+      "documentStatus": "final_current",
+      "sourceIds": [
+        "efsa.pfas.food.2020",
+        "efsa.pfas.topic.2026",
+        "eu.reco.2022_1431",
+        "eu.reg.2023_915"
+      ],
+      "methodIds": [
+        "efsa.pfas.food.2020_opinion",
+        "ec.pfas.monitoring.2022_2025"
+      ],
+      "legalAuthorityIds": [
+        "eu.contaminants.reg_2023_915",
+        "eu.pfas.monitoring.reco_2022_1431"
+      ],
+      "datasetIds": [
+        "efsa.comprehensive_food_consumption_db.pfas_support",
+        "ec.pfas_food_monitoring_2022_2025"
+      ],
+      "referenceValueRecordIds": [
+        "efsa.pfas.sum4.twi"
+      ],
+      "priorityFoodGroups": [
+        "offal"
+      ],
+      "highAttentionFoods": [
+        "liver",
+        "kidney"
+      ],
+      "sensitivePopulationGroups": [
+        "high_consumers_of_organ_meats"
+      ],
+      "reviewQuestions": [
+        "Are offal and organ-meat PFAS contributors preserved as explicit review targets instead of being diluted into general meat categories?"
+      ],
+      "trendSignals": [],
+      "notes": [
+        "Keeps PFAS offal context explicit for reviewer-controlled occurrence interpretation.",
+        "Exposed for governed provenance and food-priority review support only."
+      ]
+    }
+  ]
+}

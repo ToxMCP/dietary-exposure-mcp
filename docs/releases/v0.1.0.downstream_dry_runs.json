@@ -1,0 +1,40 @@
+{
+  "version": "0.1.0",
+  "status": "pass",
+  "pbpkDryRun": {
+    "status": "pass",
+    "route": "oral",
+    "doseMetric": "external_oral_dose_mg_per_kg_bw_per_day",
+    "schedule": "single_day",
+    "dependencyCount": 3
+  },
+  "toxclawDryRun": {
+    "status": "pass",
+    "bundleId": "toxclaw-bundle-c5a94ba7b753",
+    "assumptionCount": 6,
+    "evidenceItemCount": 6
+  },
+  "adapterDryRuns": {
+    "efsaPrimoHarness": {
+      "status": "pass",
+      "scenarioId": "dietary-scenario-124154e0dd37",
+      "modelFamily": "efsa_primo_adapter",
+      "dependencyCount": 3,
+      "qualityFlagCount": 1
+    },
+    "epaDeemHarness": {
+      "status": "pass",
+      "scenarioId": "dietary-scenario-27c20d34f533",
+      "modelFamily": "epa_deem_adapter",
+      "dependencyCount": 3,
+      "qualityFlagCount": 1
+    }
+  },
+  "scenarioId": "dietary-scenario-ab767088b529",
+  "notes": [
+    "Dry runs reuse public dietary contracts without ad hoc field mapping.",
+    "PBPK handoff exports oral external dose semantics only.",
+    "ToxClaw bundle preserves scenario, summary, route dose, assumptions, and evidence references.",
+    "Adapter dry runs normalize synthetic PRIMo- and DEEM-shaped outputs into the same contracts."
+  ]
+}

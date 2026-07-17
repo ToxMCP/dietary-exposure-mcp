@@ -1,0 +1,40 @@
+{
+  "schema_version": "v1",
+  "dataset_id": "example_governed_survey",
+  "population_group": "adult_general",
+  "chemical_identity": {
+    "preferredName": "Illustrative residue",
+    "casrn": "100-00-0"
+  },
+  "total_subjects": 4,
+  "consumers_only_count": 3,
+  "zero_intake_prevalence": 0.25,
+  "mean_intake_mg_per_kg_bw_per_day": 0.00021175685975609757,
+  "percentile_95_mg_per_kg_bw_per_day": 0.0006454687499999998,
+  "percentile_99_mg_per_kg_bw_per_day": 0.0007290937499999998,
+  "percentile_99_9_mg_per_kg_bw_per_day": 0.0007479093750000003,
+  "max_mg_per_kg_bw_per_day": 0.00075,
+  "consumers_only_mean_mg_per_kg_bw_per_day": 0.0002823424796747968,
+  "consumers_only_percentile_95_mg_per_kg_bw_per_day": 0.0006803124999999999,
+  "consumers_only_percentile_99_mg_per_kg_bw_per_day": 0.0007360625,
+  "consumers_only_percentile_99_9_mg_per_kg_bw_per_day": 0.0007486062500000002,
+  "quality_flags": [],
+  "limitations": [
+    {
+      "code": "raw_survey_ingestion",
+      "message": "Raw survey datasets support governed distribution summaries and cohort-bootstrap review support, but remain a reviewer-controlled population-exposure workflow in v0.1."
+    },
+    {
+      "code": "default_processing_factor_applied",
+      "message": "Default processing factor was applied to Apples."
+    },
+    {
+      "code": "default_processing_factor_applied",
+      "message": "Default processing factor was applied to Rice."
+    },
+    {
+      "code": "distribution_summary",
+      "message": "Distribution summary applies governed residue adjustment and percentile interpolation to subject-level exposures, but is not a parametric Monte Carlo engine."
+    }
+  ]
+}

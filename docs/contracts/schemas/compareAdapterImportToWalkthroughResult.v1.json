@@ -1,0 +1,163 @@
+{
+  "$defs": {
+    "AdapterImportWalkthroughComparisonField": {
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "title": "Field",
+          "type": "string"
+        },
+        "matches": {
+          "title": "Matches",
+          "type": "boolean"
+        },
+        "observed": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Observed"
+        },
+        "expected": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Expected"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Note"
+        }
+      },
+      "required": [
+        "field",
+        "matches"
+      ],
+      "title": "AdapterImportWalkthroughComparisonField",
+      "type": "object"
+    },
+    "ModelFamily": {
+      "enum": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "title": "ModelFamily",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "status": {
+      "title": "Status",
+      "type": "string"
+    },
+    "walkthrough_name": {
+      "title": "Walkthrough Name",
+      "type": "string"
+    },
+    "walkthrough_resource_uri": {
+      "title": "Walkthrough Resource Uri",
+      "type": "string"
+    },
+    "template_name": {
+      "title": "Template Name",
+      "type": "string"
+    },
+    "model_family": {
+      "$ref": "#/$defs/ModelFamily"
+    },
+    "compared_fields": {
+      "items": {
+        "$ref": "#/$defs/AdapterImportWalkthroughComparisonField"
+      },
+      "title": "Compared Fields",
+      "type": "array"
+    },
+    "matched_fields": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Matched Fields",
+      "type": "array"
+    },
+    "mismatch_fields": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Mismatch Fields",
+      "type": "array"
+    },
+    "notes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "status",
+    "walkthrough_name",
+    "walkthrough_resource_uri",
+    "template_name",
+    "model_family",
+    "compared_fields",
+    "matched_fields",
+    "mismatch_fields"
+  ],
+  "title": "CompareAdapterImportToWalkthroughResult",
+  "type": "object"
+}

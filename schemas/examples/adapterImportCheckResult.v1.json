@@ -1,0 +1,151 @@
+{
+  "status": "ok",
+  "model_family": "efsa_primo_adapter",
+  "input_mode": "csv_v1",
+  "template_name": "efsa_primo_tabular_template",
+  "walkthrough_name": "efsa_primo_tabular_alias_case",
+  "template_resource_uri": "adapter-template://efsa_primo_tabular_template",
+  "documentation_resource_uri": "docs://adapter-import-walkthroughs",
+  "profile_selection": {
+    "region_id": "eu_screening_default",
+    "population_group": "child_1_6",
+    "intake_window": "acute",
+    "scenario_class": "bounded_acute"
+  },
+  "chemical_identity": {
+    "preferredName": "Illustrative residue",
+    "casrn": "100-00-0"
+  },
+  "declared_totals": {
+    "total_intake_mg_per_kg_bw_per_day": 0.00416,
+    "lower_bound_mg_per_kg_bw_per_day": 0.00304,
+    "upper_bound_mg_per_kg_bw_per_day": 0.00528
+  },
+  "input_headers": [
+    "commodity",
+    "iesti_mgkgbwday",
+    "hr_mgkg",
+    "consumption_kg_day",
+    "pf",
+    "lb_mgkgbwday",
+    "ub_mgkgbwday"
+  ],
+  "header_resolution": [
+    {
+      "header": "commodity",
+      "canonical_field": "commodity_code",
+      "recognized": true
+    },
+    {
+      "header": "iesti_mgkgbwday",
+      "canonical_field": "contribution_mg_per_kg_bw_per_day",
+      "recognized": true
+    },
+    {
+      "header": "hr_mgkg",
+      "canonical_field": "residue_concentration_mg_per_kg",
+      "recognized": true
+    },
+    {
+      "header": "consumption_kg_day",
+      "canonical_field": "consumption_kg_per_day",
+      "recognized": true
+    },
+    {
+      "header": "pf",
+      "canonical_field": "applied_processing_factor",
+      "recognized": true
+    },
+    {
+      "header": "lb_mgkgbwday",
+      "canonical_field": "lower_bound_intake_mg_per_kg_bw_per_day",
+      "recognized": true
+    },
+    {
+      "header": "ub_mgkgbwday",
+      "canonical_field": "upper_bound_intake_mg_per_kg_bw_per_day",
+      "recognized": true
+    }
+  ],
+  "unmapped_headers": [],
+  "normalized_projection": {
+    "scenario_class": "bounded_acute",
+    "intake_window": "acute",
+    "population_group": "child_1_6",
+    "region_id": "eu_screening_default",
+    "body_weight_kg": 15.0,
+    "total_intake_mg_per_kg_bw_per_day": 0.00416,
+    "lower_bound_mg_per_kg_bw_per_day": 0.00304,
+    "upper_bound_mg_per_kg_bw_per_day": 0.00528,
+    "commodity_codes": [
+      "apples",
+      "milk"
+    ],
+    "commodity_contributions": [
+      {
+        "commodity_code": "apples",
+        "canonical_name": "Apples",
+        "foodex2_code": "EXAMPLE_FDX2_APPLES_RAW",
+        "rpc_code": "EXAMPLE_RPC_APPLES",
+        "rpcd_code": "EXAMPLE_RPCD_APPLES_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "contribution_mg_per_kg_bw_per_day": 0.00336,
+        "fraction_of_total": 0.8076923076923078,
+        "residue_concentration_mg_per_kg": 0.18,
+        "consumption_kg_per_day": 0.28,
+        "applied_processing_factor": 1.0,
+        "lower_bound_mg_per_kg_bw_per_day": 0.00224,
+        "upper_bound_mg_per_kg_bw_per_day": 0.00448
+      },
+      {
+        "commodity_code": "milk",
+        "canonical_name": "Milk",
+        "foodex2_code": "EXAMPLE_FDX2_MILK_RAW",
+        "rpc_code": "EXAMPLE_RPC_MILK",
+        "rpcd_code": "EXAMPLE_RPCD_MILK_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "contribution_mg_per_kg_bw_per_day": 0.0008,
+        "fraction_of_total": 0.19230769230769235,
+        "residue_concentration_mg_per_kg": 0.03,
+        "consumption_kg_per_day": 0.4,
+        "applied_processing_factor": 1.0,
+        "lower_bound_mg_per_kg_bw_per_day": 0.0008,
+        "upper_bound_mg_per_kg_bw_per_day": 0.0008
+      }
+    ],
+    "dominant_commodity_codes": [
+      "apples",
+      "milk"
+    ],
+    "source_ids": [
+      "dietary.food_vocab.crosswalk",
+      "dietary.profile.eu_child_1_6",
+      "dietary.taxonomy.apples",
+      "dietary.taxonomy.milk",
+      "efsa.default_body_weights.2012",
+      "efsa.primo",
+      "example.adapter.apples.monitoring",
+      "example.adapter.milk.default"
+    ],
+    "quality_flag_codes": [
+      "external_adapter_normalized"
+    ],
+    "limitation_codes": [
+      "default_processing_factor_applied",
+      "external_adapter_normalization",
+      "profile_limitations"
+    ],
+    "assumption_parameters": [
+      "adapter_case:efsa_primo_adapter",
+      "adapter_contribution_count:efsa_primo_adapter",
+      "adapter_engine_version:efsa_primo_adapter"
+    ]
+  },
+  "notes": [
+    "Adapter import checks normalize supplied CSV text through the adapter harness and return a stable projection without runtime-generated IDs or timestamps.",
+    "Successful results confirm CSV structure, numeric coercion, contribution-total reconciliation, commodity resolution, and profile selection for the declared scenario.",
+    "This tool validates a harnessed compatibility pathway only and does not execute an official PRIMo or DEEM engine."
+  ]
+}

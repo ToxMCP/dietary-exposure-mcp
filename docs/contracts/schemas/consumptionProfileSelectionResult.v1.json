@@ -1,0 +1,508 @@
+{
+  "$defs": {
+    "CommodityConsumptionRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "commodity": {
+          "$ref": "#/$defs/CommodityReference"
+        },
+        "acute_kg_per_day": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Acute Kg Per Day"
+        },
+        "chronic_kg_per_day": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Chronic Kg Per Day"
+        },
+        "source_reference": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceReference"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "commodity"
+      ],
+      "title": "CommodityConsumptionRecord",
+      "type": "object"
+    },
+    "CommodityReference": {
+      "additionalProperties": false,
+      "properties": {
+        "taxonomy_id": {
+          "title": "Taxonomy Id",
+          "type": "string"
+        },
+        "commodity_code": {
+          "title": "Commodity Code",
+          "type": "string"
+        },
+        "canonical_name": {
+          "title": "Canonical Name",
+          "type": "string"
+        },
+        "food_group": {
+          "title": "Food Group",
+          "type": "string"
+        },
+        "mapping_status": {
+          "title": "Mapping Status",
+          "type": "string"
+        },
+        "foodex2_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Foodex2 Code"
+        },
+        "rpc_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rpc Code"
+        },
+        "rpcd_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rpcd Code"
+        },
+        "processed_status": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProcessedStatus"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "mapping_confidence": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/MappingConfidence"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "matched_input_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Matched Input Code"
+        },
+        "source_reference": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceReference"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "taxonomy_id",
+        "commodity_code",
+        "canonical_name",
+        "food_group",
+        "mapping_status"
+      ],
+      "title": "CommodityReference",
+      "type": "object"
+    },
+    "DietaryConsumptionProfile": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "profile_id": {
+          "title": "Profile Id",
+          "type": "string"
+        },
+        "display_name": {
+          "title": "Display Name",
+          "type": "string"
+        },
+        "population_group": {
+          "title": "Population Group",
+          "type": "string"
+        },
+        "profile_family": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Profile Family"
+        },
+        "regulatory_basis": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Regulatory Basis"
+        },
+        "review_status": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Review Status"
+        },
+        "survey_profile_source": {
+          "title": "Survey Profile Source",
+          "type": "string"
+        },
+        "region_id": {
+          "title": "Region Id",
+          "type": "string"
+        },
+        "body_weight_kg": {
+          "exclusiveMinimum": 0.0,
+          "title": "Body Weight Kg",
+          "type": "number"
+        },
+        "applicable_windows": {
+          "items": {
+            "$ref": "#/$defs/IntakeWindowSemantic"
+          },
+          "title": "Applicable Windows",
+          "type": "array"
+        },
+        "intake_unit": {
+          "default": "kg_food/day",
+          "title": "Intake Unit",
+          "type": "string"
+        },
+        "commodity_consumption": {
+          "items": {
+            "$ref": "#/$defs/CommodityConsumptionRecord"
+          },
+          "title": "Commodity Consumption",
+          "type": "array"
+        },
+        "provenance": {
+          "$ref": "#/$defs/ProvenanceBundle"
+        },
+        "quality_flags": {
+          "items": {
+            "$ref": "#/$defs/QualityFlag"
+          },
+          "title": "Quality Flags",
+          "type": "array"
+        },
+        "limitations": {
+          "items": {
+            "$ref": "#/$defs/LimitationNote"
+          },
+          "title": "Limitations",
+          "type": "array"
+        }
+      },
+      "required": [
+        "profile_id",
+        "display_name",
+        "population_group",
+        "survey_profile_source",
+        "region_id",
+        "body_weight_kg",
+        "applicable_windows",
+        "commodity_consumption",
+        "provenance"
+      ],
+      "title": "DietaryConsumptionProfile",
+      "type": "object"
+    },
+    "IntakeWindowSemantic": {
+      "enum": [
+        "acute",
+        "chronic"
+      ],
+      "title": "IntakeWindowSemantic",
+      "type": "string"
+    },
+    "LimitationNote": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "title": "LimitationNote",
+      "type": "object"
+    },
+    "MappingConfidence": {
+      "enum": [
+        "reviewed",
+        "provisional",
+        "heuristic"
+      ],
+      "title": "MappingConfidence",
+      "type": "string"
+    },
+    "ProcessedStatus": {
+      "enum": [
+        "raw_primary_commodity",
+        "processed_derivative"
+      ],
+      "title": "ProcessedStatus",
+      "type": "string"
+    },
+    "ProvenanceBundle": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "defaults_version": {
+          "default": "v1",
+          "title": "Defaults Version",
+          "type": "string"
+        },
+        "algorithm_version": {
+          "title": "Algorithm Version",
+          "type": "string"
+        },
+        "generated_at": {
+          "format": "date-time",
+          "title": "Generated At",
+          "type": "string"
+        },
+        "source_references": {
+          "items": {
+            "$ref": "#/$defs/SourceReference"
+          },
+          "title": "Source References",
+          "type": "array"
+        }
+      },
+      "required": [
+        "algorithm_version",
+        "generated_at"
+      ],
+      "title": "ProvenanceBundle",
+      "type": "object"
+    },
+    "QualityFlag": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "severity": {
+          "$ref": "#/$defs/Severity"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "severity",
+        "message"
+      ],
+      "title": "QualityFlag",
+      "type": "object"
+    },
+    "Severity": {
+      "enum": [
+        "info",
+        "warning",
+        "error"
+      ],
+      "title": "Severity",
+      "type": "string"
+    },
+    "SourceOriginTag": {
+      "enum": [
+        "official_regulatory",
+        "curated_derived",
+        "illustrative_placeholder",
+        "internal_operational"
+      ],
+      "title": "SourceOriginTag",
+      "type": "string"
+    },
+    "SourceReference": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "effective_date": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Effective Date"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        },
+        "originTag": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceOriginTag"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "source_id",
+        "title"
+      ],
+      "title": "SourceReference",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "profile": {
+      "$ref": "#/$defs/DietaryConsumptionProfile"
+    },
+    "matched_commodities": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Matched Commodities",
+      "type": "array"
+    },
+    "missing_commodities": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Missing Commodities",
+      "type": "array"
+    },
+    "quality_flags": {
+      "items": {
+        "$ref": "#/$defs/QualityFlag"
+      },
+      "title": "Quality Flags",
+      "type": "array"
+    },
+    "limitations": {
+      "items": {
+        "$ref": "#/$defs/LimitationNote"
+      },
+      "title": "Limitations",
+      "type": "array"
+    }
+  },
+  "required": [
+    "profile",
+    "matched_commodities",
+    "missing_commodities"
+  ],
+  "title": "ConsumptionProfileSelectionResult",
+  "type": "object"
+}

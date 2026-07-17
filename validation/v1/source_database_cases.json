@@ -1,0 +1,1687 @@
+{
+  "cases": [
+    {
+      "name": "glyphosate_reference_value_conflict_is_preserved",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "glyphosate",
+        "contaminantFamily": "pesticide_residue"
+      },
+      "expectedRecordIds": [
+        "efsa.openfoodtox.glyphosate.adi",
+        "jmpr.glyphosate.adi"
+      ],
+      "expectedConflictGroupIds": [
+        "glyphosate.adi.authority_conflict"
+      ],
+      "expectedAuthorities": [
+        "EFSA",
+        "JMPR"
+      ]
+    },
+    {
+      "name": "acetamiprid_reference_values_expose_current_efsa_outputs",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "acetamiprid",
+        "contaminantFamily": "pesticide_residue"
+      },
+      "expectedRecordIds": [
+        "efsa.openfoodtox.acetamiprid.adi",
+        "efsa.openfoodtox.acetamiprid.arfd"
+      ],
+      "expectedConflictGroupIds": [],
+      "expectedAuthorities": [
+        "EFSA"
+      ]
+    },
+    {
+      "name": "imidacloprid_reference_values_expose_openfoodtox_public_extracts",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "imidacloprid",
+        "contaminantFamily": "pesticide_residue"
+      },
+      "expectedRecordIds": [
+        "efsa.openfoodtox.imidacloprid.adi",
+        "efsa.openfoodtox.imidacloprid.arfd"
+      ],
+      "expectedConflictGroupIds": [],
+      "expectedAuthorities": [
+        "EFSA"
+      ]
+    },
+    {
+      "name": "ethiprole_reference_values_expose_current_efsa_trv_outputs",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "ethiprole",
+        "contaminantFamily": "pesticide_residue"
+      },
+      "expectedRecordIds": [
+        "efsa.ethiprole.adi.2024",
+        "efsa.ethiprole.arfd.2024"
+      ],
+      "expectedConflictGroupIds": [],
+      "expectedAuthorities": [
+        "EFSA"
+      ]
+    },
+    {
+      "name": "tetraconazole_reference_values_expose_current_efsa_trv_outputs",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "tetraconazole",
+        "contaminantFamily": "pesticide_residue"
+      },
+      "expectedRecordIds": [
+        "efsa.tetraconazole.adi.2019",
+        "efsa.tetraconazole.arfd.2019"
+      ],
+      "expectedConflictGroupIds": [],
+      "expectedAuthorities": [
+        "EFSA"
+      ]
+    },
+    {
+      "name": "tebuconazole_reference_values_expose_current_efsa_trv_outputs",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "tebuconazole",
+        "contaminantFamily": "pesticide_residue"
+      },
+      "expectedRecordIds": [
+        "efsa.tebuconazole.adi.2013",
+        "efsa.tebuconazole.arfd.2013"
+      ],
+      "expectedConflictGroupIds": [],
+      "expectedAuthorities": [
+        "EFSA"
+      ]
+    },
+    {
+      "name": "glufosinate_reference_value_conflicts_are_preserved",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "glufosinate",
+        "contaminantFamily": "pesticide_residue"
+      },
+      "expectedRecordIds": [
+        "efsa.glufosinate.adi.2007",
+        "jmpr.glufosinate.adi.2012",
+        "efsa.glufosinate.arfd.2007",
+        "jmpr.glufosinate.arfd.2012"
+      ],
+      "expectedConflictGroupIds": [
+        "glufosinate.adi.authority_conflict",
+        "glufosinate.arfd.authority_conflict"
+      ],
+      "expectedAuthorities": [
+        "EFSA",
+        "JMPR"
+      ]
+    },
+    {
+      "name": "oxamyl_reference_value_conflicts_are_preserved",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "oxamyl",
+        "contaminantFamily": "pesticide_residue"
+      },
+      "expectedRecordIds": [
+        "efsa.oxamyl.adi.2023",
+        "jmpr.oxamyl.adi.2012",
+        "efsa.oxamyl.arfd.2023",
+        "jmpr.oxamyl.arfd.2012"
+      ],
+      "expectedConflictGroupIds": [
+        "oxamyl.adi.authority_conflict",
+        "oxamyl.arfd.authority_conflict"
+      ],
+      "expectedAuthorities": [
+        "EFSA",
+        "JMPR"
+      ]
+    },
+    {
+      "name": "difenoconazole_reference_value_conflicts_are_preserved",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "difenoconazole",
+        "contaminantFamily": "pesticide_residue"
+      },
+      "expectedRecordIds": [
+        "efsa.openfoodtox.difenoconazole.adi",
+        "efsa.openfoodtox.difenoconazole.arfd",
+        "jmpr.difenoconazole.arfd.2013"
+      ],
+      "expectedConflictGroupIds": [
+        "difenoconazole.arfd.authority_conflict"
+      ],
+      "expectedAuthorities": [
+        "EFSA",
+        "JMPR"
+      ]
+    },
+    {
+      "name": "us_glyphosate_reference_value_gap_is_explicit",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "glyphosate",
+        "contaminantFamily": "pesticide_residue",
+        "jurisdiction": "us"
+      },
+      "expectedRecordIds": [],
+      "expectedConflictGroupIds": [],
+      "expectedAuthorities": [],
+      "expectedQualityFlagCodes": [
+        "no_jurisdiction_specific_reference_value",
+        "family_curated_without_reference_value"
+      ],
+      "expectedCoverageIds": [
+        "us.pesticide_residue.glyphosate.wave1"
+      ],
+      "expectedCoverageLevels": [
+        "deep_curated"
+      ],
+      "expectedRequestedJurisdictionStatus": "family_curated_without_reference_value"
+    },
+    {
+      "name": "codex_imidacloprid_reference_value_lookup_stays_jurisdiction_specific",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "imidacloprid",
+        "contaminantFamily": "pesticide_residue",
+        "jurisdiction": "codex_global"
+      },
+      "expectedRecordIds": [
+        "jmpr.imidacloprid.adi.2001"
+      ],
+      "expectedConflictGroupIds": [],
+      "expectedAuthorities": [
+        "JMPR"
+      ],
+      "expectedCoverageIds": [
+        "codex_global.pesticide_residue.imidacloprid.wave1"
+      ],
+      "expectedCoverageLevels": [
+        "deep_curated"
+      ],
+      "expectedRequestedJurisdictionStatus": "exact_jurisdiction_value_present"
+    },
+    {
+      "name": "china_acetamiprid_reference_value_lookup_exposes_final_official_adi",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "acetamiprid",
+        "contaminantFamily": "pesticide_residue",
+        "jurisdiction": "cn"
+      },
+      "expectedRecordIds": [
+        "cn.nhc.acetamiprid.adi.2026"
+      ],
+      "expectedConflictGroupIds": [],
+      "expectedAuthorities": [
+        "NHC China"
+      ],
+      "expectedCoverageIds": [
+        "cn.pesticide_residue.acetamiprid.wave1"
+      ],
+      "expectedCoverageLevels": [
+        "deep_curated"
+      ],
+      "expectedRequestedJurisdictionStatus": "exact_jurisdiction_value_present"
+    },
+    {
+      "name": "us_acetamiprid_reference_value_stays_anchor_only_not_gap",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "acetamiprid",
+        "contaminantFamily": "pesticide_residue",
+        "jurisdiction": "us"
+      },
+      "expectedRecordIds": [],
+      "expectedConflictGroupIds": [],
+      "expectedAuthorities": [],
+      "expectedQualityFlagCodes": [
+        "no_jurisdiction_specific_reference_value",
+        "anchor_only_family_without_reference_value"
+      ],
+      "expectedCoverageIds": [
+        "us.pesticide_residue.acetamiprid.wave1"
+      ],
+      "expectedCoverageLevels": [
+        "anchor_only"
+      ],
+      "expectedRequestedJurisdictionStatus": "anchor_only_family"
+    },
+    {
+      "name": "us_pfas_reference_value_gap_is_explicit",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "sum_pfoa_pfna_pfhxs_pfos",
+        "contaminantFamily": "pfas_food_contaminants",
+        "jurisdiction": "us"
+      },
+      "expectedRecordIds": [],
+      "expectedConflictGroupIds": [],
+      "expectedAuthorities": [],
+      "expectedQualityFlagCodes": [
+        "coverage_gap",
+        "no_jurisdiction_specific_reference_value"
+      ],
+      "expectedCoverageIds": [
+        "us.pfas_food_contaminants.sum_pfoa_pfna_pfhxs_pfos.wave1"
+      ],
+      "expectedCoverageLevels": [
+        "explicit_gap"
+      ],
+      "expectedRequestedJurisdictionStatus": "explicit_gap"
+    },
+    {
+      "name": "codex_cadmium_reference_value_gap_is_explicit",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "cadmium",
+        "contaminantFamily": "cadmium_food_contaminants",
+        "jurisdiction": "codex_global"
+      },
+      "expectedRecordIds": [],
+      "expectedConflictGroupIds": [],
+      "expectedAuthorities": [],
+      "expectedQualityFlagCodes": [
+        "no_jurisdiction_specific_reference_value",
+        "family_curated_without_reference_value"
+      ],
+      "expectedCoverageIds": [
+        "codex_global.cadmium_food_contaminants.cadmium.wave1"
+      ],
+      "expectedCoverageLevels": [
+        "deep_curated"
+      ],
+      "expectedRequestedJurisdictionStatus": "family_curated_without_reference_value"
+    },
+    {
+      "name": "china_lead_reference_value_gap_is_anchor_only_not_silent",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "lead",
+        "contaminantFamily": "lead_food_contaminants",
+        "jurisdiction": "cn"
+      },
+      "expectedRecordIds": [],
+      "expectedConflictGroupIds": [],
+      "expectedAuthorities": [],
+      "expectedQualityFlagCodes": [
+        "no_jurisdiction_specific_reference_value",
+        "family_curated_without_reference_value"
+      ],
+      "expectedCoverageIds": [
+        "cn.lead_food_contaminants.lead.wave1"
+      ],
+      "expectedCoverageLevels": [
+        "deep_curated"
+      ],
+      "expectedRequestedJurisdictionStatus": "family_curated_without_reference_value"
+    },
+    {
+      "name": "us_lead_legal_limit_lookup_exposes_final_processed_food_limits",
+      "kind": "contaminant_legal_limits",
+      "request": {
+        "contaminantFamily": "lead_food_contaminants",
+        "jurisdiction": "us",
+        "substanceKey": "lead"
+      },
+      "expectedRecordIds": [
+        "us.fda.lead.processed_foods.general_baby_foods.ml.2025",
+        "us.fda.lead.processed_foods.root_vegetables.ml.2025",
+        "us.fda.lead.processed_foods.dry_infant_cereals.ml.2025"
+      ],
+      "expectedLegalAuthorityIds": [
+        "us.fda.lead.processed_foods.action_levels.2025"
+      ],
+      "expectedCoverageIds": [
+        "us.lead_food_contaminants.lead.wave1"
+      ],
+      "expectedCoverageLevels": [
+        "deep_curated"
+      ],
+      "expectedRequestedLaneStatus": "exact_curated_match",
+      "expectedOverallSubmissionUse": "review_required"
+    },
+    {
+      "name": "us_apple_juice_inorganic_arsenic_legal_limit_lookup_is_exact",
+      "kind": "contaminant_legal_limits",
+      "request": {
+        "contaminantFamily": "inorganic_arsenic_food_contaminants",
+        "jurisdiction": "us",
+        "substanceKey": "inorganic_arsenic",
+        "commodityCode": "apple_juice"
+      },
+      "expectedRecordIds": [
+        "us.fda.inorganic_arsenic.apple_juice.ml.2023"
+      ],
+      "expectedLegalAuthorityIds": [
+        "us.fda.inorganic_arsenic.apple_juice.action_level.2023",
+        "us.fda.inorganic_arsenic.rice_cereals.action_level.2020"
+      ],
+      "expectedCoverageIds": [
+        "us.inorganic_arsenic_food_contaminants.inorganic_arsenic.wave1"
+      ],
+      "expectedCoverageLevels": [
+        "deep_curated"
+      ],
+      "expectedRequestedLaneStatus": "exact_curated_match",
+      "expectedOverallSubmissionUse": "review_required"
+    },
+    {
+      "name": "codex_apple_juice_lead_legal_limit_lookup_is_exact",
+      "kind": "contaminant_legal_limits",
+      "request": {
+        "contaminantFamily": "lead_food_contaminants",
+        "jurisdiction": "codex_global",
+        "substanceKey": "lead",
+        "commodityCode": "apple_juice"
+      },
+      "expectedRecordIds": [
+        "codex.cxs_193_1995.lead.apple_juice.ml.2025"
+      ],
+      "expectedLegalAuthorityIds": [
+        "codex.cccf.cxs_193_1995.current_2025.lead"
+      ],
+      "expectedCoverageIds": [
+        "codex_global.lead_food_contaminants.lead.wave1"
+      ],
+      "expectedCoverageLevels": [
+        "deep_curated"
+      ],
+      "expectedRequestedLaneStatus": "exact_curated_match",
+      "expectedOverallSubmissionUse": "review_required"
+    },
+    {
+      "name": "codex_olive_oil_inorganic_arsenic_legal_limit_lookup_is_exact",
+      "kind": "contaminant_legal_limits",
+      "request": {
+        "contaminantFamily": "inorganic_arsenic_food_contaminants",
+        "jurisdiction": "codex_global",
+        "substanceKey": "inorganic_arsenic",
+        "commodityCode": "olive_oil"
+      },
+      "expectedRecordIds": [
+        "codex.cxs_193_1995.inorganic_arsenic.olive_oil.ml.2025"
+      ],
+      "expectedLegalAuthorityIds": [
+        "codex.cccf.cxs_193_1995.current_2025.inorganic_arsenic"
+      ],
+      "expectedCoverageIds": [
+        "codex_global.inorganic_arsenic_food_contaminants.inorganic_arsenic.wave1"
+      ],
+      "expectedCoverageLevels": [
+        "deep_curated"
+      ],
+      "expectedRequestedLaneStatus": "exact_curated_match",
+      "expectedOverallSubmissionUse": "review_required"
+    },
+    {
+      "name": "codex_rice_inorganic_arsenic_legal_limit_gap_stays_explicit",
+      "kind": "contaminant_legal_limits",
+      "request": {
+        "contaminantFamily": "inorganic_arsenic_food_contaminants",
+        "jurisdiction": "codex_global",
+        "substanceKey": "inorganic_arsenic",
+        "commodityCode": "rice"
+      },
+      "expectedRecordIds": [],
+      "expectedLegalAuthorityIds": [
+        "codex.cccf.cxs_193_1995.current_2025.inorganic_arsenic"
+      ],
+      "expectedQualityFlagCodes": [
+        "no_jurisdiction_specific_legal_limit",
+        "no_curated_legal_limit_for_requested_lane",
+        "requested_lane_outside_curated_scope"
+      ],
+      "expectedCoverageIds": [
+        "codex_global.inorganic_arsenic_food_contaminants.inorganic_arsenic.wave1"
+      ],
+      "expectedCoverageLevels": [
+        "deep_curated"
+      ],
+      "expectedRequestedLaneStatus": "family_curated_but_requested_lane_unmatched",
+      "expectedOverallSubmissionUse": "review_required"
+    },
+    {
+      "name": "codex_salmon_methylmercury_legal_limit_stays_anchor_only",
+      "kind": "contaminant_legal_limits",
+      "request": {
+        "contaminantFamily": "mercury_food_contaminants",
+        "jurisdiction": "codex_global",
+        "substanceKey": "methylmercury",
+        "commodityCode": "salmon"
+      },
+      "expectedRecordIds": [],
+      "expectedLegalAuthorityIds": [
+        "codex.cccf.cxs_193_1995.current_2025.mercury"
+      ],
+      "expectedQualityFlagCodes": [
+        "no_jurisdiction_specific_legal_limit",
+        "no_curated_legal_limit_for_requested_lane",
+        "anchor_only_family_without_exact_legal_limit"
+      ],
+      "expectedCoverageIds": [
+        "codex_global.mercury_food_contaminants.methylmercury.wave1"
+      ],
+      "expectedCoverageLevels": [
+        "anchor_only"
+      ],
+      "expectedRequestedLaneStatus": "anchor_only_family",
+      "expectedOverallSubmissionUse": "review_required"
+    },
+    {
+      "name": "china_rice_inorganic_arsenic_legal_limit_lookup_is_exact",
+      "kind": "contaminant_legal_limits",
+      "request": {
+        "contaminantFamily": "inorganic_arsenic_food_contaminants",
+        "jurisdiction": "cn",
+        "substanceKey": "inorganic_arsenic",
+        "commodityCode": "rice"
+      },
+      "expectedRecordIds": [
+        "cn.nhc.inorganic_arsenic.rice.ml.2025"
+      ],
+      "expectedLegalAuthorityIds": [
+        "cn.nhc.inorganic_arsenic.gb_2762_2025"
+      ],
+      "expectedCoverageIds": [
+        "cn.inorganic_arsenic_food_contaminants.inorganic_arsenic.wave1"
+      ],
+      "expectedCoverageLevels": [
+        "deep_curated"
+      ],
+      "expectedRequestedLaneStatus": "exact_curated_match",
+      "expectedOverallSubmissionUse": "allowed"
+    },
+    {
+      "name": "china_inorganic_mercury_legal_limit_gap_is_explicit",
+      "kind": "contaminant_legal_limits",
+      "request": {
+        "contaminantFamily": "mercury_food_contaminants",
+        "jurisdiction": "cn",
+        "substanceKey": "inorganic_mercury"
+      },
+      "expectedRecordIds": [],
+      "expectedLegalAuthorityIds": [
+        "cn.nhc.mercury.gb_2762_2025"
+      ],
+      "expectedQualityFlagCodes": [
+        "coverage_gap",
+        "no_jurisdiction_specific_legal_limit",
+        "no_curated_legal_limit_for_requested_lane"
+      ],
+      "expectedCoverageIds": [
+        "cn.mercury_food_contaminants.inorganic_mercury.wave1"
+      ],
+      "expectedCoverageLevels": [
+        "explicit_gap"
+      ],
+      "expectedRequestedLaneStatus": "explicit_gap",
+      "expectedOverallSubmissionUse": "review_required"
+    },
+    {
+      "name": "pfas_reference_value_lookup_exposes_group_twi",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "sum_pfoa_pfna_pfhxs_pfos",
+        "contaminantFamily": "pfas_food_contaminants"
+      },
+      "expectedRecordIds": [
+        "efsa.pfas.sum4.twi"
+      ],
+      "expectedConflictGroupIds": [],
+      "expectedAuthorities": [
+        "EFSA"
+      ]
+    },
+    {
+      "name": "acrylamide_reference_values_expose_bmdl_records",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "acrylamide",
+        "contaminantFamily": "acrylamide_process_contaminants"
+      },
+      "expectedRecordIds": [
+        "efsa.acrylamide.neoplastic.bmdl10",
+        "efsa.acrylamide.neurotoxicity.bmdl10"
+      ],
+      "expectedConflictGroupIds": [],
+      "expectedAuthorities": [
+        "EFSA"
+      ]
+    },
+    {
+      "name": "bpa_reference_value_lookup_exposes_current_efsa_tdi",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "bisphenol_a",
+        "contaminantFamily": "bisphenol_food_contact_migration"
+      },
+      "expectedRecordIds": [
+        "efsa.bpa.tdi.2023"
+      ],
+      "expectedConflictGroupIds": [],
+      "expectedAuthorities": [
+        "EFSA"
+      ]
+    },
+    {
+      "name": "cadmium_reference_value_lookup_exposes_current_efsa_twi",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "cadmium",
+        "contaminantFamily": "cadmium_food_contaminants"
+      },
+      "expectedRecordIds": [
+        "efsa.cadmium.twi.2009"
+      ],
+      "expectedConflictGroupIds": [],
+      "expectedAuthorities": [
+        "EFSA"
+      ]
+    },
+    {
+      "name": "lead_reference_value_lookup_exposes_current_efsa_bmdl_records",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "lead",
+        "contaminantFamily": "lead_food_contaminants"
+      },
+      "expectedRecordIds": [
+        "efsa.lead.developmental_neurotoxicity.bmdl01",
+        "efsa.lead.nephrotoxicity.bmdl10"
+      ],
+      "expectedConflictGroupIds": [],
+      "expectedAuthorities": [
+        "EFSA"
+      ]
+    },
+    {
+      "name": "inorganic_arsenic_reference_value_lookup_exposes_current_efsa_bmdl_record",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "inorganic_arsenic",
+        "contaminantFamily": "inorganic_arsenic_food_contaminants"
+      },
+      "expectedRecordIds": [
+        "efsa.inorganic_arsenic.skin_cancer.bmdl05"
+      ],
+      "expectedConflictGroupIds": [],
+      "expectedAuthorities": [
+        "EFSA"
+      ]
+    },
+    {
+      "name": "methylmercury_reference_value_lookup_exposes_current_efsa_twi_record",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "methylmercury",
+        "contaminantFamily": "mercury_food_contaminants"
+      },
+      "expectedRecordIds": [
+        "efsa.methylmercury.twi.2012"
+      ],
+      "expectedConflictGroupIds": [],
+      "expectedAuthorities": [
+        "EFSA"
+      ]
+    },
+    {
+      "name": "inorganic_mercury_reference_value_lookup_exposes_current_efsa_twi_record",
+      "kind": "reference_values",
+      "request": {
+        "substanceKey": "inorganic_mercury",
+        "contaminantFamily": "mercury_food_contaminants"
+      },
+      "expectedRecordIds": [
+        "efsa.inorganic_mercury.twi.2012"
+      ],
+      "expectedConflictGroupIds": [],
+      "expectedAuthorities": [
+        "EFSA"
+      ]
+    },
+    {
+      "name": "eu_pesticide_dataset_support_exposes_efsa_backbone",
+      "kind": "consumption_datasets",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue"
+      },
+      "expectedDatasetIds": [
+        "efsa.comprehensive_food_consumption_db",
+        "efsa.dietex_support",
+        "efsa.eu_menu_programme"
+      ],
+      "expectedOverallSubmissionUse": "review_required"
+    },
+    {
+      "name": "pfas_dataset_support_uses_efsa_food_consumption_and_monitoring_metadata",
+      "kind": "consumption_datasets",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pfas_food_contaminants"
+      },
+      "expectedDatasetIds": [
+        "efsa.comprehensive_food_consumption_db.pfas_support",
+        "ec.pfas_food_monitoring_2022_2025"
+      ],
+      "expectedOverallSubmissionUse": "review_required"
+    },
+    {
+      "name": "acrylamide_dataset_support_uses_efsa_backbone_and_monitoring_metadata",
+      "kind": "consumption_datasets",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "acrylamide_process_contaminants"
+      },
+      "expectedDatasetIds": [
+        "efsa.comprehensive_food_consumption_db.acrylamide_support",
+        "eu.acrylamide_food_monitoring_2019"
+      ],
+      "expectedOverallSubmissionUse": "allowed"
+    },
+    {
+      "name": "bpa_dataset_support_uses_efsa_food_consumption_context",
+      "kind": "consumption_datasets",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "bisphenol_food_contact_migration"
+      },
+      "expectedDatasetIds": [
+        "efsa.comprehensive_food_consumption_db.bpa_support"
+      ],
+      "expectedOverallSubmissionUse": "allowed"
+    },
+    {
+      "name": "pfas_reporting_profiles_expose_primary_eu_and_optional_dutch_profiles_for_eggs",
+      "kind": "reporting_profiles",
+      "request": {
+        "contaminantFamily": "pfas_food_contaminants",
+        "matrixGroup": "eggs"
+      },
+      "expectedProfileIds": [
+        "eu.pfas.efsa4.food_risk",
+        "eu.pfas.efsa4.ml_lower_bound",
+        "eu.pfas.individual_panel_detail",
+        "nl.pfas.rivm_peq.food_advisory"
+      ],
+      "expectedRecommendedPrimaryProfileIds": [
+        "eu.pfas.efsa4.food_risk"
+      ]
+    },
+    {
+      "name": "pfas_reporting_profiles_filter_to_eu_when_requested",
+      "kind": "reporting_profiles",
+      "request": {
+        "contaminantFamily": "pfas_food_contaminants",
+        "jurisdiction": "eu",
+        "matrixGroup": "eggs"
+      },
+      "expectedProfileIds": [
+        "eu.pfas.efsa4.food_risk",
+        "eu.pfas.efsa4.ml_lower_bound",
+        "eu.pfas.individual_panel_detail"
+      ],
+      "expectedRecommendedPrimaryProfileIds": [
+        "eu.pfas.efsa4.food_risk"
+      ]
+    },
+    {
+      "name": "pfas_reporting_profiles_expose_optional_dutch_biota_fish_profile_for_fish_review",
+      "kind": "reporting_profiles",
+      "request": {
+        "contaminantFamily": "pfas_food_contaminants",
+        "matrixGroup": "fish_and_seafood"
+      },
+      "expectedProfileIds": [
+        "eu.pfas.efsa4.food_risk",
+        "eu.pfas.efsa4.ml_lower_bound",
+        "eu.pfas.individual_panel_detail",
+        "nl.pfas.rivm_peq.biota_fish_advisory"
+      ],
+      "expectedRecommendedPrimaryProfileIds": [
+        "eu.pfas.efsa4.food_risk"
+      ]
+    },
+    {
+      "name": "glyphosate_occurrence_evidence_exposes_pesticide_monitoring_context",
+      "kind": "occurrence_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue",
+        "analyte": "glyphosate",
+        "matrixGroup": "wheat"
+      },
+      "expectedRecordIds": [
+        "eu.glyphosate.occurrence_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "acetamiprid_occurrence_evidence_exposes_pesticide_monitoring_context",
+      "kind": "occurrence_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue",
+        "analyte": "acetamiprid",
+        "matrixGroup": "tomatoes"
+      },
+      "expectedRecordIds": [
+        "eu.acetamiprid.occurrence_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "imidacloprid_occurrence_evidence_exposes_pesticide_monitoring_context",
+      "kind": "occurrence_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue",
+        "analyte": "imidacloprid",
+        "matrixGroup": "apples"
+      },
+      "expectedRecordIds": [
+        "eu.imidacloprid.occurrence_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "ethiprole_occurrence_evidence_exposes_pesticide_review_context",
+      "kind": "occurrence_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue",
+        "analyte": "ethiprole",
+        "matrixGroup": "rice"
+      },
+      "expectedRecordIds": [
+        "eu.ethiprole.occurrence_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "tetraconazole_occurrence_evidence_exposes_pesticide_review_context",
+      "kind": "occurrence_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue",
+        "analyte": "tetraconazole",
+        "matrixGroup": "linseeds"
+      },
+      "expectedRecordIds": [
+        "eu.tetraconazole.occurrence_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "tebuconazole_occurrence_evidence_exposes_pesticide_review_context",
+      "kind": "occurrence_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue",
+        "analyte": "tebuconazole",
+        "matrixGroup": "poppy_seeds"
+      },
+      "expectedRecordIds": [
+        "eu.tebuconazole.occurrence_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "glufosinate_occurrence_evidence_exposes_pesticide_review_context",
+      "kind": "occurrence_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue",
+        "analyte": "glufosinate",
+        "matrixGroup": "soya_beans"
+      },
+      "expectedRecordIds": [
+        "eu.glufosinate.occurrence_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "oxamyl_occurrence_evidence_exposes_pesticide_review_context",
+      "kind": "occurrence_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue",
+        "analyte": "oxamyl",
+        "matrixGroup": "potatoes"
+      },
+      "expectedRecordIds": [
+        "eu.oxamyl.occurrence_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "difenoconazole_occurrence_evidence_exposes_pesticide_review_context",
+      "kind": "occurrence_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue",
+        "analyte": "difenoconazole",
+        "matrixGroup": "wheat_and_rye"
+      },
+      "expectedRecordIds": [
+        "eu.difenoconazole.occurrence_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "glyphosate_analytical_method_evidence_exposes_pesticide_review_context",
+      "kind": "analytical_method_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue",
+        "analyte": "glyphosate",
+        "matrixGroup": "wheat"
+      },
+      "expectedRecordIds": [
+        "eu.glyphosate.analytical_method_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "acetamiprid_analytical_method_evidence_exposes_pesticide_review_context",
+      "kind": "analytical_method_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue",
+        "analyte": "acetamiprid",
+        "matrixGroup": "oranges"
+      },
+      "expectedRecordIds": [
+        "eu.acetamiprid.analytical_method_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "imidacloprid_analytical_method_evidence_exposes_pesticide_review_context",
+      "kind": "analytical_method_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue",
+        "analyte": "imidacloprid",
+        "matrixGroup": "apples"
+      },
+      "expectedRecordIds": [
+        "eu.imidacloprid.analytical_method_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "ethiprole_analytical_method_evidence_exposes_pesticide_review_context",
+      "kind": "analytical_method_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue",
+        "analyte": "ethiprole",
+        "matrixGroup": "rice"
+      },
+      "expectedRecordIds": [
+        "eu.ethiprole.analytical_method_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "tetraconazole_analytical_method_evidence_exposes_pesticide_review_context",
+      "kind": "analytical_method_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue",
+        "analyte": "tetraconazole",
+        "matrixGroup": "linseeds"
+      },
+      "expectedRecordIds": [
+        "eu.tetraconazole.analytical_method_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "tebuconazole_analytical_method_evidence_exposes_pesticide_review_context",
+      "kind": "analytical_method_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue",
+        "analyte": "tebuconazole",
+        "matrixGroup": "poppy_seeds"
+      },
+      "expectedRecordIds": [
+        "eu.tebuconazole.analytical_method_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "glufosinate_analytical_method_evidence_exposes_pesticide_review_context",
+      "kind": "analytical_method_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue",
+        "analyte": "glufosinate",
+        "matrixGroup": "soya_beans"
+      },
+      "expectedRecordIds": [
+        "eu.glufosinate.analytical_method_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "oxamyl_analytical_method_evidence_exposes_pesticide_review_context",
+      "kind": "analytical_method_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue",
+        "analyte": "oxamyl",
+        "matrixGroup": "potatoes"
+      },
+      "expectedRecordIds": [
+        "eu.oxamyl.analytical_method_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "difenoconazole_analytical_method_evidence_exposes_pesticide_review_context",
+      "kind": "analytical_method_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue",
+        "analyte": "difenoconazole",
+        "matrixGroup": "tree_nuts"
+      },
+      "expectedRecordIds": [
+        "eu.difenoconazole.analytical_method_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "spirotetramat_occurrence_evidence_exposes_pesticide_review_context",
+      "kind": "occurrence_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue",
+        "analyte": "spirotetramat",
+        "matrixGroup": "citrus_fruits"
+      },
+      "expectedRecordIds": [
+        "eu.spirotetramat.occurrence_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "spirotetramat_analytical_method_evidence_exposes_pesticide_review_context",
+      "kind": "analytical_method_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue",
+        "analyte": "spirotetramat",
+        "matrixGroup": "honey"
+      },
+      "expectedRecordIds": [
+        "eu.spirotetramat.analytical_method_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "pfas_eggs_occurrence_evidence_exposes_matrix_specific_review_context",
+      "kind": "occurrence_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pfas_food_contaminants",
+        "analyte": "sum4_pfas",
+        "matrixGroup": "eggs"
+      },
+      "expectedRecordIds": [
+        "eu.pfas.occurrence_evidence.food_monitoring_context",
+        "eu.pfas.occurrence_evidence.eggs_monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "pfas_dairy_occurrence_evidence_exposes_matrix_specific_review_context",
+      "kind": "occurrence_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pfas_food_contaminants",
+        "analyte": "sum4_pfas",
+        "matrixGroup": "milk_and_dairy_products"
+      },
+      "expectedRecordIds": [
+        "eu.pfas.occurrence_evidence.milk_and_dairy_products_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "pfas_fish_analytical_method_evidence_exposes_matrix_specific_review_context",
+      "kind": "analytical_method_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pfas_food_contaminants",
+        "analyte": "pfos",
+        "matrixGroup": "fish_and_seafood"
+      },
+      "expectedRecordIds": [
+        "eu.pfas.analytical_method_evidence.monitoring_context",
+        "eu.pfas.analytical_method_evidence.fish_monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "acrylamide_coffee_analytical_method_evidence_exposes_matrix_specific_review_context",
+      "kind": "analytical_method_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "acrylamide_process_contaminants",
+        "analyte": "acrylamide",
+        "matrixGroup": "coffee_and_coffee_substitutes"
+      },
+      "expectedRecordIds": [
+        "eu.acrylamide.analytical_method_evidence.coffee_products_context"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "acrylamide_fried_potato_occurrence_evidence_exposes_matrix_specific_review_context",
+      "kind": "occurrence_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "acrylamide_process_contaminants",
+        "analyte": "acrylamide",
+        "matrixGroup": "fried_potato_products"
+      },
+      "expectedRecordIds": [
+        "eu.acrylamide.occurrence_evidence.monitoring_context",
+        "eu.acrylamide.occurrence_evidence.fried_potato_products_context"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "bpa_beverages_occurrence_evidence_exposes_matrix_specific_review_context",
+      "kind": "occurrence_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "bisphenol_food_contact_migration",
+        "analyte": "bpa",
+        "matrixGroup": "beverages_and_drinks"
+      },
+      "expectedRecordIds": [
+        "eu.bpa.occurrence_evidence.beverages_context"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "bpa_canned_foods_analytical_method_evidence_exposes_matrix_specific_review_context",
+      "kind": "analytical_method_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "bisphenol_food_contact_migration",
+        "analyte": "bpa",
+        "matrixGroup": "canned_foods"
+      },
+      "expectedRecordIds": [
+        "eu.bpa.analytical_method_evidence.food_contact_context",
+        "eu.bpa.analytical_method_evidence.canned_foods_context"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "cadmium_dataset_support_uses_efsa_food_consumption_context",
+      "kind": "consumption_datasets",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "cadmium_food_contaminants"
+      },
+      "expectedDatasetIds": [
+        "efsa.comprehensive_food_consumption_db.cadmium_support"
+      ],
+      "expectedOverallSubmissionUse": "allowed"
+    },
+    {
+      "name": "lead_dataset_support_uses_efsa_food_consumption_context",
+      "kind": "consumption_datasets",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "lead_food_contaminants"
+      },
+      "expectedDatasetIds": [
+        "efsa.comprehensive_food_consumption_db.lead_support"
+      ],
+      "expectedOverallSubmissionUse": "allowed"
+    },
+    {
+      "name": "inorganic_arsenic_dataset_support_uses_efsa_food_consumption_context",
+      "kind": "consumption_datasets",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "inorganic_arsenic_food_contaminants"
+      },
+      "expectedDatasetIds": [
+        "efsa.comprehensive_food_consumption_db.inorganic_arsenic_support"
+      ],
+      "expectedOverallSubmissionUse": "allowed"
+    },
+    {
+      "name": "mercury_dataset_support_uses_efsa_food_consumption_context",
+      "kind": "consumption_datasets",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "mercury_food_contaminants"
+      },
+      "expectedDatasetIds": [
+        "efsa.comprehensive_food_consumption_db.mercury_support"
+      ],
+      "expectedOverallSubmissionUse": "allowed"
+    },
+    {
+      "name": "cadmium_occurrence_evidence_exposes_official_monitoring_context",
+      "kind": "occurrence_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "cadmium_food_contaminants",
+        "analyte": "cadmium"
+      },
+      "expectedRecordIds": [
+        "eu.cadmium.occurrence_evidence.official_monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "mercury_occurrence_evidence_exposes_species_sensitive_monitoring_context",
+      "kind": "occurrence_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "mercury_food_contaminants",
+        "analyte": "methylmercury",
+        "matrixGroup": "fish"
+      },
+      "expectedRecordIds": [
+        "eu.mercury.occurrence_evidence.official_monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "lead_analytical_method_evidence_exposes_official_control_context",
+      "kind": "analytical_method_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "lead_food_contaminants",
+        "analyte": "lead"
+      },
+      "expectedRecordIds": [
+        "eu.lead.analytical_method_evidence.official_control"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "inorganic_arsenic_analytical_method_evidence_exposes_official_control_context",
+      "kind": "analytical_method_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "inorganic_arsenic_food_contaminants",
+        "analyte": "inorganic_arsenic"
+      },
+      "expectedRecordIds": [
+        "eu.inorganic_arsenic.analytical_method_evidence.official_control"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "pfas_occurrence_evidence_exposes_food_monitoring_context",
+      "kind": "occurrence_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pfas_food_contaminants",
+        "analyte": "pfos"
+      },
+      "expectedRecordIds": [
+        "eu.pfas.occurrence_evidence.food_monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "acrylamide_occurrence_evidence_exposes_process_monitoring_context",
+      "kind": "occurrence_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "acrylamide_process_contaminants",
+        "analyte": "acrylamide",
+        "matrixGroup": "coffee"
+      },
+      "expectedRecordIds": [
+        "eu.acrylamide.occurrence_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "bisphenol_occurrence_evidence_exposes_food_contact_context",
+      "kind": "occurrence_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "bisphenol_food_contact_migration",
+        "analyte": "bpa",
+        "matrixGroup": "canned"
+      },
+      "expectedRecordIds": [
+        "eu.bpa.occurrence_evidence.food_contact_context"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "pfas_analytical_method_evidence_exposes_monitoring_context",
+      "kind": "analytical_method_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pfas_food_contaminants",
+        "analyte": "pfos"
+      },
+      "expectedRecordIds": [
+        "eu.pfas.analytical_method_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "acrylamide_analytical_method_evidence_exposes_monitoring_context",
+      "kind": "analytical_method_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "acrylamide_process_contaminants",
+        "analyte": "acrylamide",
+        "matrixGroup": "potato"
+      },
+      "expectedRecordIds": [
+        "eu.acrylamide.analytical_method_evidence.monitoring_context"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "bisphenol_analytical_method_evidence_exposes_food_contact_context",
+      "kind": "analytical_method_evidence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "bisphenol_food_contact_migration",
+        "analyte": "bisphenol_a"
+      },
+      "expectedRecordIds": [
+        "eu.bpa.analytical_method_evidence.food_contact_context"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "cadmium_metals_occurrence_registry_exposes_exposure_and_control_context",
+      "kind": "metals_occurrence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "cadmium_food_contaminants"
+      },
+      "expectedRecordIds": [
+        "efsa.cadmium.occurrence_monitoring.support"
+      ],
+      "expectedPriorityFoodGroups": [
+        "cereals_and_cereal_products",
+        "seafood_molluscs"
+      ],
+      "expectedHighAttentionFoods": [
+        "potatoes",
+        "bivalve_molluscs"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "lead_metals_occurrence_registry_exposes_exposure_and_control_context",
+      "kind": "metals_occurrence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "lead_food_contaminants"
+      },
+      "expectedRecordIds": [
+        "efsa.lead.occurrence_monitoring.support"
+      ],
+      "expectedPriorityFoodGroups": [
+        "meat_and_meat_products",
+        "coffee_cocoa_tea_and_infusions"
+      ],
+      "expectedHighAttentionFoods": [
+        "game_meat"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "inorganic_arsenic_metals_occurrence_registry_exposes_exposure_and_control_context",
+      "kind": "metals_occurrence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "inorganic_arsenic_food_contaminants"
+      },
+      "expectedRecordIds": [
+        "efsa.inorganic_arsenic.occurrence_monitoring.support"
+      ],
+      "expectedPriorityFoodGroups": [
+        "rice_and_rice_based_products",
+        "drinking_water_context"
+      ],
+      "expectedHighAttentionFoods": [
+        "rice",
+        "rice_based_infant_foods"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "mercury_metals_occurrence_registry_exposes_exposure_and_control_context",
+      "kind": "metals_occurrence",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "mercury_food_contaminants"
+      },
+      "expectedRecordIds": [
+        "efsa.mercury.occurrence_monitoring.support"
+      ],
+      "expectedPriorityFoodGroups": [
+        "fish_and_seafood",
+        "large_predatory_fish"
+      ],
+      "expectedHighAttentionFoods": [
+        "swordfish",
+        "bluefin_tuna"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "cadmium_metals_review_focus_exposes_staple_and_mollusc_context",
+      "kind": "metals_review_focus",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "cadmium_food_contaminants"
+      },
+      "expectedFocusIds": [
+        "efsa.cadmium.staple_plant_foods.review_focus",
+        "efsa.cadmium.molluscs.review_focus"
+      ],
+      "expectedCommodityGroups": [
+        "cereals_and_cereal_products",
+        "seafood_molluscs"
+      ],
+      "expectedFocusFoods": [
+        "potatoes",
+        "bivalve_molluscs"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "lead_metals_review_focus_exposes_game_meat_and_current_contributor_context",
+      "kind": "metals_review_focus",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "lead_food_contaminants"
+      },
+      "expectedFocusIds": [
+        "efsa.lead.game_meat.review_focus",
+        "efsa.lead.current_contributor_groups.review_focus"
+      ],
+      "expectedCommodityGroups": [
+        "meat_and_meat_products",
+        "coffee_cocoa_tea_and_infusions"
+      ],
+      "expectedFocusFoods": [
+        "game_meat",
+        "coffee_cocoa_tea_and_infusions"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "inorganic_arsenic_metals_review_focus_exposes_rice_context",
+      "kind": "metals_review_focus",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "inorganic_arsenic_food_contaminants"
+      },
+      "expectedFocusIds": [
+        "efsa.inorganic_arsenic.rice_products.review_focus"
+      ],
+      "expectedCommodityGroups": [
+        "rice_and_rice_based_products"
+      ],
+      "expectedFocusFoods": [
+        "rice",
+        "rice_based_infant_foods"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "mercury_metals_review_focus_exposes_species_and_sensitive_population_context",
+      "kind": "metals_review_focus",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "mercury_food_contaminants",
+        "focusFood": "tuna"
+      },
+      "expectedFocusIds": [
+        "efsa.mercury.large_predatory_fish.review_focus",
+        "efsa.mercury.sensitive_population_advice.review_focus"
+      ],
+      "expectedCommodityGroups": [
+        "large_predatory_fish"
+      ],
+      "expectedFocusFoods": [
+        "bigeye_tuna",
+        "bluefin_tuna"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "eu_pesticide_method_support_preserves_primo_boundary",
+      "kind": "method_support",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pesticide_residue"
+      },
+      "expectedMethodIds": [
+        "efsa.primo.3_1_application",
+        "efsa.primo.4_transition_report"
+      ],
+      "expectedLegalAuthorityIds": [
+        "eu.pesticide_residues.reg_396_2005",
+        "eu.active_substances.reg_283_2013"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "pfas_method_support_stays_review_required_and_non_pesticide",
+      "kind": "method_support",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "pfas_food_contaminants"
+      },
+      "expectedMethodIds": [
+        "efsa.pfas.food.2020_opinion",
+        "ec.pfas.monitoring.2022_2025"
+      ],
+      "expectedLegalAuthorityIds": [
+        "eu.contaminants.reg_2023_915",
+        "eu.pfas.monitoring.reco_2022_1431"
+      ],
+      "expectedOverallSubmissionUse": "review_required",
+      "expectedSubmissionCandidateAllowed": false
+    },
+    {
+      "name": "acrylamide_method_support_stays_review_required_and_process_contaminant_specific",
+      "kind": "method_support",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "acrylamide_process_contaminants"
+      },
+      "expectedMethodIds": [
+        "efsa.acrylamide.food.2015_opinion",
+        "eu.acrylamide.mitigation.2017",
+        "eu.acrylamide.monitoring.2019"
+      ],
+      "expectedLegalAuthorityIds": [
+        "eu.acrylamide.reg_2017_2158",
+        "eu.acrylamide.monitoring.reco_2019_1888"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "bpa_method_support_stays_review_required_and_food_contact_specific",
+      "kind": "method_support",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "bisphenol_food_contact_migration"
+      },
+      "expectedMethodIds": [
+        "efsa.bpa.food.2023_opinion",
+        "eu.bpa.fcm.2024_3190"
+      ],
+      "expectedLegalAuthorityIds": [
+        "eu.bpa.fcm.reg_2024_3190"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "cadmium_method_support_stays_review_required_and_metals_specific",
+      "kind": "method_support",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "cadmium_food_contaminants"
+      },
+      "expectedMethodIds": [
+        "efsa.cadmium.food.2009_opinion",
+        "efsa.cadmium.exposure.2012_report",
+        "eu.cadmium.official_control.333_2007"
+      ],
+      "expectedLegalAuthorityIds": [
+        "eu.cadmium.contaminants.reg_2023_915",
+        "eu.cadmium.official_control.reg_333_2007"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "lead_method_support_stays_review_required_and_metals_specific",
+      "kind": "method_support",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "lead_food_contaminants"
+      },
+      "expectedMethodIds": [
+        "efsa.lead.food.2010_opinion",
+        "efsa.lead.exposure.2012_report",
+        "eu.lead.official_control.333_2007"
+      ],
+      "expectedLegalAuthorityIds": [
+        "eu.lead.contaminants.reg_2023_915",
+        "eu.lead.official_control.reg_333_2007"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "inorganic_arsenic_method_support_stays_review_required_and_metals_specific",
+      "kind": "method_support",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "inorganic_arsenic_food_contaminants"
+      },
+      "expectedMethodIds": [
+        "efsa.inorganic_arsenic.food.2024_opinion",
+        "efsa.inorganic_arsenic.exposure.2021_report",
+        "eu.inorganic_arsenic.official_control.333_2007"
+      ],
+      "expectedLegalAuthorityIds": [
+        "eu.inorganic_arsenic.contaminants.reg_2025_1891",
+        "eu.inorganic_arsenic.official_control.reg_333_2007"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "mercury_method_support_stays_review_required_and_metals_specific",
+      "kind": "method_support",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "mercury_food_contaminants"
+      },
+      "expectedMethodIds": [
+        "efsa.mercury.food.2012_opinion",
+        "eu.mercury.official_control.333_2007"
+      ],
+      "expectedLegalAuthorityIds": [
+        "eu.mercury.contaminants.reg_2023_915",
+        "eu.mercury.official_control.reg_333_2007"
+      ],
+      "expectedOverallSubmissionUse": "allowed",
+      "expectedSubmissionCandidateAllowed": true
+    },
+    {
+      "name": "microplastics_method_support_hard_blocks_submission_candidate_use",
+      "kind": "method_support",
+      "request": {
+        "jurisdiction": "eu",
+        "contaminantFamily": "microplastics_emerging"
+      },
+      "expectedMethodIds": [
+        "efsa.microplastics.food_statement.2016",
+        "who.microplastics.oral_exposure"
+      ],
+      "expectedLegalAuthorityIds": [],
+      "expectedOverallSubmissionUse": "not_allowed",
+      "expectedSubmissionCandidateAllowed": false
+    }
+  ]
+}

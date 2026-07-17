@@ -1,0 +1,448 @@
+{
+  "schema_version": "v1",
+  "profile_id": "eu_adult_general_v1",
+  "display_name": "EU adult general screening profile",
+  "population_group": "adult_general",
+  "profile_family": null,
+  "regulatory_basis": null,
+  "review_status": null,
+  "survey_profile_source": "Illustrative placeholder adult screening pack",
+  "region_id": "eu_screening_default",
+  "body_weight_kg": 70.0,
+  "applicable_windows": [
+    "acute",
+    "chronic"
+  ],
+  "intake_unit": "kg_food/day",
+  "commodity_consumption": [
+    {
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "apples",
+        "canonical_name": "Apples",
+        "food_group": "fruit",
+        "mapping_status": "curated",
+        "foodex2_code": "EXAMPLE_FDX2_APPLES_RAW",
+        "rpc_code": "EXAMPLE_RPC_APPLES",
+        "rpcd_code": "EXAMPLE_RPCD_APPLES_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "apples",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "origin_tag": "illustrative_placeholder"
+        }
+      },
+      "acute_kg_per_day": 0.35,
+      "chronic_kg_per_day": 0.18,
+      "source_reference": {
+        "source_id": "dietary.profile.eu_adult_general",
+        "title": "Illustrative EU adult dietary screening profile",
+        "effective_date": "2026-04-13",
+        "url": "docs://population-profile-guide",
+        "origin_tag": "illustrative_placeholder"
+      }
+    },
+    {
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "oranges",
+        "canonical_name": "Oranges",
+        "food_group": "fruit",
+        "mapping_status": "curated",
+        "foodex2_code": "EXAMPLE_FDX2_ORANGES_RAW",
+        "rpc_code": "EXAMPLE_RPC_ORANGES",
+        "rpcd_code": "EXAMPLE_RPCD_ORANGES_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "oranges",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "origin_tag": "illustrative_placeholder"
+        }
+      },
+      "acute_kg_per_day": 0.3,
+      "chronic_kg_per_day": 0.14,
+      "source_reference": {
+        "source_id": "dietary.profile.eu_adult_general",
+        "title": "Illustrative EU adult dietary screening profile",
+        "effective_date": "2026-04-13",
+        "url": "docs://population-profile-guide",
+        "origin_tag": "illustrative_placeholder"
+      }
+    },
+    {
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "spinach",
+        "canonical_name": "Spinach",
+        "food_group": "vegetable",
+        "mapping_status": "curated",
+        "foodex2_code": "EXAMPLE_FDX2_SPINACH_RAW",
+        "rpc_code": "EXAMPLE_RPC_SPINACH",
+        "rpcd_code": "EXAMPLE_RPCD_SPINACH_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "spinach",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "origin_tag": "illustrative_placeholder"
+        }
+      },
+      "acute_kg_per_day": 0.15,
+      "chronic_kg_per_day": 0.05,
+      "source_reference": {
+        "source_id": "dietary.profile.eu_adult_general",
+        "title": "Illustrative EU adult dietary screening profile",
+        "effective_date": "2026-04-13",
+        "url": "docs://population-profile-guide",
+        "origin_tag": "illustrative_placeholder"
+      }
+    },
+    {
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "tomatoes",
+        "canonical_name": "Tomatoes",
+        "food_group": "vegetable",
+        "mapping_status": "curated",
+        "foodex2_code": "EXAMPLE_FDX2_TOMATOES_RAW",
+        "rpc_code": "EXAMPLE_RPC_TOMATOES",
+        "rpcd_code": "EXAMPLE_RPCD_TOMATOES_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "tomatoes",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "origin_tag": "illustrative_placeholder"
+        }
+      },
+      "acute_kg_per_day": 0.2,
+      "chronic_kg_per_day": 0.1,
+      "source_reference": {
+        "source_id": "dietary.profile.eu_adult_general",
+        "title": "Illustrative EU adult dietary screening profile",
+        "effective_date": "2026-04-13",
+        "url": "docs://population-profile-guide",
+        "origin_tag": "illustrative_placeholder"
+      }
+    },
+    {
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "potatoes",
+        "canonical_name": "Potatoes",
+        "food_group": "tuber",
+        "mapping_status": "curated",
+        "foodex2_code": "EXAMPLE_FDX2_POTATOES_RAW",
+        "rpc_code": "EXAMPLE_RPC_POTATOES",
+        "rpcd_code": "EXAMPLE_RPCD_POTATOES_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "potatoes",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "origin_tag": "illustrative_placeholder"
+        }
+      },
+      "acute_kg_per_day": 0.3,
+      "chronic_kg_per_day": 0.16,
+      "source_reference": {
+        "source_id": "dietary.profile.eu_adult_general",
+        "title": "Illustrative EU adult dietary screening profile",
+        "effective_date": "2026-04-13",
+        "url": "docs://population-profile-guide",
+        "origin_tag": "illustrative_placeholder"
+      }
+    },
+    {
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "rice",
+        "canonical_name": "Rice",
+        "food_group": "grain",
+        "mapping_status": "reviewed",
+        "foodex2_code": "EXAMPLE_FDX2_RICE_RAW",
+        "rpc_code": "EXAMPLE_RPC_RICE",
+        "rpcd_code": "EXAMPLE_RPCD_RICE_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "rice",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "origin_tag": "illustrative_placeholder"
+        }
+      },
+      "acute_kg_per_day": 0.25,
+      "chronic_kg_per_day": 0.12,
+      "source_reference": {
+        "source_id": "dietary.profile.eu_adult_general",
+        "title": "Illustrative EU adult dietary screening profile",
+        "effective_date": "2026-04-13",
+        "url": "docs://population-profile-guide",
+        "origin_tag": "illustrative_placeholder"
+      }
+    },
+    {
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "wheat",
+        "canonical_name": "Wheat",
+        "food_group": "grain",
+        "mapping_status": "reviewed",
+        "foodex2_code": "EXAMPLE_FDX2_WHEAT_RAW",
+        "rpc_code": "EXAMPLE_RPC_WHEAT",
+        "rpcd_code": "EXAMPLE_RPCD_WHEAT_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "wheat",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "origin_tag": "illustrative_placeholder"
+        }
+      },
+      "acute_kg_per_day": 0.28,
+      "chronic_kg_per_day": 0.14,
+      "source_reference": {
+        "source_id": "dietary.profile.eu_adult_general",
+        "title": "Illustrative EU adult dietary screening profile",
+        "effective_date": "2026-04-13",
+        "url": "docs://population-profile-guide",
+        "origin_tag": "illustrative_placeholder"
+      }
+    },
+    {
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "milk",
+        "canonical_name": "Milk",
+        "food_group": "dairy",
+        "mapping_status": "curated",
+        "foodex2_code": "EXAMPLE_FDX2_MILK_RAW",
+        "rpc_code": "EXAMPLE_RPC_MILK",
+        "rpcd_code": "EXAMPLE_RPCD_MILK_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "milk",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "origin_tag": "illustrative_placeholder"
+        }
+      },
+      "acute_kg_per_day": 0.5,
+      "chronic_kg_per_day": 0.22,
+      "source_reference": {
+        "source_id": "dietary.profile.eu_adult_general",
+        "title": "Illustrative EU adult dietary screening profile",
+        "effective_date": "2026-04-13",
+        "url": "docs://population-profile-guide",
+        "origin_tag": "illustrative_placeholder"
+      }
+    },
+    {
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "chicken",
+        "canonical_name": "Chicken",
+        "food_group": "meat",
+        "mapping_status": "curated",
+        "foodex2_code": "EXAMPLE_FDX2_CHICKEN_RAW",
+        "rpc_code": "EXAMPLE_RPC_CHICKEN",
+        "rpcd_code": "EXAMPLE_RPCD_CHICKEN_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "chicken",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "origin_tag": "illustrative_placeholder"
+        }
+      },
+      "acute_kg_per_day": 0.18,
+      "chronic_kg_per_day": 0.08,
+      "source_reference": {
+        "source_id": "dietary.profile.eu_adult_general",
+        "title": "Illustrative EU adult dietary screening profile",
+        "effective_date": "2026-04-13",
+        "url": "docs://population-profile-guide",
+        "origin_tag": "illustrative_placeholder"
+      }
+    },
+    {
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "salmon",
+        "canonical_name": "Salmon",
+        "food_group": "fish",
+        "mapping_status": "reviewed",
+        "foodex2_code": "EXAMPLE_FDX2_SALMON_RAW",
+        "rpc_code": "EXAMPLE_RPC_SALMON",
+        "rpcd_code": "EXAMPLE_RPCD_SALMON_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "salmon",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "origin_tag": "illustrative_placeholder"
+        }
+      },
+      "acute_kg_per_day": 0.12,
+      "chronic_kg_per_day": 0.04,
+      "source_reference": {
+        "source_id": "dietary.profile.eu_adult_general",
+        "title": "Illustrative EU adult dietary screening profile",
+        "effective_date": "2026-04-13",
+        "url": "docs://population-profile-guide",
+        "origin_tag": "illustrative_placeholder"
+      }
+    },
+    {
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "eggs",
+        "canonical_name": "Eggs",
+        "food_group": "eggs",
+        "mapping_status": "curated",
+        "foodex2_code": "EXAMPLE_FDX2_EGGS_RAW",
+        "rpc_code": "EXAMPLE_RPC_EGGS",
+        "rpcd_code": "EXAMPLE_RPCD_EGGS_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "eggs",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "origin_tag": "illustrative_placeholder"
+        }
+      },
+      "acute_kg_per_day": 0.12,
+      "chronic_kg_per_day": 0.04,
+      "source_reference": {
+        "source_id": "dietary.profile.eu_adult_general",
+        "title": "Illustrative EU adult dietary screening profile",
+        "effective_date": "2026-04-13",
+        "url": "docs://population-profile-guide",
+        "origin_tag": "illustrative_placeholder"
+      }
+    },
+    {
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "oats",
+        "canonical_name": "Oats",
+        "food_group": "grain",
+        "mapping_status": "curated",
+        "foodex2_code": "EXAMPLE_FDX2_OATS_RAW",
+        "rpc_code": "EXAMPLE_RPC_OATS",
+        "rpcd_code": "EXAMPLE_RPCD_OATS_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "oats",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "origin_tag": "illustrative_placeholder"
+        }
+      },
+      "acute_kg_per_day": 0.18,
+      "chronic_kg_per_day": 0.06,
+      "source_reference": {
+        "source_id": "dietary.profile.eu_adult_general",
+        "title": "Illustrative EU adult dietary screening profile",
+        "effective_date": "2026-04-13",
+        "url": "docs://population-profile-guide",
+        "origin_tag": "illustrative_placeholder"
+      }
+    },
+    {
+      "commodity": {
+        "taxonomy_id": "toxmcp_foods_v1",
+        "commodity_code": "beans_and_pulses",
+        "canonical_name": "Beans and pulses",
+        "food_group": "legume",
+        "mapping_status": "curated",
+        "foodex2_code": "EXAMPLE_FDX2_BEANS_PULSES_RAW",
+        "rpc_code": "EXAMPLE_RPC_BEANS_PULSES",
+        "rpcd_code": "EXAMPLE_RPCD_BEANS_PULSES_RAW",
+        "processed_status": "raw_primary_commodity",
+        "mapping_confidence": "provisional",
+        "matched_input_code": "beans_and_pulses",
+        "source_reference": {
+          "source_id": "dietary.food_vocab.crosswalk",
+          "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+          "effective_date": "2026-04-10",
+          "url": "docs://food-vocabulary-crosswalk",
+          "origin_tag": "illustrative_placeholder"
+        }
+      },
+      "acute_kg_per_day": 0.16,
+      "chronic_kg_per_day": 0.05,
+      "source_reference": {
+        "source_id": "dietary.profile.eu_adult_general",
+        "title": "Illustrative EU adult dietary screening profile",
+        "effective_date": "2026-04-13",
+        "url": "docs://population-profile-guide",
+        "origin_tag": "illustrative_placeholder"
+      }
+    }
+  ],
+  "provenance": {
+    "schema_version": "v1",
+    "defaults_version": "v1",
+    "algorithm_version": "reference-dietary-intake-0.1.0",
+    "generated_at": "2026-05-14T13:34:30.020738Z",
+    "source_references": [
+      {
+        "source_id": "dietary.profile.eu_adult_general",
+        "title": "Illustrative EU adult dietary screening profile",
+        "effective_date": "2026-04-13",
+        "url": "docs://population-profile-guide",
+        "origin_tag": "illustrative_placeholder"
+      }
+    ]
+  },
+  "quality_flags": [],
+  "limitations": [
+    {
+      "code": "profile_limitations",
+      "message": "Illustrative public screening profile only"
+    },
+    {
+      "code": "profile_limitations",
+      "message": "Not a proprietary survey pack"
+    }
+  ]
+}

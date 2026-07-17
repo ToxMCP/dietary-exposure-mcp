@@ -1,0 +1,143 @@
+{
+  "version": "v1",
+  "actions": [
+    {
+      "actionId": "use_allowed_preview_profile",
+      "ruleId": "preview_profile_allowed",
+      "title": "Use an allowed preview profile",
+      "actionType": "profile_selection",
+      "summary": "Regenerate the staged preview with a preview profile that is explicitly allowed for the selected exchange gate.",
+      "recommendedSteps": [
+        "Inspect the target interoperability readiness profile and its allowed preview profiles.",
+        "Select a compatible staged preview profile from interoperability://manifest.",
+        "Regenerate the preview and rerun the readiness assessment."
+      ],
+      "documentationUris": [
+        "docs://interoperability-preview",
+        "docs://interoperability-readiness"
+      ],
+      "resourceUris": [
+        "interoperability://manifest",
+        "validation://interoperability-readiness-profiles"
+      ]
+    },
+    {
+      "actionId": "regenerate_preview_from_dossier",
+      "ruleId": "source_dossier_consistent",
+      "title": "Regenerate preview from the supplied dossier",
+      "actionType": "preview_regeneration",
+      "summary": "The staged preview must be rebuilt from the same version-pinned dossier used for the readiness assessment.",
+      "recommendedSteps": [
+        "Verify which dossier was used to create the staged preview.",
+        "Recreate the preview directly from the supplied version-pinned dossier.",
+        "Rerun the readiness assessment with the regenerated preview."
+      ],
+      "documentationUris": [
+        "docs://interoperability-preview"
+      ],
+      "resourceUris": [
+        "validation://interoperability-rules"
+      ]
+    },
+    {
+      "actionId": "complete_required_preview_fields",
+      "ruleId": "preview_required_fields_complete",
+      "title": "Complete required preview fields",
+      "actionType": "field_completion",
+      "summary": "Required mapped fields are missing from the staged preview and must be restored before the gate can advance.",
+      "recommendedSteps": [
+        "Inspect missing_required_fields in the staged preview.",
+        "Restore the missing source data or governance snapshot on the version-pinned dossier.",
+        "Regenerate the staged preview and rerun the readiness assessment."
+      ],
+      "documentationUris": [
+        "docs://interoperability-preview",
+        "docs://interoperability-readiness"
+      ],
+      "resourceUris": [
+        "validation://interoperability-profiles",
+        "validation://interoperability-rules"
+      ]
+    },
+    {
+      "actionId": "fix_empty_target_document",
+      "ruleId": "preview_target_document_present",
+      "title": "Fix empty target document output",
+      "actionType": "mapping_debug",
+      "summary": "The staged preview did not emit a target document and requires mapping or input compatibility fixes.",
+      "recommendedSteps": [
+        "Inspect the selected preview profile mappings.",
+        "Confirm the staged dossier contains fields addressed by the preview profile.",
+        "Regenerate the preview after correcting the mapping or input issue."
+      ],
+      "documentationUris": [
+        "docs://interoperability-preview"
+      ],
+      "resourceUris": [
+        "interoperability://manifest",
+        "validation://interoperability-profiles"
+      ]
+    },
+    {
+      "actionId": "upgrade_linked_dossier_readiness",
+      "ruleId": "linked_dossier_readiness",
+      "title": "Upgrade linked dossier readiness",
+      "actionType": "governance_upgrade",
+      "summary": "The linked version-pinned dossier does not satisfy the dossier-readiness profile required by the selected exchange gate.",
+      "recommendedSteps": [
+        "Review the linked dossier readiness assessment and its blocking or warning rules.",
+        "Resolve governance, disclaimer, fingerprint, or source-status issues on the version-pinned dossier.",
+        "Rerun both dossier readiness and interoperability readiness after the dossier is corrected."
+      ],
+      "documentationUris": [
+        "docs://regulatory-governance",
+        "docs://interoperability-readiness"
+      ],
+      "resourceUris": [
+        "validation://readiness-profiles",
+        "validation://regulatory-rules",
+        "validation://interoperability-readiness-profiles"
+      ]
+    },
+    {
+      "actionId": "review_unsupported_preview_fields",
+      "ruleId": "preview_unsupported_fields_allowed",
+      "title": "Review unsupported preview fields",
+      "actionType": "manual_review",
+      "summary": "Unsupported local-only fields remain in the staged preview workflow and require review before relying on the current gate outcome.",
+      "recommendedSteps": [
+        "Inspect unsupported_field_paths in the readiness assessment.",
+        "Decide whether each field should remain MCP-internal or be added to a future preview profile revision.",
+        "Regenerate the preview or document the manual handling path."
+      ],
+      "documentationUris": [
+        "docs://interoperability-preview",
+        "docs://interoperability-readiness"
+      ],
+      "resourceUris": [
+        "validation://interoperability-profiles",
+        "validation://interoperability-rules"
+      ]
+    },
+    {
+      "actionId": "replace_non_direct_mappings",
+      "ruleId": "preview_non_direct_mappings_allowed",
+      "title": "Replace non-direct mappings",
+      "actionType": "mapping_hardening",
+      "summary": "Derived or review-required mappings remain in the staged preview and block or downgrade the selected exchange gate.",
+      "recommendedSteps": [
+        "Inspect derived_mapping_paths and review_required_mapping_paths in the readiness assessment.",
+        "Replace provisional mappings with governed direct mappings where possible.",
+        "Reassess the preview after the mapping profile is hardened."
+      ],
+      "documentationUris": [
+        "docs://interoperability-preview",
+        "docs://interoperability-readiness"
+      ],
+      "resourceUris": [
+        "validation://interoperability-profiles",
+        "validation://interoperability-rules"
+      ]
+    }
+  ]
+}

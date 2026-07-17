@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.ngra.ai/dietary-exposure/emission/contaminantMonitoringInterpretationBundle.v1.json",
+  "title": "ContaminantMonitoringInterpretationBundle (producer strict emission contract)",
+  "description": "Tightened additionalProperties:false mirror of docs/contracts/schemas/contaminantMonitoringInterpretationBundle.v1.json, declaring EXACTLY the top-level field set the real DietaryRuntime.export_contaminant_monitoring_interpretation_bundle seam emits (by_alias=True). Load-bearing interpretive fields the projection reads (checkStatus, overallSubmissionUse, submissionCandidateAllowed, the notes[] / limitations[].message free-text narrative) are constrained; embedded governed sub-records the projection does not deep-read are declared by type only.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contaminantFamily",
+    "jurisdiction",
+    "checkStatus",
+    "overallSubmissionUse",
+    "submissionCandidateAllowed",
+    "checkResult"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "bundle_id": { "type": "string" },
+    "bundleProfile": { "type": "string" },
+    "contaminantFamily": { "type": "string", "minLength": 1 },
+    "jurisdiction": { "type": "string", "minLength": 1 },
+    "authority": { "type": ["string", "null"] },
+    "datasetId": { "type": ["string", "null"] },
+    "checkStatus": { "enum": ["pass", "review_required", "fail"] },
+    "overallSubmissionUse": { "enum": ["allowed", "review_required", "not_allowed"] },
+    "submissionCandidateAllowed": { "type": "boolean" },
+    "checkResult": { "type": "object" },
+    "reportingProfileSummary": { "type": ["object", "null"] },
+    "linkedReviewFocusRecords": { "type": "array" },
+    "unresolvedLinkedReviewFocusIds": { "type": "array" },
+    "coveredSourceIds": { "type": "array" },
+    "coveredMethodIds": { "type": "array" },
+    "coveredLegalAuthorityIds": { "type": "array" },
+    "coveredDatasetIds": { "type": "array" },
+    "coveredReferenceValueRecordIds": { "type": "array" },
+    "legalLimitReviews": { "type": "array" },
+    "uncertaintyAndAssumptionLedger": { "type": "array" },
+    "reviewPrompts": { "type": "array" },
+    "recommendedSequence": { "type": "array" },
+    "referencedResources": { "type": "array" },
+    "dependencies": { "type": "array" },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "message"],
+        "properties": {
+          "code": { "type": "string" },
+          "message": { "type": "string" }
+        }
+      }
+    },
+    "notes": { "type": "array", "items": { "type": "string" } }
+  }
+}

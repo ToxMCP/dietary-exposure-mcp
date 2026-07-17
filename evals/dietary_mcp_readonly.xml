@@ -1,0 +1,42 @@
+<evaluation>
+  <qa_pair>
+    <question>In the illustrative child screening profile, what body weight in kilograms is used?</question>
+    <answer>15.0</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>How many commodities are present in the public v1 dietary taxonomy manifest?</question>
+    <answer>4</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>What default processing factor value is published in the v1 core defaults?</question>
+    <answer>1.0</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Which commodity code in the public taxonomy is marked as reviewed rather than curated?</question>
+    <answer>rice</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>For the adult chronic benchmark case, what is the expected total intake in mg/kg-bw/day?</question>
+    <answer>0.0005142857142857143</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>For the child acute bounded benchmark case, what is the expected upper-bound intake in mg/kg-bw/day?</question>
+    <answer>0.006533333333333334</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>What status does the generated v0.1.0 readiness report currently declare?</question>
+    <answer>draft_ready</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>How many release gates are listed in the generated v0.1.0 readiness report?</question>
+    <answer>7</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Which validation artifact documents deferred taxonomy limitations at release time?</question>
+    <answer>commodity_mapping_gap_report</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>What schedule label is exported for acute PBPK oral input bundles?</question>
+    <answer>single_day</answer>
+  </qa_pair>
+</evaluation>

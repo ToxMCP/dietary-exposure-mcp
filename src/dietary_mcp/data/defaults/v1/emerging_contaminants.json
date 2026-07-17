@@ -1,0 +1,261 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "emerging_contaminants",
+  "families": [
+    {
+      "familyId": "microplastics_emerging",
+      "displayName": "Microplastics and nanoplastics in food and dietary exposure",
+      "jurisdictions": [
+        "eu",
+        "us",
+        "global"
+      ],
+      "methodMaturityStatus": "emerging",
+      "evidenceSupportStatus": "limited",
+      "submissionUse": "not_allowed",
+      "sourceIds": [
+        "efsa.microplastics.statement.2016",
+        "efsa.microplastics.request.2025",
+        "fda.microplastics.foods",
+        "who.microplastics.oral_exposure.2022"
+      ],
+      "methodIds": [
+        "efsa.microplastics.food_statement.2016",
+        "fda.microplastics.foods.current",
+        "who.microplastics.oral_exposure"
+      ],
+      "defaultReadinessProfileIds": [
+        "microplastics_internal_review",
+        "microplastics_consultation_exploratory",
+        "microplastics_submission_candidate"
+      ],
+      "hardFailureProfiles": [
+        "microplastics_submission_candidate"
+      ],
+      "notes": [
+        "This family is structurally separate from pesticide-residue workflows even though it is exposed through the same MCP governance surface.",
+        "Internal-review and consultation-oriented support are allowed, but submission-oriented use hard-fails by default until a reviewed official method pack changes the posture.",
+        "No PRIMo, DEEM, or OpenFoodTox method record is reused as if it were microplastics-native."
+      ]
+    },
+    {
+      "familyId": "pfas_food_contaminants",
+      "displayName": "PFAS food contaminants and dietary exposure watchlist",
+      "jurisdictions": [
+        "eu",
+        "global"
+      ],
+      "methodMaturityStatus": "transitional",
+      "evidenceSupportStatus": "limited",
+      "submissionUse": "review_required",
+      "sourceIds": [
+        "efsa.pfas.food.2020",
+        "efsa.pfas.topic.2026",
+        "eu.reco.2022_1431",
+        "eu.reg.2023_915"
+      ],
+      "methodIds": [
+        "efsa.pfas.food.2020_opinion",
+        "ec.pfas.monitoring.2022_2025"
+      ],
+      "defaultReadinessProfileIds": [
+        "pfas_internal_review",
+        "pfas_consultation_exploratory",
+        "pfas_submission_candidate"
+      ],
+      "hardFailureProfiles": [
+        "pfas_submission_candidate"
+      ],
+      "notes": [
+        "This family is exposed as a governed PFAS food-contaminant watchlist with explicit legal, reference-value, and monitoring provenance.",
+        "Dietary MCP does not publish a native PFAS submission engine in v0.1 even though official EFSA and EU contaminant sources are represented here.",
+        "Submission-oriented use remains blocked through the family-specific submission profile until a reviewed PFAS method pack is added.",
+        "Evidence linkage remains transitional and food-context coverage should be reviewed explicitly for fish, eggs, offal, and other higher-attention matrices."
+      ]
+    },
+    {
+      "familyId": "acrylamide_process_contaminants",
+      "displayName": "Acrylamide process contaminants and dietary exposure watchlist",
+      "jurisdictions": [
+        "eu",
+        "global"
+      ],
+      "methodMaturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "sourceIds": [
+        "efsa.acrylamide.food.2015",
+        "eu.reg.2017_2158",
+        "eu.reco.2019_1888"
+      ],
+      "methodIds": [
+        "efsa.acrylamide.food.2015_opinion",
+        "eu.acrylamide.mitigation.2017",
+        "eu.acrylamide.monitoring.2019"
+      ],
+      "defaultReadinessProfileIds": [
+        "acrylamide_internal_review",
+        "acrylamide_consultation_exploratory",
+        "acrylamide_submission_candidate"
+      ],
+      "hardFailureProfiles": [],
+      "notes": [
+        "This family is exposed as a governed acrylamide process contaminants and dietary exposure watchlist with explicit EFSA and EU legal provenance.",
+        "Submission-oriented use is allowed when the dossier meets standard governance and fingerprint requirements."
+      ]
+    },
+    {
+      "familyId": "bisphenol_food_contact_migration",
+      "displayName": "Bisphenol food-contact migration and dietary exposure watchlist",
+      "jurisdictions": [
+        "eu"
+      ],
+      "methodMaturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "sourceIds": [
+        "efsa.bpa.food.2023",
+        "efsa.bisphenol.topic.2026",
+        "eu.reg.2024_3190"
+      ],
+      "methodIds": [
+        "efsa.bpa.food.2023_opinion",
+        "eu.bpa.fcm.2024_3190"
+      ],
+      "defaultReadinessProfileIds": [
+        "bisphenol_internal_review",
+        "bisphenol_consultation_exploratory",
+        "bisphenol_submission_candidate"
+      ],
+      "hardFailureProfiles": [],
+      "notes": [
+        "This family is exposed as a governed bisphenol food-contact migration and dietary exposure watchlist with explicit EFSA and EU legal provenance.",
+        "Submission-oriented use is allowed when the dossier meets standard governance and fingerprint requirements."
+      ]
+    },
+    {
+      "familyId": "cadmium_food_contaminants",
+      "displayName": "Cadmium food contaminants and dietary exposure watchlist",
+      "jurisdictions": [
+        "eu",
+        "global"
+      ],
+      "methodMaturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "sourceIds": [
+        "efsa.cadmium.food.2009",
+        "efsa.cadmium.exposure.2012",
+        "efsa.metals.topic.2026",
+        "eu.reg.2023_915"
+      ],
+      "methodIds": [
+        "efsa.cadmium.food.2009_opinion",
+        "efsa.cadmium.exposure.2012_report"
+      ],
+      "defaultReadinessProfileIds": [
+        "cadmium_internal_review",
+        "cadmium_consultation_exploratory",
+        "cadmium_submission_candidate"
+      ],
+      "hardFailureProfiles": [],
+      "notes": [
+        "This family is exposed as a governed cadmium food contaminants and dietary exposure watchlist with explicit EFSA and EU legal provenance.",
+        "Submission-oriented use is allowed when the dossier meets standard governance and fingerprint requirements."
+      ]
+    },
+    {
+      "familyId": "lead_food_contaminants",
+      "displayName": "Lead food contaminants and dietary exposure watchlist",
+      "jurisdictions": [
+        "eu",
+        "global"
+      ],
+      "methodMaturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "sourceIds": [
+        "efsa.lead.food.2010",
+        "efsa.lead.exposure.2012",
+        "efsa.metals.topic.2026",
+        "eu.reg.2023_915"
+      ],
+      "methodIds": [
+        "efsa.lead.food.2010_opinion",
+        "efsa.lead.exposure.2012_report"
+      ],
+      "defaultReadinessProfileIds": [
+        "lead_internal_review",
+        "lead_consultation_exploratory",
+        "lead_submission_candidate"
+      ],
+      "hardFailureProfiles": [],
+      "notes": [
+        "This family is exposed as a governed lead food contaminants and dietary exposure watchlist with explicit EFSA and EU legal provenance.",
+        "Submission-oriented use is allowed when the dossier meets standard governance and fingerprint requirements."
+      ]
+    },
+    {
+      "familyId": "inorganic_arsenic_food_contaminants",
+      "displayName": "Inorganic arsenic food contaminants and dietary exposure watchlist",
+      "jurisdictions": [
+        "eu",
+        "global"
+      ],
+      "methodMaturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "sourceIds": [
+        "efsa.inorganic_arsenic.food.2024",
+        "efsa.inorganic_arsenic.exposure.2021",
+        "efsa.metals.topic.2026",
+        "eu.reg.2025_1891"
+      ],
+      "methodIds": [
+        "efsa.inorganic_arsenic.food.2024_opinion",
+        "efsa.inorganic_arsenic.exposure.2021_report"
+      ],
+      "defaultReadinessProfileIds": [
+        "inorganic_arsenic_internal_review",
+        "inorganic_arsenic_consultation_exploratory",
+        "inorganic_arsenic_submission_candidate"
+      ],
+      "hardFailureProfiles": [],
+      "notes": [
+        "This family is exposed as a governed inorganic arsenic food contaminants and dietary exposure watchlist with explicit EFSA and EU legal provenance.",
+        "Submission-oriented use is allowed when the dossier meets standard governance and fingerprint requirements."
+      ]
+    },
+    {
+      "familyId": "mercury_food_contaminants",
+      "displayName": "Mercury food contaminants and dietary exposure watchlist",
+      "jurisdictions": [
+        "eu",
+        "global"
+      ],
+      "methodMaturityStatus": "established",
+      "evidenceSupportStatus": "established",
+      "submissionUse": "allowed",
+      "sourceIds": [
+        "efsa.mercury.food.2012",
+        "efsa.metals.topic.2026",
+        "eu.reg.2023_915",
+        "eu.reg.333_2007"
+      ],
+      "methodIds": [
+        "efsa.mercury.food.2012_opinion",
+        "eu.mercury.official_control.333_2007"
+      ],
+      "defaultReadinessProfileIds": [
+        "mercury_internal_review",
+        "mercury_consultation_exploratory",
+        "mercury_submission_candidate"
+      ],
+      "hardFailureProfiles": [],
+      "notes": [
+        "This family is exposed as a governed mercury food contaminants and dietary exposure watchlist with explicit EFSA and EU legal provenance.",
+        "Submission-oriented use is allowed when the dossier meets standard governance and fingerprint requirements."
+      ]
+    }
+  ]
+}

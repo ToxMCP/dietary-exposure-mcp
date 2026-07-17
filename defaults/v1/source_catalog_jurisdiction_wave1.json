@@ -1,0 +1,242 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "source_catalog",
+  "validationProfile": "official_primary_wave1",
+  "sources": [
+    {
+      "sourceId": "us.govinfo.cfr.40_180.part.2024",
+      "title": "40 CFR Part 180 - Tolerances and Exemptions for Pesticide Chemical Residues in Food (2024 annual edition)",
+      "organization": "US EPA / GovInfo",
+      "kind": "official_regulatory_standard",
+      "jurisdiction": "us",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2024-07-01",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2024-title40-vol26/xml/CFR-2024-title40-vol26-part180.xml",
+      "originTag": "official_regulatory",
+      "submissionUse": "allowed",
+      "normativeFor": [
+        "reference_dietary"
+      ],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official GovInfo annual edition of 40 CFR Part 180.",
+        "Used as the primary wave-1 U.S. pesticide tolerance legal anchor."
+      ]
+    },
+    {
+      "sourceId": "us.govinfo.cfr.40_180.303.2024",
+      "title": "40 CFR 180.303 - Oxamyl; tolerances for residues",
+      "organization": "US EPA / GovInfo",
+      "kind": "official_regulatory_extract",
+      "jurisdiction": "us",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2024-07-01",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2024-title40-vol26/xml/CFR-2024-title40-vol26-sec180-303.xml",
+      "originTag": "official_regulatory",
+      "submissionUse": "allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official GovInfo section extract used for exact wave-1 oxamyl tolerance values."
+      ]
+    },
+    {
+      "sourceId": "us.govinfo.cfr.40_180.364.2024",
+      "title": "40 CFR 180.364 - Glyphosate; tolerances for residues",
+      "organization": "US EPA / GovInfo",
+      "kind": "official_regulatory_extract",
+      "jurisdiction": "us",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2024-07-01",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2024-title40-vol26/xml/CFR-2024-title40-vol26-sec180-364.xml",
+      "originTag": "official_regulatory",
+      "submissionUse": "allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official GovInfo section extract used for exact wave-1 glyphosate tolerance values."
+      ]
+    },
+    {
+      "sourceId": "us.govinfo.cfr.40_180.472.2024",
+      "title": "40 CFR 180.472 - Imidacloprid; tolerances for residues",
+      "organization": "US EPA / GovInfo",
+      "kind": "official_regulatory_extract",
+      "jurisdiction": "us",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2024-07-01",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2024-title40-vol26/xml/CFR-2024-title40-vol26-sec180-472.xml",
+      "originTag": "official_regulatory",
+      "submissionUse": "allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official GovInfo section extract used for exact wave-1 imidacloprid tolerance values."
+      ]
+    },
+    {
+      "sourceId": "us.govinfo.cfr.40_180.473.2024",
+      "title": "40 CFR 180.473 - Glufosinate ammonium; tolerances for residues",
+      "organization": "US EPA / GovInfo",
+      "kind": "official_regulatory_extract",
+      "jurisdiction": "us",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2024-07-01",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2024-title40-vol26/xml/CFR-2024-title40-vol26-sec180-473.xml",
+      "originTag": "official_regulatory",
+      "submissionUse": "allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official GovInfo section extract used for exact wave-1 glufosinate-ammonium tolerance values."
+      ]
+    },
+    {
+      "sourceId": "us.govinfo.cfr.40_180.578.2024",
+      "title": "40 CFR 180.578 - Acetamiprid; tolerances for residues",
+      "organization": "US EPA / GovInfo",
+      "kind": "official_regulatory_extract",
+      "jurisdiction": "us",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2024-07-01",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2024-title40-vol26/xml/CFR-2024-title40-vol26-sec180-578.xml",
+      "originTag": "official_regulatory",
+      "submissionUse": "allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official GovInfo section extract used to confirm that wave-1 U.S. acetamiprid coverage remains commodity-limited for the current taxonomy."
+      ]
+    },
+    {
+      "sourceId": "us.fda.inorganic_arsenic.rice_cereals.guidance.2020",
+      "title": "Guidance for Industry: Action Level for Inorganic Arsenic in Rice Cereals for Infants",
+      "organization": "US FDA",
+      "kind": "official_regulatory_guidance",
+      "jurisdiction": "us",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2020-08-05",
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-action-level-inorganic-arsenic-rice-cereals-infants",
+      "originTag": "official_regulatory",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official final FDA guidance establishing a 100 ppb action level for inorganic arsenic in infant rice cereals."
+      ]
+    },
+    {
+      "sourceId": "us.fda.lead.processed_foods.guidance.2025",
+      "title": "Guidance for Industry: Action Levels for Lead in Processed Food Intended for Babies and Young Children",
+      "organization": "US FDA",
+      "kind": "official_regulatory_guidance",
+      "jurisdiction": "us",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2025-01-06",
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-action-levels-lead-processed-food-intended-babies-and-young-children",
+      "originTag": "official_regulatory",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official final FDA guidance setting action levels for lead in processed food intended for babies and young children."
+      ]
+    },
+    {
+      "sourceId": "codex.pesticide_database.2024",
+      "title": "Codex Pesticides Residues in Food Online Database",
+      "organization": "Codex Alimentarius / FAO",
+      "kind": "official_regulatory_database",
+      "jurisdiction": "codex_global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": null,
+      "url": "https://www.fao.org/fao-who-codexalimentarius/codex-texts/dbs/pestres/en/",
+      "originTag": "official_regulatory",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official Codex pesticide database used for current CXL lookup.",
+        "The public page states that the database includes CXLs up to and including the Forty-seventh CAC Session (November 2024)."
+      ]
+    },
+    {
+      "sourceId": "codex.cxs_193_1995.current_2025",
+      "title": "General Standard for Contaminants and Toxins in Food and Feed (CXS 193-1995), current official text after the 2025 amendment",
+      "organization": "Codex Alimentarius / FAO",
+      "kind": "official_regulatory_standard",
+      "jurisdiction": "codex_global",
+      "documentStatus": "final_current",
+      "regulatoryRole": "guidance",
+      "effectiveDate": "2025-11-10",
+      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%2B193-1995%252FCXS_193e.pdf",
+      "originTag": "official_regulatory",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official Codex contaminants standard current text.",
+        "The official PDF states that CXS 193-1995 was last amended in 2025 and records Amendment 2025 on the history page.",
+        "The effective date is aligned to the official CAC48 adoption notice published on 2025-11-10."
+      ]
+    },
+    {
+      "sourceId": "cn.nhc.gb2763.2026.announcement",
+      "title": "Announcement on GB 2763-2026 National Food Safety Standard - Maximum Residue Limits for Pesticides in Food",
+      "organization": "National Health Commission of the People's Republic of China",
+      "kind": "official_regulatory_announcement",
+      "jurisdiction": "cn",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2026-02-26",
+      "url": "https://www.nhc.gov.cn/sps/c100088/202602/c0c4a9266f7e43cda1bf3bec59fc2786.shtml",
+      "originTag": "official_regulatory",
+      "submissionUse": "allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official announcement publishing GB 2763-2026.",
+        "The announcement states that GB 2763-2026 replaces GB 2763-2021 and GB 2763.1-2022 and took effect on 2026-03-01."
+      ]
+    },
+    {
+      "sourceId": "cn.nhc.gb2762.2025.announcement",
+      "title": "Announcement on GB 2762-2025 National Food Safety Standard - Maximum Levels of Contaminants in Foods",
+      "organization": "National Health Commission of the People's Republic of China",
+      "kind": "official_regulatory_announcement",
+      "jurisdiction": "cn",
+      "documentStatus": "final_current",
+      "regulatoryRole": "binding",
+      "effectiveDate": "2025-09-25",
+      "url": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml",
+      "originTag": "official_regulatory",
+      "submissionUse": "allowed",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Official announcement publishing GB 2762-2025."
+      ]
+    }
+  ]
+}

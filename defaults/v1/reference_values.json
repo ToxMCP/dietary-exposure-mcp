@@ -1,0 +1,730 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "reference_values",
+  "records": [
+    {
+      "recordId": "efsa.openfoodtox.glyphosate.adi",
+      "substanceKey": "glyphosate",
+      "substanceName": "Glyphosate",
+      "referenceType": "adi",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.5,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "efsa.openfoodtox"
+      ],
+      "databaseSourceId": "efsa.openfoodtox",
+      "conflictGroupId": "glyphosate.adi.authority_conflict",
+      "documentStatus": "dataset_current",
+      "submissionUse": "review_required",
+      "effectiveDate": null,
+      "notes": [
+        "Curated public-record extract for conflict-preserving lookup support.",
+        "OpenFoodTox is treated as the first-class public EFSA reference-value database layer, while the underlying EFSA scientific outputs remain authoritative."
+      ]
+    },
+    {
+      "recordId": "jmpr.glyphosate.adi",
+      "substanceKey": "glyphosate",
+      "substanceName": "Glyphosate",
+      "referenceType": "adi",
+      "authority": "JMPR",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "pesticide_residue",
+      "value": 1.0,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "fao.jmpr.dietary_risks.toolkit"
+      ],
+      "primarySourceId": "fao.jmpr.dietary_risks.toolkit",
+      "conflictGroupId": "glyphosate.adi.authority_conflict",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": null,
+      "notes": [
+        "Curated authority-specific record stub published to preserve conflicts rather than flatten them.",
+        "Consult the original JMPR monograph and Codex context before regulator-facing use."
+      ]
+    },
+    {
+      "recordId": "efsa.openfoodtox.glyphosate.arfd",
+      "substanceKey": "glyphosate",
+      "substanceName": "Glyphosate",
+      "referenceType": "arfd",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.5,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "efsa.openfoodtox"
+      ],
+      "databaseSourceId": "efsa.openfoodtox",
+      "documentStatus": "dataset_current",
+      "submissionUse": "review_required",
+      "effectiveDate": null,
+      "notes": [
+        "Curated public-record extract for EFSA acute reference-value lookup support."
+      ]
+    },
+    {
+      "recordId": "efsa.openfoodtox.acetamiprid.adi",
+      "substanceKey": "acetamiprid",
+      "substanceName": "Acetamiprid",
+      "referenceType": "adi",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.005,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "efsa.openfoodtox",
+        "efsa.acetamiprid.statement.2024",
+        "eu.reg.2025_158"
+      ],
+      "primarySourceId": "efsa.acetamiprid.statement.2024",
+      "databaseSourceId": "efsa.openfoodtox",
+      "conflictGroupId": "acetamiprid.adi.authority_conflict",
+      "documentStatus": "dataset_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2024-05-15",
+      "notes": [
+        "Curated public-record extract for EFSA acetamiprid chronic reference-value lookup support.",
+        "EFSA established the lower value of 0.005 mg/kg bw/day in its 2024 statement to address developmental-neurotoxicity uncertainty.",
+        "Commission Regulation (EU) 2025/158 subsequently used the lower ADI and ARfD in binding EU MRL risk-management context."
+      ]
+    },
+    {
+      "recordId": "efsa.openfoodtox.acetamiprid.arfd",
+      "substanceKey": "acetamiprid",
+      "substanceName": "Acetamiprid",
+      "referenceType": "arfd",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.005,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "efsa.openfoodtox",
+        "efsa.acetamiprid.statement.2024",
+        "eu.reg.2025_158"
+      ],
+      "primarySourceId": "efsa.acetamiprid.statement.2024",
+      "databaseSourceId": "efsa.openfoodtox",
+      "documentStatus": "dataset_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2024-05-15",
+      "notes": [
+        "Curated public-record extract for EFSA acetamiprid acute reference-value lookup support.",
+        "EFSA established the lower value of 0.005 mg/kg bw/day in its 2024 statement to address developmental-neurotoxicity uncertainty.",
+        "Commission Regulation (EU) 2025/158 subsequently used the lower ADI and ARfD in binding EU MRL risk-management context."
+      ]
+    },
+    {
+      "recordId": "efsa.openfoodtox.imidacloprid.adi",
+      "substanceKey": "imidacloprid",
+      "substanceName": "Imidacloprid",
+      "referenceType": "adi",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.06,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "efsa.openfoodtox",
+        "efsa.imidacloprid.dnt.2013"
+      ],
+      "databaseSourceId": "efsa.openfoodtox",
+      "documentStatus": "dataset_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2013-12-17",
+      "notes": [
+        "Curated public-record extract for EFSA imidacloprid chronic reference-value lookup support.",
+        "OpenFoodTox is used as the public EFSA database layer while EFSA public developmental neurotoxicity materials provide additional governed context for this review-oriented extract."
+      ]
+    },
+    {
+      "recordId": "efsa.openfoodtox.imidacloprid.arfd",
+      "substanceKey": "imidacloprid",
+      "substanceName": "Imidacloprid",
+      "referenceType": "arfd",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.08,
+      "unit": "mg/kg bw",
+      "sourceIds": [
+        "efsa.openfoodtox",
+        "efsa.imidacloprid.dnt.2013"
+      ],
+      "databaseSourceId": "efsa.openfoodtox",
+      "documentStatus": "dataset_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2013-12-17",
+      "notes": [
+        "Curated public-record extract for EFSA imidacloprid acute reference-value lookup support.",
+        "Value updated to 0.08 mg/kg bw to match EFSA OpenFoodTox 2.0 (ReferenceValues_KJ_2023)."
+      ]
+    },
+    {
+      "recordId": "efsa.glufosinate.adi.2007",
+      "substanceKey": "glufosinate",
+      "substanceName": "Glufosinate",
+      "referenceType": "adi",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.021,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "efsa.glufosinate.call_for_data.2024",
+        "efsa.glufosinate.mrl_review.2015"
+      ],
+      "primarySourceId": "efsa.glufosinate.call_for_data.2024",
+      "conflictGroupId": "glufosinate.adi.authority_conflict",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2007-01-01",
+      "notes": [
+        "Governed EFSA chronic reference-value record for glufosinate retained in the current EU MRL review context.",
+        "Published as a conflict-preserving EU record because EFSA and JMPR currently expose different toxicological reference values."
+      ]
+    },
+    {
+      "recordId": "jmpr.glufosinate.adi.2012",
+      "substanceKey": "glufosinate",
+      "substanceName": "Glufosinate",
+      "referenceType": "adi",
+      "authority": "JMPR",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.01,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "jmpr.glufosinate.summary.2013",
+        "fao.jmpr.dietary_risks.toolkit"
+      ],
+      "primarySourceId": "jmpr.glufosinate.summary.2013",
+      "conflictGroupId": "glufosinate.adi.authority_conflict",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2012-01-01",
+      "notes": [
+        "Curated authority-specific JMPR chronic reference-value record for glufosinate.",
+        "Retained separately so Codex/JMPR review values do not overwrite the current EU review posture."
+      ]
+    },
+    {
+      "recordId": "efsa.glufosinate.arfd.2007",
+      "substanceKey": "glufosinate",
+      "substanceName": "Glufosinate",
+      "referenceType": "arfd",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.045,
+      "unit": "mg/kg bw",
+      "sourceIds": [
+        "efsa.glufosinate.call_for_data.2024",
+        "efsa.glufosinate.mrl_review.2015"
+      ],
+      "primarySourceId": "efsa.glufosinate.call_for_data.2024",
+      "conflictGroupId": "glufosinate.arfd.authority_conflict",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2007-01-01",
+      "notes": [
+        "Governed EFSA acute reference-value record for glufosinate retained in the current EU MRL review context.",
+        "Value updated to 0.045 mg/kg bw to match EFSA OpenFoodTox 2.0 (ReferenceValues_KJ_2023)."
+      ]
+    },
+    {
+      "recordId": "jmpr.glufosinate.arfd.2012",
+      "substanceKey": "glufosinate",
+      "substanceName": "Glufosinate",
+      "referenceType": "arfd",
+      "authority": "JMPR",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.01,
+      "unit": "mg/kg bw",
+      "sourceIds": [
+        "jmpr.glufosinate.summary.2013",
+        "fao.jmpr.dietary_risks.toolkit"
+      ],
+      "primarySourceId": "jmpr.glufosinate.summary.2013",
+      "conflictGroupId": "glufosinate.arfd.authority_conflict",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2012-01-01",
+      "notes": [
+        "Curated authority-specific JMPR acute reference-value record for glufosinate.",
+        "Retained separately so Codex/JMPR review values do not overwrite the current EU acute review posture."
+      ]
+    },
+    {
+      "recordId": "efsa.oxamyl.adi.2023",
+      "substanceKey": "oxamyl",
+      "substanceName": "Oxamyl",
+      "referenceType": "adi",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.001,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "efsa.oxamyl.statement.2023",
+        "efsa.oxamyl.peer_review.2022"
+      ],
+      "primarySourceId": "efsa.oxamyl.statement.2023",
+      "conflictGroupId": "oxamyl.adi.authority_conflict",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2023-03-01",
+      "notes": [
+        "Governed EFSA chronic reference-value record for oxamyl retained in the current EU consumer-protection statement context.",
+        "Published as a conflict-preserving EU record because EFSA and JMPR expose materially different toxicological reference values for oxamyl."
+      ]
+    },
+    {
+      "recordId": "jmpr.oxamyl.adi.2012",
+      "substanceKey": "oxamyl",
+      "substanceName": "Oxamyl",
+      "referenceType": "adi",
+      "authority": "JMPR",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.009,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "jmpr.oxamyl.summary.2012",
+        "fao.jmpr.dietary_risks.toolkit"
+      ],
+      "primarySourceId": "jmpr.oxamyl.summary.2012",
+      "conflictGroupId": "oxamyl.adi.authority_conflict",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2012-01-01",
+      "notes": [
+        "Curated authority-specific JMPR chronic reference-value record for oxamyl.",
+        "Retained separately so Codex/JMPR review values do not overwrite the current EU oxamyl review posture."
+      ]
+    },
+    {
+      "recordId": "efsa.oxamyl.arfd.2023",
+      "substanceKey": "oxamyl",
+      "substanceName": "Oxamyl",
+      "referenceType": "arfd",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.001,
+      "unit": "mg/kg bw",
+      "sourceIds": [
+        "efsa.oxamyl.statement.2023",
+        "efsa.oxamyl.peer_review.2022"
+      ],
+      "primarySourceId": "efsa.oxamyl.statement.2023",
+      "conflictGroupId": "oxamyl.arfd.authority_conflict",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2023-03-01",
+      "notes": [
+        "Governed EFSA acute reference-value record for oxamyl retained in the current EU consumer-protection statement context.",
+        "Published as a conflict-preserving EU record because EFSA and JMPR expose materially different acute reference values for oxamyl."
+      ]
+    },
+    {
+      "recordId": "jmpr.oxamyl.arfd.2012",
+      "substanceKey": "oxamyl",
+      "substanceName": "Oxamyl",
+      "referenceType": "arfd",
+      "authority": "JMPR",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.009,
+      "unit": "mg/kg bw",
+      "sourceIds": [
+        "jmpr.oxamyl.summary.2012",
+        "fao.jmpr.dietary_risks.toolkit"
+      ],
+      "primarySourceId": "jmpr.oxamyl.summary.2012",
+      "conflictGroupId": "oxamyl.arfd.authority_conflict",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2012-01-01",
+      "notes": [
+        "Curated authority-specific JMPR acute reference-value record for oxamyl.",
+        "Retained separately so Codex/JMPR review values do not overwrite the current EU oxamyl acute review posture."
+      ]
+    },
+    {
+      "recordId": "efsa.ethiprole.adi.2024",
+      "substanceKey": "ethiprole",
+      "substanceName": "Ethiprole",
+      "referenceType": "adi",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.002,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "efsa.ethiprole.trv.2024"
+      ],
+      "primarySourceId": "efsa.ethiprole.trv.2024",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2024-12-18",
+      "notes": [
+        "Governed EFSA chronic reference-value record for ethiprole from the 2024 residue-definition and toxicological-reference-value review.",
+        "Published for provenance-preserving lookup support rather than as a native residue-risk engine."
+      ]
+    },
+    {
+      "recordId": "efsa.ethiprole.arfd.2024",
+      "substanceKey": "ethiprole",
+      "substanceName": "Ethiprole",
+      "referenceType": "arfd",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.005,
+      "unit": "mg/kg bw",
+      "sourceIds": [
+        "efsa.ethiprole.trv.2024"
+      ],
+      "primarySourceId": "efsa.ethiprole.trv.2024",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2024-12-18",
+      "notes": [
+        "Governed EFSA acute reference-value record for ethiprole from the 2024 residue-definition and toxicological-reference-value review.",
+        "The source report expressed the ARfD as 0.005 mg/kg bw."
+      ]
+    },
+    {
+      "recordId": "efsa.tetraconazole.adi.2019",
+      "substanceKey": "tetraconazole",
+      "substanceName": "Tetraconazole",
+      "referenceType": "adi",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.004,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "efsa.tetraconazole.mrl_opinion.2019"
+      ],
+      "primarySourceId": "efsa.tetraconazole.mrl_opinion.2019",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2019-02-08",
+      "notes": [
+        "Governed EFSA chronic reference-value record for tetraconazole from the 2019 MRL opinion.",
+        "Published for provenance-preserving lookup support rather than as a native residue-risk engine."
+      ]
+    },
+    {
+      "recordId": "efsa.tetraconazole.arfd.2019",
+      "substanceKey": "tetraconazole",
+      "substanceName": "Tetraconazole",
+      "referenceType": "arfd",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.05,
+      "unit": "mg/kg bw",
+      "sourceIds": [
+        "efsa.tetraconazole.mrl_opinion.2019"
+      ],
+      "primarySourceId": "efsa.tetraconazole.mrl_opinion.2019",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2019-02-08",
+      "notes": [
+        "Governed EFSA acute reference-value record for tetraconazole from the 2019 MRL opinion.",
+        "The public EFSA summary expressed the ARfD as 0.05 mg/kg bw."
+      ]
+    },
+    {
+      "recordId": "efsa.tebuconazole.adi.2013",
+      "substanceKey": "tebuconazole",
+      "substanceName": "Tebuconazole",
+      "referenceType": "adi",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.03,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "efsa.tebuconazole.mrl_opinion.2013",
+        "efsa.pesticide_residues.food.2025"
+      ],
+      "primarySourceId": "efsa.tebuconazole.mrl_opinion.2013",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2013-05-29",
+      "notes": [
+        "Governed EFSA chronic reference-value record for tebuconazole in the poppy-seed MRL review context.",
+        "Dietary MCP preserves this EFSA review value for provenance-aware lookup support rather than as a native residue-risk engine."
+      ]
+    },
+    {
+      "recordId": "efsa.tebuconazole.arfd.2013",
+      "substanceKey": "tebuconazole",
+      "substanceName": "Tebuconazole",
+      "referenceType": "arfd",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.03,
+      "unit": "mg/kg bw",
+      "sourceIds": [
+        "efsa.tebuconazole.mrl_opinion.2013",
+        "efsa.pesticide_residues.food.2025"
+      ],
+      "primarySourceId": "efsa.tebuconazole.mrl_opinion.2013",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2013-05-29",
+      "notes": [
+        "Governed EFSA acute reference-value record for tebuconazole in the poppy-seed MRL review context.",
+        "EFSA annual pesticide-residue reporting context has also reported the review-relevant ARfD at 0.03 mg/kg bw."
+      ]
+    },
+    {
+      "recordId": "efsa.pfas.sum4.twi",
+      "substanceKey": "sum_pfoa_pfna_pfhxs_pfos",
+      "substanceName": "Sum of PFOA, PFNA, PFHxS and PFOS",
+      "referenceType": "twi",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pfas_food_contaminants",
+      "value": 4.4,
+      "unit": "ng/kg bw/week",
+      "sourceIds": [
+        "efsa.pfas.food.2020",
+        "efsa.pfas.topic.2026"
+      ],
+      "primarySourceId": "efsa.pfas.food.2020",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2020-09-17",
+      "notes": [
+        "Governed EFSA group tolerable weekly intake record for the sum of four PFAS in food.",
+        "This record is published for provenance-preserving lookup support and does not imply a native PFAS risk engine in Dietary MCP."
+      ]
+    },
+    {
+      "recordId": "efsa.acrylamide.neoplastic.bmdl10",
+      "substanceKey": "acrylamide",
+      "substanceName": "Acrylamide",
+      "referenceType": "bmdl10_neoplastic",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "acrylamide_process_contaminants",
+      "value": 0.17,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "efsa.acrylamide.food.2015"
+      ],
+      "primarySourceId": "efsa.acrylamide.food.2015",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2015-06-04",
+      "notes": [
+        "Governed EFSA benchmark-dose lower confidence limit record for neoplastic effects in mice.",
+        "Published for provenance-preserving lookup support in a margin-of-exposure style contaminant workflow."
+      ]
+    },
+    {
+      "recordId": "efsa.acrylamide.neurotoxicity.bmdl10",
+      "substanceKey": "acrylamide",
+      "substanceName": "Acrylamide",
+      "referenceType": "bmdl10_neurotoxicity",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "acrylamide_process_contaminants",
+      "value": 0.43,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "efsa.acrylamide.food.2015"
+      ],
+      "primarySourceId": "efsa.acrylamide.food.2015",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2015-06-04",
+      "notes": [
+        "Governed EFSA benchmark-dose lower confidence limit record for peripheral neuropathy in rats.",
+        "Published for provenance-preserving lookup support in a non-threshold process-contaminant workflow."
+      ]
+    },
+    {
+      "recordId": "efsa.bpa.tdi.2023",
+      "substanceKey": "bisphenol_a",
+      "substanceName": "Bisphenol A",
+      "referenceType": "tdi",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "bisphenol_food_contact_migration",
+      "value": 0.2,
+      "unit": "ng/kg bw/day",
+      "sourceIds": [
+        "efsa.bpa.food.2023",
+        "efsa.bisphenol.topic.2026"
+      ],
+      "primarySourceId": "efsa.bpa.food.2023",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2023-04-19",
+      "notes": [
+        "Governed EFSA tolerable daily intake record for BPA in foodstuffs and food-contact migration review.",
+        "This record is published for provenance-preserving lookup support and does not imply a native BPA migration engine in Dietary MCP."
+      ]
+    },
+    {
+      "recordId": "efsa.cadmium.twi.2009",
+      "substanceKey": "cadmium",
+      "substanceName": "Cadmium",
+      "referenceType": "twi",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "cadmium_food_contaminants",
+      "value": 2.5,
+      "unit": "ug/kg bw/week",
+      "sourceIds": [
+        "efsa.cadmium.food.2009",
+        "efsa.cadmium.exposure.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "primarySourceId": "efsa.cadmium.food.2009",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2009-03-20",
+      "notes": [
+        "Governed EFSA tolerable weekly intake record for cadmium in food.",
+        "This record is published for provenance-preserving lookup support and does not imply a native cadmium risk engine in Dietary MCP."
+      ]
+    },
+    {
+      "recordId": "efsa.lead.developmental_neurotoxicity.bmdl01",
+      "substanceKey": "lead",
+      "substanceName": "Lead",
+      "referenceType": "bmdl01_developmental_neurotoxicity",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "lead_food_contaminants",
+      "value": 0.5,
+      "unit": "ug/kg bw/day",
+      "sourceIds": [
+        "efsa.lead.food.2010",
+        "efsa.lead.exposure.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "primarySourceId": "efsa.lead.food.2010",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2010-04-20",
+      "notes": [
+        "Governed EFSA benchmark-dose lower confidence limit record for developmental neurotoxicity related to lead exposure in food.",
+        "This record is published for provenance-preserving lookup support and does not imply a native lead risk engine in Dietary MCP."
+      ]
+    },
+    {
+      "recordId": "efsa.lead.nephrotoxicity.bmdl10",
+      "substanceKey": "lead",
+      "substanceName": "Lead",
+      "referenceType": "bmdl10_nephrotoxicity",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "lead_food_contaminants",
+      "value": 0.63,
+      "unit": "ug/kg bw/day",
+      "sourceIds": [
+        "efsa.lead.food.2010",
+        "efsa.lead.exposure.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "primarySourceId": "efsa.lead.food.2010",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2010-04-20",
+      "notes": [
+        "Governed EFSA benchmark-dose lower confidence limit record for nephrotoxicity related to lead exposure in food.",
+        "This record is published for provenance-preserving lookup support and does not imply a native lead risk engine in Dietary MCP."
+      ]
+    },
+    {
+      "recordId": "efsa.inorganic_arsenic.skin_cancer.bmdl05",
+      "substanceKey": "inorganic_arsenic",
+      "substanceName": "Inorganic arsenic",
+      "referenceType": "bmdl05_skin_cancer",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "inorganic_arsenic_food_contaminants",
+      "value": 0.06,
+      "unit": "ug/kg bw/day",
+      "sourceIds": [
+        "efsa.inorganic_arsenic.food.2024",
+        "efsa.inorganic_arsenic.exposure.2021",
+        "efsa.metals.topic.2026"
+      ],
+      "primarySourceId": "efsa.inorganic_arsenic.food.2024",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2024-01-18",
+      "notes": [
+        "Governed EFSA benchmark-dose lower confidence limit record for skin-cancer risk related to inorganic arsenic in food.",
+        "This record is published for provenance-preserving lookup support and does not imply a native inorganic-arsenic risk engine in Dietary MCP."
+      ]
+    },
+    {
+      "recordId": "efsa.methylmercury.twi.2012",
+      "substanceKey": "methylmercury",
+      "substanceName": "Methylmercury",
+      "referenceType": "twi",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "mercury_food_contaminants",
+      "value": 1.3,
+      "unit": "ug/kg bw/week",
+      "sourceIds": [
+        "efsa.mercury.food.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "primarySourceId": "efsa.mercury.food.2012",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2012-12-20",
+      "notes": [
+        "Governed EFSA tolerable weekly intake record for methylmercury in food.",
+        "This record is published for provenance-preserving lookup support and does not imply a native mercury risk engine in Dietary MCP."
+      ]
+    },
+    {
+      "recordId": "efsa.inorganic_mercury.twi.2012",
+      "substanceKey": "inorganic_mercury",
+      "substanceName": "Inorganic mercury",
+      "referenceType": "twi",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "mercury_food_contaminants",
+      "value": 4.0,
+      "unit": "ug/kg bw/week",
+      "sourceIds": [
+        "efsa.mercury.food.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "primarySourceId": "efsa.mercury.food.2012",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2012-12-20",
+      "notes": [
+        "Governed EFSA tolerable weekly intake record for inorganic mercury in food.",
+        "This record is published for provenance-preserving lookup support and does not imply a native mercury risk engine in Dietary MCP."
+      ]
+    }
+  ]
+}

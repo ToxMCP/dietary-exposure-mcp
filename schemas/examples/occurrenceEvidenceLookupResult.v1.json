@@ -1,0 +1,77 @@
+{
+  "contaminant_family": "mercury_food_contaminants",
+  "jurisdiction": "eu",
+  "authority": null,
+  "analyte": "methylmercury",
+  "matrix_group": "fish",
+  "records": [
+    {
+      "record_id": "eu.mercury.occurrence_evidence.official_monitoring_context",
+      "display_name": "Mercury official monitoring evidence context",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminant_family": "mercury_food_contaminants",
+      "evidence_kind": "official_monitoring_context",
+      "analytes": [
+        "methylmercury",
+        "inorganic_mercury",
+        "total_mercury"
+      ],
+      "matrix_groups": [
+        "fish_and_seafood",
+        "large_predatory_fish",
+        "broad_food_supply"
+      ],
+      "sample_set_summary": "EFSA mercury occurrence and dietary context linked to EU official-control and contaminants-law review.",
+      "measured_unit": "mg/kg",
+      "data_period": "2012-2026_review_context",
+      "lower_bound_handling": "review_occurrence_lower_bound_context",
+      "maturity_status": "established",
+      "evidence_support_status": "established",
+      "submission_use": "allowed",
+      "document_status": "final_current",
+      "source_ids": [
+        "efsa.mercury.food.2012",
+        "efsa.mercury.fish_consumption.2026",
+        "efsa.metals.topic.2026",
+        "eu.reg.2023_915",
+        "eu.reg.333_2007"
+      ],
+      "occurrence_record_ids": [
+        "efsa.mercury.occurrence_monitoring.support"
+      ],
+      "dataset_ids": [
+        "efsa.comprehensive_food_consumption_db.mercury_support"
+      ],
+      "method_evidence_record_ids": [
+        "eu.mercury.analytical_method_evidence.official_control"
+      ],
+      "legal_authority_ids": [
+        "eu.mercury.contaminants.reg_2023_915",
+        "eu.mercury.official_control.reg_333_2007"
+      ],
+      "reference_value_record_ids": [
+        "efsa.methylmercury.twi.2012",
+        "efsa.inorganic_mercury.twi.2012"
+      ],
+      "linked_review_focus_ids": [
+        "efsa.mercury.large_predatory_fish.review_focus",
+        "efsa.mercury.sensitive_population_advice.review_focus"
+      ],
+      "reporting_profile_ids": [],
+      "notes": [
+        "Captures governed occurrence context for mercury food review and monitoring interpretation.",
+        "Exposed for evidence linkage and auditability, not as a native mercury exposure engine."
+      ]
+    }
+  ],
+  "overall_submission_use": "allowed",
+  "submission_candidate_allowed": true,
+  "notes": [
+    "Occurrence evidence is exposed as governed monitoring-context metadata linked to occurrence, dataset, method, and legal records.",
+    "These records are review-oriented evidence objects and do not imply a native contaminant exposure engine.",
+    "Occurrence-evidence record eu.mercury.occurrence_evidence.official_monitoring_context: Supporting sources mix historical anchors (efsa.mercury.food.2012) with newer context records (efsa.mercury.fish_consumption.2026, efsa.metals.topic.2026, eu.reg.2023_915, eu.reg.333_2007); confirm the older evidence base is still fit for the intended use.",
+    "Analyte filter applied: methylmercury.",
+    "Matrix-group filter applied: fish."
+  ]
+}

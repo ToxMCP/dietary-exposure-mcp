@@ -1,0 +1,14 @@
+{
+  "commodity_code": "apples",
+  "distribution": "uniform",
+  "point_mg_per_kg": null,
+  "empirical_values_mg_per_kg": [],
+  "min_mg_per_kg": 0.12,
+  "mode_mg_per_kg": null,
+  "max_mg_per_kg": 0.2,
+  "geometric_mean_mg_per_kg": null,
+  "geometric_sd": null,
+  "lod_mg_per_kg": null,
+  "loq_mg_per_kg": null,
+  "processing_factor_cv": 0.05
+}

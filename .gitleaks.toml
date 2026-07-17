@@ -1,0 +1,25 @@
+title = "ToxMCP secret scanning allowlist"
+
+[extend]
+useDefault = true
+
+[allowlist]
+paths = [
+  '''(^|/)\.venv/''',
+  '''(^|/)dist/''',
+  '''(^|/)coverage/''',
+  '''(^|/)\.cache/''',
+  '''(^|/)\.pytest_cache/''',
+  '''(^|/)\.ruff_cache/''',
+  '''(^|/)uv\.lock$''',
+  # Generated review / case-pack artifacts (chemical data, not source)
+  '''(^|/)output/''',
+  '''(^|/)tmp/'''
+]
+# Chemical identifiers (e.g. "substanceKey":"glyphosate",
+# "canonicalKey":"...") are high-entropy enough to trip the generic-api-key
+# rule. Exempt any line carrying one of these chemical-key fields.
+regexTarget = "line"
+regexes = [
+  '''"(substanceKey|canonicalKey)"\s*:''',
+]

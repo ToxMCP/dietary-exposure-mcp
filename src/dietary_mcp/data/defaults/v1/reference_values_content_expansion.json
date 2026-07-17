@@ -1,0 +1,148 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "reference_values",
+  "records": [
+    {
+      "recordId": "efsa.openfoodtox.difenoconazole.adi",
+      "substanceKey": "difenoconazole",
+      "substanceName": "Difenoconazole",
+      "referenceType": "adi",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.01,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "efsa.openfoodtox",
+        "efsa.difenoconazole.peer_review.2011",
+        "efsa.difenoconazole.import_tolerance.2025"
+      ],
+      "primarySourceId": "efsa.difenoconazole.peer_review.2011",
+      "databaseSourceId": "efsa.openfoodtox",
+      "documentStatus": "dataset_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2011-01-07",
+      "notes": [
+        "Curated public-record extract for EFSA difenoconazole chronic reference-value lookup support.",
+        "OpenFoodTox is used as the public EFSA database layer while the 2011 EFSA peer review remains the primary scientific output for this review-oriented extract."
+      ]
+    },
+    {
+      "recordId": "efsa.openfoodtox.difenoconazole.arfd",
+      "substanceKey": "difenoconazole",
+      "substanceName": "Difenoconazole",
+      "referenceType": "arfd",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.16,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "efsa.openfoodtox",
+        "efsa.difenoconazole.peer_review.2011",
+        "efsa.difenoconazole.mrl_review.2024"
+      ],
+      "primarySourceId": "efsa.difenoconazole.peer_review.2011",
+      "databaseSourceId": "efsa.openfoodtox",
+      "conflictGroupId": "difenoconazole.arfd.authority_conflict",
+      "documentStatus": "dataset_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2011-01-07",
+      "notes": [
+        "Curated public-record extract for EFSA difenoconazole acute reference-value lookup support.",
+        "Published as a conflict-preserving EFSA record because JMPR retains a higher acute reference value for difenoconazole."
+      ]
+    },
+    {
+      "recordId": "jmpr.difenoconazole.arfd.2013",
+      "substanceKey": "difenoconazole",
+      "substanceName": "Difenoconazole",
+      "referenceType": "arfd",
+      "authority": "JMPR",
+      "jurisdiction": "codex_global",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.3,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "jmpr.difenoconazole.report.2013"
+      ],
+      "primarySourceId": "jmpr.difenoconazole.report.2013",
+      "conflictGroupId": "difenoconazole.arfd.authority_conflict",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2013-01-01",
+      "notes": [
+        "Curated authority-specific JMPR acute reference-value record for difenoconazole.",
+        "Retained separately so Codex/JMPR review values do not overwrite the EFSA acute review posture."
+      ]
+    },
+    {
+      "recordId": "cn.nhc.glyphosate.adi",
+      "substanceKey": "glyphosate",
+      "substanceName": "Glyphosate",
+      "referenceType": "adi",
+      "authority": "NHC China",
+      "jurisdiction": "cn",
+      "contaminantFamily": "pesticide_residue",
+      "value": 1.0,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "cn.nhc.gb2763.2026.announcement",
+        "cn.aqsc.gb2763.2026"
+      ],
+      "primarySourceId": "cn.aqsc.gb2763.2026",
+      "conflictGroupId": "glyphosate.adi.authority_conflict",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2026-03-01",
+      "notes": [
+        "Governed Chinese ADI for glyphosate based on GB 2763-2026.",
+        "Published from the official 2026 standard text and retained separately so jurisdiction-specific values are not borrowed from EFSA or JMPR."
+      ]
+    },
+    {
+      "recordId": "jp.fsc.glyphosate.adi",
+      "substanceKey": "glyphosate",
+      "substanceName": "Glyphosate",
+      "referenceType": "adi",
+      "authority": "FSC Japan",
+      "jurisdiction": "jp",
+      "contaminantFamily": "pesticide_residue",
+      "value": 1.0,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "jp.mhlw.fsa"
+      ],
+      "primarySourceId": "jp.mhlw.fsa",
+      "conflictGroupId": "glyphosate.adi.authority_conflict",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": null,
+      "notes": [
+        "Governed Japanese ADI for glyphosate."
+      ]
+    },
+    {
+      "recordId": "ca.pmra.glyphosate.adi",
+      "substanceKey": "glyphosate",
+      "substanceName": "Glyphosate",
+      "referenceType": "adi",
+      "authority": "PMRA Canada",
+      "jurisdiction": "ca",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.3,
+      "unit": "mg/kg bw/day",
+      "sourceIds": [
+        "ca.hc.pmra.mrl_database"
+      ],
+      "primarySourceId": "ca.hc.pmra.mrl_database",
+      "conflictGroupId": "glyphosate.adi.authority_conflict",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": null,
+      "notes": [
+        "Governed Canadian ADI for glyphosate. Diverges from US EPA and EFSA."
+      ]
+    }
+  ]
+}

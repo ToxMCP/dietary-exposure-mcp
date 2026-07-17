@@ -1,0 +1,92 @@
+{
+  "defaultsVersion": "v1",
+  "kind": "consumption_profiles",
+  "profiles": [
+    {
+      "profileId": "eu_pregnant_adult_screening_v1",
+      "displayName": "EU pregnant-adult screening profile",
+      "regionId": "eu_screening_default",
+      "populationGroup": "pregnant_adult",
+      "surveySource": "Illustrative placeholder pregnant-adult screening pack",
+      "bodyWeightKg": 62.0,
+      "applicableWindows": [
+        "acute",
+        "chronic"
+      ],
+      "limitations": [
+        "Illustrative public screening profile only",
+        "Use reviewed regional survey packs for regulator-facing decisions"
+      ],
+      "sourceId": "dietary.profile.eu_pregnant_adult",
+      "sourceTitle": "Illustrative EU pregnant-adult dietary screening profile",
+      "effectiveDate": "2026-04-13",
+      "commodityConsumption": [
+        {
+          "commodityCode": "apples",
+          "acuteKgPerDay": 0.31,
+          "chronicKgPerDay": 0.17
+        },
+        {
+          "commodityCode": "oranges",
+          "acuteKgPerDay": 0.28,
+          "chronicKgPerDay": 0.13
+        },
+        {
+          "commodityCode": "spinach",
+          "acuteKgPerDay": 0.13,
+          "chronicKgPerDay": 0.05
+        },
+        {
+          "commodityCode": "tomatoes",
+          "acuteKgPerDay": 0.2,
+          "chronicKgPerDay": 0.1
+        },
+        {
+          "commodityCode": "potatoes",
+          "acuteKgPerDay": 0.24,
+          "chronicKgPerDay": 0.13
+        },
+        {
+          "commodityCode": "rice",
+          "acuteKgPerDay": 0.22,
+          "chronicKgPerDay": 0.11
+        },
+        {
+          "commodityCode": "wheat",
+          "acuteKgPerDay": 0.25,
+          "chronicKgPerDay": 0.13
+        },
+        {
+          "commodityCode": "milk",
+          "acuteKgPerDay": 0.48,
+          "chronicKgPerDay": 0.24
+        },
+        {
+          "commodityCode": "chicken",
+          "acuteKgPerDay": 0.17,
+          "chronicKgPerDay": 0.08
+        },
+        {
+          "commodityCode": "salmon",
+          "acuteKgPerDay": 0.11,
+          "chronicKgPerDay": 0.05
+        },
+        {
+          "commodityCode": "eggs",
+          "acuteKgPerDay": 0.14,
+          "chronicKgPerDay": 0.05
+        },
+        {
+          "commodityCode": "oats",
+          "acuteKgPerDay": 0.2,
+          "chronicKgPerDay": 0.08
+        },
+        {
+          "commodityCode": "beans_and_pulses",
+          "acuteKgPerDay": 0.18,
+          "chronicKgPerDay": 0.06
+        }
+      ]
+    }
+  ]
+}

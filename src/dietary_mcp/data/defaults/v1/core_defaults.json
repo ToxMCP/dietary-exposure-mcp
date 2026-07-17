@@ -1,0 +1,29 @@
+{
+  "defaultsVersion": "v1",
+  "parameters": {
+    "default_processing_factor": {
+      "value": 1.0,
+      "unit": "ratio",
+      "sourceId": "dietary.default.processing_factor",
+      "title": "Default commodity processing factor",
+      "effectiveDate": "2026-04-08",
+      "evidenceTier": "tier_1_curated"
+    },
+    "max_dominant_contributors": {
+      "value": 3,
+      "unit": "count",
+      "sourceId": "dietary.default.top_contributors",
+      "title": "Maximum dominant contributors to expose by default",
+      "effectiveDate": "2026-04-08",
+      "evidenceTier": "tier_1_curated"
+    },
+    "acute_gap_attention_ratio": {
+      "value": 2.0,
+      "unit": "ratio",
+      "sourceId": "dietary.default.acute_gap_attention_ratio",
+      "title": "Acute-to-chronic ratio that triggers a fit warning",
+      "effectiveDate": "2026-04-08",
+      "evidenceTier": "tier_2_reference"
+    }
+  }
+}

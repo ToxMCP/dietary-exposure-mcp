@@ -1,0 +1,192 @@
+{
+  "$defs": {
+    "ConsumptionDatasetRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "datasetId": {
+          "title": "Datasetid",
+          "type": "string"
+        },
+        "displayName": {
+          "title": "Displayname",
+          "type": "string"
+        },
+        "authority": {
+          "title": "Authority",
+          "type": "string"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "contaminantFamily": {
+          "$ref": "#/$defs/ContaminantFamily"
+        },
+        "datasetKind": {
+          "title": "Datasetkind",
+          "type": "string"
+        },
+        "maturityStatus": {
+          "$ref": "#/$defs/MethodMaturityStatus"
+        },
+        "submissionUse": {
+          "$ref": "#/$defs/SubmissionUse"
+        },
+        "documentStatus": {
+          "$ref": "#/$defs/DocumentStatus"
+        },
+        "sourceIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sourceids",
+          "type": "array"
+        },
+        "methodIds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Methodids",
+          "type": "array"
+        },
+        "compatibleModelFamilies": {
+          "items": {
+            "$ref": "#/$defs/ModelFamily"
+          },
+          "title": "Compatiblemodelfamilies",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "datasetId",
+        "displayName",
+        "authority",
+        "jurisdiction",
+        "contaminantFamily",
+        "datasetKind",
+        "maturityStatus",
+        "submissionUse",
+        "documentStatus"
+      ],
+      "title": "ConsumptionDatasetRecord",
+      "type": "object"
+    },
+    "ContaminantFamily": {
+      "enum": [
+        "pesticide_residue",
+        "microplastics_emerging",
+        "pfas_food_contaminants",
+        "acrylamide_process_contaminants",
+        "bisphenol_food_contact_migration",
+        "cadmium_food_contaminants",
+        "lead_food_contaminants",
+        "inorganic_arsenic_food_contaminants",
+        "mercury_food_contaminants",
+        "food_contaminant"
+      ],
+      "title": "ContaminantFamily",
+      "type": "string"
+    },
+    "DocumentStatus": {
+      "enum": [
+        "final_current",
+        "superseded",
+        "draft",
+        "consultation",
+        "tool_metadata",
+        "dataset_current"
+      ],
+      "title": "DocumentStatus",
+      "type": "string"
+    },
+    "MethodMaturityStatus": {
+      "enum": [
+        "established",
+        "transitional",
+        "exploratory",
+        "emerging"
+      ],
+      "title": "MethodMaturityStatus",
+      "type": "string"
+    },
+    "ModelFamily": {
+      "enum": [
+        "reference_dietary",
+        "adapter_stub",
+        "efsa_primo_adapter",
+        "epa_deem_adapter"
+      ],
+      "title": "ModelFamily",
+      "type": "string"
+    },
+    "SubmissionUse": {
+      "enum": [
+        "allowed",
+        "review_required",
+        "not_allowed"
+      ],
+      "title": "SubmissionUse",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "type": "string"
+    },
+    "datasetId": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Datasetid"
+    },
+    "contaminantFamily": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ContaminantFamily"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "datasets": {
+      "items": {
+        "$ref": "#/$defs/ConsumptionDatasetRecord"
+      },
+      "title": "Datasets",
+      "type": "array"
+    },
+    "overallSubmissionUse": {
+      "$ref": "#/$defs/SubmissionUse"
+    },
+    "notes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "jurisdiction",
+    "overallSubmissionUse"
+  ],
+  "title": "ConsumptionDatasetSupportLookupResult",
+  "type": "object"
+}

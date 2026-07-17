@@ -1,0 +1,270 @@
+{
+  "$defs": {
+    "BundleProfile": {
+      "enum": [
+        "internal_review",
+        "submission_candidate",
+        "sanitised_public"
+      ],
+      "title": "BundleProfile",
+      "type": "string"
+    },
+    "InteroperabilityMappedField": {
+      "additionalProperties": false,
+      "properties": {
+        "localPath": {
+          "title": "Localpath",
+          "type": "string"
+        },
+        "targetPath": {
+          "title": "Targetpath",
+          "type": "string"
+        },
+        "supportLevel": {
+          "$ref": "#/$defs/InteroperabilitySupportLevel"
+        },
+        "required": {
+          "default": false,
+          "title": "Required",
+          "type": "boolean"
+        },
+        "valuePresent": {
+          "title": "Valuepresent",
+          "type": "boolean"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "items": {},
+              "type": "array"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Note"
+        }
+      },
+      "required": [
+        "localPath",
+        "targetPath",
+        "supportLevel",
+        "valuePresent"
+      ],
+      "title": "InteroperabilityMappedField",
+      "type": "object"
+    },
+    "InteroperabilityProfile": {
+      "additionalProperties": false,
+      "properties": {
+        "profileId": {
+          "title": "Profileid",
+          "type": "string"
+        },
+        "displayName": {
+          "title": "Displayname",
+          "type": "string"
+        },
+        "targetFamily": {
+          "title": "Targetfamily",
+          "type": "string"
+        },
+        "ohtTemplates": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Ohttemplates",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "profileId",
+        "displayName",
+        "targetFamily"
+      ],
+      "title": "InteroperabilityProfile",
+      "type": "object"
+    },
+    "InteroperabilitySupportLevel": {
+      "enum": [
+        "direct",
+        "derived",
+        "review_required"
+      ],
+      "title": "InteroperabilitySupportLevel",
+      "type": "string"
+    },
+    "InteroperabilityUnsupportedField": {
+      "additionalProperties": false,
+      "properties": {
+        "localPath": {
+          "title": "Localpath",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "present": {
+          "title": "Present",
+          "type": "boolean"
+        },
+        "observedValue": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "items": {},
+              "type": "array"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Observedvalue"
+        },
+        "suggestedAction": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Suggestedaction"
+        }
+      },
+      "required": [
+        "localPath",
+        "reason",
+        "present"
+      ],
+      "title": "InteroperabilityUnsupportedField",
+      "type": "object"
+    },
+    "ReadinessStatus": {
+      "enum": [
+        "pass",
+        "review_required",
+        "fail"
+      ],
+      "title": "ReadinessStatus",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "previewStatus": {
+      "$ref": "#/$defs/ReadinessStatus"
+    },
+    "targetProfile": {
+      "$ref": "#/$defs/InteroperabilityProfile"
+    },
+    "sourceDossierId": {
+      "title": "Sourcedossierid",
+      "type": "string"
+    },
+    "bundleProfile": {
+      "$ref": "#/$defs/BundleProfile"
+    },
+    "profileResourceUri": {
+      "title": "Profileresourceuri",
+      "type": "string"
+    },
+    "documentationResourceUri": {
+      "title": "Documentationresourceuri",
+      "type": "string"
+    },
+    "targetDocument": {
+      "additionalProperties": true,
+      "title": "Targetdocument",
+      "type": "object"
+    },
+    "mappedFields": {
+      "items": {
+        "$ref": "#/$defs/InteroperabilityMappedField"
+      },
+      "title": "Mappedfields",
+      "type": "array"
+    },
+    "unsupportedFields": {
+      "items": {
+        "$ref": "#/$defs/InteroperabilityUnsupportedField"
+      },
+      "title": "Unsupportedfields",
+      "type": "array"
+    },
+    "missingRequiredFields": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Missingrequiredfields",
+      "type": "array"
+    },
+    "notes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "previewStatus",
+    "targetProfile",
+    "sourceDossierId",
+    "bundleProfile",
+    "profileResourceUri",
+    "documentationResourceUri",
+    "targetDocument"
+  ],
+  "title": "InteroperabilityExportPreview",
+  "type": "object"
+}

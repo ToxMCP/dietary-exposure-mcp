@@ -1,0 +1,388 @@
+{
+  "$defs": {
+    "ConfidentialityTag": {
+      "enum": [
+        "public",
+        "confidential"
+      ],
+      "title": "ConfidentialityTag",
+      "type": "string"
+    },
+    "InteroperabilityActionDecisionStatus": {
+      "enum": [
+        "pending",
+        "acknowledged",
+        "completed",
+        "waived"
+      ],
+      "title": "InteroperabilityActionDecisionStatus",
+      "type": "string"
+    },
+    "InteroperabilityReadinessProfile": {
+      "additionalProperties": false,
+      "properties": {
+        "profileId": {
+          "title": "Profileid",
+          "type": "string"
+        },
+        "displayName": {
+          "title": "Displayname",
+          "type": "string"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "type": "string"
+        },
+        "intendedUse": {
+          "title": "Intendeduse",
+          "type": "string"
+        },
+        "allowedPreviewProfiles": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Allowedpreviewprofiles",
+          "type": "array"
+        },
+        "requiredDossierReadinessProfile": {
+          "title": "Requireddossierreadinessprofile",
+          "type": "string"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "profileId",
+        "displayName",
+        "jurisdiction",
+        "intendedUse",
+        "requiredDossierReadinessProfile"
+      ],
+      "title": "InteroperabilityReadinessProfile",
+      "type": "object"
+    },
+    "InteroperabilityRemediationBundle": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "bundle_id": {
+          "title": "Bundle Id",
+          "type": "string"
+        },
+        "overallStatus": {
+          "$ref": "#/$defs/ReadinessStatus"
+        },
+        "targetProfile": {
+          "$ref": "#/$defs/InteroperabilityReadinessProfile"
+        },
+        "sourcePreviewProfileId": {
+          "title": "Sourcepreviewprofileid",
+          "type": "string"
+        },
+        "sourceDossierId": {
+          "title": "Sourcedossierid",
+          "type": "string"
+        },
+        "linkedDossierReadinessProfile": {
+          "title": "Linkeddossierreadinessprofile",
+          "type": "string"
+        },
+        "linkedDossierReadinessStatus": {
+          "$ref": "#/$defs/ReadinessStatus"
+        },
+        "actionItems": {
+          "items": {
+            "$ref": "#/$defs/InteroperabilityRemediationItem"
+          },
+          "title": "Actionitems",
+          "type": "array"
+        },
+        "blockingActionCount": {
+          "minimum": 0,
+          "title": "Blockingactioncount",
+          "type": "integer"
+        },
+        "warningActionCount": {
+          "minimum": 0,
+          "title": "Warningactioncount",
+          "type": "integer"
+        },
+        "recommendedSequence": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Recommendedsequence",
+          "type": "array"
+        },
+        "catalogResourceUri": {
+          "title": "Catalogresourceuri",
+          "type": "string"
+        },
+        "documentationResourceUri": {
+          "title": "Documentationresourceuri",
+          "type": "string"
+        },
+        "referencedResources": {
+          "items": {
+            "$ref": "#/$defs/ReviewResourceReference"
+          },
+          "title": "Referencedresources",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "overallStatus",
+        "targetProfile",
+        "sourcePreviewProfileId",
+        "sourceDossierId",
+        "linkedDossierReadinessProfile",
+        "linkedDossierReadinessStatus",
+        "blockingActionCount",
+        "warningActionCount",
+        "catalogResourceUri",
+        "documentationResourceUri"
+      ],
+      "title": "InteroperabilityRemediationBundle",
+      "type": "object"
+    },
+    "InteroperabilityRemediationItem": {
+      "additionalProperties": false,
+      "properties": {
+        "actionId": {
+          "title": "Actionid",
+          "type": "string"
+        },
+        "ruleId": {
+          "title": "Ruleid",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "actionType": {
+          "title": "Actiontype",
+          "type": "string"
+        },
+        "priority": {
+          "$ref": "#/$defs/ReadinessStatus"
+        },
+        "blocking": {
+          "default": false,
+          "title": "Blocking",
+          "type": "boolean"
+        },
+        "summary": {
+          "title": "Summary",
+          "type": "string"
+        },
+        "recommendedSteps": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Recommendedsteps",
+          "type": "array"
+        },
+        "documentationUris": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Documentationuris",
+          "type": "array"
+        },
+        "resourceUris": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Resourceuris",
+          "type": "array"
+        },
+        "triggerMessage": {
+          "title": "Triggermessage",
+          "type": "string"
+        },
+        "triggerNote": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Triggernote"
+        }
+      },
+      "required": [
+        "actionId",
+        "ruleId",
+        "title",
+        "actionType",
+        "priority",
+        "summary",
+        "triggerMessage"
+      ],
+      "title": "InteroperabilityRemediationItem",
+      "type": "object"
+    },
+    "InteroperabilitySignoffDecisionInput": {
+      "additionalProperties": false,
+      "properties": {
+        "actionId": {
+          "title": "Actionid",
+          "type": "string"
+        },
+        "decisionStatus": {
+          "$ref": "#/$defs/InteroperabilityActionDecisionStatus"
+        },
+        "rationale": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rationale"
+        },
+        "reviewedAt": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reviewedat"
+        },
+        "supportingUris": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Supportinguris",
+          "type": "array"
+        }
+      },
+      "required": [
+        "actionId",
+        "decisionStatus"
+      ],
+      "title": "InteroperabilitySignoffDecisionInput",
+      "type": "object"
+    },
+    "ReadinessStatus": {
+      "enum": [
+        "pass",
+        "review_required",
+        "fail"
+      ],
+      "title": "ReadinessStatus",
+      "type": "string"
+    },
+    "ReviewResourceReference": {
+      "additionalProperties": false,
+      "properties": {
+        "role": {
+          "title": "Role",
+          "type": "string"
+        },
+        "uri": {
+          "title": "Uri",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "confidentialityTag": {
+          "$ref": "#/$defs/ConfidentialityTag",
+          "default": "public"
+        },
+        "sanitisationState": {
+          "$ref": "#/$defs/SanitisationState",
+          "default": "retained"
+        }
+      },
+      "required": [
+        "role",
+        "uri",
+        "description"
+      ],
+      "title": "ReviewResourceReference",
+      "type": "object"
+    },
+    "SanitisationState": {
+      "enum": [
+        "retained",
+        "redacted",
+        "removed"
+      ],
+      "title": "SanitisationState",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "remediationBundle": {
+      "$ref": "#/$defs/InteroperabilityRemediationBundle"
+    },
+    "reviewerId": {
+      "minLength": 1,
+      "title": "Reviewerid",
+      "type": "string"
+    },
+    "reviewerRole": {
+      "minLength": 1,
+      "title": "Reviewerrole",
+      "type": "string"
+    },
+    "decisions": {
+      "items": {
+        "$ref": "#/$defs/InteroperabilitySignoffDecisionInput"
+      },
+      "title": "Decisions",
+      "type": "array"
+    },
+    "packetNote": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Packetnote"
+    }
+  },
+  "required": [
+    "remediationBundle",
+    "reviewerId",
+    "reviewerRole"
+  ],
+  "title": "ExportInteroperabilitySignoffPacketRequest",
+  "type": "object"
+}

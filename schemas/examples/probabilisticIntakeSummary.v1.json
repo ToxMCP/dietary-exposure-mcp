@@ -1,0 +1,122 @@
+{
+  "schema_version": "v1",
+  "summary_id": "probabilistic-summary-e1c1c551ad61",
+  "dataset_id": "example_governed_survey",
+  "population_group": "adult_general",
+  "chemical_identity": {
+    "preferredName": "Illustrative residue",
+    "casrn": "100-00-0"
+  },
+  "iteration_count": 1000,
+  "random_seed": 20260424,
+  "cohort_fingerprint": "cohort-1b8f344b61f5",
+  "total_subjects": 4,
+  "consumers_only_count": 3,
+  "zero_intake_prevalence": 0.25,
+  "mean_intake_mg_per_kg_bw_per_day": 0.00021152223704268294,
+  "percentile_95_mg_per_kg_bw_per_day": 0.00075,
+  "percentile_99_mg_per_kg_bw_per_day": 0.00075,
+  "percentile_99_9_mg_per_kg_bw_per_day": 0.00075,
+  "max_mg_per_kg_bw_per_day": 0.00075,
+  "consumers_only_mean_mg_per_kg_bw_per_day": 0.0002809993185555403,
+  "consumers_only_percentile_95_mg_per_kg_bw_per_day": 0.00075,
+  "consumers_only_percentile_99_mg_per_kg_bw_per_day": 0.00075,
+  "consumers_only_percentile_99_9_mg_per_kg_bw_per_day": 0.00075,
+  "quality_flags": [],
+  "limitations": [
+    {
+      "code": "raw_survey_ingestion",
+      "message": "Raw survey datasets support governed distribution summaries and cohort-bootstrap review support, but remain a reviewer-controlled population-exposure workflow in v0.1."
+    },
+    {
+      "code": "default_processing_factor_applied",
+      "message": "Default processing factor was applied to Apples."
+    },
+    {
+      "code": "default_processing_factor_applied",
+      "message": "Default processing factor was applied to Rice."
+    },
+    {
+      "code": "probabilistic_simulation_support",
+      "message": "Cohort bootstrap resampling re-draws the observed subject-exposure distribution with replacement and reports pooled population and consumer-only summaries. This is review support, not a parametric Monte Carlo engine or final regulatory acceptance path."
+    }
+  ],
+  "provenance": {
+    "schema_version": "v1",
+    "defaults_version": "v1",
+    "algorithm_version": "reference-dietary-intake-0.1.0",
+    "generated_at": "2026-06-12T19:55:57.576872Z",
+    "source_references": [
+      {
+        "source_id": "dietary.dataset.example_governed_survey",
+        "title": "Raw Survey Dataset: example_governed_survey",
+        "effective_date": null,
+        "url": null,
+        "origin_tag": null
+      },
+      {
+        "source_id": "example.apple.monitoring",
+        "title": "Illustrative apple monitoring record",
+        "effective_date": "2026-04-08",
+        "url": null,
+        "origin_tag": null
+      },
+      {
+        "source_id": "dietary.food_vocab.crosswalk",
+        "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+        "effective_date": "2026-04-10",
+        "url": "docs://food-vocabulary-crosswalk",
+        "origin_tag": "illustrative_placeholder"
+      },
+      {
+        "source_id": "dietary.taxonomy.apples",
+        "title": "Dietary MCP commodity taxonomy entry for apples",
+        "effective_date": null,
+        "url": "defaults://manifest",
+        "origin_tag": "curated_derived"
+      },
+      {
+        "source_id": "example.spinach.modeled",
+        "title": "Illustrative spinach modeled record",
+        "effective_date": "2026-04-08",
+        "url": null,
+        "origin_tag": null
+      },
+      {
+        "source_id": "dietary.food_vocab.crosswalk",
+        "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+        "effective_date": "2026-04-10",
+        "url": "docs://food-vocabulary-crosswalk",
+        "origin_tag": "illustrative_placeholder"
+      },
+      {
+        "source_id": "example.spinach.modeled",
+        "title": "Illustrative spinach modeled record",
+        "effective_date": "2026-04-08",
+        "url": null,
+        "origin_tag": null
+      },
+      {
+        "source_id": "example.rice.user",
+        "title": "Illustrative rice residue input",
+        "effective_date": "2026-04-08",
+        "url": null,
+        "origin_tag": null
+      },
+      {
+        "source_id": "dietary.food_vocab.crosswalk",
+        "title": "Dietary MCP provisional food vocabulary crosswalk pack",
+        "effective_date": "2026-04-10",
+        "url": "docs://food-vocabulary-crosswalk",
+        "origin_tag": "illustrative_placeholder"
+      },
+      {
+        "source_id": "dietary.taxonomy.rice",
+        "title": "Dietary MCP commodity taxonomy entry for rice",
+        "effective_date": null,
+        "url": "defaults://manifest",
+        "origin_tag": "curated_derived"
+      }
+    ]
+  }
+}
