@@ -21,7 +21,14 @@ cd "${ROOT}"
 # Keeping src explicit makes editable-install tests deterministic; the clean
 # wheel smoke test below independently verifies the built distribution.
 export PYTHONPATH="${ROOT}/src${PYTHONPATH:+:${PYTHONPATH}}"
-export SOURCE_DATE_EPOCH="${SOURCE_DATE_EPOCH:-$(git log -1 --format=%at)}"
+# Keep release bytes stable across metadata-only and repository-hygiene commits.
+# A package-definition change deliberately advances the epoch.
+VERSION_SOURCE_DATE_EPOCH="$(git log -1 --format=%at -- pyproject.toml)"
+if [[ -z "${VERSION_SOURCE_DATE_EPOCH}" ]]; then
+  printf 'Could not derive SOURCE_DATE_EPOCH from pyproject.toml history.\n' >&2
+  exit 2
+fi
+export SOURCE_DATE_EPOCH="${SOURCE_DATE_EPOCH:-${VERSION_SOURCE_DATE_EPOCH}}"
 
 uv sync --frozen --all-extras --group release
 uv run ruff check src/dietary_mcp tests scripts
@@ -51,7 +58,7 @@ done
 uv run python scripts/verify_distribution_public_files.py "${OUT}/dist"
 
 DIETARY_MCP_RELEASE_DIST_DIR="${OUT}/dist" uv run python -m dietary_mcp.release_artifacts
-git diff --exit-code -- docs/contracts schemas/examples defaults validation config
+git diff --exit-code -- docs/contracts docs/releases schemas/examples defaults validation config
 
 uv run bandit -r src -x tests --severity-level medium
 uv export --quiet --frozen --no-dev --no-emit-project --format requirements-txt --output-file "${TMP}/runtime-requirements.txt"
