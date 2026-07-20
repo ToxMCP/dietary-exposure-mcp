@@ -8,6 +8,25 @@ __pycache__/
 .venv/
 venv/
 
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+credentials*.json
+secrets*.json
+
+# Local tool configuration
+.mcp.json
+.cursor/
+.idea/
+.vscode/
+
 # Build artifacts
 artifacts/
 build/
