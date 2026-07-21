@@ -5,10 +5,11 @@ evidence used to review a Dietary Exposure MCP release.
 
 ## Start here
 
-- [`v0.1.0-rc1.md`](./v0.1.0-rc1.md): public pre-release notes, install steps,
-  scientific status, and known limitations
+- [`v0.1.0.md`](./v0.1.0.md): stable software release notes, install steps,
+  screening-only boundary, scientific status, and known limitations
+- [`v0.1.0-rc1.md`](./v0.1.0-rc1.md): historical public review-candidate notes
 - [`../release_readiness.md`](../release_readiness.md): what `draft_ready` means
-  and what still blocks stable release
+  and how software publication differs from scientific promotion
 - [`../applicability_limits.md`](../applicability_limits.md): plain-language
   intended use, limitations, and safe-use checklist
 - [`../reviews/v0.1.0-scientific-source-review.md`](../reviews/v0.1.0-scientific-source-review.md):

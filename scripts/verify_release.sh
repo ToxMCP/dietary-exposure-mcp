@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-OUT="${1:-${ROOT}/artifacts/releases/v0.1.0-rc1}"
+OUT="${1:-${ROOT}/artifacts/releases/v0.1.0}"
 OUT="$(python3 -c 'from pathlib import Path; import sys; print(Path(sys.argv[1]).resolve())' "${OUT}")"
 ARTIFACT_ROOT="${ROOT}/artifacts/releases"
 case "${OUT}" in
