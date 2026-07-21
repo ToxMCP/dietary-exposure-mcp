@@ -25,7 +25,7 @@ dependencies = [
   # installs cannot resolve to PYSEC-2026-2132 / CVE-2026-7246 affected builds.
   "click>=8.3.3,<9.0",
   "numpy>=2.0,<3.0",
-  "pydantic>=2.8,<3.0",
+  "pydantic>=2.13.4,<3.0",
   "scipy>=1.14,<2.0",
   # Transitive via mcp[crypto] -> pyjwt[crypto]. Pin to the OpenSSL-patched
   # line (GHSA-537c-gmf6-5ccf, statically linked OpenSSL secadv 20260609).
