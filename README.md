@@ -3,7 +3,7 @@
 [![Supply-chain security](https://github.com/ToxMCP/dietary-exposure-mcp/actions/workflows/security.yml/badge.svg?branch=main)](https://github.com/ToxMCP/dietary-exposure-mcp/actions/workflows/security.yml)
 [![Scientific invariants](https://github.com/ToxMCP/dietary-exposure-mcp/actions/workflows/scientific-invariants.yml/badge.svg?branch=main)](https://github.com/ToxMCP/dietary-exposure-mcp/actions/workflows/scientific-invariants.yml)
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](./LICENSE)
-[![Release](https://img.shields.io/github/v/release/ToxMCP/dietary-exposure-mcp?include_prereleases=true&sort=semver)](https://github.com/ToxMCP/dietary-exposure-mcp/releases)
+[![Release](https://img.shields.io/github/v/release/ToxMCP/dietary-exposure-mcp?include_prereleases&sort=semver)](https://github.com/ToxMCP/dietary-exposure-mcp/releases)
 [![Status](https://img.shields.io/badge/Status-Public%20RC%20%7C%20Signoff%20Pending-D97706)](./docs/release_readiness.md)
 [![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 
