@@ -382,9 +382,14 @@
     }
   ],
   "knownLimitations": [
-    "No direct-use oral workflows.",
-    "No generic environmental-media ingestion.",
-    "No hidden probabilistic population engine in v0.1.",
-    "No final regulatory decision semantics."
+    "OpenFoodTox 3.0 bulk records remain review_required pending qualified review.",
+    "Positive independent signoff on the remediated high-impact report is pending.",
+    "Decision-relevant reference and legal values require current primary-source verification.",
+    "No final regulatory decision semantics.",
+    "No direct-use oral product or PBPK execution workflows.",
+    "Bounded survey and uncertainty lanes are not a general-purpose population model.",
+    "No claimed equivalence to PRIMo, DEEM, DietEx, or submission portals.",
+    "Public RC support is local stdio; hosted HTTP requires a separate security review.",
+    "Third-party attribution and redistribution terms remain applicable."
   ]
 }

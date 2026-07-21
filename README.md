@@ -1,18 +1,30 @@
 # Dietary Exposure MCP
 
+[![Supply-chain security](https://github.com/ToxMCP/dietary-exposure-mcp/actions/workflows/security.yml/badge.svg?branch=main)](https://github.com/ToxMCP/dietary-exposure-mcp/actions/workflows/security.yml)
+[![Scientific invariants](https://github.com/ToxMCP/dietary-exposure-mcp/actions/workflows/scientific-invariants.yml/badge.svg?branch=main)](https://github.com/ToxMCP/dietary-exposure-mcp/actions/workflows/scientific-invariants.yml)
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](./LICENSE)
-[![Release](https://img.shields.io/github/v/release/ToxMCP/dietary-exposure-mcp?sort=semver)](https://github.com/ToxMCP/dietary-exposure-mcp/releases)
-[![Status](https://img.shields.io/badge/Status-Draft%20Ready%20with%20Known%20Limitations-2E8B57)](./docs/release_readiness.md)
+[![Release](https://img.shields.io/github/v/release/ToxMCP/dietary-exposure-mcp?include_prereleases=true&sort=semver)](https://github.com/ToxMCP/dietary-exposure-mcp/releases)
+[![Status](https://img.shields.io/badge/Status-Public%20RC%20%7C%20Signoff%20Pending-D97706)](./docs/release_readiness.md)
 [![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 
-Part of the [ToxMCP suite](https://github.com/ToxMCP/toxmcp).
+> Part of the **[ToxMCP suite](https://github.com/ToxMCP/toxmcp)**
 
 **MCP server for food-mediated oral exposure screening, governed contaminant and pesticide review, and version-pinned dietary evidence handoffs.**
 It turns commodity residue assumptions, governed food-consumption profiles, survey-derived distributions, and monitoring-review evidence into auditable dietary intake summaries, legal-enforcement signals, and PBPK-ready oral dose exports without taking over PBPK execution, final regulatory decisions, or proprietary adapter execution.
 
-The current `v0.1.0-rc1` candidate is prepared for transparent engineering and
-scientific review. It is not a final regulatory decision system or a claim of
-regulator acceptance. See the [RC release notes](./docs/releases/v0.1.0-rc1.md).
+> [!IMPORTANT]
+> **Release status:** `v0.1.0-rc1` is a public GitHub pre-release for technical
+> and scientific review. All automated release gates pass. The OpenFoodTox 3.0
+> migration is complete, but its 2,417 bulk records remain `review_required`
+> and positive independent signoff on the 16-record high-impact report is still
+> pending. This is not a stable regulatory release or regulator acceptance.
+
+Use this RC to build reproducible screening calculations, inspect assumptions,
+and prepare governed evidence handoffs. Do not use an output by itself to make a
+legal, clinical, safety, or market-access decision. Start with the
+[release notes](./docs/releases/v0.1.0-rc1.md),
+[limitations and intended use](./docs/applicability_limits.md), and
+[release readiness](./docs/release_readiness.md).
 
 ## Architecture
 
@@ -73,7 +85,7 @@ The released server is broader than a simple dietary calculator, but the boundar
 
 For the suite-level routing view, see [docs/suite_integration.md](./docs/suite_integration.md).
 
-## What's in v0.1.0
+## What's in v0.1.0-rc1
 
 - Deterministic point-estimate dietary intake scenarios with acute, chronic, and bounded summary support
 - Governed raw-survey ingestion plus survey distribution summaries and cohort-bootstrap probabilistic intake support
@@ -134,12 +146,20 @@ See:
 
 ## Quick start
 
-Install the wheel downloaded from the GitHub pre-release:
+Download the complete GitHub pre-release, verify it, and install the wheel:
 
 ```bash
+mkdir dietary-mcp-v0.1.0-rc1
+cd dietary-mcp-v0.1.0-rc1
+gh release download v0.1.0-rc1 --repo ToxMCP/dietary-exposure-mcp
+shasum -a 256 -c SHA256SUMS
 uv tool install ./dietary_mcp-0.1.0-py3-none-any.whl
 dietary-mcp
 ```
+
+The wheel reports package version `0.1.0`, but it is distributed only through
+this GitHub pre-release while stable-release gates remain open. It is not
+published to PyPI.
 
 Or run from a source checkout:
 
@@ -176,22 +196,26 @@ uv run --with xlrd dietary-mcp-generate-public-seeds --workbook /path/to/gems_fo
 
 ## Current limitations
 
-- Not a direct-use oral product engine
-- Not a PBPK execution engine
-- Not a proprietary PRIMo or DEEM execution engine
-- Not a general-purpose probabilistic survey engine outside the governed survey workflow
-- Not a final regulatory decision engine or a claim of formal equivalence to submission portals
+| Area | What the limitation means | What users should do |
+| --- | --- | --- |
+| Scientific approval | The OpenFoodTox 3.0 blockers identified in the first independent review were remediated, but the revised report has not yet received positive independent signoff. | Treat the RC as review material and preserve `review_required` states. |
+| Source currency | Reference values, MRLs, legal limits, and guidance can change after the pinned snapshots shipped here. | Confirm decision-relevant values against the current primary authority source. |
+| Decision scope | The server supports screening and evidence handoff; it does not issue legal, clinical, safety, or regulatory decisions. | Have a qualified assessor review inputs, applicability, uncertainty, and conclusions. |
+| Model scope | The runtime is deterministic-first. Its survey, bootstrap, and uncertainty lanes are bounded support workflows, not a universal population model. | Use a validated higher-tier model when the assessment requires one. |
+| External engines | The project does not execute or claim formal equivalence to proprietary PRIMo, DEEM, DietEx, PBPK, or submission-portal software. | Use the relevant external engine and retain its native evidence when equivalence matters. |
+| Input quality | Results are only as sound as residue, consumption, body-weight, processing, mapping, and censoring assumptions supplied or selected. | Review provenance, quality flags, assumptions, and limitation notes in every output. |
+| Deployment | Public RC support is local stdio. Streamable HTTP is loopback-only and fail-closed unless an operator supplies an authenticated gateway. | Do not expose the server directly to an untrusted network. |
+| Data rights | Some third-party source material has separate attribution or redistribution terms. | Review [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md) before redistribution or commercial packaging. |
 
-Governed review states are explicit on purpose:
-
-- `signed_off` and `signed_off_with_waivers` mean the configured review workflow has been closed for the current packet; they do not mean automatic regulatory acceptance.
-- readiness assessments include scientific-integrity checks, but they still do not replace jurisdiction-specific expert review or grant submission acceptance by themselves.
-
-The detailed limitation and boundary notes are in [docs/applicability_limits.md](./docs/applicability_limits.md) and [docs/dietary_boundary_guide.md](./docs/dietary_boundary_guide.md).
+Workflow states such as `signed_off` close a configured review packet; they do
+not confer regulator acceptance. The canonical explanation is
+[Limitations and Intended Use](./docs/applicability_limits.md), with route
+boundaries in the [dietary boundary guide](./docs/dietary_boundary_guide.md).
 
 ## Contributing
 
 - [CONTRIBUTING.md](./CONTRIBUTING.md) documents the governed change workflow for collaborators.
+- [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) sets expectations for respectful, scientifically honest collaboration.
 - Use the scientific-correction issue form for source, unit, population, or interpretation concerns.
 - [docs/release_checklist.md](./docs/release_checklist.md) is the pre-push and pre-release checklist.
 

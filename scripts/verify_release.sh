@@ -83,9 +83,15 @@ env -u PYTHONPATH uv run cyclonedx-py environment \
   --output-file "${OUT}/python-sbom.cdx.json" \
   "${TMP}/smoke-venv/bin/python"
 
-(
-  cd "${OUT}"
-  shasum -a 256 dist/* python-sbom.cdx.json > SHA256SUMS
-)
+{
+  (
+    cd "${OUT}/dist"
+    shasum -a 256 *
+  )
+  (
+    cd "${OUT}"
+    shasum -a 256 python-sbom.cdx.json
+  )
+} > "${OUT}/SHA256SUMS"
 
 printf 'Dietary MCP release verification passed.\nArtifacts: %s\n' "${OUT}"
