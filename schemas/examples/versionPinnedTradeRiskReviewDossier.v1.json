@@ -1,6 +1,6 @@
 {
   "schema_version": "v1",
-  "dossier_id": "trade-risk-review-dossier-b5fbed6a411f",
+  "dossier_id": "trade-risk-review-dossier-6aec76874ddb",
   "bundle_profile": "internal_review",
   "dossier_status": "review_required",
   "review_bundle": {
@@ -541,12 +541,12 @@
     "resource_uri": "release://metadata-report",
     "release_version": "0.1.0",
     "defaults_version": "v1",
-    "metadata_report_sha256": "65eef1b10115d3b545c15a5f7c1f39b981256988936c6068b4a85cd7f5dc3b58",
+    "metadata_report_sha256": "21bdb11f48948fcc176fc96d4ec73cc031ed217e338363d6aef3f2822d8a6935",
     "artifact_hashes": {
       "adapterManifest": "9e5c6a0adbb0fd6544cabb069e3d0b35a11b1419f704f3355ec3c965428be37d",
       "adapterTemplateManifest": "09014010cff3deaa33416af7b4e201e6ad4f0b5ae2d29b052780e8a9af9e03ad",
       "adapterWalkthroughManifest": "20f13f27a8fa3b89fd893bfe00c002df930b9ff4ed9b24946360dc0a9470b0a4",
-      "referenceValuesManifest": "a56fa4ddcec76870103507fc86943a55de0636a96519ad578f0e0b20cb10183c",
+      "referenceValuesManifest": "f66f2d366d4bbb05f90becf5a1e327573814aefd37dbf61523c9a15d43f255d4",
       "mrlEnforcementManifest": "9ff968083ad2ec23d722f6927ac93803ed68110a880baaf33c450c2e6318de17",
       "contaminantLegalLimitsManifest": "0664f4d570ccb36aa70877ffbf6addbbce1b42d2fda2adef33ed8d846ad09a67",
       "consumptionDatasetsManifest": "c6a25b002ac18dea4c6cab112d5cda93a93f12d594f5874c50f605b979bde545",
@@ -570,7 +570,7 @@
       "sanitisationRulesManifest": "2627a95a0cea99b81a1900c272f701b26ffc6d08937e9e2e611c0060e9634c3b",
       "contractsManifest": "87c224ec95943bfad6596ee0ba94a6719d468441998e8abcbd3f3244a53e1136",
       "examplesManifest": "5949de6f414d0dec28d70364ecc9bb65e22790680e007984a5011def04093807",
-      "defaultsManifest": "dcd6e7787e12fb3f0d55a7ad3ac0d5303282bf139e550a1309df7891339b54ff",
+      "defaultsManifest": "51bf0e9395df1b00d98eef236c799d0257a29cedd11b946e8ad5c7903bbb28ff",
       "validationManifest": "14573f98896e0990b516dff83cb16291f99984a9a8d6e1874b29e50d0c48faeb"
     }
   },
@@ -720,7 +720,7 @@
     {
       "role": "release_metadata_report",
       "uri": "release://metadata-report",
-      "sha256": "65eef1b10115d3b545c15a5f7c1f39b981256988936c6068b4a85cd7f5dc3b58",
+      "sha256": "21bdb11f48948fcc176fc96d4ec73cc031ed217e338363d6aef3f2822d8a6935",
       "description": "Release metadata report used to pin versioned artifact hashes for this trade-risk review dossier.",
       "confidentiality_tag": "confidential",
       "sanitisation_state": "retained"
@@ -728,7 +728,7 @@
     {
       "role": "source_catalog_manifest",
       "uri": "source-catalog://manifest",
-      "sha256": "d12ddedfb061786d02b35783e855035fa6eaecf294799b4dd55016a4256fc275",
+      "sha256": "ce3ccdeaa6fee95dd0154752b36094762efca426fbcb1dbb01c1f021e853acb5",
       "description": "Manifest fingerprint for the governed source catalog available during trade-risk review.",
       "confidentiality_tag": "public",
       "sanitisation_state": "retained"
@@ -736,7 +736,7 @@
     {
       "role": "reference_values_manifest",
       "uri": "reference-values://manifest",
-      "sha256": "a56fa4ddcec76870103507fc86943a55de0636a96519ad578f0e0b20cb10183c",
+      "sha256": "f66f2d366d4bbb05f90becf5a1e327573814aefd37dbf61523c9a15d43f255d4",
       "description": "Manifest fingerprint for governed reference-value records available during trade-risk review.",
       "confidentiality_tag": "public",
       "sanitisation_state": "retained"
@@ -784,7 +784,7 @@
     {
       "role": "reference_value_substance_lane",
       "uri": "reference-values://substance/glyphosate",
-      "sha256": "bd96384999fb78b99e16f3ece610eb71f46ea6faccb7146ddc89254dc70b9380",
+      "sha256": "34ad843ad01b2ae3a96075b45466dee9cdeabed2140331219c1370384be36a2b",
       "description": "Substance-scoped reference-value payload fingerprint used during trade-risk review.",
       "confidentiality_tag": "confidential",
       "sanitisation_state": "retained"

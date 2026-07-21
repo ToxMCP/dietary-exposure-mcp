@@ -66,8 +66,11 @@ public evaluation path is local stdio operation.
 
 Stable `v0.1.0` additionally requires:
 
-- independent toxicologist or dietary-risk-assessor signoff
-- OpenFoodTox 3.0 reconciliation under ADR 0007
+- positive independent toxicologist or dietary-risk-assessor signoff on the
+  remediated OpenFoodTox 3.0 version 1.2 report and its canonical hash; the
+  earlier `not approved` review is not a release approval
+- qualified human approval of the OpenFoodTox 3.0 high-impact report under ADR
+  0007
 - resolution of the WHO-derived profile redistribution posture for the intended
   release audience
 - a final source-currency review and complete release-gate rerun

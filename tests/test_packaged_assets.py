@@ -16,6 +16,10 @@ def test_packaged_assets_match_source_after_sync() -> None:
 
     comparisons = [
         (
+            repo_root / "defaults" / "manifest.json",
+            packaged_root / "defaults" / "manifest.json",
+        ),
+        (
             repo_root / "defaults" / "v1" / "core_defaults.json",
             packaged_root / "defaults" / "v1" / "core_defaults.json",
         ),

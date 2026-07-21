@@ -34,6 +34,7 @@ uv sync --frozen --all-extras --group release
 uv run ruff check src/dietary_mcp tests scripts
 uv run python scripts/vendor_verify.py
 uv run python scripts/public_release_audit.py
+uv run python scripts/verify_openfoodtox3_migration.py
 uv run python scripts/scientific_invariants_gate.py --json
 uv run pytest -W error
 

@@ -4,8 +4,8 @@
   "exampleCount": 90,
   "defaultsVersion": "v1",
   "consumptionProfileCount": 26,
-  "sourceCatalogCount": 142,
-  "referenceValueRecordCount": 2317,
+  "sourceCatalogCount": 146,
+  "referenceValueRecordCount": 2462,
   "contaminantLegalLimitRecordCount": 30,
   "consumptionDatasetCount": 13,
   "methodRegistryCount": 37,
@@ -87,7 +87,7 @@
     "adapterManifest": "9e5c6a0adbb0fd6544cabb069e3d0b35a11b1419f704f3355ec3c965428be37d",
     "adapterTemplateManifest": "09014010cff3deaa33416af7b4e201e6ad4f0b5ae2d29b052780e8a9af9e03ad",
     "adapterWalkthroughManifest": "20f13f27a8fa3b89fd893bfe00c002df930b9ff4ed9b24946360dc0a9470b0a4",
-    "referenceValuesManifest": "a56fa4ddcec76870103507fc86943a55de0636a96519ad578f0e0b20cb10183c",
+    "referenceValuesManifest": "f66f2d366d4bbb05f90becf5a1e327573814aefd37dbf61523c9a15d43f255d4",
     "mrlEnforcementManifest": "9ff968083ad2ec23d722f6927ac93803ed68110a880baaf33c450c2e6318de17",
     "contaminantLegalLimitsManifest": "0664f4d570ccb36aa70877ffbf6addbbce1b42d2fda2adef33ed8d846ad09a67",
     "consumptionDatasetsManifest": "c6a25b002ac18dea4c6cab112d5cda93a93f12d594f5874c50f605b979bde545",
@@ -111,19 +111,19 @@
     "sanitisationRulesManifest": "2627a95a0cea99b81a1900c272f701b26ffc6d08937e9e2e611c0060e9634c3b",
     "contractsManifest": "87c224ec95943bfad6596ee0ba94a6719d468441998e8abcbd3f3244a53e1136",
     "examplesManifest": "5949de6f414d0dec28d70364ecc9bb65e22790680e007984a5011def04093807",
-    "defaultsManifest": "dcd6e7787e12fb3f0d55a7ad3ac0d5303282bf139e550a1309df7891339b54ff",
+    "defaultsManifest": "51bf0e9395df1b00d98eef236c799d0257a29cedd11b946e8ad5c7903bbb28ff",
     "validationManifest": "14573f98896e0990b516dff83cb16291f99984a9a8d6e1874b29e50d0c48faeb"
   },
   "packageArtifacts": [
     {
       "name": "dietary_mcp-0.1.0-py3-none-any.whl",
-      "sizeBytes": 2074776,
-      "sha256": "128a3a8216ccd0e9f703ab80a448afafaac4dcb1194832c54e39be600a061b86"
+      "sizeBytes": 2539219,
+      "sha256": "6a2336d5fd7e962ca74ec1eff27a2f6d7f11ab2d6655f895a38e0bf807371c70"
     },
     {
       "name": "dietary_mcp-0.1.0.tar.gz",
-      "sizeBytes": 1889557,
-      "sha256": "2572bb520664eefb2b66062eede6183568ae04b3db1ef50c8e121a698d55b33f"
+      "sizeBytes": 2338024,
+      "sha256": "edc7baa3b80caffc73c2648184fc6703818e9b15bee2cd10fc1abb7f37b4b549"
     }
   ]
 }

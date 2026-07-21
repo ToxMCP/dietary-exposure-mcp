@@ -1,0 +1,2770 @@
+{
+  "reviewVersion": "1.2",
+  "schemaVersion": "1.2",
+  "generatedAt": "2026-07-21T12:00:00Z",
+  "sourceId": "efsa.openfoodtox",
+  "sourceDoi": "10.5281/zenodo.19388272",
+  "sourceVersion": "v7",
+  "sourcePublishedAt": "2026-04-30",
+  "sourceFile": "OFT3.0 export repository.xlsx",
+  "sourceFileSha256": "5181661e921651d4087b544981e1e5a63b99532844eac0112732806a00a85eda",
+  "workbookSchemaSha256": "cfa197b4b57a2517eebaac67938601a07137e44942de3ee11194bc477474ac10",
+  "statusDefinitions": {
+    "supportStatus": {
+      "exact_supported_structured": "Exact value and unit are present in a structured source field.",
+      "exact_supported_unstructured": "Exact value is present in a source narrative and was parsed with the strict narrative grammar.",
+      "supported_after_unit_normalization": "Value is exact after a semantics-preserving unit normalization.",
+      "supported_after_primary_source_unit_correction": "Value is supported after correcting a dataset unit against the authoritative scientific output while preserving the raw encoding.",
+      "supported_but_source_encoding_anomalous": "Value is supported, but the source bound field is not the expected HBGV encoding.",
+      "conflicting_values": "Cross-sheet candidates exist but none supports the curated assertion.",
+      "not_found_after_cross_sheet_search": "No matching candidate was found across both reviewed sheets.",
+      "original_output_overrides_dataset": "The original scientific output was adjudicated as authoritative over a dataset difference."
+    },
+    "temporalStatus": {
+      "current": "Current curated assertion.",
+      "historical": "Earlier assertion retained as history.",
+      "currentness_uncertain": "Currentness cannot be resolved from the dataset alone."
+    }
+  },
+  "recordCount": 16,
+  "supportStatusCounts": {
+    "exact_supported_structured": 6,
+    "exact_supported_unstructured": 2,
+    "supported_after_primary_source_unit_correction": 3,
+    "supported_after_unit_normalization": 4,
+    "supported_but_source_encoding_anomalous": 1
+  },
+  "temporalStatusCounts": {
+    "current": 16
+  },
+  "records": [
+    {
+      "curatedRecordId": "efsa.acrylamide.neoplastic.bmdl10",
+      "substanceKey": "acrylamide",
+      "referenceType": "bmdl10_neoplastic",
+      "curatedValue": 0.17,
+      "curatedUnit": "mg/kg bw/day",
+      "curatedSourceIds": [
+        "efsa.acrylamide.food.2015"
+      ],
+      "assertionClass": "reference_point",
+      "assertionStatus": "selected_reference_point",
+      "regulatoryAdoptionStatus": null,
+      "temporalStatus": "current",
+      "validFrom": "2015-06-04",
+      "assessmentYear": null,
+      "introducedBySourceIds": [
+        "efsa.acrylamide.food.2015"
+      ],
+      "supportingSourceIds": [
+        "efsa.acrylamide.food.2015"
+      ],
+      "databaseSourceIds": [
+        "efsa.openfoodtox"
+      ],
+      "regulatoryFollowUpSourceIds": [],
+      "supersedesRecordIds": [],
+      "supportStatus": "exact_supported_structured",
+      "openfoodtox3Candidates": [
+        {
+          "recordKey": "0e049a9f-368c-40c0-b15c-6d2672fdc059#row-36872",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "END_STUDY_REC.HumanHealth",
+          "sourceRowNumber": 36872,
+          "documentUuid": "0e049a9f-368c-40c0-b15c-6d2672fdc059",
+          "substanceUuid": "e6f2726e-2e3b-49c4-849b-a409330e14c8",
+          "referenceSubstanceUuid": "809b574b-001a-4ed7-974c-901664b06d36",
+          "casNumber": "79-06-1",
+          "ecNumber": "201-173-7",
+          "assertionClass": "reference_point",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "BMDL10",
+          "descriptorFieldPath": "ResultsAndDiscussion.EffectLevels.Efflevel.Endpoint",
+          "bound": "lower",
+          "sourceFieldPath": "ResultsAndDiscussion.EffectLevels.Efflevel.EffectLevel.lowerValue",
+          "sourceUnitFieldPath": "ResultsAndDiscussion.EffectLevels.Efflevel.EffectLevel.Unit",
+          "sourceQualifierFieldPath": null,
+          "rawValue": 0.17,
+          "rawUnit": "mg/kg bw/day",
+          "rawUnitSelector": "mg/kg bw/day",
+          "rawQualifier": null,
+          "normalizedValue": 0.17,
+          "normalizedUnit": "mg/kg bw/day",
+          "unitCorrection": null,
+          "population": "humans",
+          "assessmentYears": [
+            2015
+          ],
+          "relationshipToCurated": "exact_match",
+          "temporalStatus": "current",
+          "assertionStatus": "selected_reference_point",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.acrylamide.food.2015",
+              "doi": "10.2903/j.efsa.2015.4104",
+              "dossierUuid": "c9486b75-3c8d-440d-85ea-eb4f8b1e0dca",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on acrylamide in food",
+              "assessmentDate": "2015-04-30"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.acrylamide.food.2015",
+              "doi": "10.2903/j.efsa.2015.4104",
+              "dossierUuid": "c9486b75-3c8d-440d-85ea-eb4f8b1e0dca",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on acrylamide in food",
+              "assessmentDate": "2015-04-30"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": {
+            "ResultsAndDiscussion.EffectLevels.Efflevel.Basis": "histopathology: neoplastic",
+            "ResultsAndDiscussion.EffectLevels.Efflevel.Endpoint": "BMDL10",
+            "ResultsAndDiscussion.EffectLevels.Efflevel.RemarksOnResults": "other:",
+            "ResultsAndDiscussion.EffectLevels.Efflevel.RemarksOnResults.Other": "Toxicity: endocrine; Target tissue: Adrenal Glands; Effect desc.: Effect: incidences of Harderian gland adenomas and adenocarcinomas",
+            "ResultsAndDiscussion.EffectLevels.Efflevel.RemarksOnResults.Remarks": "Remarks: Study: NTP 2012"
+          },
+          "rawNarrative": null
+        }
+      ]
+    },
+    {
+      "curatedRecordId": "efsa.acrylamide.neurotoxicity.bmdl10",
+      "substanceKey": "acrylamide",
+      "referenceType": "bmdl10_neurotoxicity",
+      "curatedValue": 0.43,
+      "curatedUnit": "mg/kg bw/day",
+      "curatedSourceIds": [
+        "efsa.acrylamide.food.2015"
+      ],
+      "assertionClass": "reference_point",
+      "assertionStatus": "selected_reference_point",
+      "regulatoryAdoptionStatus": null,
+      "temporalStatus": "current",
+      "validFrom": "2015-06-04",
+      "assessmentYear": null,
+      "introducedBySourceIds": [
+        "efsa.acrylamide.food.2015"
+      ],
+      "supportingSourceIds": [
+        "efsa.acrylamide.food.2015"
+      ],
+      "databaseSourceIds": [
+        "efsa.openfoodtox"
+      ],
+      "regulatoryFollowUpSourceIds": [],
+      "supersedesRecordIds": [],
+      "supportStatus": "exact_supported_structured",
+      "openfoodtox3Candidates": [
+        {
+          "recordKey": "3156ca56-59c3-46c9-8580-8379497cd7de#row-35202",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "END_STUDY_REC.HumanHealth",
+          "sourceRowNumber": 35202,
+          "documentUuid": "3156ca56-59c3-46c9-8580-8379497cd7de",
+          "substanceUuid": "e6f2726e-2e3b-49c4-849b-a409330e14c8",
+          "referenceSubstanceUuid": "809b574b-001a-4ed7-974c-901664b06d36",
+          "casNumber": "79-06-1",
+          "ecNumber": "201-173-7",
+          "assertionClass": "reference_point",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "BMDL10",
+          "descriptorFieldPath": "ResultsAndDiscussion.EffectLevels.Efflevel.Endpoint",
+          "bound": "lower",
+          "sourceFieldPath": "ResultsAndDiscussion.EffectLevels.Efflevel.EffectLevel.lowerValue",
+          "sourceUnitFieldPath": "ResultsAndDiscussion.EffectLevels.Efflevel.EffectLevel.Unit.Other",
+          "sourceQualifierFieldPath": null,
+          "rawValue": 0.43,
+          "rawUnit": "mg/kg bw/day",
+          "rawUnitSelector": "other:",
+          "rawQualifier": null,
+          "normalizedValue": 0.43,
+          "normalizedUnit": "mg/kg bw/day",
+          "unitCorrection": null,
+          "population": "humans",
+          "assessmentYears": [
+            2015
+          ],
+          "relationshipToCurated": "exact_match",
+          "temporalStatus": "current",
+          "assertionStatus": "selected_reference_point",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.acrylamide.food.2015",
+              "doi": "10.2903/j.efsa.2015.4104",
+              "dossierUuid": "c9486b75-3c8d-440d-85ea-eb4f8b1e0dca",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on acrylamide in food",
+              "assessmentDate": "2015-04-30"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.acrylamide.food.2015",
+              "doi": "10.2903/j.efsa.2015.4104",
+              "dossierUuid": "c9486b75-3c8d-440d-85ea-eb4f8b1e0dca",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on acrylamide in food",
+              "assessmentDate": "2015-04-30"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": {
+            "ResultsAndDiscussion.EffectLevels.Efflevel.Basis": "histopathology: non-neoplastic",
+            "ResultsAndDiscussion.EffectLevels.Efflevel.Endpoint": "BMDL10",
+            "ResultsAndDiscussion.EffectLevels.Efflevel.RemarksOnResults": "other:",
+            "ResultsAndDiscussion.EffectLevels.Efflevel.RemarksOnResults.Other": "Toxicity: neurotoxicity; Target tissue: Periphreal Nerve; Effect desc.: Effect: incidences of peripheral nerve (sciatic) axonal degeneration",
+            "ResultsAndDiscussion.EffectLevels.Efflevel.RemarksOnResults.Remarks": "Remarks: Study: NTP 2012"
+          },
+          "rawNarrative": null
+        }
+      ]
+    },
+    {
+      "curatedRecordId": "efsa.bpa.tdi.2023",
+      "substanceKey": "bisphenol_a",
+      "referenceType": "tdi",
+      "curatedValue": 0.2,
+      "curatedUnit": "ng/kg bw/day",
+      "curatedSourceIds": [
+        "efsa.bpa.food.2023",
+        "efsa.bisphenol.topic.2026"
+      ],
+      "assertionClass": "health_based_guidance_value",
+      "assertionStatus": "established",
+      "regulatoryAdoptionStatus": null,
+      "temporalStatus": "current",
+      "validFrom": "2023-04-19",
+      "assessmentYear": null,
+      "introducedBySourceIds": [
+        "efsa.bpa.food.2023"
+      ],
+      "supportingSourceIds": [
+        "efsa.bpa.food.2023",
+        "efsa.bisphenol.topic.2026"
+      ],
+      "databaseSourceIds": [
+        "efsa.openfoodtox"
+      ],
+      "regulatoryFollowUpSourceIds": [],
+      "supersedesRecordIds": [],
+      "supportStatus": "exact_supported_structured",
+      "openfoodtox3Candidates": [
+        {
+          "recordKey": "b4772832-c5b2-4b8e-8239-7af66b7be90d#row-3567",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 3567,
+          "documentUuid": "b4772832-c5b2-4b8e-8239-7af66b7be90d",
+          "substanceUuid": "93ad28ab-7589-4b56-a47b-e5d2fead5f5b",
+          "referenceSubstanceUuid": "16eb3ab8-f5c0-48c3-86ab-982157135697",
+          "casNumber": "80-05-7",
+          "ecNumber": "201-245-8",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "TDI",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerQualifier",
+          "rawValue": 0.2,
+          "rawUnit": "ng/kg bw/day",
+          "rawUnitSelector": "ng/kg bw/day",
+          "rawQualifier": null,
+          "normalizedValue": 0.2,
+          "normalizedUnit": "ng/kg bw/day",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2022
+          ],
+          "relationshipToCurated": "exact_match",
+          "temporalStatus": "current",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.bpa.food.2023",
+              "doi": "10.2903/j.efsa.2023.6857",
+              "dossierUuid": "24010cec-b8ac-4610-b86b-426b655b5533",
+              "literatureUuid": null,
+              "title": "Re-evaluation of the risks to public health related to the presence of bisphenol A (BPA) in foodstuffs",
+              "assessmentDate": "2022-12-06"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.bpa.food.2023",
+              "doi": "10.2903/j.efsa.2023.6857",
+              "dossierUuid": "24010cec-b8ac-4610-b86b-426b655b5533",
+              "literatureUuid": null,
+              "title": "Re-evaluation of the risks to public health related to the presence of bisphenol A (BPA) in foodstuffs",
+              "assessmentDate": "2022-12-06"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        },
+        {
+          "recordKey": "42b1f42e-8ac1-4849-a99c-2654b9d8af30#row-3996",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 3996,
+          "documentUuid": "42b1f42e-8ac1-4849-a99c-2654b9d8af30",
+          "substanceUuid": "93ad28ab-7589-4b56-a47b-e5d2fead5f5b",
+          "referenceSubstanceUuid": "16eb3ab8-f5c0-48c3-86ab-982157135697",
+          "casNumber": "80-05-7",
+          "ecNumber": "201-245-8",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "TDI (provisional)",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerQualifier",
+          "rawValue": 4,
+          "rawUnit": "µg/kg bw/day",
+          "rawUnitSelector": "µg/kg bw/day",
+          "rawQualifier": null,
+          "normalizedValue": 4.0,
+          "normalizedUnit": "ug/kg bw/day",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2014
+          ],
+          "relationshipToCurated": "different_historical_value",
+          "temporalStatus": "historical",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2015.3978",
+              "dossierUuid": "244d5bc5-296f-447e-9d7d-40f36940eb70",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on the risks to public health related to the presence of bisphenol A (BPA) in foodstuffs: Executive summary",
+              "assessmentDate": "2014-12-11"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2015.3978",
+              "dossierUuid": "244d5bc5-296f-447e-9d7d-40f36940eb70",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on the risks to public health related to the presence of bisphenol A (BPA) in foodstuffs: Executive summary",
+              "assessmentDate": "2014-12-11"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        },
+        {
+          "recordKey": "77877919-814d-499e-9b32-df0d2047256a#row-9687",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 9687,
+          "documentUuid": "77877919-814d-499e-9b32-df0d2047256a",
+          "substanceUuid": "93ad28ab-7589-4b56-a47b-e5d2fead5f5b",
+          "referenceSubstanceUuid": "16eb3ab8-f5c0-48c3-86ab-982157135697",
+          "casNumber": "80-05-7",
+          "ecNumber": "201-245-8",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "TDI",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerQualifier",
+          "rawValue": 0.05,
+          "rawUnit": "mg/kg bw/day",
+          "rawUnitSelector": "mg/kg bw/day",
+          "rawQualifier": null,
+          "normalizedValue": 0.05,
+          "normalizedUnit": "mg/kg bw/day",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2006
+          ],
+          "relationshipToCurated": "different_historical_value",
+          "temporalStatus": "historical",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2007.428",
+              "dossierUuid": "9070a7dc-2c84-4742-975b-fedf76ba9d77",
+              "literatureUuid": null,
+              "title": "Opinion of the Scientific Panel on Food Additives, Flavourings, Processing Aids and Materials in Contact with Food on a request from the Commission related to 2,2-BIS(4-HYDROXYPHENYL)PROPANE (Bisphenol A)",
+              "assessmentDate": "2006-11-29"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2007.428",
+              "dossierUuid": "9070a7dc-2c84-4742-975b-fedf76ba9d77",
+              "literatureUuid": null,
+              "title": "Opinion of the Scientific Panel on Food Additives, Flavourings, Processing Aids and Materials in Contact with Food on a request from the Commission related to 2,2-BIS(4-HYDROXYPHENYL)PROPANE (Bisphenol A)",
+              "assessmentDate": "2006-11-29"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        },
+        {
+          "recordKey": "bd1531b9-ee8e-401e-9eda-3e6ca0e1ddb0#row-15650",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 15650,
+          "documentUuid": "bd1531b9-ee8e-401e-9eda-3e6ca0e1ddb0",
+          "substanceUuid": "93ad28ab-7589-4b56-a47b-e5d2fead5f5b",
+          "referenceSubstanceUuid": "16eb3ab8-f5c0-48c3-86ab-982157135697",
+          "casNumber": "80-05-7",
+          "ecNumber": "201-245-8",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "TDI (provisional)",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerQualifier",
+          "rawValue": 4,
+          "rawUnit": "µg/kg bw/day",
+          "rawUnitSelector": "µg/kg bw/day",
+          "rawQualifier": null,
+          "normalizedValue": 4.0,
+          "normalizedUnit": "ug/kg bw/day",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2016
+          ],
+          "relationshipToCurated": "different_historical_value",
+          "temporalStatus": "historical",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2016.4580",
+              "dossierUuid": "ca4ec981-47a8-498b-8ed7-f41c70fc8eab",
+              "literatureUuid": null,
+              "title": "A statement on the developmental immunotoxicity of bisphenol A (BPA): answer to the question from the Dutch Ministry of Health, Welfare and Sport",
+              "assessmentDate": "2016-09-14"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2016.4580",
+              "dossierUuid": "ca4ec981-47a8-498b-8ed7-f41c70fc8eab",
+              "literatureUuid": null,
+              "title": "A statement on the developmental immunotoxicity of bisphenol A (BPA): answer to the question from the Dutch Ministry of Health, Welfare and Sport",
+              "assessmentDate": "2016-09-14"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        },
+        {
+          "recordKey": "841bd284-ccd7-4d62-a437-5d7bfabdaa38#row-15808",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 15808,
+          "documentUuid": "841bd284-ccd7-4d62-a437-5d7bfabdaa38",
+          "substanceUuid": "93ad28ab-7589-4b56-a47b-e5d2fead5f5b",
+          "referenceSubstanceUuid": "16eb3ab8-f5c0-48c3-86ab-982157135697",
+          "casNumber": "80-05-7",
+          "ecNumber": "201-245-8",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "TDI",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerQualifier",
+          "rawValue": 0.05,
+          "rawUnit": "mg/kg bw/day",
+          "rawUnitSelector": "mg/kg bw/day",
+          "rawQualifier": null,
+          "normalizedValue": 0.05,
+          "normalizedUnit": "mg/kg bw/day",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2008
+          ],
+          "relationshipToCurated": "different_historical_value",
+          "temporalStatus": "historical",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2008.759",
+              "dossierUuid": "874ee7cf-3a85-447b-accb-972a66682c93",
+              "literatureUuid": null,
+              "title": "Toxicokinetics of Bisphenol A",
+              "assessmentDate": "2008-07-09"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2008.759",
+              "dossierUuid": "874ee7cf-3a85-447b-accb-972a66682c93",
+              "literatureUuid": null,
+              "title": "Toxicokinetics of Bisphenol A",
+              "assessmentDate": "2008-07-09"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        },
+        {
+          "recordKey": "fd3eeccb-18e0-4af0-8dcb-f8ee7c08dc94#row-18030",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 18030,
+          "documentUuid": "fd3eeccb-18e0-4af0-8dcb-f8ee7c08dc94",
+          "substanceUuid": "93ad28ab-7589-4b56-a47b-e5d2fead5f5b",
+          "referenceSubstanceUuid": "16eb3ab8-f5c0-48c3-86ab-982157135697",
+          "casNumber": "80-05-7",
+          "ecNumber": "201-245-8",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "TDI",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerQualifier",
+          "rawValue": 0.05,
+          "rawUnit": "mg/kg bw/day",
+          "rawUnitSelector": "mg/kg bw/day",
+          "rawQualifier": null,
+          "normalizedValue": 0.05,
+          "normalizedUnit": "mg/kg bw/day",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2008
+          ],
+          "relationshipToCurated": "different_historical_value",
+          "temporalStatus": "historical",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2008.838",
+              "dossierUuid": "ac284be3-074d-4247-8195-dab292c29214",
+              "literatureUuid": null,
+              "title": "Statement of EFSA on a study associating bisphenol A with medical disorders - Prepared by the Unit on food contact materials, enzymes, flavourings and processing aids (CEF) and the Unit on Assessment Methodology (AMU)",
+              "assessmentDate": "2008-10-22"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2008.838",
+              "dossierUuid": "ac284be3-074d-4247-8195-dab292c29214",
+              "literatureUuid": null,
+              "title": "Statement of EFSA on a study associating bisphenol A with medical disorders - Prepared by the Unit on food contact materials, enzymes, flavourings and processing aids (CEF) and the Unit on Assessment Methodology (AMU)",
+              "assessmentDate": "2008-10-22"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        }
+      ]
+    },
+    {
+      "curatedRecordId": "efsa.cadmium.twi.2009",
+      "substanceKey": "cadmium",
+      "referenceType": "twi",
+      "curatedValue": 2.5,
+      "curatedUnit": "ug/kg bw/week",
+      "curatedSourceIds": [
+        "efsa.cadmium.food.2009",
+        "efsa.cadmium.exposure.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "assertionClass": "health_based_guidance_value",
+      "assertionStatus": "established",
+      "regulatoryAdoptionStatus": null,
+      "temporalStatus": "current",
+      "validFrom": "2009-03-20",
+      "assessmentYear": null,
+      "introducedBySourceIds": [
+        "efsa.cadmium.food.2009"
+      ],
+      "supportingSourceIds": [
+        "efsa.cadmium.food.2009",
+        "efsa.cadmium.exposure.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "databaseSourceIds": [
+        "efsa.openfoodtox"
+      ],
+      "regulatoryFollowUpSourceIds": [],
+      "supersedesRecordIds": [],
+      "supportStatus": "supported_after_unit_normalization",
+      "openfoodtox3Candidates": [
+        {
+          "recordKey": "360ccb2e-d9b5-4453-b2be-0eda9a814153#row-2719",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 2719,
+          "documentUuid": "360ccb2e-d9b5-4453-b2be-0eda9a814153",
+          "substanceUuid": "444738ec-5b35-4e72-a2fb-e2440be52e04",
+          "referenceSubstanceUuid": "e6d9dff9-c8c6-4d2c-b1aa-9b383aaf9e09",
+          "casNumber": "7440-43-9",
+          "ecNumber": "231-152-8",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "TWI (provisional)",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerQualifier",
+          "rawValue": 7,
+          "rawUnit": "µg/kg bw/week",
+          "rawUnitSelector": "µg/kg bw/week",
+          "rawQualifier": null,
+          "normalizedValue": 7.0,
+          "normalizedUnit": "ug/kg bw/week",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2004
+          ],
+          "relationshipToCurated": "different_historical_value",
+          "temporalStatus": "historical",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2004.72",
+              "dossierUuid": "4cd4002f-ddb5-44a2-bd61-20da33105340",
+              "literatureUuid": null,
+              "title": "Opinion of the Scientific Panel on Contaminants in the Food Chain on a request from the Commission related to cadmium as undesirable substance in animal feed",
+              "assessmentDate": "2004-06-02"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2004.72",
+              "dossierUuid": "4cd4002f-ddb5-44a2-bd61-20da33105340",
+              "literatureUuid": null,
+              "title": "Opinion of the Scientific Panel on Contaminants in the Food Chain on a request from the Commission related to cadmium as undesirable substance in animal feed",
+              "assessmentDate": "2004-06-02"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        },
+        {
+          "recordKey": "f4f175a1-f9dd-4d78-bcbb-9d12311239df#row-5384",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 5384,
+          "documentUuid": "f4f175a1-f9dd-4d78-bcbb-9d12311239df",
+          "substanceUuid": "444738ec-5b35-4e72-a2fb-e2440be52e04",
+          "referenceSubstanceUuid": "e6d9dff9-c8c6-4d2c-b1aa-9b383aaf9e09",
+          "casNumber": "7440-43-9",
+          "ecNumber": "231-152-8",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "TWI",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerQualifier",
+          "rawValue": 2.5,
+          "rawUnit": "µg/kg bw/week",
+          "rawUnitSelector": "µg/kg bw/week",
+          "rawQualifier": null,
+          "normalizedValue": 2.5,
+          "normalizedUnit": "ug/kg bw/week",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2009,
+            2011
+          ],
+          "relationshipToCurated": "exact_match",
+          "temporalStatus": "current",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2009.980",
+              "dossierUuid": "61110a44-1857-46bb-9397-70be2440dc2f",
+              "literatureUuid": null,
+              "title": "Cadmium in food",
+              "assessmentDate": "2009-01-30"
+            }
+          ],
+          "mentionedIn": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2011.1975",
+              "dossierUuid": "51d2c773-8c86-4b39-881e-a04dda049998",
+              "literatureUuid": null,
+              "title": "Statement on tolerable weekly intake for cadmium",
+              "assessmentDate": "2011-01-18"
+            }
+          ],
+          "dossierMembership": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2009.980",
+              "dossierUuid": "61110a44-1857-46bb-9397-70be2440dc2f",
+              "literatureUuid": null,
+              "title": "Cadmium in food",
+              "assessmentDate": "2009-01-30"
+            },
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2011.1975",
+              "dossierUuid": "51d2c773-8c86-4b39-881e-a04dda049998",
+              "literatureUuid": null,
+              "title": "Statement on tolerable weekly intake for cadmium",
+              "assessmentDate": "2011-01-18"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        },
+        {
+          "recordKey": "ce6825f3-c250-4365-a686-43120fea6060#row-18903",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 18903,
+          "documentUuid": "ce6825f3-c250-4365-a686-43120fea6060",
+          "substanceUuid": "444738ec-5b35-4e72-a2fb-e2440be52e04",
+          "referenceSubstanceUuid": "e6d9dff9-c8c6-4d2c-b1aa-9b383aaf9e09",
+          "casNumber": "7440-43-9",
+          "ecNumber": "231-152-8",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "TWI",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerQualifier",
+          "rawValue": 2.5,
+          "rawUnit": "µg/kg bw/week",
+          "rawUnitSelector": "µg/kg bw/week",
+          "rawQualifier": null,
+          "normalizedValue": 2.5,
+          "normalizedUnit": "ug/kg bw/week",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2009,
+            2011
+          ],
+          "relationshipToCurated": "exact_match",
+          "temporalStatus": "current",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2011.1975",
+              "dossierUuid": "51d2c773-8c86-4b39-881e-a04dda049998",
+              "literatureUuid": null,
+              "title": "Statement on tolerable weekly intake for cadmium",
+              "assessmentDate": "2011-01-18"
+            }
+          ],
+          "mentionedIn": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2009.980",
+              "dossierUuid": "61110a44-1857-46bb-9397-70be2440dc2f",
+              "literatureUuid": null,
+              "title": "Cadmium in food",
+              "assessmentDate": "2009-01-30"
+            }
+          ],
+          "dossierMembership": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2009.980",
+              "dossierUuid": "61110a44-1857-46bb-9397-70be2440dc2f",
+              "literatureUuid": null,
+              "title": "Cadmium in food",
+              "assessmentDate": "2009-01-30"
+            },
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2011.1975",
+              "dossierUuid": "51d2c773-8c86-4b39-881e-a04dda049998",
+              "literatureUuid": null,
+              "title": "Statement on tolerable weekly intake for cadmium",
+              "assessmentDate": "2011-01-18"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        }
+      ]
+    },
+    {
+      "curatedRecordId": "efsa.inorganic_arsenic.skin_cancer.bmdl05",
+      "substanceKey": "inorganic_arsenic",
+      "referenceType": "bmdl05_skin_cancer",
+      "curatedValue": 0.06,
+      "curatedUnit": "ug/kg bw/day",
+      "curatedSourceIds": [
+        "efsa.inorganic_arsenic.food.2024",
+        "efsa.inorganic_arsenic.exposure.2021",
+        "efsa.metals.topic.2026"
+      ],
+      "assertionClass": "reference_point",
+      "assertionStatus": "selected_reference_point",
+      "regulatoryAdoptionStatus": null,
+      "temporalStatus": "current",
+      "validFrom": "2024-01-18",
+      "assessmentYear": null,
+      "introducedBySourceIds": [
+        "efsa.inorganic_arsenic.food.2024"
+      ],
+      "supportingSourceIds": [
+        "efsa.inorganic_arsenic.food.2024",
+        "efsa.inorganic_arsenic.exposure.2021",
+        "efsa.metals.topic.2026"
+      ],
+      "databaseSourceIds": [
+        "efsa.openfoodtox"
+      ],
+      "regulatoryFollowUpSourceIds": [],
+      "supersedesRecordIds": [],
+      "supportStatus": "supported_after_unit_normalization",
+      "openfoodtox3Candidates": [
+        {
+          "recordKey": "d9c10174-6dd0-4f77-b4aa-8e0eaf40111c#row-30938",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "END_STUDY_REC.HumanHealth",
+          "sourceRowNumber": 30938,
+          "documentUuid": "d9c10174-6dd0-4f77-b4aa-8e0eaf40111c",
+          "substanceUuid": "65095970-766b-4d10-a31a-31cf819bd6c4",
+          "referenceSubstanceUuid": "4b32e8b6-8b03-486e-9fef-5a63c32385a6",
+          "casNumber": null,
+          "ecNumber": null,
+          "assertionClass": "reference_point",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "BMDL05",
+          "descriptorFieldPath": "ResultsAndDiscussion.EffectLevels.DoseDescriptor",
+          "bound": "lower",
+          "sourceFieldPath": "ResultsAndDiscussion.EffectLevels.EffectLevel.lowerValue",
+          "sourceUnitFieldPath": "ResultsAndDiscussion.EffectLevels.EffectLevel.Unit.Other",
+          "sourceQualifierFieldPath": null,
+          "rawValue": 0.06,
+          "rawUnit": "μg/kg bw/day",
+          "rawUnitSelector": "other:",
+          "rawQualifier": null,
+          "normalizedValue": 0.06,
+          "normalizedUnit": "ug/kg bw/day",
+          "unitCorrection": null,
+          "population": "humans",
+          "assessmentYears": [
+            2023
+          ],
+          "relationshipToCurated": "exact_match",
+          "temporalStatus": "current",
+          "assertionStatus": "selected_reference_point",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.inorganic_arsenic.food.2024",
+              "doi": "10.2903/j.efsa.2024.8488",
+              "dossierUuid": "31fa909a-314c-4949-8554-7253f4e51850",
+              "literatureUuid": null,
+              "title": "Update of the risk assessment of inorganic arsenic in food",
+              "assessmentDate": "2023-11-28"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.inorganic_arsenic.food.2024",
+              "doi": "10.2903/j.efsa.2024.8488",
+              "dossierUuid": "31fa909a-314c-4949-8554-7253f4e51850",
+              "literatureUuid": null,
+              "title": "Update of the risk assessment of inorganic arsenic in food",
+              "assessmentDate": "2023-11-28"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": {
+            "ResultsAndDiscussion.EffectLevels.BasisForEffectLevel": "histopathology: neoplastic",
+            "ResultsAndDiscussion.EffectLevels.BasisForEffectLevel.Remarks": "skin cancer (type: squamous cell carcinoma)",
+            "ResultsAndDiscussion.EffectLevels.DoseDescriptor": "BMDL05"
+          },
+          "rawNarrative": null
+        }
+      ]
+    },
+    {
+      "curatedRecordId": "efsa.inorganic_mercury.twi.2012",
+      "substanceKey": "inorganic_mercury",
+      "referenceType": "twi",
+      "curatedValue": 4.0,
+      "curatedUnit": "ug/kg bw/week",
+      "curatedSourceIds": [
+        "efsa.mercury.food.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "assertionClass": "health_based_guidance_value",
+      "assertionStatus": "established",
+      "regulatoryAdoptionStatus": null,
+      "temporalStatus": "current",
+      "validFrom": "2012-12-20",
+      "assessmentYear": null,
+      "introducedBySourceIds": [
+        "efsa.mercury.food.2012"
+      ],
+      "supportingSourceIds": [
+        "efsa.mercury.food.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "databaseSourceIds": [
+        "efsa.openfoodtox"
+      ],
+      "regulatoryFollowUpSourceIds": [],
+      "supersedesRecordIds": [],
+      "supportStatus": "supported_after_unit_normalization",
+      "openfoodtox3Candidates": [
+        {
+          "recordKey": "9063437b-c975-426d-9cd8-ba7da26b6bb8#row-6435",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 6435,
+          "documentUuid": "9063437b-c975-426d-9cd8-ba7da26b6bb8",
+          "substanceUuid": "467b162d-20f2-4588-82ba-3dbde5afbd66",
+          "referenceSubstanceUuid": "4f7d04d1-29a9-4329-a27d-44b3b66100db",
+          "casNumber": null,
+          "ecNumber": null,
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "TWI",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerQualifier",
+          "rawValue": 4,
+          "rawUnit": "µg/kg bw/week",
+          "rawUnitSelector": "µg/kg bw/week",
+          "rawQualifier": null,
+          "normalizedValue": 4.0,
+          "normalizedUnit": "ug/kg bw/week",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2012
+          ],
+          "relationshipToCurated": "exact_match",
+          "temporalStatus": "current",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2012.2985",
+              "dossierUuid": "090cb84c-6245-46e7-987b-d07708ebede5",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on the risk for public health related to the presence of mercury and methylmercury in food.",
+              "assessmentDate": "2012-11-22"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2012.2985",
+              "dossierUuid": "090cb84c-6245-46e7-987b-d07708ebede5",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on the risk for public health related to the presence of mercury and methylmercury in food.",
+              "assessmentDate": "2012-11-22"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        }
+      ]
+    },
+    {
+      "curatedRecordId": "efsa.lead.developmental_neurotoxicity.bmdl01",
+      "substanceKey": "lead",
+      "referenceType": "bmdl01_developmental_neurotoxicity",
+      "curatedValue": 0.5,
+      "curatedUnit": "ug/kg bw/day",
+      "curatedSourceIds": [
+        "efsa.lead.food.2010",
+        "efsa.lead.exposure.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "assertionClass": "reference_point",
+      "assertionStatus": "selected_reference_point",
+      "regulatoryAdoptionStatus": null,
+      "temporalStatus": "current",
+      "validFrom": "2010-04-20",
+      "assessmentYear": null,
+      "introducedBySourceIds": [
+        "efsa.lead.food.2010"
+      ],
+      "supportingSourceIds": [
+        "efsa.lead.food.2010",
+        "efsa.lead.exposure.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "databaseSourceIds": [
+        "efsa.openfoodtox"
+      ],
+      "regulatoryFollowUpSourceIds": [],
+      "supersedesRecordIds": [],
+      "supportStatus": "exact_supported_unstructured",
+      "openfoodtox3Candidates": [
+        {
+          "recordKey": "1bec633b-5378-4e44-ab13-a5c0ac756787#row-30778",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "END_STUDY_REC.HumanHealth",
+          "sourceRowNumber": 30778,
+          "documentUuid": "1bec633b-5378-4e44-ab13-a5c0ac756787",
+          "substanceUuid": "ee13062c-1312-42ca-9500-ed3750778cc5",
+          "referenceSubstanceUuid": "0c2b3be1-5883-407d-a7a2-4ed7260bf746",
+          "casNumber": "7439-92-1",
+          "ecNumber": "231-100-4",
+          "assertionClass": "reference_point",
+          "sourceEncoding": "unstructured",
+          "sourceEncodingFlags": [
+            "value_encoded_in_narrative_field"
+          ],
+          "descriptor": "BMDL01",
+          "descriptorFieldPath": "ResultsAndDiscussion.AnyOtherInformationOnResultsInclTables.OtherInformation",
+          "bound": "narrative",
+          "sourceFieldPath": "ResultsAndDiscussion.AnyOtherInformationOnResultsInclTables.OtherInformation",
+          "sourceUnitFieldPath": "ResultsAndDiscussion.AnyOtherInformationOnResultsInclTables.OtherInformation",
+          "sourceQualifierFieldPath": "ResultsAndDiscussion.AnyOtherInformationOnResultsInclTables.OtherInformation",
+          "rawValue": "0.5",
+          "rawUnit": "µg/kg bw/day",
+          "rawUnitSelector": "µg/kg bw/day",
+          "rawQualifier": "=",
+          "normalizedValue": 0.5,
+          "normalizedUnit": "ug/kg bw/day",
+          "unitCorrection": null,
+          "population": "humans",
+          "assessmentYears": [
+            2010
+          ],
+          "relationshipToCurated": "exact_match",
+          "temporalStatus": "current",
+          "assertionStatus": "selected_reference_point",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.lead.food.2010",
+              "doi": "10.2903/j.efsa.2010.1570",
+              "dossierUuid": "4db2848c-3b99-4ffa-a122-718cd3a221be",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on Lead in Food",
+              "assessmentDate": "2010-03-18"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.lead.food.2010",
+              "doi": "10.2903/j.efsa.2010.1570",
+              "dossierUuid": "4db2848c-3b99-4ffa-a122-718cd3a221be",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on Lead in Food",
+              "assessmentDate": "2010-03-18"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": {
+            "endpoint": "BMDL01",
+            "basis": "neurology",
+            "toxicity": "developmental",
+            "target tissue": "Brain",
+            "effect desc.": "Neurodevelopmental effects were observed in infants and children of age between 1 years and 7 years."
+          },
+          "rawNarrative": "Endpoint: ^ BMDL01; Value: '= 0.5 µg/kg bw/day; Basis: ^ neurology; Toxicity: developmental; Target tissue: Brain; Effect desc.: Neurodevelopmental effects were observed in infants and children of age between 1 years and 7 years."
+        }
+      ]
+    },
+    {
+      "curatedRecordId": "efsa.lead.nephrotoxicity.bmdl10",
+      "substanceKey": "lead",
+      "referenceType": "bmdl10_nephrotoxicity",
+      "curatedValue": 0.63,
+      "curatedUnit": "ug/kg bw/day",
+      "curatedSourceIds": [
+        "efsa.lead.food.2010",
+        "efsa.lead.exposure.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "assertionClass": "reference_point",
+      "assertionStatus": "selected_reference_point",
+      "regulatoryAdoptionStatus": null,
+      "temporalStatus": "current",
+      "validFrom": "2010-04-20",
+      "assessmentYear": null,
+      "introducedBySourceIds": [
+        "efsa.lead.food.2010"
+      ],
+      "supportingSourceIds": [
+        "efsa.lead.food.2010",
+        "efsa.lead.exposure.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "databaseSourceIds": [
+        "efsa.openfoodtox"
+      ],
+      "regulatoryFollowUpSourceIds": [],
+      "supersedesRecordIds": [],
+      "supportStatus": "exact_supported_unstructured",
+      "openfoodtox3Candidates": [
+        {
+          "recordKey": "7fbbc975-942a-4dd6-9676-1c488cda33e4#row-30853",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "END_STUDY_REC.HumanHealth",
+          "sourceRowNumber": 30853,
+          "documentUuid": "7fbbc975-942a-4dd6-9676-1c488cda33e4",
+          "substanceUuid": "ee13062c-1312-42ca-9500-ed3750778cc5",
+          "referenceSubstanceUuid": "0c2b3be1-5883-407d-a7a2-4ed7260bf746",
+          "casNumber": "7439-92-1",
+          "ecNumber": "231-100-4",
+          "assertionClass": "reference_point",
+          "sourceEncoding": "unstructured",
+          "sourceEncodingFlags": [
+            "value_encoded_in_narrative_field"
+          ],
+          "descriptor": "BMDL10",
+          "descriptorFieldPath": "ResultsAndDiscussion.AnyOtherInformationOnResultsInclTables.OtherInformation",
+          "bound": "narrative",
+          "sourceFieldPath": "ResultsAndDiscussion.AnyOtherInformationOnResultsInclTables.OtherInformation",
+          "sourceUnitFieldPath": "ResultsAndDiscussion.AnyOtherInformationOnResultsInclTables.OtherInformation",
+          "sourceQualifierFieldPath": "ResultsAndDiscussion.AnyOtherInformationOnResultsInclTables.OtherInformation",
+          "rawValue": "0.63",
+          "rawUnit": "µg/kg bw/day",
+          "rawUnitSelector": "µg/kg bw/day",
+          "rawQualifier": "=",
+          "normalizedValue": 0.63,
+          "normalizedUnit": "ug/kg bw/day",
+          "unitCorrection": null,
+          "population": "humans",
+          "assessmentYears": [
+            2010
+          ],
+          "relationshipToCurated": "exact_match",
+          "temporalStatus": "current",
+          "assertionStatus": "selected_reference_point",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.lead.food.2010",
+              "doi": "10.2903/j.efsa.2010.1570",
+              "dossierUuid": "4db2848c-3b99-4ffa-a122-718cd3a221be",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on Lead in Food",
+              "assessmentDate": "2010-03-18"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.lead.food.2010",
+              "doi": "10.2903/j.efsa.2010.1570",
+              "dossierUuid": "4db2848c-3b99-4ffa-a122-718cd3a221be",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on Lead in Food",
+              "assessmentDate": "2010-03-18"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": {
+            "endpoint": "BMDL10",
+            "basis": "clinical biochemistry",
+            "toxicity": "nephrotoxicity",
+            "target tissue": "Kidneys",
+            "effect desc.": "Exposure to lead has been associated with functional renal deficits e.g., changes in proteinuria, glomerular filtration rate (GFR) or creatinine levels and clearance."
+          },
+          "rawNarrative": "Endpoint: BMDL10; Value: '= 0.63 µg/kg bw/day; Basis: clinical biochemistry; Toxicity: nephrotoxicity; Target tissue: Kidneys; Effect desc.: Exposure to lead has been associated with functional renal deficits e.g., changes in proteinuria, glomerular filtration rate (GFR) or creatinine levels and clearance."
+        }
+      ]
+    },
+    {
+      "curatedRecordId": "efsa.methylmercury.twi.2012",
+      "substanceKey": "methylmercury",
+      "referenceType": "twi",
+      "curatedValue": 1.3,
+      "curatedUnit": "ug/kg bw/week",
+      "curatedSourceIds": [
+        "efsa.mercury.food.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "assertionClass": "health_based_guidance_value",
+      "assertionStatus": "established",
+      "regulatoryAdoptionStatus": null,
+      "temporalStatus": "current",
+      "validFrom": "2012-12-20",
+      "assessmentYear": null,
+      "introducedBySourceIds": [
+        "efsa.mercury.food.2012"
+      ],
+      "supportingSourceIds": [
+        "efsa.mercury.food.2012",
+        "efsa.metals.topic.2026"
+      ],
+      "databaseSourceIds": [
+        "efsa.openfoodtox"
+      ],
+      "regulatoryFollowUpSourceIds": [],
+      "supersedesRecordIds": [],
+      "supportStatus": "supported_after_unit_normalization",
+      "openfoodtox3Candidates": [
+        {
+          "recordKey": "1b4d9d10-d4b3-4d78-99ba-2f52354ce252#row-7571",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 7571,
+          "documentUuid": "1b4d9d10-d4b3-4d78-99ba-2f52354ce252",
+          "substanceUuid": "86daa9f8-6ed5-42e5-8de6-76350fc399cf",
+          "referenceSubstanceUuid": "5146e08f-ca98-4b3c-a63e-44cadf0698ec",
+          "casNumber": "22967-92-6",
+          "ecNumber": null,
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "TWI (provisional)",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerQualifier",
+          "rawValue": 1.6,
+          "rawUnit": "µg/kg bw/week",
+          "rawUnitSelector": "µg/kg bw/week",
+          "rawQualifier": null,
+          "normalizedValue": 1.6,
+          "normalizedUnit": "ug/kg bw/week",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2008
+          ],
+          "relationshipToCurated": "different_historical_value",
+          "temporalStatus": "historical",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2008.654",
+              "dossierUuid": "8858a0ad-b118-4acf-97e1-eb1ce7da1626",
+              "literatureUuid": null,
+              "title": "Mercury as undesirable substance in animal feed",
+              "assessmentDate": "2008-02-20"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2008.654",
+              "dossierUuid": "8858a0ad-b118-4acf-97e1-eb1ce7da1626",
+              "literatureUuid": null,
+              "title": "Mercury as undesirable substance in animal feed",
+              "assessmentDate": "2008-02-20"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        },
+        {
+          "recordKey": "c263a7aa-19ad-4acb-a5a1-8ef824086ce0#row-12801",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 12801,
+          "documentUuid": "c263a7aa-19ad-4acb-a5a1-8ef824086ce0",
+          "substanceUuid": "86daa9f8-6ed5-42e5-8de6-76350fc399cf",
+          "referenceSubstanceUuid": "5146e08f-ca98-4b3c-a63e-44cadf0698ec",
+          "casNumber": "22967-92-6",
+          "ecNumber": null,
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "TWI",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerQualifier",
+          "rawValue": 1.3,
+          "rawUnit": "µg/kg bw/week",
+          "rawUnitSelector": "µg/kg bw/week",
+          "rawQualifier": null,
+          "normalizedValue": 1.3,
+          "normalizedUnit": "ug/kg bw/week",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2012
+          ],
+          "relationshipToCurated": "exact_match",
+          "temporalStatus": "current",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2012.2985",
+              "dossierUuid": "a18c951b-da19-4b4e-b3ad-efee8f7acaf1",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on the risk for public health related to the presence of mercury and methylmercury in food.",
+              "assessmentDate": "2012-11-22"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2012.2985",
+              "dossierUuid": "a18c951b-da19-4b4e-b3ad-efee8f7acaf1",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on the risk for public health related to the presence of mercury and methylmercury in food.",
+              "assessmentDate": "2012-11-22"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        },
+        {
+          "recordKey": "6582f2c7-7bbf-46f2-a3d7-70a3bc2658cb#row-16788",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 16788,
+          "documentUuid": "6582f2c7-7bbf-46f2-a3d7-70a3bc2658cb",
+          "substanceUuid": "86daa9f8-6ed5-42e5-8de6-76350fc399cf",
+          "referenceSubstanceUuid": "5146e08f-ca98-4b3c-a63e-44cadf0698ec",
+          "casNumber": "22967-92-6",
+          "ecNumber": null,
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "TWI (provisional)",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.OtherReferenceValues.RefValue.lowerQualifier",
+          "rawValue": 1.6,
+          "rawUnit": "µg/kg bw/week",
+          "rawUnitSelector": "µg/kg bw/week",
+          "rawQualifier": null,
+          "normalizedValue": 1.6,
+          "normalizedUnit": "ug/kg bw/week",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2004
+          ],
+          "relationshipToCurated": "different_historical_value",
+          "temporalStatus": "historical",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2004.34",
+              "dossierUuid": "45c977f1-a113-4893-afc0-be77d0bbb720",
+              "literatureUuid": null,
+              "title": "Opinion of the Scientific Panel on Contaminants in the Food Chain on a request from the Commission related to mercury and methylmercury in food",
+              "assessmentDate": "2004-02-24"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": null,
+              "doi": "10.2903/j.efsa.2004.34",
+              "dossierUuid": "45c977f1-a113-4893-afc0-be77d0bbb720",
+              "literatureUuid": null,
+              "title": "Opinion of the Scientific Panel on Contaminants in the Food Chain on a request from the Commission related to mercury and methylmercury in food",
+              "assessmentDate": "2004-02-24"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        }
+      ]
+    },
+    {
+      "curatedRecordId": "efsa.openfoodtox.acetamiprid.adi",
+      "substanceKey": "acetamiprid",
+      "referenceType": "adi",
+      "curatedValue": 0.005,
+      "curatedUnit": "mg/kg bw/day",
+      "curatedSourceIds": [
+        "efsa.openfoodtox",
+        "efsa.acetamiprid.statement.2024"
+      ],
+      "assertionClass": "health_based_guidance_value",
+      "assertionStatus": "proposed",
+      "regulatoryAdoptionStatus": "used_in_binding_mrl_risk_management",
+      "temporalStatus": "current",
+      "validFrom": "2024-05-15",
+      "assessmentYear": 2024,
+      "introducedBySourceIds": [
+        "efsa.acetamiprid.statement.2024"
+      ],
+      "supportingSourceIds": [
+        "efsa.acetamiprid.statement.2024"
+      ],
+      "databaseSourceIds": [
+        "efsa.openfoodtox"
+      ],
+      "regulatoryFollowUpSourceIds": [
+        "eu.reg.2025_158"
+      ],
+      "supersedesRecordIds": [],
+      "supportStatus": "exact_supported_structured",
+      "openfoodtox3Candidates": [
+        {
+          "recordKey": "6f1f0841-cc23-4389-875a-c1afe282638e#row-404",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 404,
+          "documentUuid": "6f1f0841-cc23-4389-875a-c1afe282638e",
+          "substanceUuid": "8475acca-b439-48ec-b9fc-a4db72bf6f82",
+          "referenceSubstanceUuid": "84becbb6-6540-4ba0-8fcb-282d49934117",
+          "casNumber": "135410-20-7",
+          "ecNumber": "603-921-1",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "ADI",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.lowerQualifier",
+          "rawValue": 0.025,
+          "rawUnit": "mg/kg bw/day",
+          "rawUnitSelector": "mg/kg bw/day",
+          "rawQualifier": null,
+          "normalizedValue": 0.025,
+          "normalizedUnit": "mg/kg bw/day",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2013,
+            2024
+          ],
+          "relationshipToCurated": "different_historical_value",
+          "temporalStatus": "historical",
+          "assertionStatus": "recommended",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.acetamiprid_imidacloprid.dnt.2013",
+              "doi": "10.2903/j.efsa.2013.3471",
+              "dossierUuid": "ffe6feca-f987-4cc5-a7e0-30f11c532b30",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on the developmental neurotoxicity potential of acetamiprid and imidacloprid",
+              "assessmentDate": "2013-11-21"
+            }
+          ],
+          "mentionedIn": [
+            {
+              "sourceId": "efsa.acetamiprid.statement.2024",
+              "doi": "10.2903/j.efsa.2024.8759",
+              "dossierUuid": "4285a7c7-f91a-4070-b36e-5e3395dbf994",
+              "literatureUuid": null,
+              "title": "Statement on the toxicological properties and maximum residue levels of acetamiprid and its metabolites",
+              "assessmentDate": "2024-03-27"
+            }
+          ],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.acetamiprid_imidacloprid.dnt.2013",
+              "doi": "10.2903/j.efsa.2013.3471",
+              "dossierUuid": "ffe6feca-f987-4cc5-a7e0-30f11c532b30",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on the developmental neurotoxicity potential of acetamiprid and imidacloprid",
+              "assessmentDate": "2013-11-21"
+            },
+            {
+              "sourceId": "efsa.acetamiprid.statement.2024",
+              "doi": "10.2903/j.efsa.2024.8759",
+              "dossierUuid": "4285a7c7-f91a-4070-b36e-5e3395dbf994",
+              "literatureUuid": null,
+              "title": "Statement on the toxicological properties and maximum residue levels of acetamiprid and its metabolites",
+              "assessmentDate": "2024-03-27"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [
+            "7f0e3478-4184-4dd9-936d-40f82b32ee4d#row-8153"
+          ],
+          "effectContext": null,
+          "rawNarrative": null
+        },
+        {
+          "recordKey": "8c5dd27d-d128-4735-822a-094f1746a837#row-7943",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 7943,
+          "documentUuid": "8c5dd27d-d128-4735-822a-094f1746a837",
+          "substanceUuid": "8475acca-b439-48ec-b9fc-a4db72bf6f82",
+          "referenceSubstanceUuid": "84becbb6-6540-4ba0-8fcb-282d49934117",
+          "casNumber": "135410-20-7",
+          "ecNumber": "603-921-1",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "ADI",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.lowerQualifier",
+          "rawValue": 0.025,
+          "rawUnit": "mg/kg bw/day",
+          "rawUnitSelector": "mg/kg bw/day",
+          "rawQualifier": null,
+          "normalizedValue": 0.025,
+          "normalizedUnit": "mg/kg bw/day",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2016
+          ],
+          "relationshipToCurated": "different_historical_value",
+          "temporalStatus": "historical",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.acetamiprid.peer_review.2016",
+              "doi": "10.2903/j.efsa.2016.4610",
+              "dossierUuid": "fadb8eb6-4eb4-4865-bb60-38dd026c6650",
+              "literatureUuid": null,
+              "title": "Peer review of the pesticide risk assessment of the active substance acetamiprid",
+              "assessmentDate": "2016-10-17"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.acetamiprid.peer_review.2016",
+              "doi": "10.2903/j.efsa.2016.4610",
+              "dossierUuid": "fadb8eb6-4eb4-4865-bb60-38dd026c6650",
+              "literatureUuid": null,
+              "title": "Peer review of the pesticide risk assessment of the active substance acetamiprid",
+              "assessmentDate": "2016-10-17"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        },
+        {
+          "recordKey": "7f0e3478-4184-4dd9-936d-40f82b32ee4d#row-8153",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 8153,
+          "documentUuid": "7f0e3478-4184-4dd9-936d-40f82b32ee4d",
+          "substanceUuid": "8475acca-b439-48ec-b9fc-a4db72bf6f82",
+          "referenceSubstanceUuid": "84becbb6-6540-4ba0-8fcb-282d49934117",
+          "casNumber": "135410-20-7",
+          "ecNumber": "603-921-1",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "ADI",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.lowerQualifier",
+          "rawValue": 0.005,
+          "rawUnit": "mg/kg bw/day",
+          "rawUnitSelector": "mg/kg bw/day",
+          "rawQualifier": null,
+          "normalizedValue": 0.005,
+          "normalizedUnit": "mg/kg bw/day",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2013,
+            2024
+          ],
+          "relationshipToCurated": "exact_match",
+          "temporalStatus": "current",
+          "assertionStatus": "proposed",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.acetamiprid.statement.2024",
+              "doi": "10.2903/j.efsa.2024.8759",
+              "dossierUuid": "4285a7c7-f91a-4070-b36e-5e3395dbf994",
+              "literatureUuid": null,
+              "title": "Statement on the toxicological properties and maximum residue levels of acetamiprid and its metabolites",
+              "assessmentDate": "2024-03-27"
+            }
+          ],
+          "mentionedIn": [
+            {
+              "sourceId": "efsa.acetamiprid_imidacloprid.dnt.2013",
+              "doi": "10.2903/j.efsa.2013.3471",
+              "dossierUuid": "ffe6feca-f987-4cc5-a7e0-30f11c532b30",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on the developmental neurotoxicity potential of acetamiprid and imidacloprid",
+              "assessmentDate": "2013-11-21"
+            }
+          ],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.acetamiprid_imidacloprid.dnt.2013",
+              "doi": "10.2903/j.efsa.2013.3471",
+              "dossierUuid": "ffe6feca-f987-4cc5-a7e0-30f11c532b30",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on the developmental neurotoxicity potential of acetamiprid and imidacloprid",
+              "assessmentDate": "2013-11-21"
+            },
+            {
+              "sourceId": "efsa.acetamiprid.statement.2024",
+              "doi": "10.2903/j.efsa.2024.8759",
+              "dossierUuid": "4285a7c7-f91a-4070-b36e-5e3395dbf994",
+              "literatureUuid": null,
+              "title": "Statement on the toxicological properties and maximum residue levels of acetamiprid and its metabolites",
+              "assessmentDate": "2024-03-27"
+            }
+          ],
+          "supersedesRecordKeys": [
+            "6f1f0841-cc23-4389-875a-c1afe282638e#row-404",
+            "8c5dd27d-d128-4735-822a-094f1746a837#row-7943"
+          ],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        }
+      ]
+    },
+    {
+      "curatedRecordId": "efsa.openfoodtox.acetamiprid.arfd",
+      "substanceKey": "acetamiprid",
+      "referenceType": "arfd",
+      "curatedValue": 0.005,
+      "curatedUnit": "mg/kg bw",
+      "curatedSourceIds": [
+        "efsa.openfoodtox",
+        "efsa.acetamiprid.statement.2024"
+      ],
+      "assertionClass": "health_based_guidance_value",
+      "assertionStatus": "proposed",
+      "regulatoryAdoptionStatus": "used_in_binding_mrl_risk_management",
+      "temporalStatus": "current",
+      "validFrom": "2024-05-15",
+      "assessmentYear": 2024,
+      "introducedBySourceIds": [
+        "efsa.acetamiprid.statement.2024"
+      ],
+      "supportingSourceIds": [
+        "efsa.acetamiprid.statement.2024"
+      ],
+      "databaseSourceIds": [
+        "efsa.openfoodtox"
+      ],
+      "regulatoryFollowUpSourceIds": [
+        "eu.reg.2025_158"
+      ],
+      "supersedesRecordIds": [],
+      "supportStatus": "supported_after_primary_source_unit_correction",
+      "openfoodtox3Candidates": [
+        {
+          "recordKey": "6f1f0841-cc23-4389-875a-c1afe282638e#row-404",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 404,
+          "documentUuid": "6f1f0841-cc23-4389-875a-c1afe282638e",
+          "substanceUuid": "8475acca-b439-48ec-b9fc-a4db72bf6f82",
+          "referenceSubstanceUuid": "84becbb6-6540-4ba0-8fcb-282d49934117",
+          "casNumber": "135410-20-7",
+          "ecNumber": "603-921-1",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [
+            "primary_source_unit_correction_applied"
+          ],
+          "descriptor": "ARfD",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.AcuteReferenceDose.Arfd.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.AcuteReferenceDose.Arfd.Unit",
+          "sourceQualifierFieldPath": null,
+          "rawValue": 0.025,
+          "rawUnit": "mg/kg bw/day",
+          "rawUnitSelector": "mg/kg bw/day",
+          "rawQualifier": null,
+          "normalizedValue": 0.025,
+          "normalizedUnit": "mg/kg bw",
+          "unitCorrection": {
+            "authoritySourceId": "efsa.acetamiprid_imidacloprid.dnt.2013",
+            "correctedUnit": "mg/kg bw",
+            "reason": "The 2013 EFSA opinion expresses the ARfD without a per-day basis.",
+            "rawUnit": "mg/kg bw/day"
+          },
+          "population": "consumers",
+          "assessmentYears": [
+            2013,
+            2024
+          ],
+          "relationshipToCurated": "different_historical_value",
+          "temporalStatus": "historical",
+          "assertionStatus": "recommended",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.acetamiprid_imidacloprid.dnt.2013",
+              "doi": "10.2903/j.efsa.2013.3471",
+              "dossierUuid": "ffe6feca-f987-4cc5-a7e0-30f11c532b30",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on the developmental neurotoxicity potential of acetamiprid and imidacloprid",
+              "assessmentDate": "2013-11-21"
+            }
+          ],
+          "mentionedIn": [
+            {
+              "sourceId": "efsa.acetamiprid.statement.2024",
+              "doi": "10.2903/j.efsa.2024.8759",
+              "dossierUuid": "4285a7c7-f91a-4070-b36e-5e3395dbf994",
+              "literatureUuid": null,
+              "title": "Statement on the toxicological properties and maximum residue levels of acetamiprid and its metabolites",
+              "assessmentDate": "2024-03-27"
+            }
+          ],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.acetamiprid_imidacloprid.dnt.2013",
+              "doi": "10.2903/j.efsa.2013.3471",
+              "dossierUuid": "ffe6feca-f987-4cc5-a7e0-30f11c532b30",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on the developmental neurotoxicity potential of acetamiprid and imidacloprid",
+              "assessmentDate": "2013-11-21"
+            },
+            {
+              "sourceId": "efsa.acetamiprid.statement.2024",
+              "doi": "10.2903/j.efsa.2024.8759",
+              "dossierUuid": "4285a7c7-f91a-4070-b36e-5e3395dbf994",
+              "literatureUuid": null,
+              "title": "Statement on the toxicological properties and maximum residue levels of acetamiprid and its metabolites",
+              "assessmentDate": "2024-03-27"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [
+            "7f0e3478-4184-4dd9-936d-40f82b32ee4d#row-8153"
+          ],
+          "effectContext": null,
+          "rawNarrative": null
+        },
+        {
+          "recordKey": "8c5dd27d-d128-4735-822a-094f1746a837#row-7943",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 7943,
+          "documentUuid": "8c5dd27d-d128-4735-822a-094f1746a837",
+          "substanceUuid": "8475acca-b439-48ec-b9fc-a4db72bf6f82",
+          "referenceSubstanceUuid": "84becbb6-6540-4ba0-8fcb-282d49934117",
+          "casNumber": "135410-20-7",
+          "ecNumber": "603-921-1",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [
+            "primary_source_unit_correction_applied"
+          ],
+          "descriptor": "ARfD",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.AcuteReferenceDose.Arfd.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.AcuteReferenceDose.Arfd.Unit",
+          "sourceQualifierFieldPath": null,
+          "rawValue": 0.025,
+          "rawUnit": "mg/kg bw/day",
+          "rawUnitSelector": "mg/kg bw/day",
+          "rawQualifier": null,
+          "normalizedValue": 0.025,
+          "normalizedUnit": "mg/kg bw",
+          "unitCorrection": {
+            "authoritySourceId": "efsa.acetamiprid.peer_review.2016",
+            "correctedUnit": "mg/kg bw",
+            "reason": "The 2016 EFSA peer-review conclusion expresses the ARfD without a per-day basis.",
+            "rawUnit": "mg/kg bw/day"
+          },
+          "population": "consumers",
+          "assessmentYears": [
+            2016
+          ],
+          "relationshipToCurated": "different_historical_value",
+          "temporalStatus": "historical",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.acetamiprid.peer_review.2016",
+              "doi": "10.2903/j.efsa.2016.4610",
+              "dossierUuid": "fadb8eb6-4eb4-4865-bb60-38dd026c6650",
+              "literatureUuid": null,
+              "title": "Peer review of the pesticide risk assessment of the active substance acetamiprid",
+              "assessmentDate": "2016-10-17"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.acetamiprid.peer_review.2016",
+              "doi": "10.2903/j.efsa.2016.4610",
+              "dossierUuid": "fadb8eb6-4eb4-4865-bb60-38dd026c6650",
+              "literatureUuid": null,
+              "title": "Peer review of the pesticide risk assessment of the active substance acetamiprid",
+              "assessmentDate": "2016-10-17"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        },
+        {
+          "recordKey": "7f0e3478-4184-4dd9-936d-40f82b32ee4d#row-8153",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 8153,
+          "documentUuid": "7f0e3478-4184-4dd9-936d-40f82b32ee4d",
+          "substanceUuid": "8475acca-b439-48ec-b9fc-a4db72bf6f82",
+          "referenceSubstanceUuid": "84becbb6-6540-4ba0-8fcb-282d49934117",
+          "casNumber": "135410-20-7",
+          "ecNumber": "603-921-1",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [
+            "primary_source_unit_correction_applied"
+          ],
+          "descriptor": "ARfD",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.AcuteReferenceDose.Arfd.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.AcuteReferenceDose.Arfd.Unit",
+          "sourceQualifierFieldPath": null,
+          "rawValue": 0.005,
+          "rawUnit": "mg/kg bw/day",
+          "rawUnitSelector": "mg/kg bw/day",
+          "rawQualifier": null,
+          "normalizedValue": 0.005,
+          "normalizedUnit": "mg/kg bw",
+          "unitCorrection": {
+            "authoritySourceId": "efsa.acetamiprid.statement.2024",
+            "correctedUnit": "mg/kg bw",
+            "reason": "The 2024 EFSA statement expresses the ARfD without a per-day basis.",
+            "rawUnit": "mg/kg bw/day"
+          },
+          "population": "consumers",
+          "assessmentYears": [
+            2013,
+            2024
+          ],
+          "relationshipToCurated": "primary_source_unit_correction",
+          "temporalStatus": "current",
+          "assertionStatus": "proposed",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.acetamiprid.statement.2024",
+              "doi": "10.2903/j.efsa.2024.8759",
+              "dossierUuid": "4285a7c7-f91a-4070-b36e-5e3395dbf994",
+              "literatureUuid": null,
+              "title": "Statement on the toxicological properties and maximum residue levels of acetamiprid and its metabolites",
+              "assessmentDate": "2024-03-27"
+            }
+          ],
+          "mentionedIn": [
+            {
+              "sourceId": "efsa.acetamiprid_imidacloprid.dnt.2013",
+              "doi": "10.2903/j.efsa.2013.3471",
+              "dossierUuid": "ffe6feca-f987-4cc5-a7e0-30f11c532b30",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on the developmental neurotoxicity potential of acetamiprid and imidacloprid",
+              "assessmentDate": "2013-11-21"
+            }
+          ],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.acetamiprid_imidacloprid.dnt.2013",
+              "doi": "10.2903/j.efsa.2013.3471",
+              "dossierUuid": "ffe6feca-f987-4cc5-a7e0-30f11c532b30",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on the developmental neurotoxicity potential of acetamiprid and imidacloprid",
+              "assessmentDate": "2013-11-21"
+            },
+            {
+              "sourceId": "efsa.acetamiprid.statement.2024",
+              "doi": "10.2903/j.efsa.2024.8759",
+              "dossierUuid": "4285a7c7-f91a-4070-b36e-5e3395dbf994",
+              "literatureUuid": null,
+              "title": "Statement on the toxicological properties and maximum residue levels of acetamiprid and its metabolites",
+              "assessmentDate": "2024-03-27"
+            }
+          ],
+          "supersedesRecordKeys": [
+            "6f1f0841-cc23-4389-875a-c1afe282638e#row-404",
+            "8c5dd27d-d128-4735-822a-094f1746a837#row-7943"
+          ],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        }
+      ]
+    },
+    {
+      "curatedRecordId": "efsa.openfoodtox.glyphosate.adi",
+      "substanceKey": "glyphosate",
+      "referenceType": "adi",
+      "curatedValue": 0.5,
+      "curatedUnit": "mg/kg bw/day",
+      "curatedSourceIds": [
+        "efsa.openfoodtox",
+        "efsa.glyphosate.peer_review.2023"
+      ],
+      "assertionClass": "health_based_guidance_value",
+      "assertionStatus": "established",
+      "regulatoryAdoptionStatus": null,
+      "temporalStatus": "current",
+      "validFrom": "2023-07-26",
+      "assessmentYear": 2023,
+      "introducedBySourceIds": [
+        "efsa.glyphosate.peer_review.2023"
+      ],
+      "supportingSourceIds": [
+        "efsa.glyphosate.peer_review.2023"
+      ],
+      "databaseSourceIds": [
+        "efsa.openfoodtox"
+      ],
+      "regulatoryFollowUpSourceIds": [],
+      "supersedesRecordIds": [],
+      "supportStatus": "supported_but_source_encoding_anomalous",
+      "openfoodtox3Candidates": [
+        {
+          "recordKey": "aff0ecb3-0bbe-4309-a9c8-3598568b387b#row-3733",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 3733,
+          "documentUuid": "aff0ecb3-0bbe-4309-a9c8-3598568b387b",
+          "substanceUuid": "1195b0de-88f0-4272-b6dc-f5b55d25e375",
+          "referenceSubstanceUuid": "95c86af0-d579-4717-915a-74839a4eb142",
+          "casNumber": "1071-83-6",
+          "ecNumber": "213-997-4",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "ADI",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.lowerQualifier",
+          "rawValue": 0.5,
+          "rawUnit": "mg/kg bw/day",
+          "rawUnitSelector": "mg/kg bw/day",
+          "rawQualifier": null,
+          "normalizedValue": 0.5,
+          "normalizedUnit": "mg/kg bw/day",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2015
+          ],
+          "relationshipToCurated": "exact_match",
+          "temporalStatus": "historical",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.glyphosate.peer_review.2015",
+              "doi": "10.2903/j.efsa.2015.4302",
+              "dossierUuid": "fe53d99b-85a9-484c-9cbc-eefa0da0ddde",
+              "literatureUuid": null,
+              "title": "Conclusion on the peer review of the pesticide risk assessment of the active substance glyphosate",
+              "assessmentDate": "2015-10-30"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.glyphosate.peer_review.2015",
+              "doi": "10.2903/j.efsa.2015.4302",
+              "dossierUuid": "fe53d99b-85a9-484c-9cbc-eefa0da0ddde",
+              "literatureUuid": null,
+              "title": "Conclusion on the peer review of the pesticide risk assessment of the active substance glyphosate",
+              "assessmentDate": "2015-10-30"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        },
+        {
+          "recordKey": "d2727c60-cf21-4f54-a8c7-59b7ee1fc566#row-13510",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 13510,
+          "documentUuid": "d2727c60-cf21-4f54-a8c7-59b7ee1fc566",
+          "substanceUuid": "1195b0de-88f0-4272-b6dc-f5b55d25e375",
+          "referenceSubstanceUuid": "95c86af0-d579-4717-915a-74839a4eb142",
+          "casNumber": "1071-83-6",
+          "ecNumber": "213-997-4",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [
+            "hbgv_encoded_in_upper_value_field"
+          ],
+          "descriptor": "ADI",
+          "descriptorFieldPath": null,
+          "bound": "upper",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.upperValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.upperQualifier",
+          "rawValue": 0.5,
+          "rawUnit": "mg/kg bw/day",
+          "rawUnitSelector": "mg/kg bw/day",
+          "rawQualifier": null,
+          "normalizedValue": 0.5,
+          "normalizedUnit": "mg/kg bw/day",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2023
+          ],
+          "relationshipToCurated": "exact_match",
+          "temporalStatus": "current",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.glyphosate.peer_review.2023",
+              "doi": "10.2903/j.efsa.2023.8164",
+              "dossierUuid": "8f7d76c6-0068-4c3b-9b1f-9d7093d6834b",
+              "literatureUuid": null,
+              "title": "Peer review of the pesticide risk assessment of the active substance glyphosate",
+              "assessmentDate": "2023-07-06"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.glyphosate.peer_review.2023",
+              "doi": "10.2903/j.efsa.2023.8164",
+              "dossierUuid": "8f7d76c6-0068-4c3b-9b1f-9d7093d6834b",
+              "literatureUuid": null,
+              "title": "Peer review of the pesticide risk assessment of the active substance glyphosate",
+              "assessmentDate": "2023-07-06"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        }
+      ]
+    },
+    {
+      "curatedRecordId": "efsa.openfoodtox.glyphosate.arfd",
+      "substanceKey": "glyphosate",
+      "referenceType": "arfd",
+      "curatedValue": 1.5,
+      "curatedUnit": "mg/kg bw",
+      "curatedSourceIds": [
+        "efsa.openfoodtox",
+        "efsa.glyphosate.peer_review.2023"
+      ],
+      "assertionClass": "health_based_guidance_value",
+      "assertionStatus": "established",
+      "regulatoryAdoptionStatus": null,
+      "temporalStatus": "current",
+      "validFrom": "2023-07-26",
+      "assessmentYear": 2023,
+      "introducedBySourceIds": [
+        "efsa.glyphosate.peer_review.2023"
+      ],
+      "supportingSourceIds": [
+        "efsa.glyphosate.peer_review.2023"
+      ],
+      "databaseSourceIds": [
+        "efsa.openfoodtox"
+      ],
+      "regulatoryFollowUpSourceIds": [],
+      "supersedesRecordIds": [
+        "efsa.openfoodtox.glyphosate.arfd.2015"
+      ],
+      "supportStatus": "supported_after_primary_source_unit_correction",
+      "openfoodtox3Candidates": [
+        {
+          "recordKey": "aff0ecb3-0bbe-4309-a9c8-3598568b387b#row-3733",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 3733,
+          "documentUuid": "aff0ecb3-0bbe-4309-a9c8-3598568b387b",
+          "substanceUuid": "1195b0de-88f0-4272-b6dc-f5b55d25e375",
+          "referenceSubstanceUuid": "95c86af0-d579-4717-915a-74839a4eb142",
+          "casNumber": "1071-83-6",
+          "ecNumber": "213-997-4",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "ARfD",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.AcuteReferenceDose.Arfd.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.AcuteReferenceDose.Arfd.Unit",
+          "sourceQualifierFieldPath": null,
+          "rawValue": 0.5,
+          "rawUnit": "mg/kg bw",
+          "rawUnitSelector": "mg/kg bw",
+          "rawQualifier": null,
+          "normalizedValue": 0.5,
+          "normalizedUnit": "mg/kg bw",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2015
+          ],
+          "relationshipToCurated": "different_historical_value",
+          "temporalStatus": "historical",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.glyphosate.peer_review.2015",
+              "doi": "10.2903/j.efsa.2015.4302",
+              "dossierUuid": "fe53d99b-85a9-484c-9cbc-eefa0da0ddde",
+              "literatureUuid": null,
+              "title": "Conclusion on the peer review of the pesticide risk assessment of the active substance glyphosate",
+              "assessmentDate": "2015-10-30"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.glyphosate.peer_review.2015",
+              "doi": "10.2903/j.efsa.2015.4302",
+              "dossierUuid": "fe53d99b-85a9-484c-9cbc-eefa0da0ddde",
+              "literatureUuid": null,
+              "title": "Conclusion on the peer review of the pesticide risk assessment of the active substance glyphosate",
+              "assessmentDate": "2015-10-30"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [
+            "d2727c60-cf21-4f54-a8c7-59b7ee1fc566#row-13510"
+          ],
+          "effectContext": null,
+          "rawNarrative": null
+        },
+        {
+          "recordKey": "d2727c60-cf21-4f54-a8c7-59b7ee1fc566#row-13510",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 13510,
+          "documentUuid": "d2727c60-cf21-4f54-a8c7-59b7ee1fc566",
+          "substanceUuid": "1195b0de-88f0-4272-b6dc-f5b55d25e375",
+          "referenceSubstanceUuid": "95c86af0-d579-4717-915a-74839a4eb142",
+          "casNumber": "1071-83-6",
+          "ecNumber": "213-997-4",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [
+            "hbgv_encoded_in_upper_value_field",
+            "primary_source_unit_correction_applied"
+          ],
+          "descriptor": "ARfD",
+          "descriptorFieldPath": null,
+          "bound": "upper",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.AcuteReferenceDose.Arfd.upperValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.AcuteReferenceDose.Arfd.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.AcuteReferenceDose.Arfd.upperQualifier",
+          "rawValue": 1.5,
+          "rawUnit": "mg/kg bw/day",
+          "rawUnitSelector": "mg/kg bw/day",
+          "rawQualifier": null,
+          "normalizedValue": 1.5,
+          "normalizedUnit": "mg/kg bw",
+          "unitCorrection": {
+            "authoritySourceId": "efsa.glyphosate.peer_review.2023",
+            "correctedUnit": "mg/kg bw",
+            "reason": "The 2023 EFSA peer-review conclusion expresses the ARfD without a per-day basis.",
+            "rawUnit": "mg/kg bw/day"
+          },
+          "population": "consumers",
+          "assessmentYears": [
+            2023
+          ],
+          "relationshipToCurated": "primary_source_unit_correction",
+          "temporalStatus": "current",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.glyphosate.peer_review.2023",
+              "doi": "10.2903/j.efsa.2023.8164",
+              "dossierUuid": "8f7d76c6-0068-4c3b-9b1f-9d7093d6834b",
+              "literatureUuid": null,
+              "title": "Peer review of the pesticide risk assessment of the active substance glyphosate",
+              "assessmentDate": "2023-07-06"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.glyphosate.peer_review.2023",
+              "doi": "10.2903/j.efsa.2023.8164",
+              "dossierUuid": "8f7d76c6-0068-4c3b-9b1f-9d7093d6834b",
+              "literatureUuid": null,
+              "title": "Peer review of the pesticide risk assessment of the active substance glyphosate",
+              "assessmentDate": "2023-07-06"
+            }
+          ],
+          "supersedesRecordKeys": [
+            "aff0ecb3-0bbe-4309-a9c8-3598568b387b#row-3733"
+          ],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        }
+      ]
+    },
+    {
+      "curatedRecordId": "efsa.openfoodtox.imidacloprid.adi",
+      "substanceKey": "imidacloprid",
+      "referenceType": "adi",
+      "curatedValue": 0.06,
+      "curatedUnit": "mg/kg bw/day",
+      "curatedSourceIds": [
+        "efsa.openfoodtox",
+        "efsa.acetamiprid_imidacloprid.dnt.2013"
+      ],
+      "assertionClass": "health_based_guidance_value",
+      "assertionStatus": "established",
+      "regulatoryAdoptionStatus": null,
+      "temporalStatus": "current",
+      "validFrom": "2013-12-17",
+      "assessmentYear": 2013,
+      "introducedBySourceIds": [
+        "efsa.acetamiprid_imidacloprid.dnt.2013"
+      ],
+      "supportingSourceIds": [
+        "efsa.acetamiprid_imidacloprid.dnt.2013"
+      ],
+      "databaseSourceIds": [
+        "efsa.openfoodtox"
+      ],
+      "regulatoryFollowUpSourceIds": [],
+      "supersedesRecordIds": [],
+      "supportStatus": "exact_supported_structured",
+      "openfoodtox3Candidates": [
+        {
+          "recordKey": "cb37ccd8-d85e-4f84-8f3b-7eb388f7f8ca#row-4951",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 4951,
+          "documentUuid": "cb37ccd8-d85e-4f84-8f3b-7eb388f7f8ca",
+          "substanceUuid": "5d1907a1-6bea-40e1-8512-bd798a9b4fca",
+          "referenceSubstanceUuid": "c99b657a-c02d-48a3-9ad7-b6cf5838bde0",
+          "casNumber": "138261-41-3",
+          "ecNumber": "428-040-8",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "ADI",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.lowerQualifier",
+          "rawValue": 0.06,
+          "rawUnit": "mg/kg bw/day",
+          "rawUnitSelector": "mg/kg bw/day",
+          "rawQualifier": null,
+          "normalizedValue": 0.06,
+          "normalizedUnit": "mg/kg bw/day",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2013
+          ],
+          "relationshipToCurated": "exact_match",
+          "temporalStatus": "current",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.acetamiprid_imidacloprid.dnt.2013",
+              "doi": "10.2903/j.efsa.2013.3471",
+              "dossierUuid": "448bd37e-c6d4-45d5-a38a-8cb325c93880",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on the developmental neurotoxicity potential of acetamiprid and imidacloprid",
+              "assessmentDate": "2013-11-21"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.acetamiprid_imidacloprid.dnt.2013",
+              "doi": "10.2903/j.efsa.2013.3471",
+              "dossierUuid": "448bd37e-c6d4-45d5-a38a-8cb325c93880",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on the developmental neurotoxicity potential of acetamiprid and imidacloprid",
+              "assessmentDate": "2013-11-21"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        },
+        {
+          "recordKey": "c3e992fb-b762-46f2-943f-a697fbc81ad6#row-9487",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 9487,
+          "documentUuid": "c3e992fb-b762-46f2-943f-a697fbc81ad6",
+          "substanceUuid": "5d1907a1-6bea-40e1-8512-bd798a9b4fca",
+          "referenceSubstanceUuid": "c99b657a-c02d-48a3-9ad7-b6cf5838bde0",
+          "casNumber": "138261-41-3",
+          "ecNumber": "428-040-8",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "ADI",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.Unit",
+          "sourceQualifierFieldPath": "HumanHealthHazardCharacteristics.AcceptableDailyIntake.Adi.lowerQualifier",
+          "rawValue": 0.06,
+          "rawUnit": "mg/kg bw/day",
+          "rawUnitSelector": "mg/kg bw/day",
+          "rawQualifier": null,
+          "normalizedValue": 0.06,
+          "normalizedUnit": "mg/kg bw/day",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2008
+          ],
+          "relationshipToCurated": "exact_match",
+          "temporalStatus": "historical",
+          "assertionStatus": "established",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.imidacloprid.peer_review.2008",
+              "doi": "10.2903/j.efsa.2008.148r",
+              "dossierUuid": "acf460a2-0162-4e6a-93c1-95020329126a",
+              "literatureUuid": null,
+              "title": "Conclusion regarding the peer review of the pesticide risk assessment of the active substance imidacloprid",
+              "assessmentDate": "2008-05-29"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.imidacloprid.peer_review.2008",
+              "doi": "10.2903/j.efsa.2008.148r",
+              "dossierUuid": "acf460a2-0162-4e6a-93c1-95020329126a",
+              "literatureUuid": null,
+              "title": "Conclusion regarding the peer review of the pesticide risk assessment of the active substance imidacloprid",
+              "assessmentDate": "2008-05-29"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        }
+      ]
+    },
+    {
+      "curatedRecordId": "efsa.openfoodtox.imidacloprid.arfd",
+      "substanceKey": "imidacloprid",
+      "referenceType": "arfd",
+      "curatedValue": 0.06,
+      "curatedUnit": "mg/kg bw",
+      "curatedSourceIds": [
+        "efsa.openfoodtox",
+        "efsa.acetamiprid_imidacloprid.dnt.2013"
+      ],
+      "assertionClass": "health_based_guidance_value",
+      "assertionStatus": "recommended",
+      "regulatoryAdoptionStatus": "recommendation_not_unconditionally_adopted",
+      "temporalStatus": "current",
+      "validFrom": "2013-12-17",
+      "assessmentYear": 2013,
+      "introducedBySourceIds": [
+        "efsa.acetamiprid_imidacloprid.dnt.2013"
+      ],
+      "supportingSourceIds": [
+        "efsa.acetamiprid_imidacloprid.dnt.2013"
+      ],
+      "databaseSourceIds": [
+        "efsa.openfoodtox"
+      ],
+      "regulatoryFollowUpSourceIds": [
+        "efsa.imidacloprid.mrl_review.2019"
+      ],
+      "supersedesRecordIds": [],
+      "supportStatus": "supported_after_primary_source_unit_correction",
+      "openfoodtox3Candidates": [
+        {
+          "recordKey": "cb37ccd8-d85e-4f84-8f3b-7eb388f7f8ca#row-4951",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 4951,
+          "documentUuid": "cb37ccd8-d85e-4f84-8f3b-7eb388f7f8ca",
+          "substanceUuid": "5d1907a1-6bea-40e1-8512-bd798a9b4fca",
+          "referenceSubstanceUuid": "c99b657a-c02d-48a3-9ad7-b6cf5838bde0",
+          "casNumber": "138261-41-3",
+          "ecNumber": "428-040-8",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [
+            "primary_source_unit_correction_applied"
+          ],
+          "descriptor": "ARfD",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.AcuteReferenceDose.Arfd.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.AcuteReferenceDose.Arfd.Unit",
+          "sourceQualifierFieldPath": null,
+          "rawValue": 0.06,
+          "rawUnit": "mg/kg bw/day",
+          "rawUnitSelector": "mg/kg bw/day",
+          "rawQualifier": null,
+          "normalizedValue": 0.06,
+          "normalizedUnit": "mg/kg bw",
+          "unitCorrection": {
+            "authoritySourceId": "efsa.acetamiprid_imidacloprid.dnt.2013",
+            "correctedUnit": "mg/kg bw",
+            "reason": "The 2013 EFSA opinion expresses the recommended ARfD without a per-day basis.",
+            "rawUnit": "mg/kg bw/day"
+          },
+          "population": "consumers",
+          "assessmentYears": [
+            2013
+          ],
+          "relationshipToCurated": "primary_source_unit_correction",
+          "temporalStatus": "current",
+          "assertionStatus": "recommended",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.acetamiprid_imidacloprid.dnt.2013",
+              "doi": "10.2903/j.efsa.2013.3471",
+              "dossierUuid": "448bd37e-c6d4-45d5-a38a-8cb325c93880",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on the developmental neurotoxicity potential of acetamiprid and imidacloprid",
+              "assessmentDate": "2013-11-21"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.acetamiprid_imidacloprid.dnt.2013",
+              "doi": "10.2903/j.efsa.2013.3471",
+              "dossierUuid": "448bd37e-c6d4-45d5-a38a-8cb325c93880",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on the developmental neurotoxicity potential of acetamiprid and imidacloprid",
+              "assessmentDate": "2013-11-21"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        },
+        {
+          "recordKey": "c3e992fb-b762-46f2-943f-a697fbc81ad6#row-9487",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 9487,
+          "documentUuid": "c3e992fb-b762-46f2-943f-a697fbc81ad6",
+          "substanceUuid": "5d1907a1-6bea-40e1-8512-bd798a9b4fca",
+          "referenceSubstanceUuid": "c99b657a-c02d-48a3-9ad7-b6cf5838bde0",
+          "casNumber": "138261-41-3",
+          "ecNumber": "428-040-8",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "ARfD",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.AcuteReferenceDose.Arfd.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.AcuteReferenceDose.Arfd.Unit",
+          "sourceQualifierFieldPath": null,
+          "rawValue": 0.08,
+          "rawUnit": "mg/kg bw",
+          "rawUnitSelector": "mg/kg bw",
+          "rawQualifier": null,
+          "normalizedValue": 0.08,
+          "normalizedUnit": "mg/kg bw",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2008
+          ],
+          "relationshipToCurated": "different_current_value",
+          "temporalStatus": "current",
+          "assertionStatus": "retained_in_mrl_assessment",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.imidacloprid.peer_review.2008",
+              "doi": "10.2903/j.efsa.2008.148r",
+              "dossierUuid": "acf460a2-0162-4e6a-93c1-95020329126a",
+              "literatureUuid": null,
+              "title": "Conclusion regarding the peer review of the pesticide risk assessment of the active substance imidacloprid",
+              "assessmentDate": "2008-05-29"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.imidacloprid.peer_review.2008",
+              "doi": "10.2903/j.efsa.2008.148r",
+              "dossierUuid": "acf460a2-0162-4e6a-93c1-95020329126a",
+              "literatureUuid": null,
+              "title": "Conclusion regarding the peer review of the pesticide risk assessment of the active substance imidacloprid",
+              "assessmentDate": "2008-05-29"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        }
+      ]
+    },
+    {
+      "curatedRecordId": "efsa.openfoodtox.imidacloprid.arfd.2008",
+      "substanceKey": "imidacloprid",
+      "referenceType": "arfd",
+      "curatedValue": 0.08,
+      "curatedUnit": "mg/kg bw",
+      "curatedSourceIds": [
+        "efsa.openfoodtox",
+        "efsa.imidacloprid.peer_review.2008",
+        "efsa.imidacloprid.mrl_review.2019"
+      ],
+      "assertionClass": "health_based_guidance_value",
+      "assertionStatus": "retained_in_mrl_assessment",
+      "regulatoryAdoptionStatus": "retained_for_2019_mrl_consumer_risk_assessment",
+      "temporalStatus": "current",
+      "validFrom": "2019-01-31",
+      "assessmentYear": 2019,
+      "introducedBySourceIds": [
+        "efsa.imidacloprid.peer_review.2008"
+      ],
+      "supportingSourceIds": [
+        "efsa.imidacloprid.peer_review.2008"
+      ],
+      "databaseSourceIds": [
+        "efsa.openfoodtox"
+      ],
+      "regulatoryFollowUpSourceIds": [
+        "efsa.imidacloprid.mrl_review.2019"
+      ],
+      "supersedesRecordIds": [],
+      "supportStatus": "exact_supported_structured",
+      "openfoodtox3Candidates": [
+        {
+          "recordKey": "cb37ccd8-d85e-4f84-8f3b-7eb388f7f8ca#row-4951",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 4951,
+          "documentUuid": "cb37ccd8-d85e-4f84-8f3b-7eb388f7f8ca",
+          "substanceUuid": "5d1907a1-6bea-40e1-8512-bd798a9b4fca",
+          "referenceSubstanceUuid": "c99b657a-c02d-48a3-9ad7-b6cf5838bde0",
+          "casNumber": "138261-41-3",
+          "ecNumber": "428-040-8",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [
+            "primary_source_unit_correction_applied"
+          ],
+          "descriptor": "ARfD",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.AcuteReferenceDose.Arfd.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.AcuteReferenceDose.Arfd.Unit",
+          "sourceQualifierFieldPath": null,
+          "rawValue": 0.06,
+          "rawUnit": "mg/kg bw/day",
+          "rawUnitSelector": "mg/kg bw/day",
+          "rawQualifier": null,
+          "normalizedValue": 0.06,
+          "normalizedUnit": "mg/kg bw",
+          "unitCorrection": {
+            "authoritySourceId": "efsa.acetamiprid_imidacloprid.dnt.2013",
+            "correctedUnit": "mg/kg bw",
+            "reason": "The 2013 EFSA opinion expresses the recommended ARfD without a per-day basis.",
+            "rawUnit": "mg/kg bw/day"
+          },
+          "population": "consumers",
+          "assessmentYears": [
+            2013
+          ],
+          "relationshipToCurated": "different_current_value",
+          "temporalStatus": "current",
+          "assertionStatus": "recommended",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.acetamiprid_imidacloprid.dnt.2013",
+              "doi": "10.2903/j.efsa.2013.3471",
+              "dossierUuid": "448bd37e-c6d4-45d5-a38a-8cb325c93880",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on the developmental neurotoxicity potential of acetamiprid and imidacloprid",
+              "assessmentDate": "2013-11-21"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.acetamiprid_imidacloprid.dnt.2013",
+              "doi": "10.2903/j.efsa.2013.3471",
+              "dossierUuid": "448bd37e-c6d4-45d5-a38a-8cb325c93880",
+              "literatureUuid": null,
+              "title": "Scientific Opinion on the developmental neurotoxicity potential of acetamiprid and imidacloprid",
+              "assessmentDate": "2013-11-21"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        },
+        {
+          "recordKey": "c3e992fb-b762-46f2-943f-a697fbc81ad6#row-9487",
+          "sourceFile": "OFT3.0 export repository.xlsx",
+          "sourceSheet": "FLEX_SUM.ToxRefValues",
+          "sourceRowNumber": 9487,
+          "documentUuid": "c3e992fb-b762-46f2-943f-a697fbc81ad6",
+          "substanceUuid": "5d1907a1-6bea-40e1-8512-bd798a9b4fca",
+          "referenceSubstanceUuid": "c99b657a-c02d-48a3-9ad7-b6cf5838bde0",
+          "casNumber": "138261-41-3",
+          "ecNumber": "428-040-8",
+          "assertionClass": "health_based_guidance_value",
+          "sourceEncoding": "structured",
+          "sourceEncodingFlags": [],
+          "descriptor": "ARfD",
+          "descriptorFieldPath": null,
+          "bound": "lower",
+          "sourceFieldPath": "HumanHealthHazardCharacteristics.AcuteReferenceDose.Arfd.lowerValue",
+          "sourceUnitFieldPath": "HumanHealthHazardCharacteristics.AcuteReferenceDose.Arfd.Unit",
+          "sourceQualifierFieldPath": null,
+          "rawValue": 0.08,
+          "rawUnit": "mg/kg bw",
+          "rawUnitSelector": "mg/kg bw",
+          "rawQualifier": null,
+          "normalizedValue": 0.08,
+          "normalizedUnit": "mg/kg bw",
+          "unitCorrection": null,
+          "population": "consumers",
+          "assessmentYears": [
+            2008
+          ],
+          "relationshipToCurated": "exact_match",
+          "temporalStatus": "current",
+          "assertionStatus": "retained_in_mrl_assessment",
+          "introducedBy": [
+            {
+              "sourceId": "efsa.imidacloprid.peer_review.2008",
+              "doi": "10.2903/j.efsa.2008.148r",
+              "dossierUuid": "acf460a2-0162-4e6a-93c1-95020329126a",
+              "literatureUuid": null,
+              "title": "Conclusion regarding the peer review of the pesticide risk assessment of the active substance imidacloprid",
+              "assessmentDate": "2008-05-29"
+            }
+          ],
+          "mentionedIn": [],
+          "dossierMembership": [
+            {
+              "sourceId": "efsa.imidacloprid.peer_review.2008",
+              "doi": "10.2903/j.efsa.2008.148r",
+              "dossierUuid": "acf460a2-0162-4e6a-93c1-95020329126a",
+              "literatureUuid": null,
+              "title": "Conclusion regarding the peer review of the pesticide risk assessment of the active substance imidacloprid",
+              "assessmentDate": "2008-05-29"
+            }
+          ],
+          "supersedesRecordKeys": [],
+          "supersededByRecordKeys": [],
+          "effectContext": null,
+          "rawNarrative": null
+        }
+      ]
+    }
+  ],
+  "releaseGate": "human_toxicologist_review_required",
+  "complete": true,
+  "contentSha256": "0feb8e3e4f9852c2d102375dd89d814ed08407a602d699882cf48bdd7f3c8c90"
+}

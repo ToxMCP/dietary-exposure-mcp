@@ -94,7 +94,9 @@ Check:
 
 ## Stable public release
 
-- Record independent toxicologist or dietary-risk-assessor signoff.
-- Complete OpenFoodTox 3.0 reconciliation under ADR 0007.
+- Record positive independent toxicologist or dietary-risk-assessor signoff.
+- Record qualified human approval of the remediated OpenFoodTox 3.0 version 1.2
+  high-impact report and its exact canonical hash under ADR 0007. The prior
+  `not approved` disposition is retained as review history, not release approval.
 - Resolve the intended-distribution rights posture for WHO-derived profiles.
 - Rerun every local gate from the final merge commit and review all generated release reports.

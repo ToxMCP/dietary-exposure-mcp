@@ -32,6 +32,7 @@ def can_generate_repo_artifacts() -> bool:
 def sync_packaged_data(source_root: Path) -> Path:
     data_root = PACKAGED_DATA_ROOT
     mappings = [
+        (source_root / "defaults", data_root / "defaults", "manifest.json"),
         (source_root / "defaults" / "v1", data_root / "defaults" / "v1", "*.json"),
         (source_root / "config", data_root / "config", "*.json"),
         (source_root / "validation" / "v1", data_root / "validation" / "v1", "*.json"),

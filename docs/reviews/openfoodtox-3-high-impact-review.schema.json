@@ -1,0 +1,286 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ToxMCP/dietary-exposure-mcp/docs/reviews/openfoodtox-3-high-impact-review.schema.json",
+  "title": "OpenFoodTox 3.0 high-impact scientific review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "reviewVersion",
+    "schemaVersion",
+    "generatedAt",
+    "sourceId",
+    "sourceDoi",
+    "sourceVersion",
+    "sourcePublishedAt",
+    "sourceFile",
+    "sourceFileSha256",
+    "workbookSchemaSha256",
+    "statusDefinitions",
+    "recordCount",
+    "supportStatusCounts",
+    "temporalStatusCounts",
+    "records",
+    "releaseGate",
+    "complete",
+    "contentSha256"
+  ],
+  "properties": {
+    "reviewVersion": { "const": "1.2" },
+    "schemaVersion": { "const": "1.2" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "sourceId": { "const": "efsa.openfoodtox" },
+    "sourceDoi": { "const": "10.5281/zenodo.19388272" },
+    "sourceVersion": { "const": "v7" },
+    "sourcePublishedAt": { "const": "2026-04-30" },
+    "sourceFile": { "const": "OFT3.0 export repository.xlsx" },
+    "sourceFileSha256": { "$ref": "#/$defs/sha256" },
+    "workbookSchemaSha256": { "$ref": "#/$defs/sha256" },
+    "statusDefinitions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["supportStatus", "temporalStatus"],
+      "properties": {
+        "supportStatus": { "$ref": "#/$defs/stringMap" },
+        "temporalStatus": { "$ref": "#/$defs/stringMap" }
+      }
+    },
+    "recordCount": { "type": "integer", "minimum": 1 },
+    "supportStatusCounts": { "$ref": "#/$defs/countMap" },
+    "temporalStatusCounts": { "$ref": "#/$defs/countMap" },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/reviewRecord" }
+    },
+    "releaseGate": { "const": "human_toxicologist_review_required" },
+    "complete": { "const": true },
+    "contentSha256": { "$ref": "#/$defs/sha256" }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "nullableString": {
+      "type": ["string", "null"]
+    },
+    "stringArray": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "stringMap": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "countMap": {
+      "type": "object",
+      "additionalProperties": { "type": "integer", "minimum": 0 }
+    },
+    "sourceReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceId",
+        "doi",
+        "dossierUuid",
+        "literatureUuid",
+        "title",
+        "assessmentDate"
+      ],
+      "properties": {
+        "sourceId": { "$ref": "#/$defs/nullableString" },
+        "doi": { "$ref": "#/$defs/nullableString" },
+        "dossierUuid": { "$ref": "#/$defs/nullableString" },
+        "literatureUuid": { "$ref": "#/$defs/nullableString" },
+        "title": { "$ref": "#/$defs/nullableString" },
+        "assessmentDate": { "$ref": "#/$defs/nullableString" }
+      }
+    },
+    "unitCorrection": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["authoritySourceId", "rawUnit", "correctedUnit", "reason"],
+      "properties": {
+        "authoritySourceId": { "type": "string", "minLength": 1 },
+        "rawUnit": { "type": "string", "minLength": 1 },
+        "correctedUnit": { "type": "string", "minLength": 1 },
+        "reason": { "type": "string", "minLength": 1 }
+      }
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "recordKey",
+        "sourceFile",
+        "sourceSheet",
+        "sourceRowNumber",
+        "documentUuid",
+        "substanceUuid",
+        "referenceSubstanceUuid",
+        "casNumber",
+        "ecNumber",
+        "assertionClass",
+        "sourceEncoding",
+        "sourceEncodingFlags",
+        "descriptor",
+        "descriptorFieldPath",
+        "bound",
+        "sourceFieldPath",
+        "sourceUnitFieldPath",
+        "sourceQualifierFieldPath",
+        "rawValue",
+        "rawUnit",
+        "rawUnitSelector",
+        "rawQualifier",
+        "normalizedValue",
+        "normalizedUnit",
+        "unitCorrection",
+        "population",
+        "assessmentYears",
+        "relationshipToCurated",
+        "temporalStatus",
+        "assertionStatus",
+        "introducedBy",
+        "mentionedIn",
+        "dossierMembership",
+        "supersedesRecordKeys",
+        "supersededByRecordKeys",
+        "effectContext",
+        "rawNarrative"
+      ],
+      "properties": {
+        "recordKey": { "type": "string", "minLength": 1 },
+        "sourceFile": { "const": "OFT3.0 export repository.xlsx" },
+        "sourceSheet": {
+          "enum": ["FLEX_SUM.ToxRefValues", "END_STUDY_REC.HumanHealth"]
+        },
+        "sourceRowNumber": { "type": "integer", "minimum": 2 },
+        "documentUuid": { "type": "string", "minLength": 1 },
+        "substanceUuid": { "type": "string", "minLength": 1 },
+        "referenceSubstanceUuid": { "type": "string", "minLength": 1 },
+        "casNumber": { "$ref": "#/$defs/nullableString" },
+        "ecNumber": { "$ref": "#/$defs/nullableString" },
+        "assertionClass": {
+          "enum": ["health_based_guidance_value", "reference_point"]
+        },
+        "sourceEncoding": { "enum": ["structured", "unstructured"] },
+        "sourceEncodingFlags": { "$ref": "#/$defs/stringArray" },
+        "descriptor": { "type": "string", "minLength": 1 },
+        "descriptorFieldPath": { "$ref": "#/$defs/nullableString" },
+        "bound": { "enum": ["lower", "upper", "narrative"] },
+        "sourceFieldPath": { "type": "string", "minLength": 1 },
+        "sourceUnitFieldPath": { "type": "string", "minLength": 1 },
+        "sourceQualifierFieldPath": { "$ref": "#/$defs/nullableString" },
+        "rawValue": { "type": ["number", "string"] },
+        "rawUnit": { "type": "string", "minLength": 1 },
+        "rawUnitSelector": { "type": "string", "minLength": 1 },
+        "rawQualifier": { "$ref": "#/$defs/nullableString" },
+        "normalizedValue": { "type": "number" },
+        "normalizedUnit": { "type": "string", "minLength": 1 },
+        "unitCorrection": { "$ref": "#/$defs/unitCorrection" },
+        "population": { "$ref": "#/$defs/nullableString" },
+        "assessmentYears": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 1900, "maximum": 2100 },
+          "uniqueItems": true
+        },
+        "relationshipToCurated": {
+          "enum": [
+            "exact_match",
+            "primary_source_unit_correction",
+            "different_historical_value",
+            "different_current_value"
+          ]
+        },
+        "temporalStatus": {
+          "enum": ["current", "historical", "currentness_uncertain"]
+        },
+        "assertionStatus": { "type": "string", "minLength": 1 },
+        "introducedBy": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/sourceReference" }
+        },
+        "mentionedIn": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/sourceReference" }
+        },
+        "dossierMembership": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/sourceReference" }
+        },
+        "supersedesRecordKeys": { "$ref": "#/$defs/stringArray" },
+        "supersededByRecordKeys": { "$ref": "#/$defs/stringArray" },
+        "effectContext": { "type": ["object", "null"] },
+        "rawNarrative": { "$ref": "#/$defs/nullableString" }
+      }
+    },
+    "reviewRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "curatedRecordId",
+        "substanceKey",
+        "referenceType",
+        "curatedValue",
+        "curatedUnit",
+        "curatedSourceIds",
+        "assertionClass",
+        "assertionStatus",
+        "regulatoryAdoptionStatus",
+        "temporalStatus",
+        "validFrom",
+        "assessmentYear",
+        "introducedBySourceIds",
+        "supportingSourceIds",
+        "databaseSourceIds",
+        "regulatoryFollowUpSourceIds",
+        "supersedesRecordIds",
+        "supportStatus",
+        "openfoodtox3Candidates"
+      ],
+      "properties": {
+        "curatedRecordId": { "type": "string", "minLength": 1 },
+        "substanceKey": { "type": "string", "minLength": 1 },
+        "referenceType": { "type": "string", "minLength": 1 },
+        "curatedValue": { "type": ["number", "null"] },
+        "curatedUnit": { "$ref": "#/$defs/nullableString" },
+        "curatedSourceIds": { "$ref": "#/$defs/stringArray" },
+        "assertionClass": {
+          "enum": ["health_based_guidance_value", "reference_point"]
+        },
+        "assertionStatus": { "type": "string", "minLength": 1 },
+        "regulatoryAdoptionStatus": { "$ref": "#/$defs/nullableString" },
+        "temporalStatus": { "const": "current" },
+        "validFrom": { "$ref": "#/$defs/nullableString" },
+        "assessmentYear": {
+          "type": ["integer", "null"],
+          "minimum": 1900,
+          "maximum": 2100
+        },
+        "introducedBySourceIds": { "$ref": "#/$defs/stringArray" },
+        "supportingSourceIds": { "$ref": "#/$defs/stringArray" },
+        "databaseSourceIds": { "$ref": "#/$defs/stringArray" },
+        "regulatoryFollowUpSourceIds": { "$ref": "#/$defs/stringArray" },
+        "supersedesRecordIds": { "$ref": "#/$defs/stringArray" },
+        "supportStatus": {
+          "enum": [
+            "exact_supported_structured",
+            "exact_supported_unstructured",
+            "supported_after_unit_normalization",
+            "supported_after_primary_source_unit_correction",
+            "supported_but_source_encoding_anomalous",
+            "conflicting_values",
+            "not_found_after_cross_sheet_search",
+            "original_output_overrides_dataset"
+          ]
+        },
+        "openfoodtox3Candidates": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/candidate" }
+        }
+      }
+    }
+  }
+}

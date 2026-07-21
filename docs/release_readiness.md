@@ -18,7 +18,9 @@ A public release candidate additionally requires the current-tree privacy
 audit, attribution and citation files, security reporting, reviewed release
 notes, and a deliberate repository-visibility decision.
 
-Stable `v0.1.0` additionally requires independent scientific signoff,
-OpenFoodTox 3.0 reconciliation under ADR 0007, and resolution of third-party
-data terms for the intended distribution. See
+Stable `v0.1.0` additionally requires positive independent scientific signoff
+on the remediated OpenFoodTox 3.0 high-impact report under ADR 0007. The first
+independent review returned `not approved`; its blockers have been corrected,
+but the revised hash still requires signoff. Stable release also requires
+resolution of third-party data terms for the intended distribution. See
 [`docs/public_release.md`](./public_release.md).

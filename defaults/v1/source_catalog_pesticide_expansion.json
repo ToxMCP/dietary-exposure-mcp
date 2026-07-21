@@ -90,11 +90,34 @@
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/8164",
       "submissionUse": "review_required",
       "normativeFor": [],
-      "supersedes": [],
+      "supersedes": [
+        "efsa.glyphosate.peer_review.2015"
+      ],
       "supersededBy": [],
       "notes": [
-        "EFSA peer review used as governed public toxicological-reference-value context for glyphosate.",
+        "Current EFSA peer review supporting a glyphosate ADI of 0.5 mg/kg bw/day and ARfD of 1.5 mg/kg bw.",
         "Dietary MCP uses this as review-oriented evidence and method provenance."
+      ]
+    },
+    {
+      "sourceId": "efsa.glyphosate.peer_review.2015",
+      "title": "Conclusion on the peer review of the pesticide risk assessment of the active substance glyphosate",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "superseded",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2015-11-12",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/4302",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [
+        "efsa.glyphosate.peer_review.2023"
+      ],
+      "notes": [
+        "Historical EFSA peer review that established the 0.5 mg/kg bw glyphosate ARfD.",
+        "Retained as superseded evidence after the 2023 peer review established an ARfD of 1.5 mg/kg bw."
       ]
     },
     {
@@ -113,6 +136,63 @@
       "supersededBy": [],
       "notes": [
         "Official JMPR evaluation used as governed Codex-global residue and reference-value context for glyphosate."
+      ]
+    },
+    {
+      "sourceId": "efsa.imidacloprid.peer_review.2008",
+      "title": "Conclusion regarding the peer review of the pesticide risk assessment of the active substance imidacloprid",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2008-07-28",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/148r",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA peer review establishing the 0.08 mg/kg bw imidacloprid ARfD.",
+        "The value was retained in EFSA's 2019 MRL consumer risk assessment and was not unconditionally superseded by the 2013 recommendation."
+      ]
+    },
+    {
+      "sourceId": "efsa.acetamiprid_imidacloprid.dnt.2013",
+      "title": "Scientific Opinion on the developmental neurotoxicity potential of acetamiprid and imidacloprid",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2013-12-17",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/3471",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "Primary EFSA scientific opinion recommending a 0.025 mg/kg bw/day ADI and 0.025 mg/kg bw ARfD for acetamiprid, and a 0.06 mg/kg bw ARfD for imidacloprid.",
+        "The imidacloprid ADI of 0.06 mg/kg bw/day was considered adequately protective; the 0.06 mg/kg bw ARfD remained a recommendation rather than an unconditional replacement."
+      ]
+    },
+    {
+      "sourceId": "efsa.imidacloprid.mrl_review.2019",
+      "title": "Review of the existing maximum residue levels for imidacloprid according to Article 12 of Regulation (EC) No 396/2005",
+      "organization": "EFSA",
+      "kind": "official_scientific_report",
+      "jurisdiction": "eu",
+      "documentStatus": "final_current",
+      "regulatoryRole": "technical_report",
+      "effectiveDate": "2019-01-31",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/5570",
+      "submissionUse": "review_required",
+      "normativeFor": [],
+      "supersedes": [],
+      "supersededBy": [],
+      "notes": [
+        "EFSA's consumer risk assessment used the 0.08 mg/kg bw ARfD derived in 2008.",
+        "This later assessment demonstrates that the 2013 recommendation of 0.06 mg/kg bw did not unconditionally supersede the 0.08 mg/kg bw context."
       ]
     },
     {
