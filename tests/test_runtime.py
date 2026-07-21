@@ -2975,6 +2975,7 @@ def test_reference_value_lookup_preserves_jurisdiction_separation_and_gap_flags(
     assert eu_records == {
         "efsa.openfoodtox.glyphosate.adi",
         "efsa.openfoodtox.glyphosate.arfd",
+        "efsa.openfoodtox.glyphosate.arfd.2015",
     }
     assert codex_records == {"jmpr.glyphosate.adi"}
     assert {item.coverage_level.value for item in codex_result.coverage_summaries} == {"deep_curated"}

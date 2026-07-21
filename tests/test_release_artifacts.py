@@ -103,6 +103,15 @@ def test_release_reports_are_built_and_written(tmp_path: Path) -> None:
     assert reports["metadata-report"]["sanitisationRuleCount"] >= 1
     assert reports["metadata-report"]["referenceCaseCount"] >= 10
     assert reports["readiness-report"]["gates"]
+    assert {
+        "OpenFoodTox 3.0 bulk records remain review_required pending qualified review.",
+        "Positive independent signoff on the remediated high-impact report is pending.",
+        (
+            "Decision-relevant reference and legal values require current "
+            "primary-source verification."
+        ),
+        "No final regulatory decision semantics.",
+    }.issubset(reports["readiness-report"]["knownLimitations"])
     assert reports["metadata-report"]["packageArtifacts"] == [
         {
             "name": package_artifact.name,

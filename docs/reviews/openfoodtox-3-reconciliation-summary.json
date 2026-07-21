@@ -1,0 +1,41 @@
+{
+  "summaryVersion": "1.0",
+  "oldSource": {
+    "sourceId": "efsa.openfoodtox.2023_snapshot",
+    "sourceDoi": "10.5281/zenodo.8120114",
+    "sourceMd5": "c3574a602191e9ef3c63f09c8263c7a7",
+    "sourceVersion": "6"
+  },
+  "newSource": {
+    "title": "OpenFoodTox 3.0: EFSA's chemical hazards database",
+    "doi": "10.5281/zenodo.19388272",
+    "zenodoRecordId": "19388272",
+    "version": "v7",
+    "publicationDate": "2026-04-30",
+    "fileName": "OFT3.0 export repository.xlsx",
+    "sizeBytes": 22595502,
+    "md5": "445fc05a6a421634df822d14131a7d83",
+    "sha256": "5181661e921651d4087b544981e1e5a63b99532844eac0112732806a00a85eda",
+    "license": "CC-BY-4.0"
+  },
+  "recordCount": 2274,
+  "classificationCounts": {
+    "ambiguous_exact_duplicate": 145,
+    "ambiguous_identity": 144,
+    "changed_or_missing_assessment_year": 234,
+    "changed_or_missing_population": 302,
+    "changed_or_missing_unit": 19,
+    "changed_or_missing_value": 21,
+    "missing_reference_type_candidate": 193,
+    "unchanged_exact": 1121,
+    "unresolved_identity": 95
+  },
+  "identityMethodCounts": {
+    "canonical_name": 32,
+    "cas": 577,
+    "exact_name": 1665
+  },
+  "unchangedExactCount": 1121,
+  "reviewRequiredCount": 1153,
+  "status": "review_required"
+}

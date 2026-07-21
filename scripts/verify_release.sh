@@ -21,19 +21,17 @@ cd "${ROOT}"
 # Keeping src explicit makes editable-install tests deterministic; the clean
 # wheel smoke test below independently verifies the built distribution.
 export PYTHONPATH="${ROOT}/src${PYTHONPATH:+:${PYTHONPATH}}"
-# Keep release bytes stable across metadata-only and repository-hygiene commits.
-# A package-definition change deliberately advances the epoch.
-VERSION_SOURCE_DATE_EPOCH="$(git log -1 --format=%at -- pyproject.toml)"
-if [[ -z "${VERSION_SOURCE_DATE_EPOCH}" ]]; then
-  printf 'Could not derive SOURCE_DATE_EPOCH from pyproject.toml history.\n' >&2
-  exit 2
-fi
+# Version-pinned epoch for the v0.1.0 distribution. Keeping this independent of
+# Git history preserves identical release bytes across GitHub squash merges and
+# clean source checkouts. Advance it deliberately with the package version.
+VERSION_SOURCE_DATE_EPOCH="1784638658" # 2026-07-21T12:57:38Z
 export SOURCE_DATE_EPOCH="${SOURCE_DATE_EPOCH:-${VERSION_SOURCE_DATE_EPOCH}}"
 
 uv sync --frozen --all-extras --group release
 uv run ruff check src/dietary_mcp tests scripts
 uv run python scripts/vendor_verify.py
 uv run python scripts/public_release_audit.py
+uv run python scripts/verify_openfoodtox3_migration.py
 uv run python scripts/scientific_invariants_gate.py --json
 uv run pytest -W error
 
@@ -82,9 +80,15 @@ env -u PYTHONPATH uv run cyclonedx-py environment \
   --output-file "${OUT}/python-sbom.cdx.json" \
   "${TMP}/smoke-venv/bin/python"
 
-(
-  cd "${OUT}"
-  shasum -a 256 dist/* python-sbom.cdx.json > SHA256SUMS
-)
+{
+  (
+    cd "${OUT}/dist"
+    shasum -a 256 *
+  )
+  (
+    cd "${OUT}"
+    shasum -a 256 python-sbom.cdx.json
+  )
+} > "${OUT}/SHA256SUMS"
 
 printf 'Dietary MCP release verification passed.\nArtifacts: %s\n' "${OUT}"

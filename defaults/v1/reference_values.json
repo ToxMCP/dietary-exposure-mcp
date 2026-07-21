@@ -12,17 +12,22 @@
       "contaminantFamily": "pesticide_residue",
       "value": 0.5,
       "unit": "mg/kg bw/day",
+      "assessmentLabel": "ADI",
+      "assessmentYear": 2023,
+      "population": "consumers",
       "sourceIds": [
-        "efsa.openfoodtox"
+        "efsa.openfoodtox",
+        "efsa.glyphosate.peer_review.2023"
       ],
+      "primarySourceId": "efsa.glyphosate.peer_review.2023",
       "databaseSourceId": "efsa.openfoodtox",
       "conflictGroupId": "glyphosate.adi.authority_conflict",
       "documentStatus": "dataset_current",
       "submissionUse": "review_required",
-      "effectiveDate": null,
+      "effectiveDate": "2023-07-26",
       "notes": [
-        "Curated public-record extract for conflict-preserving lookup support.",
-        "OpenFoodTox is treated as the first-class public EFSA reference-value database layer, while the underlying EFSA scientific outputs remain authoritative."
+        "Current EFSA glyphosate ADI from the 2023 peer-review conclusion.",
+        "OpenFoodTox 3.0 stores this assertion in Adi.upperValue; the original EFSA conclusion remains authoritative."
       ]
     },
     {
@@ -56,17 +61,50 @@
       "authority": "EFSA",
       "jurisdiction": "eu",
       "contaminantFamily": "pesticide_residue",
-      "value": 0.5,
-      "unit": "mg/kg bw/day",
+      "value": 1.5,
+      "unit": "mg/kg bw",
+      "assessmentLabel": "ARfD",
+      "assessmentYear": 2023,
+      "population": "consumers",
       "sourceIds": [
-        "efsa.openfoodtox"
+        "efsa.openfoodtox",
+        "efsa.glyphosate.peer_review.2023"
       ],
+      "primarySourceId": "efsa.glyphosate.peer_review.2023",
       "databaseSourceId": "efsa.openfoodtox",
       "documentStatus": "dataset_current",
       "submissionUse": "review_required",
-      "effectiveDate": null,
+      "effectiveDate": "2023-07-26",
       "notes": [
-        "Curated public-record extract for EFSA acute reference-value lookup support."
+        "Current EFSA glyphosate ARfD from the 2023 peer-review conclusion.",
+        "OpenFoodTox 3.0 stores 1.5 in Arfd.upperValue with a raw unit of mg/kg bw/day; the original EFSA conclusion expresses the ARfD as mg/kg bw."
+      ]
+    },
+    {
+      "recordId": "efsa.openfoodtox.glyphosate.arfd.2015",
+      "substanceKey": "glyphosate",
+      "substanceName": "Glyphosate",
+      "referenceType": "arfd",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.5,
+      "unit": "mg/kg bw",
+      "assessmentLabel": "ARfD",
+      "assessmentYear": 2015,
+      "population": "consumers",
+      "sourceIds": [
+        "efsa.openfoodtox",
+        "efsa.glyphosate.peer_review.2015"
+      ],
+      "primarySourceId": "efsa.glyphosate.peer_review.2015",
+      "databaseSourceId": "efsa.openfoodtox",
+      "documentStatus": "superseded",
+      "submissionUse": "review_required",
+      "effectiveDate": "2015-11-12",
+      "notes": [
+        "Historical EFSA glyphosate ARfD established in 2015.",
+        "Superseded by the 1.5 mg/kg bw ARfD in the 2023 EFSA peer-review conclusion."
       ]
     },
     {
@@ -79,10 +117,12 @@
       "contaminantFamily": "pesticide_residue",
       "value": 0.005,
       "unit": "mg/kg bw/day",
+      "assessmentLabel": "ADI",
+      "assessmentYear": 2024,
+      "population": "consumers",
       "sourceIds": [
         "efsa.openfoodtox",
-        "efsa.acetamiprid.statement.2024",
-        "eu.reg.2025_158"
+        "efsa.acetamiprid.statement.2024"
       ],
       "primarySourceId": "efsa.acetamiprid.statement.2024",
       "databaseSourceId": "efsa.openfoodtox",
@@ -92,8 +132,8 @@
       "effectiveDate": "2024-05-15",
       "notes": [
         "Curated public-record extract for EFSA acetamiprid chronic reference-value lookup support.",
-        "EFSA established the lower value of 0.005 mg/kg bw/day in its 2024 statement to address developmental-neurotoxicity uncertainty.",
-        "Commission Regulation (EU) 2025/158 subsequently used the lower ADI and ARfD in binding EU MRL risk-management context."
+        "The EFSA Working Group proposed 0.005 mg/kg bw/day in 2024 to address developmental-neurotoxicity uncertainty.",
+        "Commission Regulation (EU) 2025/158 is regulatory follow-up in the MRL context, not the scientific source that introduced this value."
       ]
     },
     {
@@ -105,11 +145,13 @@
       "jurisdiction": "eu",
       "contaminantFamily": "pesticide_residue",
       "value": 0.005,
-      "unit": "mg/kg bw/day",
+      "unit": "mg/kg bw",
+      "assessmentLabel": "ARfD",
+      "assessmentYear": 2024,
+      "population": "consumers",
       "sourceIds": [
         "efsa.openfoodtox",
-        "efsa.acetamiprid.statement.2024",
-        "eu.reg.2025_158"
+        "efsa.acetamiprid.statement.2024"
       ],
       "primarySourceId": "efsa.acetamiprid.statement.2024",
       "databaseSourceId": "efsa.openfoodtox",
@@ -118,8 +160,9 @@
       "effectiveDate": "2024-05-15",
       "notes": [
         "Curated public-record extract for EFSA acetamiprid acute reference-value lookup support.",
-        "EFSA established the lower value of 0.005 mg/kg bw/day in its 2024 statement to address developmental-neurotoxicity uncertainty.",
-        "Commission Regulation (EU) 2025/158 subsequently used the lower ADI and ARfD in binding EU MRL risk-management context."
+        "The EFSA Working Group proposed an ARfD of 0.005 mg/kg bw in 2024 to address developmental-neurotoxicity uncertainty.",
+        "OpenFoodTox 3.0 encodes the raw unit as mg/kg bw/day; the authoritative scientific output controls the canonical acute unit.",
+        "Commission Regulation (EU) 2025/158 is regulatory follow-up in the MRL context, not the scientific source that introduced this value."
       ]
     },
     {
@@ -132,10 +175,14 @@
       "contaminantFamily": "pesticide_residue",
       "value": 0.06,
       "unit": "mg/kg bw/day",
+      "assessmentLabel": "ADI",
+      "assessmentYear": 2013,
+      "population": "consumers",
       "sourceIds": [
         "efsa.openfoodtox",
-        "efsa.imidacloprid.dnt.2013"
+        "efsa.acetamiprid_imidacloprid.dnt.2013"
       ],
+      "primarySourceId": "efsa.acetamiprid_imidacloprid.dnt.2013",
       "databaseSourceId": "efsa.openfoodtox",
       "documentStatus": "dataset_current",
       "submissionUse": "review_required",
@@ -153,19 +200,55 @@
       "authority": "EFSA",
       "jurisdiction": "eu",
       "contaminantFamily": "pesticide_residue",
-      "value": 0.08,
+      "value": 0.06,
       "unit": "mg/kg bw",
+      "assessmentLabel": "ARfD",
+      "assessmentYear": 2013,
+      "population": "consumers",
       "sourceIds": [
         "efsa.openfoodtox",
-        "efsa.imidacloprid.dnt.2013"
+        "efsa.acetamiprid_imidacloprid.dnt.2013"
       ],
+      "primarySourceId": "efsa.acetamiprid_imidacloprid.dnt.2013",
       "databaseSourceId": "efsa.openfoodtox",
+      "conflictGroupId": "imidacloprid.arfd.efsa_context",
       "documentStatus": "dataset_current",
       "submissionUse": "review_required",
       "effectiveDate": "2013-12-17",
       "notes": [
-        "Curated public-record extract for EFSA imidacloprid acute reference-value lookup support.",
-        "Value updated to 0.08 mg/kg bw to match EFSA OpenFoodTox 2.0 (ReferenceValues_KJ_2023)."
+        "EFSA's 2013 developmental-neurotoxicity opinion recommended lowering the ARfD from 0.08 to 0.06 mg/kg bw.",
+        "The recommendation did not unconditionally replace the 0.08 mg/kg bw value retained in later EFSA MRL assessment work.",
+        "OpenFoodTox 3.0 encodes the raw 0.06 unit as mg/kg bw/day; the authoritative opinion controls the canonical acute unit."
+      ]
+    },
+    {
+      "recordId": "efsa.openfoodtox.imidacloprid.arfd.2008",
+      "substanceKey": "imidacloprid",
+      "substanceName": "Imidacloprid",
+      "referenceType": "arfd",
+      "authority": "EFSA",
+      "jurisdiction": "eu",
+      "contaminantFamily": "pesticide_residue",
+      "value": 0.08,
+      "unit": "mg/kg bw",
+      "assessmentLabel": "ARfD",
+      "assessmentYear": 2019,
+      "population": "consumers",
+      "sourceIds": [
+        "efsa.openfoodtox",
+        "efsa.imidacloprid.peer_review.2008",
+        "efsa.imidacloprid.mrl_review.2019"
+      ],
+      "primarySourceId": "efsa.imidacloprid.mrl_review.2019",
+      "databaseSourceId": "efsa.openfoodtox",
+      "conflictGroupId": "imidacloprid.arfd.efsa_context",
+      "documentStatus": "final_current",
+      "submissionUse": "review_required",
+      "effectiveDate": "2019-01-31",
+      "notes": [
+        "The 0.08 mg/kg bw ARfD was established in the 2008 EFSA peer-review conclusion and retained for consumer risk assessment in EFSA's 2019 MRL review.",
+        "It coexists with the 2013 recommendation of 0.06 mg/kg bw; callers must select the applicable assessment context.",
+        "The .2008 record identifier is retained for compatibility and identifies the value's scientific origin."
       ]
     },
     {

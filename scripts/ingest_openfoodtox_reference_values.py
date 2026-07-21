@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-"""
-Ingest EFSA OpenFoodTox 2.0 human reference values into Dietary MCP defaults.
+"""Regenerate the superseded OpenFoodTox 2.0 reconciliation baseline.
 
 This script reads:
     tmp/regulatory_sources/ReferenceValues_KJ_2023.xlsx
     tmp/regulatory_sources/SubstanceCharacterisation_KJ_2023.xlsx
 
-And produces:
-    defaults/v1/reference_values_openfoodtox.json
-    defaults/v1/substance_synonyms.json (merged with existing)
+And produces ignored historical baseline files under:
+    tmp/regulatory_sources/openfoodtox_2/
+
+This legacy importer must not overwrite the current OpenFoodTox 3.0 defaults.
 
 Run from the repo root:
     uv run python scripts/ingest_openfoodtox_reference_values.py
@@ -27,9 +27,11 @@ import pandas as pd
 REPO_ROOT = Path(__file__).resolve().parents[1]
 OPENFOODTOX_REF = REPO_ROOT / "tmp" / "regulatory_sources" / "ReferenceValues_KJ_2023.xlsx"
 OPENFOODTOX_SUB = REPO_ROOT / "tmp" / "regulatory_sources" / "SubstanceCharacterisation_KJ_2023.xlsx"
-OUTPUT_REF = REPO_ROOT / "defaults" / "v1" / "reference_values_openfoodtox.json"
-PROVENANCE_REF = REPO_ROOT / "defaults" / "v1" / "openfoodtox_reference_value_provenance.json"
-SYNONYMS_PATH = REPO_ROOT / "defaults" / "v1" / "substance_synonyms.json"
+BASELINE_OUTPUT_ROOT = REPO_ROOT / "tmp" / "regulatory_sources" / "openfoodtox_2"
+OUTPUT_REF = BASELINE_OUTPUT_ROOT / "reference_values_openfoodtox_2_baseline.json"
+PROVENANCE_REF = BASELINE_OUTPUT_ROOT / "openfoodtox_2_provenance_baseline.json"
+SYNONYMS_INPUT = REPO_ROOT / "defaults" / "v1" / "substance_synonyms.json"
+SYNONYMS_PATH = BASELINE_OUTPUT_ROOT / "substance_synonyms_openfoodtox_2_baseline.json"
 OPENFOODTOX_SOURCE_ID = "efsa.openfoodtox.2023_snapshot"
 OPENFOODTOX_SOURCE_VERSION = "6"
 OPENFOODTOX_SOURCE_DOI = "10.5281/zenodo.8120114"
@@ -222,6 +224,7 @@ def load_openfoodtox() -> pd.DataFrame:
 
 
 def main() -> None:  # noqa: C901, PLR0912, PLR0915
+    BASELINE_OUTPUT_ROOT.mkdir(parents=True, exist_ok=True)
     df = load_openfoodtox()
 
     # Filter: consumer-related populations + relevant assessments
@@ -244,8 +247,8 @@ def main() -> None:  # noqa: C901, PLR0912, PLR0915
 
     # Load existing synonyms
     existing_synonyms: list[dict] = []
-    if SYNONYMS_PATH.exists():
-        existing_synonyms = json.loads(SYNONYMS_PATH.read_text(encoding="utf-8")).get("entries", [])
+    if SYNONYMS_INPUT.exists():
+        existing_synonyms = json.loads(SYNONYMS_INPUT.read_text(encoding="utf-8")).get("entries", [])
 
     existing_keys = {entry["canonicalKey"] for entry in existing_synonyms}
 

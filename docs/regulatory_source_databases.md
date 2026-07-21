@@ -4,7 +4,7 @@ Dietary MCP v0.1 now exposes governed local source-database packs for regulatory
 
 ## Database layers
 
-- `source_catalog.json` remains the single authority registry and distinguishes current EFSA OpenFoodTox 3.0 from the superseded, checksum-pinned 2023 OpenFoodTox 2.0 bulk snapshot. It also includes EFSA food-consumption infrastructure, EU Menu metadata, FAO/JMPR, WHO, OECD, Codex, FDA, PFAS legal anchors, acrylamide regulatory sources, bisphenol food-contact sources, cadmium/lead/inorganic-arsenic/mercury contaminant sources, and EU legal anchors.
+- `source_catalog.json` remains the single authority registry and distinguishes the current checksum-pinned EFSA OpenFoodTox 3.0 runtime bulk source from the superseded 2023 OpenFoodTox 2.0 reconciliation baseline. It also includes EFSA food-consumption infrastructure, EU Menu metadata, FAO/JMPR, WHO, OECD, Codex, FDA, PFAS legal anchors, acrylamide regulatory sources, bisphenol food-contact sources, cadmium/lead/inorganic-arsenic/mercury contaminant sources, and EU legal anchors.
 - `reference_values.json` publishes curated authority-specific toxicological reference-value records without flattening EFSA, JMPR, or other authority conflicts, and now includes additional EFSA glyphosate, acetamiprid, imidacloprid, glufosinate, oxamyl, ethiprole, tetraconazole, tebuconazole, PFAS, acrylamide, BPA, cadmium, lead, inorganic arsenic, and mercury examples.
 - `consumption_datasets.json` publishes governed metadata for EFSA food-consumption infrastructure, EU Menu, DietEx support metadata, WHO GEMS/Food cluster diets, PFAS monitoring context, acrylamide monitoring context, BPA food-contact dietary context, and cadmium/lead/inorganic-arsenic/mercury dietary exposure context.
 - `method_registry.json` publishes governed metadata for PRIMo, DEEM, JMPR IEDI/IESTI context, OECD guidance records, EFSA 2023 annual pesticide-residues reporting context, glufosinate, oxamyl, ethiprole, tetraconazole, tebuconazole, spirotetramat, and difenoconazole review context, organic-food pesticide-findings context, shared EU official-control sampling and analysis rules for metals contaminants, and separate PFAS, acrylamide, bisphenol, cadmium, lead, inorganic-arsenic, mercury, and microplastics method-context layers.
@@ -23,7 +23,7 @@ Authority conflicts are preserved by design.
 - Dietary MCP does not flatten EFSA, JMPR, EPA, WHO, or other authority outputs into a single canonical reference value.
 - Conflict groups are explicit in the lookup result so downstream clients must choose a jurisdiction or review profile intentionally.
 - Curated record stubs are allowed where public redistribution of the full structured source database is unclear; provenance and source links remain explicit.
-- OpenFoodTox snapshot variations preserve structured population, qualifier, assessment-year, source-output, and unit context. The lookup never chooses a canonical value from those variations automatically.
+- OpenFoodTox 3.0 variations preserve structured population, qualifier, assessment-year, UUID, dossier, bound, persistent-identifier, and unit context. The lookup never chooses a canonical value from those variations automatically.
 
 ## EU pesticide backbone
 

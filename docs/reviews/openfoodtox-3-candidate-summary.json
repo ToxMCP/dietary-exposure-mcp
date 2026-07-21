@@ -1,0 +1,56 @@
+{
+  "summaryVersion": "1.2",
+  "source": {
+    "title": "OpenFoodTox 3.0: EFSA's chemical hazards database",
+    "doi": "10.5281/zenodo.19388272",
+    "zenodoRecordId": "19388272",
+    "version": "v7",
+    "publicationDate": "2026-04-30",
+    "fileName": "OFT3.0 export repository.xlsx",
+    "sizeBytes": 22595502,
+    "md5": "445fc05a6a421634df822d14131a7d83",
+    "sha256": "5181661e921651d4087b544981e1e5a63b99532844eac0112732806a00a85eda",
+    "license": "CC-BY-4.0"
+  },
+  "workbookSchemaSha256": "cfa197b4b57a2517eebaac67938601a07137e44942de3ee11194bc477474ac10",
+  "sourceCandidateCount": 2734,
+  "referencePointCandidateCount": 171,
+  "referencePointSourceEncodingCounts": {
+    "structured": 133,
+    "unstructured": 38
+  },
+  "emittedRuntimeRecordCount": 2417,
+  "heldCandidateCount": 317,
+  "heldReasonCounts": {
+    "curated_record_precedence": 49,
+    "missing_dossier_link": 13,
+    "missing_population": 2,
+    "non_human_population": 2,
+    "unresolved_assessment_authority": 272
+  },
+  "referenceTypeCounts": {
+    "adi": 1037,
+    "ai": 164,
+    "arfd": 628,
+    "average_requirement": 114,
+    "mtdi": 3,
+    "pri": 116,
+    "safe_maximum_intake_level": 10,
+    "tdi": 58,
+    "twi": 19,
+    "ul": 268
+  },
+  "migrationClassificationCounts": {
+    "legacy_runtime_context_exact": 987,
+    "legacy_runtime_value_or_unit_changed_or_ambiguous": 57,
+    "legacy_runtime_value_with_changed_or_ambiguous_context": 696,
+    "new_to_2023_runtime_reference_type_candidate": 88,
+    "new_to_2023_runtime_substance_candidate": 589
+  },
+  "excludedOperatorSectionRecordCounts": {
+    "acceptableOperatorExposureLevel": 622,
+    "acuteAcceptableOperatorExposureLevel": 194
+  },
+  "submissionUse": "review_required",
+  "status": "technical_migration_complete_human_review_required"
+}

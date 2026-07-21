@@ -43,6 +43,7 @@ Security = "https://github.com/ToxMCP/dietary-exposure-mcp/security/policy"
 
 [project.optional-dependencies]
 dev = [
+  "jsonschema>=4.26,<5.0",
   "pytest>=8.2",
   "pytest-cov>=5.0",
   "ruff>=0.6",
@@ -66,6 +67,7 @@ where = ["src"]
 [tool.setuptools.package-data]
 dietary_mcp = [
   "data/config/*.json",
+  "data/defaults/manifest.json",
   "data/defaults/extensions/README.md",
   "data/defaults/extensions/v1/*/*.json",
   "data/defaults/v1/*.json",
@@ -91,6 +93,7 @@ target-version = "py312"
 
 [dependency-groups]
 dev = [
+    "jsonschema>=4.26,<5.0",
     "openpyxl>=3.1.5",
     "pandas>=3.0.2",
     "pytest-xdist>=3.6.0",

@@ -513,6 +513,17 @@ def lookup_reference_values(
                 ),
             )
         )
+    if any("efsa.openfoodtox" in record.source_ids for record in matched_records):
+        quality_flags.append(
+            QualityFlag(
+                code="openfoodtox_original_output_review_required",
+                severity=Severity.WARNING,
+                message=(
+                    "At least one result comes from the current OpenFoodTox 3.0 bulk dataset. "
+                    "Review the linked original EFSA scientific output before regulatory use."
+                ),
+            )
+        )
     context_groups: dict[tuple[str, str, str], list[ReferenceValueRecord]] = {}
     for record in matched_records:
         context_groups.setdefault(

@@ -21,10 +21,12 @@ REQUIRED_FILES = (
     "THIRD_PARTY_NOTICES.md",
     "SECURITY.md",
     "CONTRIBUTING.md",
+    "CODE_OF_CONDUCT.md",
     ".github/ISSUE_TEMPLATE/bug-report.yml",
     ".github/ISSUE_TEMPLATE/scientific-correction.yml",
     ".github/ISSUE_TEMPLATE/config.yml",
     ".github/PULL_REQUEST_TEMPLATE.md",
+    "docs/applicability_limits.md",
     "docs/releases/v0.1.0-rc1.md",
 )
 TEXT_SUFFIXES = {
@@ -179,7 +181,13 @@ def _validate_public_metadata() -> list[dict[str, Any]]:
             violations.append(_violation("github_form_yaml", "GitHub form must be a YAML object.", path=relative_path))
 
     readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
-    for required_reference in ("CITATION.cff", "THIRD_PARTY_NOTICES.md", "SECURITY.md", "v0.1.0-rc1.md"):
+    for required_reference in (
+        "CITATION.cff",
+        "THIRD_PARTY_NOTICES.md",
+        "SECURITY.md",
+        "CODE_OF_CONDUCT.md",
+        "v0.1.0-rc1.md",
+    ):
         if required_reference not in readme:
             violations.append(
                 _violation(
@@ -192,15 +200,46 @@ def _validate_public_metadata() -> list[dict[str, Any]]:
         violations.append(
             _violation("private_branding", "README.md still describes the server as private.", path="README.md")
         )
+    for required_badge in (
+        "actions/workflows/security.yml/badge.svg?branch=main",
+        "actions/workflows/scientific-invariants.yml/badge.svg?branch=main",
+        "include_prereleases=true",
+    ):
+        if required_badge not in readme:
+            violations.append(
+                _violation(
+                    "readme_release_badge",
+                    f"README.md is missing release badge marker: {required_badge}",
+                    path="README.md",
+                )
+            )
 
     release_note = (REPO_ROOT / "docs/releases/v0.1.0-rc1.md").read_text(encoding="utf-8")
-    for required_phrase in ("public-review candidate", "not a stable regulatory release", "THIRD_PARTY_NOTICES.md"):
+    for required_phrase in (
+        "public-review candidate",
+        "not a stable regulatory release",
+        "OpenFoodTox 3.0",
+        "2,417",
+        "0feb8e3e4f9852c2d102375dd89d814ed08407a602d699882cf48bdd7f3c8c90",
+        "THIRD_PARTY_NOTICES.md",
+    ):
         if required_phrase not in release_note:
             violations.append(
                 _violation(
                     "release_note_boundary",
                     f"RC release note is missing required boundary text: {required_phrase}",
                     path="docs/releases/v0.1.0-rc1.md",
+                )
+            )
+
+    limitations = (REPO_ROOT / "docs/applicability_limits.md").read_text(encoding="utf-8")
+    for required_phrase in ("review_required", "Safe-use checklist", "current primary authority output"):
+        if required_phrase not in limitations:
+            violations.append(
+                _violation(
+                    "limitations_boundary",
+                    f"Limitations guide is missing required boundary text: {required_phrase}",
+                    path="docs/applicability_limits.md",
                 )
             )
     return [*violations, *_validate_workflow_supply_chain()]
