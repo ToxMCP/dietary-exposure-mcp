@@ -131,8 +131,9 @@ Any later MRTR proposal must be separate and must define:
 - All 320+ engineering tests, including adversarial scientific tests, must pass.
 - Generated schemas, examples, defaults, validation artifacts, and downstream dry
   runs must have no unexplained semantic drift.
-- The release dossier must remain `draft_ready`; external scientific expert review
-  and signoff are still required before public release.
+- The scientific-review dossier must remain `draft_ready`; external scientific
+  expert review and signoff are still required before promoting review-gated
+  records or making stronger scientific-validation claims.
 - Run concurrent calls against representative lookup, deterministic calculation,
   probabilistic, and artifact-writing tools. Results must be deterministic and
   isolated, with no cache contamination or file races.

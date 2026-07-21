@@ -27,7 +27,7 @@ REQUIRED_FILES = (
     ".github/ISSUE_TEMPLATE/config.yml",
     ".github/PULL_REQUEST_TEMPLATE.md",
     "docs/applicability_limits.md",
-    "docs/releases/v0.1.0-rc1.md",
+    "docs/releases/v0.1.0.md",
 )
 TEXT_SUFFIXES = {
     ".cff",
@@ -186,7 +186,7 @@ def _validate_public_metadata() -> list[dict[str, Any]]:
         "THIRD_PARTY_NOTICES.md",
         "SECURITY.md",
         "CODE_OF_CONDUCT.md",
-        "v0.1.0-rc1.md",
+        "v0.1.0.md",
     ):
         if required_reference not in readme:
             violations.append(
@@ -203,7 +203,7 @@ def _validate_public_metadata() -> list[dict[str, Any]]:
     for required_badge in (
         "actions/workflows/security.yml/badge.svg?branch=main",
         "actions/workflows/scientific-invariants.yml/badge.svg?branch=main",
-        "github/v/release/ToxMCP/dietary-exposure-mcp?include_prereleases&sort=semver",
+        "github/v/release/ToxMCP/dietary-exposure-mcp?sort=semver",
     ):
         if required_badge not in readme:
             violations.append(
@@ -214,10 +214,11 @@ def _validate_public_metadata() -> list[dict[str, Any]]:
                 )
             )
 
-    release_note = (REPO_ROOT / "docs/releases/v0.1.0-rc1.md").read_text(encoding="utf-8")
+    release_note = (REPO_ROOT / "docs/releases/v0.1.0.md").read_text(encoding="utf-8")
     for required_phrase in (
-        "public-review candidate",
-        "not a stable regulatory release",
+        "stable software release; screening only",
+        "not a safety conclusion",
+        "Publishing `v0.1.0` does not change those scientific states",
         "OpenFoodTox 3.0",
         "2,417",
         "0feb8e3e4f9852c2d102375dd89d814ed08407a602d699882cf48bdd7f3c8c90",
@@ -227,8 +228,8 @@ def _validate_public_metadata() -> list[dict[str, Any]]:
             violations.append(
                 _violation(
                     "release_note_boundary",
-                    f"RC release note is missing required boundary text: {required_phrase}",
-                    path="docs/releases/v0.1.0-rc1.md",
+                    f"Release note is missing required boundary text: {required_phrase}",
+                    path="docs/releases/v0.1.0.md",
                 )
             )
 

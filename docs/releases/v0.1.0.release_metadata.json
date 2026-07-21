@@ -117,13 +117,13 @@
   "packageArtifacts": [
     {
       "name": "dietary_mcp-0.1.0-py3-none-any.whl",
-      "sizeBytes": 2543399,
-      "sha256": "0664ff020b44e617ee0375379d16debe65f5dbf42bbdce7f091788d69e193ffb"
+      "sizeBytes": 2544279,
+      "sha256": "2265335215a5aea0903b16b7ff0397d9e37f7a4cb1c5b21516e64d5ceac0c77b"
     },
     {
       "name": "dietary_mcp-0.1.0.tar.gz",
-      "sizeBytes": 2342873,
-      "sha256": "46867a1eb6eeec06169e17147482767647efb7cffab6407711de7f18be654b04"
+      "sizeBytes": 2343698,
+      "sha256": "c0c947715f5b3b8176a6c8cabd7251286a4f49988383ba69547e213f13bca4f1"
     }
   ]
 }

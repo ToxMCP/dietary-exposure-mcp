@@ -15,7 +15,7 @@ model, or jurisdiction-specific regulatory assessment.
 
 ## Appropriate uses
 
-Version `v0.1.0-rc1` is suitable for:
+Version `v0.1.0` is suitable for:
 
 - deterministic acute and chronic dietary-exposure screening
 - bounded calculations when the lower and upper residue assumptions are stated
@@ -24,7 +24,7 @@ Version `v0.1.0-rc1` is suitable for:
 - comparison with versioned reference values and legal-limit records
 - review of contaminant, metals, MRL, and trade-risk evidence
 - preparation of auditable PBPK dose handoffs without running a PBPK model
-- technical and scientific evaluation of the release candidate itself
+- technical and scientific evaluation of the released screening software
 
 ## Decisions it must not make
 
@@ -44,7 +44,7 @@ uncertainty, and interpretation.
 
 ## Scientific data status
 
-The RC contains a checksum-pinned OpenFoodTox 3.0 version-7 migration with
+The release contains a checksum-pinned OpenFoodTox 3.0 version-7 migration with
 2,417 bulk runtime records and matching provenance records. Those bulk records
 remain `review_required`; importing a record does not make it curated or
 approved.
@@ -55,8 +55,9 @@ canonical content SHA-256 is
 `0feb8e3e4f9852c2d102375dd89d814ed08407a602d699882cf48bdd7f3c8c90`.
 The first independent review returned `not approved`. Its four blocking findings
 were remediated, but a new positive signoff from an independent toxicologist or
-dietary-risk assessor has not yet been recorded. The RC is therefore public
-review material, not a stable scientific release.
+dietary-risk assessor has not yet been recorded. The `v0.1.0` stable software
+label does not change those review states. The affected records remain public
+screening and review material, not an independently approved scientific corpus.
 
 Reference values, MRLs, legal limits, guidance, and authority interpretations
 can change after a snapshot is published. For any decision-relevant use, verify
@@ -100,14 +101,15 @@ in PBPK MCP.
 - `signed_off` and `signed_off_with_waivers` mean the configured workflow was
   closed for that exact versioned packet. They do not mean regulator acceptance.
 - `draft_ready` means automated evidence is internally consistent and ready for
-  review. It is not scientific approval or stable-release approval.
+  review. It is not scientific approval and does not describe the software
+  release channel.
 
 Always preserve the record identifiers, source versions, hashes, quality flags,
 assumptions, limitations, and reviewer decisions that accompany an output.
 
 ## Deployment and security limits
 
-The supported public RC path is local stdio operation. Streamable HTTP binds to
+The supported `v0.1.0` path is local stdio operation. Streamable HTTP binds to
 loopback by default and refuses unauthenticated startup unless an operator
 deliberately configures an authenticated gateway. Do not expose the server
 directly to an untrusted network. A public or multi-user deployment needs a
@@ -125,6 +127,13 @@ redistribution requires attention for the intended audience and commercial use.
 Review the repository's
 [THIRD_PARTY_NOTICES.md](https://github.com/ToxMCP/dietary-exposure-mcp/blob/main/THIRD_PARTY_NOTICES.md)
 before redistributing or repackaging the data.
+
+## Version maturity
+
+`v0.1.0` is an early `0.x` software baseline. Interfaces, defaults, evidence
+packs, and review workflows may evolve in later minor releases. Pin the exact
+version used for a calculation, preserve its evidence packet, and review release
+notes before upgrading.
 
 ## Safe-use checklist
 
