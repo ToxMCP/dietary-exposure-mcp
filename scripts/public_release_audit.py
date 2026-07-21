@@ -203,7 +203,7 @@ def _validate_public_metadata() -> list[dict[str, Any]]:
     for required_badge in (
         "actions/workflows/security.yml/badge.svg?branch=main",
         "actions/workflows/scientific-invariants.yml/badge.svg?branch=main",
-        "include_prereleases=true",
+        "github/v/release/ToxMCP/dietary-exposure-mcp?include_prereleases&sort=semver",
     ):
         if required_badge not in readme:
             violations.append(
