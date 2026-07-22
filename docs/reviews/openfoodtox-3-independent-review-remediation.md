@@ -6,6 +6,12 @@ Original disposition: **Not approved; blocking scientific issues remain**
 
 Remediation status: implementation complete; revised independent signoff pending
 
+Owner attestation status: all 16 records and required conclusions were accepted
+for governed screening by Ivo Djidrovski, PhD on 2026-07-22. The
+[attestation](./openfoodtox-3-owner-attestation-2026-07-22.md) was made in a
+disclosed project owner/maintainer capacity and does not satisfy the independent
+signoff requirement.
+
 ## Review result preserved
 
 The independent toxicologist accepted 12 of the 15 version 1.1 curated records,
@@ -58,3 +64,7 @@ approve the revised canonical object. A qualified independent reviewer must
 confirm the three corrected records, the newly explicit imidacloprid context,
 the resolved field-path control, and the exact version 1.2 content hash before
 the stable release gate can close.
+
+The later owner attestation accepts all 16 revised records for governed
+screening and is also retained as review history. Because the attestor is
+directly involved in the project, it does not alter the independent gate.

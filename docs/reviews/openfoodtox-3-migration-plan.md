@@ -2,6 +2,12 @@
 
 Status: independent review remediated; revised human scientific signoff required
 
+Owner attestation update: Ivo Djidrovski, PhD accepted the exact version 1.2
+high-impact object for governed screening on 2026-07-22. The
+[attestation](./openfoodtox-3-owner-attestation-2026-07-22.md) discloses direct
+project involvement, so the independent scientific promotion gate remains
+open.
+
 ## Objective
 
 Replace the superseded 2023 OpenFoodTox 2.0 bulk snapshot with a deterministic,
@@ -182,3 +188,6 @@ the four blockers remediated above. See
 new canonical hash and remains `review_required` until a qualified toxicologist
 positively signs off the revised values, temporal interpretations, and
 original-source readings.
+
+The project owner's positive attestation is retained as review evidence, but
+it cannot provide the independence required by this gate.

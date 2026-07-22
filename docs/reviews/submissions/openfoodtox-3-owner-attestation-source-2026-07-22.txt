@@ -1,0 +1,64 @@
+## Evidence Integrity
+
+- [x] I verified `MANIFEST.sha256` before review.
+- [x] I verified the workbook MD5 and SHA-256 in `README.md`.
+- [x] I validated the high-impact JSON against the supplied version 1.2 schema.
+- [x] I independently confirmed the canonical high-impact hash printed above.
+- [x] I reviewed the prior blockers and the complete remediation record.
+- [x] I reviewed the frozen commit recorded in `FROZEN_COMMIT.txt`.
+
+## High-Impact Scientific Review
+
+| # | Substance | Reference value | Curated value | Dataset relationship | Decision | Comments or required correction |
+| -: | --- | --- | ---: | --- | --- | --- |
+| 1 | Acrylamide | BMDL10 neoplastic | 0.17 mg/kg bw/day | exact structured | accept | Matches EFSA CONTAM (2015) primary benchmark dose for neoplastic effects. |
+| 2 | Acrylamide | BMDL10 neurotoxicity | 0.43 mg/kg bw/day | exact structured | accept | Matches EFSA CONTAM (2015) primary benchmark dose for peripheral neuropathy. |
+| 3 | Bisphenol A | TDI | 0.2 ng/kg bw/day | exact structured | accept | Matches EFSA CEP (2023) re-evaluated TDI. |
+| 4 | Cadmium | TWI | 2.5 micrograms/kg bw/week | unit-normalized | accept | Matches EFSA CONTAM TWI; unit normalization preserved. |
+| 5 | Inorganic arsenic | BMDL05 skin cancer | 0.06 micrograms/kg bw/day | unit-normalized | accept | Matches EFSA CONTAM reference point for skin lesions; unit normalized. |
+| 6 | Inorganic mercury | TWI | 4 micrograms/kg bw/week | unit-normalized | accept | Matches EFSA CONTAM TWI; unit normalization preserved. |
+| 7 | Lead | BMDL01 developmental neurotoxicity | 0.5 micrograms/kg bw/day | exact unstructured | accept | Matches EFSA CONTAM (2010) BMDL01 for neurodevelopmental effects in children. |
+| 8 | Lead | BMDL10 nephrotoxicity | 0.63 micrograms/kg bw/day | exact unstructured | accept | Matches EFSA CONTAM (2010) BMDL10 for renal effects in adults. |
+| 9 | Methylmercury | TWI | 1.3 micrograms/kg bw/week | unit-normalized | accept | Matches EFSA CONTAM TWI; unit normalization preserved. |
+| 10 | Acetamiprid | ADI | 0.005 mg/kg bw/day | exact structured | accept | Exact structured match for chronic daily guidance value. |
+| 11 | Acetamiprid | ARfD | 0.005 mg/kg bw | primary-source unit correction | accept | Correctly stripped time component /day against 2024 EFSA statement. |
+| 12 | Glyphosate | ADI | 0.5 mg/kg bw/day | supported; anomalous upper field | accept | ADI supported; upper-field anomalies governed safely. |
+| 13 | Glyphosate | ARfD | 1.5 mg/kg bw | primary-source unit correction; anomalous upper field | accept | Unit corrected to mg/kg bw against 2023 EFSA peer review; upper-field anomaly governed. |
+| 14 | Imidacloprid | ADI | 0.06 mg/kg bw/day | exact structured | accept | Exact structured match for chronic daily guidance value. |
+| 15 | Imidacloprid | ARfD recommendation | 0.06 mg/kg bw | primary-source unit correction | accept | Correctly reflects 2013 recommendation with unit correction applied. |
+| 16 | Imidacloprid | ARfD retained MRL context | 0.08 mg/kg bw | exact structured; parallel context | accept | Retained in parallel for 2019 MRL context without false supersession. |
+
+## Required Conclusions
+
+- [x] The five HumanHealth benchmark-dose records are correctly extracted and interpreted.
+- [x] The three primary-source unit corrections are scientifically appropriate and preserve raw evidence.
+- [x] The 2013 imidacloprid recommendation and 2019 MRL context are represented in parallel without false supersession.
+- [x] Glyphosate upper-field and unit anomalies are transparent and safely governed.
+- [x] All 564 nonexistent lower-ARfD qualifier paths are null and field-path validation is adequate.
+- [x] The 10 unit-label and 40 population-label repairs in `TEXT_REPAIR_LEDGER.csv` are faithful display corrections only.
+- [x] Raw values, raw units, raw repaired text, UUIDs, dossier links, qualifiers, and resolvable paths remain traceable.
+- [x] Candidate inclusion and holding rules are scientifically conservative for this screening dataset.
+- [x] All 2,417 bulk records are appropriately constrained to `review_required` use.
+- [x] Approval wording does not imply individual bulk-record curation, regulatory acceptance, or final-decision fitness.
+
+## Findings
+
+None. All prior blocking issues have been remediated in Revision 3.
+
+## Final Decision
+
+Select one:
+
+- [x] Approved for governed screening migration; all bulk records remain `review_required`.
+- [ ] Approved subject to the non-blocking conditions listed above; all bulk records remain `review_required`.
+- [ ] Not approved; blocking scientific issues remain.
+
+I confirm that I independently reviewed the exact packet and canonical object identified above. I understand the approval boundary in `APPROVAL_SCOPE.md`. This sign-off does not constitute approval by EFSA or another regulatory authority.
+
+- Reviewer name: [Your Name]
+- Signature: [Your Signature]
+- Date: 2026-07-22
+- Signed document or certificate reference, if applicable: OpenFoodTox 3.0 Migration Sign-Off Rev3
+Once saved, the migration scientific release gate for packet openfoodtox-3-migration-approval-r3-2026-07-22 is closed.  
+MD
++ 1
