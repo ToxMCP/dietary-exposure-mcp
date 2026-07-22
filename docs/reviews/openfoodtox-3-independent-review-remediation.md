@@ -24,6 +24,21 @@ release approval.
 | Glyphosate ARfD was labelled `exact_match` despite a daily raw unit | The canonical 1.5 mg/kg bw value remains unchanged. Its raw mg/kg bw/day workbook encoding and upper-field anomaly remain visible, while the normalized unit is corrected against the [2023 EFSA peer review](https://www.efsa.europa.eu/en/efsajournal/pub/8164). |
 | 564 lower-bound ARfD records cited a nonexistent `Arfd.lowerQualifier` column | All 564 paths are now null. The migration verifier requires every non-null value, unit, qualifier, and descriptor path to resolve to the pinned workbook header inventory and directly rechecks the inventory when the checksum-pinned XLSX is available. |
 
+## Pre-signoff bulk quality audit
+
+A final canonical-text audit on 22 July 2026 found source-workbook mojibake in
+10 microgram unit labels and 40 age-range population remarks. The runtime layer
+now repairs those labels for display and matching (`Âµg` to `µg`, malformed
+dashes to an en dash, and malformed comparison symbols to `≥` or `≤`). Exact
+workbook strings remain separately preserved as `rawUnit` or
+`rawPopulationRemarks` provenance.
+
+No numeric value, record identity, assessment context, or high-impact record
+changed. The version 1.2 canonical high-impact hash therefore remains stable.
+The migration verifier now rejects unresolved mojibake in canonical runtime or
+normalized provenance fields; raw source fields are exempt because preserving
+them is intentional.
+
 ## Revised review object
 
 - Review version: `1.2`

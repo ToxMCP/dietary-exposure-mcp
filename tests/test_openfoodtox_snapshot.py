@@ -5,6 +5,7 @@ from pathlib import Path
 
 from dietary_mcp.models import LookupReferenceValuesRequest
 from dietary_mcp.runtime import DietaryRuntime
+from scripts.openfoodtox3_candidates import _repair_source_text
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -37,6 +38,8 @@ def test_openfoodtox_runtime_records_preserve_structured_source_context() -> Non
     }
 
     assert len(records) == len(provenance) == 2417
+    unit_display_repairs = 0
+    population_display_repairs = 0
     for record in records:
         source = provenance[record["recordId"]]
         assert record["assessmentLabel"] == source["descriptor"]
@@ -48,8 +51,15 @@ def test_openfoodtox_runtime_records_preserve_structured_source_context() -> Non
         assert source["sourceSheet"] == "FLEX_SUM.ToxRefValues"
         assert source["sourceFieldPath"]
         assert source["rawValue"] == source["value"]
-        assert source["rawUnit"] == source["unit"]
+        assert _repair_source_text(source["rawUnit"]) == source["unit"]
+        if source["rawUnit"] != source["unit"]:
+            unit_display_repairs += 1
+        if raw_remarks := source.get("rawPopulationRemarks"):
+            assert _repair_source_text(raw_remarks) == source["populationRemarks"]
+            population_display_repairs += 1
         assert source["dossiers"]
+    assert unit_display_repairs == 10
+    assert population_display_repairs == 40
 
 
 def test_openfoodtox_candidate_gate_counts_and_curated_precedence_are_pinned() -> None:

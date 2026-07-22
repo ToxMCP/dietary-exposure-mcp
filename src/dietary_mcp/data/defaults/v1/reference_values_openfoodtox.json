@@ -21323,7 +21323,7 @@
       "jurisdiction": "eu",
       "contaminantFamily": "food_contaminant",
       "value": 75.0,
-      "unit": "Âµg/kg bw/day",
+      "unit": "µg/kg bw/day",
       "qualifier": "=",
       "assessmentLabel": "ADI",
       "assessmentYear": 2008,
@@ -22806,7 +22806,7 @@
       "jurisdiction": "eu",
       "contaminantFamily": "food_contaminant",
       "value": 29.0,
-      "unit": "Âµg/kg bw/day",
+      "unit": "µg/kg bw/day",
       "qualifier": "=",
       "assessmentLabel": "ADI",
       "assessmentYear": 2008,
@@ -33390,7 +33390,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2023,
-      "population": "children - 7â€“10 years",
+      "population": "children - 7–10 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -33669,7 +33669,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2023,
-      "population": "adolescents - 15â€“17 years",
+      "population": "adolescents - 15–17 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -33700,7 +33700,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2023,
-      "population": "children - 4â€“6 years",
+      "population": "children - 4–6 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -33731,7 +33731,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2023,
-      "population": "infants - 4â€“6 months",
+      "population": "infants - 4–6 months",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -33762,7 +33762,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2023,
-      "population": "infants - 7â€“11 months",
+      "population": "infants - 7–11 months",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -33793,7 +33793,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2023,
-      "population": "adolescents - 11â€“14 years",
+      "population": "adolescents - 11–14 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -33855,7 +33855,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2023,
-      "population": "toddlers - 1â€“3 years",
+      "population": "toddlers - 1–3 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -37845,7 +37845,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2024,
-      "population": "adolescents - 15â€“17 years",
+      "population": "adolescents - 15–17 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -37938,7 +37938,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2024,
-      "population": "adolescents - 11â€“14 years",
+      "population": "adolescents - 11–14 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -37969,7 +37969,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2024,
-      "population": "toddlers - 1â€“3 years",
+      "population": "toddlers - 1–3 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -38000,7 +38000,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2024,
-      "population": "infants - 7â€“11 months",
+      "population": "infants - 7–11 months",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -38031,7 +38031,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2024,
-      "population": "children - 7â€“10 years",
+      "population": "children - 7–10 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -38062,7 +38062,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2024,
-      "population": "children - 4â€“6 years",
+      "population": "children - 4–6 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -39195,7 +39195,7 @@
       "jurisdiction": "eu",
       "contaminantFamily": "food_contaminant",
       "value": 5.0,
-      "unit": "Âµg/kg bw/day",
+      "unit": "µg/kg bw/day",
       "qualifier": "=",
       "assessmentLabel": "ADI",
       "assessmentYear": null,
@@ -40090,7 +40090,7 @@
       "jurisdiction": "eu",
       "contaminantFamily": "food_contaminant",
       "value": 1.0,
-      "unit": "Âµg/kg bw/day",
+      "unit": "µg/kg bw/day",
       "qualifier": "=",
       "assessmentLabel": "ADI",
       "assessmentYear": 2010,
@@ -40121,7 +40121,7 @@
       "jurisdiction": "eu",
       "contaminantFamily": "food_contaminant",
       "value": 1.0,
-      "unit": "Âµg/kg bw/day",
+      "unit": "µg/kg bw/day",
       "qualifier": "=",
       "assessmentLabel": "ADI",
       "assessmentYear": 2015,
@@ -41605,7 +41605,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2023,
-      "population": "toddlers - â‰¥ 1 to < 3 years",
+      "population": "toddlers - ≥ 1 to < 3 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -41698,7 +41698,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2023,
-      "population": "adolescents - â‰¥ 14 to <18 years",
+      "population": "adolescents - ≥ 14 to <18 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -41760,7 +41760,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2023,
-      "population": "children - â‰¥ 3 to < 7 years",
+      "population": "children - ≥ 3 to < 7 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -41791,7 +41791,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2023,
-      "population": "children - â‰¥ 7 to < 9 years",
+      "population": "children - ≥ 7 to < 9 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -41822,7 +41822,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2023,
-      "population": "adolescents - â‰¥ 9 to < 14 years",
+      "population": "adolescents - ≥ 9 to < 14 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -41853,7 +41853,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2023,
-      "population": "infants - â‰¥ 4 months to < 1 year",
+      "population": "infants - ≥ 4 months to < 1 year",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -45715,7 +45715,7 @@
       "jurisdiction": "eu",
       "contaminantFamily": "food_contaminant",
       "value": 3.0,
-      "unit": "Âµg/kg bw/day",
+      "unit": "µg/kg bw/day",
       "qualifier": "=",
       "assessmentLabel": "ADI",
       "assessmentYear": null,
@@ -47124,7 +47124,7 @@
       "jurisdiction": "eu",
       "contaminantFamily": "food_contaminant",
       "value": 5.0,
-      "unit": "Âµg/kg bw/day",
+      "unit": "µg/kg bw/day",
       "qualifier": "=",
       "assessmentLabel": "ADI",
       "assessmentYear": 2007,
@@ -57322,7 +57322,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2024,
-      "population": "toddlers - 1â€“3 years",
+      "population": "toddlers - 1–3 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -57477,7 +57477,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2024,
-      "population": "children - 7â€“10 years",
+      "population": "children - 7–10 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -57539,7 +57539,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2024,
-      "population": "adolescents - 11â€“14 years",
+      "population": "adolescents - 11–14 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -57570,7 +57570,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2024,
-      "population": "infants - 4â€“6 months",
+      "population": "infants - 4–6 months",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -57601,7 +57601,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2024,
-      "population": "infants - 7â€“11 months",
+      "population": "infants - 7–11 months",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -57787,7 +57787,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2024,
-      "population": "children - 4â€“6 years",
+      "population": "children - 4–6 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -57849,7 +57849,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2024,
-      "population": "adolescents - 15â€“17 years",
+      "population": "adolescents - 15–17 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -58594,7 +58594,7 @@
       "jurisdiction": "eu",
       "contaminantFamily": "food_contaminant",
       "value": 37.5,
-      "unit": "Âµg/kg bw/day",
+      "unit": "µg/kg bw/day",
       "qualifier": "=",
       "assessmentLabel": "ADI",
       "assessmentYear": null,
@@ -58626,7 +58626,7 @@
       "jurisdiction": "eu",
       "contaminantFamily": "food_contaminant",
       "value": 37.5,
-      "unit": "Âµg/kg bw/day",
+      "unit": "µg/kg bw/day",
       "qualifier": "=",
       "assessmentLabel": "ADI",
       "assessmentYear": null,
@@ -58967,7 +58967,7 @@
       "jurisdiction": "eu",
       "contaminantFamily": "food_contaminant",
       "value": 5.0,
-      "unit": "Âµg/kg bw/day",
+      "unit": "µg/kg bw/day",
       "qualifier": "=",
       "assessmentLabel": "ADI",
       "assessmentYear": null,
@@ -59747,7 +59747,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2022,
-      "population": "adolescents - 15â€“17 years",
+      "population": "adolescents - 15–17 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -59840,7 +59840,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2022,
-      "population": "infants - 4â€“6 months",
+      "population": "infants - 4–6 months",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -59933,7 +59933,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2022,
-      "population": "children - 4â€“6 years",
+      "population": "children - 4–6 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -60057,7 +60057,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2022,
-      "population": "toddlers - 1â€“3 years",
+      "population": "toddlers - 1–3 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -60119,7 +60119,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2022,
-      "population": "infants - 7â€“11 months",
+      "population": "infants - 7–11 months",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -60181,7 +60181,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2022,
-      "population": "adolescents - 11â€“14 years",
+      "population": "adolescents - 11–14 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -60212,7 +60212,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2022,
-      "population": "children - 7â€“10 years",
+      "population": "children - 7–10 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -69676,7 +69676,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2023,
-      "population": "children - 7â€“10 years",
+      "population": "children - 7–10 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -69893,7 +69893,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2023,
-      "population": "infants - 7â€“11 months",
+      "population": "infants - 7–11 months",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -69986,7 +69986,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2023,
-      "population": "adolescents - 11â€“14 years",
+      "population": "adolescents - 11–14 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -70017,7 +70017,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2023,
-      "population": "infants - 4â€“6 months",
+      "population": "infants - 4–6 months",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -70048,7 +70048,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2023,
-      "population": "toddlers - 1â€“3 years",
+      "population": "toddlers - 1–3 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -70079,7 +70079,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2023,
-      "population": "adolescents - 15â€“17 years",
+      "population": "adolescents - 15–17 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
@@ -70110,7 +70110,7 @@
       "qualifier": "=",
       "assessmentLabel": "UL",
       "assessmentYear": 2023,
-      "population": "children - 4â€“6 years",
+      "population": "children - 4–6 years",
       "sourceOutputId": null,
       "sourceIds": [
         "efsa.openfoodtox"
