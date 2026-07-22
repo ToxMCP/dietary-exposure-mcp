@@ -138,7 +138,7 @@
     },
     {
       "path": "defaults/v1/openfoodtox_reference_value_provenance.json",
-      "sha256": "7cb19fd39c5ed46d7fbc172f3ce6d89be51a40ce0180cb00c0955f801e6a3367",
+      "sha256": "8c7e2c1f0830a12f8c9583b6e4390fa5bff5789fa2e11946377787300ee7dcaa",
       "defaultsVersion": "v1"
     },
     {
@@ -158,7 +158,7 @@
     },
     {
       "path": "defaults/v1/reference_values_openfoodtox.json",
-      "sha256": "7f3b8e5160a8d729e227b49fda65c593f9be93d74ae2f64ac7443441dab383df",
+      "sha256": "9822801338ba75b0dbee7573a6d3677eb6744ec4fb98bfa807f184c920b735e6",
       "defaultsVersion": "v1"
     },
     {

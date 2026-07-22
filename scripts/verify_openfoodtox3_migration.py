@@ -24,6 +24,7 @@ SOURCE_DOI = "10.5281/zenodo.19388272"
 SOURCE_MD5 = "445fc05a6a421634df822d14131a7d83"
 SOURCE_SHA256 = "5181661e921651d4087b544981e1e5a63b99532844eac0112732806a00a85eda"
 SCHEMA_SHA256 = "cfa197b4b57a2517eebaac67938601a07137e44942de3ee11194bc477474ac10"
+MOJIBAKE_MARKERS = ("\u00c2", "\u00e2")
 
 CURATED_PRECEDENCE_KEYS = {
     "acetamiprid",
@@ -60,6 +61,15 @@ def _load_json(path: Path) -> dict[str, Any]:
 def _require(condition: bool, message: str) -> None:
     if not condition:
         raise MigrationVerificationError(message)
+
+
+def _verify_canonical_text(value: Any, label: str) -> None:
+    if not isinstance(value, str):
+        return
+    _require(
+        not any(marker in value for marker in MOJIBAKE_MARKERS),
+        f"{label} contains unresolved source-text mojibake",
+    )
 
 
 def _sha256(path: Path) -> str:
@@ -261,6 +271,9 @@ def _verify_runtime_and_provenance(
         _require(validated.value is not None and validated.value > 0, "invalid runtime value")
         _require(bool(validated.unit), "runtime value has no unit")
         _require(bool(validated.population), "runtime value has no population")
+        _verify_canonical_text(validated.substance_name, f"{validated.record_id} substance name")
+        _verify_canonical_text(validated.unit, f"{validated.record_id} unit")
+        _verify_canonical_text(validated.population, f"{validated.record_id} population")
     _require(
         not runtime_substance_keys & CURATED_PRECEDENCE_KEYS,
         "bulk pack overrides a curated-precedence substance",
@@ -305,6 +318,13 @@ def _verify_runtime_and_provenance(
         _require(source.get("rawValue") is not None, f"{record_id} lacks raw value")
         _require(source.get("rawUnit"), f"{record_id} lacks raw unit")
         _require(bool(source.get("dossiers")), f"{record_id} lacks dossier provenance")
+        for field in ("substanceName", "unit", "normalizedUnit", "population", "populationRemarks"):
+            _verify_canonical_text(source.get(field), f"{record_id} provenance {field}")
+        if "rawPopulationRemarks" in source:
+            _require(
+                source["rawPopulationRemarks"] != source.get("populationRemarks"),
+                f"{record_id} carries a redundant raw population remark",
+            )
     lower_arfd_records = [
         item["openfoodtox3"]
         for item in provenance_records

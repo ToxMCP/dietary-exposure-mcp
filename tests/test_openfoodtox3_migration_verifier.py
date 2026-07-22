@@ -4,6 +4,7 @@ import pytest
 
 from scripts.verify_openfoodtox3_migration import (
     MigrationVerificationError,
+    _verify_canonical_text,
     _verify_field_path,
     verify_migration,
 )
@@ -42,3 +43,10 @@ def test_verifier_rejects_nonexistent_workbook_field_path() -> None:
         field_path=None,
         label="optional qualifier",
     )
+
+
+def test_verifier_rejects_mojibake_in_canonical_text() -> None:
+    with pytest.raises(MigrationVerificationError, match="mojibake"):
+        _verify_canonical_text("children - 4\u00e2\u20ac\u201c6 years", "population")
+
+    _verify_canonical_text("children - 4\u20136 years", "population")

@@ -1,6 +1,6 @@
 {
   "schema_version": "v1",
-  "dossier_id": "scientific-follow-up-owner-signoff-dossier-f03b02823af5",
+  "dossier_id": "scientific-follow-up-owner-signoff-dossier-00dfb89a6abc",
   "bundle_profile": "internal_review",
   "dossier_status": "open",
   "source_workflow": "contaminant_monitoring_review_dossier",
@@ -531,12 +531,12 @@
     "resource_uri": "release://metadata-report",
     "release_version": "0.1.0",
     "defaults_version": "v1",
-    "metadata_report_sha256": "21bdb11f48948fcc176fc96d4ec73cc031ed217e338363d6aef3f2822d8a6935",
+    "metadata_report_sha256": "0205874e3d176984e68b734fb44ed98ad8da2c52a72f3af70b6de74f3c2df619",
     "artifact_hashes": {
       "adapterManifest": "9e5c6a0adbb0fd6544cabb069e3d0b35a11b1419f704f3355ec3c965428be37d",
       "adapterTemplateManifest": "09014010cff3deaa33416af7b4e201e6ad4f0b5ae2d29b052780e8a9af9e03ad",
       "adapterWalkthroughManifest": "20f13f27a8fa3b89fd893bfe00c002df930b9ff4ed9b24946360dc0a9470b0a4",
-      "referenceValuesManifest": "f66f2d366d4bbb05f90becf5a1e327573814aefd37dbf61523c9a15d43f255d4",
+      "referenceValuesManifest": "7501ac47953fff435c5fc7141107195ae375cc3d5c8ea558749b477d565ced41",
       "mrlEnforcementManifest": "9ff968083ad2ec23d722f6927ac93803ed68110a880baaf33c450c2e6318de17",
       "contaminantLegalLimitsManifest": "0664f4d570ccb36aa70877ffbf6addbbce1b42d2fda2adef33ed8d846ad09a67",
       "consumptionDatasetsManifest": "c6a25b002ac18dea4c6cab112d5cda93a93f12d594f5874c50f605b979bde545",
@@ -560,7 +560,7 @@
       "sanitisationRulesManifest": "2627a95a0cea99b81a1900c272f701b26ffc6d08937e9e2e611c0060e9634c3b",
       "contractsManifest": "87c224ec95943bfad6596ee0ba94a6719d468441998e8abcbd3f3244a53e1136",
       "examplesManifest": "5949de6f414d0dec28d70364ecc9bb65e22790680e007984a5011def04093807",
-      "defaultsManifest": "51bf0e9395df1b00d98eef236c799d0257a29cedd11b946e8ad5c7903bbb28ff",
+      "defaultsManifest": "c6b5b69a720b2cf7bf70e5b5913255b99e40a3425ffe9fec352950513678e70b",
       "validationManifest": "14573f98896e0990b516dff83cb16291f99984a9a8d6e1874b29e50d0c48faeb"
     }
   },
@@ -702,7 +702,7 @@
     {
       "role": "release_metadata_report",
       "uri": "release://metadata-report",
-      "sha256": "21bdb11f48948fcc176fc96d4ec73cc031ed217e338363d6aef3f2822d8a6935",
+      "sha256": "0205874e3d176984e68b734fb44ed98ad8da2c52a72f3af70b6de74f3c2df619",
       "description": "Release metadata report used to pin versioned artifact hashes for this owner-lane scientific follow-up signoff dossier.",
       "confidentiality_tag": "confidential",
       "sanitisation_state": "retained"

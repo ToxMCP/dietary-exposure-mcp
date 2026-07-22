@@ -152,6 +152,35 @@ def test_candidate_migration_preserves_bounds_and_multi_dossier_context() -> Non
     assert lower["openfoodtox3"]["qualifierWasExplicit"] is False
 
 
+def test_candidate_migration_repairs_display_mojibake_and_preserves_raw_text() -> None:
+    record = _record(
+        "20",
+        "Example substance",
+        {
+            "otherReferenceValues": {
+                "ReferenceValueDescriptor": "UL",
+                "RefValue.upperValue": 40,
+                "RefValue.Unit": "\u00c2\u00b5g/day",
+                "Population": "children",
+                "Population.Remarks": "4\u00e2\u20ac\u201c6 years",
+            }
+        },
+    )
+
+    result = build_candidate_migration(_extraction([record]), _synonyms(), _old_bulk(), [])
+
+    emitted = result["defaults"]["records"][0]
+    assert emitted["unit"] == "\u00b5g/day"
+    assert emitted["population"] == "children - 4\u20136 years"
+
+    source = result["provenance"]["records"][0]["openfoodtox3"]
+    assert source["unit"] == "\u00b5g/day"
+    assert source["rawUnit"] == "\u00c2\u00b5g/day"
+    assert source["normalizedUnit"] == "ug/day"
+    assert source["populationRemarks"] == "4\u20136 years"
+    assert source["rawPopulationRemarks"] == "4\u00e2\u20ac\u201c6 years"
+
+
 def test_candidate_gates_hold_unsafe_and_curated_values() -> None:
     records = [
         _record(

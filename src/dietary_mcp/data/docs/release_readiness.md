@@ -21,6 +21,9 @@ The engineering release gates pass. Scientific promotion remains open:
   `0feb8e3e4f9852c2d102375dd89d814ed08407a602d699882cf48bdd7f3c8c90`
 - the first independent review returned `not approved`; its blockers were
   remediated, but positive independent signoff has not yet been recorded
+- the project owner accepted all 16 high-impact records for governed screening
+  on 2026-07-22; the [owner attestation](./reviews/openfoodtox-3-owner-attestation-2026-07-22.md)
+  discloses direct project involvement and does not close the independent gate
 
 Until that signoff exists, affected records must remain screening and review
 material. They must not be relabelled as curated, regulator-approved, or fit for

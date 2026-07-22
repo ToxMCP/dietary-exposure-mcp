@@ -280,10 +280,31 @@ class CandidateGenerationError(RuntimeError):
     """Raised when candidate defaults cannot be generated deterministically."""
 
 
+SOURCE_TEXT_REPAIRS = {
+    "\u00c2\u00b5": "\u00b5",
+    "\u00e2\u20ac\u00a2": "\u2022",
+    "\u00e2\u20ac\u00a6": "\u2026",
+    "\u00e2\u20ac\u0153": "\u201c",
+    "\u00e2\u20ac\u02dc": "\u2018",
+    "\u00e2\u20ac\u201c": "\u2013",
+    "\u00e2\u2030\u00a4": "\u2264",
+    "\u00e2\u2030\u00a5": "\u2265",
+}
+
+
+def _repair_source_text(value: Any) -> Any:
+    if not isinstance(value, str):
+        return value
+    repaired = value
+    for encoded, decoded in SOURCE_TEXT_REPAIRS.items():
+        repaired = repaired.replace(encoded, decoded)
+    return repaired
+
+
 def _normalize_text(value: Any) -> str | None:
     if value is None:
         return None
-    normalized = unicodedata.normalize("NFKC", str(value)).casefold().strip()
+    normalized = unicodedata.normalize("NFKC", str(_repair_source_text(value))).casefold().strip()
     normalized = normalized.replace("‘", "'").replace("’", "'")
     return re.sub(r"\s+", " ", normalized) or None
 
@@ -447,6 +468,7 @@ def _add_bounds(
     population = payload.get(population_field)
     if population_other_field:
         population = _resolved_other(payload, population_field, population_other_field)
+    population_remarks = payload.get("Population.Remarks")
     for bound in ("lower", "upper"):
         value_field = f"{value_prefix}.{bound}Value"
         if payload.get(value_field) is None:
@@ -464,7 +486,7 @@ def _add_bounds(
                 "referenceType": reference_type,
                 "bound": bound,
                 "value": payload[value_field],
-                "unit": unit,
+                "unit": _repair_source_text(unit),
                 "rawValue": payload[value_field],
                 "rawUnit": unit,
                 "rawUnitSelector": raw_unit,
@@ -476,8 +498,10 @@ def _add_bounds(
                     if qualifier_field in SECTION_QUALIFIER_FIELDS[section]
                     else None
                 ),
-                "population": population,
-                "populationRemarks": payload.get("Population.Remarks"),
+                "population": _repair_source_text(population),
+                "rawPopulation": population,
+                "populationRemarks": _repair_source_text(population_remarks),
+                "rawPopulationRemarks": population_remarks,
                 "qualifier": payload.get(qualifier_field),
                 "qualifierWasExplicit": qualifier_field in payload,
             }
@@ -631,7 +655,7 @@ def _structured_reference_point_candidates(record: dict[str, Any]) -> list[dict[
                 "bound": bound,
                 "value": raw_value,
                 "rawValue": raw_value,
-                "unit": unit,
+                "unit": _repair_source_text(unit),
                 "rawUnit": unit,
                 "rawUnitSelector": unit_selector,
                 "normalizedUnit": _normalize_unit(unit),
@@ -693,7 +717,7 @@ def _narrative_reference_point_candidates(record: dict[str, Any]) -> list[dict[s
                 "bound": "narrative",
                 "value": float(value_match.group("value")),
                 "rawValue": value_match.group("value"),
-                "unit": unit,
+                "unit": _repair_source_text(unit),
                 "rawUnit": unit,
                 "rawUnitSelector": unit,
                 "normalizedUnit": _normalize_unit(unit),
@@ -982,6 +1006,16 @@ def _build_provenance_record(
             "sourceQualifierFieldPath": candidate.get("sourceQualifierFieldPath"),
             "population": candidate.get("population"),
             "populationRemarks": candidate.get("populationRemarks"),
+            **(
+                {"rawPopulation": candidate.get("rawPopulation")}
+                if candidate.get("rawPopulation") != candidate.get("population")
+                else {}
+            ),
+            **(
+                {"rawPopulationRemarks": candidate.get("rawPopulationRemarks")}
+                if candidate.get("rawPopulationRemarks") != candidate.get("populationRemarks")
+                else {}
+            ),
             "assessmentBody": payload.get("AssessmentBody"),
             "assessmentBodyOther": payload.get("AssessmentBody.Other"),
             "criticalEndpointUuid": payload.get("CriticalEndpoint"),
