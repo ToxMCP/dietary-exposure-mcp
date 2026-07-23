@@ -32,3 +32,17 @@ def test_owner_attestation_preserves_independent_review_boundary() -> None:
     source_sha256 = hashlib.sha256(source.read_bytes()).hexdigest()
     assert source_sha256 == "f4c8f52b922df70c75546a6fff9a2f34cf898e5579be1bee51975834da71fa58"
     assert source_sha256 in attestation
+
+
+def test_readme_places_release_status_next_to_explicit_limitations() -> None:
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    architecture_index = readme.index("## Architecture")
+    release_status_index = readme.index("## Release status and intended use")
+    notice_index = readme.index("**Release status:**")
+    limitations_index = readme.index("## Current limitations")
+
+    assert "**Release status:**" not in readme[:architecture_index]
+    assert architecture_index < release_status_index < notice_index < limitations_index
+    assert "all 2,417 bulk records remain `review_required`" in readme
+    assert "accepts the 16-record high-impact report" in readme
+    assert "It is not independent signoff" in readme
