@@ -12,24 +12,6 @@
 **MCP server for food-mediated oral exposure screening, governed contaminant and pesticide review, and version-pinned dietary evidence handoffs.**
 It turns commodity residue assumptions, governed food-consumption profiles, survey-derived distributions, and monitoring-review evidence into auditable dietary intake summaries, legal-enforcement signals, and PBPK-ready oral dose exports without taking over PBPK execution, final regulatory decisions, or proprietary adapter execution.
 
-> [!IMPORTANT]
-> **Release status:** `v0.1.0` is the first stable GitHub software release of
-> Dietary Exposure MCP. It is an early `0.x` release intended for screening and
-> governed evidence handoff only. All automated release gates pass. The
-> OpenFoodTox 3.0 migration is complete, but its 2,417 bulk records remain
-> `review_required`. The project owner has accepted the 16-record high-impact
-> report for governed screening, but this is not independent signoff and that
-> scientific promotion gate remains open. The stable version label describes the
-> packaged software baseline; it is not scientific validation, a safety
-> conclusion, regulatory approval, or regulator acceptance.
-
-Use `v0.1.0` to build reproducible screening calculations, inspect assumptions,
-and prepare governed evidence handoffs. Do not use an output by itself to make
-a legal, clinical, safety, regulatory, or market-access decision. Start with the
-[release notes](./docs/releases/v0.1.0.md),
-[limitations and intended use](./docs/applicability_limits.md), and
-[release readiness](./docs/release_readiness.md).
-
 ## Architecture
 
 ```mermaid
@@ -197,12 +179,33 @@ uv run --with xlrd dietary-mcp-generate-public-seeds --workbook /path/to/gems_fo
 - `docs/adr/`: architecture decisions
 - `tests/`: runtime, defaults, validation, benchmark, and release regression coverage
 
+## Release status and intended use
+
+> [!IMPORTANT]
+> **Release status:** `v0.1.0` is the first stable GitHub software release of
+> Dietary Exposure MCP. It is an early `0.x` release intended for screening and
+> governed evidence handoff only. All automated release gates pass. The
+> OpenFoodTox 3.0 migration is complete, but its 2,417 bulk records remain
+> `review_required`. The project owner has accepted the 16-record high-impact
+> report for governed screening, but this is not independent signoff and that
+> scientific promotion gate remains open. The stable version label describes the
+> packaged software baseline; it is not scientific validation, a safety
+> conclusion, regulatory approval, or regulator acceptance.
+
+Use `v0.1.0` to build reproducible screening calculations, inspect assumptions,
+and prepare governed evidence handoffs. Do not use an output by itself to make
+a legal, clinical, safety, regulatory, or market-access decision. Start with the
+[release notes](./docs/releases/v0.1.0.md),
+[limitations and intended use](./docs/applicability_limits.md), and
+[release readiness](./docs/release_readiness.md).
+
 ## Current limitations
 
 | Area | What the limitation means | What users should do |
 | --- | --- | --- |
-| Version maturity | `v0.1.0` is an early `0.x` software baseline. Interfaces, defaults, and evidence packs may evolve in later minor releases. | Pin the exact version and review release notes before upgrading. |
-| Scientific approval | The OpenFoodTox 3.0 blockers identified in the first independent review were remediated. The [owner attestation](./docs/reviews/openfoodtox-3-owner-attestation-2026-07-22.md) accepts the revised report for governed screening but is not independent signoff. | Treat affected scientific records as screening and review material, preserve `review_required` states, and keep the independent promotion gate open. |
+| Software release status | `v0.1.0` is the first stable packaged software baseline and remains an early `0.x` release. “Stable” does not mean scientifically validated, regulator-approved, or interface-frozen. | Pin the exact version, preserve its evidence packet, and review release notes before upgrading. |
+| OpenFoodTox bulk review | The OpenFoodTox 3.0 migration is complete, but all 2,417 bulk records remain `review_required`; successful migration does not make them curated or approved. | Preserve the review state and require qualified review before controlled downstream use. |
+| Scientific promotion | The [project-owner attestation](./docs/reviews/openfoodtox-3-owner-attestation-2026-07-22.md) accepts the 16-record high-impact report for governed screening. It is not independent signoff, and the scientific promotion gate remains open. | Obtain positive independent signoff for the exact packet and canonical hash before claiming scientific promotion. |
 | Source currency | Reference values, MRLs, legal limits, and guidance can change after the pinned snapshots shipped here. | Confirm decision-relevant values against the current primary authority source. |
 | Decision scope | The server supports screening and evidence handoff; it does not issue legal, clinical, safety, or regulatory decisions. | Have a qualified assessor review inputs, applicability, uncertainty, and conclusions. |
 | Model scope | The runtime is deterministic-first. Its survey, bootstrap, and uncertainty lanes are bounded support workflows, not a universal population model. | Use a validated higher-tier model when the assessment requires one. |
