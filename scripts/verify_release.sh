@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-OUT="${1:-${ROOT}/artifacts/releases/v0.1.0}"
+OUT="${1:-${ROOT}/artifacts/releases/v0.1.1}"
 OUT="$(python3 -c 'from pathlib import Path; import sys; print(Path(sys.argv[1]).resolve())' "${OUT}")"
 ARTIFACT_ROOT="${ROOT}/artifacts/releases"
 case "${OUT}" in
@@ -21,10 +21,10 @@ cd "${ROOT}"
 # Keeping src explicit makes editable-install tests deterministic; the clean
 # wheel smoke test below independently verifies the built distribution.
 export PYTHONPATH="${ROOT}/src${PYTHONPATH:+:${PYTHONPATH}}"
-# Version-pinned epoch for the v0.1.0 distribution. Keeping this independent of
+# Version-pinned epoch for the v0.1.1 distribution. Keeping this independent of
 # Git history preserves identical release bytes across GitHub squash merges and
 # clean source checkouts. Advance it deliberately with the package version.
-VERSION_SOURCE_DATE_EPOCH="1784638658" # 2026-07-21T12:57:38Z
+VERSION_SOURCE_DATE_EPOCH="1790812800" # 2026-10-01T00:00:00Z
 export SOURCE_DATE_EPOCH="${SOURCE_DATE_EPOCH:-${VERSION_SOURCE_DATE_EPOCH}}"
 
 uv sync --frozen --all-extras --group release

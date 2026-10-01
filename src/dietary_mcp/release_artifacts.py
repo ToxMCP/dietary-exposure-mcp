@@ -381,7 +381,7 @@ def build_release_reports(
             "No direct-use oral product or PBPK execution workflows.",
             "Bounded survey and uncertainty lanes are not a general-purpose population model.",
             "No claimed equivalence to PRIMo, DEEM, DietEx, or submission portals.",
-            "v0.1.0 screening-only support is local stdio; hosted HTTP requires a separate security review.",
+            f"v{VERSION} screening-only support is local stdio; hosted HTTP requires a separate security review.",
             "Third-party attribution and redistribution terms remain applicable.",
         ],
     }

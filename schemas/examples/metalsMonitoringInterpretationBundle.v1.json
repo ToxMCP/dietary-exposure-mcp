@@ -1,6 +1,6 @@
 {
   "schema_version": "v1",
-  "bundle_id": "metals-monitoring-bundle-4208cd5f1640",
+  "bundle_id": "metals-monitoring-bundle-18b90b4107d0",
   "bundle_profile": "internal_review",
   "contaminant_family": "mercury_food_contaminants",
   "jurisdiction": "eu",
@@ -506,22 +506,22 @@
   "dependencies": [
     {
       "name": "dietary-mcp",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "role": "producer"
     },
     {
       "name": "dietary_lookup_metals_occurrence",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "role": "occurrence_workflow"
     },
     {
       "name": "dietary_lookup_metals_review_focus",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "role": "review_focus_workflow"
     },
     {
       "name": "mercury_food_contaminants",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "role": "contaminant_family"
     }
   ],

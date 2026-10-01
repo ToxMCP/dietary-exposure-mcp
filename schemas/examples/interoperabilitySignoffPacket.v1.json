@@ -1,11 +1,11 @@
 {
   "schema_version": "v1",
-  "packet_id": "interoperability-signoff-68623769bdb2",
+  "packet_id": "interoperability-signoff-d591e9bbf9a1",
   "overall_signoff_status": "signed_off_with_waivers",
   "reviewer_id": "example.regulatory.reviewer",
   "reviewer_role": "regulatory_reviewer",
-  "source_remediation_bundle_id": "interoperability-remediation-c876b80d4286",
-  "source_dossier_id": "adapter-review-dossier-3511dd4919e7",
+  "source_remediation_bundle_id": "interoperability-remediation-ee010b1981f2",
+  "source_dossier_id": "adapter-review-dossier-cfe45831c78d",
   "source_preview_profile_id": "oht_85_iuclid_json_preview",
   "target_profile": {
     "profile_id": "eu_internal_exchange_preview",

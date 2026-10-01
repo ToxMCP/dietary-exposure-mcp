@@ -282,7 +282,7 @@ def test_export_version_pinned_adapter_review_dossier_emits_release_fingerprints
     )
 
     assert dossier.dossier_status == "match"
-    assert dossier.release_metadata.release_version == "0.1.0"
+    assert dossier.release_metadata.release_version == "0.1.1"
     assert "adapterManifest" in dossier.release_metadata.artifact_hashes
     assert "adapterTemplateManifest" in dossier.release_metadata.artifact_hashes
     assert "modelGovernanceManifest" in dossier.release_metadata.artifact_hashes

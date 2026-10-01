@@ -1,5 +1,5 @@
 PACKAGE_NAME = "Dietary Exposure MCP"
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 SCHEMA_VERSION = "v1"
 DEFAULTS_VERSION = "v1"
 ALGORITHM_VERSION = "reference-dietary-intake-0.1.0"
