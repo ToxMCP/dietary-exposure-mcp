@@ -1,6 +1,6 @@
 {
   "schema_version": "v1",
-  "bundle_id": "pbpk-bundle-ffebf9bb3056",
+  "bundle_id": "pbpk-bundle-b4aa1ab1eb92",
   "route_dose_estimate": {
     "schema_version": "v1",
     "estimate_id": "route-dose-b70b45dfd96e",
@@ -110,17 +110,17 @@
   "dependencies": [
     {
       "name": "dietary-mcp",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "role": "producer"
     },
     {
       "name": "bounded_acute",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "role": "workflow"
     },
     {
       "name": "reference_dietary",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "role": "model_family"
     }
   ],

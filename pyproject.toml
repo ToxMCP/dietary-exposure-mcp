@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dietary-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "Dietary MCP for deterministic food-residue to oral intake workflows"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -35,6 +35,8 @@ dependencies = [
   "cryptography>=50.0.1",
   # HTTP transport (streamable-HTTP entrypoint).
   "uvicorn[standard]>=0.30,<1.0",
+  # Starlette 1.7 avoids deprecated AnyIO imports in transport test clients.
+  "starlette>=1.7,<2.0",
 ]
 
 [project.urls]
@@ -49,6 +51,8 @@ dev = [
   "jsonschema>=4.26,<5.0",
   "pytest>=8.2",
   "pytest-cov>=5.0",
+  # Starlette TestClient uses httpx2; keep warnings-as-errors release tests clean.
+  "httpx2>=2.13.1,<3.0",
   "ruff>=0.6",
 ]
 

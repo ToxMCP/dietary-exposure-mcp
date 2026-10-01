@@ -10,7 +10,7 @@ abstract: >-
   A Model Context Protocol server for auditable food-mediated oral exposure
   screening, governed contaminant and pesticide review, and version-pinned
   dietary evidence handoffs.
-version: 0.1.0
+version: 0.1.1
 repository-code: https://github.com/ToxMCP/dietary-exposure-mcp
 url: https://github.com/ToxMCP/dietary-exposure-mcp
 license: Apache-2.0
@@ -25,6 +25,6 @@ preferred-citation:
   authors:
     - name: ToxMCP
   title: Dietary Exposure MCP
-  version: 0.1.0
+  version: 0.1.1
   repository-code: https://github.com/ToxMCP/dietary-exposure-mcp
   license: Apache-2.0

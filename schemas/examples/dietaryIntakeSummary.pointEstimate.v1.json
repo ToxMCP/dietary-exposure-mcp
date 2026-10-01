@@ -1,6 +1,6 @@
 {
   "schema_version": "v1",
-  "summary_id": "intake-summary-a9512af28bcf",
+  "summary_id": "intake-summary-f5b08e5cf8c8",
   "scenario_id": "dietary-scenario-ba4ecce850c5",
   "scenario_class": "point_estimate",
   "intake_window_semantic": "chronic",
@@ -465,6 +465,6 @@
     "status": "completed",
     "executed_at": "2026-06-12T19:55:58.289092Z",
     "execution_mode": "synchronous",
-    "result_id": "result-dietary-scenario-ba4ecce850c5-0.1.0"
+    "result_id": "result-dietary-scenario-ba4ecce850c5-0.1.1"
   }
 }

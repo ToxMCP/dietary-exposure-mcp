@@ -1,12 +1,12 @@
 {
   "dossier": {
     "schema_version": "v1",
-    "dossier_id": "adapter-review-dossier-3511dd4919e7",
+    "dossier_id": "adapter-review-dossier-cfe45831c78d",
     "bundle_profile": "internal_review",
     "dossier_status": "match",
     "review_bundle": {
       "schema_version": "v1",
-      "bundle_id": "adapter-review-bundle-55ed536e92c3",
+      "bundle_id": "adapter-review-bundle-06dce683f64e",
       "bundle_profile": "internal_review",
       "review_status": "match",
       "model_family": "efsa_primo_adapter",
@@ -373,22 +373,22 @@
       "dependencies": [
         {
           "name": "dietary-mcp",
-          "version": "0.1.0",
+          "version": "0.1.1",
           "role": "producer"
         },
         {
           "name": "dietary_check_adapter_import",
-          "version": "0.1.0",
+          "version": "0.1.1",
           "role": "check_workflow"
         },
         {
           "name": "dietary_compare_adapter_import_to_walkthrough",
-          "version": "0.1.0",
+          "version": "0.1.1",
           "role": "comparison_workflow"
         },
         {
           "name": "efsa_primo_adapter",
-          "version": "0.1.0",
+          "version": "0.1.1",
           "role": "model_family"
         }
       ],
@@ -422,7 +422,7 @@
     },
     "release_metadata": {
       "resource_uri": "release://metadata-report",
-      "release_version": "0.1.0",
+      "release_version": "0.1.1",
       "defaults_version": "v1",
       "metadata_report_sha256": "example-release-metadata-sha256",
       "artifact_hashes": {
@@ -737,7 +737,7 @@
         "No claim of OECD Harmonised Template or IUCLID XML equivalence is made by this profile."
       ]
     },
-    "source_dossier_id": "adapter-review-dossier-3511dd4919e7",
+    "source_dossier_id": "adapter-review-dossier-cfe45831c78d",
     "bundle_profile": "internal_review",
     "profile_resource_uri": "interoperability://profile/oht_85_iuclid_json_preview",
     "documentation_resource_uri": "docs://interoperability-preview",

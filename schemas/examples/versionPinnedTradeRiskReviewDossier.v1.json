@@ -1,11 +1,11 @@
 {
   "schema_version": "v1",
-  "dossier_id": "trade-risk-review-dossier-554e870b8d9a",
+  "dossier_id": "trade-risk-review-dossier-328c221b76e5",
   "bundle_profile": "internal_review",
   "dossier_status": "review_required",
   "review_bundle": {
     "schema_version": "v1",
-    "bundle_id": "trade-risk-review-bundle-3a1edf08b49b",
+    "bundle_id": "trade-risk-review-bundle-0830fb1ed42b",
     "bundle_profile": "internal_review",
     "review_status": "review_required",
     "trade_report": {
@@ -506,17 +506,17 @@
     "dependencies": [
       {
         "name": "dietary-mcp",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "role": "producer"
       },
       {
         "name": "dietary_evaluate_global_trade_risk",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "role": "screening_workflow"
       },
       {
         "name": "dietary_export_trade_risk_review_bundle",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "role": "review_bundle_workflow"
       }
     ],
@@ -539,11 +539,11 @@
   },
   "release_metadata": {
     "resource_uri": "release://metadata-report",
-    "release_version": "0.1.0",
+    "release_version": "0.1.1",
     "defaults_version": "v1",
-    "metadata_report_sha256": "0205874e3d176984e68b734fb44ed98ad8da2c52a72f3af70b6de74f3c2df619",
+    "metadata_report_sha256": "ca50c3818a8642668c782942e8f11a29e637390a4f22f82866cf1499f23b30cf",
     "artifact_hashes": {
-      "adapterManifest": "9e5c6a0adbb0fd6544cabb069e3d0b35a11b1419f704f3355ec3c965428be37d",
+      "adapterManifest": "bf85dd8c3634340e211321d950c74b531e47dcb2df2ce9cd019d3e8a5ddd5112",
       "adapterTemplateManifest": "09014010cff3deaa33416af7b4e201e6ad4f0b5ae2d29b052780e8a9af9e03ad",
       "adapterWalkthroughManifest": "20f13f27a8fa3b89fd893bfe00c002df930b9ff4ed9b24946360dc0a9470b0a4",
       "referenceValuesManifest": "7501ac47953fff435c5fc7141107195ae375cc3d5c8ea558749b477d565ced41",
@@ -720,7 +720,7 @@
     {
       "role": "release_metadata_report",
       "uri": "release://metadata-report",
-      "sha256": "0205874e3d176984e68b734fb44ed98ad8da2c52a72f3af70b6de74f3c2df619",
+      "sha256": "ca50c3818a8642668c782942e8f11a29e637390a4f22f82866cf1499f23b30cf",
       "description": "Release metadata report used to pin versioned artifact hashes for this trade-risk review dossier.",
       "confidentiality_tag": "confidential",
       "sanitisation_state": "retained"
