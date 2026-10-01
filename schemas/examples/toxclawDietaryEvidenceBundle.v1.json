@@ -1,6 +1,6 @@
 {
   "schema_version": "v1",
-  "bundle_id": "toxclaw-bundle-9777c9c6c044",
+  "bundle_id": "toxclaw-bundle-aeadf9521c3b",
   "scenario": {
     "schema_version": "v1",
     "scenario_id": "dietary-scenario-72f95d8ade45",
@@ -875,7 +875,7 @@
   },
   "summary": {
     "schema_version": "v1",
-    "summary_id": "intake-summary-f6d1ffa783d1",
+    "summary_id": "intake-summary-3f265906455a",
     "scenario_id": "dietary-scenario-72f95d8ade45",
     "scenario_class": "bounded_acute",
     "intake_window_semantic": "acute",
@@ -1340,7 +1340,7 @@
       "status": "completed",
       "executed_at": "2026-06-12T19:55:58.289554Z",
       "execution_mode": "synchronous",
-      "result_id": "result-dietary-scenario-72f95d8ade45-0.1.1"
+      "result_id": "result-dietary-scenario-72f95d8ade45-0.2.0"
     }
   },
   "route_dose_estimate": {

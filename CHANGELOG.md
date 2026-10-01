@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [0.2.0] - Unreleased
+
+- Pilot the stable MCP Python SDK 2.2.0 with modern discovery and stateless HTTP while retaining legacy clients.
+- Preserve all released tool/resource contracts and scientific semantics; add isolated SDK v1/v2 compatibility checks and released catalog fingerprints.
+- Use public server identity and transport APIs, private catalog cache hints, and explicit HTTP/SSE security settings.
+
 ## [0.1.1] - 2026-10-01
 
 - Update the Python MCP SDK to 1.30 and retain bounded HTTP requests and session lifecycle protections.

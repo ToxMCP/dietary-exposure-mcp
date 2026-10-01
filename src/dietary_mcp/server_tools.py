@@ -6,8 +6,8 @@ import logging
 import time
 import uuid
 
-from mcp.types import CallToolResult, TextContent, ToolAnnotations
-from mcp.server.fastmcp import FastMCP
+from mcp_types import CallToolResult, TextContent, ToolAnnotations
+from mcp.server import MCPServer
 
 from dietary_mcp import models as dm
 from dietary_mcp.errors import DietaryError, DietaryErrorPayload
@@ -71,10 +71,10 @@ from dietary_mcp.runtime import DietaryRuntime
 
 _LOGGER = logging.getLogger("dietary_mcp.tools")
 _READ_ONLY_TOOL_ANNOTATIONS = ToolAnnotations(
-    readOnlyHint=True,
-    destructiveHint=False,
-    idempotentHint=True,
-    openWorldHint=False,
+    read_only_hint=True,
+    destructive_hint=False,
+    idempotent_hint=True,
+    open_world_hint=False,
 )
 def _tool_title(tool_name: str) -> str:
     words = tool_name.removeprefix("dietary_").replace("_", " ").title()
@@ -87,7 +87,7 @@ def _tool_annotations(tool_name: str) -> ToolAnnotations:
     return _READ_ONLY_TOOL_ANNOTATIONS
 
 
-def _dietary_tool(mcp: FastMCP):
+def _dietary_tool(mcp: MCPServer):
     def decorator(func):
         return mcp.tool(
             title=_tool_title(func.__name__),
@@ -115,8 +115,8 @@ def _error_result(exc: DietaryError, request_id: str) -> CallToolResult:
                 text=json.dumps(payload_dict, indent=2, sort_keys=True),
             )
         ],
-        structuredContent={"result": payload_dict},
-        isError=True,
+        structured_content={"result": payload_dict},
+        is_error=True,
     )
 
 
@@ -150,7 +150,7 @@ def _trace_tool(func):
     return wrapper
 
 
-def register_tools(mcp: FastMCP, runtime: DietaryRuntime) -> None:
+def register_tools(mcp: MCPServer, runtime: DietaryRuntime) -> None:
     @_dietary_tool(mcp)
     @_trace_tool
     def dietary_build_residue_profile(

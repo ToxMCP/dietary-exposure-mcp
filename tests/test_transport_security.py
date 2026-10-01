@@ -3,10 +3,10 @@ from __future__ import annotations
 import pytest
 
 from dietary_mcp.__main__ import validate_transport_security
-from dietary_mcp.server import create_server
 from dietary_mcp.transport.http import (
     RequestBodyLimitMiddleware,
     build_transport_security_settings,
+    create_http_app,
     max_request_bytes,
 )
 
@@ -50,12 +50,9 @@ def test_http_transport_uses_explicit_gateway_allowlists(monkeypatch: pytest.Mon
     monkeypatch.setenv("DIETARY_MCP_ALLOWED_ORIGINS", "https://app.example.test")
 
     settings = build_transport_security_settings()
-    server = create_server(stateless_http=True, transport_security=settings)
 
     assert settings.allowed_hosts == ["mcp.example.test", "internal.example.test:8443"]
     assert settings.allowed_origins == ["https://app.example.test"]
-    assert server.settings.stateless_http is True
-    assert server.settings.transport_security == settings
 
 
 @pytest.mark.parametrize("name", ["DIETARY_MCP_ALLOWED_HOSTS", "DIETARY_MCP_ALLOWED_ORIGINS"])
@@ -170,3 +167,9 @@ async def test_http_transport_replays_bounded_body_to_mcp_app() -> None:
 
     assert received_body == b"1234567"
     assert responses[0]["status"] == 204
+
+
+def test_http_app_factory_fails_closed(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.delenv("DIETARY_MCP_ALLOW_UNAUTHENTICATED_HTTP", raising=False)
+    with pytest.raises(SystemExit, match="Refusing to start unauthenticated"):
+        create_http_app()

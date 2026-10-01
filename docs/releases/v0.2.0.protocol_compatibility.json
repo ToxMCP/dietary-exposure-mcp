@@ -1,0 +1,81 @@
+{
+  "candidateVersion": "0.2.0",
+  "sdkVersion": "2.2.0",
+  "baselineVersion": "0.1.1",
+  "baselineCommit": "943f80032214538ca1bc50c93d67389307f9dfc0",
+  "baselineWheelSha256": "376c60a8b4a68d51bd0d09c9581651619a3c1e6ca2a5e948c45b0d6347661a27",
+  "candidateArtifacts": [
+    {
+      "name": "dietary_mcp-0.2.0-py3-none-any.whl",
+      "sha256": "17f96ef8e2836f417e5e4e3a5c9a95f61c04a255d171c07a0b374218dfbc40e9"
+    },
+    {
+      "name": "dietary_mcp-0.2.0.tar.gz",
+      "sha256": "d5041eafc24fc020ec66565d73209f808f4afae52dac18c0fe126d02cb4958bb"
+    }
+  ],
+  "installedWheelMatrix": [
+    {
+      "clientSdk": "1.30.0",
+      "protocolVersion": "2025-11-25",
+      "transport": "stdio",
+      "status": "passed"
+    },
+    {
+      "clientSdk": "1.30.0",
+      "protocolVersion": "2025-11-25",
+      "transport": "streamable-http",
+      "status": "passed"
+    },
+    {
+      "clientSdk": "2.2.0",
+      "protocolVersion": "2026-07-28",
+      "transport": "stdio",
+      "status": "passed"
+    },
+    {
+      "clientSdk": "2.2.0",
+      "protocolVersion": "2026-07-28",
+      "transport": "streamable-http",
+      "status": "passed"
+    }
+  ],
+  "catalogParity": {
+    "tools": 49,
+    "fixedResources": 34,
+    "resourceTemplates": 32,
+    "allContractsMatchReleasedWheel": true
+  },
+  "workflowParity": {
+    "representativeWorkflows": 7,
+    "allLegacyModernResultsMatch": true,
+    "releasedScientificValuesUnchanged": true,
+    "excludedPerInvocationFields": [
+      "generated_at",
+      "generatedAt",
+      "executed_at",
+      "executedAt",
+      "requestId"
+    ],
+    "newSoftwareVersionAndDerivedProvenanceIdsExpected": true
+  },
+  "scientificValidation": {
+    "suites": 35,
+    "cases": 455,
+    "failedCases": 0,
+    "projectedSpineObjects": 14,
+    "promotionStatus": "human_toxicologist_review_required"
+  },
+  "dependencyAudit": {
+    "pilotFullGraphPackages": 109,
+    "legacyClientPackages": 29,
+    "knownVulnerabilities": 0,
+    "trivyFilesystemHighCriticalFindings": 0
+  },
+  "rollout": {
+    "published": false,
+    "hostedDeployment": false,
+    "otherRepositoriesMigrated": false,
+    "rollbackRelease": "v0.1.1"
+  }
+}

@@ -1,12 +1,12 @@
 {
   "dossier": {
     "schema_version": "v1",
-    "dossier_id": "contaminant-monitoring-review-dossier-20b8084744a0",
+    "dossier_id": "contaminant-monitoring-review-dossier-3b08464827a0",
     "bundle_profile": "internal_review",
     "dossier_status": "open",
     "interpretation_bundle": {
       "schema_version": "v1",
-      "bundle_id": "contaminant-monitoring-bundle-3302f734b6ce",
+      "bundle_id": "contaminant-monitoring-bundle-5749b85c995d",
       "bundle_profile": "internal_review",
       "contaminant_family": "mercury_food_contaminants",
       "jurisdiction": "eu",
@@ -962,27 +962,27 @@
       "dependencies": [
         {
           "name": "dietary-mcp",
-          "version": "0.1.1",
+          "version": "0.2.0",
           "role": "producer"
         },
         {
           "name": "dietary_check_contaminant_monitoring_import",
-          "version": "0.1.1",
+          "version": "0.2.0",
           "role": "check_workflow"
         },
         {
           "name": "dietary_lookup_occurrence_evidence",
-          "version": "0.1.1",
+          "version": "0.2.0",
           "role": "occurrence_evidence_workflow"
         },
         {
           "name": "dietary_lookup_analytical_method_evidence",
-          "version": "0.1.1",
+          "version": "0.2.0",
           "role": "analytical_method_evidence_workflow"
         },
         {
           "name": "mercury_food_contaminants",
-          "version": "0.1.1",
+          "version": "0.2.0",
           "role": "contaminant_family"
         }
       ],
@@ -1023,11 +1023,11 @@
     },
     "signoff_packet": {
       "schema_version": "v1",
-      "packet_id": "contaminant-monitoring-signoff-16234a872c1e",
+      "packet_id": "contaminant-monitoring-signoff-8bfae80c6ce7",
       "overall_signoff_status": "open",
       "reviewer_id": "example.contaminant.reviewer",
       "reviewer_role": "contaminant_monitoring_reviewer",
-      "source_bundle_id": "contaminant-monitoring-bundle-3302f734b6ce",
+      "source_bundle_id": "contaminant-monitoring-bundle-5749b85c995d",
       "contaminant_family": "mercury_food_contaminants",
       "jurisdiction": "eu",
       "authority": null,
@@ -1512,7 +1512,7 @@
     },
     "release_metadata": {
       "resource_uri": "release://metadata-report",
-      "release_version": "0.1.1",
+      "release_version": "0.2.0",
       "defaults_version": "v1",
       "metadata_report_sha256": "example-release-metadata-sha256",
       "artifact_hashes": {

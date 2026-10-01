@@ -1,7 +1,7 @@
 {
   "review_bundle": {
     "schema_version": "v1",
-    "bundle_id": "trade-risk-review-bundle-0830fb1ed42b",
+    "bundle_id": "trade-risk-review-bundle-a730d3eb45ea",
     "bundle_profile": "internal_review",
     "review_status": "review_required",
     "trade_report": {
@@ -502,17 +502,17 @@
     "dependencies": [
       {
         "name": "dietary-mcp",
-        "version": "0.1.1",
+        "version": "0.2.0",
         "role": "producer"
       },
       {
         "name": "dietary_evaluate_global_trade_risk",
-        "version": "0.1.1",
+        "version": "0.2.0",
         "role": "screening_workflow"
       },
       {
         "name": "dietary_export_trade_risk_review_bundle",
-        "version": "0.1.1",
+        "version": "0.2.0",
         "role": "review_bundle_workflow"
       }
     ],

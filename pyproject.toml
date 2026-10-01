@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dietary-mcp"
-version = "0.1.1"
+version = "0.2.0"
 description = "Dietary MCP for deterministic food-residue to oral intake workflows"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -20,7 +20,7 @@ classifiers = [
   "Topic :: Scientific/Engineering",
 ]
 dependencies = [
-  "mcp[cli]>=1.30.0,<2.0.0",
+  "mcp[cli]==2.2.0",
   "anyio>=4.14.2,<5.0.0",
   "pyjwt[crypto]>=2.15.0,<3.0.0",
   "pydantic-settings>=2.14.2,<3.0.0",

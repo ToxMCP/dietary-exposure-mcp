@@ -1,7 +1,7 @@
 {
   "handoff_packet": {
     "schema_version": "v1",
-    "packet_id": "scientific-follow-up-owner-6e22598553f4",
+    "packet_id": "scientific-follow-up-owner-0e5a19340188",
     "overall_status": "pass",
     "target_profile": {
       "profile_id": "mercury_internal_review",
@@ -12,9 +12,9 @@
         "This profile supports review-oriented mercury source lookup and documentation without implying a native mercury submission engine."
       ]
     },
-    "source_board_id": "scientific-follow-up-board-f49eefa43f2f",
-    "source_bundle_id": "scientific-follow-up-b36840c66253",
-    "source_dossier_id": "contaminant-monitoring-review-dossier-20b8084744a0",
+    "source_board_id": "scientific-follow-up-board-73ace6a05aef",
+    "source_bundle_id": "scientific-follow-up-7e376b2f120f",
+    "source_dossier_id": "contaminant-monitoring-review-dossier-3b08464827a0",
     "source_dossier_status": "open",
     "source_workflow": "contaminant_monitoring_review_dossier",
     "bundle_profile": "internal_review",

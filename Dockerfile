@@ -30,11 +30,11 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 WORKDIR ${APP_HOME}
 
 # Install uv from PyPI so no external registry pull is required at build time.
-RUN pip install --no-cache-dir "uv==0.7.12"
+RUN pip install --no-cache-dir "uv==0.12.21"
 
 # Copy only the dependency manifests first so Docker cache layers survive
 # source-only changes.
-COPY pyproject.toml uv.lock README.md ./
+COPY pyproject.toml uv.lock README.md LICENSE THIRD_PARTY_NOTICES.md ./
 
 # Install all runtime dependencies from the locked file.
 # --no-install-project: only deps, not the package itself yet.
