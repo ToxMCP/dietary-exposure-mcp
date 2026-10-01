@@ -20,7 +20,7 @@ classifiers = [
   "Topic :: Scientific/Engineering",
 ]
 dependencies = [
-  "mcp[cli]>=1.28.1,<2.0.0",
+  "mcp[cli]>=1.30.0,<2.0.0",
   "anyio>=4.14.2,<5.0.0",
   "pyjwt[crypto]>=2.15.0,<3.0.0",
   "pydantic-settings>=2.14.2,<3.0.0",
@@ -93,6 +93,10 @@ markers = [
 [tool.ruff]
 line-length = 100
 target-version = "py312"
+
+[tool.uv]
+# Patched release-tool dependencies; these are not application runtime requirements.
+constraint-dependencies = ["pip>=26.2,<27.0", "urllib3>=2.8.0,<3.0"]
 
 [dependency-groups]
 dev = [
