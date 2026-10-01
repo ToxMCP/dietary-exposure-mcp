@@ -31,7 +31,7 @@ jobs:
         run: docker build --tag dietary-mcp-pilot .
       - name: Check container SDK and package imports
         run: |
-          docker run --rm --entrypoint python dietary-mcp-pilot -c \
+          docker run --rm --entrypoint /app/.venv/bin/python dietary-mcp-pilot -c \
             'from importlib.metadata import version; from dietary_mcp.server import create_server; from dietary_mcp.package_metadata import VERSION; assert version("mcp") == "2.2.0"; assert version("dietary-mcp") == VERSION; create_server()'
 
   mcp-conformance:
