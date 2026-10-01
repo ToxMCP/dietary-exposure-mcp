@@ -21,21 +21,15 @@ jobs:
           python-version: "3.12"
       - uses: astral-sh/setup-uv@11f9893b081a58869d3b5fccaea48c9e9e46f990 # v8.3.2
       - name: Install project and security tools
-        run: |
-          if [ -f uv.lock ]; then
-            uv sync --all-extras --dev || uv sync --dev
-            uv pip install bandit pip-audit cyclonedx-bom
-          else
-            python -m pip install -e ".[dev]" bandit pip-audit cyclonedx-bom
-          fi
+        run: uv sync --frozen --all-extras --all-groups
       - name: Ruff
         run: |
           if grep -q '^\[tool\.ruff' pyproject.toml; then
-            if [ -f uv.lock ]; then uv run ruff check .; else ruff check .; fi
+            uv run --frozen --all-extras --all-groups ruff check .
           fi
       - name: Tests
         run: |
-          if [ -f uv.lock ]; then uv run pytest -q; else pytest -q; fi
+          uv run --frozen --all-extras --all-groups pytest -q
       - name: Bandit
         # Gate on medium+ severity. The only findings are low-severity false
         # positives in scientific code: seeded random.Random for Monte-Carlo
@@ -43,18 +37,16 @@ jobs:
         # try/except/continue blocks that intentionally skip missing registry
         # records (B112). Medium/high issues still fail the build.
         run: |
-          if [ -f uv.lock ]; then uv run bandit -r src -x tests --severity-level medium; else bandit -r src -x tests --severity-level medium; fi
+          uv run --frozen --all-extras --all-groups bandit -r src -x tests --severity-level medium
       - name: pip-audit
         run: |
-          if [ -f uv.lock ]; then uv run pip-audit --desc; else pip-audit --desc; fi
+          uv lock --check
+          uv export --frozen --all-extras --all-groups --no-emit-project --output-file /tmp/dietary-locked-requirements.txt
+          uvx pip-audit==2.10.1 --strict --desc --no-deps --disable-pip --requirement /tmp/dietary-locked-requirements.txt
       - name: Generate CycloneDX SBOM
         run: |
           mkdir -p artifacts
-          if [ -f uv.lock ]; then
-            uv run cyclonedx-py environment --output-format JSON --output-file artifacts/python-sbom.cdx.json
-          else
-            cyclonedx-py environment --output-format JSON --output-file artifacts/python-sbom.cdx.json
-          fi
+          uv run --frozen --all-extras --all-groups cyclonedx-py environment --output-format JSON --output-file artifacts/python-sbom.cdx.json
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: python-sbom
