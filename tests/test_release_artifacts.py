@@ -1,3 +1,4 @@
+from dietary_mcp.package_metadata import VERSION
 import json
 from pathlib import Path
 
@@ -128,7 +129,7 @@ def test_release_reports_are_built_and_written(tmp_path: Path) -> None:
     for path in written.values():
         assert path.exists()
         payload = json.loads(path.read_text())
-        assert payload["version"] == "0.1.1"
+        assert payload["version"] == VERSION
     downstream = json.loads(written["downstream-dry-runs"].read_text())
     validation_dossier = json.loads(written["validation-dossier"].read_text())
     assert downstream["status"] == "pass"

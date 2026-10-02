@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 import json
+from threading import RLock
 from pathlib import Path
 
-from mcp.server.fastmcp import FastMCP
+from mcp.server import MCPServer
 
 from dietary_mcp.adapter_manifest import build_adapter_manifest
 from dietary_mcp.adapter_walkthroughs import build_adapter_walkthrough, build_adapter_walkthrough_manifest
@@ -29,11 +30,15 @@ from dietary_mcp.template_assets import read_adapter_template, read_adapter_temp
 
 
 def register_resources(
-    mcp: FastMCP,
+    mcp: MCPServer,
     repo_root: Path,
     defaults: DefaultsRegistry,
     runtime: DietaryRuntime,
 ) -> None:
+    # SDK v2 dispatches sync resources in worker threads. Coalesce expensive
+    # report-cache fills while retaining concurrent calculation/lookup tools.
+    release_report_lock = RLock()
+
     @mcp.resource("contracts://manifest")
     def contracts_manifest() -> str:
         return json.dumps(build_contract_manifest(), indent=2)
@@ -160,7 +165,8 @@ def register_resources(
 
     @mcp.resource("release://{report_name}")
     def release_resource(report_name: str) -> str:
-        return json.dumps(build_release_reports(repo_root)[report_name], indent=2)
+        with release_report_lock:
+            return json.dumps(build_release_reports(repo_root)[report_name], indent=2)
 
     @mcp.resource("validation://manifest")
     def validation_manifest_resource() -> str:

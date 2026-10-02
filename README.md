@@ -71,6 +71,19 @@ The released server is broader than a simple dietary calculator, but the boundar
 
 For the suite-level routing view, see [docs/suite_integration.md](./docs/suite_integration.md).
 
+## MCP v2 pilot
+
+The current source branch prepares **v0.2.0**, using stable Python MCP SDK
+2.2.0. Modern hosts gain discovery, stateless HTTP and private catalog caching;
+legacy MCP hosts keep their existing stdio commands and HTTP endpoint.
+The scientific tool surface remains the same. Python applications embedding
+the SDK must adapt to `MCPServer` and snake_case result attributes.
+
+This candidate is separate from the released v0.1.1 installation below.
+See the [migration decision](docs/adr/0008-stable-mcp-v2-pilot.md) and
+[candidate notes](docs/releases/v0.2.0.md). The full MCP Apps and multi-round-trip
+workflow features are separate future work.
+
 ## What's in v0.1.1
 
 - Deterministic point-estimate dietary intake scenarios with acute, chronic, and bounded summary support

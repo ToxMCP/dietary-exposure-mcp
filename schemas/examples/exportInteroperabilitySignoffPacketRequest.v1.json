@@ -1,7 +1,7 @@
 {
   "remediation_bundle": {
     "schema_version": "v1",
-    "bundle_id": "interoperability-remediation-ee010b1981f2",
+    "bundle_id": "interoperability-remediation-2b8d0ebb6b56",
     "overall_status": "review_required",
     "target_profile": {
       "profile_id": "eu_internal_exchange_preview",
@@ -17,7 +17,7 @@
       ]
     },
     "source_preview_profile_id": "oht_85_iuclid_json_preview",
-    "source_dossier_id": "adapter-review-dossier-cfe45831c78d",
+    "source_dossier_id": "adapter-review-dossier-c0d2f9105b26",
     "linked_dossier_readiness_profile": "eu_internal_review",
     "linked_dossier_readiness_status": "review_required",
     "action_items": [

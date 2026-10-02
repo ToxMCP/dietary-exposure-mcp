@@ -31,8 +31,27 @@ def main() -> None:
     )
     args = parser.parse_args()
     validate_transport_security(args.transport)
+    if args.transport == "streamable-http":
+        from dietary_mcp.transport.http import main as http_main
+
+        http_main()
+        return
     server = create_server()
-    server.run(transport=args.transport)
+    if args.transport == "sse":
+        from dietary_mcp.transport.http import (
+            build_transport_security_settings,
+            max_request_bytes,
+        )
+
+        server.run(
+            transport="sse",
+            host=os.environ.get("DIETARY_MCP_HOST", "127.0.0.1"),
+            port=int(os.environ.get("DIETARY_MCP_PORT", "8000")),
+            max_request_body_size=max_request_bytes(),
+            transport_security=build_transport_security_settings(),
+        )
+    else:
+        server.run(transport="stdio")
 
 
 if __name__ == "__main__":

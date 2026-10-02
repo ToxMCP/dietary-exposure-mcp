@@ -23,6 +23,17 @@ permissions:
   contents: read
 
 jobs:
+  container-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+      - name: Build frozen runtime image
+        run: docker build --tag dietary-mcp-pilot .
+      - name: Check container SDK and package imports
+        run: |
+          docker run --rm --entrypoint /app/.venv/bin/python dietary-mcp-pilot -c \
+            'from importlib.metadata import version; from dietary_mcp.server import create_server; from dietary_mcp.package_metadata import VERSION; assert version("mcp") == "2.2.0"; assert version("dietary-mcp") == VERSION; create_server()'
+
   mcp-conformance:
     runs-on: ubuntu-latest
     steps:
@@ -45,6 +56,58 @@ jobs:
           else
             pytest tests/test_mcp_conformance.py -q
           fi
+      - name: Install isolated SDK v1 client
+        run: uv sync --frozen --project tests/compatibility/legacy-client
+      - name: Build and install wheel in a separate server environment
+        run: |
+          uv build --wheel --out-dir artifacts/compatibility/dist
+          uv export --quiet --frozen --no-dev --no-emit-project --output-file artifacts/compatibility/runtime.txt
+          uv venv artifacts/compatibility/server-env
+          uv pip install --python artifacts/compatibility/server-env/bin/python \
+            --requirement artifacts/compatibility/runtime.txt artifacts/compatibility/dist/*.whl
+      - name: Compare real SDK v1 and modern v2 clients
+        run: |
+          mkdir -p artifacts/compatibility
+          tests/compatibility/legacy-client/.venv/bin/python scripts/protocol_probe.py \
+            --server-python "$PWD/artifacts/compatibility/server-env/bin/python" \
+            --fixtures schemas/examples --output artifacts/compatibility/legacy.json
+          uv run --frozen python scripts/protocol_probe.py --modern \
+            --server-python "$PWD/artifacts/compatibility/server-env/bin/python" \
+            --fixtures schemas/examples --output artifacts/compatibility/modern.json
+          uv run --frozen python scripts/check_protocol_compatibility.py \
+            artifacts/compatibility/legacy.json artifacts/compatibility/modern.json
+      - name: Compare installed wheel over HTTP with both client generations
+        env:
+          DIETARY_MCP_ALLOW_UNAUTHENTICATED_HTTP: "true"
+        run: |
+          artifacts/compatibility/server-env/bin/dietary-mcp-http > artifacts/compatibility/http-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" || true; wait "$server_pid" || true' EXIT
+                    uv run --frozen python - <<'PYREADY'
+          import time
+          import urllib.error
+          import urllib.request
+          for attempt in range(60):
+              try:
+                  urllib.request.urlopen("http://127.0.0.1:8000/mcp", timeout=1)
+                  break
+              except urllib.error.HTTPError as exc:
+                  if exc.code < 500:
+                      break
+                  raise
+              except urllib.error.URLError:
+                  time.sleep(0.5)
+          else:
+              raise SystemExit("Installed HTTP server did not become ready")
+          PYREADY
+          tests/compatibility/legacy-client/.venv/bin/python scripts/protocol_probe.py \
+            --url http://127.0.0.1:8000/mcp --fixtures schemas/examples \
+            --output artifacts/compatibility/legacy-http.json
+          uv run --frozen python scripts/protocol_probe.py --modern \
+            --url http://127.0.0.1:8000/mcp --fixtures schemas/examples \
+            --output artifacts/compatibility/modern-http.json
+          uv run --frozen python scripts/check_protocol_compatibility.py \
+            artifacts/compatibility/legacy-http.json artifacts/compatibility/modern-http.json
 
   schema-drift:
     runs-on: ubuntu-latest

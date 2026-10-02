@@ -1,11 +1,11 @@
 {
   "schema_version": "v1",
-  "dossier_id": "adapter-review-dossier-cfe45831c78d",
+  "dossier_id": "adapter-review-dossier-c0d2f9105b26",
   "bundle_profile": "internal_review",
   "dossier_status": "match",
   "review_bundle": {
     "schema_version": "v1",
-    "bundle_id": "adapter-review-bundle-06dce683f64e",
+    "bundle_id": "adapter-review-bundle-0bebe0978fd6",
     "bundle_profile": "internal_review",
     "review_status": "match",
     "model_family": "efsa_primo_adapter",
@@ -372,22 +372,22 @@
     "dependencies": [
       {
         "name": "dietary-mcp",
-        "version": "0.1.1",
+        "version": "0.2.0",
         "role": "producer"
       },
       {
         "name": "dietary_check_adapter_import",
-        "version": "0.1.1",
+        "version": "0.2.0",
         "role": "check_workflow"
       },
       {
         "name": "dietary_compare_adapter_import_to_walkthrough",
-        "version": "0.1.1",
+        "version": "0.2.0",
         "role": "comparison_workflow"
       },
       {
         "name": "efsa_primo_adapter",
-        "version": "0.1.1",
+        "version": "0.2.0",
         "role": "model_family"
       }
     ],
@@ -421,7 +421,7 @@
   },
   "release_metadata": {
     "resource_uri": "release://metadata-report",
-    "release_version": "0.1.1",
+    "release_version": "0.2.0",
     "defaults_version": "v1",
     "metadata_report_sha256": "example-release-metadata-sha256",
     "artifact_hashes": {

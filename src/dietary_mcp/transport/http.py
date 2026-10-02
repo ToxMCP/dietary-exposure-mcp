@@ -22,7 +22,7 @@ This delegates directly to dietary_mcp.__main__.validate_transport_security.
 Deploy this entrypoint only behind an authenticated gateway (reverse proxy,
 API gateway, etc.) and set the env var in that context.
 
-The same FastMCP server object is used here as for the stdio entrypoint —
+The same MCPServer object is used here as for the stdio entrypoint —
 the MCP tool surface is identical on both transports.
 """
 
@@ -33,6 +33,7 @@ import sys
 from collections.abc import Awaitable, Callable
 from typing import Any
 
+from mcp.server import MCPServer
 from mcp.server.transport_security import TransportSecuritySettings
 
 
@@ -139,13 +140,28 @@ class RequestBodyLimitMiddleware:
         await send({"type": "http.response.body", "body": body})
 
 
-def main() -> None:
-    """HTTP entrypoint: honour auth guard, wrap the MCP server with streamable-http, run uvicorn."""
-    # Honour the fail-closed remote-transport security guard.
-    # This is the same check performed by __main__.validate_transport_security.
+def create_http_app(server: MCPServer | None = None) -> RequestBodyLimitMiddleware:
+    """Build the guarded, bounded HTTP app for both modern and legacy clients."""
     from dietary_mcp.__main__ import validate_transport_security
+    from dietary_mcp.server import create_server
 
     validate_transport_security("streamable-http")
+    limit = max_request_bytes()
+    security = build_transport_security_settings()
+    server = server or create_server()
+    app = server.streamable_http_app(
+        json_response=True,
+        stateless_http=True,
+        max_request_body_size=limit,
+        transport_security=security,
+        host=os.environ.get("DIETARY_MCP_HOST", "127.0.0.1"),
+    )
+    return RequestBodyLimitMiddleware(app, limit)
+
+
+def main() -> None:
+    """Run the guarded HTTP app with explicit transport settings."""
+    app = create_http_app()
 
     try:
         import uvicorn
@@ -157,19 +173,8 @@ def main() -> None:
         )
         sys.exit(1)
 
-    from dietary_mcp.server import create_server
-
     host = os.environ.get("DIETARY_MCP_HOST", "127.0.0.1")
     port = int(os.environ.get("DIETARY_MCP_PORT", "8000"))
-
-    mcp = create_server(
-        stateless_http=True,
-        transport_security=build_transport_security_settings(),
-    )
-    # streamable_http_app() returns a Starlette ASGI app that speaks the
-    # MCP streamable-HTTP protocol (same tool surface as the stdio server).
-    app = RequestBodyLimitMiddleware(mcp.streamable_http_app(), max_request_bytes())
-
     uvicorn.run(app, host=host, port=port)
 
 

@@ -1688,17 +1688,17 @@
               {
                 "name": "dietary-mcp",
                 "role": "producer",
-                "version": "0.1.1"
+                "version": "0.2.0"
               },
               {
                 "name": "point_estimate",
                 "role": "workflow",
-                "version": "0.1.1"
+                "version": "0.2.0"
               },
               {
                 "name": "reference_dietary",
                 "role": "model_family",
-                "version": "0.1.1"
+                "version": "0.2.0"
               }
             ],
             "dosing_regimen": {
@@ -1890,7 +1890,7 @@
             },
             "schema_version": "v1"
           },
-          "integrityHash": "sha256:f3b5ff56e178f4252c76b8d1068f97ae0524fe22fee0250fe348b0e2a6b7083f",
+          "integrityHash": "sha256:8657fef44c3479065da9905e1d1e9398220e789e581f93c96bbe22d7e6a3935c",
           "objectType": "typedHandoffRef",
           "objectTypeRef": "PbpkExternalImportBundle",
           "producerModule": "dietary_exposure",
@@ -5196,17 +5196,17 @@
               {
                 "name": "dietary-mcp",
                 "role": "producer",
-                "version": "0.1.1"
+                "version": "0.2.0"
               },
               {
                 "name": "bounded_acute",
                 "role": "workflow",
-                "version": "0.1.1"
+                "version": "0.2.0"
               },
               {
                 "name": "reference_dietary",
                 "role": "model_family",
-                "version": "0.1.1"
+                "version": "0.2.0"
               }
             ],
             "dosing_regimen": {
@@ -5398,7 +5398,7 @@
             },
             "schema_version": "v1"
           },
-          "integrityHash": "sha256:96ba6397660f3d601dc4bd61f35519b336bc2c9f5ed6a7eaf19c3aa4ae096447",
+          "integrityHash": "sha256:338438e061ef5fc8b36a1335b9e87f297f25306844682f22da610a627440bd3e",
           "objectType": "typedHandoffRef",
           "objectTypeRef": "PbpkExternalImportBundle",
           "producerModule": "dietary_exposure",

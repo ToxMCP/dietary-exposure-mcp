@@ -1,7 +1,7 @@
 {
   "interpretation_bundle": {
     "schema_version": "v1",
-    "bundle_id": "contaminant-monitoring-bundle-3302f734b6ce",
+    "bundle_id": "contaminant-monitoring-bundle-5749b85c995d",
     "bundle_profile": "internal_review",
     "contaminant_family": "mercury_food_contaminants",
     "jurisdiction": "eu",
@@ -957,27 +957,27 @@
     "dependencies": [
       {
         "name": "dietary-mcp",
-        "version": "0.1.1",
+        "version": "0.2.0",
         "role": "producer"
       },
       {
         "name": "dietary_check_contaminant_monitoring_import",
-        "version": "0.1.1",
+        "version": "0.2.0",
         "role": "check_workflow"
       },
       {
         "name": "dietary_lookup_occurrence_evidence",
-        "version": "0.1.1",
+        "version": "0.2.0",
         "role": "occurrence_evidence_workflow"
       },
       {
         "name": "dietary_lookup_analytical_method_evidence",
-        "version": "0.1.1",
+        "version": "0.2.0",
         "role": "analytical_method_evidence_workflow"
       },
       {
         "name": "mercury_food_contaminants",
-        "version": "0.1.1",
+        "version": "0.2.0",
         "role": "contaminant_family"
       }
     ],

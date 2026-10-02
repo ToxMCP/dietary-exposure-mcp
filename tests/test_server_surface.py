@@ -2,8 +2,8 @@ import json
 from pathlib import Path
 
 import pytest
-from mcp.server.fastmcp.exceptions import ToolError
-from mcp.server.fastmcp import FastMCP
+from mcp.server.mcpserver.exceptions import UnexpectedToolError
+from mcp.server import MCPServer
 
 from dietary_mcp.server import create_server
 from dietary_mcp.server_tools import register_tools
@@ -71,15 +71,15 @@ async def test_server_surface_exposes_expected_tools_and_resources() -> None:
     }
     assert len(tools) == 49
     assert all(tool.title for tool in tools)
-    assert all(tool.outputSchema for tool in tools)
+    assert all(tool.output_schema for tool in tools)
     assert all(tool.annotations is not None for tool in tools)
-    assert all(tool.annotations.readOnlyHint is not None for tool in tools)
-    assert all(tool.annotations.destructiveHint is False for tool in tools)
-    assert all(tool.annotations.openWorldHint is False for tool in tools)
+    assert all(tool.annotations.read_only_hint is not None for tool in tools)
+    assert all(tool.annotations.destructive_hint is False for tool in tools)
+    assert all(tool.annotations.open_world_hint is False for tool in tools)
     # All current tools return deterministic data transformations. Even the
     # export tools build payloads in memory and do not write or publish them.
-    assert all(tool.annotations.readOnlyHint is True for tool in tools)
-    assert all(tool.annotations.idempotentHint is True for tool in tools)
+    assert all(tool.annotations.read_only_hint is True for tool in tools)
+    assert all(tool.annotations.idempotent_hint is True for tool in tools)
     assert {str(resource.uri) for resource in resources} == {
         "adapter-manifest://manifest",
         "adapter-input-templates://manifest",
@@ -116,7 +116,7 @@ async def test_server_surface_exposes_expected_tools_and_resources() -> None:
         "validation://interoperability-profiles",
         "validation://readiness-profiles",
     }
-    assert {str(template.uriTemplate) for template in templates} == {
+    assert {str(template.uri_template) for template in templates} == {
         "schemas://{schema_name}",
         "examples://{example_name}",
         "docs://{doc_name}",
@@ -168,20 +168,20 @@ def test_create_server_does_not_rewrite_generated_artifacts() -> None:
 async def test_tool_success_and_domain_error_use_structured_content() -> None:
     server = create_server()
 
-    ok_content, ok_structured = await server.call_tool(
+    ok = await server.call_tool(
         "dietary_lookup_reference_values",
         {"request": {"substanceKey": "glyphosate"}},
     )
-    assert ok_content
-    assert ok_structured["result"]["substanceKey"] == "glyphosate"
+    assert ok.content
+    assert ok.structured_content["result"]["substanceKey"] == "glyphosate"
 
     error = await server.call_tool(
         "dietary_select_consumption_profile",
         {"request": {"population_group": "not_a_population", "intake_window": "chronic"}},
     )
-    assert error.isError is True
-    assert error.structuredContent["result"]["code"] == "missing_consumption_profile"
-    assert "requestId" in error.structuredContent["result"]["details"]
+    assert error.is_error is True
+    assert error.structured_content["result"]["code"] == "missing_consumption_profile"
+    assert "requestId" in error.structured_content["result"]["details"]
 
 
 @pytest.mark.anyio
@@ -250,14 +250,14 @@ async def test_uncertainty_tool_success_and_domain_error_are_structured() -> Non
             )
         ],
     )
-    ok_content, ok_structured = await server.call_tool(
+    ok = await server.call_tool(
         "dietary_build_uncertainty_intake_assessment",
         {"request": ok_request.model_dump(mode="json", by_alias=True)},
     )
 
-    assert ok_content
-    assert ok_structured["result"]["assessmentMode"] == "two_dimensional_monte_carlo"
-    assert ok_structured["result"]["reproducibility"]["rngAlgorithm"] == "numpy.PCG64"
+    assert ok.content
+    assert ok.structured_content["result"]["assessmentMode"] == "two_dimensional_monte_carlo"
+    assert ok.structured_content["result"]["reproducibility"]["rngAlgorithm"] == "numpy.PCG64"
 
     bad_request = ok_request.model_copy(
         update={
@@ -275,8 +275,8 @@ async def test_uncertainty_tool_success_and_domain_error_are_structured() -> Non
         {"request": bad_request.model_dump(mode="json", by_alias=True)},
     )
 
-    assert error.isError is True
-    assert error.structuredContent["result"]["code"] == "uncertainty_model_without_residue_record"
+    assert error.is_error is True
+    assert error.structured_content["result"]["code"] == "uncertainty_model_without_residue_record"
 
 
 @pytest.mark.anyio
@@ -285,14 +285,17 @@ async def test_unexpected_tool_exceptions_still_raise() -> None:
         def lookup_reference_values(self, request):
             raise RuntimeError("boom")
 
-    server = FastMCP("test-dietary-tools")
+    server = MCPServer("test-dietary-tools")
     register_tools(server, ExplodingRuntime())
 
-    with pytest.raises(ToolError, match="boom"):
+    with pytest.raises(UnexpectedToolError, match="Error executing tool") as raised:
         await server.call_tool(
             "dietary_lookup_reference_values",
             {"request": {"substanceKey": "glyphosate"}},
         )
+    assert isinstance(raised.value.__cause__, RuntimeError)
+    assert str(raised.value.__cause__) == "boom"
+    assert "boom" not in str(raised.value)
 
 
 @pytest.mark.slow

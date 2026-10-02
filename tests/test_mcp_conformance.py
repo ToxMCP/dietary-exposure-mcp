@@ -7,7 +7,7 @@ set (and resource-URI set) exactly equals an expected checked-in set.
 
 This is intentionally an END-TO-END, cross-process check: unlike the in-process
 ``tests/test_server_surface.py`` / ``tests/test_tool_surface_validation.py``
-(which call ``create_server()`` / ``register_tools()`` and inspect the FastMCP
+(which call ``create_server()`` / ``register_tools()`` and inspect the MCPServer
 object directly), this gate exercises the actual stdio transport, the packaged
 ``dietary-mcp`` console entrypoint, and JSON-RPC ``initialize`` handshake exactly
 as a real MCP host would. It catches regressions the in-process tests cannot:
@@ -24,12 +24,14 @@ here is a deliberate, attributed failure that surfaces undeclared surface drift.
 from __future__ import annotations
 
 import sys
+import hashlib
+import json
 from pathlib import Path
 
 import anyio
 
 # Real MCP client SDK — the proven fleet-reference Python conformance form.
-from mcp import ClientSession, StdioServerParameters
+from mcp import Client, ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
 from dietary_mcp.package_metadata import PACKAGE_NAME, VERSION
@@ -159,7 +161,7 @@ async def _collect_surface() -> tuple[set[str], set[str], str, str]:
             resources = await session.list_resources()
     tool_names = {tool.name for tool in tools.tools}
     resource_uris = {str(resource.uri) for resource in resources.resources}
-    return tool_names, resource_uris, initialized.serverInfo.name, initialized.serverInfo.version
+    return tool_names, resource_uris, initialized.server_info.name, initialized.server_info.version
 
 
 def test_built_server_advertises_expected_tool_surface_over_stdio() -> None:
@@ -187,3 +189,29 @@ def test_built_server_advertises_expected_tool_surface_over_stdio() -> None:
         f"  unexpected: {sorted(unexpected_res)}\n"
         "If intentional, update EXPECTED_RESOURCE_URIS here AND test_server_surface.py."
     )
+
+
+def test_modern_stdio_discovery_preserves_every_released_catalog_contract() -> None:
+    baseline = json.loads((PROJECT_ROOT / "tests/compatibility/v0.1.1-catalog-sha256.json").read_text())
+
+    async def exercise():
+        async with Client(_server_params()) as client:
+            assert client.protocol_version == "2026-07-28"
+            assert client.server_info.name == PACKAGE_NAME
+            assert client.server_info.version == VERSION
+            collections = {
+                "tools": (await client.list_tools()).tools,
+                "resources": (await client.list_resources()).resources,
+                "templates": (await client.list_resource_templates()).resource_templates,
+            }
+            observed = {}
+            for key, items in collections.items():
+                observed[key] = {}
+                for item in items:
+                    wire = item.model_dump(mode="json", by_alias=True, exclude_none=True)
+                    name = str(wire.get("name", wire.get("uri", wire.get("uriTemplate"))))
+                    canonical = json.dumps(wire, sort_keys=True, separators=(",", ":"))
+                    observed[key][name] = hashlib.sha256(canonical.encode()).hexdigest()
+            assert observed == baseline["catalog"]
+
+    anyio.run(exercise)

@@ -15,14 +15,14 @@ def _case(name: str, status: str, observed: Any) -> dict[str, Any]:
 
 
 async def _list_tools() -> list[Any]:
-    from mcp.server.fastmcp import FastMCP
+    from mcp.server import MCPServer
 
     from dietary_mcp.assets import runtime_asset_root
     from dietary_mcp.package_metadata import PACKAGE_NAME
     from dietary_mcp.runtime import DietaryRuntime
     from dietary_mcp.server_tools import register_tools
 
-    server = FastMCP(PACKAGE_NAME, json_response=True)
+    server = MCPServer(PACKAGE_NAME)
     register_tools(server, DietaryRuntime(runtime_asset_root()))
     return list(await server.list_tools())
 
@@ -35,7 +35,7 @@ def _annotation_value(tool: Any, field_name: str) -> Any:
 
 
 def _output_schema_text(tool: Any) -> str:
-    return json.dumps(getattr(tool, "outputSchema", {}) or {}, sort_keys=True, default=str)
+    return json.dumps(getattr(tool, "output_schema", {}) or {}, sort_keys=True, default=str)
 
 
 def _has_structured_error_union(tool: Any) -> bool:
@@ -65,42 +65,42 @@ def run_tool_surface_cases(repo_root: Path) -> dict[str, Any]:
         ),
         _case(
             "all_tools_have_output_schemas",
-            "ok" if all(getattr(tool, "outputSchema", None) for tool in tools) else "review_required",
-            [tool.name for tool in tools if not getattr(tool, "outputSchema", None)],
+            "ok" if all(getattr(tool, "output_schema", None) for tool in tools) else "review_required",
+            [tool.name for tool in tools if not getattr(tool, "output_schema", None)],
         ),
         _case(
             "tool_read_only_annotations_match_policy",
             "ok"
-            if all(_annotation_value(tool, "readOnlyHint") is True for tool in tools)
+            if all(_annotation_value(tool, "read_only_hint") is True for tool in tools)
             else "review_required",
             [
                 tool.name
                 for tool in tools
-                if _annotation_value(tool, "readOnlyHint") is not True
+                if _annotation_value(tool, "read_only_hint") is not True
             ],
         ),
         _case(
             "all_tools_are_non_destructive",
             "ok"
-            if all(_annotation_value(tool, "destructiveHint") is False for tool in tools)
+            if all(_annotation_value(tool, "destructive_hint") is False for tool in tools)
             else "review_required",
-            [tool.name for tool in tools if _annotation_value(tool, "destructiveHint") is not False],
+            [tool.name for tool in tools if _annotation_value(tool, "destructive_hint") is not False],
         ),
         _case(
             "tool_idempotent_annotations_match_policy",
             "ok"
-            if all(_annotation_value(tool, "idempotentHint") is True for tool in tools)
+            if all(_annotation_value(tool, "idempotent_hint") is True for tool in tools)
             else "review_required",
             [
                 tool.name
                 for tool in tools
-                if _annotation_value(tool, "idempotentHint") is not True
+                if _annotation_value(tool, "idempotent_hint") is not True
             ],
         ),
         _case(
             "all_tools_are_closed_world",
-            "ok" if all(_annotation_value(tool, "openWorldHint") is False for tool in tools) else "review_required",
-            [tool.name for tool in tools if _annotation_value(tool, "openWorldHint") is not False],
+            "ok" if all(_annotation_value(tool, "open_world_hint") is False for tool in tools) else "review_required",
+            [tool.name for tool in tools if _annotation_value(tool, "open_world_hint") is not False],
         ),
         _case(
             "all_tools_include_structured_error_payload",
